@@ -1,16 +1,37 @@
-# Compiled source #
-###################
-*.com
+# Compiled class file
 *.class
-*.dll
-*.exe
-*.o
-*.so
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#
+# Project specific excludes
+#
+
+tomcat
+
+#
+# Default excludes
+#
+
+# Binaries
 *.7z
 *.dmg
 *.gz
@@ -19,48 +40,40 @@
 *.rar
 *.tar
 *.zip
+*.war
+*.ear
+*.sar
+*.class
 
-# Logs and databases #
-######################
-*.log
+# Maven
+target/
 
-# OS generated files #
-######################
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-
-# Editor Files #
-################
-*~
-*.swp
-
-# Gradle Files #
-################
-.gradle
-.m2
-!/gradle/wrapper/gradle-wrapper.jar
-
-# Build output directies
-/target
-*/target
-/build
-*/build
-
-# IntelliJ specific files/directories
-out
-.idea
-*.ipr
-*.iws
+# IntelliJ project files
 *.iml
-atlassian-ide-plugin.xml
+*.iws
+*.ipr
+.idea/
 
-# Eclipse specific files/directories
+# eclipse project file
+.settings/
 .classpath
 .project
-.settings
-.metadata
 
-# NetBeans specific files/directories
-.nbattrs
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+
+# OS
+.DS_Store
+
+# Misc
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
