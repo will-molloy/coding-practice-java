@@ -1,15 +1,7 @@
-plugins {
-    id 'java'
-    id 'jacoco'
-}
-
-group 'com.wilmol'
-
 allprojects {
+    group 'com.wilmol'
     version = "1.0"
-}
 
-subprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
     apply plugin: 'jacoco'
@@ -22,28 +14,41 @@ subprojects {
     }
 
     dependencies {
-        // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-        testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.0-M1'
-        // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
-        testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.5.0-M1'
-        // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
-        testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '2.1'
+        compile(
+                // https://mvnrepository.com/artifact/com.google.guava/guava
+                'com.google.guava:guava:27.1-jre',
+                // https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305
+                'com.google.code.findbugs:jsr305:3.0.2',
+                // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+                'org.apache.logging.log4j:log4j-core:2.11.2',
+        )
 
-        // https://mvnrepository.com/artifact/com.google.guava/guava
-        compile group: 'com.google.guava', name: 'guava', version: '27.1-jre'
-        // https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305
-        compile group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
         // https://projectlombok.org/setup/gradle
         compileOnly 'org.projectlombok:lombok:1.18.6'
         annotationProcessor 'org.projectlombok:lombok:1.18.6'
-        // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
-        compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+
+        testCompile(
+                // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+                'org.junit.jupiter:junit-jupiter-api:5.4.0',
+                // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
+                'org.junit.jupiter:junit-jupiter-params:5.4.0',
+                // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
+                'org.hamcrest:hamcrest-core:2.1',
+        )
+
+        // https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-gradle/
+        testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     }
-    
+
+    test {
+        useJUnitPlatform()
+    }
+
     jacocoTestReport {
         reports {
             xml.enabled true
-            html.enabled false
+            html.enabled true
+            csv.enabled true
         }
     }
 }
