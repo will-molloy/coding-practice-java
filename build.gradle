@@ -1,9 +1,10 @@
 allprojects {
     group 'com.wilmol'
     version = "1.0"
+}
 
+subprojects {
     apply plugin: 'java'
-    apply plugin: 'maven'
     apply plugin: 'jacoco'
 
     sourceCompatibility = 11.0
