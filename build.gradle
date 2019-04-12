@@ -1,15 +1,37 @@
-allprojects {
-    apply plugin: 'java'
-    group 'com.wilmol'
-    version = "1.0"
+// https://github.com/passy/build-time-tracker-plugin
+plugins {
+    id "net.rdrei.android.buildtimetracker" version "0.11.0"
+}
 
-    clean {
-        // delete intellij build directories too
-        delete "out/"
+buildtimetracker {
+    reporters {
+        csv {
+            output "build/times.csv"
+            append true
+            header false
+        }
+
+        summary {
+            ordered false
+            threshold 1
+            barstyle "ascii"
+            successOutput true
+            shortenTaskNames false
+        }
+
+        csvSummary {
+            csv "build/times.csv"
+        }
     }
 }
 
+allprojects {
+    group 'com.wilmol'
+    version = "1.0"
+}
+
 subprojects {
+    apply plugin: 'java'
     apply plugin: 'jacoco'
 
     sourceCompatibility = 11.0
@@ -46,7 +68,13 @@ subprojects {
         testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     }
 
+    clean {
+        // delete intellij build directories too
+        delete "out/"
+    }
+
     test {
+        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
         useJUnitPlatform()
         testLogging {
             events "started", "passed", "skipped", "failed", "standardOut", "standardError"
@@ -61,4 +89,3 @@ subprojects {
         }
     }
 }
-
