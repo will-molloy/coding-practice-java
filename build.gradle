@@ -1,14 +1,55 @@
 allprojects {
     group 'com.wilmol'
-    version = "1.0"
+    version = '1.0'
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'com.diffplug.spotless:spotless-plugin-gradle:3.22.0'
+    }
 }
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'com.diffplug.gradle.spotless'
     apply plugin: 'jacoco'
 
     sourceCompatibility = 11.0
     targetCompatibility = 11.0
+
+    spotless {
+        java {
+            removeUnusedImports()
+            importOrderFile rootProject.file('gradle/spotless/import-order')
+            eclipse().configFile rootProject.file('gradle/spotless/code-formatting.xml')
+        }
+    }
+
+    clean {
+        // delete intellij build directories too
+        delete 'out/'
+    }
+
+    test {
+        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+        useJUnitPlatform()
+        testLogging {
+            events 'started', 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+        }
+    }
+
+    jacocoTestReport {
+        reports {
+            xml.enabled true
+            html.enabled true
+            csv.enabled true
+        }
+    }
 
     repositories {
         mavenCentral()
@@ -39,26 +80,5 @@ subprojects {
 
         // https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-gradle/
         testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
-    }
-
-    clean {
-        // delete intellij build directories too
-        delete "out/"
-    }
-
-    test {
-        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
-        useJUnitPlatform()
-        testLogging {
-            events "started", "passed", "skipped", "failed", "standardOut", "standardError"
-        }
-    }
-
-    jacocoTestReport {
-        reports {
-            xml.enabled true
-            html.enabled true
-            csv.enabled true
-        }
     }
 }
