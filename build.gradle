@@ -39,6 +39,7 @@ subprojects {
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
         useJUnitPlatform()
         testLogging {
+            exceptionFormat 'full'
             events 'started', 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
         }
     }
