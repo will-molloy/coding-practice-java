@@ -1,6 +1,6 @@
 allprojects {
     group 'com.wilmol'
-    version = '1.0'
+    version = '1.0.0'
 }
 
 buildscript {
@@ -58,28 +58,21 @@ subprojects {
 
     dependencies {
         compile(
-                // https://mvnrepository.com/artifact/com.google.guava/guava
                 'com.google.guava:guava:27.1-jre',
-                // https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305
                 'com.google.code.findbugs:jsr305:3.0.2',
-                // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
                 'org.apache.logging.log4j:log4j-core:2.11.2',
         )
+        compile group: 'org.javatuples', name: 'javatuples', version: '1.2'
+        compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
 
-        // https://projectlombok.org/setup/gradle
         compileOnly 'org.projectlombok:lombok:1.18.6'
         annotationProcessor 'org.projectlombok:lombok:1.18.6'
 
         testCompile(
-                // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
                 'org.junit.jupiter:junit-jupiter-api:5.4.0',
-                // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
                 'org.junit.jupiter:junit-jupiter-params:5.4.0',
-                // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
                 'org.hamcrest:hamcrest-core:2.1',
         )
-
-        // https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-gradle/
         testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
     }
 }
