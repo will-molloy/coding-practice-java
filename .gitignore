@@ -3,7 +3,6 @@
 
 .metadata
 bin/
-tmp/
 *.tmp
 *.bak
 *.swp
@@ -105,8 +104,6 @@ hs_err_pid*
 out
 gen### Gradle template
 .gradle
-/build/
-
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -130,9 +127,7 @@ nbdist/
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/**/dictionaries
 .idea/**/shelf
 
 # Sensitive or high-churn files
@@ -141,11 +136,9 @@ nbdist/
 .idea/**/dataSources.local.xml
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
 # Gradle
-.idea/**/gradle.xml
 .idea/**/libraries
 
 # CMake
