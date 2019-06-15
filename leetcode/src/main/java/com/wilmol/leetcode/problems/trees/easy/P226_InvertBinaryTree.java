@@ -1,6 +1,6 @@
 package com.wilmol.leetcode.problems.trees.easy;
 
-import com.wilmol.leetcode.common.TreeNode;
+import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
  * Created by Will on 2019-03-30 at 21:43
@@ -8,13 +8,11 @@ import com.wilmol.leetcode.common.TreeNode;
  * https://leetcode.com/problems/invert-binary-tree/
  * <p>
  * Runtime: O(n)
- * <p>
- * TODO TESTS
  */
 class P226_InvertBinaryTree
 {
 
-  TreeNode invertTree(TreeNode root)
+  BinaryTreeNode invertTree(BinaryTreeNode root)
   {
     if (root != null)
     {
@@ -25,9 +23,9 @@ class P226_InvertBinaryTree
     return root;
   }
 
-  private void swapChildren(TreeNode root)
+  private void swapChildren(BinaryTreeNode root)
   {
-    TreeNode temp = root.right;
+    BinaryTreeNode temp = root.right;
     root.right = root.left;
     root.left = temp;
   }
