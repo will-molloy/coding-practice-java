@@ -1,17 +1,10 @@
 package com.wilmol.hackerrank.common;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+import java.util.Objects;
 
 /**
  * Created by Will on 28/03/2019
  */
-@RequiredArgsConstructor(staticName = "of")
-@EqualsAndHashCode(exclude = "prev")
-@ToString(exclude = "prev")
-@Data
 public class DoublyLinkedListNode
 {
 
@@ -20,5 +13,42 @@ public class DoublyLinkedListNode
   public DoublyLinkedListNode next;
 
   public DoublyLinkedListNode prev;
+
+  public DoublyLinkedListNode(int data)
+  {
+    this.data = data;
+  }
+
+  public static DoublyLinkedListNode of(int data)
+  {
+    return new DoublyLinkedListNode(data);
+  }
+
+  @Override
+  public String toString()
+  {
+    return "DoublyLinkedListNode{" +
+        "data=" + data +
+        ", next=" + next +
+        '}';
+  }
+
+  @Override
+  public boolean equals(Object o)
+  {
+    if (this == o)
+      return true;
+    if (o == null || getClass() != o.getClass())
+      return false;
+    DoublyLinkedListNode that = (DoublyLinkedListNode) o;
+    return data == that.data &&
+        Objects.equals(next, that.next);
+  }
+
+  @Override
+  public int hashCode()
+  {
+    return Objects.hash(data, next);
+  }
 
 }

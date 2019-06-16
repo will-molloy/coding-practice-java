@@ -1,6 +1,6 @@
 package com.wilmol.hackerrank.interview_preparation_kit.sorting.medium;
 
-import lombok.Data;
+import java.util.Objects;
 
 /**
  * Created by Will on 25/03/2019
@@ -35,7 +35,6 @@ class ComparatorInterface
 }
 
 // Comparable, Comparator, basically the same thing.. Comparator is a separate class (no clean private field access)
-@Data
 class Player
     implements
     Comparable<Player>
@@ -43,6 +42,12 @@ class Player
   private final String name;
 
   private final int score;
+
+  public Player(String name, int score)
+  {
+    this.name = name;
+    this.score = score;
+  }
 
   @Override
   public int compareTo(Player that)
@@ -57,6 +62,24 @@ class Player
       // but if same score, by name ascending
       return this.name.compareTo(that.name);
     }
+  }
+
+  @Override
+  public boolean equals(Object o)
+  {
+    if (this == o)
+      return true;
+    if (o == null || getClass() != o.getClass())
+      return false;
+    Player player = (Player) o;
+    return score == player.score &&
+        Objects.equals(name, player.name);
+  }
+
+  @Override
+  public int hashCode()
+  {
+    return Objects.hash(name, score);
   }
 
 }
