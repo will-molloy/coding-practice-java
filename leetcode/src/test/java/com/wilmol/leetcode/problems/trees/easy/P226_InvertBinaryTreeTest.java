@@ -12,9 +12,9 @@ class P226_InvertBinaryTreeTest
   @Test
   void example()
   {
-    BinaryTreeNode input = new BinaryTreeNode(4, 2, 7, 1, 3, 6, 9);
+    BinaryTreeNode input = BinaryTreeNode.fromLevelOrder(4, 2, 7, 1, 3, 6, 9);
     BinaryTreeNode output = new P226_InvertBinaryTree().invertTree(input);
-    assertThat(output).isEqualTo(new BinaryTreeNode(4, 7, 2, 9, 6, 3, 1));
+    assertThat(output).isEqualTo(BinaryTreeNode.fromLevelOrder(4, 7, 2, 9, 6, 3, 1));
   }
 
 }

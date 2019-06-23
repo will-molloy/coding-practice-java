@@ -9,16 +9,19 @@ import com.google.common.base.Preconditions;
  */
 public class BinaryTreeNode
 {
-  private final int value;
+
+  public final int value;
 
   public BinaryTreeNode left;
 
   public BinaryTreeNode right;
 
-  /**
-   * Constructs from level order
-   */
-  public BinaryTreeNode(int... values)
+  public static BinaryTreeNode fromLevelOrder(int... values)
+  {
+    return new BinaryTreeNode(values);
+  }
+
+  private BinaryTreeNode(int... values)
   {
     Preconditions.checkArgument(values.length > 0, "Tree must have at least one node.");
     this.value = values[0];
@@ -26,14 +29,14 @@ public class BinaryTreeNode
     this.right = buildLevelOrder(2, values);
   }
 
-  private static BinaryTreeNode buildLevelOrder(int i, int... arr)
+  private static BinaryTreeNode buildLevelOrder(int i, int... remainingValues)
   {
     BinaryTreeNode root = null;
-    if (i < arr.length)
+    if (i < remainingValues.length)
     {
-      root = new BinaryTreeNode(arr[i]);
-      root.left = buildLevelOrder(2 * i + 1, arr);
-      root.right = buildLevelOrder(2 * i + 2, arr);
+      root = new BinaryTreeNode(remainingValues[i]);
+      root.left = buildLevelOrder(2 * i + 1, remainingValues);
+      root.right = buildLevelOrder(2 * i + 2, remainingValues);
     }
     return root;
   }
@@ -41,11 +44,7 @@ public class BinaryTreeNode
   @Override
   public String toString()
   {
-    return "BinaryTreeNode{" +
-        "val=" + value +
-        ", left=" + left +
-        ", right=" + right +
-        '}';
+    return String.format("%d, %s, %s", value, left, right);
   }
 
   @Override
