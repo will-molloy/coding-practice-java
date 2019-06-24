@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.introduction.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,11 +13,17 @@ class MatchAnythingButNewLine
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("...\\....\\....\\....");
+
+  /**
+   * . -> anything but new line
+   * <p>
+   * \. -> escapes '.' (matches only exactly '.')
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // . -> anything but new line
-    // \. -> escapes '.' (matches only exactly '.')
-    return "...\\....\\....\\....";
+    return PATTERN;
   }
 }

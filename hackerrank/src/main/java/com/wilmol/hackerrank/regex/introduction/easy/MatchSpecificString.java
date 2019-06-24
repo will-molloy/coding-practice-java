@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.introduction.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,10 +13,15 @@ class MatchSpecificString
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("hackerrank");
+
+  /**
+   * only match this word
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // only match this word
-    return "hackerrank";
+    return PATTERN;
   }
 }

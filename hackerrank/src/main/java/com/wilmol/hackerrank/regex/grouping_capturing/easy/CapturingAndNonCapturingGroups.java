@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.grouping_capturing.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,12 +13,19 @@ class CapturingAndNonCapturingGroups
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("(ok){3,}");
+
+  /**
+   * () -> creates a group, can then apply quantifiers to that group
+   * <p>
+   * can nest groups
+   * <p>
+   * (?:) -> non-capturing group
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // () -> creates a group, can then apply quantifiers to that group
-    // can nest groups
-    // (?:) -> non-capturing group
-    return "(ok){3,}";
+    return PATTERN;
   }
 }

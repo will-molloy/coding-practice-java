@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.repetitions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,9 +13,15 @@ class MatchEndingItems
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z]*s$");
+
+  /**
+   * $ asserts end of string
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    return "^[a-zA-Z]*s$";
+    return PATTERN;
   }
 }

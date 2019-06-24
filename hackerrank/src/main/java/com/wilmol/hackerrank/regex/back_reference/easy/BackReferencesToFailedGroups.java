@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.back_reference.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,11 +13,17 @@ class BackReferencesToFailedGroups
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^\\d{2}(-?)(\\d{2}\\1){2}\\d{2}$");
+
+  /**
+   * \1 will match either '-' or ''
+   * <p>
+   * i.e. only match '-' if it occurred previously (perfect use case for back reference)
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // \1 will match either '-' or ''
-    // i.e. only match '-' if it occurred previously (perfect use case for back reference)
-    return "^\\d{2}(-?)(\\d{2}\\1){2}\\d{2}$";
+    return PATTERN;
   }
 }

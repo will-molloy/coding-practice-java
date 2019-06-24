@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.assertions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,12 +13,17 @@ class NegativeLookbehind
     implements
     Regex
 {
-  @Override
-  public String regex()
-  {
-    // (?<!regex_2)regex_1 -> only match regex_1 if it is not immediately preceded by regex_2
 
-    // match all characters not immediately preceded by a vowel
-    return "(?<![aeiouAEIOU]).";
+  private static final Pattern PATTERN = Pattern.compile("(?<![aeiouAEIOU]).");
+
+  /**
+   * (?<!regex_2)regex_1 -> only match regex_1 if it is not immediately preceded by regex_2
+   * <p>
+   * match all characters not immediately preceded by a vowel
+   */
+  @Override
+  public Pattern pattern()
+  {
+    return PATTERN;
   }
 }

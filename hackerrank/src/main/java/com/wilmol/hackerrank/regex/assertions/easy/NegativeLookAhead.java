@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.assertions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,12 +13,17 @@ class NegativeLookAhead
     implements
     Regex
 {
-  @Override
-  public String regex()
-  {
-    // regex_1(?!regex_2) -> match regex_1 only if regex_2 does not appear immediately after it
 
-    // match character which is not immediately matched by the same character
-    return "(.)(?!\\1)";
+  private static final Pattern PATTERN = Pattern.compile("(.)(?!\\1)");
+
+  /**
+   * regex_1(?!regex_2) -> match regex_1 only if regex_2 does not appear immediately after it
+   * <p>
+   * match character which is not immediately matched by the same character
+   */
+  @Override
+  public Pattern pattern()
+  {
+    return PATTERN;
   }
 }

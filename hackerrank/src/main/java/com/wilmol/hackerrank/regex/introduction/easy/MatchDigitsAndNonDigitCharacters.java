@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.introduction.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,11 +13,17 @@ class MatchDigitsAndNonDigitCharacters
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("\\d\\d\\D\\d\\d\\D\\d\\d\\d\\d");
+
+  /**
+   * \d -> digit [0-9]
+   * <p>
+   * \D -> non digit
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // \d -> digit [0-9]
-    // \D -> non digit
-    return "\\d\\d\\D\\d\\d\\D\\d\\d\\d\\d";
+    return PATTERN;
   }
 }

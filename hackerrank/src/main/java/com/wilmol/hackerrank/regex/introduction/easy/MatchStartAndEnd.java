@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.introduction.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,12 +13,19 @@ class MatchStartAndEnd
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^\\d\\w{4}.$");
+
+  /**
+   * ^ -> start of string to match
+   * <p>
+   * $ -> end of string to match
+   * <p>
+   * can use one or both
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // ^ -> start of string to match
-    // $ -> end of string to match
-    // can use one or both
-    return "^\\d\\w{4}.$";
+    return PATTERN;
   }
 }

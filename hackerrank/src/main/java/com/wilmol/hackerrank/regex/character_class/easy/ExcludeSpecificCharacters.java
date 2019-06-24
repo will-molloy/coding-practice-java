@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.character_class.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,11 +13,17 @@ class ExcludeSpecificCharacters
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^[^\\d][^aeiou][^bcDF][\\S][^AEIOU][^.,]$");
+
+  /**
+   * [^] -> exclude characters in set ([], aka set, aka character class)
+   * <p>
+   * can put quantifiers in set (e.g. \d) or ranges (e.g. 0-9)
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // [^] -> exclude characters in set ([], aka set, aka character class)
-    // can put quantifiers in set (e.g. \d) or ranges (e.g. 0-9)
-    return "^[^\\d][^aeiou][^bcDF][\\S][^AEIOU][^.,]$";
+    return PATTERN;
   }
 }

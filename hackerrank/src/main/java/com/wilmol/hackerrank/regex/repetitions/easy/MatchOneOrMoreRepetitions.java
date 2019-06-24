@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.repetitions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,9 +13,15 @@ class MatchOneOrMoreRepetitions
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^\\d+[A-Z]+[a-z]+$");
+
+  /**
+   * +, sequence with size at least one
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    return "^\\d+[A-Z]+[a-z]+$";
+    return PATTERN;
   }
 }

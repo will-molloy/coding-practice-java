@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.grouping_capturing.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,10 +13,15 @@ class AlternativeMatching
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^(M(r(|s)|s)|[DE]r)\\.[a-zA-Z]+$");
+
+  /**
+   * | in capturing group -> match single item out of the possibilities
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // | in capturing group -> match single item out of the possibilities
-    return "^(M(r(|s)|s)|(D|E)r)\\.[a-zA-Z]+$";
+    return PATTERN;
   }
 }

@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.back_reference.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,16 +13,24 @@ class MatchSameTextAgainAndAgain
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1$");
+
+  /**
+   * \{x} -> back reference to what the x capturing group matched e.g. \1 -> back reference to what the first capturing
+   * group matched NOTE different to quantifying the group
+   * <p>
+   * e.g.
+   * <p>
+   * (\d)\1 matches 00 11 22 33 44 55 66 77 88 99
+   * <p>
+   * while
+   * <p>
+   * (\d){2} matches 01 02 03 .. 97 98 99 etc.
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // \{x} -> back reference to what the x capturing group matched
-    // e.g. \1 -> back reference to what the first capturing group matched
-    // NOTE different to quantifying the group
-    // e.g.
-    // (\d)\1 matches 00 11 22 33 44 55 66 77 88 99
-    // while
-    // (\d){2} matches 01 02 03 .. 97 98 99 etc.
-    return "^([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1$";
+    return PATTERN;
   }
 }

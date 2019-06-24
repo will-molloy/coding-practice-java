@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.introduction.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,11 +13,17 @@ class MatchWordAndNonWordCharacter
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("\\w{3}\\W\\w{10}\\W\\w{3}");
+
+  /**
+   * \w -> words [a-zA-Z0-9_]
+   * <p>
+   * \W -> non words
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // \w -> words [a-zA-Z0-9_]
-    // \W -> non words
-    return "\\w{3}\\W\\w{10}\\W\\w{3}";
+    return PATTERN;
   }
 }

@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.assertions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,12 +13,17 @@ class PositiveLookbehind
     implements
     Regex
 {
-  @Override
-  public String regex()
-  {
-    // (?<=regex_2)regex_1 -> only match regex_1 if it is immediately preceded by regex_2
 
-    // match digits immediately preceded by odd digits
-    return "(?<=[13579]\\d)";
+  private static final Pattern PATTERN = Pattern.compile("(?<=[13579]\\d)");
+
+  /**
+   * (?<=regex_2)regex_1 -> only match regex_1 if it is immediately preceded by regex_2
+   * <p>
+   * match digits immediately preceded by odd digits
+   */
+  @Override
+  public Pattern pattern()
+  {
+    return PATTERN;
   }
 }

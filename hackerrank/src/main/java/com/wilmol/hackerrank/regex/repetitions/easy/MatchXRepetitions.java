@@ -1,5 +1,7 @@
 package com.wilmol.hackerrank.regex.repetitions.easy;
 
+import java.util.regex.Pattern;
+
 import com.wilmol.hackerrank.regex.Regex;
 
 /**
@@ -11,10 +13,15 @@ class MatchXRepetitions
     implements
     Regex
 {
+
+  private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z02468]{40}[13579\\s]{5}$");
+
+  /**
+   * {x}, sequence with size x
+   */
   @Override
-  public String regex()
+  public Pattern pattern()
   {
-    // {x} -> sequence with size x
-    return "^[a-zA-Z02468]{40}[13579\\s]{5}$";
+    return PATTERN;
   }
 }
