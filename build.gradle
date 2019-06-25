@@ -33,24 +33,12 @@ subprojects {
         }
     }
 
-//    // Checkstyle
-//    apply plugin: 'checkstyle'
-//    checkstyle {
-//        toolVersion '7.8.1'
-//        configFile rootProject.file("config/checkstyle/checkstyle.xml")
-//    }
-//    checkstyleMain {
-//        source ='src/main/java'
-//    }
-//    checkstyleTest {
-//        source ='src/test/java'
-//    }
-
-//    // FindBugs (ErrorProne)
-//    apply plugin: 'findbugs'
-//    findbugs {
-//        ignoreFailures = true
-//    }
+    // Checkstyle
+    apply plugin: 'checkstyle'
+    checkstyle {
+        toolVersion '8.21'
+        configFile rootProject.file('config/checkstyle/google_checks.xml')
+    }
 
     test {
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
