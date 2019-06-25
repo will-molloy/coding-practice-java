@@ -3,16 +3,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy;
 import static com.google.common.truth.Truth.assertThat;
 import static com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy.ReverseList.reverse;
 
+import com.wilmol.hackerrank.common.DoublyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.DoublyLinkedListNode;
-
-class ReverseListTest
-{
+class ReverseListTest {
 
   @Test
-  void reverseThreeElements()
-  {
+  void reverseThreeElements() {
     DoublyLinkedListNode inputHead = DoublyLinkedListNode.of(1);
     inputHead.next = DoublyLinkedListNode.of(2);
     inputHead.next.prev = inputHead;
@@ -29,13 +26,11 @@ class ReverseListTest
   }
 
   @Test
-  void reverseOneElement()
-  {
+  void reverseOneElement() {
     DoublyLinkedListNode inputHead = DoublyLinkedListNode.of(1);
 
     DoublyLinkedListNode expectedHead = DoublyLinkedListNode.of(1);
 
     assertThat(reverse(inputHead)).isEqualTo(expectedHead);
   }
-
 }

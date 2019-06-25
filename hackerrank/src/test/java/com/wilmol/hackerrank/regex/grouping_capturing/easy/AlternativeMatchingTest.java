@@ -4,11 +4,9 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class AlternativeMatchingTest
-{
+class AlternativeMatchingTest {
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new AlternativeMatching().matches("Mr.DOSHI")).isTrue();
     assertThat(new AlternativeMatching().matches("Mrs.DOSHI")).isTrue();
     assertThat(new AlternativeMatching().matches("Ms.DOSHI")).isTrue();
@@ -17,8 +15,7 @@ class AlternativeMatchingTest
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new AlternativeMatching().matches("Mr#DOSHI")).isFalse();
     assertThat(new AlternativeMatching().matches("1Mr. doshIO")).isFalse();
     assertThat(new AlternativeMatching().matches("Mr.V.K. Doshi")).isFalse();

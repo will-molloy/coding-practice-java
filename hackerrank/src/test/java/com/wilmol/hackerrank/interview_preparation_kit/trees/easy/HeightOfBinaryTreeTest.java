@@ -2,16 +2,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.trees.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import com.wilmol.hackerrank.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.BinaryTreeNode;
-
-class HeightOfBinaryTreeTest
-{
+class HeightOfBinaryTreeTest {
 
   @Test
-  void heightOf3()
-  {
+  void heightOf3() {
     BinaryTreeNode root = BinaryTreeNode.of(3);
     root.left = BinaryTreeNode.of(2);
     root.right = BinaryTreeNode.of(5);
@@ -23,10 +20,8 @@ class HeightOfBinaryTreeTest
   }
 
   @Test
-  void heightOf0()
-  {
+  void heightOf0() {
     BinaryTreeNode root = BinaryTreeNode.of(3);
     assertThat(HeightOfBinaryTree.height(root)).isEqualTo(0);
   }
-
 }

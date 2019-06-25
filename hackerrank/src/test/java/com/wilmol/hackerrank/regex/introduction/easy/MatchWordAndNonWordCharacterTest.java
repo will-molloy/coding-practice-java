@@ -4,19 +4,15 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class MatchWordAndNonWordCharacterTest
-{
+class MatchWordAndNonWordCharacterTest {
 
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new MatchWordAndNonWordCharacter().matches("www.hackerrank.com")).isTrue();
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new MatchWordAndNonWordCharacter().matches("www.hackerrank.co")).isFalse();
   }
-
 }

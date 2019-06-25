@@ -6,21 +6,18 @@ import java.util.stream.IntStream;
 
 /**
  * Created by Will on 2019-04-02 at 20:11
- * <p>
- * https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=graphs
- * <p>
- * Runtime: TODO
+ *
+ * <p>https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=graphs
+ *
+ * <p>Runtime: TODO
  */
-class BfsShortestReachInAGraph
-{
+class BfsShortestReachInAGraph {
 
   private static final int EDGE_COST = 6;
 
-  static int[] bfsAdjList(final int[][] adjList, final int source)
-  {
+  static int[] bfsAdjList(final int[][] adjList, final int source) {
     int[] costs = new int[adjList.length];
-    for (int i = 0; i < costs.length; i++)
-    {
+    for (int i = 0; i < costs.length; i++) {
       costs[i] = -1;
     }
     costs[source] = 0;
@@ -28,15 +25,12 @@ class BfsShortestReachInAGraph
     // perform the BFS, finding distance to every node from the source
     Queue<Integer> queue = new LinkedList<>();
     queue.add(source);
-    while (!queue.isEmpty())
-    {
+    while (!queue.isEmpty()) {
       int node = queue.remove();
       // list directly stores adjNode
-      for (int adjNode : adjList[node])
-      {
+      for (int adjNode : adjList[node]) {
         // only process unvisited nodes
-        if (costs[adjNode] != -1)
-        {
+        if (costs[adjNode] != -1) {
           continue;
         }
         costs[adjNode] = costs[node] + EDGE_COST;
@@ -50,11 +44,9 @@ class BfsShortestReachInAGraph
         .toArray();
   }
 
-  static int[] bfsAdjMatrix(final int[][] adjMatrix, final int source)
-  {
+  static int[] bfsAdjMatrix(final int[][] adjMatrix, final int source) {
     int[] costs = new int[adjMatrix.length];
-    for (int i = 0; i < costs.length; i++)
-    {
+    for (int i = 0; i < costs.length; i++) {
       costs[i] = -1;
     }
     costs[source] = 0;
@@ -62,16 +54,13 @@ class BfsShortestReachInAGraph
     // perform the BFS, finding distance to every node from the source
     Queue<Integer> queue = new LinkedList<>();
     queue.add(source);
-    while (!queue.isEmpty())
-    {
+    while (!queue.isEmpty()) {
       int node = queue.remove();
       // must iterate all nodes (matrix stores 1 if adjNode, else 0)
-      for (int adjNode = 0; adjNode < adjMatrix[node].length; adjNode++)
-      {
+      for (int adjNode = 0; adjNode < adjMatrix[node].length; adjNode++) {
         int costToAdjNode = adjMatrix[node][adjNode];
         // only process reachable (i.e. neighbouring) and unvisited nodes
-        if (costToAdjNode == 0 || costs[adjNode] != -1)
-        {
+        if (costToAdjNode == 0 || costs[adjNode] != -1) {
           continue;
         }
         costs[adjNode] = costs[node] + costToAdjNode * EDGE_COST;
@@ -84,5 +73,4 @@ class BfsShortestReachInAGraph
         .map(node -> costs[node])
         .toArray();
   }
-
 }

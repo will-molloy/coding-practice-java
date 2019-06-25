@@ -4,11 +4,9 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class MatchWordBoundariesTest
-{
+class MatchWordBoundariesTest {
   @Test
-  void testFinds()
-  {
+  void testFinds() {
     assertThat(new MatchWordBoundaries().contains("Found any match?")).isTrue();
     assertThat(new MatchWordBoundaries().contains("I found3 i0")).isTrue();
     assertThat(new MatchWordBoundaries().contains("okyouwin? yes")).isTrue();
@@ -17,8 +15,7 @@ class MatchWordBoundariesTest
   }
 
   @Test
-  void testDoesNotFind()
-  {
+  void testDoesNotFind() {
     assertThat(new MatchWordBoundaries().contains("found3 i0")).isFalse();
     assertThat(new MatchWordBoundaries().contains("found3 isdvnslknc98098sdcsdbc")).isFalse();
   }

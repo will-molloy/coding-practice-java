@@ -3,16 +3,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy;
 import static com.google.common.truth.Truth.assertThat;
 import static com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy.InsertNodeAtPosition.insertNodeAtPosition;
 
+import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.SinglyLinkedListNode;
-
-class InsertNodeAtPositionTest
-{
+class InsertNodeAtPositionTest {
 
   @Test
-  void insertInMiddle()
-  {
+  void insertInMiddle() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(1);
     inputHead.next = SinglyLinkedListNode.of(2);
     inputHead.next.next = SinglyLinkedListNode.of(3);
@@ -25,8 +22,7 @@ class InsertNodeAtPositionTest
   }
 
   @Test
-  void insertAtStart()
-  {
+  void insertAtStart() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(1);
     inputHead.next = SinglyLinkedListNode.of(2);
     inputHead.next.next = SinglyLinkedListNode.of(3);
@@ -39,8 +35,7 @@ class InsertNodeAtPositionTest
   }
 
   @Test
-  void insertAtEnd()
-  {
+  void insertAtEnd() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(1);
     inputHead.next = SinglyLinkedListNode.of(2);
     inputHead.next.next = SinglyLinkedListNode.of(3);
@@ -51,5 +46,4 @@ class InsertNodeAtPositionTest
     outputHead.next.next.next = SinglyLinkedListNode.of(4);
     assertThat(insertNodeAtPosition(inputHead, 4, 3)).isEqualTo(outputHead);
   }
-
 }

@@ -4,19 +4,19 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class MatchXYRepetitionsTest
-{
+class MatchXYRepetitionsTest {
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new MatchXYRepetitions().matches("3threeormorealphabets.")).isTrue();
     assertThat(new MatchXYRepetitions().matches("32threeormorealphabets")).isTrue();
-    assertThat(new MatchXYRepetitions().matches("3threeormorealphabetsACNSDNPINQCPIQNCPNQPCINQPICNPIQNCPQINCQPC")).isTrue();
+    assertThat(
+            new MatchXYRepetitions()
+                .matches("3threeormorealphabetsACNSDNPINQCPIQNCPNQPCINQPICNPIQNCPQINCQPC"))
+        .isTrue();
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new MatchXYRepetitions().matches("3threeormorealphabets....")).isFalse();
     assertThat(new MatchXYRepetitions().matches("123threeormorealphabets....")).isFalse();
     assertThat(new MatchXYRepetitions().matches("3ab.")).isFalse();

@@ -4,12 +4,10 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class ForwardReferencesTest
-{
+class ForwardReferencesTest {
 
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new ForwardReferences().matches("tactactic")).isTrue();
     assertThat(new ForwardReferences().matches("tactactictactic")).isTrue();
     assertThat(new ForwardReferences().matches("tac")).isTrue();
@@ -19,8 +17,7 @@ class ForwardReferencesTest
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new ForwardReferences().matches("tactactictactictictac")).isFalse();
     assertThat(new ForwardReferences().matches("tactictac")).isFalse();
     assertThat(new ForwardReferences().matches("tactic")).isFalse();

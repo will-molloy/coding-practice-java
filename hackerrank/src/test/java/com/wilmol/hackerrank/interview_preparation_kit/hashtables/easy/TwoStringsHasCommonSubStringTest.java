@@ -4,19 +4,15 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class TwoStringsHasCommonSubStringTest
-{
+class TwoStringsHasCommonSubStringTest {
 
   @Test
-  void hasCommon()
-  {
+  void hasCommon() {
     assertThat(TwoStringsHasCommonSubString.hasCommonSubString("hello", "world")).isTrue();
   }
 
   @Test
-  void doesNotHaveCommon()
-  {
+  void doesNotHaveCommon() {
     assertThat(TwoStringsHasCommonSubString.hasCommonSubString("hi", "world")).isFalse();
   }
-
 }

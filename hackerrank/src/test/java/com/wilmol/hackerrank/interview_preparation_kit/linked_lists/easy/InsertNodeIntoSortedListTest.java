@@ -3,16 +3,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy;
 import static com.google.common.truth.Truth.assertThat;
 import static com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy.InsertNodeIntoSortedList.sortedInsert;
 
+import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.SinglyLinkedListNode;
-
-class InsertNodeIntoSortedListTest
-{
+class InsertNodeIntoSortedListTest {
 
   @Test
-  void insertAtStart()
-  {
+  void insertAtStart() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(2);
     inputHead.next = SinglyLinkedListNode.of(3);
 
@@ -23,8 +20,7 @@ class InsertNodeIntoSortedListTest
   }
 
   @Test
-  void insertAtMiddle()
-  {
+  void insertAtMiddle() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(1);
     inputHead.next = SinglyLinkedListNode.of(3);
 
@@ -35,8 +31,7 @@ class InsertNodeIntoSortedListTest
   }
 
   @Test
-  void insertAtEnd()
-  {
+  void insertAtEnd() {
     SinglyLinkedListNode inputHead = SinglyLinkedListNode.of(1);
     inputHead.next = SinglyLinkedListNode.of(2);
 
@@ -45,5 +40,4 @@ class InsertNodeIntoSortedListTest
     outputHead.next.next = SinglyLinkedListNode.of(3);
     assertThat(sortedInsert(inputHead, 3)).isEqualTo(outputHead);
   }
-
 }

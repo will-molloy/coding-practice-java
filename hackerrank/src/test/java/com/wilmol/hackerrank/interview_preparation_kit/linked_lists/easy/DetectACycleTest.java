@@ -2,16 +2,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.SinglyLinkedListNode;
-
-class DetectACycleTest
-{
+class DetectACycleTest {
 
   @Test
-  void hasCycle()
-  {
+  void hasCycle() {
     SinglyLinkedListNode head = SinglyLinkedListNode.of(0);
     head.next = SinglyLinkedListNode.of(0);
     head.next.next = SinglyLinkedListNode.of(0);
@@ -20,12 +17,10 @@ class DetectACycleTest
   }
 
   @Test
-  void noCycle()
-  {
+  void noCycle() {
     SinglyLinkedListNode head = SinglyLinkedListNode.of(0);
     head.next = SinglyLinkedListNode.of(0);
     head.next.next = SinglyLinkedListNode.of(0);
     assertThat(DetectACycle.hasCycle(head)).isFalse();
   }
-
 }

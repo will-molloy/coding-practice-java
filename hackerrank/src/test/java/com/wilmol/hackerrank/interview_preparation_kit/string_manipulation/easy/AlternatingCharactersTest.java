@@ -5,31 +5,25 @@ import static com.wilmol.hackerrank.interview_preparation_kit.string_manipulatio
 
 import org.junit.jupiter.api.Test;
 
-class AlternatingCharactersTest
-{
+class AlternatingCharactersTest {
 
   @Test
-  void emptyString()
-  {
+  void emptyString() {
     assertThat(alternatingCharacters("")).isEqualTo(0);
   }
 
   @Test
-  void noAlternating()
-  {
+  void noAlternating() {
     assertThat(alternatingCharacters("AAAAA")).isEqualTo(4);
   }
 
   @Test
-  void onlyAlternating()
-  {
+  void onlyAlternating() {
     assertThat(alternatingCharacters("ABABABA")).isEqualTo(0);
   }
 
   @Test
-  void mixture()
-  {
+  void mixture() {
     assertThat(alternatingCharacters("AABBABABAABB")).isEqualTo(4);
   }
-
 }

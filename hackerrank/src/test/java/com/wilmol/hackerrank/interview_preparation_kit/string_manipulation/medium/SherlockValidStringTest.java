@@ -5,43 +5,35 @@ import static com.wilmol.hackerrank.interview_preparation_kit.string_manipulatio
 
 import org.junit.jupiter.api.Test;
 
-class SherlockValidStringTest
-{
+class SherlockValidStringTest {
 
   @Test
-  void notValidNeedsTwoDeletions()
-  {
+  void notValidNeedsTwoDeletions() {
     assertThat(isValid("aabbcd")).isFalse();
   }
 
   @Test
-  void notValidNeedsFourOfFiveDeletions()
-  {
+  void notValidNeedsFourOfFiveDeletions() {
     assertThat(isValid("aabbccddeefghi")).isFalse();
   }
 
   @Test
-  void notValidThreeFrequenciesOfChars()
-  {
+  void notValidThreeFrequenciesOfChars() {
     assertThat(isValid("abbccc")).isFalse();
   }
 
   @Test
-  void isValidOnlyOneChar()
-  {
+  void isValidOnlyOneChar() {
     assertThat(isValid("AAAAAAA")).isTrue();
   }
 
   @Test
-  void isValidNeedsOneDeletionsOfHigherCharCount()
-  {
+  void isValidNeedsOneDeletionsOfHigherCharCount() {
     assertThat(isValid("abcdefghhgfedecba")).isTrue();
   }
 
   @Test
-  void isValidNeedsRemovalOfLowerCharCount()
-  {
+  void isValidNeedsRemovalOfLowerCharCount() {
     assertThat(isValid("aaabbbc")).isTrue();
   }
-
 }

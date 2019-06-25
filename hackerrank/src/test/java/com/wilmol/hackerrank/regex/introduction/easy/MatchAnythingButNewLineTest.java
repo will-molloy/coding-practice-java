@@ -4,19 +4,15 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class MatchAnythingButNewLineTest
-{
+class MatchAnythingButNewLineTest {
 
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new MatchAnythingButNewLine().matches("123.456.abc.def")).isTrue();
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new MatchAnythingButNewLine().matches("1234.456.abc.def")).isFalse();
   }
-
 }

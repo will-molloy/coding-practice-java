@@ -5,25 +5,20 @@ import static com.wilmol.hackerrank.interview_preparation_kit.string_manipulatio
 
 import org.junit.jupiter.api.Test;
 
-class MakingAnagramsTest
-{
+class MakingAnagramsTest {
 
   @Test
-  void remove4()
-  {
+  void remove4() {
     assertThat(makeAnagram("abc", "cde")).isEqualTo(4);
   }
 
   @Test
-  void removeNone()
-  {
+  void removeNone() {
     assertThat(makeAnagram("ababa", "baaba")).isEqualTo(0);
   }
 
   @Test
-  void removeAll()
-  {
+  void removeAll() {
     assertThat(makeAnagram("xxxyyyzzz", "aaabbbccc")).isEqualTo(18);
   }
-
 }

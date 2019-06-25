@@ -2,16 +2,13 @@ package com.wilmol.hackerrank.interview_preparation_kit.linked_lists.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-import com.wilmol.hackerrank.common.SinglyLinkedListNode;
-
-class FindMergePointOfTwoListsTest
-{
+class FindMergePointOfTwoListsTest {
 
   @Test
-  void trivialCaseSameLength()
-  {
+  void trivialCaseSameLength() {
     SinglyLinkedListNode head = SinglyLinkedListNode.of(1);
     head.next = SinglyLinkedListNode.of(2);
 
@@ -19,8 +16,7 @@ class FindMergePointOfTwoListsTest
   }
 
   @Test
-  void listAIsLonger()
-  {
+  void listAIsLonger() {
     SinglyLinkedListNode headB = SinglyLinkedListNode.of(4);
     headB.next = SinglyLinkedListNode.of(5);
 
@@ -33,8 +29,7 @@ class FindMergePointOfTwoListsTest
   }
 
   @Test
-  void listBIsLonger()
-  {
+  void listBIsLonger() {
     SinglyLinkedListNode headA = SinglyLinkedListNode.of(5);
 
     SinglyLinkedListNode headB = SinglyLinkedListNode.of(1);
@@ -45,5 +40,4 @@ class FindMergePointOfTwoListsTest
 
     assertThat(FindMergePointOfTwoLists.findMergeNode(headA, headB)).isEqualTo(5);
   }
-
 }

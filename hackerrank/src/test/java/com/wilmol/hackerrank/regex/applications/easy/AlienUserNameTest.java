@@ -4,12 +4,10 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class AlienUserNameTest
-{
+class AlienUserNameTest {
 
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(AlienUserName.isValidUserName("_0898989811abced_")).isTrue();
     assertThat(AlienUserName.isValidUserName("_0898989811_")).isTrue();
     assertThat(AlienUserName.isValidUserName("_0")).isTrue();
@@ -19,8 +17,7 @@ class AlienUserNameTest
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(AlienUserName.isValidUserName("0898989811abced_")).isFalse();
     assertThat(AlienUserName.isValidUserName("#0898989811_")).isFalse();
     assertThat(AlienUserName.isValidUserName("$0")).isFalse();
@@ -28,5 +25,4 @@ class AlienUserNameTest
     assertThat(AlienUserName.isValidUserName("_0898989811abced_f")).isFalse();
     assertThat(AlienUserName.isValidUserName("_0898989811abced__")).isFalse();
   }
-
 }

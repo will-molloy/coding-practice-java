@@ -10,39 +10,36 @@ import java.util.stream.Stream;
 
 /**
  * Created by Will on 2019-04-07 at 11:38
- * <p>
- * https://www.hackerrank.com/challenges/detect-html-tags/problem
- * <p>
- * Runtime: O(n)
+ *
+ * <p>https://www.hackerrank.com/challenges/detect-html-tags/problem
+ *
+ * <p>Runtime: O(n)
  */
-class DetectHTMLTags
-{
+class DetectHTMLTags {
 
   // match on the opening tag (may not be a closing tag)
   private static final Pattern HTML_TAG_PATTERN = Pattern.compile("(?<=<)\\s*[\\w]+(?=(\\s|>))");
 
-  static String extractTags(Stream<String> lines)
-  {
-    return lines.flatMap(line ->
-    {
-      Matcher m = HTML_TAG_PATTERN.matcher(line);
-      return IntStream.iterate(0, n -> n + 1)
-          .takeWhile(n -> m.find())
-          // need trim in case there is trailing white space
-          // way around this? problem is 'A lookbehind assertion has to be fixed width'
-          // i.e. cannot put \s* in the lookbehind ..
-          .mapToObj(n -> m.group().trim());
-    })
+  static String extractTags(Stream<String> lines) {
+    return lines
+        .flatMap(
+            line -> {
+              Matcher m = HTML_TAG_PATTERN.matcher(line);
+              return IntStream.iterate(0, n -> n + 1)
+                  .takeWhile(n -> m.find())
+                  // need trim in case there is trailing white space
+                  // way around this? problem is 'A lookbehind assertion has to be fixed width'
+                  // i.e. cannot put \s* in the lookbehind ..
+                  .mapToObj(n -> m.group().trim());
+            })
         .distinct()
         .sorted()
         .collect(Collectors.joining(";"));
   }
 
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     String tags = extractTags(reader.lines());
     System.out.println(tags);
   }
-
 }

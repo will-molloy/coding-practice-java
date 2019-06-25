@@ -1,14 +1,10 @@
 package com.wilmol.leetcode.common;
 
+import com.google.common.base.Preconditions;
 import java.util.Objects;
 
-import com.google.common.base.Preconditions;
-
-/**
- * Created by Will on 2019-03-30 at 21:49
- */
-public class BinaryTreeNode
-{
+/** Created by Will on 2019-03-30 at 21:49 */
+public class BinaryTreeNode {
 
   public final int value;
 
@@ -16,24 +12,20 @@ public class BinaryTreeNode
 
   public BinaryTreeNode right;
 
-  public static BinaryTreeNode fromLevelOrder(int... values)
-  {
+  public static BinaryTreeNode fromLevelOrder(int... values) {
     return new BinaryTreeNode(values);
   }
 
-  private BinaryTreeNode(int... values)
-  {
+  private BinaryTreeNode(int... values) {
     Preconditions.checkArgument(values.length > 0, "Tree must have at least one node.");
     this.value = values[0];
     this.left = buildLevelOrder(1, values);
     this.right = buildLevelOrder(2, values);
   }
 
-  private static BinaryTreeNode buildLevelOrder(int i, int... remainingValues)
-  {
+  private static BinaryTreeNode buildLevelOrder(int i, int... remainingValues) {
     BinaryTreeNode root = null;
-    if (i < remainingValues.length)
-    {
+    if (i < remainingValues.length) {
       root = new BinaryTreeNode(remainingValues[i]);
       root.left = buildLevelOrder(2 * i + 1, remainingValues);
       root.right = buildLevelOrder(2 * i + 2, remainingValues);
@@ -42,31 +34,26 @@ public class BinaryTreeNode
   }
 
   @Override
-  public String toString()
-  {
+  public String toString() {
     return String.format("%d, %s, %s", value, left, right);
   }
 
   @Override
-  public boolean equals(Object o)
-  {
-    if (this == o)
-    {
+  public boolean equals(Object o) {
+    if (this == o) {
       return true;
     }
-    if (o == null || getClass() != o.getClass())
-    {
+    if (o == null || getClass() != o.getClass()) {
       return false;
     }
     BinaryTreeNode that = (BinaryTreeNode) o;
-    return value == that.value &&
-        Objects.equals(left, that.left) &&
-        Objects.equals(right, that.right);
+    return value == that.value
+        && Objects.equals(left, that.left)
+        && Objects.equals(right, that.right);
   }
 
   @Override
-  public int hashCode()
-  {
+  public int hashCode() {
     return Objects.hash(value, left, right);
   }
 }

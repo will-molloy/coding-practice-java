@@ -5,12 +5,10 @@ import static com.wilmol.hackerrank.regex.applications.easy.DetectingValidLatitu
 
 import org.junit.jupiter.api.Test;
 
-class DetectingValidLatitudeAndLongitudePairsTest
-{
+class DetectingValidLatitudeAndLongitudePairsTest {
 
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(isValid("(75, 180)")).isTrue();
     assertThat(isValid("(+75, +180)")).isTrue();
     assertThat(isValid("(-75.123345, -180.0)")).isTrue();
@@ -21,8 +19,7 @@ class DetectingValidLatitudeAndLongitudePairsTest
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(isValid("(-090.00000, -180.0000)")).isFalse();
     assertThat(isValid("(90., 180.)")).isFalse();
     assertThat(isValid("(+90, +180.2)")).isFalse();
@@ -38,5 +35,4 @@ class DetectingValidLatitudeAndLongitudePairsTest
     assertThat(isValid("75, 180)")).isFalse();
     assertThat(isValid("(75, 180))")).isFalse();
   }
-
 }

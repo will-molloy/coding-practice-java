@@ -2,23 +2,19 @@ package com.wilmol.hackerrank.interview_preparation_kit.arrays.easy;
 
 /**
  * Created by Will on 24/03/2019
- * <p>
- * https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays
+ *
+ * <p>https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays
  * Rotate the array towards the left d times.
- * <p>
- * Runtime: O(n)
+ *
+ * <p>Runtime: O(n)
  */
-class LeftRotation
-{
+class LeftRotation {
 
-  static int[] rotLeft(int[] a, int d)
-  {
+  static int[] rotLeft(int[] a, int d) {
     int[] copy = new int[a.length];
-    for (int i = 0; i < a.length; i++)
-    {
+    for (int i = 0; i < a.length; i++) {
       copy[i] = a[(i + d) % a.length];
     }
     return copy;
   }
-
 }

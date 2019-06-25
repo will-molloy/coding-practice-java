@@ -4,19 +4,16 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class MatchEndingItemsTest
-{
+class MatchEndingItemsTest {
   @Test
-  void testMatches()
-  {
+  void testMatches() {
     assertThat(new MatchEndingItems().matches("Kites")).isTrue();
     assertThat(new MatchEndingItems().matches("s")).isTrue();
     assertThat(new MatchEndingItems().matches("es")).isTrue();
   }
 
   @Test
-  void testDoesNotMatch()
-  {
+  void testDoesNotMatch() {
     assertThat(new MatchEndingItems().matches("kite")).isFalse();
     assertThat(new MatchEndingItems().matches("")).isFalse();
     assertThat(new MatchEndingItems().matches("e'")).isFalse();

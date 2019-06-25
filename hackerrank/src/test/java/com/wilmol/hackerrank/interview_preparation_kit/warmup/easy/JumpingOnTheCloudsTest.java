@@ -4,19 +4,15 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class JumpingOnTheCloudsTest
-{
+class JumpingOnTheCloudsTest {
 
   @Test
-  void _2BadClouds()
-  {
-    assertThat(JumpingOnTheClouds.jumpingOnClouds(new int[]{ 0, 0, 1, 0, 0, 1, 0 })).isEqualTo(4);
+  void _2BadClouds() {
+    assertThat(JumpingOnTheClouds.jumpingOnClouds(new int[] {0, 0, 1, 0, 0, 1, 0})).isEqualTo(4);
   }
 
   @Test
-  void _2BadCloudsAndSkip1GoodCloud()
-  {
-    assertThat(JumpingOnTheClouds.jumpingOnClouds(new int[]{ 0, 0, 0, 0, 1, 0 })).isEqualTo(3);
+  void _2BadCloudsAndSkip1GoodCloud() {
+    assertThat(JumpingOnTheClouds.jumpingOnClouds(new int[] {0, 0, 0, 0, 1, 0})).isEqualTo(3);
   }
-
 }

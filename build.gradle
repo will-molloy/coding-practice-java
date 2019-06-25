@@ -1,8 +1,3 @@
-allprojects {
-    group 'com.wilmol'
-    version = '1.0.0'
-}
-
 buildscript {
     repositories {
         maven {
@@ -14,26 +9,48 @@ buildscript {
     }
 }
 
+allprojects {
+    group 'com.wilmol'
+    version = '1.0.0'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'com.diffplug.gradle.spotless'
-    apply plugin: 'jacoco'
-
     sourceCompatibility = 11.0
     targetCompatibility = 11.0
 
+    // Spotless
+    apply plugin: 'com.diffplug.gradle.spotless'
     spotless {
         java {
             removeUnusedImports()
-            importOrderFile rootProject.file('gradle/spotless/import-order')
-            eclipse().configFile rootProject.file('gradle/spotless/code-formatting.xml')
+            googleJavaFormat()
         }
     }
 
-    clean {
-        // delete intellij build directories too
-        delete 'out/'
-    }
+//    // Checkstyle
+//    apply plugin: 'checkstyle'
+//    checkstyle {
+//        toolVersion '7.8.1'
+//        configFile rootProject.file("config/checkstyle/checkstyle.xml")
+//    }
+//    checkstyleMain {
+//        source ='src/main/java'
+//    }
+//    checkstyleTest {
+//        source ='src/test/java'
+//    }
+
+//    // FindBugs (ErrorProne)
+//    apply plugin: 'findbugs'
+//    findbugs {
+//        ignoreFailures = true
+//    }
 
     test {
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
@@ -44,16 +61,12 @@ subprojects {
         }
     }
 
+    // Code coverage
+    apply plugin: 'jacoco'
     jacocoTestReport {
         reports {
-            xml.enabled true
             html.enabled true
-            csv.enabled true
         }
-    }
-
-    repositories {
-        mavenCentral()
     }
 
     dependencies {
