@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.diffplug.spotless:spotless-plugin-gradle:3.22.0'
+        classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.8'
     }
 }
 
@@ -18,6 +19,8 @@ allprojects {
         mavenCentral()
     }
 }
+
+defaultTasks 'clean', 'check'
 
 subprojects {
     apply plugin: 'java'
@@ -40,6 +43,21 @@ subprojects {
         configFile rootProject.file('config/checkstyle/google_checks.xml')
     }
 
+    // SpotBugs
+    apply plugin: 'com.github.spotbugs'
+    spotbugs {
+        toolVersion = '3.1.12'
+        effort = 'max'
+        reportLevel = 'low'
+        ignoreFailures = false
+    }
+    tasks.withType(com.github.spotbugs.SpotBugsTask) {
+        reports {
+            html.enabled true
+            xml.enabled false
+        }
+    }
+
     test {
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
         useJUnitPlatform()
@@ -54,6 +72,7 @@ subprojects {
     jacocoTestReport {
         reports {
             html.enabled true
+            xml.enabled false
         }
     }
 
