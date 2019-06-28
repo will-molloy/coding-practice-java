@@ -15,7 +15,6 @@ allprojects {
     version = '1.0.0'
 
     repositories {
-        mavenLocal()
         mavenCentral()
     }
 }
@@ -25,7 +24,7 @@ subprojects {
     sourceCompatibility = 11.0
     targetCompatibility = 11.0
 
-    // Spotless
+    // Spotless (code formatting)
     apply plugin: 'com.diffplug.gradle.spotless'
     spotless {
         java {
@@ -34,14 +33,17 @@ subprojects {
         }
     }
 
-    // Checkstyle
+    // Checkstyle (static analysis - code quality/style)
     apply plugin: 'checkstyle'
     checkstyle {
-        toolVersion '8.21'
-        configFile rootProject.file('gradle/checkstyle/google_checks.xml')
+        toolVersion = '8.21'
+        configFile = rootProject.file('gradle/checkstyle/google_checks.xml')
+        maxErrors = 0
+        maxWarnings = 0
+        ignoreFailures = false
     }
 
-    // SpotBugs
+    // SpotBugs (static analysis - find possible bugs, performance issues etc.)
     apply plugin: 'com.github.spotbugs'
     spotbugs {
         toolVersion = '3.1.12'
@@ -51,11 +53,12 @@ subprojects {
     }
     tasks.withType(com.github.spotbugs.SpotBugsTask) {
         reports {
-            html.enabled true
-            xml.enabled false
+            html.enabled = true
+            xml.enabled = false
         }
     }
 
+    // Tests
     test {
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
         useJUnitPlatform()
@@ -65,15 +68,16 @@ subprojects {
         }
     }
 
-    // Code coverage
+    // JaCoCo (code coverage reporting)
     apply plugin: 'jacoco'
     jacocoTestReport {
         reports {
-            xml.enabled true
-            html.enabled false
-            csv.enabled false
+            xml.enabled = true
+            html.enabled = true
+            csv.enabled = false
         }
     }
+    check.dependsOn jacocoTestReport
 
     dependencies {
         implementation group: 'com.google.guava', name: 'guava', version: '28.0-jre'
