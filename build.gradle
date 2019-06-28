@@ -38,7 +38,7 @@ subprojects {
     apply plugin: 'checkstyle'
     checkstyle {
         toolVersion '8.21'
-        configFile rootProject.file('config/checkstyle/google_checks.xml')
+        configFile rootProject.file('gradle/checkstyle/google_checks.xml')
     }
 
     // SpotBugs
@@ -69,8 +69,9 @@ subprojects {
     apply plugin: 'jacoco'
     jacocoTestReport {
         reports {
-            html.enabled true
-            xml.enabled false
+            xml.enabled true
+            html.enabled false
+            csv.enabled false
         }
     }
 
