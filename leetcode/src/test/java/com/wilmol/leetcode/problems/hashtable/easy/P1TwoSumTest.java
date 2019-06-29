@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /** Created by Will on 2019-03-30 at 21:49. */
 class P1TwoSumTest {
 
-  private static int[] EMPTY = {};
+  private static final int[] EMPTY = {};
 
   private static final P1TwoSum OBJ = new P1TwoSum();
 

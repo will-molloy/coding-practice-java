@@ -181,14 +181,6 @@
             <message key="ws.notPreceded"
                      value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
-        <module name="Indentation">
-            <property name="basicOffset" value="2"/>
-            <property name="braceAdjustment" value="0"/>
-            <property name="caseIndent" value="2"/>
-            <property name="throwsIndent" value="4"/>
-            <property name="lineWrappingIndentation" value="4"/>
-            <property name="arrayInitIndent" value="2"/>
-        </module>
         <module name="AbbreviationAsWordInName">
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="1"/>
@@ -254,14 +246,16 @@
                      value="Method name ''{0}'' must match pattern ''{1}''."/>
         </module>
         <module name="SingleLineJavadoc">
-            <property name="ignoreInlineTags" value="false"/>
+            <property name="ignoreInlineTags" value="true"/>
         </module>
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
 
-        <!-- wilmol edits: -->
+        <!-- wilmol edits below: -->
+
+        <!-- Inconvenient for this project, re-enable later? -->
         <!--        <module name="OneTopLevelClass"/>-->
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
@@ -270,10 +264,42 @@
         <module name="RedundantModifier"/>
         <module name="MissingDeprecated"/>
         <module name="InnerAssignment"/>
-        <module name="InnerTypeLast"/>
         <module name="ConstantName"/>
         <module name="EqualsHashCode"/>
+        <module name="ExplicitInitialization"/>
+        <module name="AvoidNestedBlocks"/>
+        <module name="StaticVariableName"/>
 
+        <!-- Ensure file author is present -->
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="(Created by .+|class.*Test)"/>
+            <property name="minimum" value="1"/>
+            <property name="maximum" value="2"/>
+            <property name="message" value="Non test class must include author 'Created by ...'."/>
+        </module>
+        <!-- Ensure only JUnit 5 is used -->
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="org\.junit\.(?!jupiter)"/>
+            <property name="message" value="Only JUnit 5 can be used."/>
+        </module>
+        <!-- Ensure only Google Truth is used -->
+        <module name="RegexpSinglelineJava">
+            <!-- use '&lt;' for '<' since this is an xml file... -->
+            <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assertThat"/>
+            <property name="message" value="Only Google Truth assertions can be used."/>
+        </module>
+
+        <!-- Indentation is covered by spotless -->
+        <!--                <module name="Indentation">-->
+        <!--                    <property name="basicOffset" value="2"/>-->
+        <!--                    <property name="braceAdjustment" value="0"/>-->
+        <!--                    <property name="caseIndent" value="2"/>-->
+        <!--                    <property name="throwsIndent" value="4"/>-->
+        <!--                    <property name="lineWrappingIndentation" value="4"/>-->
+        <!--                    <property name="arrayInitIndent" value="2"/>-->
+        <!--                </module>-->
+
+        <!-- For disabling checks -->
         <module name="SuppressWithNearbyCommentFilter">
             <property name="commentFormat" value="CHECKSTYLE IGNORE (\w+) FOR NEXT (\d+) LINES"/>
             <property name="checkFormat" value="$1"/>
