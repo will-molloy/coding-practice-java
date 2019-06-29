@@ -9,7 +9,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.arrays.medium;
  *
  * <p>Runtime: O(n)
  */
-class MinimumSwaps2 {
+final class MinimumSwaps2 {
+
+  private MinimumSwaps2() {}
 
   // given the elements (e1, ..., en) fit 1 <= e <= n and no duplicates, the sorted array will be
   // [1, 2, 3, ..., n]

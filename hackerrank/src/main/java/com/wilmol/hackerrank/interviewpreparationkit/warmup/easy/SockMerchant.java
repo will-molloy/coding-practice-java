@@ -10,7 +10,9 @@ import java.util.Map;
  *
  * <p>Runtime: O(n)
  */
-class SockMerchant {
+final class SockMerchant {
+
+  private SockMerchant() {}
 
   static int sockMerchant(int[] ar) {
     // ar represent the sock colours

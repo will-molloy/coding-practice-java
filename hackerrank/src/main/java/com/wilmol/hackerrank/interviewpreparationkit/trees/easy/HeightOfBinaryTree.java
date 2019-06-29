@@ -11,7 +11,10 @@ import com.wilmol.hackerrank.common.BinaryTreeNode;
  *
  * <p>Runtime: O(n) - must iterate all nodes
  */
-class HeightOfBinaryTree {
+final class HeightOfBinaryTree {
+
+  private HeightOfBinaryTree() {}
+
   static int height(BinaryTreeNode root) {
     if (root == null) {
       return -1;

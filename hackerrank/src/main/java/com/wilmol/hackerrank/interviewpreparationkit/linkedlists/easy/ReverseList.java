@@ -9,7 +9,9 @@ import com.wilmol.hackerrank.common.DoublyLinkedListNode;
  *
  * <p>Runtime: O(n)
  */
-class ReverseList {
+final class ReverseList {
+
+  private ReverseList() {}
 
   static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
     if (head.next == null) {

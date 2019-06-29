@@ -14,15 +14,17 @@ import java.util.regex.Pattern;
  *
  * <p>Runtime: O(n)
  */
-public class DetectingValidLatitudeAndLongitudePairs {
+public final class DetectingValidLatitudeAndLongitudePairs {
 
-  private static final Pattern regex =
+  private DetectingValidLatitudeAndLongitudePairs() {}
+
+  private static final Pattern PATTERN =
       Pattern.compile(
-          // CHECKSTYLE IGNORE check FOR NEXT 1 LINES
+          // CHECKSTYLE IGNORE LineLength FOR NEXT 1 LINES
           "^[(]([+\\-])?(90([.]0+)?|([1-8]?[\\d])([.]\\d+)?), ([+\\-])?(180([.]0+)?|(1[0-7][\\d]|[1-9]?[\\d])([.]\\d+)?)[)]$");
 
   static boolean isValid(String latitudeLongitudePair) {
-    Matcher m = regex.matcher(latitudeLongitudePair);
+    Matcher m = PATTERN.matcher(latitudeLongitudePair);
     return m.matches();
   }
 

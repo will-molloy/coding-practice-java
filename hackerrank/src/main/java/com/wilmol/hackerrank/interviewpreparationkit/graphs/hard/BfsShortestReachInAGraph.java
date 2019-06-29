@@ -11,7 +11,9 @@ import java.util.stream.IntStream;
  *
  * <p>Runtime: TODO
  */
-class BfsShortestReachInAGraph {
+final class BfsShortestReachInAGraph {
+
+  private BfsShortestReachInAGraph() {}
 
   private static final int EDGE_COST = 6;
 

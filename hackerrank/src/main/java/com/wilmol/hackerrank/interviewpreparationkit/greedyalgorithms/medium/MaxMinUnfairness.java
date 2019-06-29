@@ -11,7 +11,9 @@ import java.util.Arrays;
  *
  * <p>Runtime: O(n log n) - sort first
  */
-class MaxMinUnfairness {
+final class MaxMinUnfairness {
+
+  private MaxMinUnfairness() {}
 
   static int maxMin(int k, int[] arr) {
     // sort the arr

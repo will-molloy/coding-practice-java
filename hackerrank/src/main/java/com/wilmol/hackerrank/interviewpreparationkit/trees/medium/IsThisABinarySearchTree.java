@@ -9,7 +9,9 @@ import com.wilmol.hackerrank.common.BinaryTreeNode;
  *
  * <p>Runtime: O(n) - must check all nodes
  */
-class IsThisABinarySearchTree {
+final class IsThisABinarySearchTree {
+
+  private IsThisABinarySearchTree() {}
 
   static boolean checkBst(BinaryTreeNode root) {
     return checkBst(root, Integer.MIN_VALUE, Integer.MAX_VALUE);

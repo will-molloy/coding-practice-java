@@ -13,7 +13,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime:
  */
-class RansomNote {
+final class RansomNote {
+
+  private RansomNote() {}
 
   static boolean checkMagazine(String[] magazine, String[] note) {
     Map<String, Long> wordCountsMagazine = countWords(magazine);

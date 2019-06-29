@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.Objects;
 
 /** Created by Will on 2019-03-30 at 21:49. */
-public class BinaryTreeNode {
+public final class BinaryTreeNode {
 
   public final int value;
 

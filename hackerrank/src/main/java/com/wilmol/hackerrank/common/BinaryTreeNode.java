@@ -4,7 +4,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Objects;
 
 /** Created by Will on 24/03/2019. */
-public class BinaryTreeNode {
+public final class BinaryTreeNode {
 
   public final int data;
 

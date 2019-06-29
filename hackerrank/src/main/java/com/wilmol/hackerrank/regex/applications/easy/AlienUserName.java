@@ -14,7 +14,9 @@ import java.util.regex.Pattern;
  *
  * <p>Runtime: O(n)
  */
-class AlienUserName {
+final class AlienUserName {
+
+  private AlienUserName() {}
 
   private static final Pattern USER_NAME_PATTERN = Pattern.compile("^(_|[.])\\d+[a-zA-Z]*_?$");
 

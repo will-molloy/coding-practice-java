@@ -11,7 +11,9 @@ import java.util.Objects;
  *
  * <p>Runtime: whatever the sorting algorithm run time is (best case O(n log n))
  */
-public class ComparatorInterface {
+public final class ComparatorInterface {
+
+  private ComparatorInterface() {}
 
   static Player[] sortPlayers(Player[] players) {
     // bubble sort, O(n ^ 2)
@@ -35,7 +37,7 @@ class Player implements Comparable<Player> {
 
   private final int score;
 
-  public Player(String name, int score) {
+  Player(String name, int score) {
     this.name = name;
     this.score = score;
   }

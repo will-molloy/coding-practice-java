@@ -7,7 +7,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.graphs.hard;
  *
  * <p>Runtime: O(n) ... see each element once ... ????
  */
-class DfsConnectedCellInAGrid {
+final class DfsConnectedCellInAGrid {
+
+  private DfsConnectedCellInAGrid() {}
 
   static int maxRegion(int[][] grid) {
     int largestRegion = Integer.MIN_VALUE;

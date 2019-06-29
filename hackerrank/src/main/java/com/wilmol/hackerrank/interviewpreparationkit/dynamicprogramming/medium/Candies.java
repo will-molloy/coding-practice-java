@@ -19,7 +19,9 @@ import java.util.Arrays;
  *
  * @see leet_code.problems.arrays.hard.P135_Candy
  */
-public class Candies {
+public final class Candies {
+
+  private Candies() {}
 
   static long candies(int[] scores) {
     if (scores.length <= 1) {

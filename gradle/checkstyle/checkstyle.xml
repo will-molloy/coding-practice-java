@@ -4,6 +4,8 @@
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
+    Based on google_checks.xml.
+
     Checkstyle configuration that checks the Google coding conventions from Google Java Style
     that can be found at https://google.github.io/styleguide/javaguide.html
 
@@ -11,10 +13,6 @@
     http://checkstyle.sf.net (or in your downloaded distribution).
 
     To completely disable a check, just comment it out or delete it from the file.
-
-    Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
-
-    Modified by: wilmol.
  -->
 
 <module name = "Checker">
@@ -53,7 +51,6 @@
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
         <module name="AvoidStarImport"/>
-<!--        <module name="OneTopLevelClass"/>-->
         <module name="NoLineWrap"/>
         <module name="EmptyBlock">
             <property name="option" value="TEXT"/>
@@ -72,7 +69,7 @@
             <property name="id" value="RightCurlyAlone"/>
             <property name="option" value="alone"/>
             <property name="tokens"
-                      value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
+                      value="CLASS_DEF, METHOD_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
                     INSTANCE_INIT"/>
         </module>
         <module name="WhitespaceAround">
@@ -263,6 +260,20 @@
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
+
+        <!-- wilmol edits: -->
+        <!--        <module name="OneTopLevelClass"/>-->
+        <module name="FinalClass"/>
+        <module name="HideUtilityClassConstructor"/>
+        <module name="RedundantImport"/>
+        <module name="UnusedImports"/>
+        <module name="RedundantModifier"/>
+        <module name="MissingDeprecated"/>
+        <module name="InnerAssignment"/>
+        <module name="InnerTypeLast"/>
+        <module name="ConstantName"/>
+        <module name="EqualsHashCode"/>
+
         <module name="SuppressWithNearbyCommentFilter">
             <property name="commentFormat" value="CHECKSTYLE IGNORE (\w+) FOR NEXT (\d+) LINES"/>
             <property name="checkFormat" value="$1"/>

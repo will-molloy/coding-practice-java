@@ -14,7 +14,9 @@ import java.util.regex.Pattern;
  *
  * <p>Runtime: O(n)
  */
-class IpAddressValidation {
+final class IpAddressValidation {
+
+  private IpAddressValidation() {}
 
   private static final String BYTE_REGEX = "([2][5][0-5]|[2][0-4][0-9]|[1]?[0-9]{1,2})";
 

@@ -11,7 +11,9 @@ import com.wilmol.hackerrank.common.SinglyLinkedListNode;
  *
  * <p>Runtime: O(n)
  */
-class FindMergePointOfTwoLists {
+final class FindMergePointOfTwoLists {
+
+  private FindMergePointOfTwoLists() {}
 
   // e.g.
   // A: 9 -> 4 -> 5

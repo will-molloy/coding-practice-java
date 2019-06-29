@@ -12,7 +12,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n log n) - must sort?
  */
-class GreedyFlorist {
+final class GreedyFlorist {
+
+  private GreedyFlorist() {}
 
   // k friends buying flowers
   // each additional purchase cost is multiplied by the number of previous purchases plus one

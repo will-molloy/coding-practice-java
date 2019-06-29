@@ -11,7 +11,9 @@ import com.google.common.base.Strings;
  *
  * <p>Runtime: O(n)
  */
-class AlternatingCharacters {
+final class AlternatingCharacters {
+
+  private AlternatingCharacters() {}
 
   static int alternatingCharacters(String s) {
     if (Strings.isNullOrEmpty(s)) {

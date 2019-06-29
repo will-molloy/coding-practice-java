@@ -11,7 +11,9 @@ import com.wilmol.hackerrank.common.SinglyLinkedListNode;
  *
  * <p>Runtime: O(n)
  */
-class InsertNodeIntoSortedList {
+final class InsertNodeIntoSortedList {
+
+  private InsertNodeIntoSortedList() {}
 
   static SinglyLinkedListNode sortedInsert(SinglyLinkedListNode head, int data) {
     SinglyLinkedListNode nodeToInsert = SinglyLinkedListNode.of(data);

@@ -11,7 +11,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(s1 + s2) -> O(n)
  */
-class TwoStringsHasCommonSubString {
+final class TwoStringsHasCommonSubString {
+
+  private TwoStringsHasCommonSubString() {}
 
   static boolean hasCommonSubString(String s1, String s2) {
     // just need to check at least one character is common

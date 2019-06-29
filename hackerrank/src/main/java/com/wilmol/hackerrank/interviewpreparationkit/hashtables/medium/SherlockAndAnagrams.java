@@ -15,7 +15,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n ^ 2)
  */
-class SherlockAndAnagrams {
+final class SherlockAndAnagrams {
+
+  private SherlockAndAnagrams() {}
 
   static int sherlockAndAnagrams(String s) {
     Map<String, Set<Integer>> map = new HashMap<>();

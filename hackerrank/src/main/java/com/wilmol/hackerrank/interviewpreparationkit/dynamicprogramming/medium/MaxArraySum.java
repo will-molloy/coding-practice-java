@@ -15,7 +15,9 @@ import java.util.List;
  *
  * <p>Runtime: O(n) time O(1) space
  */
-class MaxArraySum {
+final class MaxArraySum {
+
+  private MaxArraySum() {}
 
   static int maxSubsetSum(List<Integer> list) {
     return maxSubsetSum(list.stream().mapToInt(Integer::intValue).toArray());

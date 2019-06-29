@@ -9,7 +9,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.sorting.easy;
  *
  * <p>Runtime: O(n ^ 2)
  */
-class BubbleSortCountSwaps {
+final class BubbleSortCountSwaps {
+
+  private BubbleSortCountSwaps() {}
 
   static int countSwaps(int[] a) {
     int count = 0;

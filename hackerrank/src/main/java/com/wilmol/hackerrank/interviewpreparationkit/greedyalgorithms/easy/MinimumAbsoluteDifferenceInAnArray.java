@@ -9,7 +9,9 @@ import java.util.Arrays;
  *
  * <p>Runtime: O(n log n) -> Must sort ? (Well can avoid sort but then its O(n ^ 2))
  */
-class MinimumAbsoluteDifferenceInAnArray {
+final class MinimumAbsoluteDifferenceInAnArray {
+
+  private MinimumAbsoluteDifferenceInAnArray() {}
 
   static int minimumAbsoluteDifference(int[] arr) {
     Arrays.sort(arr);

@@ -9,7 +9,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.warmup.easy;
  *
  * <p>Runtime: O(n)
  */
-class CountingValleys {
+final class CountingValleys {
+
+  private CountingValleys() {}
 
   private static final int SEA_LEVEL = 0;
 

@@ -17,7 +17,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n) (~3 passes)
  */
-class MakingAnagrams {
+final class MakingAnagrams {
+
+  private MakingAnagrams() {}
 
   static int makeAnagram(String a, String b) {
     Map<Character, Long> aCharCounts = countChars(a);

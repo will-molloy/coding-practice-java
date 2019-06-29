@@ -8,7 +8,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.warmup.easy;
  *
  * <p>Runtime: O(s) - use multiplication and division to save time
  */
-class RepeatedString {
+final class RepeatedString {
+
+  private RepeatedString() {}
 
   static long repeatedString(String string, long n) {
     long numStringsInN = n / string.length();

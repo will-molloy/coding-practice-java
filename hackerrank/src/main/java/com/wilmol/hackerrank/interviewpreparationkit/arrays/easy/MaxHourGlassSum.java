@@ -10,7 +10,9 @@ import static java.lang.Math.max;
  *
  * <p>Runtime: O(n * m)
  */
-class MaxHourGlassSum {
+final class MaxHourGlassSum {
+
+  private MaxHourGlassSum() {}
 
   static int hourglassSum(int[][] arr) {
     int maxSum = Integer.MIN_VALUE;

@@ -8,7 +8,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.warmup.easy;
  *
  * <p>Runtime: O(n)
  */
-class JumpingOnTheClouds {
+final class JumpingOnTheClouds {
+
+  private JumpingOnTheClouds() {}
 
   static int jumpingOnClouds(int[] clouds) {
     int jumps = 0;

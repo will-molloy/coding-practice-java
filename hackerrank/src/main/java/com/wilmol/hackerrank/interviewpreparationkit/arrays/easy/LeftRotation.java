@@ -8,7 +8,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.arrays.easy;
  *
  * <p>Runtime: O(n)
  */
-class LeftRotation {
+final class LeftRotation {
+
+  private LeftRotation() {}
 
   static int[] rotLeft(int[] a, int d) {
     int[] copy = new int[a.length];

@@ -14,11 +14,14 @@ import java.util.regex.Pattern;
  *
  * <p>Runtime: O(n)
  */
-class HackerRankTweets {
-  private static final Pattern p = Pattern.compile("hackerrank", Pattern.CASE_INSENSITIVE);
+final class HackerRankTweets {
 
-  static boolean hasHackerrank(String string) {
-    return p.asPredicate().test(string);
+  private HackerRankTweets() {}
+
+  private static final Pattern PATTERN = Pattern.compile("hackerrank", Pattern.CASE_INSENSITIVE);
+
+  static boolean containsHackerrank(String string) {
+    return PATTERN.asPredicate().test(string);
   }
 
   public static void main(String[] args) throws IOException {
@@ -30,7 +33,7 @@ class HackerRankTweets {
             .lines()
             .mapToInt(
                 line -> {
-                  Matcher m = p.matcher(line);
+                  Matcher m = PATTERN.matcher(line);
                   return m.find() ? 1 : 0;
                 })
             .sum();

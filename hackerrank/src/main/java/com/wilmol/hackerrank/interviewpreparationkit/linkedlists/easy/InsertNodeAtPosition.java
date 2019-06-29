@@ -10,7 +10,9 @@ import com.wilmol.hackerrank.common.SinglyLinkedListNode;
  *
  * <p>Runtime: O(n)
  */
-class InsertNodeAtPosition {
+final class InsertNodeAtPosition {
+
+  private InsertNodeAtPosition() {}
 
   static SinglyLinkedListNode insertNodeAtPosition(
       SinglyLinkedListNode head, int data, int position) {

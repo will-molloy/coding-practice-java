@@ -16,7 +16,9 @@ import java.util.Map;
  *
  * <p>Runtime: O(n)
  */
-class SherlockValidString {
+final class SherlockValidString {
+
+  private SherlockValidString() {}
 
   // valid if char counts are equal, OR they can be made equal with one deletion
   static boolean isValid(String s) {

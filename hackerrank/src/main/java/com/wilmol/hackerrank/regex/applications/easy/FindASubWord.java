@@ -17,7 +17,9 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(nq) (n - num sentences, q - num queries)
  */
-class FindASubWord {
+final class FindASubWord {
+
+  private FindASubWord() {}
 
   static List<Long> occurrences(List<String> sentences, List<String> subWords) {
     return subWords.stream()

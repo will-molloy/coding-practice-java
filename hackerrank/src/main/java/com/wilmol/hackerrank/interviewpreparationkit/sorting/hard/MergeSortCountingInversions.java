@@ -7,7 +7,9 @@ package com.wilmol.hackerrank.interviewpreparationkit.sorting.hard;
  *
  * <p>Runtime: O(n log n)
  */
-class MergeSortCountingInversions {
+final class MergeSortCountingInversions {
+
+  private MergeSortCountingInversions() {}
 
   private static long count;
 

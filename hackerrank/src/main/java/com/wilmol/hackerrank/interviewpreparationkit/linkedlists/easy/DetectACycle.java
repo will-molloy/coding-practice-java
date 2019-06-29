@@ -9,7 +9,9 @@ import com.wilmol.hackerrank.common.SinglyLinkedListNode;
  *
  * <p>Runtime: O(n)
  */
-class DetectACycle {
+final class DetectACycle {
+
+  private DetectACycle() {}
 
   static boolean hasCycle(SinglyLinkedListNode head) {
     if (head == null) {

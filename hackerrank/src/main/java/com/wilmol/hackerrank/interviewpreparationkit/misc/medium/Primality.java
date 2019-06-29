@@ -9,7 +9,9 @@ import java.util.stream.IntStream;
  *
  * <p>Runtime: O(sqrt(n))
  */
-class Primality {
+final class Primality {
+
+  private Primality() {}
 
   static boolean primality(int n) {
     return n > 1

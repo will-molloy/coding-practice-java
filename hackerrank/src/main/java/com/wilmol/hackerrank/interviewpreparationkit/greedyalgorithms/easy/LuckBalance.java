@@ -11,7 +11,9 @@ import java.util.PriorityQueue;
  *
  * <p>Runtime: O(n log k) with O(k) extra space
  */
-class LuckBalance {
+final class LuckBalance {
+
+  private LuckBalance() {}
 
   // want to lose as many contests as possible (to maximise the luck balance)
   // options: sort the array descending and take first k elements or keep track of top 'k' elements

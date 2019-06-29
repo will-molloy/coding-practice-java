@@ -16,7 +16,9 @@ import java.util.stream.Stream;
  *
  * <p>Runtime: O(n)
  */
-class DetectHtmlTags {
+final class DetectHtmlTags {
+
+  private DetectHtmlTags() {}
 
   // match on the opening tag (may not be a closing tag)
   private static final Pattern HTML_TAG_PATTERN = Pattern.compile("(?<=<)\\s*[\\w]+(?=(\\s|>))");
