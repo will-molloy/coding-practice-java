@@ -5,17 +5,13 @@ import static java.lang.Math.max;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-03-31 at 15:04
- *
- * <p>
- *
- * <p>
+ * Created by Will on 2019-03-31 at 15:04.
  *
  * <p>Runtime: O(2n)
  *
  * @see com.wilmol.hackerrank.interviewpreparationkit.dynamic_programming.medium.Candies
  */
-public class P135_Candy {
+public class P135Candy {
 
   int candy(int[] scores) {
     if (scores.length <= 1) {

@@ -9,7 +9,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Runtime: O(n)
  */
-class P226_InvertBinaryTree {
+class P226InvertBinaryTree {
 
   BinaryTreeNode invertTree(BinaryTreeNode root) {
     if (root != null) {

@@ -3,7 +3,7 @@ package com.wilmol.leetcode.common;
 import com.google.common.base.Preconditions;
 import java.util.Objects;
 
-/** Created by Will on 2019-06-23 at 20:43 */
+/** Created by Will on 2019-06-23 at 20:43. */
 public class ListNode {
 
   public final int value;
@@ -20,12 +20,12 @@ public class ListNode {
     ListNode node = this;
     // skip first since already processed
     for (int i = 1; i < values.length; i++) {
-      node.next = new ListNode(values[i]);
+      node.next = ListNode.of(values[i]);
       node = node.next;
     }
   }
 
-  /** public constructor required for leetcode submission */
+  /** public constructor required for leetcode submission. */
   public ListNode(int value) {
     this.value = value;
   }

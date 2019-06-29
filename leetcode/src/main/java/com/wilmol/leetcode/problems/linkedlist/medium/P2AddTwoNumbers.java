@@ -3,13 +3,13 @@ package com.wilmol.leetcode.problems.linkedlist.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-06-23 at 20:43
+ * Created by Will on 2019-06-23 at 20:43.
  *
  * <p>Runtime: O(n)
  */
-public class P2_AddTwoNumbers {
+public class P2AddTwoNumbers {
 
-  public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
+  ListNode addTwoNumbers(ListNode list1, ListNode list2) {
     ListNode node = new ListNode(0);
     ListNode head = node;
     int carry = 0;

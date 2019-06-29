@@ -4,12 +4,12 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 21:49 */
-class P1_TwoSumTest {
+/** Created by Will on 2019-03-30 at 21:49. */
+class P1TwoSumTest {
 
   private static int[] EMPTY = {};
 
-  private static final P1_TwoSum OBJ = new P1_TwoSum();
+  private static final P1TwoSum OBJ = new P1TwoSum();
 
   @Test
   void hasSolutions() {
