@@ -13,7 +13,7 @@ import java.util.Arrays;
  *
  * <p>Runtime: O(2n)
  *
- * @see com.wilmol.hackerrank.interview_preparation_kit.dynamic_programming.medium.Candies
+ * @see com.wilmol.hackerrank.interviewpreparationkit.dynamic_programming.medium.Candies
  */
 public class P135_Candy {
 

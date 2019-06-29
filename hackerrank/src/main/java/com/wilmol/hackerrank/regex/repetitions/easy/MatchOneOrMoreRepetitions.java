@@ -12,7 +12,7 @@ class MatchOneOrMoreRepetitions implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d+[A-Z]+[a-z]+$");
 
-  /** +, sequence with size at least one */
+  /** +, sequence with size at least one. */
   @Override
   public Pattern pattern() {
     return PATTERN;

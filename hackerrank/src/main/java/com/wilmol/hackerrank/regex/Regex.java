@@ -27,10 +27,6 @@ public interface Regex {
    */
   Pattern pattern();
 
-  private Matcher matcher(String string) {
-    return pattern().matcher(string);
-  }
-
   default boolean matches(String string) {
     return pattern().asMatchPredicate().test(string);
   }
@@ -40,7 +36,7 @@ public interface Regex {
   }
 
   default long matchCount(String string) {
-    Matcher m = matcher(string);
+    Matcher m = pattern().matcher(string);
     return IntStream.iterate(0, n -> n + 1).takeWhile(n -> m.find()).count();
   }
 }

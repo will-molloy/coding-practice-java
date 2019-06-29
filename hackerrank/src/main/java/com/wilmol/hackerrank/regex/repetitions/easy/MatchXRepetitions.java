@@ -12,7 +12,7 @@ class MatchXRepetitions implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z02468]{40}[13579\\s]{5}$");
 
-  /** {x}, sequence with size x */
+  /** {x}, sequence with size x. */
   @Override
   public Pattern pattern() {
     return PATTERN;

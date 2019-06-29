@@ -13,9 +13,9 @@ class PositiveLookahead implements Regex {
   private static final Pattern PATTERN = Pattern.compile("o(?=oo)");
 
   /**
-   * regex_1(?=regex_2) -> only match regex_1 if it is immediately followed by regex_2
+   * regex_1(?=regex_2) -> only match regex_1 if it is immediately followed by regex_2.
    *
-   * <p>(does not return matches of regex_2)
+   * <p>(does not return matches of regex_2).
    */
   @Override
   public Pattern pattern() {

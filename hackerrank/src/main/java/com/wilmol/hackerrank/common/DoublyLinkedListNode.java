@@ -2,7 +2,7 @@ package com.wilmol.hackerrank.common;
 
 import java.util.Objects;
 
-/** Created by Will on 28/03/2019 */
+/** Created by Will on 28/03/2019. */
 public class DoublyLinkedListNode {
 
   public final int data;
@@ -26,8 +26,12 @@ public class DoublyLinkedListNode {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
     DoublyLinkedListNode that = (DoublyLinkedListNode) o;
     return data == that.data && Objects.equals(next, that.next);
   }

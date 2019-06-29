@@ -12,7 +12,7 @@ class MatchSpecificString implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("hackerrank");
 
-  /** only match this word */
+  /** only match this word. */
   @Override
   public Pattern pattern() {
     return PATTERN;

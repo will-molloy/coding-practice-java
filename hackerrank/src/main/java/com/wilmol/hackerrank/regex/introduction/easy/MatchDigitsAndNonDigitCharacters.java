@@ -13,9 +13,9 @@ class MatchDigitsAndNonDigitCharacters implements Regex {
   private static final Pattern PATTERN = Pattern.compile("\\d\\d\\D\\d\\d\\D\\d\\d\\d\\d");
 
   /**
-   * \d -> digit [0-9]
+   * \d -> digit [0-9].
    *
-   * <p>\D -> non digit
+   * <p>\D -> non digit.
    */
   @Override
   public Pattern pattern() {

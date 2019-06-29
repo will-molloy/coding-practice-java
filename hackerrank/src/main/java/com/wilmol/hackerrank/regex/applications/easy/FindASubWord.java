@@ -3,6 +3,7 @@ package com.wilmol.hackerrank.regex.applications.easy;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -41,17 +42,18 @@ class FindASubWord {
   }
 
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader reader =
+        new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
     List<String> sentences = new ArrayList<>();
     List<String> subWords = new ArrayList<>();
 
-    int numSentences = Integer.valueOf(reader.readLine());
+    int numSentences = Integer.parseInt(reader.readLine());
     for (int i = 0; i < numSentences; i++) {
       sentences.add(reader.readLine());
     }
 
-    int numQueries = Integer.valueOf(reader.readLine());
+    int numQueries = Integer.parseInt(reader.readLine());
     for (int i = 0; i < numQueries; i++) {
       subWords.add(reader.readLine());
     }

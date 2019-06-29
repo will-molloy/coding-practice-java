@@ -13,9 +13,9 @@ class NegativeLookAhead implements Regex {
   private static final Pattern PATTERN = Pattern.compile("(.)(?!\\1)");
 
   /**
-   * regex_1(?!regex_2) -> match regex_1 only if regex_2 does not appear immediately after it
+   * regex_1(?!regex_2) -> match regex_1 only if regex_2 does not appear immediately after it.
    *
-   * <p>match character which is not immediately matched by the same character
+   * <p>match character which is not immediately matched by the same character.
    */
   @Override
   public Pattern pattern() {

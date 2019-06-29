@@ -1,14 +1,14 @@
 package com.wilmol.hackerrank.regex.applications.easy;
 
 import static com.google.common.truth.Truth.assertThat;
-import static com.wilmol.hackerrank.regex.applications.easy.IPAddressValidation.Type.IPv4;
-import static com.wilmol.hackerrank.regex.applications.easy.IPAddressValidation.Type.IPv6;
-import static com.wilmol.hackerrank.regex.applications.easy.IPAddressValidation.Type.Neither;
-import static com.wilmol.hackerrank.regex.applications.easy.IPAddressValidation.addressType;
+import static com.wilmol.hackerrank.regex.applications.easy.IpAddressValidation.Type.IPv4;
+import static com.wilmol.hackerrank.regex.applications.easy.IpAddressValidation.Type.IPv6;
+import static com.wilmol.hackerrank.regex.applications.easy.IpAddressValidation.Type.Neither;
+import static com.wilmol.hackerrank.regex.applications.easy.IpAddressValidation.addressType;
 
 import org.junit.jupiter.api.Test;
 
-class IPAddressValidationTest {
+class IpAddressValidationTest {
 
   @Test
   void ipv4Addresses() {

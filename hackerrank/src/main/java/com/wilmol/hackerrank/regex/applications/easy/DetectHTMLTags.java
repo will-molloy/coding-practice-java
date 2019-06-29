@@ -2,6 +2,7 @@ package com.wilmol.hackerrank.regex.applications.easy;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -15,7 +16,7 @@ import java.util.stream.Stream;
  *
  * <p>Runtime: O(n)
  */
-class DetectHTMLTags {
+class DetectHtmlTags {
 
   // match on the opening tag (may not be a closing tag)
   private static final Pattern HTML_TAG_PATTERN = Pattern.compile("(?<=<)\\s*[\\w]+(?=(\\s|>))");
@@ -38,7 +39,8 @@ class DetectHTMLTags {
   }
 
   public static void main(String[] args) {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader reader =
+        new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     String tags = extractTags(reader.lines());
     System.out.println(tags);
   }

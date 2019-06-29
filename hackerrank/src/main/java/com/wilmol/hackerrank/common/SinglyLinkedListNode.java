@@ -2,7 +2,7 @@ package com.wilmol.hackerrank.common;
 
 import java.util.Objects;
 
-/** Created by Will on 26/03/2019 */
+/** Created by Will on 26/03/2019. */
 public class SinglyLinkedListNode {
 
   public final int data;
@@ -19,8 +19,12 @@ public class SinglyLinkedListNode {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
     SinglyLinkedListNode that = (SinglyLinkedListNode) o;
     return data == that.data && Objects.equals(next, that.next);
   }

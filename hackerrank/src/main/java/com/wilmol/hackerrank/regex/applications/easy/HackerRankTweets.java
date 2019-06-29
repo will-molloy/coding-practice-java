@@ -3,6 +3,7 @@ package com.wilmol.hackerrank.regex.applications.easy;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,7 +22,8 @@ class HackerRankTweets {
   }
 
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader reader =
+        new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     reader.readLine();
     long count =
         reader

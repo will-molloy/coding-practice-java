@@ -13,11 +13,11 @@ class MatchStartAndEnd implements Regex {
   private static final Pattern PATTERN = Pattern.compile("^\\d\\w{4}.$");
 
   /**
-   * ^ -> start of string to match
+   * ^ -> start of string to match.
    *
-   * <p>$ -> end of string to match
+   * <p>$ -> end of string to match.
    *
-   * <p>can use one or both
+   * <p>can use one or both.
    */
   @Override
   public Pattern pattern() {

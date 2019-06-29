@@ -12,7 +12,7 @@ class MatchEndingItems implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z]*s$");
 
-  /** $ asserts end of string */
+  /** $ asserts end of string. */
   @Override
   public Pattern pattern() {
     return PATTERN;

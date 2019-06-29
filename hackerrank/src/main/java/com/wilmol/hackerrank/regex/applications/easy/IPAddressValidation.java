@@ -3,6 +3,7 @@ package com.wilmol.hackerrank.regex.applications.easy;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,7 +14,7 @@ import java.util.regex.Pattern;
  *
  * <p>Runtime: O(n)
  */
-class IPAddressValidation {
+class IpAddressValidation {
 
   private static final String BYTE_REGEX = "([2][5][0-5]|[2][0-4][0-9]|[1]?[0-9]{1,2})";
 
@@ -38,9 +39,10 @@ class IPAddressValidation {
   }
 
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader reader =
+        new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     reader.readLine(); // ignore (num lines)
-    reader.lines().map(IPAddressValidation::addressType).forEach(System.out::println);
+    reader.lines().map(IpAddressValidation::addressType).forEach(System.out::println);
   }
 
   enum Type {

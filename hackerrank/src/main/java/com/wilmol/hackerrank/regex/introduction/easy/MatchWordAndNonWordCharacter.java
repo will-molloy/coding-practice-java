@@ -13,9 +13,9 @@ class MatchWordAndNonWordCharacter implements Regex {
   private static final Pattern PATTERN = Pattern.compile("\\w{3}\\W\\w{10}\\W\\w{3}");
 
   /**
-   * \w -> words [a-zA-Z0-9_]
+   * \w -> words [a-zA-Z0-9_].
    *
-   * <p>\W -> non words
+   * <p>\W -> non words.
    */
   @Override
   public Pattern pattern() {

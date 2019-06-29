@@ -13,9 +13,9 @@ class PositiveLookbehind implements Regex {
   private static final Pattern PATTERN = Pattern.compile("(?<=[13579]\\d)");
 
   /**
-   * (?<=regex_2)regex_1 -> only match regex_1 if it is immediately preceded by regex_2
+   * (?<=regex_2)regex_1 -> only match regex_1 if it is immediately preceded by regex_2.
    *
-   * <p>match digits immediately preceded by odd digits
+   * <p>match digits immediately preceded by odd digits.
    */
   @Override
   public Pattern pattern() {
