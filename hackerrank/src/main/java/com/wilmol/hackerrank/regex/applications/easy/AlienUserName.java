@@ -8,9 +8,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 13:45
+ * Created by Will on 2019-04-07 at 13:45.
  *
- * <p>https://www.hackerrank.com/challenges/alien-username/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/alien-username/problem>https://www.hackerrank.com/challenges/alien-username/problem</a>
  *
  * <p>Runtime: O(n)
  */

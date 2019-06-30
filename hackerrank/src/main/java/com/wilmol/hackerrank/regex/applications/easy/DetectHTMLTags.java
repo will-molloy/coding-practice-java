@@ -10,9 +10,10 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * Created by Will on 2019-04-07 at 11:38
+ * Created by Will on 2019-04-07 at 11:38.
  *
- * <p>https://www.hackerrank.com/challenges/detect-html-tags/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/detect-html-tags/problem>https://www.hackerrank.com/challenges/detect-html-tags/problem</a>
  *
  * <p>Runtime: O(n)
  */

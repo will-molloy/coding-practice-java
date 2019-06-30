@@ -6,6 +6,7 @@ import static com.wilmol.hackerrank.regex.applications.easy.DetectHtmlTags.extra
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 2019-04-07 at 11:38. */
 class DetectHtmlTagsTest {
 
   @Test

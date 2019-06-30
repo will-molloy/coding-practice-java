@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 15:22
+ * Created by Will on 2019-04-06 at 15:22.
  *
- * <p>https://www.hackerrank.com/challenges/alternative-matching/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/alternative-matching/problem>https://www.hackerrank.com/challenges/alternative-matching/problem</a>
  */
 class AlternativeMatching implements Regex {
 

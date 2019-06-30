@@ -6,6 +6,7 @@ import static com.wilmol.hackerrank.interviewpreparationkit.misc.medium.Primalit
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 2019-03-30 at 16:18. */
 class PrimalityTest {
 
   @Test

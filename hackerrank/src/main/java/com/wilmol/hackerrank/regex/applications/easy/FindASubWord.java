@@ -11,9 +11,10 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 2019-04-07 at 13:18
+ * Created by Will on 2019-04-07 at 13:18.
  *
- * <p>https://www.hackerrank.com/challenges/find-substring/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/find-substring/problem>https://www.hackerrank.com/challenges/find-substring/problem</a>
  *
  * <p>Runtime: O(nq) (n - num sentences, q - num queries)
  */

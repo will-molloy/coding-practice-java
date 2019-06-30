@@ -10,9 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Will on 30/03/2019
+ * Created by Will on 30/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings</a>
  *
  * <p>Runtime: O(n)
  */

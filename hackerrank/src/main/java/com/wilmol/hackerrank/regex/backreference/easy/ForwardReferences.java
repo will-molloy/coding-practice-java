@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 20:30
+ * Created by Will on 2019-04-06 at 20:30.
  *
- * <p>https://www.hackerrank.com/challenges/forward-references/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/forward-references/problem>https://www.hackerrank.com/challenges/forward-references/problem</a>
  */
 class ForwardReferences implements Regex {
 

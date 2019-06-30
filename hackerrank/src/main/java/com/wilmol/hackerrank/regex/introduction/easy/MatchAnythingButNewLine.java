@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-02 at 21:28
+ * Created by Will on 2019-04-02 at 21:28.
  *
- * <p>https://www.hackerrank.com/challenges/matching-anything-but-new-line/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-anything-but-new-line/problem>https://www.hackerrank.com/challenges/matching-anything-but-new-line/problem</a>
  */
 class MatchAnythingButNewLine implements Regex {
 

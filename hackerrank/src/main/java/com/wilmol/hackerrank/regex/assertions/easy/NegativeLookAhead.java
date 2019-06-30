@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 21:01
+ * Created by Will on 2019-04-06 at 21:01.
  *
- * <p>https://www.hackerrank.com/challenges/negative-lookahead/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/negative-lookahead/problem>https://www.hackerrank.com/challenges/negative-lookahead/problem</a>
  */
 class NegativeLookAhead implements Regex {
 

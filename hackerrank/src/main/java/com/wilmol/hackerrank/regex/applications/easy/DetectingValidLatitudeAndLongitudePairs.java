@@ -8,9 +8,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 19:01
+ * Created by Will on 2019-04-07 at 19:01.
  *
- * <p>https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem>https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem</a>
  *
  * <p>Runtime: O(n)
  */

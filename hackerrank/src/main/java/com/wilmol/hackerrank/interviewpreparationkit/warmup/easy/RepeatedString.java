@@ -1,7 +1,10 @@
 package com.wilmol.hackerrank.interviewpreparationkit.warmup.easy;
 
 /**
- * Created by Will on 24/03/2019
+ * Created by Will on 24/03/2019.
+ *
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup>https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup</a>
  *
  * <p>Print a single integer denoting the number of letter a's in the first n letters of the
  * infinite string created by repeating s infinitely many times.

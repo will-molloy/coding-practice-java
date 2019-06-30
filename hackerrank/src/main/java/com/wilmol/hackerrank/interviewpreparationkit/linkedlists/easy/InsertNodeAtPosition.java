@@ -3,10 +3,12 @@ package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 
 /**
- * Created by Will on 27/03/2019
+ * Created by Will on 27/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists
- * Insert node into linked list.
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists>https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists</a>
+ *
+ * <p>Insert node into linked list.
  *
  * <p>Runtime: O(n)
  */

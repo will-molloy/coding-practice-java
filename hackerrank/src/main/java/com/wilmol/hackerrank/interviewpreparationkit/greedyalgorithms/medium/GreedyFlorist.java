@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 30/03/2019
+ * Created by Will on 30/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/greedy-florist/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/greedy-florist/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms>https://www.hackerrank.com/challenges/greedy-florist/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms</a>
  *
  * <p>Runtime: O(n log n) - must sort?
  */

@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 13:24
+ * Created by Will on 2019-04-06 at 13:24.
  *
- * <p>https://www.hackerrank.com/challenges/matching-x-repetitions/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-x-repetitions/problem>https://www.hackerrank.com/challenges/matching-x-repetitions/problem</a>
  */
 class MatchXRepetitions implements Regex {
 

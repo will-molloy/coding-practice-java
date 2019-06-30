@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-04 at 22:37
+ * Created by Will on 2019-04-04 at 22:37.
  *
- * <p>https://www.hackerrank.com/challenges/matching-range-of-characters/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-range-of-characters/problem>https://www.hackerrank.com/challenges/matching-range-of-characters/problem</a>
  */
 class MatchRangeOfCharacters implements Regex {
 

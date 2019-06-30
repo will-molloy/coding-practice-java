@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-02 at 21:08
+ * Created by Will on 2019-04-02 at 21:08.
  *
- * <p>https://www.hackerrank.com/challenges/matching-digits-non-digit-character/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-digits-non-digit-character/problem>https://www.hackerrank.com/challenges/matching-digits-non-digit-character/problem</a>
  */
 class MatchDigitsAndNonDigitCharacters implements Regex {
 

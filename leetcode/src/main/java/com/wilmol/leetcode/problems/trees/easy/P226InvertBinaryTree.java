@@ -3,9 +3,10 @@ package com.wilmol.leetcode.problems.trees.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by Will on 2019-03-30 at 21:43
+ * Created by Will on 2019-03-30 at 21:43.
  *
- * <p>https://leetcode.com/problems/invert-binary-tree/
+ * <p><a
+ * href=https://leetcode.com/problems/invert-binary-tree>https://leetcode.com/problems/invert-binary-tree</a>
  *
  * <p>Runtime: O(n)
  */

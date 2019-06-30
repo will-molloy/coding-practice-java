@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 15:11
+ * Created by Will on 2019-04-06 at 15:11.
  *
- * <p>https://www.hackerrank.com/challenges/capturing-non-capturing-groups/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/capturing-non-capturing-groups/problem>https://www.hackerrank.com/challenges/capturing-non-capturing-groups/problem</a>
  */
 class CapturingAndNonCapturingGroups implements Regex {
 

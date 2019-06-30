@@ -7,7 +7,8 @@ import java.util.List;
 /**
  * Created by Will on 26/03/2019
  *
- * <p>https://www.hackerrank.com/challenges/max-array-sum/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/max-array-sum/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming>https://www.hackerrank.com/challenges/max-array-sum/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming</a>
  *
  * <p>Find the max subset sum where elements are not adjacent to each other in the original array.
  *

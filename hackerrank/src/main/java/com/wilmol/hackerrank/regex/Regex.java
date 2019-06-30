@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  *
  * <p>Created by Will on 2019-04-02 at 21:10
  *
- * <p>https://regex101.com/
+ * <p><a href=https://regex101.com>https://regex101.com</a>
  */
 @FunctionalInterface
 public interface Regex {
@@ -28,14 +28,14 @@ public interface Regex {
   Pattern pattern();
 
   default boolean matches(String string) {
-    return pattern().asMatchPredicate().test(string);
+    return pattern().matcher(string).matches();
   }
 
   default boolean contains(String string) {
-    return pattern().asPredicate().test(string);
+    return pattern().matcher(string).find();
   }
 
-  default long matchCount(String string) {
+  default long containsCount(String string) {
     Matcher m = pattern().matcher(string);
     return IntStream.iterate(0, n -> n + 1).takeWhile(n -> m.find()).count();
   }

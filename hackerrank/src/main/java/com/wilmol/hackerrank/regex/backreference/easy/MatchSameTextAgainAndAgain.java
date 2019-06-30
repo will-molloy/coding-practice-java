@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 18:06
+ * Created by Will on 2019-04-06 at 18:06.
  *
- * <p>https://www.hackerrank.com/challenges/matching-same-text-again-again/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-same-text-again-again/problem>https://www.hackerrank.com/challenges/matching-same-text-again-again/problem</a>
  */
 class MatchSameTextAgainAndAgain implements Regex {
 

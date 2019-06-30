@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 21:06
+ * Created by Will on 2019-04-06 at 21:06.
  *
- * <p>https://www.hackerrank.com/challenges/positive-lookbehind/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/positive-lookbehind/problem>https://www.hackerrank.com/challenges/positive-lookbehind/problem</a>
  */
 class PositiveLookbehind implements Regex {
 

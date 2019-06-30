@@ -8,9 +8,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 19:22
+ * Created by Will on 2019-04-07 at 19:22.
  *
- * <p>https://www.hackerrank.com/challenges/hackerrank-tweets/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/hackerrank-tweets/problem>https://www.hackerrank.com/challenges/hackerrank-tweets/problem</a>
  *
  * <p>Runtime: O(n)
  */

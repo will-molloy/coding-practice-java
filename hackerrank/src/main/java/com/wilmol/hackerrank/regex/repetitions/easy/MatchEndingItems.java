@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 13:17
+ * Created by Will on 2019-04-06 at 13:17.
  *
- * <p>https://www.hackerrank.com/challenges/matching-ending-items/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-ending-items/problem>https://www.hackerrank.com/challenges/matching-ending-items/problem</a>
  */
 class MatchEndingItems implements Regex {
 

@@ -5,6 +5,7 @@ import static com.wilmol.hackerrank.interviewpreparationkit.greedyalgorithms.eas
 
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 28/03/2019. */
 class MinimumAbsoluteDifferenceInAnArrayTest {
 
   @Test

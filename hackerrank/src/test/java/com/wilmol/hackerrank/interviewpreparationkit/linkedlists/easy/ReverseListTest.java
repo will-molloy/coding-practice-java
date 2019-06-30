@@ -1,9 +1,11 @@
 package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 
-import com.google.common.truth.Truth;
+import static com.google.common.truth.Truth.assertThat;
+
 import com.wilmol.hackerrank.common.DoublyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 28/03/2019. */
 class ReverseListTest {
 
   @Test
@@ -20,7 +22,7 @@ class ReverseListTest {
     expectedHead.next.next = DoublyLinkedListNode.of(1);
     expectedHead.next.next.prev = expectedHead.next;
 
-    Truth.assertThat(ReverseList.reverse(inputHead)).isEqualTo(expectedHead);
+    assertThat(ReverseList.reverse(inputHead)).isEqualTo(expectedHead);
   }
 
   @Test
@@ -29,6 +31,6 @@ class ReverseListTest {
 
     DoublyLinkedListNode expectedHead = DoublyLinkedListNode.of(1);
 
-    Truth.assertThat(ReverseList.reverse(inputHead)).isEqualTo(expectedHead);
+    assertThat(ReverseList.reverse(inputHead)).isEqualTo(expectedHead);
   }
 }

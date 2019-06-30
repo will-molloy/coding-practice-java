@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 13:55
+ * Created by Will on 2019-04-06 at 13:55.
  *
- * <p>https://www.hackerrank.com/challenges/matching-one-or-more-repititions/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-one-or-more-repititions/problem>https://www.hackerrank.com/challenges/matching-one-or-more-repititions/problem</a>
  */
 class MatchOneOrMoreRepetitions implements Regex {
 

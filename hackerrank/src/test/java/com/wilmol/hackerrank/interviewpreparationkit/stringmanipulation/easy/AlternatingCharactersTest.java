@@ -5,6 +5,7 @@ import static com.wilmol.hackerrank.interviewpreparationkit.stringmanipulation.e
 
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 30/03/2019. */
 class AlternatingCharactersTest {
 
   @Test

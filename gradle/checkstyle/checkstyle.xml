@@ -4,7 +4,9 @@
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
-    Based on google_checks.xml.
+    Based on google_checks.xml, but has a few tweaks at the bottom.
+
+    Note some checks are redundant since spotless is also used in the project.
 
     Checkstyle configuration that checks the Google coding conventions from Google Java Style
     that can be found at https://google.github.io/styleguide/javaguide.html
@@ -270,23 +272,35 @@
         <module name="AvoidNestedBlocks"/>
         <module name="StaticVariableName"/>
 
-        <!-- Ensure file author is present -->
-        <module name="RegexpSinglelineJava">
-            <property name="format" value="(Created by .+|class.*Test)"/>
-            <property name="minimum" value="1"/>
-            <property name="maximum" value="2"/>
-            <property name="message" value="Non test class must include author 'Created by ...'."/>
-        </module>
         <!-- Ensure only JUnit 5 is used -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="org\.junit\.(?!jupiter)"/>
             <property name="message" value="Only JUnit 5 can be used."/>
         </module>
-        <!-- Ensure only Google Truth is used -->
+
+        <!-- Ensure only Google Truth is used TODO add others e.g. assertEquals ???? -->
         <module name="RegexpSinglelineJava">
-            <!-- use '&lt;' for '<' since this is an xml file... -->
-            <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assertThat"/>
-            <property name="message" value="Only Google Truth assertions can be used."/>
+        <!-- use '&lt;' for '<' since this is an xml file... -->
+        <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assertThat"/>
+        <property name="message" value="Only Google Truth assertions can be used."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^(?!.*import).*?Truth.*"/>
+            <property name="message" value="Test assertions should use static imports."/>
+        </module>
+
+        <!-- Ensure links in Javadocs are tagged correctly -->
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^.*\*(?!.*href=).*?http.*$"/>
+            <property name="message" value="Link in Javadoc must be tagged '&lt;a href=...'."/>
+        </module>
+
+        <!-- Ensure file author is present -->
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^.*\*.*Created by .+ on .+"/>
+            <property name="minimum" value="1"/>
+            <property name="maximum" value="1"/>
+            <property name="message" value="Must include author 'Created by ...'."/>
         </module>
 
         <!-- Indentation is covered by spotless -->
@@ -299,7 +313,7 @@
         <!--                    <property name="arrayInitIndent" value="2"/>-->
         <!--                </module>-->
 
-        <!-- For disabling checks -->
+        <!-- For explicitly disabling checks -->
         <module name="SuppressWithNearbyCommentFilter">
             <property name="commentFormat" value="CHECKSTYLE IGNORE (\w+) FOR NEXT (\d+) LINES"/>
             <property name="checkFormat" value="$1"/>

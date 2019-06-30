@@ -1,9 +1,11 @@
 package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 
-import com.google.common.truth.Truth;
+import static com.google.common.truth.Truth.assertThat;
+
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 27/03/2019. */
 class InsertNodeAtPositionTest {
 
   @Test
@@ -16,8 +18,7 @@ class InsertNodeAtPositionTest {
     outputHead.next = SinglyLinkedListNode.of(2);
     outputHead.next.next = SinglyLinkedListNode.of(4);
     outputHead.next.next.next = SinglyLinkedListNode.of(3);
-    Truth.assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 2))
-        .isEqualTo(outputHead);
+    assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 2)).isEqualTo(outputHead);
   }
 
   @Test
@@ -30,8 +31,7 @@ class InsertNodeAtPositionTest {
     outputHead.next = SinglyLinkedListNode.of(1);
     outputHead.next.next = SinglyLinkedListNode.of(2);
     outputHead.next.next.next = SinglyLinkedListNode.of(3);
-    Truth.assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 0))
-        .isEqualTo(outputHead);
+    assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 0)).isEqualTo(outputHead);
   }
 
   @Test
@@ -44,7 +44,6 @@ class InsertNodeAtPositionTest {
     outputHead.next = SinglyLinkedListNode.of(2);
     outputHead.next.next = SinglyLinkedListNode.of(3);
     outputHead.next.next.next = SinglyLinkedListNode.of(4);
-    Truth.assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 3))
-        .isEqualTo(outputHead);
+    assertThat(InsertNodeAtPosition.insertNodeAtPosition(inputHead, 4, 3)).isEqualTo(outputHead);
   }
 }

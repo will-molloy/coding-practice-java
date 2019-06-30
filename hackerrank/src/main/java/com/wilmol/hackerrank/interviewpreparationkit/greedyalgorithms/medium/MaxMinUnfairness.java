@@ -3,9 +3,10 @@ package com.wilmol.hackerrank.interviewpreparationkit.greedyalgorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by Will on 30/03/2019
+ * Created by Will on 30/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/angry-children/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/angry-children/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms>https://www.hackerrank.com/challenges/angry-children/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms</a>
  *
  * <p>Find subset of size k from arr such that max(subset) - min(subset) is minimised
  *

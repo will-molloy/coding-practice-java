@@ -5,6 +5,7 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
+/** Created by Will on 2019-04-07 at 13:18. */
 class FindASubWordTest {
 
   @Test

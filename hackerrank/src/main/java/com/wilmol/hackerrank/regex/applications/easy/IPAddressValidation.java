@@ -4,13 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 15:25
+ * Created by Will on 2019-04-07 at 15:25.
  *
- * <p>https://www.hackerrank.com/challenges/ip-address-validation/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/ip-address-validation/problem>https://www.hackerrank.com/challenges/ip-address-validation/problem</a>
  *
  * <p>Runtime: O(n)
  */
@@ -28,13 +28,33 @@ final class IpAddressValidation {
   private static final Pattern IPV6_PATTERN =
       Pattern.compile("^(" + HEX_REGEX + ":){7}" + HEX_REGEX + "$");
 
+  enum Type {
+    IPv6 {
+      @Override
+      boolean matches(String s) {
+        return IPV6_PATTERN.matcher(s).matches();
+      }
+    },
+    IPv4 {
+      @Override
+      boolean matches(String s) {
+        return IPV4_PATTERN.matcher(s).matches();
+      }
+    },
+    Neither {
+      @Override
+      boolean matches(String s) {
+        throw new UnsupportedOperationException();
+      }
+    };
+
+    abstract boolean matches(String s);
+  }
+
   static Type addressType(String address) {
-    Matcher ipv4Matcher = IPV4_PATTERN.matcher(address);
-    if (ipv4Matcher.matches()) {
+    if (Type.IPv4.matches(address)) {
       return Type.IPv4;
-    }
-    Matcher ipv6Matcher = IPV6_PATTERN.matcher(address);
-    if (ipv6Matcher.matches()) {
+    } else if (Type.IPv6.matches(address)) {
       return Type.IPv6;
     }
     return Type.Neither;
@@ -45,11 +65,5 @@ final class IpAddressValidation {
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     reader.readLine(); // ignore (num lines)
     reader.lines().map(IpAddressValidation::addressType).forEach(System.out::println);
-  }
-
-  enum Type {
-    IPv6,
-    IPv4,
-    Neither,
   }
 }

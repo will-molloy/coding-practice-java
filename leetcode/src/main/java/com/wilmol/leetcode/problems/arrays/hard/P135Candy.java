@@ -7,9 +7,11 @@ import java.util.Arrays;
 /**
  * Created by Will on 2019-03-31 at 15:04.
  *
+ * <p><a href=https://leetcode.com/problems/candy>https://leetcode.com/problems/candy</a>
+ *
  * <p>Runtime: O(2n)
  *
- * @see com.wilmol.hackerrank.interviewpreparationkit.dynamic_programming.medium.Candies
+ * @see com.wilmol.hackerrank.interviewpreparationkit.dynamicprogramming.medium.Candies
  */
 public class P135Candy {
 

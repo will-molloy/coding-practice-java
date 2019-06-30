@@ -5,9 +5,10 @@ import static java.lang.Math.max;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-03-31 at 13:59
+ * Created by Will on 2019-03-31 at 13:59.
  *
- * <p>https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming>https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming</a>
  *
  * <p>Minimum candies required such that all kids get candies and kid with higher score than their
  * neighbours gets more than that neighbour (note: if they have same score and neighbours they could
@@ -15,9 +16,10 @@ import java.util.Arrays;
  *
  * <p>Runtime: O(2n)
  *
- * <p>Can be done in one pass -> https://leetcode.com/articles/candy/
+ * <p>Can be done in one pass -> <a
+ * href=https://leetcode.com/articles/candy>https://leetcode.com/articles/candy</a>
  *
- * @see leet_code.problems.arrays.hard.P135_Candy
+ * @see com.wilmol.leetcode.problems.arrays.hard.P135Candy
  */
 public final class Candies {
 

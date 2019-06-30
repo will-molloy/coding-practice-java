@@ -3,9 +3,10 @@ package com.wilmol.hackerrank.interviewpreparationkit.sorting.medium;
 import java.util.Objects;
 
 /**
- * Created by Will on 25/03/2019
+ * Created by Will on 25/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting>https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting</a>
  *
  * <p>Implement a Comparator
  *
@@ -30,8 +31,8 @@ public final class ComparatorInterface {
   }
 }
 
-// Comparable, Comparator, basically the same thing.. Comparator is a separate class (no clean
-// private field access)
+// Comparable, Comparator, basically the same thing..
+// Comparator is a separate class (no clean private field access)
 class Player implements Comparable<Player> {
   private final String name;
 

@@ -3,10 +3,12 @@ package com.wilmol.hackerrank.interviewpreparationkit.arrays.easy;
 import static java.lang.Math.max;
 
 /**
- * Created by Will on 24/03/2019
+ * Created by Will on 24/03/2019.
  *
- * <p>https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
- * Find the sum of the hour glass with the maximum sum.
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays>https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays</a>
+ *
+ * <p>Find the sum of the hour glass with the maximum sum.
  *
  * <p>Runtime: O(n * m)
  */

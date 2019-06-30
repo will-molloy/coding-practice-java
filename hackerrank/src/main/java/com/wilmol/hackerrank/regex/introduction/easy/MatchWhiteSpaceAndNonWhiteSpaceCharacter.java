@@ -4,9 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-04 at 20:09
+ * Created by Will on 2019-04-04 at 20:09.
  *
- * <p>https://www.hackerrank.com/challenges/matching-whitespace-non-whitespace-character/problem
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/matching-whitespace-non-whitespace-character/problem>https://www.hackerrank.com/challenges/matching-whitespace-non-whitespace-character/problem</a>
  */
 class MatchWhiteSpaceAndNonWhiteSpaceCharacter implements Regex {
 

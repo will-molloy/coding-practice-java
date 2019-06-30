@@ -6,6 +6,8 @@ import java.util.Map;
 /**
  * Created by Will on 2019-06-23 at 20:34.
  *
+ * <p><a href=https://leetcode.com/problems/two-sum>https://leetcode.com/problems/two-sum</a>
+ *
  * <p>Runtime: O(n)
  */
 public class P1TwoSum {

@@ -1,9 +1,10 @@
 package com.wilmol.hackerrank.interviewpreparationkit.sorting.hard;
 
 /**
- * Created by Will on 2019-04-02 at 20:47
+ * Created by Will on 2019-04-02 at 20:47.
  *
- * <p>https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting
+ * <p><a
+ * href=https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting>https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting</a>
  *
  * <p>Runtime: O(n log n)
  */
