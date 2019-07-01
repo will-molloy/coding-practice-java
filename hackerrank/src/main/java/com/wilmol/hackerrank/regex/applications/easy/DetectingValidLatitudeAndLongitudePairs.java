@@ -34,6 +34,7 @@ public final class DetectingValidLatitudeAndLongitudePairs {
     BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     reader.readLine(); // ignore (num lines)
+    // CHECKSTYLE IGNORE Regexp FOR NEXT 1 LINES
     reader.lines().map(line -> isValid(line) ? "Valid" : "Invalid").forEach(System.out::println);
   }
 }

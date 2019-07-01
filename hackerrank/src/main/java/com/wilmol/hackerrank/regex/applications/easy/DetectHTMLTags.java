@@ -45,6 +45,7 @@ final class DetectHtmlTags {
     BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     String tags = extractTags(reader.lines());
+    // CHECKSTYLE IGNORE Regexp FOR NEXT 1 LINES
     System.out.println(tags);
   }
 }

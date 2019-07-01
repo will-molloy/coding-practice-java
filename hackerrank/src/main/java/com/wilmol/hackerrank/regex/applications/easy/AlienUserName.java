@@ -35,6 +35,7 @@ final class AlienUserName {
         .forEach(
             line -> {
               if (isValidUserName(line)) {
+                // CHECKSTYLE IGNORE Regexp FOR NEXT 3 LINES
                 System.out.println("VALID");
               } else {
                 System.out.println("INVALID");

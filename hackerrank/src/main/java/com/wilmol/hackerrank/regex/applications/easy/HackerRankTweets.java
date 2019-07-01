@@ -38,6 +38,7 @@ final class HackerRankTweets {
                   return m.find() ? 1 : 0;
                 })
             .sum();
+    // CHECKSTYLE IGNORE Regexp FOR NEXT 1 LINES
     System.out.println(count);
   }
 }

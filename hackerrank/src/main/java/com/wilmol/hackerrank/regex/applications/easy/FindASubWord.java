@@ -61,6 +61,7 @@ final class FindASubWord {
       subWords.add(reader.readLine());
     }
 
+    // CHECKSTYLE IGNORE Regexp FOR NEXT 1 LINES
     occurrences(sentences, subWords).forEach(System.out::println);
   }
 }
