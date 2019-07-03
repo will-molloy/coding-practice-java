@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.arrays.hard;
+package com.wilmol.leetcode.problems.hard;
 
 import static com.google.common.truth.Truth.assertThat;
 

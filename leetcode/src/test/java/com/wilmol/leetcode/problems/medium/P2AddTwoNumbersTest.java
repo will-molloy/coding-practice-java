@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.linkedlist.medium;
+package com.wilmol.leetcode.problems.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 

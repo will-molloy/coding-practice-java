@@ -41,14 +41,11 @@ final class IpAddressValidation {
         return IPV4_PATTERN.matcher(s).matches();
       }
     },
-    Neither {
-      @Override
-      boolean matches(String s) {
-        throw new UnsupportedOperationException();
-      }
-    };
+    Neither;
 
-    abstract boolean matches(String s);
+    boolean matches(String s) {
+      throw new UnsupportedOperationException();
+    }
   }
 
   static Type addressType(String address) {

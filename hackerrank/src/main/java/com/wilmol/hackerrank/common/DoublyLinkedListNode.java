@@ -3,7 +3,7 @@ package com.wilmol.hackerrank.common;
 import java.util.Objects;
 
 /** Created by Will on 28/03/2019. */
-public class DoublyLinkedListNode {
+public final class DoublyLinkedListNode {
 
   public final int data;
 
@@ -11,7 +11,7 @@ public class DoublyLinkedListNode {
 
   public DoublyLinkedListNode prev;
 
-  public DoublyLinkedListNode(int data) {
+  private DoublyLinkedListNode(int data) {
     this.data = data;
   }
 

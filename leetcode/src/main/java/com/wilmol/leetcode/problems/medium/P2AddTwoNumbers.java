@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.linkedlist.medium;
+package com.wilmol.leetcode.problems.medium;
 
 import com.wilmol.leetcode.common.ListNode;
 
@@ -10,7 +10,7 @@ import com.wilmol.leetcode.common.ListNode;
  *
  * <p>Runtime: O(n)
  */
-public class P2AddTwoNumbers {
+class P2AddTwoNumbers {
 
   ListNode addTwoNumbers(ListNode list1, ListNode list2) {
     ListNode node = new ListNode(0);

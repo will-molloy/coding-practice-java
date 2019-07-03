@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.hashtable.easy;
+package com.wilmol.leetcode.problems.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 

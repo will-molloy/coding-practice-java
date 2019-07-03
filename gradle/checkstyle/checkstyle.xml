@@ -303,9 +303,8 @@
             <property name="message" value="Must include author 'Created by ...'."/>
         </module>
 
-        <!-- Ensure no printing to console -->
+        <!-- Ensure no printing to console TODO improve the regex ???? -->
         <module name="Regexp">
-            <!--  TODO improve this regex ???? -->
             <property name="format" value="((System\.(out|err))|printStackTrace|(out|err)\.(print|write|append))"/>
             <property name="ignoreComments" value="true"/>
             <property name="illegalPattern" value="true"/>

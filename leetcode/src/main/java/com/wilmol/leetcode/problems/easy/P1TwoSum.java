@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.hashtable.easy;
+package com.wilmol.leetcode.problems.easy;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * <p>Runtime: O(n)
  */
-public class P1TwoSum {
+class P1TwoSum {
 
   int[] solve(int[] ints, int target) {
     Map<Integer, Integer> map = new HashMap<>();

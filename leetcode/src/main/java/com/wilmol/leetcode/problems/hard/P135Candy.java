@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.arrays.hard;
+package com.wilmol.leetcode.problems.hard;
 
 import static java.lang.Math.max;
 
@@ -13,7 +13,7 @@ import java.util.Arrays;
  *
  * @see com.wilmol.hackerrank.interviewpreparationkit.dynamicprogramming.medium.Candies
  */
-public class P135Candy {
+class P135Candy {
 
   int candy(int[] scores) {
     if (scores.length <= 1) {

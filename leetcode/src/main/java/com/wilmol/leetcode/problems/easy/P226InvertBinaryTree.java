@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problems.trees.easy;
+package com.wilmol.leetcode.problems.easy;
 
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
