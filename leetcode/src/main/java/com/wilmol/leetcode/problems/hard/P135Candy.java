@@ -9,7 +9,7 @@ import java.util.Arrays;
  *
  * <p><a href=https://leetcode.com/problems/candy>https://leetcode.com/problems/candy</a>
  *
- * <p>Runtime: O(2n)
+ * <p>Runtime: O(2n) - two passes, left to right and right to left
  *
  * @see com.wilmol.hackerrank.interviewpreparationkit.dynamicprogramming.medium.Candies
  */

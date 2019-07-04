@@ -8,9 +8,11 @@ import java.util.Map;
  *
  * <p><a href=https://leetcode.com/problems/two-sum>https://leetcode.com/problems/two-sum</a>
  *
- * <p>Runtime: O(n)
+ * <p>Runtime: O(n) - single pass on ints, but O(n) memory too
  */
 class P1TwoSum {
+
+  private static final int[] EMPTY = new int[] {};
 
   int[] solve(int[] ints, int target) {
     Map<Integer, Integer> map = new HashMap<>();
@@ -20,6 +22,6 @@ class P1TwoSum {
       }
       map.put(target - ints[i], i);
     }
-    return new int[] {};
+    return EMPTY;
   }
 }

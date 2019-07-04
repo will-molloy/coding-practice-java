@@ -8,7 +8,7 @@ import com.wilmol.leetcode.common.ListNode;
  * <p><a
  * href=https://leetcode.com/problems/add-two-numbers>https://leetcode.com/problems/add-two-numbers</a>
  *
- * <p>Runtime: O(n)
+ * <p>Runtime: O(n + m) - single pass on each list
  */
 class P2AddTwoNumbers {
 

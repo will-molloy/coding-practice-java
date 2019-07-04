@@ -8,7 +8,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p><a
  * href=https://leetcode.com/problems/invert-binary-tree>https://leetcode.com/problems/invert-binary-tree</a>
  *
- * <p>Runtime: O(n)
+ * <p>Runtime: O(n) - see each node once
  */
 class P226InvertBinaryTree {
 

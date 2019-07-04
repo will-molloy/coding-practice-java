@@ -6,7 +6,7 @@ package com.wilmol.leetcode.problems.hard;
  * <p><a
  * href=https://leetcode.com/problems/median-of-two-sorted-arrays>https://leetcode.com/problems/median-of-two-sorted-arrays</a>
  *
- * <p>Runtime: O(n + m)
+ * <p>Runtime: O(n + m) - single pass on each array
  */
 class P4MedianOfTwoSortedArrays {
 
