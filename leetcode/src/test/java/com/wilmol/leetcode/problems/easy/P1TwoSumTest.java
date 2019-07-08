@@ -9,17 +9,17 @@ class P1TwoSumTest {
 
   private static final int[] EMPTY = {};
 
-  private static final P1TwoSum OBJ = new P1TwoSum();
+  private final P1TwoSum function = new P1TwoSum();
 
   @Test
   void hasSolutions() {
-    assertThat(OBJ.solve(new int[] {2, 7, 11, 15}, 9)).isEqualTo(new int[] {0, 1});
-    assertThat(OBJ.solve(new int[] {1, 2, 3, 4, 5, 6}, 7)).isEqualTo(new int[] {2, 3});
-    assertThat(OBJ.solve(new int[] {3, 2, 1, 0, -1, -2, -3}, -5)).isEqualTo(new int[] {5, 6});
+    assertThat(function.solve(new int[] {2, 7, 11, 15}, 9)).isEqualTo(new int[] {0, 1});
+    assertThat(function.solve(new int[] {1, 2, 3, 4, 5, 6}, 7)).isEqualTo(new int[] {2, 3});
+    assertThat(function.solve(new int[] {3, 2, 1, 0, -1, -2, -3}, -5)).isEqualTo(new int[] {5, 6});
   }
 
   @Test
   void hasNoSolution() {
-    assertThat(OBJ.solve(new int[] {1, 2, 3, 4, 5, 6}, 80)).isEqualTo(EMPTY);
+    assertThat(function.solve(new int[] {1, 2, 3, 4, 5, 6}, 80)).isEqualTo(EMPTY);
   }
 }
