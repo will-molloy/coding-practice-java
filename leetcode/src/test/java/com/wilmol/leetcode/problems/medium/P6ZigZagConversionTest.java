@@ -18,4 +18,9 @@ class P6ZigZagConversionTest {
   void example2EvenNumRows() {
     assertThat(function.convert("PAYPALISHIRING", 4)).isEqualTo("PINALSIGYAHRPI");
   }
+
+  @Test
+  void singleRow() {
+    assertThat(function.convert("hello", 1)).isEqualTo("hello");
+  }
 }
