@@ -1,10 +1,9 @@
 package com.wilmol.leetcode.common;
 
-import com.google.common.base.Preconditions;
 import java.util.Objects;
 
 /** Created by Will on 2019-06-23 at 20:43. */
-public class ListNode {
+public final class ListNode {
 
   public final int value;
 
@@ -15,7 +14,6 @@ public class ListNode {
   }
 
   private ListNode(int... values) {
-    Preconditions.checkArgument(values.length > 0);
     this.value = values[0];
     ListNode node = this;
     // skip first since already processed

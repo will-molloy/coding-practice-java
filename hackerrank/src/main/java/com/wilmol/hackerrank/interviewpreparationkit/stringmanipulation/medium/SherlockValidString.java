@@ -4,10 +4,10 @@ import static java.util.Comparator.comparingLong;
 import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.toList;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by Will on 30/03/2019.
@@ -47,7 +47,7 @@ final class SherlockValidString {
     List<Map.Entry<Long, Long>> list =
         charCountCounts.entrySet().stream()
             .sorted(comparingLong(Map.Entry::getKey))
-            .collect(toList());
+            .collect(Collectors.toList());
     long smallerCount = list.get(0).getKey();
     long smallerCountCount = list.get(0).getValue();
     long largerCount = list.get(1).getKey();

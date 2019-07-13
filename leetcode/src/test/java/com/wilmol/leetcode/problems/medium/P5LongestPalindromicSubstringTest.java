@@ -5,9 +5,9 @@ import static com.google.common.truth.Truth.assertThat;
 import org.junit.jupiter.api.Test;
 
 /** Created by Will on 2019-07-08 at 20:05. */
-class P4LongestPalindromicSubstringTest {
+class P5LongestPalindromicSubstringTest {
 
-  private final P4LongestPalindromicSubstring function = new P4LongestPalindromicSubstring();
+  private final P5LongestPalindromicSubstring function = new P5LongestPalindromicSubstring();
 
   @Test
   void example1() {

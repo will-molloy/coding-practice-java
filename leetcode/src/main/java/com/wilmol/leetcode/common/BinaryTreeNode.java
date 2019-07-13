@@ -1,6 +1,5 @@
 package com.wilmol.leetcode.common;
 
-import com.google.common.base.Preconditions;
 import java.util.Objects;
 
 /** Created by Will on 2019-03-30 at 21:49. */
@@ -17,7 +16,6 @@ public final class BinaryTreeNode {
   }
 
   private BinaryTreeNode(int... values) {
-    Preconditions.checkArgument(values.length > 0, "Tree must have at least one node.");
     this.value = values[0];
     this.left = buildLevelOrder(1, values);
     this.right = buildLevelOrder(2, values);

@@ -1,7 +1,5 @@
 package com.wilmol.hackerrank.interviewpreparationkit.stringmanipulation.easy;
 
-import com.google.common.base.Strings;
-
 /**
  * Created by Will on 30/03/2019.
  *
@@ -17,7 +15,7 @@ final class AlternatingCharacters {
   private AlternatingCharacters() {}
 
   static int alternatingCharacters(String s) {
-    if (Strings.isNullOrEmpty(s)) {
+    if (s == null || s.isEmpty()) {
       return 0;
     }
     int count = 0;

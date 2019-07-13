@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  *
  * <p>Runtime: O(n ^ 2)
  */
-class P4LongestPalindromicSubstring {
+class P5LongestPalindromicSubstring {
 
   private static final String EMPTY_STRING = "";
 
@@ -23,6 +23,7 @@ class P4LongestPalindromicSubstring {
     // TODO improvement? identify where palindrome fails, check either side of that character ???
     for (int size = s.length(); size > 0; size--) {
       for (int start = 0; start <= s.length() - size; start++) {
+        // checking for palindrome while creating substring is possible, but less readable
         String substring = s.substring(start, start + size);
         if (isPalindrome(substring)) {
           return substring;
