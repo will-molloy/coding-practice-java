@@ -19,7 +19,7 @@ import java.util.Arrays;
  * <p>Can be done in one pass -> <a
  * href=https://leetcode.com/articles/candy>https://leetcode.com/articles/candy</a>
  *
- * @see com.wilmol.leetcode.problems.arrays.hard.P135Candy
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P135Candy
  */
 public final class Candies {
 
