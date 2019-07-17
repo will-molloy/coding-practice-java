@@ -12,19 +12,26 @@ class P1114PrintInOrder {
 
   private volatile int ran;
 
-  public void first(Runnable printFirst) throws InterruptedException {
+  public synchronized void first(Runnable printFirst) throws InterruptedException {
     printFirst.run();
     ran = 1;
+    notifyAll();
   }
 
-  public void second(Runnable printSecond) throws InterruptedException {
-    while (ran < 1) {}
+  public synchronized void second(Runnable printSecond) throws InterruptedException {
+    while (ran < 1) {
+      wait();
+    }
     printSecond.run();
     ran = 2;
+    notifyAll();
   }
 
-  public void third(Runnable printThird) throws InterruptedException {
-    while (ran < 2) {}
+  public synchronized void third(Runnable printThird) throws InterruptedException {
+    while (ran < 2) {
+      wait();
+    }
     printThird.run();
+    notifyAll();
   }
 }
