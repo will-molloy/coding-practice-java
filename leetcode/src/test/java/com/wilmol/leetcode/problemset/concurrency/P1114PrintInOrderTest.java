@@ -1,6 +1,7 @@
 package com.wilmol.leetcode.problemset.concurrency;
 
 import static org.mockito.Mockito.inOrder;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 import org.junit.jupiter.api.AfterEach;
@@ -44,6 +45,8 @@ class P1114PrintInOrderTest {
     inOrder.verify(runFirst).run();
     inOrder.verify(runSecond).run();
     inOrder.verify(runThird).run();
+    inOrder.verifyNoMoreInteractions();
+    verifyNoMoreInteractions(runFirst, runSecond, runThird);
   }
 
   @Test
