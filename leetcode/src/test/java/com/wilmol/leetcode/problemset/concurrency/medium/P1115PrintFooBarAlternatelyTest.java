@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problemset.concurrency;
+package com.wilmol.leetcode.problemset.concurrency.medium;
 
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.verifyNoMoreInteractions;

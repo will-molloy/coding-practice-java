@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problemset.concurrency;
+package com.wilmol.leetcode.problemset.concurrency.medium;
 
 /**
  * Created by Will on 2019-07-18 at 21:45.

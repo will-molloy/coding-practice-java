@@ -1,4 +1,4 @@
-package com.wilmol.leetcode.problemset.concurrency;
+package com.wilmol.leetcode.problemset.concurrency.easy;
 
 /**
  * Created by will on 2019-07-17 at 8:57 PM.
@@ -12,18 +12,18 @@ class P1114PrintInOrder {
 
   private volatile int ran;
 
-  public void first(Runnable printFirst) {
+  void first(Runnable printFirst) {
     printFirst.run();
     ran = 1;
   }
 
-  public void second(Runnable printSecond) {
+  void second(Runnable printSecond) {
     while (ran < 1) {}
     printSecond.run();
     ran = 2;
   }
 
-  public void third(Runnable printThird) {
+  void third(Runnable printThird) {
     while (ran < 2) {}
     printThird.run();
   }
