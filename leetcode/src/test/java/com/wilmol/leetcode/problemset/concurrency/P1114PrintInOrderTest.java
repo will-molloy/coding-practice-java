@@ -1,20 +1,16 @@
 package com.wilmol.leetcode.problemset.concurrency;
 
 import static org.mockito.Mockito.inOrder;
+import static org.mockito.MockitoAnnotations.initMocks;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
 /** Created by will on 2019-07-17 at 9:04 PM. */
 class P1114PrintInOrderTest {
-
-  private final Logger log = Logger.getLogger(P1114PrintInOrder.class.getName());
 
   private P1114PrintInOrder object;
 
@@ -32,35 +28,11 @@ class P1114PrintInOrderTest {
 
   @BeforeEach
   void setUp() {
-    MockitoAnnotations.initMocks(this);
+    initMocks(this);
     object = new P1114PrintInOrder();
-    threadA =
-        new Thread(
-            () -> {
-              try {
-                object.first(runFirst);
-              } catch (InterruptedException e) {
-                log.log(Level.SEVERE, "error", e);
-              }
-            });
-    threadB =
-        new Thread(
-            () -> {
-              try {
-                object.second(runSecond);
-              } catch (InterruptedException e) {
-                log.log(Level.SEVERE, "error", e);
-              }
-            });
-    threadC =
-        new Thread(
-            () -> {
-              try {
-                object.third(runThird);
-              } catch (InterruptedException e) {
-                log.log(Level.SEVERE, "error", e);
-              }
-            });
+    threadA = new Thread(() -> object.first(runFirst));
+    threadB = new Thread(() -> object.second(runSecond));
+    threadC = new Thread(() -> object.third(runThird));
   }
 
   @AfterEach
