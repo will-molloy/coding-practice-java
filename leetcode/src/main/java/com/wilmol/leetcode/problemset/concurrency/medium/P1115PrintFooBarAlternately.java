@@ -6,8 +6,10 @@ package com.wilmol.leetcode.problemset.concurrency.medium;
  * <p><a
  * href=https://leetcode.com/problems/print-foobar-alternately>https://leetcode.com/problems/print-foobar-alternately</a>
  *
- * <p>Runtime: O(n) TODO why does it need object wait/notify methods and synchronised? Get time
- * limit exceeded otherwise.
+ * <p>Runtime: O(n)
+ *
+ * <p>TODO why does it need object wait/notify methods and synchronised? Get time limit exceeded
+ * otherwise. Maybe it is more efficient? I.e. notify vs. polling on while loop.
  */
 class P1115PrintFooBarAlternately {
 

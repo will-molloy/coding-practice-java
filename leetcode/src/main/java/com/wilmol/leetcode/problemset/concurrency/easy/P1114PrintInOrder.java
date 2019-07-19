@@ -6,7 +6,7 @@ package com.wilmol.leetcode.problemset.concurrency.easy;
  * <p><a
  * href=https://leetcode.com/problems/print-in-order>https://leetcode.com/problems/print-in-order</a>
  *
- * <p>Runtime: O(n)
+ * <p>Runtime: O(1)
  */
 class P1114PrintInOrder {
 

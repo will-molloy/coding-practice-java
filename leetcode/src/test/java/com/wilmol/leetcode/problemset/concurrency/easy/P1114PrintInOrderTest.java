@@ -7,10 +7,12 @@ import static org.mockito.MockitoAnnotations.initMocks;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import org.mockito.InOrder;
 import org.mockito.Mock;
 
 /** Created by will on 2019-07-17 at 9:04 PM. */
+@Timeout(value = 1)
 class P1114PrintInOrderTest {
 
   private P1114PrintInOrder object;
