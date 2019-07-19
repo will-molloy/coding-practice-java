@@ -1,15 +1,11 @@
 package com.wilmol.leetcode.problemset.concurrency.easy;
 
-import static org.mockito.Mockito.inOrder;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
-import static org.mockito.MockitoAnnotations.initMocks;
+import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import org.mockito.InOrder;
-import org.mockito.Mock;
 
 /** Created by will on 2019-07-17 at 9:04 PM. */
 @Timeout(value = 1)
@@ -17,11 +13,7 @@ class P1114PrintInOrderTest {
 
   private P1114PrintInOrder object;
 
-  @Mock private Runnable runFirst;
-
-  @Mock private Runnable runSecond;
-
-  @Mock private Runnable runThird;
+  private String s;
 
   private Thread threadA;
 
@@ -31,11 +23,11 @@ class P1114PrintInOrderTest {
 
   @BeforeEach
   void setUp() {
-    initMocks(this);
     object = new P1114PrintInOrder();
-    threadA = new Thread(() -> object.first(runFirst));
-    threadB = new Thread(() -> object.second(runSecond));
-    threadC = new Thread(() -> object.third(runThird));
+    s = "";
+    threadA = new Thread(() -> object.first(() -> s += "first"));
+    threadB = new Thread(() -> object.second(() -> s += "second"));
+    threadC = new Thread(() -> object.third(() -> s += "third"));
   }
 
   @AfterEach
@@ -43,12 +35,7 @@ class P1114PrintInOrderTest {
     threadA.join();
     threadB.join();
     threadC.join();
-    InOrder inOrder = inOrder(runFirst, runSecond, runThird);
-    inOrder.verify(runFirst).run();
-    inOrder.verify(runSecond).run();
-    inOrder.verify(runThird).run();
-    inOrder.verifyNoMoreInteractions();
-    verifyNoMoreInteractions(runFirst, runSecond, runThird);
+    assertThat(s).isEqualTo("firstsecondthird");
   }
 
   @Test
