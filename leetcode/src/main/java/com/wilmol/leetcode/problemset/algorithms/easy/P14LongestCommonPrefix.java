@@ -6,46 +6,25 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p><a
  * href=https://leetcode.com/problems/longest-common-prefix>https://leetcode.com/problems/longest-common-prefix</a>
  *
- * <p>Runtime: O(n * m) - n = number of strings, m = length of smallest string in strings
- *
- * <p>TODO check ? If all strings are equal, inner loop never runs. If no strings are equal, inner
- * loop exits on first iteration!
+ * <p>Runtime: O(n) - inner while loop does not run for each n
  *
  * <p>TODO use a trie - apparently best for very large inputs or 'live data' (i.e. new stuff being
  * added)
  */
 class P14LongestCommonPrefix {
 
-  String longestCommonPrefix(String[] strings) {
-    if (strings == null || strings.length == 0) {
+  String longestCommonPrefix(String[] strs) {
+    if (strs == null || strs.length == 0) {
       return "";
     }
-    if (strings.length == 1) {
-      return strings[0];
-    }
 
-    // discover length of the smallest string (i.e. maximum size of prefix)
-    int minLength = strings[0].length();
-    for (int i = 1; i < strings.length; i++) {
-      minLength = Math.min(strings[i].length(), minLength);
-      if (minLength == 0) {
-        return "";
+    // note: inner loop only gets smaller, it never runs completely for each n
+    String prefix = strs[0];
+    for (int i = 1; i < strs.length; i++) {
+      while (!strs[i].startsWith(prefix)) {
+        prefix = prefix.substring(0, prefix.length() - 1);
       }
     }
-
-    // move this length inwards until common prefix is found
-    // note how outer loop is over each string
-    // the prefix is moved inward for each string individually
-    // e.g. strings = [flower, flow, flight] -> minlength = 4 -> 4 -> 2
-    // therefore, never run full 'minLength' for each n, as each iteration reduces it
-    for (int i = 1; i < strings.length; i++) {
-      while (!strings[i].substring(0, minLength).equals(strings[0].substring(0, minLength))) {
-        minLength--;
-      }
-      if (minLength == 0) {
-        return "";
-      }
-    }
-    return strings[0].substring(0, minLength);
+    return prefix;
   }
 }
