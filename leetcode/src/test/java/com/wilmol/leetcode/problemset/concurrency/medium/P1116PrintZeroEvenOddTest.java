@@ -14,9 +14,14 @@ class P1116PrintZeroEvenOddTest {
 
   private P1116PrintZeroEvenOdd object = new P1116PrintZeroEvenOdd(-1);
 
-  private String s;
+  private volatile String s;
 
-  private final IntConsumer append = x -> s += x;
+  private final IntConsumer append =
+      x -> {
+        synchronized (this) {
+          s += x;
+        }
+      };
 
   @BeforeEach
   void setUp() {

@@ -13,7 +13,7 @@ class P1114PrintInOrderTest {
 
   private P1114PrintInOrder object;
 
-  private String s;
+  private volatile String s;
 
   private Thread threadA;
 
@@ -25,9 +25,33 @@ class P1114PrintInOrderTest {
   void setUp() {
     object = new P1114PrintInOrder();
     s = "";
-    threadA = new Thread(() -> object.first(() -> s += "first"));
-    threadB = new Thread(() -> object.second(() -> s += "second"));
-    threadC = new Thread(() -> object.third(() -> s += "third"));
+    threadA =
+        new Thread(
+            () ->
+                object.first(
+                    () -> {
+                      synchronized (this) {
+                        s += "first";
+                      }
+                    }));
+    threadB =
+        new Thread(
+            () ->
+                object.second(
+                    () -> {
+                      synchronized (this) {
+                        s += "second";
+                      }
+                    }));
+    threadC =
+        new Thread(
+            () ->
+                object.third(
+                    () -> {
+                      synchronized (this) {
+                        s += "third";
+                      }
+                    }));
   }
 
   @AfterEach

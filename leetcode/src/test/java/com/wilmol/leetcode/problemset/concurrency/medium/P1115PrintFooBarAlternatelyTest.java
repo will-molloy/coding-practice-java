@@ -13,11 +13,21 @@ class P1115PrintFooBarAlternatelyTest {
 
   private P1115PrintFooBarAlternately object;
 
-  private String s;
+  private volatile String s;
 
-  private Runnable printFoo = () -> s += "foo";
+  private Runnable printFoo =
+      () -> {
+        synchronized (this) {
+          s += "foo";
+        }
+      };
 
-  private Runnable printBar = () -> s += "bar";
+  private Runnable printBar =
+      () -> {
+        synchronized (this) {
+          s += "bar";
+        }
+      };
 
   @BeforeEach
   void setUp() {
