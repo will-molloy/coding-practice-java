@@ -11,9 +11,6 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
 class P10RegularExpressionMatching {
 
   public boolean isMatch(String s, String p) {
-    if (s == null || p == null) {
-      return false;
-    }
-    return s.matches(p);
+    return s != null && p != null && s.matches(p);
   }
 }
