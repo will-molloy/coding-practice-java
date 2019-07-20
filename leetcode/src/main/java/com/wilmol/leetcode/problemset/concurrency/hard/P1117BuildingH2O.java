@@ -29,7 +29,7 @@ class P1117BuildingH2O {
   void oxygen(Runnable releaseOxygen) throws InterruptedException {
     oxygen.acquire();
     releaseOxygen.run();
-    // have an oxygen, need two hyrogens
+    // have an oxygen, need two hydrogens
     hydrogen.release(2);
   }
 }
