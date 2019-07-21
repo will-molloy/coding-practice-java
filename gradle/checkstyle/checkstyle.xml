@@ -304,6 +304,13 @@
             <property name="message" value="No printing to console, use a logger."/>
         </module>
 
+        <module name="Regexp">
+            <property name="format" value="java\.util\.Stack"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="illegalPattern" value="true"/>
+            <property name="message" value="No usage of legacy Stack class, use Deque instead."/>
+        </module>
+
         <!-- Indentation is covered by spotless -->
         <!--                <module name="Indentation">-->
         <!--                    <property name="basicOffset" value="2"/>-->

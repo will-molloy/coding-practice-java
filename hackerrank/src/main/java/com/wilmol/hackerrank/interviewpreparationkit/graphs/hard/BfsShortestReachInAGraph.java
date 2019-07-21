@@ -1,6 +1,6 @@
 package com.wilmol.hackerrank.interviewpreparationkit.graphs.hard;
 
-import java.util.LinkedList;
+import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.stream.IntStream;
 
@@ -26,7 +26,7 @@ final class BfsShortestReachInAGraph {
     costs[source] = 0;
 
     // perform the BFS, finding distance to every node from the source
-    Queue<Integer> queue = new LinkedList<>();
+    Queue<Integer> queue = new ArrayDeque<>();
     queue.add(source);
     while (!queue.isEmpty()) {
       int node = queue.remove();
@@ -55,7 +55,7 @@ final class BfsShortestReachInAGraph {
     costs[source] = 0;
 
     // perform the BFS, finding distance to every node from the source
-    Queue<Integer> queue = new LinkedList<>();
+    Queue<Integer> queue = new ArrayDeque<>();
     queue.add(source);
     while (!queue.isEmpty()) {
       int node = queue.remove();
