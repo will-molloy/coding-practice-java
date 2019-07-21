@@ -15,6 +15,9 @@ import java.util.Arrays;
 class P16ThreeSumClosest {
 
   public int threeSumClosest(final int[] nums, final int target) {
+    if (nums.length < 3) {
+      return Arrays.stream(nums).sum();
+    }
     // sort first
     Arrays.sort(nums);
 

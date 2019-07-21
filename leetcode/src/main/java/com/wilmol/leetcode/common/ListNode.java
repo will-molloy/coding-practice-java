@@ -9,7 +9,16 @@ public final class ListNode {
 
   public ListNode next;
 
+  /**
+   * Creates linked list from varargs int argument.
+   *
+   * @param values int values to create list from (in order)
+   * @return head of new list (null if values is empty)
+   */
   public static ListNode of(int... values) {
+    if (values.length == 0) {
+      return null;
+    }
     return new ListNode(values);
   }
 
