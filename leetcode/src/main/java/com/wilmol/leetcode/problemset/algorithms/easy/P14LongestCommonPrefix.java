@@ -8,8 +8,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Runtime: O(n) - inner while loop does not run for each n
  *
- * <p>TODO use a trie - apparently best for very large inputs or 'live data' (i.e. new stuff being
- * added)
+ * <p>TODO use a trie - apparently best for very large inputs, and good to practice (especially for
+ * Google!)
  */
 class P14LongestCommonPrefix {
 
