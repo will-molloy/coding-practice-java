@@ -9,6 +9,8 @@ import com.wilmol.leetcode.common.ListNode;
  * href=https://leetcode.com/problems/merge-two-sorted-lists>https://leetcode.com/problems/merge-two-sorted-lists</a>
  *
  * <p>Runtime: O(n), O(1) memory
+ *
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P23MergeKSortedLists
  */
 class P21MergeTwoSortedLists {
 
