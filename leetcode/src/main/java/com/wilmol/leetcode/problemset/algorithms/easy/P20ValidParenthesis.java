@@ -30,6 +30,7 @@ class P20ValidParenthesis {
         }
       }
     }
+    // ensure all open brackets are closed
     return stack.isEmpty();
   }
 }

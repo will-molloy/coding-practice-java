@@ -19,11 +19,11 @@ class P2AddTwoNumbers {
     while (list1 != null || list2 != null || carry > 0) {
       int sum = carry;
       if (list1 != null) {
-        sum += list1.value;
+        sum += list1.val;
         list1 = list1.next;
       }
       if (list2 != null) {
-        sum += list2.value;
+        sum += list2.val;
         list2 = list2.next;
       }
       node.next = new ListNode(sum % 10);

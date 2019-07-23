@@ -5,7 +5,7 @@ import java.util.Objects;
 /** Created by Will on 2019-06-23 at 20:43. */
 public final class ListNode {
 
-  public final int value;
+  public final int val;
 
   public ListNode next;
 
@@ -23,7 +23,7 @@ public final class ListNode {
   }
 
   private ListNode(int... values) {
-    this.value = values[0];
+    this.val = values[0];
     ListNode node = this;
     // skip first since already processed
     for (int i = 1; i < values.length; i++) {
@@ -33,13 +33,13 @@ public final class ListNode {
   }
 
   /** public constructor required for leetcode submission. */
-  public ListNode(int value) {
-    this.value = value;
+  public ListNode(int val) {
+    this.val = val;
   }
 
   @Override
   public String toString() {
-    return String.format("%d, %s", value, next);
+    return String.format("%d, %s", val, next);
   }
 
   @Override
@@ -51,11 +51,11 @@ public final class ListNode {
       return false;
     }
     ListNode listNode = (ListNode) o;
-    return value == listNode.value && Objects.equals(next, listNode.next);
+    return val == listNode.val && Objects.equals(next, listNode.next);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(value, next);
+    return Objects.hash(val, next);
   }
 }
