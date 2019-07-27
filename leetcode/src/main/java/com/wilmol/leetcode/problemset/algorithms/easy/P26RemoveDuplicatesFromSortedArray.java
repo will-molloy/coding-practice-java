@@ -7,6 +7,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * href=https://leetcode.com/problems/remove-duplicates-from-sorted-array>https://leetcode.com/problems/remove-duplicates-from-sorted-array</a>
  *
  * <p>Runtime: O(n), O(1) extra memory
+ *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P80RemoveDuplicateFromSortedArray2
  */
 class P26RemoveDuplicatesFromSortedArray {
 

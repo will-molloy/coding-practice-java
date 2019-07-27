@@ -17,14 +17,14 @@ class P1115PrintFooBarAlternatelyTest {
 
   private Runnable printFoo =
       () -> {
-        synchronized (this) {
+        synchronized (object) {
           s += "foo";
         }
       };
 
   private Runnable printBar =
       () -> {
-        synchronized (this) {
+        synchronized (object) {
           s += "bar";
         }
       };
