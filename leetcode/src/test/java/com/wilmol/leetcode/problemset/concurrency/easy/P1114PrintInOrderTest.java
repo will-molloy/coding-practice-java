@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 /** Created by will on 2019-07-17 at 9:04 PM. */
-@Timeout(value = 1)
+@Timeout(value = 10)
 class P1114PrintInOrderTest {
 
-  private P1114PrintInOrder object;
+  private P1114PrintInOrder object; // lock on Object so tests can run in parallel
 
   private volatile String s;
 
@@ -30,7 +30,7 @@ class P1114PrintInOrderTest {
             () ->
                 object.first(
                     () -> {
-                      synchronized (this) {
+                      synchronized (object) {
                         s += "first";
                       }
                     }));
@@ -39,7 +39,7 @@ class P1114PrintInOrderTest {
             () ->
                 object.second(
                     () -> {
-                      synchronized (this) {
+                      synchronized (object) {
                         s += "second";
                       }
                     }));
@@ -48,7 +48,7 @@ class P1114PrintInOrderTest {
             () ->
                 object.third(
                     () -> {
-                      synchronized (this) {
+                      synchronized (object) {
                         s += "third";
                       }
                     }));

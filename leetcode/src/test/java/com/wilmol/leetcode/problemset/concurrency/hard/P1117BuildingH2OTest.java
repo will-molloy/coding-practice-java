@@ -1,6 +1,7 @@
 package com.wilmol.leetcode.problemset.concurrency.hard;
 
 import static com.google.common.truth.Truth.assertThat;
+import static java.util.Objects.requireNonNull;
 
 import com.wilmol.leetcode.common.UncheckedRunnable;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,15 +9,16 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 /** Created by Will on 2019-07-20 at 16:43. */
-@Timeout(value = 1)
+@Timeout(value = 10)
 class P1117BuildingH2OTest {
 
-  private final P1117BuildingH2O object = new P1117BuildingH2O();
+  private P1117BuildingH2O object; // lock on Object so tests can run in parallel
 
   private volatile String s;
 
   @BeforeEach
   void setUp() {
+    object = new P1117BuildingH2O();
     s = "";
   }
 
@@ -24,24 +26,26 @@ class P1117BuildingH2OTest {
     return new Thread(
         (UncheckedRunnable)
             () ->
-                object.hydrogen(
-                    () -> {
-                      synchronized (this) {
-                        s += "H";
-                      }
-                    }));
+                requireNonNull(object)
+                    .hydrogen(
+                        () -> {
+                          synchronized (object) {
+                            s += "H";
+                          }
+                        }));
   }
 
   private Thread createOxygen() {
     return new Thread(
         (UncheckedRunnable)
             () ->
-                object.oxygen(
-                    () -> {
-                      synchronized (this) {
-                        s += "O";
-                      }
-                    }));
+                requireNonNull(object)
+                    .oxygen(
+                        () -> {
+                          synchronized (object) {
+                            s += "O";
+                          }
+                        }));
   }
 
   private static void runInOrder(Thread... threads) throws InterruptedException {

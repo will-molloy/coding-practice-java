@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 /** Created by Will on 2019-07-18 at 21:50. */
-@Timeout(value = 1)
+@Timeout(value = 10)
 class P1115PrintFooBarAlternatelyTest {
 
-  private P1115PrintFooBarAlternately object;
+  private P1115PrintFooBarAlternately object; // lock on Object so tests can run in parallel
 
   private volatile String s;
 
