@@ -11,7 +11,7 @@ buildscript {
 }
 
 allprojects {
-    group 'com.wilmol'
+    group 'wilmol'
     version = '1.0.0'
 
     repositories {
