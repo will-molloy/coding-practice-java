@@ -1,4 +1,4 @@
-package wilmol.leetcode.problemset.concurrency.hard;
+package wilmol.leetcode.problemset.concurrency.medium;
 
 import java.util.concurrent.Semaphore;
 

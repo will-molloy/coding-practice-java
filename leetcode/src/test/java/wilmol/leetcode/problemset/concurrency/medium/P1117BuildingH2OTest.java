@@ -1,4 +1,4 @@
-package wilmol.leetcode.problemset.concurrency.hard;
+package wilmol.leetcode.problemset.concurrency.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 import static java.util.Objects.requireNonNull;
