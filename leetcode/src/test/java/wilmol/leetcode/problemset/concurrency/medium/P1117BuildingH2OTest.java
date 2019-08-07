@@ -12,9 +12,9 @@ import wilmol.leetcode.common.UncheckedRunnable;
 @Timeout(value = 10)
 class P1117BuildingH2OTest {
 
-  private P1117BuildingH2O object; // lock on Object so tests can run in parallel
+  private P1117BuildingH2O object; // lock on object so tests can run in parallel
 
-  private volatile String s;
+  private String s;
 
   @BeforeEach
   void setUp() {

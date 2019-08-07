@@ -13,9 +13,9 @@ import wilmol.leetcode.common.UncheckedRunnable;
 @Timeout(value = 10)
 class P1116PrintZeroEvenOddTest {
 
-  private P1116PrintZeroEvenOdd object; // lock on Object so tests can run in parallel
+  private P1116PrintZeroEvenOdd object; // lock on object so tests can run in parallel
 
-  private volatile String s;
+  private String s;
 
   private final IntConsumer append =
       x -> {
