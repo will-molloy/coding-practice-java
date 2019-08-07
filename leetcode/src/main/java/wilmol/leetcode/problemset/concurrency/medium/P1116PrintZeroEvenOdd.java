@@ -1,5 +1,6 @@
 package wilmol.leetcode.problemset.concurrency.medium;
 
+import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
@@ -12,49 +13,43 @@ import java.util.function.IntConsumer;
  */
 class P1116PrintZeroEvenOdd {
 
-  private final int n;
+  private final Semaphore zero = new Semaphore(1);
 
-  private volatile int state;
+  private final Semaphore odd = new Semaphore(0);
+
+  private final Semaphore even = new Semaphore(0);
+
+  private final int n;
 
   P1116PrintZeroEvenOdd(int n) {
     this.n = n;
   }
 
-  // printNumber.accept(x) outputs "x", where x is an integer.
-  synchronized void zero(IntConsumer printNumber) throws InterruptedException {
+  void zero(IntConsumer printNumber) throws InterruptedException {
     for (int i = 0; i < n; i++) {
-      while (state != 0 && state != 2) {
-        wait();
-      }
+      zero.acquire();
       printNumber.accept(0);
-      next();
-      notifyAll();
+      if (i % 2 == 0) {
+        odd.release();
+      } else {
+        even.release();
+      }
     }
   }
 
-  private synchronized void next() {
-    state = (state + 1) % 4;
-  }
-
-  synchronized void odd(IntConsumer printNumber) throws InterruptedException {
+  void odd(IntConsumer printNumber) throws InterruptedException {
     for (int i = 1; i <= n; i += 2) {
-      while (state != 1) {
-        wait();
-      }
+      odd.acquire();
       printNumber.accept(i);
-      next();
-      notifyAll();
+      zero.release();
     }
   }
 
-  synchronized void even(IntConsumer printNumber) throws InterruptedException {
+  void even(IntConsumer printNumber) throws InterruptedException {
     for (int i = 2; i <= n; i += 2) {
-      while (state != 3) {
-        wait();
-      }
+      even.acquire();
       printNumber.accept(i);
-      next();
-      notifyAll();
+      zero.release();
     }
   }
 }
