@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+import wilmol.leetcode.common.UncheckedRunnable;
 
 /** Created by will on 2019-07-17 at 9:04 PM. */
 @Timeout(value = 10)
@@ -27,7 +28,7 @@ class P1114PrintInOrderTest {
     s = "";
     threadA =
         new Thread(
-            () ->
+            (UncheckedRunnable)() ->
                 object.first(
                     () -> {
                       synchronized (object) {
@@ -36,7 +37,7 @@ class P1114PrintInOrderTest {
                     }));
     threadB =
         new Thread(
-            () ->
+            (UncheckedRunnable)() ->
                 object.second(
                     () -> {
                       synchronized (object) {
@@ -45,7 +46,7 @@ class P1114PrintInOrderTest {
                     }));
     threadC =
         new Thread(
-            () ->
+            (UncheckedRunnable)() ->
                 object.third(
                     () -> {
                       synchronized (object) {
