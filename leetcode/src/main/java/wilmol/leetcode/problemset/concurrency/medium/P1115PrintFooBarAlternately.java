@@ -1,5 +1,7 @@
 package wilmol.leetcode.problemset.concurrency.medium;
 
+import java.util.concurrent.Semaphore;
+
 /**
  * Created by Will on 2019-07-18 at 21:45.
  *
@@ -7,13 +9,12 @@ package wilmol.leetcode.problemset.concurrency.medium;
  * href=https://leetcode.com/problems/print-foobar-alternately>https://leetcode.com/problems/print-foobar-alternately</a>
  *
  * <p>Runtime: O(n)
- *
- * <p>TODO why does it need object wait/notify methods and synchronised? Get time limit exceeded
- * otherwise. Maybe it is more efficient? I.e. notify vs. polling on while loop.
  */
 class P1115PrintFooBarAlternately {
 
-  private volatile boolean calledFoo;
+  private final Semaphore foo = new Semaphore(1);
+
+  private final Semaphore bar = new Semaphore(0);
 
   private final int n;
 
@@ -21,25 +22,19 @@ class P1115PrintFooBarAlternately {
     this.n = n;
   }
 
-  synchronized void foo(Runnable printFoo) throws InterruptedException {
+  void foo(Runnable printFoo) throws InterruptedException {
     for (int i = 0; i < n; i++) {
-      while (calledFoo) {
-        wait();
-      }
+      foo.acquire();
       printFoo.run();
-      calledFoo = true;
-      notifyAll();
+      bar.release();
     }
   }
 
-  synchronized void bar(Runnable printBar) throws InterruptedException {
+  void bar(Runnable printBar) throws InterruptedException {
     for (int i = 0; i < n; i++) {
-      while (!calledFoo) {
-        wait();
-      }
+      bar.acquire();
       printBar.run();
-      calledFoo = false;
-      notifyAll();
+      foo.release();
     }
   }
 }

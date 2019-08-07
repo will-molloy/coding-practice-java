@@ -28,31 +28,34 @@ class P1114PrintInOrderTest {
     s = "";
     threadA =
         new Thread(
-            (UncheckedRunnable)() ->
-                object.first(
-                    () -> {
-                      synchronized (object) {
-                        s += "first";
-                      }
-                    }));
+            (UncheckedRunnable)
+                () ->
+                    object.first(
+                        () -> {
+                          synchronized (object) {
+                            s += "first";
+                          }
+                        }));
     threadB =
         new Thread(
-            (UncheckedRunnable)() ->
-                object.second(
-                    () -> {
-                      synchronized (object) {
-                        s += "second";
-                      }
-                    }));
+            (UncheckedRunnable)
+                () ->
+                    object.second(
+                        () -> {
+                          synchronized (object) {
+                            s += "second";
+                          }
+                        }));
     threadC =
         new Thread(
-            (UncheckedRunnable)() ->
-                object.third(
-                    () -> {
-                      synchronized (object) {
-                        s += "third";
-                      }
-                    }));
+            (UncheckedRunnable)
+                () ->
+                    object.third(
+                        () -> {
+                          synchronized (object) {
+                            s += "third";
+                          }
+                        }));
   }
 
   @AfterEach
