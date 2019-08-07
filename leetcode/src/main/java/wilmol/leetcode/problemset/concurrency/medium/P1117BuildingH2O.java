@@ -12,24 +12,21 @@ import java.util.concurrent.Semaphore;
  */
 class P1117BuildingH2O {
 
+  // print [HHO -> HHO] etc. to keep it simple, although not a requirement
+
   // initially allow two hydrogen and zero oxygen threads to run
   private final Semaphore hydrogen = new Semaphore(2);
-
   private final Semaphore oxygen = new Semaphore(0);
 
   void hydrogen(Runnable releaseHydrogen) throws InterruptedException {
     hydrogen.acquire();
     releaseHydrogen.run();
-    if (hydrogen.availablePermits() == 0) {
-      // have two hydrogens, need an oxygen
-      oxygen.release();
-    }
+    oxygen.release();
   }
 
   void oxygen(Runnable releaseOxygen) throws InterruptedException {
-    oxygen.acquire();
+    oxygen.acquire(2);
     releaseOxygen.run();
-    // have an oxygen, need two hydrogens
     hydrogen.release(2);
   }
 }

@@ -12,8 +12,8 @@ import java.util.concurrent.Semaphore;
  */
 class P1115PrintFooBarAlternately {
 
+  // initially allow foo thread to run
   private final Semaphore foo = new Semaphore(1);
-
   private final Semaphore bar = new Semaphore(0);
 
   private final int n;

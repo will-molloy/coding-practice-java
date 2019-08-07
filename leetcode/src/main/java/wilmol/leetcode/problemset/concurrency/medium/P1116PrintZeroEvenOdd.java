@@ -13,10 +13,9 @@ import java.util.function.IntConsumer;
  */
 class P1116PrintZeroEvenOdd {
 
+  // initially allow zero thread to run
   private final Semaphore zero = new Semaphore(1);
-
   private final Semaphore odd = new Semaphore(0);
-
   private final Semaphore even = new Semaphore(0);
 
   private final int n;

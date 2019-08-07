@@ -13,7 +13,6 @@ import java.util.concurrent.CountDownLatch;
 class P1114PrintInOrder {
 
   private final CountDownLatch first = new CountDownLatch(1);
-
   private final CountDownLatch second = new CountDownLatch(1);
 
   void first(Runnable printFirst) {
