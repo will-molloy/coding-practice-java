@@ -10,6 +10,8 @@ import java.util.Deque;
  * href=https://leetcode.com/problems/valid-parentheses>https://leetcode.com/problems/valid-parentheses</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P32LongestValidParenthesis
  */
 class P20ValidParenthesis {
 
@@ -25,6 +27,9 @@ class P20ValidParenthesis {
       } else {
         // c is closing bracket, which must match the most recent open bracket
         // which a FIFO (stack) holds in pop() method
+
+        // if single bracket type - dont need to check bracket type matches
+        // actually, could just keep a count of open brackets (no stack needed)
         if (stack.isEmpty() || c != stack.pop()) {
           return false;
         }

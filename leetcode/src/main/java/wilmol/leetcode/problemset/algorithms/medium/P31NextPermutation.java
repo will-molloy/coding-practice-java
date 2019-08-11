@@ -49,7 +49,7 @@ class P31NextPermutation {
     x[b] = temp;
   }
 
-  /** Reverses x[] starting at fromIndex. */
+  /** Reverses elements in x[] from fromIndex onwards. */
   private void reverse(int[] x, int fromIndex) {
     int i = x.length - 1;
     int j = fromIndex;
