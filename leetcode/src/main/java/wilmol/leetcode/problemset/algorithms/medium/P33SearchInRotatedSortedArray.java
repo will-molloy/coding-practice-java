@@ -7,6 +7,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * href=https://leetcode.com/problems/search-in-rotated-sorted-array>https://leetcode.com/problems/search-in-rotated-sorted-array</a>
  *
  * <p>Runtime: O(log n)
+ *
+ * @see P153FindMinimumInRotatedSortedArray
  */
 class P33SearchInRotatedSortedArray {
 
