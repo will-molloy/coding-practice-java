@@ -24,7 +24,7 @@ class P33SearchInRotatedSortedArray {
     // find index of smallest value (using binary search)
     // this is the number of places rotated (to the left) since un-rotated it would have index 0
     while (left < right) {
-      int mid = (left + right) / 2;
+      int mid = (left + right) >>> 1;
 
       if (nums[mid] > nums[right]) {
         // rotated case, smaller values are on right side
