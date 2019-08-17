@@ -1,6 +1,7 @@
 package wilmol.leetcode.common;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 /** Created by Will on 2019-03-30 at 21:49. */
 public final class BinaryTreeNode {
@@ -32,11 +33,6 @@ public final class BinaryTreeNode {
   }
 
   @Override
-  public String toString() {
-    return String.format("%d, %s, %s", value, left, right);
-  }
-
-  @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -53,5 +49,14 @@ public final class BinaryTreeNode {
   @Override
   public int hashCode() {
     return Objects.hash(value, left, right);
+  }
+
+  @Override
+  public String toString() {
+    return new StringJoiner(", ", BinaryTreeNode.class.getSimpleName() + "[", "]")
+        .add("value=" + value)
+        .add("left=" + left)
+        .add("right=" + right)
+        .toString();
   }
 }

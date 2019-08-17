@@ -1,6 +1,7 @@
 package wilmol.leetcode.common;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 /** Created by Will on 2019-06-23 at 20:43. */
 public final class ListNode {
@@ -38,11 +39,6 @@ public final class ListNode {
   }
 
   @Override
-  public String toString() {
-    return String.format("%d, %s", val, next);
-  }
-
-  @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -57,5 +53,13 @@ public final class ListNode {
   @Override
   public int hashCode() {
     return Objects.hash(val, next);
+  }
+
+  @Override
+  public String toString() {
+    return new StringJoiner(", ", ListNode.class.getSimpleName() + "[", "]")
+        .add("val=" + val)
+        .add("next=" + next)
+        .toString();
   }
 }

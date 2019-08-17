@@ -44,7 +44,7 @@ class P33SearchInRotatedSortedArray {
 
     // usual binary search, accounting for rotation
     while (left <= right) {
-      int mid = (left + right) / 2;
+      int mid = (left + right) >>> 1;
       int realMid = (mid + leftRotation) % nums.length;
 
       if (nums[realMid] > target) {
