@@ -53,7 +53,7 @@ class P35SearchInsertPosition {
       }
     }
     // should never reach here
-    throw new AssertionError(
+    throw new IllegalStateException(
         String.format(
             "Failed to find insert position. nums=%s, target=%d", Arrays.toString(nums), target));
   }
