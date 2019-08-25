@@ -11,14 +11,15 @@ import java.util.Set;
  *
  * <p><a
  * href=https://leetcode.com/problems/combination-sum>https://leetcode.com/problems/combination-sum</a>
+ *
+ * @see P40CombinationSum2
  */
 class P39CombinationSum {
 
   /**
-   * Top down recursive (DFS) solution.
+   * Top down recursive (DFS) solution. Could add more pruning.
    *
-   * <p>Runtime: TODO O(n^t) ???? it has short circuiting... hard to say, definitely does duplicate
-   * work, since solutions are equivalent if they are equal when sorted
+   * <p>Runtime: O(2^n)
    */
   static class TopDownRecursive {
 
@@ -31,14 +32,15 @@ class P39CombinationSum {
     // typical 'permutations' (DFS) implementation
     private Set<List<Integer>> solve(
         Set<List<Integer>> result, List<Integer> temp, int[] candidates, int target) {
+      if (target < 0) {
+        // early exit
+        return result;
+      }
       if (target == 0) {
+        // sort to distinguish duplicate solutions
         List<Integer> copy = new ArrayList<>(temp);
         Collections.sort(copy);
         result.add(copy);
-      }
-      if (target <= 0) {
-        // early exit
-        return result;
       }
 
       for (int candidate : candidates) {
@@ -54,7 +56,8 @@ class P39CombinationSum {
   /**
    * Bottom up iterative (dynamic programming) solution.
    *
-   * <p>Runtime: O(nt)
+   * <p>Runtime: O(nt) (TODO some are saying its still O(2^n)... since you still have to generate
+   * all solutions. Maybe DFS with pruning is preferred (for simplicity/memory cost).
    */
   static class BottomUpIterative {
 
