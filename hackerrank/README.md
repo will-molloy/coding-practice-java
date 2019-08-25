@@ -5,5 +5,3 @@
   * https://www.hackerrank.com/interview/interview-preparation-kit
 * Regex 
   * https://www.hackerrank.com/domains/regex
-* SQL 
-  * https://www.hackerrank.com/domains/sql
