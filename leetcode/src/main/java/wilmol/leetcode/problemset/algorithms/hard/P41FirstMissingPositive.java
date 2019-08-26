@@ -1,0 +1,45 @@
+package wilmol.leetcode.problemset.algorithms.hard;
+
+/**
+ * Created by wilmol on 2019-08-25.
+ *
+ * <p><a
+ * href=https://leetcode.com/problems/first-missing-positive>https://leetcode.com/problems/first-missing-positive</a>
+ *
+ * <p>Runtime: O(n), O(1) extra memory
+ */
+class P41FirstMissingPositive {
+
+  public int firstMissingPositive(int[] nums) {
+    // first pass: swap positive values to their position ('sort' them for this problem)
+    // i.e. index 0 = 1, index 1 = 2...
+    // works because there is at most 'nums.length' positive values
+    for (int i = 0; i < nums.length; i++) {
+      int num = nums[i];
+      if (num > 0 && num < nums.length && i != num - 1) {
+        swap(nums, num - 1, i);
+        // may have swapped a value out of position, so decrement the index
+        // (check not same value else infinite loop)
+        if (nums[num - 1] != nums[i]) {
+          i -= 1;
+        }
+      }
+    }
+
+    // second pass: return first missing value, trivial now that nums is 'sorted'
+    int missing = 1;
+    for (int num : nums) {
+      if (missing != num) {
+        break;
+      }
+      missing += 1;
+    }
+    return missing;
+  }
+
+  private static void swap(int[] x, int a, int b) {
+    int t = x[a];
+    x[a] = x[b];
+    x[b] = t;
+  }
+}
