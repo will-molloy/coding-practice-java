@@ -1,0 +1,26 @@
+originUrl = "git@github.com:wilmol/coding-practice-java.git"
+destinationUrl = "git@github.com:wilmol/code-kata-java.git"
+
+# java -jar copybara_deploy.jar copy.bara.sky --ignore-noop
+# --dry-run
+core.workflow(
+    name = "default",
+    origin = git.origin(
+        url = originUrl,
+        ref = "master",
+    ),
+    destination = git.destination(
+        url = destinationUrl,
+        fetch = "master",
+        push = "master",
+    ),
+
+    origin_files = glob(["projecteuler/**", "leetcode/**", "hackerrank/**", "gradle/**", "copybara/external/**",
+        ".gitattributes", ".gitignore", "build.gradle", "gradlew", "gradlew.bat", "LICENSE",]),
+
+    mode = "ITERATIVE",
+    authoring = authoring.pass_thru("wilmol <willjoemolloy@gmail.com>"),
+    transformations = [
+        core.move("copybara/external", ""),
+    ],
+)
