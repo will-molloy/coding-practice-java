@@ -4,14 +4,13 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Objects;
 
 /** Created by Will on 24/03/2019. */
+@SuppressFBWarnings("UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD")
 public final class BinaryTreeNode {
 
   public final int data;
 
-  @SuppressFBWarnings("UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD")
   public BinaryTreeNode left;
 
-  @SuppressFBWarnings("UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD")
   public BinaryTreeNode right;
 
   private BinaryTreeNode(int data) {
