@@ -1,4 +1,4 @@
-package wilmol.hackerrank.interviewpreparationkit.hashtables.easy;
+package wilmol.hackerrank.interviewpreparationkit.dictionarieshashmaps.easy;
 
 import java.util.Arrays;
 import java.util.Map;

@@ -3,6 +3,7 @@ package wilmol.hackerrank.interviewpreparationkit.sorting.medium;
 import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
+import wilmol.hackerrank.interviewpreparationkit.sorting.medium.ComparatorInterface.Player;
 
 /** Created by Will on 25/03/2019. */
 class ComparatorInterfaceTest {

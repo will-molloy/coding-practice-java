@@ -29,45 +29,45 @@ public final class ComparatorInterface {
     }
     return players;
   }
-}
 
-// Comparable, Comparator, basically the same thing..
-// Comparator is a separate class (no clean private field access)
-class Player implements Comparable<Player> {
-  private final String name;
+  // Comparable, Comparator, basically the same thing..
+  // Comparator is a separate class (no clean private field access)
+  static class Player implements Comparable<Player> {
+    private final String name;
 
-  private final int score;
+    private final int score;
 
-  Player(String name, int score) {
-    this.name = name;
-    this.score = score;
-  }
-
-  @Override
-  public int compareTo(Player that) {
-    if (this.score != that.score) {
-      // prefer by score descending
-      return Integer.compare(that.score, this.score);
-    } else {
-      // but if same score, by name ascending
-      return this.name.compareTo(that.name);
+    Player(String name, int score) {
+      this.name = name;
+      this.score = score;
     }
-  }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
+    @Override
+    public int compareTo(Player that) {
+      if (this.score != that.score) {
+        // prefer by score descending
+        return Integer.compare(that.score, this.score);
+      } else {
+        // but if same score, by name ascending
+        return this.name.compareTo(that.name);
+      }
     }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    Player player = (Player) o;
-    return score == player.score && Objects.equals(name, player.name);
-  }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(name, score);
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) {
+        return true;
+      }
+      if (o == null || getClass() != o.getClass()) {
+        return false;
+      }
+      Player player = (Player) o;
+      return score == player.score && Objects.equals(name, player.name);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(name, score);
+    }
   }
 }

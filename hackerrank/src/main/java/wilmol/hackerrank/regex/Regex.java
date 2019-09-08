@@ -2,7 +2,6 @@ package wilmol.hackerrank.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.IntStream;
 
 /**
  * Wraps a {@link java.util.regex} {@link Pattern} and {@link Matcher} for convenience.
@@ -27,16 +26,41 @@ public interface Regex {
    */
   Pattern pattern();
 
+  /**
+   * Determines if the given String matches this Regex.
+   *
+   * @param string string to test
+   * @return {@code true} if the string matches this regex otherwise {@code false}
+   * @see Matcher#matches()
+   */
   default boolean matches(String string) {
     return pattern().matcher(string).matches();
   }
 
+  /**
+   * Determines if any substring in the given String matches this Regex.
+   *
+   * @param string string to test
+   * @return {@code true} if any substring in the string matches this regex otherwise {@code false}
+   * @see Matcher#find()
+   */
   default boolean contains(String string) {
     return pattern().matcher(string).find();
   }
 
+  /**
+   * Counts the number of substrings in the given String which match this Regex.
+   *
+   * @param string string to test
+   * @return count of how many substrings in the given string match this regex
+   * @see Matcher#find()
+   */
   default long containsCount(String string) {
     Matcher m = pattern().matcher(string);
-    return IntStream.iterate(0, n -> n + 1).takeWhile(n -> m.find()).count();
+    int count = 0;
+    while (m.find()) {
+      count++;
+    }
+    return count;
   }
 }

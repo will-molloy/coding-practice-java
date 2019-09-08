@@ -1,4 +1,4 @@
-package wilmol.hackerrank.interviewpreparationkit.hashtables.medium;
+package wilmol.hackerrank.interviewpreparationkit.dictionarieshashmaps.medium;
 
 import java.util.HashMap;
 import java.util.HashSet;

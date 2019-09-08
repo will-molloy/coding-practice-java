@@ -1,4 +1,4 @@
-package wilmol.hackerrank.interviewpreparationkit.hashtables.medium;
+package wilmol.hackerrank.interviewpreparationkit.dictionarieshashmaps.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 

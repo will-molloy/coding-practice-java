@@ -250,8 +250,7 @@
 
         <!-- wilmol edits below: -->
 
-        <!-- Inconvenient for this project, re-enable later? -->
-        <!--        <module name="OneTopLevelClass"/>-->
+        <module name="OneTopLevelClass"/>
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
         <module name="RedundantImport"/>
