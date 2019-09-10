@@ -1,11 +1,17 @@
 package wilmol.hackerrank.interviewpreparationkit.recursionbacktracking.easy;
 
 import static com.google.common.truth.Truth.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
 /** Created by wilmol on 2019-09-09. */
 class RecursionFibonacciNumbersTest {
+
+  @Test()
+  void negativeInput() {
+    assertThrows(IllegalArgumentException.class, () -> RecursionFibonacciNumbers.fibonacci(-1));
+  }
 
   @Test
   void testCase0() {
