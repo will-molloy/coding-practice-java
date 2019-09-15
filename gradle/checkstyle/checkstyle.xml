@@ -287,7 +287,7 @@
             <property name="message" value="Link in Javadoc must be tagged '&lt;a href=...'."/>
         </module>
 
-        <!-- Ensure file author is present -->
+        <!-- Ensure file author is present TODO use @author instead? -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="^.*\*.*Created by .+ on .+"/>
             <property name="minimum" value="1"/>
