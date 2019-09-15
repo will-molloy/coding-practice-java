@@ -11,20 +11,23 @@ import java.util.regex.Pattern;
  * Created by wilmol on 2019-09-15.
  *
  * <p><a
- * href=https://www.hackerrank.com/challenges/utopian-identification-number/problem>https://www.hackerrank.com/challenges/utopian-identification-number/problem</a>
+ * href=https://www.hackerrank.com/challenges/valid-pan-format/problem>https://www.hackerrank.com/challenges/valid-pan-format/problem</a>
  *
  * <p>Runtime: O(n)
- *
- * @see AlienUserName
  */
-final class UtopianIdentificationNumber {
+final class ValidPanFormat {
 
-  private UtopianIdentificationNumber() {}
+  private ValidPanFormat() {}
 
-  private static final Pattern ID_PATTERN = Pattern.compile("^[a-z]{0,3}\\d{2,8}[A-Z]{3,}$");
+  private static final String CHAR = "[A-Z]";
+
+  private static final String DIGIT = "[0-9]";
+
+  private static final Pattern PAN_PATTERN =
+      Pattern.compile("^" + CHAR + "{5}" + DIGIT + "{4}" + CHAR + "$");
 
   static boolean isValid(String userName) {
-    Matcher m = ID_PATTERN.matcher(userName);
+    Matcher m = PAN_PATTERN.matcher(userName);
     return m.matches();
   }
 
@@ -38,9 +41,9 @@ final class UtopianIdentificationNumber {
             line -> {
               if (isValid(line)) {
                 // CHECKSTYLE IGNORE Regexp FOR NEXT 3 LINES
-                System.out.println("VALID");
+                System.out.println("YES");
               } else {
-                System.out.println("INVALID");
+                System.out.println("NO");
               }
             });
   }
