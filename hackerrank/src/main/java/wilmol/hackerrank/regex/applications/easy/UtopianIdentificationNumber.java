@@ -8,23 +8,23 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 13:45.
+ * Created by wilmol on 2019-09-15.
  *
  * <p><a
- * href=https://www.hackerrank.com/challenges/alien-username/problem>https://www.hackerrank.com/challenges/alien-username/problem</a>
+ * href=https://www.hackerrank.com/challenges/utopian-identification-number/problem>https://www.hackerrank.com/challenges/utopian-identification-number/problem</a>
  *
  * <p>Runtime: O(n)
  *
- * @see UtopianIdentificationNumber
+ * @see AlienUserName
  */
-final class AlienUserName {
+class UtopianIdentificationNumber {
 
-  private AlienUserName() {}
+  private UtopianIdentificationNumber() {}
 
-  private static final Pattern USER_NAME_PATTERN = Pattern.compile("^(_|[.])\\d+[a-zA-Z]*_?$");
+  private static final Pattern ID_PATTERN = Pattern.compile("^[a-z]{0,3}\\d{2,8}[A-Z]{3,}$");
 
-  static boolean isValidUserName(String userName) {
-    Matcher m = USER_NAME_PATTERN.matcher(userName);
+  static boolean isValid(String userName) {
+    Matcher m = ID_PATTERN.matcher(userName);
     return m.matches();
   }
 
@@ -36,7 +36,7 @@ final class AlienUserName {
         .lines()
         .forEach(
             line -> {
-              if (isValidUserName(line)) {
+              if (isValid(line)) {
                 // CHECKSTYLE IGNORE Regexp FOR NEXT 3 LINES
                 System.out.println("VALID");
               } else {
