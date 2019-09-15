@@ -11,20 +11,23 @@ import java.util.regex.Pattern;
  * Created by wilmol on 2019-09-15.
  *
  * <p><a
- * href=https://www.hackerrank.com/challenges/utopian-identification-number/problem>https://www.hackerrank.com/challenges/utopian-identification-number/problem</a>
+ * href=https://www.hackerrank.com/challenges/hackerrank-language/problem>https://www.hackerrank.com/challenges/hackerrank-language/problem</a>
  *
  * <p>Runtime: O(n)
- *
- * @see AlienUserName
  */
-final class UtopianIdentificationNumber {
+final class HackerRankLanguage {
 
-  private UtopianIdentificationNumber() {}
+  private HackerRankLanguage() {}
 
-  private static final Pattern ID_PATTERN = Pattern.compile("^[a-z]{0,3}\\d{2,8}[A-Z]{3,}$");
+  // the api_id check is incorrect (should be 10^4 <= api_id < 10^5)
+  // hackerrank has poor test coverage for it
+  private static final Pattern LANGUAGE_PATTERN =
+      Pattern.compile(
+          // CHECKSTYLE IGNORE LineLength FOR NEXT 1 LINES
+          "^\\d{5,6} (C|CPP|JAVA|PYTHON|PERL|PHP|RUBY|CSHARP|HASKELL|CLOJURE|BASH|SCALA|ERLANG|CLISP|LUA|BRAINFUCK|JAVASCRIPT|GO|D|OCAML|R|PASCAL|SBCL|DART|GROOVY|OBJECTIVEC)$");
 
-  static boolean isValid(String line) {
-    Matcher m = ID_PATTERN.matcher(line);
+  static boolean isValidLanguage(String line) {
+    Matcher m = LANGUAGE_PATTERN.matcher(line);
     return m.matches();
   }
 
@@ -36,7 +39,7 @@ final class UtopianIdentificationNumber {
         .lines()
         .forEach(
             line -> {
-              if (isValid(line)) {
+              if (isValidLanguage(line)) {
                 // CHECKSTYLE IGNORE Regexp FOR NEXT 3 LINES
                 System.out.println("VALID");
               } else {

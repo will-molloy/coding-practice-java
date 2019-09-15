@@ -26,8 +26,8 @@ final class ValidPanFormat {
   private static final Pattern PAN_PATTERN =
       Pattern.compile("^" + CHAR + "{5}" + DIGIT + "{4}" + CHAR + "$");
 
-  static boolean isValid(String userName) {
-    Matcher m = PAN_PATTERN.matcher(userName);
+  static boolean isValid(String line) {
+    Matcher m = PAN_PATTERN.matcher(line);
     return m.matches();
   }
 
