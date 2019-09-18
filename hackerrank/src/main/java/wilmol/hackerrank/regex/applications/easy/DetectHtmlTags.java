@@ -16,6 +16,8 @@ import java.util.stream.Stream;
  * href=https://www.hackerrank.com/challenges/detect-html-tags/problem>https://www.hackerrank.com/challenges/detect-html-tags/problem</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @see DetectHtmlAttributes
  */
 final class DetectHtmlTags {
 

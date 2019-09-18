@@ -19,12 +19,14 @@ final class SplitThePhoneNumber {
 
   private SplitThePhoneNumber() {}
 
+  // not using other capturing groups (e.g. (-| )) so its simpler to extract the groups
   private static final Pattern PHONE_NUMBER_PATTERN =
       Pattern.compile("^(\\d{1,3})[\\- ](\\d{1,3})[\\- ](\\d{4,10})$");
 
   static String splitNumber(String phoneNumber) {
     Matcher m = PHONE_NUMBER_PATTERN.matcher(phoneNumber);
     if (m.matches()) {
+      // group 0 is the overall match
       return String.format(
           "CountryCode=%s,LocalAreaCode=%s,Number=%s", m.group(1), m.group(2), m.group(3));
     }
