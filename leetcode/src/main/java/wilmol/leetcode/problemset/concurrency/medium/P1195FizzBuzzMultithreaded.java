@@ -1,5 +1,6 @@
 package wilmol.leetcode.problemset.concurrency.medium;
 
+import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
@@ -14,65 +15,61 @@ import java.util.function.IntConsumer;
  */
 class P1195FizzBuzzMultithreaded {
 
-  // TODO how to use semaphore here? FizzBuzz would be acquired when both Fizz and Buzz are ???
-
   private final int n;
 
-  private int state = 1;
+  // initially print a number
+  private final Semaphore number = new Semaphore(1);
+  private final Semaphore fizz = new Semaphore(0);
+  private final Semaphore buzz = new Semaphore(0);
+  private final Semaphore fizzBuzz = new Semaphore(0);
 
   public P1195FizzBuzzMultithreaded(int n) {
     this.n = n;
   }
 
-  // printFizz.run() outputs "fizz".
-  public synchronized void fizz(Runnable printFizz) throws InterruptedException {
-    while (state <= n) {
-      if (!(state % 3 == 0 && state % 5 != 0)) {
-        wait();
-        continue; // force while loop condition to be rechecked
-      }
+  public void fizz(Runnable printFizz) throws InterruptedException {
+    for (int i = 3; i <= n; i += 3) {
+      fizz.acquire();
       printFizz.run();
-      state++;
-      notifyAll();
+      number.release();
+      if (i % 15 == 0) {
+        i += 3;
+      }
     }
   }
 
-  // printBuzz.run() outputs "buzz".
-  public synchronized void buzz(Runnable printBuzz) throws InterruptedException {
-    while (state <= n) {
-      if (!(state % 3 != 0 && state % 5 == 0)) {
-        wait();
-        continue; // force while loop condition to be rechecked
-      }
+  public void buzz(Runnable printBuzz) throws InterruptedException {
+    for (int i = 5; i <= n; i += 5) {
+      buzz.acquire();
       printBuzz.run();
-      state++;
-      notifyAll();
+      number.release();
+      if (i % 15 == 0) {
+        i += 5;
+      }
     }
   }
 
-  // printFizzBuzz.run() outputs "fizzbuzz".
-  public synchronized void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
-    while (state <= n) {
-      if (!(state % 3 == 0 && state % 5 == 0)) {
-        wait();
-        continue; // force while loop condition to be rechecked
-      }
+  public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+    for (int i = 15; i <= n; i += 15) {
+      fizzBuzz.acquire();
       printFizzBuzz.run();
-      state++;
-      notifyAll();
+      number.release();
     }
   }
 
-  // printNumber.accept(x) outputs "x", where x is an integer.
-  public synchronized void number(IntConsumer printNumber) throws InterruptedException {
-    while (state <= n) {
-      if (!(state % 3 != 0 && state % 5 != 0)) {
-        wait();
-        continue; // force while loop condition to be rechecked
+  public void number(IntConsumer printNumber) throws InterruptedException {
+    for (int i = 1; i <= n; i++) {
+      number.acquire();
+      if (i % 15 == 0) {
+        fizzBuzz.release();
+      } else if (i % 3 == 0) {
+        fizz.release();
+      } else if (i % 5 == 0) {
+        buzz.release();
+      } else {
+        printNumber.accept(i);
+        number.release();
       }
-      printNumber.accept(state);
-      state++;
-      notifyAll();
     }
   }
 }
