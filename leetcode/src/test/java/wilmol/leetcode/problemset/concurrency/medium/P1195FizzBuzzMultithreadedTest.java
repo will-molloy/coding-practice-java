@@ -5,20 +5,22 @@ import static java.util.Objects.requireNonNull;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.IntFunction;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 import wilmol.leetcode.common.UncheckedRunnable;
 
 /** Created by wilmol on 2019-09-20. */
 @Timeout(value = 10)
 class P1195FizzBuzzMultithreadedTest {
 
-  private P1195FizzBuzzMultithreaded object; // lock on object so tests can run in parallel
-
   private List<String> output;
 
-  private Thread fizzThread() {
+  private Thread fizzThread(P1195FizzBuzzMultithreaded object) {
     return new Thread(
         (UncheckedRunnable)
             () ->
@@ -27,13 +29,12 @@ class P1195FizzBuzzMultithreadedTest {
                         () -> {
                           synchronized (object) {
                             output.add("fizz");
-                            System.out.println("fizz");
                           }
                         }),
         "fizz");
   }
 
-  private Thread buzzThread() {
+  private Thread buzzThread(P1195FizzBuzzMultithreaded object) {
     return new Thread(
         (UncheckedRunnable)
             () ->
@@ -42,13 +43,12 @@ class P1195FizzBuzzMultithreadedTest {
                         () -> {
                           synchronized (object) {
                             output.add("buzz");
-                            System.out.println("buzz");
                           }
                         }),
         "buzz");
   }
 
-  private Thread fizzBuzzThread() {
+  private Thread fizzBuzzThread(P1195FizzBuzzMultithreaded object) {
     return new Thread(
         (UncheckedRunnable)
             () ->
@@ -57,13 +57,12 @@ class P1195FizzBuzzMultithreadedTest {
                         () -> {
                           synchronized (object) {
                             output.add("fizzbuzz");
-                            System.out.println("fizzbuzz");
                           }
                         }),
         "fizzbuzz");
   }
 
-  private Thread numberThread() {
+  private Thread numberThread(P1195FizzBuzzMultithreaded object) {
     return new Thread(
         (UncheckedRunnable)
             () ->
@@ -72,7 +71,6 @@ class P1195FizzBuzzMultithreadedTest {
                         (x) -> {
                           synchronized (object) {
                             output.add(String.valueOf(x));
-                            System.out.println(x);
                           }
                         }),
         "number");
@@ -92,38 +90,44 @@ class P1195FizzBuzzMultithreadedTest {
     output = new ArrayList<>();
   }
 
-  @Test
-  void endOnFizz() throws InterruptedException {
-    object = new P1195FizzBuzzMultithreaded(3);
-    run(fizzThread(), buzzThread(), fizzBuzzThread(), numberThread());
+  @ParameterizedTest
+  @MethodSource("objectSource")
+  void endOnFizz(IntFunction<P1195FizzBuzzMultithreaded> objectF) throws InterruptedException {
+    P1195FizzBuzzMultithreaded object = objectF.apply(3);
+    run(fizzThread(object), buzzThread(object), fizzBuzzThread(object), numberThread(object));
     assertThat(output).containsExactly("1", "2", "fizz").inOrder();
   }
 
-  @Test
-  void endOnBuzz() throws InterruptedException {
-    object = new P1195FizzBuzzMultithreaded(5);
-    run(fizzThread(), buzzThread(), fizzBuzzThread(), numberThread());
+  @ParameterizedTest
+  @MethodSource("objectSource")
+  void endOnBuzz(IntFunction<P1195FizzBuzzMultithreaded> objectF) throws InterruptedException {
+    P1195FizzBuzzMultithreaded object = objectF.apply(5);
+    run(fizzThread(object), buzzThread(object), fizzBuzzThread(object), numberThread(object));
     assertThat(output).containsExactly("1", "2", "fizz", "4", "buzz").inOrder();
   }
 
-  @Test
-  void endOnNumberStart() throws InterruptedException {
-    object = new P1195FizzBuzzMultithreaded(7);
-    run(fizzThread(), buzzThread(), fizzBuzzThread(), numberThread());
+  @ParameterizedTest
+  @MethodSource("objectSource")
+  void endOnNumberStart(IntFunction<P1195FizzBuzzMultithreaded> objectF)
+      throws InterruptedException {
+    P1195FizzBuzzMultithreaded object = objectF.apply(7);
+    run(fizzThread(object), buzzThread(object), fizzBuzzThread(object), numberThread(object));
     assertThat(output).containsExactly("1", "2", "fizz", "4", "buzz", "fizz", "7").inOrder();
   }
 
-  @Test
-  void endOnNumberEnd() throws InterruptedException {
-    object = new P1195FizzBuzzMultithreaded(8);
-    run(fizzThread(), buzzThread(), fizzBuzzThread(), numberThread());
+  @ParameterizedTest
+  @MethodSource("objectSource")
+  void endOnNumberEnd(IntFunction<P1195FizzBuzzMultithreaded> objectF) throws InterruptedException {
+    P1195FizzBuzzMultithreaded object = objectF.apply(8);
+    run(fizzThread(object), buzzThread(object), fizzBuzzThread(object), numberThread(object));
     assertThat(output).containsExactly("1", "2", "fizz", "4", "buzz", "fizz", "7", "8").inOrder();
   }
 
-  @Test
-  void endOnFizzBuzz() throws InterruptedException {
-    object = new P1195FizzBuzzMultithreaded(15);
-    run(fizzThread(), buzzThread(), fizzBuzzThread(), numberThread());
+  @ParameterizedTest
+  @MethodSource("objectSource")
+  void endOnFizzBuzz(IntFunction<P1195FizzBuzzMultithreaded> objectF) throws InterruptedException {
+    P1195FizzBuzzMultithreaded object = objectF.apply(15);
+    run(fizzThread(object), buzzThread(object), fizzBuzzThread(object), numberThread(object));
     assertThat(output)
         .containsExactly(
             "1",
@@ -142,5 +146,18 @@ class P1195FizzBuzzMultithreadedTest {
             "14",
             "fizzbuzz")
         .inOrder();
+  }
+
+  static Stream<Arguments> objectSource() {
+    return Stream.of(
+        Arguments.of(
+            (IntFunction<P1195FizzBuzzMultithreaded>)
+                P1195FizzBuzzMultithreaded.WaitNotifySolution::new),
+        Arguments.of(
+            (IntFunction<P1195FizzBuzzMultithreaded>)
+                P1195FizzBuzzMultithreaded.SemaphoreSolution::new),
+        Arguments.of(
+            (IntFunction<P1195FizzBuzzMultithreaded>)
+                P1195FizzBuzzMultithreaded.ReentrantLockSolution::new));
   }
 }
