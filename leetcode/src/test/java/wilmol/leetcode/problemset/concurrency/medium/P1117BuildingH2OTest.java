@@ -32,7 +32,8 @@ class P1117BuildingH2OTest {
                           synchronized (object) {
                             s += "H";
                           }
-                        }));
+                        }),
+        "hydrogen");
   }
 
   private Thread createOxygen() {
@@ -45,10 +46,11 @@ class P1117BuildingH2OTest {
                           synchronized (object) {
                             s += "O";
                           }
-                        }));
+                        }),
+        "oxygen");
   }
 
-  private static void runInOrder(Thread... threads) throws InterruptedException {
+  private static void run(Thread... threads) throws InterruptedException {
     for (Thread t : threads) {
       t.start();
     }
@@ -62,7 +64,7 @@ class P1117BuildingH2OTest {
     Thread h1 = createHydrogen();
     Thread h2 = createHydrogen();
     Thread o = createOxygen();
-    runInOrder(h1, o, h2);
+    run(h1, o, h2);
     assertThat(s).isAnyOf("HHO", "HOH", "OHH");
   }
 
@@ -74,7 +76,7 @@ class P1117BuildingH2OTest {
     Thread h4 = createHydrogen();
     Thread o1 = createOxygen();
     Thread o2 = createOxygen();
-    runInOrder(o1, o2, h1, h2, h3, h4);
+    run(o1, o2, h1, h2, h3, h4);
     assertThat(s)
         .isAnyOf(
             "HHOHHO", "HOHHHO", "OHHHHO", "HHOHOH", "HOHHOH", "OHHHOH", "HHOOHH", "HOHOHH",

@@ -9,6 +9,8 @@ import java.util.concurrent.Semaphore;
  * href=https://leetcode.com/problems/building-h2o>https://leetcode.com/problems/building-h2o</a>
  *
  * <p>Runtime: O(n)
+ *
+ * <p>Print in consistent manner to simplify the requirements.
  */
 class P1117BuildingH2O {
 
