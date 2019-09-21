@@ -155,9 +155,9 @@ class P1195FizzBuzzMultithreadedTest {
                 P1195FizzBuzzMultithreaded.WaitNotifySolution::new),
         Arguments.of(
             (IntFunction<P1195FizzBuzzMultithreaded>)
-                P1195FizzBuzzMultithreaded.SemaphoreSolution::new),
+                P1195FizzBuzzMultithreaded.ReentrantLockSolution::new),
         Arguments.of(
             (IntFunction<P1195FizzBuzzMultithreaded>)
-                P1195FizzBuzzMultithreaded.ReentrantLockSolution::new));
+                P1195FizzBuzzMultithreaded.SemaphoreSolution::new));
   }
 }
