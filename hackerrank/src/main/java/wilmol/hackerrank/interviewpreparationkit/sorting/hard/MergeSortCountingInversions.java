@@ -12,12 +12,15 @@ final class MergeSortCountingInversions {
 
   private MergeSortCountingInversions() {}
 
-  private static long count;
+  // use static 'global' variable per invocation such that a standard mergesort can be used with few
+  // modifications (avoid passing additional args etc..)
+  // threadlocal such that tests can run in parallel
+  private static final ThreadLocal<Long> COUNT = new ThreadLocal<>();
 
   static long countInversions(int[] arr) {
-    count = 0L;
+    COUNT.set(0L);
     mergeSort(arr, new int[arr.length], 0, arr.length - 1);
-    return count;
+    return COUNT.get();
   }
 
   private static void mergeSort(int[] arr, int[] copy, int start, int end) {
@@ -52,7 +55,7 @@ final class MergeSortCountingInversions {
         // smaller element in right side
         // count of inversions is number of elements the element moves over (i.e. from right to
         // left)
-        count += mid + 1 - left;
+        COUNT.set(COUNT.get() + mid + 1 - left);
         arr[i] = copy[right];
         i += 1;
         right += 1;
