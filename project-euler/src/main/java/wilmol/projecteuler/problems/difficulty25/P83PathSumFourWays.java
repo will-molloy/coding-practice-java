@@ -1,0 +1,61 @@
+package wilmol.projecteuler.problems.difficulty25;
+
+import static wilmol.projecteuler.problems.difficulty10.P81PathSumTwoWays.constructGraph;
+import static wilmol.projecteuler.problems.difficulty10.P81PathSumTwoWays.shortestPathsDijkstra;
+
+import com.google.common.graph.ValueGraph;
+import org.apache.commons.lang3.tuple.Pair;
+import wilmol.projecteuler.problems.difficulty10.P81PathSumTwoWays;
+import wilmol.projecteuler.problems.difficulty20.P82PathSumThreeWays;
+
+/**
+ * Created by Will on 2019-03-30 at 23:12.
+ *
+ * <p><a href=https://projecteuler.net/problem=83>https://projecteuler.net/problem=83</a>
+ *
+ * <p>Runtime: TODO
+ *
+ * @see P81PathSumTwoWays
+ * @see P82PathSumThreeWays
+ * @see P83PathSumFourWays
+ */
+public final class P83PathSumFourWays {
+
+  private P83PathSumFourWays() {}
+
+  static int shortestPath(int[][] matrix) {
+    // given matrix where num rows = num cols
+    int size = matrix[0].length * matrix[0].length;
+
+    // reuse P81 graph builder
+    ValueGraph<Integer, Integer> graph =
+        constructGraph(
+            matrix,
+            (rowColSize, nodesWithCosts, mutableValueGraph) ->
+                (costIgnored, node) -> {
+                  if ((node + 1) % rowColSize != 0) { // need modulo since flattened to 1D array
+                    // right (not in last col)
+                    Pair<Integer, Integer> costNode = nodesWithCosts.get(node + 1);
+                    mutableValueGraph.putEdgeValue(node, costNode.getRight(), costNode.getLeft());
+                  }
+                  if (node + rowColSize < size) {
+                    // down (not in last row)
+                    Pair<Integer, Integer> costNode = nodesWithCosts.get(node + rowColSize);
+                    mutableValueGraph.putEdgeValue(node, costNode.getRight(), costNode.getLeft());
+                  }
+                  if ((node - rowColSize) > 0) {
+                    // up (not in first row)
+                    Pair<Integer, Integer> costNode = nodesWithCosts.get(node - rowColSize);
+                    mutableValueGraph.putEdgeValue(node, costNode.getRight(), costNode.getLeft());
+                  }
+                  if (node % rowColSize != 0) {
+                    // left (not in first col)
+                    Pair<Integer, Integer> costNode = nodesWithCosts.get(node - 1);
+                    mutableValueGraph.putEdgeValue(node, costNode.getRight(), costNode.getLeft());
+                  }
+                });
+
+    // reuse P81 dijkstra
+    return matrix[0][0] + shortestPathsDijkstra(graph, 0)[size - 1];
+  }
+}
