@@ -17,7 +17,7 @@
     To completely disable a check, just comment it out or delete it from the file.
  -->
 
-<module name = "Checker">
+<module name="Checker">
     <property name="charset" value="UTF-8"/>
 
     <property name="severity" value="warning"/>
@@ -264,30 +264,33 @@
         <module name="AvoidNestedBlocks"/>
         <module name="StaticVariableName"/>
 
+        <!-- Regexp for test files (note assumes checkstyle runs on test files!) -->
         <!-- Ensure only JUnit 5 is used -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="org\.junit\.(?!jupiter)"/>
-            <property name="message" value="Only JUnit 5 can be used."/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="Only JUnit 5 runners can be used."/>
         </module>
-
-        <!-- Ensure only Google Truth is used TODO add others e.g. assertEquals ???? -->
+        <!-- Ensure only Google Truth is used -->
         <module name="RegexpSinglelineJava">
-        <!-- use '&lt;' for '<' since this is an xml file... -->
-        <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assertThat"/>
-        <property name="message" value="Only Google Truth assertions can be used."/>
+            <!-- use '&lt;' for '<' since this is an xml file... -->
+            <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assert(?!Throws)"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="Only Google Truth assertions can be used (other than JUnit 5 assertThrows)."/>
         </module>
         <module name="RegexpSinglelineJava">
             <property name="format" value="^(?!.*import).*?Truth.*"/>
+            <property name="ignoreComments" value="true"/>
             <property name="message" value="Test assertions should use static imports."/>
         </module>
 
+        <!-- Regexp for JavaDoc -->
         <!-- Ensure links in Javadocs are tagged correctly -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="^.*\*(?!.*href=).*?http.*$"/>
             <property name="message" value="Link in Javadoc must be tagged '&lt;a href=...'."/>
         </module>
-
-        <!-- Ensure file author is present TODO use @author instead? -->
+        <!-- Ensure class author is present TODO use @author instead? -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="^.*\*.*Created by .+ on .+"/>
             <property name="minimum" value="1"/>
@@ -295,19 +298,34 @@
             <property name="message" value="Must include author 'Created by ...'."/>
         </module>
 
-        <!-- Ensure no printing to console TODO improve the regex ???? -->
-        <module name="Regexp">
+        <!-- General Regexp -->
+        <!-- Ensure no printing to console TODO there is an IDEA inspection for this ???? -->
+        <module name="RegexpSinglelineJava">
             <property name="format" value="((System\.(out|err))|printStackTrace|(out|err)\.(print|write|append))"/>
             <property name="ignoreComments" value="true"/>
-            <property name="illegalPattern" value="true"/>
-            <property name="message" value="No printing to console, use a logger."/>
+            <property name="message" value="No printing to console, use more robust logging."/>
         </module>
 
-        <module name="Regexp">
-            <property name="format" value="java\.util\.Stack"/>
+        <!-- "legacy" core APIs that no one who values their livelihood should ever use -->
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="import java[.]util[.]Stack"/>
             <property name="ignoreComments" value="true"/>
-            <property name="illegalPattern" value="true"/>
-            <property name="message" value="No usage of legacy Stack class, use Deque instead."/>
+            <property name="message" value="No usage of legacy Stack class, use ArrayDeque instead."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="import java[.]util[.]Vector"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="No usage of legacy Vector class, use ArrayList instead."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="import java[.](util|text)[.].*?(Date|Calendar)"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="No usage of legacy date classes, use java.time instead."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="import java[.]util[.]HashTable"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="No usage of legacy HashTable class, use HashMap or ConcurrentHashMap instead."/>
         </module>
 
         <!-- Indentation is covered by spotless -->
@@ -319,6 +337,13 @@
         <!--                    <property name="lineWrappingIndentation" value="4"/>-->
         <!--                    <property name="arrayInitIndent" value="2"/>-->
         <!--                </module>-->
+        <!--        <module name="RightCurly">-->
+        <!--            <property name="id" value="RightCurlyAlone"/>-->
+        <!--            <property name="option" value="alone"/>-->
+        <!--            <property name="tokens"-->
+        <!--                      value="CLASS_DEF, METHOD_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,-->
+        <!--                    INSTANCE_INIT"/>-->
+        <!--        </module>-->
 
         <!-- For explicitly disabling checks -->
         <module name="SuppressWithNearbyCommentFilter">
