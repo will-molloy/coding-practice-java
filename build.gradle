@@ -3,10 +3,14 @@ buildscript {
         maven {
             url 'https://plugins.gradle.org/m2/'
         }
+        maven {
+            url 'https://dl.bintray.com/kotlin/kotlin-dev'
+        }
     }
     dependencies {
         classpath 'com.diffplug.spotless:spotless-plugin-gradle:3.22.0'
         classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.8'
+        classpath 'org.jetbrains.intellij.plugins:inspection-plugin:0.3.2'
     }
 }
 
@@ -33,6 +37,7 @@ subprojects {
         }
     }
 
+    // Static analysis
     // Checkstyle (static analysis - code quality/style)
     apply plugin: 'checkstyle'
     checkstyle {
@@ -42,7 +47,6 @@ subprojects {
         maxWarnings = 0
         ignoreFailures = false
     }
-
     // SpotBugs (static analysis - find possible bugs, performance issues etc.)
     apply plugin: 'com.github.spotbugs'
     spotbugs {
@@ -57,6 +61,26 @@ subprojects {
             xml.enabled = false
         }
     }
+    // IDEA inspections (more static analysis - similar to checkstyle)
+    // TODO why does it spit out a bunch of warnings (Illegal reflective access... ???) and slow (but works??)
+//    apply plugin: 'org.jetbrains.intellij.inspections'
+//    inspections {
+//        toolVersion 'ideaIC:2019.1.4'
+//        errors.max = 0
+//        warnings.max = 0
+//        warning('FieldMayBeFinal')
+////        warning('ConstantOnWrongSideOfComparison')
+//        warning('EqualsCalledOnEnumConstant')
+//        warning('ClassWithMultipleLoggers')
+//        warning('LoggerInitializedWithForeignClass')
+//        warning('LoggingConditionDisagreesWithLogStatement')
+//        warning('MapReplaceableByEnumMap')
+//        warning('SetReplaceableByEnumSet')
+//        warning('SizeReplaceableByIsEmpty')
+//        warning('StringEqualsEmptyString')
+//        warning('ObsoleteCollection')
+//        warning('OptionalContainsCollection')
+//    }
 
     // Tests
     test {
@@ -67,7 +91,6 @@ subprojects {
             events 'failed'
         }
     }
-
     // JaCoCo (code coverage reporting)
     apply plugin: 'jacoco'
     jacocoTestReport {

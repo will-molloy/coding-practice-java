@@ -4,7 +4,7 @@
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
-    Based on google_checks.xml, but has a few tweaks at the bottom.
+    Based on google_checks.xml, but has a few tweaks (see the bottom).
 
     Note some checks are redundant since spotless is also used in the project.
 
@@ -250,6 +250,7 @@
 
         <!-- wilmol edits below: -->
 
+        <!-- added checks -->
         <module name="OneTopLevelClass"/>
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
@@ -264,6 +265,24 @@
         <module name="AvoidNestedBlocks"/>
         <module name="StaticVariableName"/>
 
+        <!-- removed checks -->
+        <!-- Indentation is covered by spotless -->
+        <!--                <module name="Indentation">-->
+        <!--                    <property name="basicOffset" value="2"/>-->
+        <!--                    <property name="braceAdjustment" value="0"/>-->
+        <!--                    <property name="caseIndent" value="2"/>-->
+        <!--                    <property name="throwsIndent" value="4"/>-->
+        <!--                    <property name="lineWrappingIndentation" value="4"/>-->
+        <!--                    <property name="arrayInitIndent" value="2"/>-->
+        <!--                </module>-->
+        <!--        <module name="RightCurly">-->
+        <!--            <property name="id" value="RightCurlyAlone"/>-->
+        <!--            <property name="option" value="alone"/>-->
+        <!--            <property name="tokens"-->
+        <!--                      value="CLASS_DEF, METHOD_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,-->
+        <!--                    INSTANCE_INIT"/>-->
+        <!--        </module>-->
+
         <!-- Regexp for test files (note assumes checkstyle runs on test files!) -->
         <!-- Ensure only JUnit 5 is used -->
         <module name="RegexpSinglelineJava">
@@ -276,7 +295,8 @@
             <!-- use '&lt;' for '<' since this is an xml file... -->
             <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth\.)assert(?!Throws)"/>
             <property name="ignoreComments" value="true"/>
-            <property name="message" value="Only Google Truth assertions can be used (other than JUnit 5 assertThrows)."/>
+            <property name="message"
+                      value="Only Google Truth assertions can be used (other than JUnit 5 assertThrows)."/>
         </module>
         <module name="RegexpSinglelineJava">
             <property name="format" value="^(?!.*import).*?Truth.*"/>
@@ -318,32 +338,16 @@
             <property name="message" value="No usage of legacy Vector class, use ArrayList instead."/>
         </module>
         <module name="RegexpSinglelineJava">
-            <property name="format" value="import java[.](util|text)[.].*?(Date|Calendar)"/>
+            <property name="format" value="import java[.](util|text)[.].*(Date|Calendar)"/>
             <property name="ignoreComments" value="true"/>
             <property name="message" value="No usage of legacy date classes, use java.time instead."/>
         </module>
         <module name="RegexpSinglelineJava">
             <property name="format" value="import java[.]util[.]HashTable"/>
             <property name="ignoreComments" value="true"/>
-            <property name="message" value="No usage of legacy HashTable class, use HashMap or ConcurrentHashMap instead."/>
+            <property name="message"
+                      value="No usage of legacy HashTable class, use HashMap or ConcurrentHashMap instead."/>
         </module>
-
-        <!-- Indentation is covered by spotless -->
-        <!--                <module name="Indentation">-->
-        <!--                    <property name="basicOffset" value="2"/>-->
-        <!--                    <property name="braceAdjustment" value="0"/>-->
-        <!--                    <property name="caseIndent" value="2"/>-->
-        <!--                    <property name="throwsIndent" value="4"/>-->
-        <!--                    <property name="lineWrappingIndentation" value="4"/>-->
-        <!--                    <property name="arrayInitIndent" value="2"/>-->
-        <!--                </module>-->
-        <!--        <module name="RightCurly">-->
-        <!--            <property name="id" value="RightCurlyAlone"/>-->
-        <!--            <property name="option" value="alone"/>-->
-        <!--            <property name="tokens"-->
-        <!--                      value="CLASS_DEF, METHOD_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,-->
-        <!--                    INSTANCE_INIT"/>-->
-        <!--        </module>-->
 
         <!-- For explicitly disabling checks -->
         <module name="SuppressWithNearbyCommentFilter">

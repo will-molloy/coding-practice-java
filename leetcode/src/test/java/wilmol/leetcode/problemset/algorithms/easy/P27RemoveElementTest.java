@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 /** Created by Will on 2019-07-28 at 00:10. */
 class P27RemoveElementTest {
 
-  private P27RemoveElement fun = new P27RemoveElement();
+  private final P27RemoveElement fun = new P27RemoveElement();
 
   @Test
   void example1() {

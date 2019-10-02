@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /** Created by Will on 2019-07-28 at 16:48. */
 class P28ImplementStrStrTest {
 
-  private P28ImplementStrStr fun = new P28ImplementStrStr();
+  private final P28ImplementStrStr fun = new P28ImplementStrStr();
 
   @Test
   void example1() {
