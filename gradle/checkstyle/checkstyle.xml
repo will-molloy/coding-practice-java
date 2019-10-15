@@ -292,10 +292,11 @@
         </module>
         <!-- Ensure only Google Truth is used -->
         <module name="RegexpSinglelineJava">
+            <!-- use '&lt;' for '<' since this is an xml file... -->
             <property name="format" value="import.*(?&lt;!static com\.google\.common\.truth\.Truth8?\.)assert(?!Throws)"/>
             <property name="ignoreComments" value="true"/>
             <property name="message"
-                      value="Use Truth assertions (other than JUnit 5 assertThrows)."/>
+                      value="Only Google Truth assertions can be used (other than JUnit 5 assertThrows)."/>
         </module>
         <module name="RegexpSinglelineJava">
             <property name="format" value="^(?!.*import).*?Truth.*"/>
@@ -309,7 +310,7 @@
             <property name="format" value="^.*\*(?!.*href=).*?http.*$"/>
             <property name="message" value="Link in Javadoc must be tagged '&lt;a href=...'."/>
         </module>
-        <!-- Ensure class author is present TODO use @author instead? -->
+        <!-- Ensure class author is present TODO use @author instead? there is actually a specific checkstyle for this (one of the Javadoc ones) -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="^.*\*.*Created by .+ on .+"/>
             <property name="minimum" value="1"/>
@@ -318,14 +319,13 @@
         </module>
 
         <!-- General Regexp -->
-        <!-- Ensure no printing to console TODO there is an IDEA inspection for this ???? -->
+        <!-- Ensure no printing to console TODO there is an IDEA inspection for this -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="((System\.(out|err))|printStackTrace|(out|err)\.(print|write|append))"/>
             <property name="ignoreComments" value="true"/>
             <property name="message" value="No printing to console, use more robust logging."/>
         </module>
-
-        <!-- "legacy" core APIs that no one who values their livelihood should ever use -->
+        <!-- "legacy" core APIs that no one who values their livelihood should ever use TODO there is an IDEA inspection for this -->
         <module name="RegexpSinglelineJava">
             <property name="format" value="import java[.]util[.]Stack"/>
             <property name="ignoreComments" value="true"/>
@@ -348,7 +348,7 @@
                       value="No usage of legacy HashTable class, use HashMap or ConcurrentHashMap instead."/>
         </module>
 
-        <!-- For explicitly disabling checks -->
+        <!-- For explicitly disabling checks TODO use suppression filter instead ???? -->
         <module name="SuppressWithNearbyCommentFilter">
             <property name="commentFormat" value="CHECKSTYLE IGNORE (\w+) FOR NEXT (\d+) LINES"/>
             <property name="checkFormat" value="$1"/>
