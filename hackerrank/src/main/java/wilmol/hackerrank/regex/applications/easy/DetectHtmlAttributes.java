@@ -85,6 +85,7 @@ final class DetectHtmlAttributes {
   public static void main(String... args) throws IOException {
     try (BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
+      // initial line won't have any html, don't worry about it
       Stream<String> lines = reader.lines();
       List<String> extractedTagsAndAttributes = extractTags(lines);
       // CHECKSTYLE IGNORE Regexp FOR NEXT 1 LINES
