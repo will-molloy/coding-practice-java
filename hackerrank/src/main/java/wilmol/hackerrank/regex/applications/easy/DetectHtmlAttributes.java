@@ -24,6 +24,9 @@ import java.util.stream.Stream;
  *
  * <p>Runtime: O(n)
  *
+ * <p>Key: capturing groups to extract entire opening tag, then capturing group to extract
+ * attributes using {@code find()}.
+ *
  * @see DetectHtmlTags
  */
 final class DetectHtmlAttributes {
