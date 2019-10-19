@@ -299,7 +299,7 @@
                       value="Only Google Truth assertions can be used (other than JUnit 5 assertThrows)."/>
         </module>
         <module name="RegexpSinglelineJava">
-            <property name="format" value="^(?!.*import).*?Truth.*"/>
+            <property name="format" value="^(?!.*import static).*?Truth.*"/>
             <property name="ignoreComments" value="true"/>
             <property name="message" value="Test assertions should use static imports."/>
         </module>
