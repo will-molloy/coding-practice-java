@@ -1,4 +1,4 @@
-package wilmol.hackerrank.regex.applications.medium;
+package wilmol.hackerrank.regex.applications.easy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,22 +12,20 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-10-19.
+ * Created by wilmol on 2019-10-20.
  *
  * <p><a
- * href=https://www.hackerrank.com/challenges/find-a-word/problem>https://www.hackerrank.com/challenges/find-a-word/problem</a>
+ * href=https://www.hackerrank.com/challenges/uk-and-us/problem>https://www.hackerrank.com/challenges/uk-and-us/problem</a>
  *
  * <p>Runtime: O(s + w)
  *
- * <p>Key: preprocessing using hashmap, and a simple capturing group.
+ * <p>Key: preprocess with hashmap.
  *
- * @see wilmol.hackerrank.regex.applications.easy.TheBritishAndAmericanStyleOfSpelling
+ * @see wilmol.hackerrank.regex.applications.medium.FindAWord
  */
-final class FindAWord {
+final class TheBritishAndAmericanStyleOfSpelling {
 
-  private FindAWord() {}
-
-  private static final Pattern WORD_PATTERN = Pattern.compile("(\\w+)");
+  private static final Pattern WORD_PATTERN = Pattern.compile("(\\w+?[sz]e)");
 
   static List<Integer> process(List<String> lines) {
     int numSentences = Integer.parseInt(lines.get(0));
@@ -37,24 +35,24 @@ final class FindAWord {
   }
 
   private static List<Integer> countWords(List<String> sentences, List<String> words) {
-    // count all the sentences words into a hashmap, then iterate the words list
-    // (this way only process sentences and words once, classic memory trade off)
-
-    Map<String, Integer> allWordCounts = new HashMap<>();
+    // count potential words into map (use american spelling, since that's whats in words list)
+    // O(s)
+    Map<String, Integer> map = new HashMap<>();
     for (String sentence : sentences) {
       Matcher wordMatcher = WORD_PATTERN.matcher(sentence);
       while (wordMatcher.find()) {
         String word = wordMatcher.group(1);
-        allWordCounts.put(word, allWordCounts.getOrDefault(word, 0) + 1);
+        String americanWord = word.substring(0, word.length() - 2) + "ze";
+        map.put(americanWord, map.getOrDefault(americanWord, 0) + 1);
       }
     }
 
-    return words.stream()
-        .map(word -> allWordCounts.getOrDefault(word, 0))
-        .collect(Collectors.toList());
+    // count each word using the O(1) map lookup
+    // O(w)
+    return words.stream().map(word -> map.getOrDefault(word, 0)).collect(Collectors.toList());
   }
 
-  public static void main(String... args) throws IOException {
+  public static void main(String[] args) throws IOException {
     try (BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
       List<String> lines = reader.lines().collect(Collectors.toList());
@@ -63,4 +61,6 @@ final class FindAWord {
       wordCounts.forEach(System.out::println);
     }
   }
+
+  private TheBritishAndAmericanStyleOfSpelling() {}
 }
