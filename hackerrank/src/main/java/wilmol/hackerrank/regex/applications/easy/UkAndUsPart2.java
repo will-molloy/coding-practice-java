@@ -1,4 +1,4 @@
-package wilmol.hackerrank.regex.applications.medium;
+package wilmol.hackerrank.regex.applications.easy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,23 +12,21 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-10-19.
+ * Created by wilmol on 2019-10-20.
  *
  * <p><a
- * href=https://www.hackerrank.com/challenges/find-a-word/problem>https://www.hackerrank.com/challenges/find-a-word/problem</a>
+ * href=https://www.hackerrank.com/challenges/uk-and-us-2/problem>https://www.hackerrank.com/challenges/uk-and-us-2/problem</a>
  *
  * <p>Runtime: O(s + w)
  *
- * <p>Key: preprocessing using hashmap, and a simple capturing group.
+ * <p>Key: hashmap to preprocess, and key selection (use what'll be looked up).
  *
- * @see wilmol.hackerrank.regex.applications.easy.TheBritishAndAmericanStyleOfSpelling
- * @see wilmol.hackerrank.regex.applications.easy.UkAndUsPart2
+ * @see TheBritishAndAmericanStyleOfSpelling
+ * @see wilmol.hackerrank.regex.applications.medium.FindAWord
  */
-final class FindAWord {
+final class UkAndUsPart2 {
 
-  private FindAWord() {}
-
-  private static final Pattern WORD_PATTERN = Pattern.compile("(\\w+)");
+  private static final Pattern WORD_PATTERN = Pattern.compile("(\\w+ou?r\\w*)");
 
   static List<Integer> process(List<String> lines) {
     int numSentences = Integer.parseInt(lines.get(0));
@@ -38,25 +36,22 @@ final class FindAWord {
   }
 
   private static List<Integer> countWords(List<String> sentences, List<String> words) {
-    // count all the sentences words into a hashmap, then iterate the words list
-    // (this way only process sentences and words once, classic memory trade off)
-    // i.e. get O(s + w) rather than O(sw)
-
-    Map<String, Integer> allWordCounts = new HashMap<>();
+    // once again use map to count frequencies, so runtime is O(s + w) rather than O(sw)
+    // use british spelling as key since that's whats in words list
+    Map<String, Integer> map = new HashMap<>();
     for (String sentence : sentences) {
       Matcher wordMatcher = WORD_PATTERN.matcher(sentence);
       while (wordMatcher.find()) {
         String word = wordMatcher.group(1);
-        allWordCounts.put(word, allWordCounts.getOrDefault(word, 0) + 1);
+        String britishWord = word.replaceAll("or", "our");
+        map.put(britishWord, map.getOrDefault(britishWord, 0) + 1);
       }
     }
 
-    return words.stream()
-        .map(word -> allWordCounts.getOrDefault(word, 0))
-        .collect(Collectors.toList());
+    return words.stream().map(word -> map.getOrDefault(word, 0)).collect(Collectors.toList());
   }
 
-  public static void main(String... args) throws IOException {
+  public static void main(String[] args) throws IOException {
     try (BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
       List<String> lines = reader.lines().collect(Collectors.toList());
@@ -65,4 +60,6 @@ final class FindAWord {
       wordCounts.forEach(System.out::println);
     }
   }
+
+  private UkAndUsPart2() {}
 }
