@@ -13,9 +13,8 @@ buildscript {
 }
 
 allprojects {
-    group 'com.wilmol'
+    group 'wilmol'
     version = '1.0.0'
-
     repositories {
         mavenCentral()
     }
@@ -26,7 +25,7 @@ subprojects {
     sourceCompatibility = 11.0
     targetCompatibility = 11.0
 
-    // Spotless (code formatting)
+    // Spotless (code formatting/linting)
     apply plugin: 'com.diffplug.gradle.spotless'
     spotless {
         java {
@@ -61,13 +60,24 @@ subprojects {
     }
 
     // Tests
-    test {
+    tasks.withType(Test) {
         // run tests in parallel, assumes they're threadsafe
         maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+        // use JUnit 5 engine
         useJUnitPlatform()
         testLogging {
-            exceptionFormat 'full'
-            events 'failed'
+            events = ['failed', 'skipped']
+            // log the full failure messages
+            exceptionFormat = 'full'
+            showExceptions = true
+            showCauses = true
+            showStackTraces = true
+            // log the overall results (based on https://stackoverflow.com/a/36130467/6122976)
+            afterSuite { desc, result ->
+                if (!desc.parent) { // will match the outermost suite
+                    println("Results: ${result.resultType} (${result.testCount} test${result.testCount > 1 ? "s" : ""}, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)")
+                }
+            }
         }
     }
 
@@ -82,7 +92,7 @@ subprojects {
     }
     check.dependsOn jacocoTestReport
 
-    // dependency version numbers
+    // pin dependency versions
     ext {
         junitVersion = '5.5.2'
         truthVersion = '1.0'
@@ -103,10 +113,10 @@ subprojects {
     }
 
     dependencies {
-        testImplementation "org.junit.jupiter:junit-jupiter-params:$junitVersion"
-        testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+        testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
         testImplementation "com.google.truth:truth:$truthVersion"
         testImplementation "com.google.truth.extensions:truth-java8-extension:$truthVersion"
         testImplementation "org.mockito:mockito-core:$mockitoVersion"
+        testImplementation "org.mockito:mockito-junit-jupiter:$mockitoVersion"
     }
 }

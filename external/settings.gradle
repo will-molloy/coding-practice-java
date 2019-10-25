@@ -1,4 +1,0 @@
-rootProject.name = 'code-kata-java'
-include 'projecteuler'
-include 'leetcode'
-include 'hackerrank'

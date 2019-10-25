@@ -11,14 +11,13 @@ import org.junit.jupiter.api.Test;
 /** Created by Will on 2019-03-30 at 15:59. */
 public class P81PathSumTwoWaysTest {
 
-  private static final int[][] MATRIX_5X5 =
-      new int[][] {
-        {131, 673, 234, 103, 18},
-        {201, 96, 342, 965, 150},
-        {630, 803, 746, 422, 111},
-        {537, 699, 497, 121, 956},
-        {805, 732, 524, 37, 331}
-      };
+  private static final int[][] MATRIX_5X5 = {
+    {131, 673, 234, 103, 18},
+    {201, 96, 342, 965, 150},
+    {630, 803, 746, 422, 111},
+    {537, 699, 497, 121, 956},
+    {805, 732, 524, 37, 331}
+  };
 
   private static final int[][] MATRIX_80X80;
 
@@ -37,11 +36,11 @@ public class P81PathSumTwoWaysTest {
   }
 
   public static int[][] get5x5Matrix() {
-    return MATRIX_5X5 == null ? null : MATRIX_5X5.clone();
+    return MATRIX_5X5.clone();
   }
 
   public static int[][] get80x80Matrix() {
-    return MATRIX_80X80 == null ? null : MATRIX_80X80.clone();
+    return MATRIX_80X80.clone();
   }
 
   @Test
