@@ -18,6 +18,7 @@ import java.util.stream.Stream;
  * <p>Runtime: O(n)
  *
  * @see DetectHtmlAttributes
+ * @see wilmol.hackerrank.regex.applications.medium.DetectHtmlLinks
  */
 final class DetectHtmlTags {
 

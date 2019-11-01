@@ -28,6 +28,7 @@ import java.util.stream.Stream;
  * attributes using {@code find()}.
  *
  * @see DetectHtmlTags
+ * @see wilmol.hackerrank.regex.applications.medium.DetectHtmlLinks
  */
 final class DetectHtmlAttributes {
 
