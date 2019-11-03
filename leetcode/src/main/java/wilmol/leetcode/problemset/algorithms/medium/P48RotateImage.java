@@ -8,19 +8,27 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O(n^2) - process each element once, matrix is size n*n so... must be n*n (i.e. n^2).
  *
- * <p>Key: 4-way swap to achieve O(1) memory constraint. Also breaking it down with recursion.
+ * <p>Key: 4-way swap to achieve O(1) memory constraint. Also breaking it down with recursion (nxn
+ * matrix -> (n-2)x(n-2) matrix).
+ *
+ * @see P54SpiralMatrix
  */
 class P48RotateImage {
 
   public void rotate(int[][] matrix) {
-    // take advantage of the fact it's a square
+    if (matrix.length == 0) {
+      return;
+    }
+    if (matrix.length != matrix[0].length) {
+      throw new IllegalArgumentException("Not a square matrix");
+    }
+    // take advantage of the fact it's a square (actually impossible if not square)
     rotate(matrix, 0);
   }
 
   private static void rotate(int[][] matrix, int depth) {
-    int n = matrix.length;
     // length: size of vector to rotate, shave off depth (twice) and last element
-    int length = n - depth * 2 - 1;
+    int length = matrix.length - depth * 2 - 1;
     // base case, no elements to move
     if (length < 1) {
       return;
