@@ -13,7 +13,9 @@ import java.util.List;
  *
  * <p>Runtime: O(n!), Space: O(n!)
  *
- * <p>Key: bruteforce, recursive backtracking
+ * <p>Key: bruteforce (gather all candidates), recursive backtracking
+ *
+ * @see P47Permutations2
  */
 class P46Permutations {
 
