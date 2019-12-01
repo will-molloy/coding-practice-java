@@ -12,7 +12,7 @@ interface P50PowXn {
   double myPow(double x, int n);
 
   /**
-   * Naive linear recursive solution
+   * Naive linear recursive solution.
    *
    * <p>Stackoverflow on leetcode, maybe pass with loop/tail recursion.
    *
