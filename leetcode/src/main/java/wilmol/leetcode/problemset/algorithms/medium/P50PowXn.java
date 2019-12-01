@@ -40,14 +40,14 @@ interface P50PowXn {
   }
 
   /**
-   * Sqrt recursive solution.
+   * Log (base2) recursive solution.
    *
    * <p>This time divide n by 2 rather than subtract 1; fewer computations and hence fewer stack
    * frames.
    *
-   * <p>Runtime: O(sqrt(n))
+   * <p>Runtime: O(lg(n))
    */
-  class SqrtRecursive implements P50PowXn {
+  class Log2Recursive implements P50PowXn {
 
     public double myPow(double x, int n) {
       // known cases

@@ -23,13 +23,13 @@ class P50PowXnTest {
   }
 
   @ParameterizedTest
-  @MethodSource("testSqrt")
-  void testSqrt(double x, int n, double expected) {
-    P50PowXn fun = new P50PowXn.SqrtRecursive();
+  @MethodSource("testLog2")
+  void testLog2(double x, int n, double expected) {
+    P50PowXn fun = new P50PowXn.Log2Recursive();
     assertThat(fun.myPow(x, n)).isWithin(0.1).of(expected);
   }
 
-  static Stream<Arguments> testSqrt() {
+  static Stream<Arguments> testLog2() {
     return Stream.of(
         Arguments.of(2, 10, 1024),
         Arguments.of(2.1, 3, 9.261),
