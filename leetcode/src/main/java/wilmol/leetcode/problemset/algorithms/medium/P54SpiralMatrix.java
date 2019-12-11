@@ -22,6 +22,7 @@ import java.util.List;
  * <p>The logic is basically the same as that used in {@link P48RotateImage}.
  *
  * @see P48RotateImage
+ * @see P59SpiralMatrix2
  */
 class P54SpiralMatrix {
 
