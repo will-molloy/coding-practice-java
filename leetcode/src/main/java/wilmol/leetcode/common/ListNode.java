@@ -8,6 +8,8 @@ public final class ListNode {
 
   public final int val;
 
+  /** public field required for leetcode submission. */
+  @SuppressWarnings("PublicField")
   public ListNode next;
 
   /**
@@ -57,9 +59,9 @@ public final class ListNode {
 
   @Override
   public String toString() {
-    return new StringJoiner(", ", ListNode.class.getSimpleName() + "[", "]")
-        .add("val=" + val)
-        .add("next=" + next)
+    return new StringJoiner(", ", "[", "]")
+        .add(String.valueOf(val))
+        .add(String.valueOf(next))
         .toString();
   }
 }
