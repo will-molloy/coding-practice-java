@@ -7,6 +7,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * href=https://leetcode.com/problems/unique-paths>https://leetcode.com/problems/unique-paths</a>
  *
  * <p>Key: dynamic programming
+ *
+ * @see P63UniquePaths2
  */
 interface P62UniquePaths {
 
@@ -47,7 +49,8 @@ interface P62UniquePaths {
 
     // m = num cols, n = num rows (doesn't actually matter, as long as kept consistent)
     public int uniquePaths(int m, int n) {
-      int[][] dp = new int[n][m]; // [row][col]
+      // dp[row][col] = num paths to finish from that position
+      int[][] dp = new int[n][m];
 
       // base cases
       // bottom border, can only move one direction (i.e. right), so only one path
