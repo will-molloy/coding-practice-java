@@ -7,6 +7,10 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * href=https://leetcode.com/problems/next-permutation>https://leetcode.com/problems/next-permutation</a>
  *
  * <p>Runtime: O(n), with O(1) extra memory
+ *
+ * <p>TODO Key:
+ *
+ * @see P60PermutationSequence
  */
 class P31NextPermutation {
 
