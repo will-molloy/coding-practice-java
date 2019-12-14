@@ -11,6 +11,8 @@ import wilmol.leetcode.common.ListNode;
  * <p>Runtime: O(n)
  *
  * <p>Key: inner while loop to skip runs of duplicate elements greater than size 2
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P82RemoveDuplicatesFromSortedList2
  */
 class P83RemoveDuplicatesFromSortedList {
 
