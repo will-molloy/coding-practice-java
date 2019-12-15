@@ -13,6 +13,7 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: dynamic programming
  *
  * @see wilmol.dsa.dp.Fibonacci
+ * @see P1137NthTribonacciNumber
  */
 class P509FibonacciNumber {
 
