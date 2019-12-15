@@ -9,6 +9,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: dynamic programming
  *
  * @see P63UniquePaths2
+ * @see P64MinimumPathSum
  */
 interface P62UniquePaths {
 

@@ -12,6 +12,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * as trivial compared to first iteration of the problem.
  *
  * @see P62UniquePaths
+ * @see P64MinimumPathSum
  */
 class P63UniquePaths2 {
 
