@@ -12,7 +12,7 @@ import org.apache.commons.lang3.tuple.Triple;
  */
 class P9SpecialPythagoreanTriplet {
 
-  public Optional<Triple> apply(int perimeter) {
+  public Optional<Triple<Integer, Integer, Integer>> apply(int perimeter) {
     for (int a = 1; a <= perimeter - 2; a++) {
       for (int b = a + 1; b < perimeter - a; b++) {
         int c = perimeter - a - b;
