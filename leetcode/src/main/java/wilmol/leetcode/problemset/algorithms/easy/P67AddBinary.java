@@ -61,56 +61,8 @@ class P67AddBinary {
     }
 
     // exhaust remaining string
-    while (ai > -1) {
-      char aChar = a.charAt(ai);
-      if (aChar == '1') {
-        if (carry == 1) {
-          // 1 + 1 = 10
-          carry = 1;
-          result.insert(0, '0');
-        } else {
-          // 0 + 1 = 01
-          carry = 0;
-          result.insert(0, '1');
-        }
-      } else {
-        if (carry == 1) {
-          // 1 + 0 = 01
-          carry = 0;
-          result.insert(0, '1');
-        } else {
-          // 0 + 0 = 00
-          carry = 0;
-          result.insert(0, '0');
-        }
-      }
-      ai--;
-    }
-    while (bi > -1) {
-      char bChar = b.charAt(bi);
-      if (bChar == '1') {
-        if (carry == 1) {
-          // 1 + 1 = 10
-          carry = 1;
-          result.insert(0, '0');
-        } else {
-          // 0 + 1 = 01
-          carry = 0;
-          result.insert(0, '1');
-        }
-      } else {
-        if (carry == 1) {
-          // 1 + 0 = 01
-          carry = 0;
-          result.insert(0, '1');
-        } else {
-          // 0 + 0 = 00
-          carry = 0;
-          result.insert(0, '0');
-        }
-      }
-      bi--;
-    }
+    carry = exhaust(a, result, ai, carry);
+    carry = exhaust(b, result, bi, carry);
 
     // consider leading carry
     if (carry == 1) {
@@ -118,5 +70,33 @@ class P67AddBinary {
     }
 
     return result.toString();
+  }
+
+  private int exhaust(String s, StringBuilder result, int i, int carry) {
+    while (i > -1) {
+      if (s.charAt(i) == '1') {
+        if (carry == 1) {
+          // 1 + 1 = 10
+          carry = 1;
+          result.insert(0, '0');
+        } else {
+          // 0 + 1 = 01
+          carry = 0;
+          result.insert(0, '1');
+        }
+      } else {
+        if (carry == 1) {
+          // 1 + 0 = 01
+          carry = 0;
+          result.insert(0, '1');
+        } else {
+          // 0 + 0 = 00
+          carry = 0;
+          result.insert(0, '0');
+        }
+      }
+      i--;
+    }
+    return carry;
   }
 }
