@@ -33,4 +33,9 @@ class P76MinimumWindowSubstringTest {
   void multipleSmallestWindows() {
     assertThat(func.minWindow("AB1CXYZAB2CXYZAB3C", "ABC")).isEqualTo("AB1C");
   }
+
+  @Test
+  void requireMultipleOfSameCharacter() {
+    assertThat(func.minWindow("ABCABCBDBB1", "BBB")).isEqualTo("BDBB");
+  }
 }

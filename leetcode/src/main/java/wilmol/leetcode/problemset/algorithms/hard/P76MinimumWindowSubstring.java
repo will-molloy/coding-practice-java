@@ -30,12 +30,12 @@ class P76MinimumWindowSubstring {
     int r = 0;
     int bestL = 0;
     int bestR = Integer.MAX_VALUE;
+    int tCharsCovered = 0;
 
-    while (r <= s.length() && l <= r) {
+    while (r <= s.length()) {
 
-      // TODO isCovered can be more efficient
-      //  e.g. keep track of count 'tCharsCovered' then check if 'tCharsCovered' == t.size()
-      if (isCovered(counts)) {
+      // use counts.size() as that's the number of unique characters in 't'
+      if (tCharsCovered == counts.size()) {
 
         // update best
         if (r - l < bestR - bestL) {
@@ -45,8 +45,11 @@ class P76MinimumWindowSubstring {
 
         // narrow, move l in
         char c = s.charAt(l);
-        if (counts.containsKey(c)) {
+        if (counts.containsKey(c)) { // checks if 'c' is a character we care about (i.e. is in 't')
           counts.put(c, counts.get(c) + 1);
+          if (counts.get(c) == 1) {
+            tCharsCovered--;
+          }
         }
         l++;
 
@@ -56,9 +59,13 @@ class P76MinimumWindowSubstring {
         char c = s.charAt(r);
         if (counts.containsKey(c)) {
           counts.put(c, counts.get(c) - 1);
+          if (counts.get(c) == 0) {
+            tCharsCovered++;
+          }
         }
         r++;
       } else {
+
         // needed for final character where:
         // can't move r out because IOOB
         // and can't move l in because 't' not covered
@@ -67,9 +74,5 @@ class P76MinimumWindowSubstring {
     }
 
     return bestR == Integer.MAX_VALUE ? "" : s.substring(bestL, bestR);
-  }
-
-  private boolean isCovered(Map<Character, Integer> counts) {
-    return counts.values().stream().allMatch(i -> i <= 0);
   }
 }
