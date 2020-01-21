@@ -1,10 +1,8 @@
 package wilmol.leetcode.problemset.algorithms.medium;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collections;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Created by wilmol on 2020-01-21.
@@ -15,32 +13,35 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(2<sup>n</sup>)
  *
- * <p>TODO Key:
+ * <p>Key: iteratively building up result set. Caching size variable so only work on previous
+ * 'state' helped.
  */
 class P78Subsets {
 
   // nums is distinct, basically Set<Integer>
   public List<List<Integer>> subsets(int[] nums) {
 
-    // TODO correct but inefficient!
-    //  Don't need to foreach all the results, rather only the ones added in previous iteration
+    List<List<Integer>> result = new ArrayList<>();
+    // seed with empty set
+    result.add(Collections.emptyList());
 
-    Set<Set<Integer>> result = new HashSet<>();
-    result.add(new HashSet<>());
+    // iteratively add each 'num' to the result set
+    // e.g. nums = [1,2,3]
+    // iteration0: [[]]
+    // iteration1: [[], [1]]
+    // iteration2: [[], [1], [2], [1,2]]
+    // iteration3: [[], [1], [2], [1,2], [3], [1,3], [2,3], [1,2,3]]
 
-    for (int i = 0; i < nums.length; i++) {
-
-      // avoid CME
-      Set<Set<Integer>> resultCopy = new HashSet<>(result);
-      for (Set<Integer> set : resultCopy) {
-        for (int num : nums) {
-          Set<Integer> newSet = new HashSet<>(set);
-          newSet.add(num);
-          result.add(newSet);
-        }
+    for (int num : nums) {
+      // cache size, so only add 'num' to the previous iteration's state of 'result'
+      int size = result.size();
+      for (int i = 0; i < size; i++) {
+        List<Integer> prevSet = new ArrayList<>(result.get(i));
+        prevSet.add(num);
+        result.add(prevSet);
       }
     }
 
-    return result.stream().map(ArrayList::new).collect(Collectors.toList());
+    return result;
   }
 }
