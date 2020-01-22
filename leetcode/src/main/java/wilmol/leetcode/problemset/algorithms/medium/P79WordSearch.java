@@ -6,21 +6,20 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * <p><a
  * href=https://leetcode.com/problems/word-search>https://leetcode.com/problems/word-search</a>
  *
- * <p>Runtime: TODO O()
+ * <p>Runtime: O(n*n*w) TODO ?? DFS part is O(w) i.e. longest path searched ??
  *
- * <p>Space: TODO O()
+ * <p>Space: O(1)
  *
- * <p>TODO Key:
+ * <p>Key: got the DFS part. Marking node as unused as alternative to copying 'used' boolean array.
  */
 class P79WordSearch {
 
   public boolean exist(char[][] board, String word) {
 
-    // try all starting positions (INEFFICIENT?)
-    boolean[][] used = new boolean[board.length][board[0].length];
+    // try all starting positions
     for (int row = 0; row < board.length; row++) {
       for (int col = 0; col < board[0].length; col++) {
-        if (exist(board, word, used, row, col, 0)) {
+        if (exist(board, word, row, col, 0)) {
           return true;
         }
       }
@@ -28,38 +27,31 @@ class P79WordSearch {
     return false;
   }
 
-  private boolean exist(char[][] board, String word, boolean[][] used, int row, int col, int i) {
-    if (row < 0 || row >= board.length || col < 0 || col >= board[0].length || used[row][col]) {
+  private boolean exist(char[][] board, String word, int row, int col, int i) {
+    if (i == word.length()) {
+      // word is covered
+      return true;
+    }
+
+    if (row < 0 || row >= board.length || col < 0 || col >= board[0].length) {
+      // out of bounds
       return false;
     }
 
     if (board[row][col] != word.charAt(i)) {
-      used[row][col] = false;
+      // incorrect char
       return false;
     }
 
-    i++;
-    // was final char?
-    if (i == word.length()) {
-      return true;
-    }
-
-    used = copy(used);
-    used[row][col] = true;
-
     // look for next char
-
-    return exist(board, word, used, row - 1, col, i) // up
-        || exist(board, word, used, row + 1, col, i) // down
-        || exist(board, word, used, row, col - 1, i) // left
-        || exist(board, word, used, row, col + 1, i); // right
-  }
-
-  private boolean[][] copy(boolean[][] original) {
-    boolean[][] copy = new boolean[original.length][original[0].length];
-    for (int i = 0; i < original.length; i++) {
-      System.arraycopy(original[i], 0, copy[i], 0, original[i].length);
-    }
-    return copy;
+    char temp = board[row][col];
+    board[row][col] = ' '; // mark as used
+    boolean exists =
+        exist(board, word, row - 1, col, i + 1) // up
+            || exist(board, word, row + 1, col, i + 1) // down
+            || exist(board, word, row, col - 1, i + 1) // left
+            || exist(board, word, row, col + 1, i + 1); // right
+    board[row][col] = temp; // mark as unused
+    return exists;
   }
 }
