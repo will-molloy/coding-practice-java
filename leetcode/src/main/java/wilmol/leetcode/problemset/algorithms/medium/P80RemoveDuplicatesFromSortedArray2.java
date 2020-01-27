@@ -10,7 +10,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see wilmol.leetcode.problemset.algorithms.easy.P26RemoveDuplicatesFromSortedArray
  */
-class P80RemoveDuplicateFromSortedArray2 {
+class P80RemoveDuplicatesFromSortedArray2 {
 
   public int removeDuplicates(int[] nums) {
     if (nums.length <= 2) {

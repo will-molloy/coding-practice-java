@@ -6,9 +6,9 @@ import com.google.common.primitives.Ints;
 import org.junit.jupiter.api.Test;
 
 /** Created by Will on 2019-07-27 at 22:17. */
-class P80RemoveDuplicateFromSortedArray2Test {
+class P80RemoveDuplicatesFromSortedArray2Test {
 
-  private final P80RemoveDuplicateFromSortedArray2 fun = new P80RemoveDuplicateFromSortedArray2();
+  private final P80RemoveDuplicatesFromSortedArray2 fun = new P80RemoveDuplicatesFromSortedArray2();
 
   @Test
   void example1() {
