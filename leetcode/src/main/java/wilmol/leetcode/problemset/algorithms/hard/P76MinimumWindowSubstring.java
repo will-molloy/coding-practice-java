@@ -14,6 +14,8 @@ import java.util.Map;
  * <p>Space: O(t)
  *
  * <p>Key: Hash map to maintain count of characters. Two pointers to 'widen' and 'narrow' window.
+ *
+ * @see P30SubstringWithConcatenationOfAllWords
  */
 class P76MinimumWindowSubstring {
 
