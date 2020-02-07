@@ -15,6 +15,8 @@ import java.util.List;
  *
  * <p>Key: iteratively building up result set. Caching size variable so only work on previous
  * 'state' helped.
+ *
+ * @see P90Subsets2
  */
 class P78Subsets {
 
