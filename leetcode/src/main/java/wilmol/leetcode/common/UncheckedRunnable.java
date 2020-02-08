@@ -7,6 +7,8 @@ public interface UncheckedRunnable extends Runnable {
   default void run() {
     try {
       uncheckedRun();
+    } catch (RuntimeException e) {
+      throw e;
     } catch (Exception e) {
       throw new RuntimeException(e);
     }

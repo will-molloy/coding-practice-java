@@ -1,7 +1,11 @@
 package wilmol.leetcode.common;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.List;
 import java.util.Objects;
-import java.util.StringJoiner;
+import java.util.Set;
 
 /** Created by Will on 2019-06-23 at 20:43. */
 public final class ListNode {
@@ -59,9 +63,18 @@ public final class ListNode {
 
   @Override
   public String toString() {
-    return new StringJoiner(", ", "[", "]")
-        .add(String.valueOf(val))
-        .add(String.valueOf(next))
-        .toString();
+    List<Integer> values = new ArrayList<>();
+    // must use identity comparison for cycle detection; equals/hashCode overflow
+    Set<ListNode> seen = Collections.newSetFromMap(new IdentityHashMap<>());
+    ListNode node = this;
+    while (node != null) {
+      if (seen.contains(node)) {
+        return values + " (cycling)";
+      }
+      seen.add(node);
+      values.add(node.val);
+      node = node.next;
+    }
+    return values.toString();
   }
 }
