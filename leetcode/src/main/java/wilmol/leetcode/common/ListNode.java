@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.IdentityHashMap;
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 
 /** Created by Will on 2019-06-23 at 20:43. */
@@ -53,12 +52,12 @@ public final class ListNode {
       return false;
     }
     ListNode listNode = (ListNode) o;
-    return val == listNode.val && Objects.equals(next, listNode.next);
+    return toString().equals(listNode.toString());
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(val, next);
+    return toString().hashCode();
   }
 
   @Override
