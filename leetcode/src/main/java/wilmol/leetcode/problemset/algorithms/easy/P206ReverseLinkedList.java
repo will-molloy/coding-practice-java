@@ -13,6 +13,8 @@ import wilmol.leetcode.common.ListNode;
  * <p>Space: O(1)
  *
  * <p>Key: pointer manipulation, and using temporary variable for swap
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P92ReverseLinkedList2
  */
 class P206ReverseLinkedList {
 
