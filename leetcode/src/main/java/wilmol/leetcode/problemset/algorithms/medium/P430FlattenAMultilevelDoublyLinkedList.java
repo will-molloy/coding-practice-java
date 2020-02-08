@@ -1,10 +1,10 @@
 package wilmol.leetcode.problemset.algorithms.medium;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
-import org.graalvm.compiler.core.common.SuppressFBWarnings;
 
 /**
  * Created by wilmol on 2020-02-08.
