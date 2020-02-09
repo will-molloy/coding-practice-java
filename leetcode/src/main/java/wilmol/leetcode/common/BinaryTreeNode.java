@@ -6,14 +6,14 @@ import java.util.StringJoiner;
 /** Created by Will on 2019-03-30 at 21:49. */
 public final class BinaryTreeNode {
 
-  public final int value;
+  public final int val;
 
   public BinaryTreeNode left;
 
   public BinaryTreeNode right;
 
   public BinaryTreeNode(int value) {
-    this.value = value;
+    this.val = value;
   }
 
   public static BinaryTreeNode fromLevelOrder(int... values) {
@@ -21,7 +21,7 @@ public final class BinaryTreeNode {
   }
 
   private BinaryTreeNode(int... values) {
-    this.value = values[0];
+    this.val = values[0];
     this.left = buildLevelOrder(1, values);
     this.right = buildLevelOrder(2, values);
   }
@@ -45,20 +45,18 @@ public final class BinaryTreeNode {
       return false;
     }
     BinaryTreeNode that = (BinaryTreeNode) o;
-    return value == that.value
-        && Objects.equals(left, that.left)
-        && Objects.equals(right, that.right);
+    return val == that.val && Objects.equals(left, that.left) && Objects.equals(right, that.right);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(value, left, right);
+    return Objects.hash(val, left, right);
   }
 
   @Override
   public String toString() {
     return new StringJoiner(", ", BinaryTreeNode.class.getSimpleName() + "[", "]")
-        .add("value=" + value)
+        .add("value=" + val)
         .add("left=" + left)
         .add("right=" + right)
         .toString();

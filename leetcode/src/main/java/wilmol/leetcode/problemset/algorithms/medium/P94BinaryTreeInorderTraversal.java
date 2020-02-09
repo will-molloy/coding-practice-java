@@ -34,7 +34,7 @@ class P94BinaryTreeInorderTraversal {
       return;
     }
     inorderTraversal(traversal, root.left);
-    traversal.add(root.value);
+    traversal.add(root.val);
     inorderTraversal(traversal, root.right);
   }
 }
