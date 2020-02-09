@@ -18,15 +18,15 @@ import java.util.Map;
  * <p>Also using multiple maps of COUNTS not actual results. (Again, read the problem statement,
  * asks for COUNT of triplets not the actual triplets (HINT HINT HINT).)
  */
-abstract class CountTriplets {
+interface CountTriplets {
 
-  abstract long countTriplets(List<Long> arr, long ratio);
+  long countTriplets(List<Long> arr, long ratio);
 
   /** O(n^3) solution, gets TLE. */
-  static class NaiveSolution extends CountTriplets {
+  class NaiveSolution implements CountTriplets {
 
     @Override
-    long countTriplets(List<Long> arr, long ratio) {
+    public long countTriplets(List<Long> arr, long ratio) {
       // dont sort to maintain index
 
       int triplets = 0;
@@ -49,10 +49,10 @@ abstract class CountTriplets {
   }
 
   /** O(n) single pass solution using 2 maps to track potential pairs and potential triplets. */
-  static class LinearSolution extends CountTriplets {
+  class LinearSolution implements CountTriplets {
 
     @Override
-    long countTriplets(List<Long> arr, long ratio) {
+    public long countTriplets(List<Long> arr, long ratio) {
       // O(n), single pass, no special cases, no sorting (since i < j < k requirement)
 
       // key = value needed for 2nd value in triplet (searching a * r)

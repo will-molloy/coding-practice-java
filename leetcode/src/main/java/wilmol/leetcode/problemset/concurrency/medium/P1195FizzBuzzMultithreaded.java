@@ -12,22 +12,22 @@ import java.util.function.IntConsumer;
  *
  * <p>Runtime: O(n) (all solutions)
  */
-abstract class P1195FizzBuzzMultithreaded {
+interface P1195FizzBuzzMultithreaded {
 
-  abstract void fizz(Runnable printFizz) throws InterruptedException;
+  void fizz(Runnable printFizz) throws InterruptedException;
 
-  abstract void buzz(Runnable printBuzz) throws InterruptedException;
+  void buzz(Runnable printBuzz) throws InterruptedException;
 
-  abstract void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException;
+  void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException;
 
-  abstract void number(IntConsumer printNumber) throws InterruptedException;
+  void number(IntConsumer printNumber) throws InterruptedException;
 
   /**
    * wait/notify/synchronised (primitive) solution.
    *
    * <p>Key: outer loop to ensure thread keeps running and the exit condition.
    */
-  static class WaitNotifySolution extends P1195FizzBuzzMultithreaded {
+  class WaitNotifySolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 
@@ -37,7 +37,7 @@ abstract class P1195FizzBuzzMultithreaded {
       this.n = n;
     }
 
-    synchronized void fizz(Runnable printFizz) throws InterruptedException {
+    public synchronized void fizz(Runnable printFizz) throws InterruptedException {
       while (state <= n) {
         if (!(state % 3 == 0 && state % 5 != 0)) {
           wait();
@@ -49,7 +49,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    synchronized void buzz(Runnable printBuzz) throws InterruptedException {
+    public synchronized void buzz(Runnable printBuzz) throws InterruptedException {
       while (state <= n) {
         if (!(state % 3 != 0 && state % 5 == 0)) {
           wait();
@@ -61,7 +61,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    synchronized void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+    public synchronized void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
       while (state <= n) {
         if (!(state % 3 == 0 && state % 5 == 0)) {
           wait();
@@ -73,7 +73,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    synchronized void number(IntConsumer printNumber) throws InterruptedException {
+    public synchronized void number(IntConsumer printNumber) throws InterruptedException {
       while (state <= n) {
         if (!(state % 3 != 0 && state % 5 != 0)) {
           wait();
@@ -99,7 +99,7 @@ abstract class P1195FizzBuzzMultithreaded {
    *
    * <p>Key: obtain the lock before checking the condition.
    */
-  static class ReentrantLockSolution extends P1195FizzBuzzMultithreaded {
+  class ReentrantLockSolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 
@@ -111,7 +111,7 @@ abstract class P1195FizzBuzzMultithreaded {
       this.n = n;
     }
 
-    void fizz(Runnable printFizz) throws InterruptedException {
+    public void fizz(Runnable printFizz) throws InterruptedException {
       while (state <= n) {
         // the correct idiom for using a JSR-166 lock is within try-finally
         lock.lock();
@@ -126,7 +126,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void buzz(Runnable printBuzz) throws InterruptedException {
+    public void buzz(Runnable printBuzz) throws InterruptedException {
       while (state <= n) {
         lock.lock();
         try {
@@ -140,7 +140,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+    public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
       while (state <= n) {
         lock.lock();
         try {
@@ -154,7 +154,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void number(IntConsumer printNumber) throws InterruptedException {
+    public void number(IntConsumer printNumber) throws InterruptedException {
       while (state <= n) {
         lock.lock();
         try {
@@ -183,7 +183,7 @@ abstract class P1195FizzBuzzMultithreaded {
    * <p>Key: check for overlapping case (fizzbuzz) ahead of time. Also conditional logic controlled
    * by one semaphore (number) (and always release to that one).
    */
-  static class SemaphoreSolution extends P1195FizzBuzzMultithreaded {
+  class SemaphoreSolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 
@@ -197,7 +197,7 @@ abstract class P1195FizzBuzzMultithreaded {
       this.n = n;
     }
 
-    void fizz(Runnable printFizz) throws InterruptedException {
+    public void fizz(Runnable printFizz) throws InterruptedException {
       for (int i = 3; i <= n; i += 3) {
         fizz.acquire();
         printFizz.run();
@@ -209,7 +209,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void buzz(Runnable printBuzz) throws InterruptedException {
+    public void buzz(Runnable printBuzz) throws InterruptedException {
       for (int i = 5; i <= n; i += 5) {
         buzz.acquire();
         printBuzz.run();
@@ -221,7 +221,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+    public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
       for (int i = 15; i <= n; i += 15) {
         fizzBuzz.acquire();
         printFizzBuzz.run();
@@ -229,7 +229,7 @@ abstract class P1195FizzBuzzMultithreaded {
       }
     }
 
-    void number(IntConsumer printNumber) throws InterruptedException {
+    public void number(IntConsumer printNumber) throws InterruptedException {
       for (int i = 1; i <= n; i++) {
         number.acquire();
         if (i % 15 == 0) {
