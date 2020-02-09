@@ -12,6 +12,10 @@ public final class BinaryTreeNode {
 
   public BinaryTreeNode right;
 
+  public BinaryTreeNode(int value) {
+    this.value = value;
+  }
+
   public static BinaryTreeNode fromLevelOrder(int... values) {
     return new BinaryTreeNode(values);
   }
