@@ -16,22 +16,33 @@ public final class BinaryTreeNode {
     this.val = value;
   }
 
-  public static BinaryTreeNode fromLevelOrder(int... values) {
+  /**
+   * Builds the binary tree from level order.
+   *
+   * @param values node values, null indicates a missing node
+   * @return new binary tree
+   */
+  public static BinaryTreeNode fromLevelOrder(Integer... values) {
+    if (values.length == 0 || values[0] == null) {
+      return null;
+    }
     return new BinaryTreeNode(values);
   }
 
-  private BinaryTreeNode(int... values) {
+  private BinaryTreeNode(Integer... values) {
     this.val = values[0];
     this.left = buildLevelOrder(1, values);
     this.right = buildLevelOrder(2, values);
   }
 
-  private static BinaryTreeNode buildLevelOrder(int i, int... remainingValues) {
+  private static BinaryTreeNode buildLevelOrder(int i, Integer... remainingValues) {
     BinaryTreeNode root = null;
     if (i < remainingValues.length) {
-      root = new BinaryTreeNode(remainingValues[i]);
-      root.left = buildLevelOrder(2 * i + 1, remainingValues);
-      root.right = buildLevelOrder(2 * i + 2, remainingValues);
+      if (remainingValues[i] != null) {
+        root = new BinaryTreeNode(remainingValues[i]);
+        root.left = buildLevelOrder(2 * i + 1, remainingValues);
+        root.right = buildLevelOrder(2 * i + 2, remainingValues);
+      }
     }
     return root;
   }
