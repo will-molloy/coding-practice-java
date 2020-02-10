@@ -12,9 +12,7 @@ class P94BinaryTreeInorderTraversalTest {
 
   @Test
   void example() {
-    BinaryTreeNode root = new BinaryTreeNode(1);
-    root.right = new BinaryTreeNode(2);
-    root.right.left = new BinaryTreeNode(3);
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, null, 2, null, null, 3);
     assertThat(func.inorderTraversal(root)).containsExactly(1, 3, 2).inOrder();
   }
 

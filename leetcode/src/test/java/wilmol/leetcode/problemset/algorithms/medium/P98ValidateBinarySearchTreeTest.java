@@ -12,26 +12,19 @@ class P98ValidateBinarySearchTreeTest {
 
   @Test
   void example1() {
-    BinaryTreeNode root = new BinaryTreeNode(2);
-    root.left = new BinaryTreeNode(1);
-    root.right = new BinaryTreeNode(3);
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(2, 1, 3);
     assertThat(fun.isValidBst(root)).isTrue();
   }
 
   @Test
   void example2() {
-    BinaryTreeNode root = new BinaryTreeNode(5);
-    root.left = new BinaryTreeNode(1);
-    root.right = new BinaryTreeNode(4);
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(5, 1, 4);
     assertThat(fun.isValidBst(root)).isFalse();
   }
 
   @Test
   void brokenNotByDirectChild() {
-    BinaryTreeNode root = new BinaryTreeNode(5);
-    root.left = new BinaryTreeNode(1);
-    root.right = new BinaryTreeNode(6);
-    root.right.left = new BinaryTreeNode(4);
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(5, 1, 6, null, null, 4);
     assertThat(fun.isValidBst(root)).isFalse();
   }
 }

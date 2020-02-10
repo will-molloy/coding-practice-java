@@ -12,34 +12,24 @@ class P100SameTreeTest {
 
   @Test
   void example1() {
-    BinaryTreeNode p = new BinaryTreeNode(1);
-    p.left = new BinaryTreeNode(2);
-    p.right = new BinaryTreeNode(3);
-    BinaryTreeNode q = new BinaryTreeNode(1);
-    q.left = new BinaryTreeNode(2);
-    q.right = new BinaryTreeNode(3);
+    BinaryTreeNode p = BinaryTreeNode.fromLevelOrder(1, 2, 3);
+    BinaryTreeNode q = BinaryTreeNode.fromLevelOrder(1, 2, 3);
 
     assertThat(func.isSameTree(p, q)).isTrue();
   }
 
   @Test
   void example2() {
-    BinaryTreeNode p = new BinaryTreeNode(1);
-    p.left = new BinaryTreeNode(2);
-    BinaryTreeNode q = new BinaryTreeNode(1);
-    q.right = new BinaryTreeNode(2);
+    BinaryTreeNode p = BinaryTreeNode.fromLevelOrder(1, 2);
+    BinaryTreeNode q = BinaryTreeNode.fromLevelOrder(1, null, 2);
 
     assertThat(func.isSameTree(p, q)).isFalse();
   }
 
   @Test
   void example3() {
-    BinaryTreeNode p = new BinaryTreeNode(1);
-    p.left = new BinaryTreeNode(2);
-    p.right = new BinaryTreeNode(1);
-    BinaryTreeNode q = new BinaryTreeNode(1);
-    q.left = new BinaryTreeNode(1);
-    q.right = new BinaryTreeNode(2);
+    BinaryTreeNode p = BinaryTreeNode.fromLevelOrder(1, 2, 1);
+    BinaryTreeNode q = BinaryTreeNode.fromLevelOrder(1, 1, 2);
 
     assertThat(func.isSameTree(p, q)).isFalse();
   }

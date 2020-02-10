@@ -6,45 +6,40 @@ import java.util.StringJoiner;
 /** Created by Will on 2019-03-30 at 21:49. */
 public final class BinaryTreeNode {
 
-  public final int val;
-
-  public BinaryTreeNode left;
-
-  public BinaryTreeNode right;
-
-  public BinaryTreeNode(int value) {
-    this.val = value;
-  }
-
   /**
-   * Builds the binary tree from level order.
-   *
-   * @param values node values, null indicates a missing node
-   * @return new binary tree
+   * Constructs a new binary tree containing the given values, in level order. {@code null}
+   * indicates a missing node.
    */
   public static BinaryTreeNode fromLevelOrder(Integer... values) {
     if (values.length == 0 || values[0] == null) {
       return null;
     }
-    return new BinaryTreeNode(values);
-  }
-
-  private BinaryTreeNode(Integer... values) {
-    this.val = values[0];
-    this.left = buildLevelOrder(1, values);
-    this.right = buildLevelOrder(2, values);
+    BinaryTreeNode root = new BinaryTreeNode(values[0]);
+    root.left = buildLevelOrder(1, values);
+    root.right = buildLevelOrder(2, values);
+    return root;
   }
 
   private static BinaryTreeNode buildLevelOrder(int i, Integer... remainingValues) {
     BinaryTreeNode root = null;
-    if (i < remainingValues.length) {
-      if (remainingValues[i] != null) {
-        root = new BinaryTreeNode(remainingValues[i]);
-        root.left = buildLevelOrder(2 * i + 1, remainingValues);
-        root.right = buildLevelOrder(2 * i + 2, remainingValues);
-      }
+    if (i < remainingValues.length && remainingValues[i] != null) {
+      root = new BinaryTreeNode(remainingValues[i]);
+      root.left = buildLevelOrder(2 * i + 1, remainingValues);
+      root.right = buildLevelOrder(2 * i + 2, remainingValues);
     }
     return root;
+  }
+
+  public final int val;
+
+  @SuppressWarnings("PublicField")
+  public BinaryTreeNode left;
+
+  @SuppressWarnings("PublicField")
+  public BinaryTreeNode right;
+
+  private BinaryTreeNode(int value) {
+    this.val = value;
   }
 
   @Override

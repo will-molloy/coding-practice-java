@@ -9,34 +9,24 @@ import java.util.Set;
 /** Created by Will on 2019-06-23 at 20:43. */
 public final class ListNode {
 
-  public final int val;
-
-  /** public field required for leetcode submission. */
-  @SuppressWarnings("PublicField")
-  public ListNode next;
-
-  /**
-   * Creates linked list from varargs int argument.
-   *
-   * @param values int values to create list from (in order)
-   * @return head of new list (null if values is empty)
-   */
+  /** Constructs a new linked list containing the given values, in order. */
   public static ListNode of(int... values) {
     if (values.length == 0) {
       return null;
     }
-    return new ListNode(values);
-  }
-
-  private ListNode(int... values) {
-    this.val = values[0];
-    ListNode node = this;
-    // skip first since already processed
+    ListNode head = new ListNode(values[0]);
+    ListNode node = head;
     for (int i = 1; i < values.length; i++) {
-      node.next = ListNode.of(values[i]);
+      node.next = new ListNode(values[i]);
       node = node.next;
     }
+    return head;
   }
+
+  public final int val;
+
+  @SuppressWarnings("PublicField")
+  public ListNode next;
 
   /** public constructor required for leetcode submission. */
   public ListNode(int val) {
@@ -63,7 +53,6 @@ public final class ListNode {
   @Override
   public String toString() {
     List<Integer> values = new ArrayList<>();
-    // must use identity comparison for cycle detection; equals/hashCode overflow
     Set<ListNode> seen = Collections.newSetFromMap(new IdentityHashMap<>());
     ListNode node = this;
     while (node != null) {
