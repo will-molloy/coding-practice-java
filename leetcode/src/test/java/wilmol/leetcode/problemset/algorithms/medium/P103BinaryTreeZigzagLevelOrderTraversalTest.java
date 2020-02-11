@@ -24,4 +24,13 @@ class P103BinaryTreeZigzagLevelOrderTraversalTest {
   void emptyTree() {
     assertThat(fun.zigzagLevelOrder(null)).isEmpty();
   }
+
+  @Test
+  void singleNodePerLevel() {
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    assertThat(fun.zigzagLevelOrder(root))
+        .containsExactly(
+            ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(3), ImmutableList.of(4))
+        .inOrder();
+  }
 }

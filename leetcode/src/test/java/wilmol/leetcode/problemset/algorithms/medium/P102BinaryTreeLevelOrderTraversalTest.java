@@ -27,6 +27,16 @@ class P102BinaryTreeLevelOrderTraversalTest {
     assertThat(fun.levelOrder(null)).isEmpty();
   }
 
+  @ParameterizedTest
+  @MethodSource("funs")
+  void singleNodePerLeve(P102BinaryTreeLevelOrderTraversal fun) {
+    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    assertThat(fun.levelOrder(root))
+        .containsExactly(
+            ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(3), ImmutableList.of(4))
+        .inOrder();
+  }
+
   static Stream<Arguments> funs() {
     return Stream.of(
         Arguments.of(new P102BinaryTreeLevelOrderTraversal.Dfs()),
