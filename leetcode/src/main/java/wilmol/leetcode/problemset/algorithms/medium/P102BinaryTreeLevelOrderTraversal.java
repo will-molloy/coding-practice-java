@@ -11,6 +11,8 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p><a
  * href=https://leetcode.com/problems/binary-tree-level-order-traversal>https://leetcode.com/problems/binary-tree-level-order-traversal</a>
+ *
+ * @see P103BinaryTreeZigzagLevelOrderTraversal
  */
 interface P102BinaryTreeLevelOrderTraversal {
 

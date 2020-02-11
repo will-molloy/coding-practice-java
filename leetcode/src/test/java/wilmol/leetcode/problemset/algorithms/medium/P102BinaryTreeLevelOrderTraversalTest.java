@@ -21,6 +21,12 @@ class P102BinaryTreeLevelOrderTraversalTest {
         .inOrder();
   }
 
+  @ParameterizedTest
+  @MethodSource("funs")
+  void emptyTree(P102BinaryTreeLevelOrderTraversal fun) {
+    assertThat(fun.levelOrder(null)).isEmpty();
+  }
+
   static Stream<Arguments> funs() {
     return Stream.of(
         Arguments.of(new P102BinaryTreeLevelOrderTraversal.Dfs()),
