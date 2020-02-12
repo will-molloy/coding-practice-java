@@ -1,7 +1,9 @@
 package wilmol.leetcode.common;
 
-import java.util.Objects;
-import java.util.StringJoiner;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
 /** Created by Will on 2019-03-30 at 21:49. */
 public final class BinaryTreeNode {
@@ -10,6 +12,7 @@ public final class BinaryTreeNode {
    * Constructs a new binary tree containing the given values, in level order. {@code null}
    * indicates a missing node.
    */
+  // TODO, could enter nodes that don't have parents, fail in that case? (currently ignores them)
   public static BinaryTreeNode fromLevelOrder(Integer... values) {
     if (values.length == 0 || values[0] == null) {
       return null;
@@ -51,20 +54,49 @@ public final class BinaryTreeNode {
       return false;
     }
     BinaryTreeNode that = (BinaryTreeNode) o;
-    return val == that.val && Objects.equals(left, that.left) && Objects.equals(right, that.right);
+    return serialise().equals(that.serialise());
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(val, left, right);
+    return serialise().hashCode();
   }
 
   @Override
   public String toString() {
-    return new StringJoiner(", ", BinaryTreeNode.class.getSimpleName() + "[", "]")
-        .add("value=" + val)
-        .add("left=" + left)
-        .add("right=" + right)
-        .toString();
+    return serialise().toString();
+  }
+
+  // serialises by level order
+  // won't halt if cycles exist (shouldn't given this class is used for binary trees!)
+  private List<Integer> serialise() {
+    List<Integer> list = new ArrayList<>();
+    // LinkedList permits null
+    Deque<BinaryTreeNode> queue = new LinkedList<>();
+    queue.addFirst(this);
+
+    boolean emptyLevel = false;
+    int levelSize = 0;
+    // BFS until empty level
+    while (!emptyLevel) {
+      emptyLevel = true;
+      levelSize = queue.size();
+      for (int i = 0; i < levelSize; i++) {
+        BinaryTreeNode node = queue.removeFirst();
+        if (node != null) {
+          emptyLevel = false;
+          list.add(node.val);
+          queue.addLast(node.left);
+          queue.addLast(node.right);
+        } else {
+          list.add(null);
+          // insert nulls so we get the nulls 'children' too
+          queue.addLast(null);
+          queue.addLast(null);
+        }
+      }
+    }
+    // leave out final level of nulls
+    return list.subList(0, list.size() - levelSize);
   }
 }

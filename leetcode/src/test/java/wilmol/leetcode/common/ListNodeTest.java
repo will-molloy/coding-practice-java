@@ -9,7 +9,9 @@ class ListNodeTest {
 
   @Test
   void testToStringNoCycle() {
-    assertThat(ListNode.of(1, 2, 3).toString()).isEqualTo("[1, 2, 3]");
+    ListNode head = ListNode.of(1, 2, 3);
+    assertThat(head).isNotNull();
+    assertThat(head.toString()).isEqualTo("[1, 2, 3]");
   }
 
   @Test
