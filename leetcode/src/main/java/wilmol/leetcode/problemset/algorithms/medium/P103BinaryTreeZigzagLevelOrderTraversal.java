@@ -36,6 +36,7 @@ class P103BinaryTreeZigzagLevelOrderTraversal {
       return levels;
     }
 
+    // BFS
     Deque<BinaryTreeNode> deque = new ArrayDeque<>();
     deque.addLast(root);
     boolean forward = true;
