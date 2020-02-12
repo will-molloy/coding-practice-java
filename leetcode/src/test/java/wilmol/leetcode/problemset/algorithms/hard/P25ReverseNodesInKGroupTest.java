@@ -36,6 +36,6 @@ class P25ReverseNodesInKGroupTest {
 
   @Test
   void noNodes() {
-    assertThat(fun.reverseKGroup(ListNode.of(), 2)).isEqualTo(ListNode.of());
+    assertThat(fun.reverseKGroup(null, 2)).isEqualTo(null);
   }
 }

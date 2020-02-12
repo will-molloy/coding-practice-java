@@ -18,10 +18,8 @@ class P21MergeTwoSortedListsTest {
 
   @Test
   void singleList() {
-    assertThat(function.mergeTwoLists(ListNode.of(1, 2, 4), ListNode.of()))
-        .isEqualTo(ListNode.of(1, 2, 4));
-    assertThat(function.mergeTwoLists(ListNode.of(), ListNode.of(1, 3, 4)))
-        .isEqualTo(ListNode.of(1, 3, 4));
+    assertThat(function.mergeTwoLists(ListNode.of(1, 2, 4), null)).isEqualTo(ListNode.of(1, 2, 4));
+    assertThat(function.mergeTwoLists(null, ListNode.of(1, 3, 4))).isEqualTo(ListNode.of(1, 3, 4));
   }
 
   @Test
@@ -32,6 +30,6 @@ class P21MergeTwoSortedListsTest {
 
   @Test
   void bothEmpty() {
-    assertThat(function.mergeTwoLists(ListNode.of(), ListNode.of())).isEqualTo(ListNode.of());
+    assertThat(function.mergeTwoLists(null, null)).isEqualTo(null);
   }
 }

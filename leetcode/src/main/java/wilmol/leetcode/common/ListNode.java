@@ -11,9 +11,6 @@ public final class ListNode {
 
   /** Constructs a new linked list containing the given values, in order. */
   public static ListNode of(int... values) {
-    if (values.length == 0) {
-      return null;
-    }
     ListNode head = new ListNode(values[0]);
     ListNode node = head;
     for (int i = 1; i < values.length; i++) {

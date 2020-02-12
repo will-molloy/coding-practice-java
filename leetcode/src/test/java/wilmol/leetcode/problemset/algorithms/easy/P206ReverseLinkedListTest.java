@@ -17,7 +17,7 @@ class P206ReverseLinkedListTest {
 
   @Test
   void emptyList() {
-    assertThat(func.reverseList(ListNode.of())).isEqualTo(null);
+    assertThat(func.reverseList(null)).isEqualTo(null);
   }
 
   @Test

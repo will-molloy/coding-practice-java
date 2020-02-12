@@ -14,9 +14,6 @@ public final class BinaryTreeNode {
    */
   // TODO, could enter nodes that don't have parents, fail in that case? (currently ignores them)
   public static BinaryTreeNode fromLevelOrder(Integer... values) {
-    if (values.length == 0 || values[0] == null) {
-      return null;
-    }
     BinaryTreeNode root = new BinaryTreeNode(values[0]);
     root.left = buildLevelOrder(1, values);
     root.right = buildLevelOrder(2, values);

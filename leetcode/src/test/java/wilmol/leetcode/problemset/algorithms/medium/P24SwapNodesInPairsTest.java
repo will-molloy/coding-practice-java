@@ -34,6 +34,6 @@ class P24SwapNodesInPairsTest {
 
   @Test
   void noNodes() {
-    assertThat(fun.swapPairs(ListNode.of())).isEqualTo(ListNode.of());
+    assertThat(fun.swapPairs(null)).isEqualTo(null);
   }
 }
