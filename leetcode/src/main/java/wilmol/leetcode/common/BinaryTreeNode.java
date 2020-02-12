@@ -1,9 +1,12 @@
 package wilmol.leetcode.common;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 /** Created by Will on 2019-03-30 at 21:49. */
 public final class BinaryTreeNode {
@@ -12,11 +15,20 @@ public final class BinaryTreeNode {
    * Constructs a new binary tree containing the given values, in level order. {@code null}
    * indicates a missing node.
    */
-  // TODO, could enter nodes that don't have parents, fail in that case? (currently ignores them)
   public static BinaryTreeNode fromLevelOrder(Integer... values) {
     BinaryTreeNode root = new BinaryTreeNode(values[0]);
     root.left = buildLevelOrder(1, values);
     root.right = buildLevelOrder(2, values);
+
+    List<Integer> serialisedValues =
+        root.serialise().stream().filter(Objects::nonNull).collect(Collectors.toList());
+    List<Integer> inputValues =
+        Arrays.stream(values).filter(Objects::nonNull).collect(Collectors.toList());
+    if (!serialisedValues.equals(inputValues)) {
+      // serialise method will skip unreachable node values (... since they're unreachable)
+      // so if doesn't equal input value list, throw iae
+      throw new IllegalArgumentException("Expected all nodes to be reachable");
+    }
     return root;
   }
 
