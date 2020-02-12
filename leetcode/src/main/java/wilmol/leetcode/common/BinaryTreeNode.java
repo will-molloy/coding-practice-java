@@ -50,7 +50,8 @@ public final class BinaryTreeNode {
   @SuppressWarnings("PublicField")
   public BinaryTreeNode right;
 
-  private BinaryTreeNode(int value) {
+  /** public constructor required for leetcode submission. */
+  public BinaryTreeNode(int value) {
     this.val = value;
   }
 
