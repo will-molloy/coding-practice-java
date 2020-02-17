@@ -23,11 +23,11 @@ class P112PathSum {
     if (node == null) {
       return false;
     }
+    currentSum += node.val;
     if (node.left == null && node.right == null) {
       // leaf node
-      return sum == currentSum + node.val;
+      return sum == currentSum;
     }
-    currentSum += node.val;
     return hasPathSum(node.left, sum, currentSum) || hasPathSum(node.right, sum, currentSum);
   }
 }
