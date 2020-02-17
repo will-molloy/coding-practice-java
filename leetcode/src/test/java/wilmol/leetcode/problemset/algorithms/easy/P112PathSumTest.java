@@ -1,0 +1,48 @@
+package wilmol.leetcode.problemset.algorithms.easy;
+
+import static com.google.common.truth.Truth.assertThat;
+
+import org.junit.jupiter.api.Test;
+import wilmol.leetcode.common.BinaryTreeNode;
+
+/** Created by wilmol on 2020-02-17. */
+class P112PathSumTest {
+
+  private final P112PathSum fun = new P112PathSum();
+
+  @Test
+  void example() {
+    assertThat(
+            fun.hasPathSum(
+                BinaryTreeNode.fromLevelOrder(
+                    5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1),
+                22))
+        .isTrue();
+  }
+
+  @Test
+  void exampleBut2IsntALeaf() {
+    assertThat(
+            fun.hasPathSum(
+                BinaryTreeNode.fromLevelOrder(
+                    5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1, null, null,
+                    null, 3),
+                22))
+        .isFalse();
+  }
+
+  @Test
+  void emptyTreeZeroSum() {
+    assertThat(fun.hasPathSum(null, 0)).isFalse();
+  }
+
+  @Test
+  void singleNode() {
+    assertThat(fun.hasPathSum(BinaryTreeNode.fromLevelOrder(100), 100)).isTrue();
+  }
+
+  @Test
+  void twoNodes() {
+    assertThat(fun.hasPathSum(BinaryTreeNode.fromLevelOrder(1, 2), 3)).isTrue();
+  }
+}
