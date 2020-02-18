@@ -12,6 +12,8 @@ package wilmol.leetcode.problemset.algorithms.hard;
  * <p>Space: O(1)
  *
  * <p>Key: knowing that pure bruteforce (via. recursive backtracking) is fine for small inputs
+ *
+ * @see P51NQueens
  */
 class P37SudokuSolver {
 
