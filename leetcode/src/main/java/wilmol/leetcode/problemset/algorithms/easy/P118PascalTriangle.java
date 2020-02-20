@@ -12,9 +12,11 @@ import java.util.List;
  *
  * <p>Runtime: O(n<sup>2</sup>)
  *
- * <p>Extra space: O(1)
+ * <p>Space: O(n<sup>2</sup>)
  *
- * <p>Key: just coded the steps in the visualisation
+ * <p>Key: just coded the steps in the visualisation (dynamic programming)
+ *
+ * @see P119PascalTriangle2
  */
 class P118PascalTriangle {
 
