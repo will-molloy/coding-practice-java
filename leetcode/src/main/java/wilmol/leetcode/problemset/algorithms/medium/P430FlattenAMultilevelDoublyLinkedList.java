@@ -18,6 +18,8 @@ import java.util.List;
  *
  * <p>Key: storing current level before proceeding to next level; stack/recursion to traverse depth
  * first
+ *
+ * @see P114FlattenBinaryTreeToLinkedList
  */
 interface P430FlattenAMultilevelDoublyLinkedList {
 
