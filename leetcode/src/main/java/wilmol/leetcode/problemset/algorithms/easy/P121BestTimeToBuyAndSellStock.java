@@ -11,6 +11,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: tracking current minimum/maximum
+ *
+ * @see P122BestTimeToBuyAndSellStock2
  */
 class P121BestTimeToBuyAndSellStock {
 
