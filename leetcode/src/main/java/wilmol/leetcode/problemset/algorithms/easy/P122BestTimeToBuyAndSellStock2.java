@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  * <p>Key: greedy algorithm
  *
  * @see P121BestTimeToBuyAndSellStock
+ * @see wilmol.leetcode.problemset.algorithms.hard.P123BestTimeToBuyAndSellStock3
  */
 interface P122BestTimeToBuyAndSellStock2 {
 
