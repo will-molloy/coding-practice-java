@@ -14,6 +14,7 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * @see P122BestTimeToBuyAndSellStock2
  * @see wilmol.leetcode.problemset.algorithms.hard.P123BestTimeToBuyAndSellStock3
+ * @see wilmol.leetcode.problemset.algorithms.hard.P188BestTimeToBuyAndSellStock4
  */
 class P121BestTimeToBuyAndSellStock {
 

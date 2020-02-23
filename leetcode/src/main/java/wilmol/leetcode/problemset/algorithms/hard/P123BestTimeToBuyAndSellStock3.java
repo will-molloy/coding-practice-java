@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
  *
  * @see wilmol.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see wilmol.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2
+ * @see P188BestTimeToBuyAndSellStock4
  */
 interface P123BestTimeToBuyAndSellStock3 {
 
