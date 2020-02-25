@@ -11,7 +11,7 @@ class BinaryTreeNodeTest {
   @Test
   void testToStringFullTree() {
     BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
-    assertThat(root.toString()).isEqualTo("[1, 2, 3, 4, 5, 6, 7]");
+    assertThat(root.toString()).isEqualTo("BinaryTreeNode[1, 2, 3, 4, 5, 6, 7]");
   }
 
   @Test
@@ -20,7 +20,8 @@ class BinaryTreeNodeTest {
         BinaryTreeNode.fromLevelOrder(
             1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6, 7);
     assertThat(root.toString())
-        .isEqualTo("[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6, 7]");
+        .isEqualTo(
+            "BinaryTreeNode[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6, 7]");
   }
 
   @Test

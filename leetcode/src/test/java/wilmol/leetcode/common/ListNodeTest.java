@@ -10,7 +10,7 @@ class ListNodeTest {
   @Test
   void testToStringNoCycle() {
     ListNode head = ListNode.of(1, 2, 3);
-    assertThat(head.toString()).isEqualTo("[1, 2, 3]");
+    assertThat(head.toString()).isEqualTo("ListNode[1, 2, 3]");
   }
 
   @Test
@@ -19,6 +19,6 @@ class ListNodeTest {
     ListNode node2 = new ListNode(2);
     node.next = node2;
     node2.next = node;
-    assertThat(node.toString()).isEqualTo("[1, 2] (cycling)");
+    assertThat(node.toString()).isEqualTo("ListNode[1, 2] (cycling)");
   }
 }

@@ -54,12 +54,12 @@ public final class ListNode {
     ListNode node = this;
     while (node != null) {
       if (seen.contains(node)) {
-        return values + " (cycling)";
+        return getClass().getSimpleName() + values + " (cycling)";
       }
       seen.add(node);
       values.add(node.val);
       node = node.next;
     }
-    return values.toString();
+    return getClass().getSimpleName() + values;
   }
 }

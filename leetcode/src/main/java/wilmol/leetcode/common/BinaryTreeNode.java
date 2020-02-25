@@ -74,7 +74,7 @@ public final class BinaryTreeNode {
 
   @Override
   public String toString() {
-    return serialise().toString();
+    return getClass().getSimpleName() + serialise();
   }
 
   // serialises by level order
