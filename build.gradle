@@ -138,5 +138,6 @@ subprojects {
         testImplementation "com.google.truth.extensions:truth-java8-extension:$truthVersion"
         testImplementation "org.mockito:mockito-core:$mockitoVersion"
         testImplementation "org.mockito:mockito-junit-jupiter:$mockitoVersion"
+        testImplementation "com.google.guava:guava-testlib:$guavaVersion"
     }
 }
