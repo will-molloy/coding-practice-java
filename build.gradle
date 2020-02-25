@@ -1,5 +1,5 @@
-logger.quiet "Running Java version: ${System.properties['java.version']}"
-logger.quiet "Running Gradle version: $gradle.gradleVersion"
+logger.quiet "Java version: ${System.properties['java.version']}"
+logger.quiet "Gradle version: $gradle.gradleVersion"
 
 import com.github.spotbugs.SpotBugsTask
 
@@ -10,8 +10,23 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.diffplug.spotless:spotless-plugin-gradle:3.22.0'
-        classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.8'
+        // TODO pin version numbers (with the others below)
+        classpath 'com.diffplug.spotless:spotless-plugin-gradle:3.27.1'
+        classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:2.0.0'
+        classpath "net.rdrei.android.buildtimetracker:gradle-plugin:0.11.+"
+    }
+}
+
+// Build time tracker
+apply plugin: "build-time-tracker"
+buildtimetracker {
+    reporters {
+        summary {
+            ordered false
+            threshold 50
+            barstyle "ascii"
+            shortenTaskNames false
+        }
     }
 }
 
