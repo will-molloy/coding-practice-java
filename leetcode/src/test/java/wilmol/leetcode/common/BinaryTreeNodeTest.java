@@ -18,10 +18,10 @@ class BinaryTreeNodeTest {
   void testToStringSparseTree() {
     BinaryTreeNode root =
         BinaryTreeNode.fromLevelOrder(
-            1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6, 7);
+            1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6);
     assertThat(root.toString())
         .isEqualTo(
-            "BinaryTreeNode[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6, 7]");
+            "BinaryTreeNode[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6]");
   }
 
   @Test

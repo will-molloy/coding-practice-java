@@ -106,7 +106,11 @@ public final class BinaryTreeNode {
         }
       }
     }
-    // leave out final level of nulls
-    return list.subList(0, list.size() - levelSize);
+    // leave out trailing nulls
+    int last = list.size() - levelSize;
+    while (list.get(last) == null) {
+      last--;
+    }
+    return list.subList(0, last + 1);
   }
 }
