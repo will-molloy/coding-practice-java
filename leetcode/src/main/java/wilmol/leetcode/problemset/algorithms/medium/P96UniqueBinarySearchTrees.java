@@ -7,6 +7,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * href=https://leetcode.com/problems/unique-binary-search-trees>https://leetcode.com/problems/unique-binary-search-trees</a>
  *
  * <p>Key: dynamic programming; coming up with math formula before writing code
+ *
+ * @see P95UniqueBinarySearchTrees2
  */
 interface P96UniqueBinarySearchTrees {
 
@@ -15,7 +17,7 @@ interface P96UniqueBinarySearchTrees {
   /**
    * Generates num unique BST recursively. Barely passes leetcode time limit.
    *
-   * <p>Runtime: O(n<sup>lg n</sup>) (recurrence: T(n) = n T(n/2))
+   * <p>Runtime: O(n<sup>log n</sup>) (recurrence: T(n) = SUMi(0 to n-1)T(i)+T(n-i-1))
    *
    * <p>Space: O(n) (recursion depth)
    */
