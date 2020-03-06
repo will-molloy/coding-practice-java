@@ -18,6 +18,8 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: the size of the left/right subtree ranges are the same in each array, since each array is
  * for the same tree
+ *
+ * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
  */
 class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
