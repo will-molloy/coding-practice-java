@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/wilmol/coding-practice-java.svg?branch=master)](https://travis-ci.com/wilmol/coding-practice-java)
+[![ci](https://github.com/wilmol/coding-practice-java/workflows/CI/badge.svg)](https://github.com/wilmol/coding-practice-java/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/wilmol/coding-practice-java/branch/master/graph/badge.svg)](https://codecov.io/gh/wilmol/coding-practice-java)
 
 # coding-practice-java
