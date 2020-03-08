@@ -17,6 +17,8 @@ import java.util.stream.Stream;
  * <p>Space: O(w)
  *
  * <p>Key: BFS
+ *
+ * @see P117PopulatingNextRightPointersInEachNode2
  */
 class P116PopulatingNextRightPointersInEachNode {
 
