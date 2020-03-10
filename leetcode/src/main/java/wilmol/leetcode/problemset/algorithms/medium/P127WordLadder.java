@@ -10,11 +10,13 @@ import java.util.List;
  * <p><a
  * href=https://leetcode.com/problems/word-ladder>https://leetcode.com/problems/word-ladder</a>
  *
- * <p>Runtime: O(n * n * m) (compare each word with every other word)
+ * <p>Runtime: O(n * n * m) (worst case process all words, branch algorithm used is O(n * m))
  *
- * <p>Space: O(n) (queue/set size)
+ * <p>Space: O(n * m) (queue/set size)
  *
- * <p>Key: BFS. Really: can transform is not about character counts (i.e. abc -> acb is invalid)
+ * <p>Key: BFS; in particular how the branching/neighbour traversing works
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P126WordLadder2
  */
 class P127WordLadder {
 
@@ -41,7 +43,7 @@ class P127WordLadder {
         }
         for (String potentialNeighbour : words) {
           // TODO instead of checking canTransform, can generate all transformations and check if
-          //  exists in word set O(26 * m) rather than O(n * m)
+          //  exists in word set O(26 * m) rather than O(n * m), then overall would have O(n * m)
           if (canTransform(word, potentialNeighbour) && seen.add(potentialNeighbour)) {
             queue.add(potentialNeighbour);
           }
