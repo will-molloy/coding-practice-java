@@ -41,7 +41,7 @@ interface P104MaximumDepthOfBinaryTree {
    *
    * <p>Runtime: O(n)
    *
-   * <p>Space: O(w)
+   * <p>Space: O(w) = O(n)
    *
    * <p>Key: queue data structure; caching level size
    */

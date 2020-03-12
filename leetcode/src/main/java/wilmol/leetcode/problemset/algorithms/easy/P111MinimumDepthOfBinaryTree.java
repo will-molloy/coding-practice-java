@@ -14,7 +14,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Runtime: O(n)
  *
- * <p>Space: O(w)
+ * <p>Space: O(w) = O(n)
  *
  * <p>Key: a leaf is a node with no children
  */

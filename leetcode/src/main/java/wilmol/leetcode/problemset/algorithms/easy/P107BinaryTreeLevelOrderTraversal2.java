@@ -17,7 +17,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Runtime: O(n)
  *
- * <p>Space: O(w)
+ * <p>Space: O(w) = O(n)
  *
  * <p>Key: implicitly reverse levels by inserting each level into front TODO is this cheating? No
  * way to view the leave nodes first...

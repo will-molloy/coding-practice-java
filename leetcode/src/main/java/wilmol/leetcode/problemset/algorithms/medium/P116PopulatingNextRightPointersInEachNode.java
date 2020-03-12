@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  *
  * <p>Runtime: O(n)
  *
- * <p>Space: O(w)
+ * <p>Space: O(w) = O(n)
  *
  * <p>Key: BFS
  *

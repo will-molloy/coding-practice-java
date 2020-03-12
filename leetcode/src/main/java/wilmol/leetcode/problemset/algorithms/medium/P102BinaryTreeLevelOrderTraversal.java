@@ -62,7 +62,7 @@ interface P102BinaryTreeLevelOrderTraversal {
    *
    * <p>Runtime: O(n)
    *
-   * <p>Space: O(w) (i.e. max width of tree, corresponds to max queue size)
+   * <p>Space: O(w) = O(n) (i.e. max width of tree, corresponds to max queue size)
    *
    * <p>Key: caching the queue size before processing nodes in the queue
    */
