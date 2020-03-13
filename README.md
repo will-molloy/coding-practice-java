@@ -1,7 +1,7 @@
 # coding-practice-java
 
-[![Build](https://github.com/wilmol/coding-practice-java/workflows/Build/badge.svg)](https://github.com/wilmol/coding-practice-java/actions?query=workflow%3ABuild)
-[![Codecov](https://codecov.io/gh/wilmol/coding-practice-java/branch/master/graph/badge.svg)](https://codecov.io/gh/wilmol/coding-practice-java)
+[![build](https://github.com/wilmol/coding-practice-java/workflows/build/badge.svg)](https://github.com/wilmol/coding-practice-java/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/wilmol/coding-practice-java/branch/master/graph/badge.svg)](https://codecov.io/gh/wilmol/coding-practice-java)
 
 projecteuler, leetcode, hackerrank etc. using Java
 
@@ -9,7 +9,7 @@ projecteuler, leetcode, hackerrank etc. using Java
 - [ ] Project Euler
   - [ ] [Problems Archives](project-euler/src/main/java/wilmol/projecteuler/problems) (65/687)
 - [ ] LeetCode
-  - [ ] [Algorithms](leetcode/src/main/java/wilmol/leetcode/problemset/algorithms) (189/1265)
+  - [ ] [Algorithms](leetcode/src/main/java/wilmol/leetcode/problemset/algorithms) (190/1265)
   - [ ] [Database](leetcode/src/main/java/wilmol/leetcode/problemset/database) (5/101)
   - [ ] [Shell](leetcode/src/main/java/wilmol/leetcode/problemset/shell) (0/4)
   - [ ] [Concurrency](leetcode/src/main/java/wilmol/leetcode/problemset/concurrency) (5/9)
