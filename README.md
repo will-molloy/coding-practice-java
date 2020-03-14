@@ -1,6 +1,6 @@
 # coding-practice-java
 
-[![build](https://github.com/wilmol/coding-practice-java/workflows/build/badge.svg)](https://github.com/wilmol/coding-practice-java/actions?query=workflow%3Abuild)
+[![build](https://github.com/wilmol/coding-practice-java/workflows/build/badge.svg?event=push)](https://github.com/wilmol/coding-practice-java/actions?query=workflow%3Abuild)
 [![codecov](https://codecov.io/gh/wilmol/coding-practice-java/branch/master/graph/badge.svg)](https://codecov.io/gh/wilmol/coding-practice-java)
 
 projecteuler, leetcode, hackerrank etc. using Java
