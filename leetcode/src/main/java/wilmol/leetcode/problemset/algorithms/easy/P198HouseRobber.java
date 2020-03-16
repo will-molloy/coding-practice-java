@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
  * href=https://leetcode.com/problems/house-robber>https://leetcode.com/problems/house-robber</a>
  *
  * <p>Key: dynamic programming
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P213HouseRobber2
  */
 interface P198HouseRobber {
 
