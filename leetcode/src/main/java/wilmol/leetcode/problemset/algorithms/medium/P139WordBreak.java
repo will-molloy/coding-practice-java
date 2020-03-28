@@ -11,6 +11,8 @@ import java.util.regex.Pattern;
  * <p><a href=https://leetcode.com/problems/word-break>https://leetcode.com/problems/word-break</a>
  *
  * <p>Key: dynamic programming
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P140WordBreak2
  */
 interface P139WordBreak {
 
