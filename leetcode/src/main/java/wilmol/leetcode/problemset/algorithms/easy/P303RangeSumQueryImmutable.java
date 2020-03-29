@@ -11,6 +11,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(n)
  *
  * <p>Key: knowledge of ranges/intervals, pre-computing
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P304RangeSumQuery2dImmutable
  */
 class P303RangeSumQueryImmutable {
 
