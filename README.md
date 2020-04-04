@@ -9,7 +9,7 @@ projecteuler, leetcode, hackerrank etc. using Java
 - [ ] Project Euler
   - [ ] [Problems Archives](project-euler/src/main/java/wilmol/projecteuler/problems) (65/687)
 - [ ] LeetCode
-  - [ ] [Algorithms](leetcode/src/main/java/wilmol/leetcode/problemset/algorithms) (210/1281)
+  - [ ] [Algorithms](leetcode/src/main/java/wilmol/leetcode/problemset/algorithms) (212/1281)
   - [ ] [Database](leetcode/src/main/java/wilmol/leetcode/problemset/database) (5/104)
   - [ ] [Shell](leetcode/src/main/java/wilmol/leetcode/problemset/shell) (0/4)
   - [ ] [Concurrency](leetcode/src/main/java/wilmol/leetcode/problemset/concurrency) (5/9)
