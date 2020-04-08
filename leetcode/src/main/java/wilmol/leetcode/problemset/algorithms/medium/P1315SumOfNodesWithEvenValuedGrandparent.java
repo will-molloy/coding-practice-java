@@ -13,6 +13,8 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * <p>Space: O(h)
  *
  * <p>Key: cycle through node -> parent -> grandparent
+ *
+ * @see wilmol.leetcode.problemset.algorithms.easy.P404SumOfLeftLeaves
  */
 class P1315SumOfNodesWithEvenValuedGrandparent {
 
