@@ -1,0 +1,39 @@
+package wilmol.leetcode.problemset.algorithms.easy;
+
+/**
+ * Created by wilmol on 2020-04-09.
+ *
+ * <p><a
+ * href=https://leetcode.com/problems/happy-number>https://leetcode.com/problems/happy-number</a>
+ *
+ * <p>Runtime: O(n)
+ *
+ * <p>Space: O(1)
+ *
+ * <p>Key: {@link Character#digit(char, int)} method
+ */
+class P202HappyNumber {
+
+  public boolean isHappy(int n) {
+    // cycle detection
+    int slow = n;
+    int fast = n;
+    do {
+      slow = next(slow);
+      fast = next(next(fast));
+      if (slow == 1) {
+        return true;
+      }
+    } while (slow != fast);
+    return false;
+  }
+
+  private int next(int n) {
+    int newN = 0;
+    for (char c : String.valueOf(n).toCharArray()) {
+      int digit = Character.digit(c, 10);
+      newN += digit * digit;
+    }
+    return newN;
+  }
+}
