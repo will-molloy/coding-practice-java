@@ -12,6 +12,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: prime factorisation: while divisible by factor {@code i}, repeatedly divide by it before
  * moving onto next ({@code i = [2..n]})
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P264UglyNumber2
  */
 class P263UglyNumber {
 
