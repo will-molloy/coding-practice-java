@@ -12,4 +12,9 @@ class P53MaximumSubarrayTest {
     assertThat(new P53MaximumSubarray().maxSubArray(new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4}))
         .isEqualTo(6);
   }
+
+  @Test
+  void allNegatives() {
+    assertThat(new P53MaximumSubarray().maxSubArray(new int[] {-2, -3, -1, -5})).isEqualTo(-1);
+  }
 }

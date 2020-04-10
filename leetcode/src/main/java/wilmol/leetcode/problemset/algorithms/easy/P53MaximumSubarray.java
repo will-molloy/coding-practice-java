@@ -8,24 +8,23 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: optimisation problem, so greedy approach. Also storing 'best' to make single pass
- * possible.
+ * <p>Space: O(1)
+ *
+ * <p>Key: leaving out negative prefixes/suffixes from the sum (which may include positive values).
+ *
+ * @see <a href=https://www.youtube.com/watch?v=umt7t1_X8Rc>Errichto's video</a>
+ * @see <a href=https://en.wikipedia.org/wiki/Maximum_subarray_proble>Kadane's algorithm</a>
  */
 class P53MaximumSubarray {
 
   public int maxSubArray(int[] nums) {
-
-    int best = nums[0];
+    int max = Integer.MIN_VALUE;
     int current = 0;
     for (int num : nums) {
-      if (current < 0) {
-        // restart the sum from a position which begins with a positive sum (greedy)
-        // the sum may contain negative nums!
-        current = 0;
-      }
       current += num;
-      best = Math.max(best, current);
+      max = Math.max(max, current);
+      current = Math.max(0, current);
     }
-    return best;
+    return max;
   }
 }
