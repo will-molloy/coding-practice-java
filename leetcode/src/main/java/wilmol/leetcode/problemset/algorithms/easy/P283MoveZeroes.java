@@ -10,27 +10,27 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: two pointer - one for count of zeroes, other for current array index
+ * <p>Key: able to place elements at the front (while keeping them at the back) because the back
+ * will be written to later
+ *
+ * @see <a href=https://www.youtube.com/watch?v=E7xxGi84Tso>Errichto's video</a>
  */
 class P283MoveZeroes {
 
   // TODO more optimal solution (fewer operations but still O(n)) exists where you swap elements
 
   public void moveZeroes(int[] nums) {
-    // running count of zeroes
-    int zeroes = 0;
-
-    // shift back elements
-    for (int i = 0; i < nums.length; i++) {
-      if (nums[i] == 0) {
-        zeroes += 1;
-      } else {
-        nums[i - zeroes] = nums[i];
+    int i = 0;
+    // place non-zeroes at front
+    for (int num : nums) {
+      if (num != 0) {
+        nums[i] = num;
+        i += 1;
       }
     }
 
     // fill in tail of zeroes
-    for (int i = nums.length - zeroes; i < nums.length; i++) {
+    for (; i < nums.length; i++) {
       nums[i] = 0;
     }
   }
