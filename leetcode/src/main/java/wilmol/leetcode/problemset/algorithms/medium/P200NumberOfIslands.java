@@ -12,6 +12,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(rows * cols) (worst case recursion stack size - whole grid is '1's)
  *
  * <p>Key: matrix traversal
+ *
+ * @see P130SurroundedRegions
  */
 class P200NumberOfIslands {
 
