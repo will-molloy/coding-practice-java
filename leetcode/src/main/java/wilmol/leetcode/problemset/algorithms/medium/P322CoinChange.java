@@ -16,10 +16,13 @@ import java.util.Arrays;
  * couldn't be created; most elegant way to handle this was setting {@code dp[i]} to {@code n + 1}
  * (a local maximum) initially. This allowed {@code Math.min} to be used when assigning {@code
  * dp[i]} without risk of overflows.
+ *
+ * @see P518CoinChange2
  */
 class P322CoinChange {
 
   public int coinChange(int[] coins, int n) {
+    // dp[i] = minimum coins required to create amount i
     int[] dp = new int[n + 1];
     Arrays.fill(dp, n + 1);
 
