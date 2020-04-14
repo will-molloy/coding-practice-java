@@ -14,6 +14,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * longest sequence), only see if the end point can be progressed. If the end point cannot progress
  * then can simply start over, as all previous elements are 'blocked' from entering the new
  * sequence. In other words, all continuous increasing subsequences are <b>disjoint</b>.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P673NumberOfLongestIncreasingSubsequence
  */
 class P674LongestContinuousIncreasingSubsequence {
 
