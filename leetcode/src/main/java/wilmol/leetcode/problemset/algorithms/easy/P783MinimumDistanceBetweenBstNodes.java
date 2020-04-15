@@ -6,7 +6,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * Created by wilmol on 2020-04-16.
  *
  * <p><a
- * href=https://leetcode.com/problems/minimum-absolute-difference-in-bst>https://leetcode.com/problems/minimum-absolute-difference-in-bst</a>
+ * href=https://leetcode.com/problems/minimum-distance-between-bst-nodes>https://leetcode.com/problems/minimum-distance-between-bst-nodes</a>
  *
  * <p>Runtime: O(n)
  *
@@ -14,11 +14,11 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: Tracking prev node (well, just it's value) in the inorder traversal.
  *
- * @see P783MinimumDistanceBetweenBstNodes
+ * @see P530MinimumAbsoluteDifferentInBst
  */
-class P530MinimumAbsoluteDifferentInBst {
+class P783MinimumDistanceBetweenBstNodes {
 
-  public int getMinimumDifference(BinaryTreeNode root) {
+  public int minDiffInBst(BinaryTreeNode root) {
     // all nodes contain non-negative values, so mark null node as -1
     return inorder(root, new int[] {-1, Integer.MAX_VALUE})[1];
   }
