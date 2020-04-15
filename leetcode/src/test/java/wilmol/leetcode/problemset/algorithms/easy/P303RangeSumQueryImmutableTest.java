@@ -20,7 +20,7 @@ class P303RangeSumQueryImmutableTest {
   }
 
   @Test
-  void constructWithEmptyArray() {
+  void constructWithEmptyArrayPrefixSum() {
     assertDoesNotThrow(() -> new P303RangeSumQueryImmutable.PrefixSum.NumArray(new int[0]));
   }
 
