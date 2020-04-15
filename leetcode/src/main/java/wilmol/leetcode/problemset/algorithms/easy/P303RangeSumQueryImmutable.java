@@ -9,6 +9,7 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: knowledge of ranges/intervals, prefix sum/segment tree.
  *
  * @see wilmol.leetcode.problemset.algorithms.medium.P304RangeSumQuery2dImmutable
+ * @see wilmol.leetcode.problemset.algorithms.medium.P307RangeSumQueryMutable
  */
 class P303RangeSumQueryImmutable {
 
