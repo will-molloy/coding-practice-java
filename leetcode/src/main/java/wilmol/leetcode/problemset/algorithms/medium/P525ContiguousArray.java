@@ -17,6 +17,8 @@ import java.util.Map;
  * and 1s. Intuition: it's obvious when diff=0 the counts are balanced, but after the first element
  * it will be either 1 or -1, so returning to 1 or -1 means we have essentially returned to 0
  * (excluding that first element).
+ *
+ * @see P523ContinuousSubarraySum
  */
 class P525ContiguousArray {
 
