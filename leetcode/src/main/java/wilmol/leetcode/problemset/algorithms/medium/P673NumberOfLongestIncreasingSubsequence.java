@@ -5,6 +5,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p><a
  * href=https://leetcode.com/problems/number-of-longest-increasing-subsequence>https://leetcode.com/problems/number-of-longest-increasing-subsequence</a>
+ *
+ * @see P300LongestIncreasingSubsequence
  */
 interface P673NumberOfLongestIncreasingSubsequence {
 
