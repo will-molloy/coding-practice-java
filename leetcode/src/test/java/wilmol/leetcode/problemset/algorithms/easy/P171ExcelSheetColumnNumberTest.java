@@ -25,6 +25,21 @@ class P171ExcelSheetColumnNumberTest {
   }
 
   @Test
+  void z() {
+    assertThat(p171.titleToNumber("Z")).isEqualTo(26);
+  }
+
+  @Test
+  void aa() {
+    assertThat(p171.titleToNumber("ABCDEF")).isEqualTo(12850896);
+  }
+
+  @Test
+  void az() {
+    assertThat(p171.titleToNumber("AZ")).isEqualTo(52);
+  }
+
+  @Test
   void abcdef() {
     assertThat(p171.titleToNumber("ABCDEF")).isEqualTo(12850896);
   }

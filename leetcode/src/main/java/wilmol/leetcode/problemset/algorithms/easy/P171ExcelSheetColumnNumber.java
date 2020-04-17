@@ -12,6 +12,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: ((0.x + a).x + b).x + c = c.x<sup>0</sup> + b.x<sup>1</sup> + a.x<sup>2</sup>, avoids the
  * need to use {@link Math#pow} and iterate in reverse.
+ *
+ * @see P168ExcelSheetColumnTitle
  */
 class P171ExcelSheetColumnNumber {
 
