@@ -14,6 +14,8 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: can just check for the case where left child is NULL and right child isn't (i.e. DONT
  * have to omit parenthesis after the fact)
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
  */
 class P606ConstructStringFromBinaryTree {
 
