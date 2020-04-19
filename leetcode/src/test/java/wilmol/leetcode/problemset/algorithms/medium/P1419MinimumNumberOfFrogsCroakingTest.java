@@ -1,13 +1,13 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
 /** Created by wilmol on 2020-04-19. */
-class P5390MinimumNumberOfFrogsCroakingTest {
+class P1419MinimumNumberOfFrogsCroakingTest {
 
-  private final P5390MinimumNumberOfFrogsCroaking c = new P5390MinimumNumberOfFrogsCroaking();
+  private final P1419MinimumNumberOfFrogsCroaking c = new P1419MinimumNumberOfFrogsCroaking();
 
   @Test
   void example1() {

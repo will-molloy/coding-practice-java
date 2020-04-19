@@ -1,7 +1,10 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.medium;
 
 /**
  * Created by wilmol on 2020-04-19.
+ *
+ * <p><a
+ * href=https://leetcode.com/problems/minimum-number-of-frogs-croaking>https://leetcode.com/problems/minimum-number-of-frogs-croaking/</a>
  *
  * <p><a
  * href=https://leetcode.com/contest/weekly-contest-185/problems/minimum-number-of-frogs-croaking>https://leetcode.com/contest/weekly-contest-185/problems/minimum-number-of-frogs-croaking/</a>
@@ -16,7 +19,7 @@ package wilmol.leetcode.contest.weekly.week185;
  *
  * <p>Key: State machine.
  */
-class P5390MinimumNumberOfFrogsCroaking {
+class P1419MinimumNumberOfFrogsCroaking {
 
   public int minNumberOfFrogs(String croakOfFrogs) {
     // maintain count of active croaks
