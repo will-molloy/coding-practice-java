@@ -1,4 +1,4 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.medium;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -10,6 +10,9 @@ import java.util.TreeSet;
 
 /**
  * Created by wilmol on 2020-04-19.
+ *
+ * <p><a
+ * href=https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant>https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/</a>
  *
  * <p><a
  * href=https://leetcode.com/contest/weekly-contest-185/problems/display-table-of-food-orders-in-a-restaurant>https://leetcode.com/contest/weekly-contest-185/problems/display-table-of-food-orders-in-a-restaurant/</a>
@@ -25,7 +28,7 @@ import java.util.TreeSet;
  *
  * <p>Key: TreeMap/TreeSet to implicitly sort.
  */
-class P5389DisplayTableOfFoodOrdersInARestaurant {
+class P1418DisplayTableOfFoodOrdersInARestaurant {
 
   public List<List<String>> displayTable(List<List<String>> orders) {
     // process orders

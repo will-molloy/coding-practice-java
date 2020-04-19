@@ -1,4 +1,4 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -6,10 +6,10 @@ import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
 /** Created by wilmol on 2020-04-19. */
-class P5389DisplayTableOfFoodOrdersInARestaurantTest {
+class P1418DisplayTableOfFoodOrdersInARestaurantTest {
 
-  private final P5389DisplayTableOfFoodOrdersInARestaurant b =
-      new P5389DisplayTableOfFoodOrdersInARestaurant();
+  private final P1418DisplayTableOfFoodOrdersInARestaurant b =
+      new P1418DisplayTableOfFoodOrdersInARestaurant();
 
   @Test
   void example1() {
