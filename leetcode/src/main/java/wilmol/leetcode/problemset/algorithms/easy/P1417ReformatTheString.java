@@ -1,10 +1,13 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by wilmol on 2020-04-19.
+ *
+ * <p><a
+ * href=https://leetcode.com/problems/reformat-the-string>https://leetcode.com/problems/reformat-the-string/</a>
  *
  * <p><a
  * href=https://leetcode.com/contest/weekly-contest-185/problems/reformat-the-string>https://leetcode.com/contest/weekly-contest-185/problems/reformat-the-string/</a>
@@ -19,7 +22,7 @@ import java.util.List;
  *
  * <p>Key: Build the string rather than generate permutations.
  */
-class P5388ReformatTheString {
+class P1417ReformatTheString {
 
   public String reformat(String s) {
     List<Character> letters = new ArrayList<>();

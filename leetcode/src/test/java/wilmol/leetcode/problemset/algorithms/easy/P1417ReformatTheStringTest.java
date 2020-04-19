@@ -1,13 +1,13 @@
-package wilmol.leetcode.contest.weekly.week185;
+package wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
 /** Created by wilmol on 2020-04-19. */
-class P5388ReformatTheStringTest {
+class P1417ReformatTheStringTest {
 
-  private final P5388ReformatTheString a = new P5388ReformatTheString();
+  private final P1417ReformatTheString a = new P1417ReformatTheString();
 
   @Test
   void example1() {
