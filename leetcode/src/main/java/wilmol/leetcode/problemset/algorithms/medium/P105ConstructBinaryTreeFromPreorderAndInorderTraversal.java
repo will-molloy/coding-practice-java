@@ -20,6 +20,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * for the same tree
  *
  * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
+ * @see P1008ConstructBinarySearchTreeFromPreorderTraversal
  */
 class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
 

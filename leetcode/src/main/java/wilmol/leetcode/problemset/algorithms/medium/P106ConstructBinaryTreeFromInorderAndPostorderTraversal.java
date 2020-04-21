@@ -18,6 +18,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: how binary tree traversals are laid out in an array
  *
  * @see P105ConstructBinaryTreeFromPreorderAndInorderTraversal
+ * @see P1008ConstructBinarySearchTreeFromPreorderTraversal
  */
 class P106ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
