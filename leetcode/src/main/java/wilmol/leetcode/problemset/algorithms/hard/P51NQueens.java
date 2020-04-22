@@ -9,36 +9,39 @@ import java.util.stream.IntStream;
 /**
  * Created by wilmol on 2020-02-18.
  *
- * <p><a href=https://leetcode.com/problems/n-queens>https://leetcode.com/problems/n-queens</a>
+ * <p><a href=https://leetcode.com/problems/n-queens>https://leetcode.com/problems/n-queens/</a>
  *
  * <p>Runtime: O(n!) TODO is this right? Maybe its O(n * n * n!) ...? (Loop = O(n), canPlaceQueen =
  * O(n), recursion back tracking = O(n!)), but O(n*n!) is still O(n!)???
  *
  * <p>Space: O(n) (depth of recursion)
  *
- * <p>Key: DFS backtracking to generate all permutations
+ * <p>Key: DFS backtracking to generate board permutations (not all permutations... do check board
+ * if queens can be placed, don't bother checking row with queen already etc.).
  *
  * @see P37SudokuSolver
+ * @see wilmol.leetcode.problemset.algorithms.medium.P1222QueensThatCanAttackTheKing
  */
 class P51NQueens {
 
   public List<List<String>> solveNQueens(int n) {
-    return solve(new ArrayList<>(), emptyBoard(n), n, 0);
+    return solve(new ArrayList<>(), newEmptyBoard(n), n, 0);
   }
 
   private List<List<String>> solve(
-      List<List<String>> solutions, List<char[]> board, int targetN, int currentN) {
-    if (currentN == targetN) {
+      List<List<String>> solutions, List<char[]> board, int n, int currentN) {
+    if (currentN == n) {
       // new solution
       List<String> solution = board.stream().map(String::new).collect(Collectors.toList());
       solutions.add(solution);
       return solutions;
     }
     // row = currentN because each row needs a queen (or column... have to pick one)
-    for (int col = 0; col < targetN; col++) {
-      if (canPlaceQueen(board, currentN, col, targetN)) {
+    for (int col = 0; col < n; col++) {
+      if (canPlaceQueen(board, currentN, col, n)) {
+        // place another queen
         board.get(currentN)[col] = 'Q';
-        solve(solutions, board, targetN, currentN + 1);
+        solve(solutions, board, n, currentN + 1);
         // backtrack
         board.get(currentN)[col] = '.';
       }
@@ -46,7 +49,7 @@ class P51NQueens {
     return solutions;
   }
 
-  private List<char[]> emptyBoard(int n) {
+  private List<char[]> newEmptyBoard(int n) {
     return IntStream.range(0, n)
         .mapToObj(
             ignore -> {
@@ -58,42 +61,20 @@ class P51NQueens {
   }
 
   // O(n)
-  private boolean canPlaceQueen(List<char[]> board, int row, int col, int n) {
-    for (int i = 0; i < n; i++) {
-
-      // check row
-      if (board.get(row)[i] == 'Q') {
-        return false;
-      }
-
-      // check col
-      if (board.get(i)[col] == 'Q') {
-        return false;
-      }
-
-      // check diagonals
-      // from bottom right
-      if (row + i < n && col + i < n) {
-        if (board.get(row + i)[col + i] == 'Q') {
-          return false;
+  private boolean canPlaceQueen(List<char[]> board, int placingRow, int placingCol, int n) {
+    // look all 8 directions out from the provided candidate position {placingRow, placingCol}
+    for (int rowOffset = -1; rowOffset <= 1; rowOffset++) {
+      for (int colOffSet = -1; colOffSet <= 1; colOffSet++) {
+        if (rowOffset == 0 && colOffSet == 0) {
+          continue;
         }
-      }
-      // from bottom left
-      if (row + i < n && col - i >= 0) {
-        if (board.get(row + i)[col - i] == 'Q') {
-          return false;
-        }
-      }
-      // from top right
-      if (row - i >= 0 && col + i < n) {
-        if (board.get(row - i)[col + i] == 'Q') {
-          return false;
-        }
-      }
-      // from top left
-      if (row - i >= 0 && col - i >= 0) {
-        if (board.get(row - i)[col - i] == 'Q') {
-          return false;
+        for (int row = placingRow + rowOffset, col = placingCol + colOffSet;
+            row < n && row >= 0 && col < n && col >= 0;
+            row += rowOffset, col += colOffSet) {
+          if (board.get(row)[col] == 'Q') {
+            // encountered a queen which would be able to attack the candidate position
+            return false;
+          }
         }
       }
     }

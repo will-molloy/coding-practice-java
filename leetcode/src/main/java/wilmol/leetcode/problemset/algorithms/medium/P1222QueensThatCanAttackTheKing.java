@@ -17,6 +17,8 @@ import java.util.List;
  * <p>Space: O(1) (for NxN board it would be O(N<sup>2</sup>) using array, O(queens) using hashset)
  *
  * <p>Key: Look out from king, rather than in from each queen.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P51NQueens
  */
 class P1222QueensThatCanAttackTheKing {
 
