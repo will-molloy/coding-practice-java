@@ -17,7 +17,7 @@ class P14LongestCommonPrefixTest {
 
   @Test
   void example2() {
-    assertThat(function.longestCommonPrefix(new String[] {"dog", "racecar", "car"})).isEqualTo("");
+    assertThat(function.longestCommonPrefix(new String[] {"dog", "racecar", "car"})).isEmpty();
   }
 
   @Test
@@ -42,7 +42,7 @@ class P14LongestCommonPrefixTest {
 
   @Test
   void nullAndEmpty() {
-    assertThat(function.longestCommonPrefix(null)).isEqualTo("");
-    assertThat(function.longestCommonPrefix(new String[0])).isEqualTo("");
+    assertThat(function.longestCommonPrefix(null)).isEmpty();
+    assertThat(function.longestCommonPrefix(new String[0])).isEmpty();
   }
 }

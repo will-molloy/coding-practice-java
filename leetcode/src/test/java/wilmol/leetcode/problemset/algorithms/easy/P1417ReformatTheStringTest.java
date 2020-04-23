@@ -46,6 +46,6 @@ class P1417ReformatTheStringTest {
 
   @Test
   void emptyString() {
-    assertThat(a.reformat("")).isEqualTo("");
+    assertThat(a.reformat("")).isEmpty();
   }
 }

@@ -36,6 +36,6 @@ class P5LongestPalindromicSubstringTest {
 
   @Test
   void emptyString() {
-    assertThat(function.longestPalindrome("")).isEqualTo("");
+    assertThat(function.longestPalindrome("")).isEmpty();
   }
 }
