@@ -14,6 +14,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: Dp formula is {@code dp[l][r] = s[l] == s[r] && dp[l + 1][r - 1]} therefore need to loop
  * {@code l} in reverse order so {@code l + 1} is computed first.
+ *
+ * @see P516LongestPalindromicSubsequence
  */
 class P5LongestPalindromicSubstring {
 
