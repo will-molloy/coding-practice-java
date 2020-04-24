@@ -14,6 +14,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: Reverse in chunks of size {@code k} (i.e. {@code [i, i + k)}). Can just use {@link
  * Math#min} to cover case where k covers the rest of the array.
+ *
+ * @see P344ReverseString
  */
 class P541ReverseString2 {
 
