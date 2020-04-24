@@ -17,6 +17,7 @@ package wilmol.leetcode.problemset.algorithms.easy;
  *
  * @see P344ReverseString
  * @see P557ReverseWordsInAString3
+ * @see P345ReverseVowelsOfAString
  */
 class P541ReverseString2 {
 

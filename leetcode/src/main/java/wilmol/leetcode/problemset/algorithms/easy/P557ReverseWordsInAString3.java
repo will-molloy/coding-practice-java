@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
  *
  * @see P344ReverseString
  * @see P541ReverseString2
+ * @see P345ReverseVowelsOfAString
  */
 class P557ReverseWordsInAString3 {
 
