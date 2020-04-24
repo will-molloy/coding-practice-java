@@ -16,6 +16,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * have to omit parenthesis after the fact)
  *
  * @see wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
+ * @see wilmol.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree
  */
 class P606ConstructStringFromBinaryTree {
 

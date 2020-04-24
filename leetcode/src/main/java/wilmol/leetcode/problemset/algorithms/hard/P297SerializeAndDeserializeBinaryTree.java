@@ -1,21 +1,22 @@
-package wilmol.leetcode.problemset.algorithms.medium;
+package wilmol.leetcode.problemset.algorithms.hard;
 
 import wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-17.
+ * Created by wilmol on 2020-04-25.
  *
  * <p><a
- * href=https://leetcode.com/problems/serialize-and-deserialize-bst>https://leetcode.com/problems/serialize-and-deserialize-bst</a>
+ * href=https://leetcode.com/problems/serialize-and-deserialize-binary-tree>https://leetcode.com/problems/serialize-and-deserialize-binary-tree/</a>
  *
- * <p>Key: Pretty standard to use recursion to traverse/build tree. So I'd say the key thing was
- * index handling (+1,-1 to skip parenthesis, knowing where they start (in this case consistently
- * '('), knowing if they're inclusive/exclusive (including library methods) etc.).
+ * <p>Difficulty: Hard.
+ *
+ * <p>Key: Solution duplicates {@link
+ * wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst}.
  *
  * @see wilmol.leetcode.problemset.algorithms.easy.P606ConstructStringFromBinaryTree
- * @see wilmol.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree
+ * @see wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
  */
-class P449SerializeAndDeserializeBst {
+class P297SerializeAndDeserializeBinaryTree {
 
   // Runtime: O(n)
   // Space: O(h)
