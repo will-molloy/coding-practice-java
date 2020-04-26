@@ -13,6 +13,8 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(n)
  *
  * <p>Key: Prefix sum.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P1423MaximumPointsYouCanObtainFromCards
  */
 class P1422MaximumScoreAfterSplittingAString {
 
