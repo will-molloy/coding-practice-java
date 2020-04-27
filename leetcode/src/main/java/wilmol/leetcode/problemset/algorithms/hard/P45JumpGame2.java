@@ -18,6 +18,7 @@ package wilmol.leetcode.problemset.algorithms.hard;
  * @see <a href=https://www.youtube.com/watch?v=0RHXjBKY9EM>Errichto's video</a>
  * @see wilmol.leetcode.problemset.algorithms.medium.P55JumpGame
  * @see wilmol.leetcode.problemset.algorithms.medium.P1306JumpGame3
+ * @see P1345JumpGame4
  */
 class P45JumpGame2 {
 

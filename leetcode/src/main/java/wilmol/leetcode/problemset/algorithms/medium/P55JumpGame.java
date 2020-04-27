@@ -9,6 +9,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see wilmol.leetcode.problemset.algorithms.hard.P45JumpGame2
  * @see P1306JumpGame3
+ * @see wilmol.leetcode.problemset.algorithms.hard.P1345JumpGame4
  */
 interface P55JumpGame {
 

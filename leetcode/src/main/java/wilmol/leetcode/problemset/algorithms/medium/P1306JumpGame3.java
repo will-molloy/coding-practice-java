@@ -19,6 +19,7 @@ import java.util.Set;
  *
  * @see P55JumpGame
  * @see wilmol.leetcode.problemset.algorithms.hard.P45JumpGame2
+ * @see wilmol.leetcode.problemset.algorithms.hard.P1345JumpGame4
  */
 class P1306JumpGame3 {
 
