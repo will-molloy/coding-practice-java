@@ -6,6 +6,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * <p><a href=https://leetcode.com/problems/jump-game>https://leetcode.com/problems/jump-game</a>
  *
  * <p>Key: greedy algorithm; if you can reach beyond something then you can reach that thing.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P45JumpGame2
  */
 interface P55JumpGame {
 
