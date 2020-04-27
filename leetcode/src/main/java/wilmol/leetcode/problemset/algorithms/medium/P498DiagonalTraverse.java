@@ -15,6 +15,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: Simulating the process of walking through the grid. In particular separate {@code i}
  * variable so don't have to worry about calculating position in 1d array with {@code row} and
  * {@code col} variables.
+ *
+ * @see P1424DiagonalTraverse2
  */
 class P498DiagonalTraverse {
 

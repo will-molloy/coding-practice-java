@@ -308,7 +308,7 @@
         <!-- Regexp for JavaDoc -->
         <!-- Ensure links in Javadocs are tagged correctly -->
         <module name="RegexpSinglelineJava">
-            <property name="format" value="^.*\*(?!.*href=).*?http.*$"/>
+            <property name="format" value="^.*\*(?!.*(href|src)=).*?http.*$"/>
             <property name="message" value="Link in Javadoc must be tagged '&lt;a href=...'."/>
         </module>
         <!-- Ensure class author is present
