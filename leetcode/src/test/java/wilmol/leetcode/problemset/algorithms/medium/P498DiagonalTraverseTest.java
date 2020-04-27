@@ -2,15 +2,16 @@ package wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 /** Created by wilmol on 2020-04-27. */
 class P498DiagonalTraverseTest {
 
-  private final P498DiagonalTraverse p498 = new P498DiagonalTraverse();
-
-  @Test
-  void example() {
+  @ParameterizedTest
+  @MethodSource("p498")
+  void example(P498DiagonalTraverse p498) {
     assertThat(
             p498.findDiagonalOrder(
                 new int[][] {
@@ -21,5 +22,10 @@ class P498DiagonalTraverseTest {
         .asList()
         .containsExactly(1, 2, 4, 7, 5, 3, 6, 8, 9)
         .inOrder();
+  }
+
+  static Stream<P498DiagonalTraverse> p498() {
+    return Stream.of(
+        new P498DiagonalTraverse.SimulateWalk(), new P498DiagonalTraverse.CollectDiagonals());
   }
 }

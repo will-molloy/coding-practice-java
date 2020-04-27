@@ -19,8 +19,8 @@ import java.util.List;
  *
  * <p><img src="https://i.imgur.com/MRDn9hS.png" />
  *
- * <p>Simulating the walk (i.e. how {@link P498DiagonalTraverse} was solved) produces TLE due to
- * iterating over 'holes' in the matrix, so need to use this transformation solution.
+ * <p>Simulating the walk (i.e. how {@link P498DiagonalTraverse.SimulateWalk} works) produces TLE
+ * due to iterating over 'holes' in the matrix, so need to use this transformation solution.
  *
  * @see P498DiagonalTraverse
  */
@@ -31,20 +31,20 @@ class P1424DiagonalTraverse2 {
 
     // build list of diagonals
     // use array list because size is unknown due to holes in grid
-    List<List<Integer>> lists = new ArrayList<>();
+    List<List<Integer>> diagonals = new ArrayList<>();
 
     // diagonal index of some element at (row, col) is row + col
 
     for (int row = 0; row < nums.size(); row++) {
       for (int col = 0; col < nums.get(row).size(); col++) {
-        int diagI = row + col;
-        if (diagI >= lists.size()) {
-          lists.add(new ArrayList<>());
+        int diagonalIndex = row + col;
+        if (diagonalIndex >= diagonals.size()) {
+          diagonals.add(new ArrayList<>());
         }
         // we are iterating rows in ascending order
         // therefore see end of diagonal first
         // therefore need to reverse the diagonal, doing this implicitly by adding to front of list
-        lists.get(diagI).add(0, nums.get(row).get(col));
+        diagonals.get(diagonalIndex).add(0, nums.get(row).get(col));
         size++;
       }
     }
@@ -52,7 +52,7 @@ class P1424DiagonalTraverse2 {
     // flatten into result array
     int[] result = new int[size];
     int i = 0;
-    for (List<Integer> list : lists) {
+    for (List<Integer> list : diagonals) {
       for (int e : list) {
         result[i++] = e;
       }
