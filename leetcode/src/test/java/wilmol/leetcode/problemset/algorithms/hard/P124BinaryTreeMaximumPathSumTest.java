@@ -20,4 +20,9 @@ class P124BinaryTreeMaximumPathSumTest {
     assertThat(fun.maxPathSum(BinaryTreeNode.fromLevelOrder(-10, 9, 20, null, null, 15, 7)))
         .isEqualTo(42);
   }
+
+  @Test
+  void cutPathShort() {
+    assertThat(fun.maxPathSum(BinaryTreeNode.fromLevelOrder(2, -1))).isEqualTo(2);
+  }
 }
