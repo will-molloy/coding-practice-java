@@ -10,6 +10,8 @@ import java.util.ArrayDeque;
  *
  * <p>Key: Two pointers (growing and shrinking subsequence) and {@link java.util.Deque} to track the
  * min/max element in the dynamic subarray.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P239SlidingWindowMaximum
  */
 interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 
