@@ -14,6 +14,8 @@ import java.util.List;
  * <p>Extra space: O(n) (recursion stack size)
  *
  * <p>Key: String can be represented by a binary tree.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P494TargetSum
  */
 class P784LetterCasePermutation {
 
