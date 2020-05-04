@@ -6,12 +6,12 @@
 projecteuler, leetcode, hackerrank etc. using Java
 
 ## Progress
-- [ ] Project Euler
-  - [ ] [Problems Archives](project-euler/src/main/java/wilmol/projecteuler/problems) (65/687)
-- [ ] LeetCode
+- [ ] [Project Euler](https://projecteuler.net/profile/wilmol.png)
+  - [ ] [Problems Archives](project-euler/src/main/java/wilmol/projecteuler/problems) (65/714)
+- [ ] [LeetCode](https://leetcode.com/wilmol/)
   - [ ] [Algorithms](leetcode/src/main/java/wilmol/leetcode/problemset/algorithms) (298/1318)
   - [ ] [Concurrency](leetcode/src/main/java/wilmol/leetcode/problemset/concurrency) (5/9)
-- [ ] HackerRank
+- [ ] [HackerRank](https://www.hackerrank.com/WilMol)
   - [ ] [Interview Preparation Kit](hackerrank/src/main/java/wilmol/hackerrank/interviewpreparationkit) (40/69)
   - [x] [Regex](hackerrank/src/main/java/wilmol/hackerrank/regex) (47/47)
 
