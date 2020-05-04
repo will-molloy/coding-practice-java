@@ -1,13 +1,10 @@
 package wilmol.leetcode.problemset.algorithms.easy;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
 import static com.google.common.truth.Truth.assertThat;
 
-/**
- * Created by wilmol on 2020-05-04.
- */
+import org.junit.jupiter.api.Test;
+
+/** Created by wilmol on 2020-05-04. */
 class P476NumberComplementTest {
 
   private final P476NumberComplement p476 = new P476NumberComplement();
