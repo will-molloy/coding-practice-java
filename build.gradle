@@ -115,7 +115,7 @@ subprojects {
         // production
         guavaVersion = '29.0-jre'
         log4jVersion = '2.13.0'
-        commonsLangVersion = '3.9'
+        commonsLangVersion = '3.10'
         // test
         junitVersion = '5.6.0'
         truthVersion = '1.0.1'
