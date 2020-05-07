@@ -1,5 +1,5 @@
 dependencies {
-    implementation 'com.google.code.findbugs:annotations:3.0.1'
+    implementation 'com.google.code.findbugs:annotations:3.0.1u2'
     implementation "com.google.guava:guava:$guavaVersion"
     implementation "org.apache.logging.log4j:log4j-core:$log4jVersion"
     implementation "org.apache.commons:commons-lang3:$commonsLangVersion"
