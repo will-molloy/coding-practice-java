@@ -1,5 +1,7 @@
 package wilmol.leetcode.problemset.algorithms.easy;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 /**
  * Created by wilmol on 2020-05-08.
  *
@@ -13,6 +15,7 @@ package wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Declare variables as {@code double} before division to avoid divide by zero errors.
  * ({@code double} returns infinity, while {@code int} throws an {@link ArithmeticException}.)
  */
+@SuppressFBWarnings("FE_FLOATING_POINT_EQUALITY")
 class P1232CheckIfItIsAStraightLine {
 
   public boolean checkStraightLine(int[][] coordinates) {
@@ -28,7 +31,7 @@ class P1232CheckIfItIsAStraightLine {
     double gradient = gradient(first, second);
 
     for (int i = 1; i < n - 1; i++) {
-      if (Double.compare(gradient(coordinates[i], coordinates[i + 1]), gradient) != 0) {
+      if (gradient(coordinates[i], coordinates[i + 1]) != gradient) {
         return false;
       }
     }

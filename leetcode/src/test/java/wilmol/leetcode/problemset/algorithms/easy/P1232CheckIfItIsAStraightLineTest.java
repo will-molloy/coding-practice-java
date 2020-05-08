@@ -53,4 +53,11 @@ class P1232CheckIfItIsAStraightLineTest {
   void twoPoints() {
     assertThat(p1232.checkStraightLine(new int[][] {{-1234, 4567}, {7890, -12345}})).isTrue();
   }
+
+  @Test
+  void negativeZeroEqualsPositiveZero() {
+    assertThat(
+            p1232.checkStraightLine(new int[][] {{-3, -2}, {-1, -2}, {2, -2}, {-2, -2}, {0, -2}}))
+        .isTrue();
+  }
 }
