@@ -22,7 +22,7 @@ class P1441BuildAnArrayWithStackOperations {
 
     // pointer over 'target'
     int i = 0;
-    // pointer over 'result = [1, n]'
+    // pointer over 'list = [1, n]'
     int curr = 1;
     while (i < target.length) {
       if (target[i] == curr) {
