@@ -18,4 +18,9 @@ class P10SummationOfPrimesTest {
   void below2Million() {
     assertThat(summationOfPrimes.apply(2_000_000)).isEqualTo(142_913_828_922L);
   }
+
+  @Test
+  void exclusive() {
+    assertThat(summationOfPrimes.apply(5)).isEqualTo(5L);
+  }
 }

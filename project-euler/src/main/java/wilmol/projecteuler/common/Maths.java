@@ -4,9 +4,10 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import com.google.common.math.BigIntegerMath;
 import com.google.common.math.IntMath;
+import com.google.common.primitives.Ints;
 import java.math.BigInteger;
 import java.math.RoundingMode;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -82,30 +83,21 @@ public final class Maths {
   }
 
   /** Return all primes below the given limit. */
-  public static List<Long> allPrimesBelow(int below) {
-    if (below < 2) {
-      return List.of();
+  public static List<Integer> allPrimesBelow(int below) {
+    boolean[] sieve = new boolean[below];
+    Arrays.fill(sieve, 2, below, true);
+
+    for (int p = 2; p * p < below; p++) {
+      if (!sieve[p]) {
+        continue;
+      }
+      for (int i = p * p; i < below; i += p) {
+        sieve[i] = false;
+      }
     }
 
-    // Sieve of Eratosthenes https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
-    // only need to test against current list of primes when generating sequence of primes from
-    // smallest prime.
-    // Note, since using Java 8 Collector interface, the result is eager (a collection) not lazy
-    // (not a stream)
-    // no way around this since Stream.collect() is a terminal operation on the pipeline.
-    return LongStream.range(2, below)
-        .sequential()
-        .collect(
-            ArrayList::new,
-            (currentPrimes, candidatePrime) -> {
-              long candidateRoot = (long) Math.sqrt(candidatePrime);
-              if (currentPrimes.stream()
-                  .takeWhile(p -> p <= candidateRoot)
-                  .noneMatch(p -> candidatePrime % p == 0)) {
-                currentPrimes.add(candidatePrime);
-              }
-            },
-            List::addAll);
+    int[] primes = IntStream.range(0, below).filter(l -> sieve[l]).toArray();
+    return Ints.asList(primes);
   }
 
   /** Return true if the given value is an integer. I.e. has no fractional component. */
