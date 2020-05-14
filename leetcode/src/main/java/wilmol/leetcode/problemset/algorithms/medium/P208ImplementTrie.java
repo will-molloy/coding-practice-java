@@ -27,10 +27,12 @@ class P208ImplementTrie {
 
       // create path for each letter in "word" from the root
       for (char c : word.toCharArray()) {
-        if (node.children[c - 'a'] == null) {
-          node.children[c - 'a'] = new Node();
+        Node child = node.children[c - 'a'];
+        if (child == null) {
+          child = new Node();
+          node.children[c - 'a'] = child;
         }
-        node = node.children[c - 'a'];
+        node = child;
       }
 
       // mark final node as leaf even if it has children
@@ -50,10 +52,11 @@ class P208ImplementTrie {
 
       // check there is a path for "word" that ends with a leaf node
       for (char c : word.toCharArray()) {
-        if (node.children[c - 'a'] == null) {
+        Node child = node.children[c - 'a'];
+        if (child == null) {
           return false;
         }
-        node = node.children[c - 'a'];
+        node = child;
       }
       return node.isLeaf;
     }
@@ -70,10 +73,11 @@ class P208ImplementTrie {
 
       // check there is a path for "word" doesn't necessarily have to end with a leaf
       for (char c : prefix.toCharArray()) {
-        if (node.children[c - 'a'] == null) {
+        Node child = node.children[c - 'a'];
+        if (child == null) {
           return false;
         }
-        node = node.children[c - 'a'];
+        node = child;
       }
       return true;
     }
