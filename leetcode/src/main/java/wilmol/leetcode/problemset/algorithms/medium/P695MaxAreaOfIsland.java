@@ -14,6 +14,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  * array), or update based on recursive call results.
  *
  * @see P200NumberOfIslands
+ * @see wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
  */
 class P695MaxAreaOfIsland {
 
