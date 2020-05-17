@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * <p><a
  * href=https://leetcode.com/problems/rearrange-words-in-a-sentence>https://leetcode.com/problems/rearrange-words-in-a-sentence/</a>
  *
- * <p>Runtime: O(n(log(n))
+ * <p>Runtime: O(n * log(n))
  *
  * <p>Extra space: O(n)
  *
