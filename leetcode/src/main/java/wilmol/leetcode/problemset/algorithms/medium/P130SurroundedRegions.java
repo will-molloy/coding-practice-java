@@ -14,6 +14,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P200NumberOfIslands
  * @see wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
+ * @see P695MaxAreaOfIsland
  */
 class P130SurroundedRegions {
 
