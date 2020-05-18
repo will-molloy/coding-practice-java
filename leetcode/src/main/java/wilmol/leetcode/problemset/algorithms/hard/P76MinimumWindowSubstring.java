@@ -16,6 +16,8 @@ import java.util.Map;
  * <p>Key: Hash map to maintain count of characters. Two pointers to 'widen' and 'narrow' window.
  *
  * @see P30SubstringWithConcatenationOfAllWords
+ * @see wilmol.leetcode.problemset.algorithms.medium.P438FindAllAnagramsInAString
+ * @see wilmol.leetcode.problemset.algorithms.medium.P567PermutationInString
  */
 class P76MinimumWindowSubstring {
 

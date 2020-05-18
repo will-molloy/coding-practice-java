@@ -20,6 +20,7 @@ import java.util.List;
  * start of the old window and add the end of the new window.
  *
  * @see wilmol.leetcode.problemset.algorithms.hard.P76MinimumWindowSubstring
+ * @see P567PermutationInString
  */
 class P438FindAllAnagramsInAString {
 
