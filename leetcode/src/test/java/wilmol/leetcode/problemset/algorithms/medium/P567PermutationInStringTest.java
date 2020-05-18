@@ -1,13 +1,10 @@
 package wilmol.leetcode.problemset.algorithms.medium;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
 import static com.google.common.truth.Truth.assertThat;
 
-/**
- * Created by wilmol on 2020-05-18.
- */
+import org.junit.jupiter.api.Test;
+
+/** Created by wilmol on 2020-05-18. */
 class P567PermutationInStringTest {
 
   private final P567PermutationInString p567 = new P567PermutationInString();
