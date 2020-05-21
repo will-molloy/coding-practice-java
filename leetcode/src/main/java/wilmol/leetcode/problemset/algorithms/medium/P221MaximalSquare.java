@@ -17,6 +17,8 @@ import java.util.stream.IntStream;
  * <p>Space: O(nm)
  *
  * <p>Key: Tracking side length in the dp (since it's a square).
+ *
+ * @see P1277CountSquareSubmatricesWithAllOnes
  */
 class P221MaximalSquare {
 
