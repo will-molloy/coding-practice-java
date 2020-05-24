@@ -16,6 +16,9 @@ import java.util.List;
  *
  * <p>Key: Checking if {@code intervals[i]} can be merged into {@code newInterval} and if {@code
  * newInterval} can be merged into {@code intervals[i]} (i.e. need to check both, not just one).
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P56MergeIntervals
+ * @see wilmol.leetcode.problemset.algorithms.medium.P986IntervalListIntersections
  */
 class P57InsertInterval {
 

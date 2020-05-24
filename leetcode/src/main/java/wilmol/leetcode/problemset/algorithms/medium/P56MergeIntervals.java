@@ -11,6 +11,9 @@ import java.util.stream.Collectors;
  *
  * <p><a
  * href=https://leetcode.com/problems/merge-intervals>https://leetcode.com/problems/merge-intervals</a>
+ *
+ * @see wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
+ * @see P986IntervalListIntersections
  */
 interface P56MergeIntervals {
 
