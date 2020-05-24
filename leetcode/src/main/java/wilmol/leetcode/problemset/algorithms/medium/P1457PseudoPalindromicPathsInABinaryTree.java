@@ -14,53 +14,86 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: Palindrome permutation if at most one odd frequency.
  */
-class P1457PseudoPalindromicPathsInABinaryTree {
+interface P1457PseudoPalindromicPathsInABinaryTree {
 
-  private int ans;
+  int pseudoPalindromicPaths(BinaryTreeNode root);
 
-  public int pseudoPalindromicPaths(BinaryTreeNode root) {
-    // gather all root to leaf paths, dfs
+  /** Solution which uses an array to track the path. */
+  class Array implements P1457PseudoPalindromicPathsInABinaryTree {
 
-    // is palindrome if at most ONE odd count of some node
-    // track path in fixed sized freq array
+    private int ans;
 
-    ans = 0;
+    public int pseudoPalindromicPaths(BinaryTreeNode root) {
+      // gather all root to leaf paths, dfs
 
-    dfs(root, new int[10]);
+      // is palindrome if at most ONE odd count of some node
+      // track path in fixed sized freq array
 
-    return ans;
-  }
-
-  private void dfs(BinaryTreeNode node, int[] valFreqs) {
-    if (node == null) {
-      return;
+      ans = 0;
+      dfs(root, new int[10]);
+      return ans;
     }
-    // when branching, don't want siblings to share state as they aren't on the same path
-    // so copy path state because int array is mutated in place
-    valFreqs = valFreqs.clone();
-    valFreqs[node.val]++;
-    if (node.left == null && node.right == null) {
-      // leaf
-      if (atMostOneOdd(valFreqs)) {
-        ans++;
+
+    private void dfs(BinaryTreeNode node, int[] valFreqs) {
+      if (node == null) {
+        return;
       }
-    } else {
-      // non-leaf
-      dfs(node.left, valFreqs);
-      dfs(node.right, valFreqs);
-    }
-  }
-
-  private boolean atMostOneOdd(int[] valFreqs) {
-    boolean oneOdd = false;
-    for (int valFreq : valFreqs) {
-      if (valFreq % 2 != 0) {
-        if (oneOdd) {
-          return false;
+      // when branching, don't want siblings to share state as they aren't on the same path
+      // so copy path state because int array is mutated in place
+      valFreqs = valFreqs.clone();
+      valFreqs[node.val]++;
+      if (node.left == null && node.right == null) {
+        // leaf
+        if (atMostOneOdd(valFreqs)) {
+          ans++;
         }
-        oneOdd = true;
+      } else {
+        // non-leaf
+        dfs(node.left, valFreqs);
+        dfs(node.right, valFreqs);
       }
     }
-    return true;
+
+    private boolean atMostOneOdd(int[] valFreqs) {
+      boolean oneOdd = false;
+      for (int valFreq : valFreqs) {
+        if (valFreq % 2 != 0) {
+          if (oneOdd) {
+            return false;
+          }
+          oneOdd = true;
+        }
+      }
+      return true;
+    }
+  }
+
+  /** Solution which uses a bitmask to track the path. */
+  class BitMask implements P1457PseudoPalindromicPathsInABinaryTree {
+
+    private int ans;
+
+    public int pseudoPalindromicPaths(BinaryTreeNode root) {
+      ans = 0;
+      dfs(root, 0);
+      return ans;
+    }
+
+    private void dfs(BinaryTreeNode node, int bitmask) {
+      if (node == null) {
+        return;
+      }
+      bitmask ^= 1 << (node.val);
+      if (node.left == null && node.right == null) {
+        // leaf
+        if ((bitmask & (bitmask - 1)) == 0) {
+          ans++;
+        }
+      } else {
+        // non-leaf
+        dfs(node.left, bitmask);
+        dfs(node.right, bitmask);
+      }
+    }
   }
 }

@@ -139,5 +139,6 @@ subprojects {
         testImplementation "org.mockito:mockito-core:$mockitoVersion"
         testImplementation "org.mockito:mockito-junit-jupiter:$mockitoVersion"
         testImplementation "com.google.guava:guava-testlib:$guavaVersion"
+        testImplementation project(':testlib')
     }
 }
