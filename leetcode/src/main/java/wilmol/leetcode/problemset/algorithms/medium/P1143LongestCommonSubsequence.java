@@ -17,6 +17,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>See also: Page 390 of "Introduction to Algorithms" (CLRS, 3rd edition)
  *
+ * @see P1035UncrossedLines
  * @see wilmol.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences
  */
 class P1143LongestCommonSubsequence {

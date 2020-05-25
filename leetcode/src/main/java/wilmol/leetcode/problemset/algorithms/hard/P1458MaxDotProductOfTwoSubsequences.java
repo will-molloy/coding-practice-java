@@ -12,6 +12,7 @@ package wilmol.leetcode.problemset.algorithms.hard;
  *
  * <p>Key: Dynamic programming. Very similar to LCS problem.
  *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P1035UncrossedLines
  * @see wilmol.leetcode.problemset.algorithms.medium.P1143LongestCommonSubsequence
  */
 class P1458MaxDotProductOfTwoSubsequences {
@@ -19,6 +20,11 @@ class P1458MaxDotProductOfTwoSubsequences {
   public int maxDotProduct(int[] nums1, int[] nums2) {
     int n1 = nums1.length;
     int n2 = nums2.length;
+
+    // longest common subsequence problem
+    // (with a tricky tweak that the LCS must be non-empty)
+    // we want to line up as many 'good' pairs as possible to create the largest sum
+    // a pair is considered good if it increases the sum (i.e. pair two negatives or two positives)
 
     // dp[i][j] = answer considering nums1[0, i] and nums2[0, j]
     int[][] dp = new int[n1][n2];
