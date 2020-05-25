@@ -13,6 +13,8 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * <p>Extra space: O(h)
  *
  * <p>Key: Palindrome permutation if at most one odd frequency.
+ *
+ * @see wilmol.leetcode.problemset.algorithms.easy.P409LongestPalindrome
  */
 interface P1457PseudoPalindromicPathsInABinaryTree {
 
