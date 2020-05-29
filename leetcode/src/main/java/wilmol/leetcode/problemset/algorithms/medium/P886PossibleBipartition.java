@@ -12,12 +12,14 @@ import java.util.Set;
  * <p><a
  * href=https://leetcode.com/problems/possible-bipartition>https://leetcode.com/problems/possible-bipartition/</a>
  *
- * <p>Runtime: O(n + d) - creating adj list is O(d), DFS is O(n)
+ * <p>Runtime: O(n + d) - creating adj list is O(d), DFS is O(n + d)
  *
  * <p>Extra space: O(n + d) - colours map and DFS stack space is O(n), adj list is O(d)
  *
  * <p>Key: Track node colours in hashmap. Colour with DFS. Consider that any node could be a source
  * node.
+ *
+ * @see P207CourseSchedule
  */
 class P886PossibleBipartition {
 
