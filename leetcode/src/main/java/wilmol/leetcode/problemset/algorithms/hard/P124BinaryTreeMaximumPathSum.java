@@ -15,6 +15,7 @@ import wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: Global maximum.
  *
  * @see <a href=https://youtu.be/bm0q6huoriY>Errichto's video</a>
+ * @see wilmol.leetcode.problemset.algorithms.easy.P687LongestUnivaluePath
  */
 class P124BinaryTreeMaximumPathSum {
 
