@@ -22,6 +22,8 @@ import java.util.stream.Collectors;
  * <p>Extra space: O(n + k) = O(n)
  *
  * <p>Key: Heap (priority queue). Cannot use {@code addAll} with a priority queue it seems.
+ *
+ * @see P973KClosestPointsToOrigin
  */
 class P692TopKFrequentWords {
 
