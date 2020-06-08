@@ -14,6 +14,8 @@ import java.util.concurrent.ThreadLocalRandom;
  * <p>Extra space: O(n)
  *
  * <p>Key: Represent probability weights with ranges.
+ *
+ * @see P398RandomPickIndex
  */
 class P528RandomPickWithWeight {
 
