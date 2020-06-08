@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 /** Created by wilmol on 2020-06-05. */
 class P528RandomPickWithWeightTest {
 
-  private static final int TRIALS = 10_000;
+  private static final int TRIALS = 1_000_000;
 
-  private static final double TOLERANCE = 0.01;
+  private static final double TOLERANCE = 0.02;
 
   @Test
   void example1() {
