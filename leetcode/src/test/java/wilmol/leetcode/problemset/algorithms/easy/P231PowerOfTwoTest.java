@@ -2,34 +2,48 @@ package wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import org.junit.jupiter.api.Test;
+import com.google.common.collect.ImmutableList;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import wilmol.testlib.TestLib;
 
 /** Created by wilmol on 2020-04-24. */
 class P231PowerOfTwoTest {
-  private final P231PowerOfTwo p231 = new P231PowerOfTwo();
 
-  @Test
-  void example1() {
-    assertThat(p231.isPowerOfTwo(1)).isTrue();
+  @ParameterizedTest
+  @MethodSource
+  void examples(P231PowerOfTwo p231, int n, boolean expected) {
+    assertThat(p231.isPowerOfTwo(n)).isEqualTo(expected);
   }
 
-  @Test
-  void example2() {
-    assertThat(p231.isPowerOfTwo(16)).isTrue();
+  static Stream<Arguments> examples() {
+    return TestLib.cartesianProduct(solutions(), exampleArgs());
   }
 
-  @Test
-  void example3() {
-    assertThat(p231.isPowerOfTwo(218)).isFalse();
+  private static ImmutableList<Arguments> exampleArgs() {
+    return ImmutableList.of(
+        Arguments.of(1, true), Arguments.of(16, true), Arguments.of(218, false));
   }
 
-  @Test
-  void n0() {
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void n0(P231PowerOfTwo p231) {
     assertThat(p231.isPowerOfTwo(0)).isFalse();
   }
 
-  @Test
-  void nNegative() {
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void nNegative(P231PowerOfTwo p231) {
     assertThat(p231.isPowerOfTwo(-1)).isFalse();
+  }
+
+  private static ImmutableList<Arguments> solutions() {
+    return ImmutableList.of(
+        Arguments.of(new P231PowerOfTwo.LibraryMethod()),
+        Arguments.of(new P231PowerOfTwo.BitManipulation()),
+        Arguments.of(new P231PowerOfTwo.Recursive()),
+        Arguments.of(new P231PowerOfTwo.Iterative()));
   }
 }
