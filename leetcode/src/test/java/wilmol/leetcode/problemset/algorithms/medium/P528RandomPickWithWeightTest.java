@@ -17,7 +17,9 @@ class P528RandomPickWithWeightTest {
   void example1() {
     Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {1});
     assertThat(actualProbabilities.keySet()).containsExactly(0);
-    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
+    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum())
+        .isWithin(TOLERANCE)
+        .of(1);
     assertThat(actualProbabilities.get(0)).isEqualTo(1);
   }
 
@@ -25,7 +27,9 @@ class P528RandomPickWithWeightTest {
   void example2() {
     Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {1, 3});
     assertThat(actualProbabilities.keySet()).containsExactly(0, 1);
-    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
+    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum())
+        .isWithin(TOLERANCE)
+        .of(1);
     assertThat(actualProbabilities.get(0)).isWithin(TOLERANCE).of(0.25);
     assertThat(actualProbabilities.get(1)).isWithin(TOLERANCE).of(0.75);
   }
@@ -34,7 +38,9 @@ class P528RandomPickWithWeightTest {
   void codeCommentExample() {
     Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {2, 5, 3});
     assertThat(actualProbabilities.keySet()).containsExactly(0, 1, 2);
-    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
+    assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum())
+        .isWithin(TOLERANCE)
+        .of(1);
     assertThat(actualProbabilities.get(0)).isWithin(TOLERANCE).of(0.2);
     assertThat(actualProbabilities.get(1)).isWithin(TOLERANCE).of(0.5);
     assertThat(actualProbabilities.get(2)).isWithin(TOLERANCE).of(0.3);

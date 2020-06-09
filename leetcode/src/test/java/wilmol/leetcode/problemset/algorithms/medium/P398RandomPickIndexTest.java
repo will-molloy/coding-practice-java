@@ -21,14 +21,18 @@ class P398RandomPickIndexTest {
 
     Map<Integer, Double> actualProbabilitiesPick3 = getActualProbabilities(solution, 3);
     assertThat(actualProbabilitiesPick3.keySet()).containsExactly(2, 3, 4);
-    assertThat(actualProbabilitiesPick3.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
+    assertThat(actualProbabilitiesPick3.values().stream().mapToDouble(i -> i).sum())
+        .isWithin(TOLERANCE)
+        .of(1);
     assertThat(actualProbabilitiesPick3.get(2)).isWithin(TOLERANCE).of((double) 1 / 3);
     assertThat(actualProbabilitiesPick3.get(3)).isWithin(TOLERANCE).of((double) 1 / 3);
     assertThat(actualProbabilitiesPick3.get(4)).isWithin(TOLERANCE).of((double) 1 / 3);
 
     Map<Integer, Double> actualProbabilitiesPick1 = getActualProbabilities(solution, 1);
     assertThat(actualProbabilitiesPick1.keySet()).containsExactly(0);
-    assertThat(actualProbabilitiesPick1.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
+    assertThat(actualProbabilitiesPick1.values().stream().mapToDouble(i -> i).sum())
+        .isWithin(TOLERANCE)
+        .of(1);
     assertThat(actualProbabilitiesPick1.get(0)).isEqualTo(1);
   }
 
