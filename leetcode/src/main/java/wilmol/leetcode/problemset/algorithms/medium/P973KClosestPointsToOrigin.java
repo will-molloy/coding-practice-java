@@ -17,6 +17,7 @@ import java.util.PriorityQueue;
  * are evicted first.
  *
  * @see P692TopKFrequentWords
+ * @see wilmol.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
  */
 class P973KClosestPointsToOrigin {
 

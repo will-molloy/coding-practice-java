@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
  *
  * <p>Key: Heap (priority queue). Cannot use {@code addAll} with a priority queue it seems.
  *
+ * @see wilmol.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
  * @see P973KClosestPointsToOrigin
  */
 class P692TopKFrequentWords {
