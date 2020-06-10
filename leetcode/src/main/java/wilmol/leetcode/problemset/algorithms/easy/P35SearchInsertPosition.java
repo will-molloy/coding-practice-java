@@ -1,60 +1,43 @@
 package wilmol.leetcode.problemset.algorithms.easy;
 
-import java.util.Arrays;
-
 /**
- * Created by wilmol on 2019-08-18.
+ * Created by wilmol on 2020-06-10.
  *
  * <p><a
- * href=https://leetcode.com/problems/search-insert-position>https://leetcode.com/problems/search-insert-position</a>
+ * href=https://leetcode.com/problems/search-insert-position>https://leetcode.com/problems/search-insert-position/</a>
  *
- * <p>Runtime: O(log n) (given its under easy, maybe can just solve in O(n)...)
+ * <p>Runtime: O(log(n))
+ *
+ * <p>Extra space: O(1)
+ *
+ * <p>Key: Insert position is found at final left pointer of binary search.
+ *
+ * <p>This is because the search will eventually narrow in on a single element ({@code l == r == m})
+ * and decide the target is not found. Then it will create a state where {@code l} is exactly 1
+ * greater than {@code r}. {@code l} must be returned because it is the index of the first element
+ * greater than {@code target}. I.e. if that element was smaller, {@code l} is incremented to the
+ * next index, otherwise {@code l} is kept at the current index.
+ *
+ * @see java.util.Arrays#binarySearch
  */
 class P35SearchInsertPosition {
 
   public int searchInsert(int[] nums, int target) {
-    // normal binary search
-    // but check target would fit between mid and next/prev element i.e.
-    // mid < target && mid + 1 > target -> return mid + 1 (insert after smaller element)
-    // mid > target && mid - 1 < target -> return mid (insert at larger element)
+    int n = nums.length;
 
-    // check less than min or greater than max
-    if (target <= nums[0]) {
-      return 0;
-    }
-    if (target > nums[nums.length - 1]) {
-      return nums.length;
-    }
-
-    int low = 0;
-    int high = nums.length - 1;
-    while (low <= high) {
-      int mid = (low + high) >>> 1;
-
-      if (nums[mid] < target) {
-        // check target would fit here
-        if (mid < nums.length - 1 && nums[mid + 1] > target) {
-          return mid + 1;
-        }
-        // target on right
-        low = mid + 1;
-
-      } else if (nums[mid] > target) {
-        // check target would fit here
-        if (mid > 0 && nums[mid - 1] < target) {
-          return mid;
-        }
-        // target on left
-        high = mid - 1;
-
+    int l = 0;
+    int r = n - 1;
+    while (l <= r) {
+      int m = l + (r - l) / 2;
+      if (nums[m] == target) {
+        return m;
+      } else if (nums[m] > target) {
+        r = m - 1;
       } else {
-        // target found
-        return mid;
+        l = m + 1;
       }
     }
-    // should never reach here
-    throw new IllegalStateException(
-        String.format(
-            "Failed to find insert position. nums=%s, target=%d", Arrays.toString(nums), target));
+    assert l == r + 1;
+    return l;
   }
 }
