@@ -30,9 +30,7 @@ class P398RandomPickIndexTest {
 
     Map<Integer, Double> actualProbabilitiesPick1 = getActualProbabilities(solution, 1);
     assertThat(actualProbabilitiesPick1.keySet()).containsExactly(0);
-    assertThat(actualProbabilitiesPick1.values().stream().mapToDouble(i -> i).sum())
-        .isWithin(TOLERANCE)
-        .of(1);
+    assertThat(actualProbabilitiesPick1.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
     assertThat(actualProbabilitiesPick1.get(0)).isEqualTo(1);
   }
 
