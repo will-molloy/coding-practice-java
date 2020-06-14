@@ -20,6 +20,7 @@ import java.util.Set;
  * node.
  *
  * @see P207CourseSchedule
+ * @see P785IsGraphBipartite
  */
 class P886PossibleBipartition {
 
