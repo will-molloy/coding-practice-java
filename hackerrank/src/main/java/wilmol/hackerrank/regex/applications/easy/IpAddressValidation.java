@@ -13,6 +13,8 @@ import java.util.regex.Pattern;
  * href=https://www.hackerrank.com/challenges/ip-address-validation/problem>https://www.hackerrank.com/challenges/ip-address-validation/problem</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P468ValidateIpAddress
  */
 final class IpAddressValidation {
 
