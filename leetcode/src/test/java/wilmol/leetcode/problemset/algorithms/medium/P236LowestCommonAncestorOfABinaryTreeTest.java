@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import wilmol.leetcode.common.BinaryTreeNode;
 
 /** Created by wilmol on 2020-06-17. */
-class P236LowestCommonAncestorsOfABinaryTreeTest {
+class P236LowestCommonAncestorOfABinaryTreeTest {
 
-  private final P236LowestCommonAncestorsOfABinaryTree p236 =
-      new P236LowestCommonAncestorsOfABinaryTree();
+  private final P236LowestCommonAncestorOfABinaryTree p236 =
+      new P236LowestCommonAncestorOfABinaryTree();
 
   @Test
   void example1RootIsLca() {

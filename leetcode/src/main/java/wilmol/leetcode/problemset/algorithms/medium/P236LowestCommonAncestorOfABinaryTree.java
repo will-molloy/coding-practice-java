@@ -1,8 +1,7 @@
 package wilmol.leetcode.problemset.algorithms.medium;
 
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.IdentityHashMap;
 import java.util.Map;
 import java.util.Set;
 import wilmol.leetcode.common.BinaryTreeNode;
@@ -19,47 +18,46 @@ import wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: Store parents in table so can traverse up tree.
  */
-class P236LowestCommonAncestorsOfABinaryTree {
+class P236LowestCommonAncestorOfABinaryTree {
 
   public BinaryTreeNode lowestCommonAncestor(
       BinaryTreeNode root, BinaryTreeNode p, BinaryTreeNode q) {
     // store parent of every node in map so can traverse up tree
-    // using integer as hash cause its unique (so correct) and cheaper to compute
-    Map<Integer, BinaryTreeNode> parents = parents(root);
+    Map<BinaryTreeNode, BinaryTreeNode> parents = parents(root);
 
     // get path from p to root
-    // using integer as hash again for same reasons as above
-    Set<Integer> pAncestors = ancestors(parents, p);
+    Set<BinaryTreeNode> pAncestors = ancestors(parents, p);
 
     // traverse path from q to root, stop at first node common on p to root path, that is the LCA
     BinaryTreeNode node = q;
-    while (!pAncestors.contains(node.val)) {
-      node = parents.get(node.val);
+    while (!pAncestors.contains(node)) {
+      node = parents.get(node);
     }
     return node;
   }
 
-  private Map<Integer, BinaryTreeNode> parents(BinaryTreeNode root) {
-    Map<Integer, BinaryTreeNode> parents = new HashMap<>();
+  private Map<BinaryTreeNode, BinaryTreeNode> parents(BinaryTreeNode root) {
+    Map<BinaryTreeNode, BinaryTreeNode> parents = new IdentityHashMap<>();
     parentDfs(parents, root, null);
     return Collections.unmodifiableMap(parents);
   }
 
   private void parentDfs(
-      Map<Integer, BinaryTreeNode> parents, BinaryTreeNode node, BinaryTreeNode parent) {
+      Map<BinaryTreeNode, BinaryTreeNode> parents, BinaryTreeNode node, BinaryTreeNode parent) {
     if (node == null) {
       return;
     }
-    parents.put(node.val, parent);
+    parents.put(node, parent);
     parentDfs(parents, node.left, node);
     parentDfs(parents, node.right, node);
   }
 
-  private Set<Integer> ancestors(Map<Integer, BinaryTreeNode> parents, BinaryTreeNode node) {
-    Set<Integer> ancestors = new HashSet<>();
+  private Set<BinaryTreeNode> ancestors(
+      Map<BinaryTreeNode, BinaryTreeNode> parents, BinaryTreeNode node) {
+    Set<BinaryTreeNode> ancestors = Collections.newSetFromMap(new IdentityHashMap<>());
     while (node != null) {
-      ancestors.add(node.val);
-      node = parents.get(node.val);
+      ancestors.add(node);
+      node = parents.get(node);
     }
     return Collections.unmodifiableSet(ancestors);
   }
