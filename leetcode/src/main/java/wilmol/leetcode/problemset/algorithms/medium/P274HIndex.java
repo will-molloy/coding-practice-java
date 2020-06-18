@@ -12,6 +12,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: H index is number of papers, not a number of citations.
+ *
+ * @see P275HIndex2
  */
 class P274HIndex {
 
