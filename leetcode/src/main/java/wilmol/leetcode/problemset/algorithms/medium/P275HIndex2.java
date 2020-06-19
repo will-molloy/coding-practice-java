@@ -13,6 +13,7 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P274HIndex
  * @see wilmol.leetcode.problemset.algorithms.easy.P35SearchInsertPosition
+ * @see wilmol.leetcode.problemset.algorithms.hard.P1044LongestDuplicateSubstring
  */
 class P275HIndex2 {
 
