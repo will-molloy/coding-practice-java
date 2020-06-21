@@ -13,7 +13,10 @@ import java.util.List;
  *
  * <p>Key: dynamic programming
  *
+ * @see P62UniquePaths
+ * @see P63UniquePaths2
  * @see P64MinimumPathSum
+ * @see wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
  */
 class P120Triangle {
 

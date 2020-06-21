@@ -10,6 +10,8 @@ package wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P63UniquePaths2
  * @see P64MinimumPathSum
+ * @see P120Triangle
+ * @see wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
  */
 interface P62UniquePaths {
 
