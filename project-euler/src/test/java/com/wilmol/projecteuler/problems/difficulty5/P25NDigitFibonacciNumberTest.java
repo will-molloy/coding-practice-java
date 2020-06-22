@@ -1,0 +1,21 @@
+package com.wilmol.projecteuler.problems.difficulty5;
+
+import static com.google.common.truth.Truth.assertThat;
+
+import org.junit.jupiter.api.Test;
+
+/** Created by Will on 23/03/2019. */
+class P25NDigitFibonacciNumberTest {
+
+  private final P25NDigitFibonacciNumber nDigitFibonacciNumber = new P25NDigitFibonacciNumber();
+
+  @Test
+  void indexOfFirstTermWith3Digits() {
+    assertThat(nDigitFibonacciNumber.fibIndex(3)).isEqualTo(12);
+  }
+
+  @Test
+  void indexOfFirstTermWith1000Digits() {
+    assertThat(nDigitFibonacciNumber.fibIndex(1000)).isEqualTo(4782);
+  }
+}
