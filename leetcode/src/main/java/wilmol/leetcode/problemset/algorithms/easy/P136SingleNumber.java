@@ -13,6 +13,8 @@ import java.util.Arrays;
  * <p>Space: O(1)
  *
  * <p>Key: bitwise operators
+ *
+ * @see wilmol.leetcode.problemset.algorithms.medium.P137SingleNumber2
  */
 class P136SingleNumber {
 
