@@ -19,12 +19,11 @@ import java.util.stream.StreamSupport;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p>Common collection functions
+ * Common collection functions.
  *
  * @see java.util
  * @see com.google.common.collect
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class Collections {
 

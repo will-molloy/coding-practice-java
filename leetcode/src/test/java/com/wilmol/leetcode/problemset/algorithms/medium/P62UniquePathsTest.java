@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-11. */
+/**
+ * P62UniquePathsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P62UniquePathsTest {
 
   private final P62UniquePaths recursive = new P62UniquePaths.TopDownRecursive();

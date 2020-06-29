@@ -4,15 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/design-browser-history>https://leetcode.com/problems/design-browser-history/</a>
  *
  * <p>Key: Store history in a list and maintain pointers to the current page and the last page.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1472DesignBrowserHistory {
 
+  /** BrowserHistory. */
   static class BrowserHistory {
 
     private final List<String> list = new ArrayList<>();

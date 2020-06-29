@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.easy.P617MergeTwoBinaryTrees.TreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-26. */
+/**
+ * P617MergeTwoBinaryTreesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P617MergeTwoBinaryTreesTest {
 
   private final P617MergeTwoBinaryTrees p617 = new P617MergeTwoBinaryTrees();

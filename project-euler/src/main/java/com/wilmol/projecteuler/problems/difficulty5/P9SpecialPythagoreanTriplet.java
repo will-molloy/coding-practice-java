@@ -4,11 +4,11 @@ import java.util.Optional;
 import org.apache.commons.lang3.tuple.Triple;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=9>https://projecteuler.net/problem=9</a>
+ * <a href=https://projecteuler.net/problem=9>https://projecteuler.net/problem=9</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P9SpecialPythagoreanTriplet {
 

@@ -6,7 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-29. */
+/**
+ * P304RangeSumQuery2dImmutableTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P304RangeSumQuery2dImmutableTest {
 
   @Test

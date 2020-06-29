@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-moves-to-equal-array-elements>https://leetcode.com/problems/minimum-moves-to-equal-array-elements/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Math trick to simplify the problem.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P453MinimumMovesToEqualArrayElements {
 

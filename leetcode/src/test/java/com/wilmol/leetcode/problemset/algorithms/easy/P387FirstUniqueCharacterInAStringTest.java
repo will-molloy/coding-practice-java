@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-05. */
+/**
+ * P387FirstUniqueCharacterInAStringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P387FirstUniqueCharacterInAStringTest {
 
   private final P387FirstUniqueCharacterInAString p387 = new P387FirstUniqueCharacterInAString();

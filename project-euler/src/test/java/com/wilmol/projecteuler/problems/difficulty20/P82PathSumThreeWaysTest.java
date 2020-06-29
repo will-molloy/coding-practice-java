@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.projecteuler.problems.difficulty10.P81PathSumTwoWaysTest;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 23:12. */
+/**
+ * P82PathSumThreeWaysTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P82PathSumThreeWaysTest {
 
   @Test

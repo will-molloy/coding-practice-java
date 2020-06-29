@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by Will on 2019-07-15 at 20:05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/container-with-most-water>https://leetcode.com/problems/container-with-most-water</a>
  *
  * <p>Runtime: O(n) single pass on each element (two pointers), O(1) memory too
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P11ContainerWithMostWater {
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/license-key-formatting>https://leetcode.com/problems/license-key-formatting/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Use separate variable to track length of added characters excluding dashes.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P482LicenseKeyFormatting {
 

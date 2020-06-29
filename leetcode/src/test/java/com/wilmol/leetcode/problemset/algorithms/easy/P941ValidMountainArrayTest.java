@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-09. */
+/**
+ * P941ValidMountainArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P941ValidMountainArrayTest {
 
   private final P941ValidMountainArray p941 = new P941ValidMountainArray();

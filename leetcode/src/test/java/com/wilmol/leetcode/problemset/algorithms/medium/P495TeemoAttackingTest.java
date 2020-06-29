@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-11. */
+/**
+ * P495TeemoAttackingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P495TeemoAttackingTest {
 
   private final P495TeemoAttacking p495 = new P495TeemoAttacking();

@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-09. */
+/**
+ * RecursionFibonacciNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class RecursionFibonacciNumbersTest {
 
   @Test()

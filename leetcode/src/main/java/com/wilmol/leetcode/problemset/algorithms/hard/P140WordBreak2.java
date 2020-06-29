@@ -9,14 +9,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-03-28.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/word-break-ii>https://leetcode.com/problems/word-break-ii</a>
  *
  * <p>Key: dynamic programming, memoization (figuring out what is the key)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P139WordBreak
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P140WordBreak2 {
 

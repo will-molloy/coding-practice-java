@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by Will on 2019-07-03 at 20:54.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/median-of-two-sorted-arrays>https://leetcode.com/problems/median-of-two-sorted-arrays</a>
  *
  * <p>Runtime: O(n + m) - single pass on each array
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P4MedianOfTwoSortedArrays {
 

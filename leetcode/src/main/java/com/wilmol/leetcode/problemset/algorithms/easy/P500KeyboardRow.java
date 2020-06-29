@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/keyboard-row>https://leetcode.com/problems/keyboard-row/</a>
  *
  * <p>Runtime: O(w)
@@ -15,6 +13,8 @@ import java.util.Map;
  * <p>Extra space: O(1)
  *
  * <p>Key: Precompute keyboard letter row numbers.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P500KeyboardRow {
 

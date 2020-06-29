@@ -8,7 +8,11 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * CollectionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class CollectionsTest {
 
   @Test

@@ -1,6 +1,6 @@
 /**
  * <a href=https://leetcode.com/problemset/algorithms>https://leetcode.com/problemset/algorithms</a>
  *
- * <p>Created by wilmol on 2019-09-08.
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 package com.wilmol.leetcode.problemset.algorithms;

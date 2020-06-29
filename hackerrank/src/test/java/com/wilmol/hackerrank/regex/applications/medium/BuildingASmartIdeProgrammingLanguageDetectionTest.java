@@ -7,7 +7,11 @@ import com.google.common.collect.ImmutableList;
 import com.wilmol.hackerrank.regex.applications.medium.BuildingASmartIdeProgrammingLanguageDetection.Language;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-11-01. */
+/**
+ * BuildingASmartIdeProgrammingLanguageDetectionTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class BuildingASmartIdeProgrammingLanguageDetectionTest {
 
   @Test

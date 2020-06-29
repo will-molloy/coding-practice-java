@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/complement-of-base-10-integer>https://leetcode.com/problems/complement-of-base-10-integer/</a>
  *
  * <p>Runtime: O(bitLength(num))
@@ -13,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Duplicate problem of {@link P476NumberComplement}
  *
  * @see P476NumberComplement
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1009ComplementOfBase10Integer {
 

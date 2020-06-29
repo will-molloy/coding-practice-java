@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-11. */
+/**
+ * P61RotateListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P61RotateListTest {
 
   private final P61RotateList fun = new P61RotateList();

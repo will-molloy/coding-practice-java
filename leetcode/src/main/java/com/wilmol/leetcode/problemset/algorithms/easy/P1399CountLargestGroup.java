@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-05-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-largest-group>https://leetcode.com/problems/count-largest-group/</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,8 @@ import java.util.Map;
  * <p>Extra space: O(n)
  *
  * <p>Key: Group nums by their digit sums.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1399CountLargestGroup {
 

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.easy.P237DeleteNodeInALinkedList.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-02. */
+/**
+ * P237DeleteNodeInALinkedListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P237DeleteNodeInALinkedListTest {
 
   private final P237DeleteNodeInALinkedList p237 = new P237DeleteNodeInALinkedList();

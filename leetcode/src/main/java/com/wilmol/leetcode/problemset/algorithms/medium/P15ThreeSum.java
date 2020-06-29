@@ -6,14 +6,13 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by Will on 2019-07-21 at 14:02.
- *
- * <p><a href=https://leetcode.com/problems/3sum>https://leetcode.com/problems/3sum</a>
+ * <a href=https://leetcode.com/problems/3sum>https://leetcode.com/problems/3sum</a>
  *
  * <p>Runtime: O(n ^ 2)
  *
  * @see P18FourSum
  * @see P16ThreeSumClosest
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P15ThreeSum {
 

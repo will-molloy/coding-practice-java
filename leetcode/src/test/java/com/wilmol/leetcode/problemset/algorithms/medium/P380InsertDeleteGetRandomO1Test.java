@@ -7,7 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-13. */
+/**
+ * P380InsertDeleteGetRandomO1Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P380InsertDeleteGetRandomO1Test {
 
   private static final int NUM_TRIALS = 1_000_000;

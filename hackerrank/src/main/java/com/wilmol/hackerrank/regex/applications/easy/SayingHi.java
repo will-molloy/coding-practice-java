@@ -7,12 +7,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2019-09-15.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/saying-hi/problem>https://www.hackerrank.com/challenges/saying-hi/problem</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class SayingHi {
 

@@ -8,7 +8,11 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-/** Created by Will on 2019-03-30 at 21:49. */
+/**
+ * BinaryTreeNode.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 public final class BinaryTreeNode {
 
   /**

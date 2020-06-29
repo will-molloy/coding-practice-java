@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-05. */
+/**
+ * P914SortAnArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P914SortAnArrayTest {
 
   private final P914SortAnArray fun = new P914SortAnArray();

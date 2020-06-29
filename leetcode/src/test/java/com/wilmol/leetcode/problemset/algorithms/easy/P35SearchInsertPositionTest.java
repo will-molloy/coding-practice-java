@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-18. */
+/**
+ * P35SearchInsertPositionTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P35SearchInsertPositionTest {
 
   private final P35SearchInsertPosition fun = new P35SearchInsertPosition();

@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 13:28.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/matching-x-y-repetitions/problem>https://www.hackerrank.com/challenges/matching-x-y-repetitions/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class MatchRangeOfRepetitions implements Regex {
 

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-02-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree>https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: consistently maintaining left/right pointer as inclusive/exclusive to the array range
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P109ConvertSortedListToBinarySearchTree
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P108ConvertSortedArrayToBinarySearchTree {
 

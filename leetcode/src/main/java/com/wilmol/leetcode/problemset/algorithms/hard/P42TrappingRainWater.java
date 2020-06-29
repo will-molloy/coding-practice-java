@@ -3,10 +3,10 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2019-08-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/trapping-rain-water>https://leetcode.com/problems/trapping-rain-water</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P42TrappingRainWater {
 

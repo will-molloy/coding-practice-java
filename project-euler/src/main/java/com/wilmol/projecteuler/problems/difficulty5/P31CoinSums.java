@@ -4,9 +4,7 @@ import com.google.common.base.Preconditions;
 import com.wilmol.projecteuler.problems.difficulty30.P78CoinPartitions;
 
 /**
- * Created by will on 2019-04-13 at 11:26 AM.
- *
- * <p><a href=https://projecteuler.net/problem=31>https://projecteuler.net/problem=31</a>
+ * <a href=https://projecteuler.net/problem=31>https://projecteuler.net/problem=31</a>
  *
  * <p>c - num coins, n - amount Runtime: O(c * n) Space: O(n)
  *
@@ -17,6 +15,7 @@ import com.wilmol.projecteuler.problems.difficulty30.P78CoinPartitions;
  * coins</a>
  *
  * @see P78CoinPartitions
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P31CoinSums {
 

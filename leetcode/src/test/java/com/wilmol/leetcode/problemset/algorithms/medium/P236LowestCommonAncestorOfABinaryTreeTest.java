@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-17. */
+/**
+ * P236LowestCommonAncestorOfABinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P236LowestCommonAncestorOfABinaryTreeTest {
 
   private final P236LowestCommonAncestorOfABinaryTree p236 =

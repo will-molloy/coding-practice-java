@@ -5,11 +5,11 @@ import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=19>https://projecteuler.net/problem=19</a>
+ * <a href=https://projecteuler.net/problem=19>https://projecteuler.net/problem=19</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P19CountingSundays {
 

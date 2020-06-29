@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-03-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/single-number>https://leetcode.com/problems/single-number</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import java.util.Arrays;
  * <p>Key: bitwise operators
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P137SingleNumber2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P136SingleNumber {
 

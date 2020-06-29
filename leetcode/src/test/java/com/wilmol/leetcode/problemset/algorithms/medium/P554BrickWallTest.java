@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-13. */
+/**
+ * P554BrickWallTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P554BrickWallTest {
 
   private final P554BrickWall fun = new P554BrickWall();

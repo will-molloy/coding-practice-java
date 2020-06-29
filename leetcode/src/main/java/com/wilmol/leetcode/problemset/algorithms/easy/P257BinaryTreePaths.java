@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-01.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-paths>https://leetcode.com/problems/binary-tree-paths/</a>
  *
  * <p>Difficulty: Easy.
@@ -18,6 +16,8 @@ import java.util.List;
  *
  * <p>Key: Just do string concatenation; passing around mutable objects like list of ints or string
  * builder is problematic and requires copying the data structure anyway.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P257BinaryTreePaths {
 

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-13. */
+/**
+ * P33SearchInRotatedSortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P33SearchInRotatedSortedArrayTest {
 
   private final P33SearchInRotatedSortedArray fun = new P33SearchInRotatedSortedArray();

@@ -5,11 +5,11 @@ import java.util.Set;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-19 at 9:01 PM.
- *
- * <p><a href=https://projecteuler.net/problem=40>https://projecteuler.net/problem=40</a>
+ * <a href=https://projecteuler.net/problem=40>https://projecteuler.net/problem=40</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P40ChampernownesConstants {
 

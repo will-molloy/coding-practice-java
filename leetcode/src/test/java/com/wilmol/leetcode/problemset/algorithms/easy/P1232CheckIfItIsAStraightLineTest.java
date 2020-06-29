@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-08. */
+/**
+ * P1232CheckIfItIsAStraightLineTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1232CheckIfItIsAStraightLineTest {
 
   private final P1232CheckIfItIsAStraightLine p1232 = new P1232CheckIfItIsAStraightLine();

@@ -4,11 +4,11 @@ import com.google.common.base.Preconditions;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=17>https://projecteuler.net/problem=17</a>
+ * <a href=https://projecteuler.net/problem=17>https://projecteuler.net/problem=17</a>
  *
  * <p>Runtime: O(to - from)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P17EnglishNumberLetterCounts {
 

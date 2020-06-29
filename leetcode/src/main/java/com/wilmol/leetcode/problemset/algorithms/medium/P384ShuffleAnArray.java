@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by wilmol on 2020-05-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/shuffle-an-array>https://leetcode.com/problems/shuffle-an-array/</a>
  *
  * <p>Runtime: O(n)
@@ -13,9 +11,12 @@ import java.util.concurrent.ThreadLocalRandom;
  * <p>Extra space: O(n)
  *
  * <p>Key: Swap with random index in not yet processed range.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P384ShuffleAnArray {
 
+  /** Solution. */
   static class Solution {
 
     private final int[] nums;

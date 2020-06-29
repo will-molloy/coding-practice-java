@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-23. */
+/**
+ * P125ValidPalindromeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P125ValidPalindromeTest {
 
   private final P125ValidPalindrome fun = new P125ValidPalindrome();

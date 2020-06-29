@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-27. */
+/**
+ * P1424DiagonalTraverse2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1424DiagonalTraverse2Test {
 
   private final P1424DiagonalTraverse2 p1424 = new P1424DiagonalTraverse2();

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-03. */
+/**
+ * P1029TwoCitySchedulingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1029TwoCitySchedulingTest {
 
   private final P1029TwoCityScheduling p1029 = new P1029TwoCityScheduling();

@@ -1,15 +1,14 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-03-28.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/range-sum-query-immutable>https://leetcode.com/problems/range-sum-query-immutable</a>
  *
  * <p>Key: knowledge of ranges/intervals, prefix sum/segment tree.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P304RangeSumQuery2dImmutable
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P307RangeSumQueryMutable
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P303RangeSumQueryImmutable {
 
@@ -22,6 +21,7 @@ class P303RangeSumQueryImmutable {
    */
   static class PrefixSum {
 
+    /** NumArray class. */
     static class NumArray {
       // O(n) space
       private final int[] prefixSum;
@@ -64,6 +64,7 @@ class P303RangeSumQueryImmutable {
    */
   static class SegmentTree {
 
+    /** NumArray class. */
     static class NumArray {
 
       private final Node root;

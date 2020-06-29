@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/permutation-in-string>https://leetcode.com/problems/permutation-in-string/</a>
  *
  * <p>Runtime: O(s1 + s2)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P76MinimumWindowSubstring
  * @see P438FindAllAnagramsInAString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P567PermutationInString {
 

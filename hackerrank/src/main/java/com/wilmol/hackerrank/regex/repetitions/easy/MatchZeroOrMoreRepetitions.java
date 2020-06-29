@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 13:37.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/matching-zero-or-more-repetitions/problem>https://www.hackerrank.com/challenges/matching-zero-or-more-repetitions/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class MatchZeroOrMoreRepetitions implements Regex {
 

@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-03-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/house-robber-ii>https://leetcode.com/problems/house-robber-ii</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ import java.util.stream.IntStream;
  * <p>Key: modify existing algorithm
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P198HouseRobber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P213HouseRobber2 {
 

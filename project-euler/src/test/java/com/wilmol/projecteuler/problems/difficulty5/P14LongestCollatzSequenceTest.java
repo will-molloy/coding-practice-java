@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P14LongestCollatzSequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P14LongestCollatzSequenceTest {
 
   private final P14LongestCollatzSequence longestCollatzSequence = new P14LongestCollatzSequence();

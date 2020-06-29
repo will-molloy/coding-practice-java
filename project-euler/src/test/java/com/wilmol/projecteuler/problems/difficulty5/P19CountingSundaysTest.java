@@ -6,7 +6,11 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P19CountingSundaysTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P19CountingSundaysTest {
 
   @Test

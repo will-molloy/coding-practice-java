@@ -1,15 +1,14 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-11-03.
- *
- * <p><a href=https://leetcode.com/problems/jump-game>https://leetcode.com/problems/jump-game</a>
+ * <a href=https://leetcode.com/problems/jump-game>https://leetcode.com/problems/jump-game</a>
  *
  * <p>Key: greedy algorithm; if you can reach beyond something then you can reach that thing.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P45JumpGame2
  * @see P1306JumpGame3
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P1345JumpGame4
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P55JumpGame {
 

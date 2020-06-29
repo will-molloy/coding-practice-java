@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-04. */
+/**
+ * P1108DefangingAnIpAddressTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1108DefangingAnIpAddressTest {
 
   private final P1108DefangingAnIpAddress fun = new P1108DefangingAnIpAddress();

@@ -3,15 +3,14 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.ArrayDeque;
 
 /**
- * Created by wilmol on 2020-05-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit>https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/</a>
  *
  * <p>Key: Two pointers (growing and shrinking subsequence) and {@link java.util.Deque} to track the
  * min/max element in the dynamic subarray.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P239SlidingWindowMaximum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 

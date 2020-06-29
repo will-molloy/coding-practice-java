@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P17EnglishNumberLetterCountsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P17EnglishNumberLetterCountsTest {
 
   @Test

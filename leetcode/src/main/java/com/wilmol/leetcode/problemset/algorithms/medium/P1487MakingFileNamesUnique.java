@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-06-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/making-file-names-unique>https://leetcode.com/problems/making-file-names-unique/</a>
  *
  * <p>Runtime: O(n) (amortised analysis - start from most recent k so never repeat computation)
@@ -21,6 +19,8 @@ import java.util.Map;
  *
  * <p>Another thing, which wasn't very clear from the problem, is that a name is only ever suffixed
  * with a single "(k)".
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1487MakingFileNamesUnique {
 

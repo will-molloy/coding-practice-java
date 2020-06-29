@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-11. */
+/**
+ * P500KeyboardRowTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P500KeyboardRowTest {
 
   private final P500KeyboardRow p500 = new P500KeyboardRow();

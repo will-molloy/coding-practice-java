@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-06-02.
- *
- * <p><a
- * href=https://leetcode.com/problems/clone-graph>https://leetcode.com/problems/clone-graph/</a>
+ * <a href=https://leetcode.com/problems/clone-graph>https://leetcode.com/problems/clone-graph/</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Extra space: O(n)
  *
  * <p>Key: Only create the copied nodes once. Used a {@code HashMap} to achieve this.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P133CloneGraph {
 
@@ -38,6 +37,7 @@ class P133CloneGraph {
     return copy;
   }
 
+  /** Node. */
   static class Node {
     private final int val;
     private final List<Node> neighbors;

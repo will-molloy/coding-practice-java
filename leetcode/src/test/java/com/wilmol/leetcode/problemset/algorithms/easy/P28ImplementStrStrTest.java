@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-28 at 16:48. */
+/**
+ * P28ImplementStrStrTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P28ImplementStrStrTest {
 
   private final P28ImplementStrStr fun = new P28ImplementStrStr();

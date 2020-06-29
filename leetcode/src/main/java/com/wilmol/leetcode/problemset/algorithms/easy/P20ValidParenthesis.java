@@ -4,14 +4,13 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Created by Will on 2019-07-21 at 21:29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/valid-parentheses>https://leetcode.com/problems/valid-parentheses</a>
  *
  * <p>Runtime: O(n)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P32LongestValidParenthesis
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P20ValidParenthesis {
 

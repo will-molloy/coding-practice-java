@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-26. */
+/**
+ * P1423MaximumPointsYouCanObtainFromCardsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1423MaximumPointsYouCanObtainFromCardsTest {
 
   private final P1423MaximumPointsYouCanObtainFromCards p1423 =

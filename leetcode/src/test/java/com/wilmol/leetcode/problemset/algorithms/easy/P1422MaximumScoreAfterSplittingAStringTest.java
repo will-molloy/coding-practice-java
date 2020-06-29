@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-26. */
+/**
+ * P1422MaximumScoreAfterSplittingAStringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1422MaximumScoreAfterSplittingAStringTest {
 
   private final P1422MaximumScoreAfterSplittingAString p1422 =

@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Will on 2019-07-20 at 20:59.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/roman-to-integer>https://leetcode.com/problems/roman-to-integer</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P13RomanToInteger {
 

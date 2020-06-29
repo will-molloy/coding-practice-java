@@ -11,14 +11,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Created by will on 2019-04-21 at 3:21 PM.
- *
- * <p><a href=https://projecteuler.net/problem=51>https://projecteuler.net/problem=51</a>
+ * <a href=https://projecteuler.net/problem=51>https://projecteuler.net/problem=51</a>
  *
  * <p>Runtime: none - the search is linear (through the integers), but unknown when prime families
  * will be encountered
  *
  * @see P52PermutedMultiples
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P51PrimeDigitReplacements {
 

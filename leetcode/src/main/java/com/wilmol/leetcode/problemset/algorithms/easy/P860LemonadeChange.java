@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/lemonade-change>https://leetcode.com/problems/lemonade-change</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: Prefer to use $10 and $5 (as change for $20) so have enough $5 for customers with $10.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P860LemonadeChange {
 

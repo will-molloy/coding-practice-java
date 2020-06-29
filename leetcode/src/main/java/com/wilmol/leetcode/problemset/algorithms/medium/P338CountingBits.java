@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/counting-bits>https://leetcode.com/problems/counting-bits/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Extra space: O(n)
  *
  * <p>Key: Draw out the dp table to realise the pattern. In this case it repeats every power of 2.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P338CountingBits {
 

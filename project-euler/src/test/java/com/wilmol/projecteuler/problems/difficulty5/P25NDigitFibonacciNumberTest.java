@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 23/03/2019. */
+/**
+ * P25NDigitFibonacciNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P25NDigitFibonacciNumberTest {
 
   private final P25NDigitFibonacciNumber nDigitFibonacciNumber = new P25NDigitFibonacciNumber();

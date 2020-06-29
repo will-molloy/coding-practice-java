@@ -9,7 +9,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-08. */
+/**
+ * P1470ShuffleTheArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1470ShuffleTheArrayTest {
 
   private final P1470ShuffleTheArray p1470 = new P1470ShuffleTheArray();

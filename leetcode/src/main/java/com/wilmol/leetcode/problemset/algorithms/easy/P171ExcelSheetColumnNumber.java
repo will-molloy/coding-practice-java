@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/excel-sheet-column-number>https://leetcode.com/problems/excel-sheet-column-number</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * need to use {@link Math#pow} and iterate in reverse.
  *
  * @see P168ExcelSheetColumnTitle
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P171ExcelSheetColumnNumber {
 

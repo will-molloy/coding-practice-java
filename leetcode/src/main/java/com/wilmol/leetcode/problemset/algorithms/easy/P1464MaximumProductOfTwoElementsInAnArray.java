@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-05-31.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array>https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import java.util.PriorityQueue;
  * <p>Extra space: O(1)
  *
  * <p>Key: Find largest two elements.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1464MaximumProductOfTwoElementsInAnArray {
 

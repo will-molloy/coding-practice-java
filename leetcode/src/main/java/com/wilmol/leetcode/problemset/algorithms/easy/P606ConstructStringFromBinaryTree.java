@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/construct-string-from-binary-tree>https://leetcode.com/problems/construct-string-from-binary-tree</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P606ConstructStringFromBinaryTree {
 

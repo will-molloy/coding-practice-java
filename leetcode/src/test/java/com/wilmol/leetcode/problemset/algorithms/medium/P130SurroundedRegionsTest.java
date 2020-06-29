@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-10. */
+/**
+ * P130SurroundedRegionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P130SurroundedRegionsTest {
 
   private final P130SurroundedRegions fun = new P130SurroundedRegions();

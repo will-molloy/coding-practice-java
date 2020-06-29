@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by wilmol on 2020-06-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/insert-delete-getrandom-o1>https://leetcode.com/problems/insert-delete-getrandom-o1/</a>
  *
  * <p>Runtime: O(1) {@code insert}, {@code remove}, {@code getRandom}
@@ -19,6 +17,8 @@ import java.util.concurrent.ThreadLocalRandom;
  * <p>Key: Using just list, {@code remove} is O(n); using just map/set, {@code getRandom} is O(n).
  * Therefore need a combination. Key is storing indices in map and overwriting with last element in
  * list so list remove becomes O(1) because we always just delete the last list element.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P380InsertDeleteGetRandomO1 {
 
@@ -26,6 +26,7 @@ class P380InsertDeleteGetRandomO1 {
   // answer is explained here:
   // https://leetcode.com/problems/insert-delete-getrandom-o1/discuss/683165/Algorithm-Explained-or-O(1)-insert()-or-O(1)-delete-or-O(1)-getRandom()
 
+  /** RandomizedSet. */
   static class RandomizedSet {
 
     private final List<Integer> list;

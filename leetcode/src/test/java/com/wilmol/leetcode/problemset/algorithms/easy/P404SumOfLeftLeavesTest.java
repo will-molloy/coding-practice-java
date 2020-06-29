@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-08. */
+/**
+ * P404SumOfLeftLeavesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P404SumOfLeftLeavesTest {
 
   private final P404SumOfLeftLeaves fun = new P404SumOfLeftLeaves();

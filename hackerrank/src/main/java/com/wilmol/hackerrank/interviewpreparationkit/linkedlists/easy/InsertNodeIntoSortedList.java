@@ -3,14 +3,14 @@ package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 
 /**
- * Created by Will on 28/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists>https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists</a>
  *
  * <p>Don't even need pointer to previous.. just track previous..
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class InsertNodeIntoSortedList {
 

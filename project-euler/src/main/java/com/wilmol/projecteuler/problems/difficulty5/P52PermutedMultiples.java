@@ -6,14 +6,13 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-22 at 3:40 PM.
- *
- * <p><a href=https://projecteuler.net/problem=52>https://projecteuler.net/problem=52</a>
+ * <a href=https://projecteuler.net/problem=52>https://projecteuler.net/problem=52</a>
  *
  * <p>Runtime: none - search is linear but can't predict when 'multiple family' of size will be
  * found
  *
  * @see P51PrimeDigitReplacements
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P52PermutedMultiples {
 

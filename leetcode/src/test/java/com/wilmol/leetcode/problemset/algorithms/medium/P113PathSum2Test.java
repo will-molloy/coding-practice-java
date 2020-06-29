@@ -6,7 +6,11 @@ import com.google.common.collect.ImmutableList;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-17. */
+/**
+ * P113PathSum2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P113PathSum2Test {
 
   private final P113PathSum2 fun = new P113PathSum2();

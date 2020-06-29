@@ -6,7 +6,11 @@ import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
 
-/** Created by Will on 2019-06-23 at 20:43. */
+/**
+ * ListNode.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 public final class ListNode {
 
   /** Constructs a new linked list containing the given values, in order. */

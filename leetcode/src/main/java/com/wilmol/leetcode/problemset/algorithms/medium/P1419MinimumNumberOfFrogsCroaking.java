@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-number-of-frogs-croaking>https://leetcode.com/problems/minimum-number-of-frogs-croaking/</a>
  *
  * <p><a
@@ -18,6 +16,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1)
  *
  * <p>Key: State machine.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1419MinimumNumberOfFrogsCroaking {
 

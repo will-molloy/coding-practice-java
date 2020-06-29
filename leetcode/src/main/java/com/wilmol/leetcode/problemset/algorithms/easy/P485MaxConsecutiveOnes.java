@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/max-consecutive-ones>https://leetcode.com/problems/max-consecutive-ones/</a>
  *
  * <p>Runtime: O(n)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: The runs of 1s are disjoint so can reset {@code current} and update {@code max} when they
  * end.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P485MaxConsecutiveOnes {
 

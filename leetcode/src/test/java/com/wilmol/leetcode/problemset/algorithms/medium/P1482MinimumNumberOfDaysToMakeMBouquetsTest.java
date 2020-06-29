@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-14. */
+/**
+ * P1482MinimumNumberOfDaysToMakeMBouquetsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1482MinimumNumberOfDaysToMakeMBouquetsTest {
 
   private final P1482MinimumNumberOfDaysToMakeMBouquets p1482 =

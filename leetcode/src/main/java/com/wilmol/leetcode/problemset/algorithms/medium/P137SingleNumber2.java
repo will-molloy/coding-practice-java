@@ -6,9 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-06-22.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/single-number-ii>https://leetcode.com/problems/single-number-ii/</a>
  *
  * <p>Runtime: O(n)
@@ -18,6 +16,7 @@ import java.util.stream.Collectors;
  * <p>Key: Count num frequencies.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P136SingleNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P137SingleNumber2 {
 

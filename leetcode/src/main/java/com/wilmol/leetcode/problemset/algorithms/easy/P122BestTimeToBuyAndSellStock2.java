@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-02-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii>https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii</a>
  *
  * <p>Key: greedy algorithm
@@ -15,6 +13,7 @@ import java.util.stream.Collectors;
  * @see P121BestTimeToBuyAndSellStock
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P123BestTimeToBuyAndSellStock3
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P188BestTimeToBuyAndSellStock4
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P122BestTimeToBuyAndSellStock2 {
 

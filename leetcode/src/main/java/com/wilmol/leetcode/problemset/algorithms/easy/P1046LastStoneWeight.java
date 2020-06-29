@@ -4,9 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-04-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/last-stone-weight>https://leetcode.com/problems/last-stone-weight</a>
  *
  * <p>Runtime: O(n log n)
@@ -14,6 +12,8 @@ import java.util.PriorityQueue;
  * <p>Space: O(n)
  *
  * <p>Key: heap ({@link PriorityQueue})
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1046LastStoneWeight {
 

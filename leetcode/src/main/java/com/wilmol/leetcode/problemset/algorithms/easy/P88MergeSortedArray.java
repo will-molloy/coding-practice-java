@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-02-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/merge-sorted-array>https://leetcode.com/problems/merge-sorted-array</a>
  *
  * <p>Runtime: O(m + n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: merging in reverse order to make use of 'empty array space' and achieve O(1) memory use
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P88MergeSortedArray {
 

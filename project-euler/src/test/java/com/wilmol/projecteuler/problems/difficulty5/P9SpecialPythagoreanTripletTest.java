@@ -6,7 +6,11 @@ import java.util.Optional;
 import org.apache.commons.lang3.tuple.Triple;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P9SpecialPythagoreanTripletTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P9SpecialPythagoreanTripletTest {
 
   private final P9SpecialPythagoreanTriplet specialPythagoreanTriplet =

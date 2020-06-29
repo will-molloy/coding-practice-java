@@ -1,15 +1,15 @@
 package com.wilmol.hackerrank.interviewpreparationkit.recursionbacktracking.easy;
 
 /**
- * Created by wilmol on 2019-09-09.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-fibonacci-numbers/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking>https://www.hackerrank.com/challenges/ctci-fibonacci-numbers/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking</a>
  *
  * <p>Runtime: O(2^n) (~θ(1.6^n)) (<a href=https://stackoverflow.com/a/360773/6122976e>Computational
  * complexity of Fibonacci Sequence</a>).
  *
  * <p>Note can run in O(n) with an iterative solution!
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class RecursionFibonacciNumbers {
 

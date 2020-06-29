@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/xor-queries-of-a-subarray>https://leetcode.com/problems/xor-queries-of-a-subarray/</a>
  *
  * <p>Runtime: O(a + q)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Extra space: O(a)
  *
  * <p>Key: XOR prefix sum.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1310XorQueriesOfASubarray {
 

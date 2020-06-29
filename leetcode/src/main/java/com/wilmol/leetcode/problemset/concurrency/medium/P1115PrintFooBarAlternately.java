@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.concurrency.medium;
 import java.util.concurrent.Semaphore;
 
 /**
- * Created by Will on 2019-07-18 at 21:45.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/print-foobar-alternately>https://leetcode.com/problems/print-foobar-alternately</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1115PrintFooBarAlternately {
 

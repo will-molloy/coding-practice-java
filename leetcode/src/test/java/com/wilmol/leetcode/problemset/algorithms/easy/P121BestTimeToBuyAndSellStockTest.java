@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-23. */
+/**
+ * P121BestTimeToBuyAndSellStockTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P121BestTimeToBuyAndSellStockTest {
 
   private final P121BestTimeToBuyAndSellStock fun = new P121BestTimeToBuyAndSellStock();

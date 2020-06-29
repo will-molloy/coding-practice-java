@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/1-bit-and-2-bit-characters>https://leetcode.com/problems/1-bit-and-2-bit-characters</a>
  *
  * <p>Runtime: O(n)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: The two bit character always starts with a 1 (and the one bit character has no 1s) so can
  * just move forward two units when seeing a 1.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P717OneBitAndTwoBitCharacters {
 

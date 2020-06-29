@@ -7,7 +7,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
-/** Created by Will on 2019-07-18 at 21:50. */
+/**
+ * P1115PrintFooBarAlternatelyTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @Timeout(value = 10)
 class P1115PrintFooBarAlternatelyTest {
 

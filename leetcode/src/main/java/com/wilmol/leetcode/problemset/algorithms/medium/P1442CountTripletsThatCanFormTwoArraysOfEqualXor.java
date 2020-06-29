@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor>https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/</a>
  *
  * <p>Runtime: O(n<sup>3</sup>)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: {@code a} doesn't depend on {@code k} so can compute and store it for some {@code i} and
  * {@code j} and then compute all {@code b}s; reducing complexity from O(n<sup>4</sup>) to
  * O(n<sup>3</sup>).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1442CountTripletsThatCanFormTwoArraysOfEqualXor {
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-05-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/max-dot-product-of-two-subsequences>https://leetcode.com/problems/max-dot-product-of-two-subsequences/</a>
  *
  * <p>Runtime: O(n1 * n2)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1035UncrossedLines
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1143LongestCommonSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1458MaxDotProductOfTwoSubsequences {
 

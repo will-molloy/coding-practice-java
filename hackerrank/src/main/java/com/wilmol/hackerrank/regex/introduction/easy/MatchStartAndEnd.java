@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-04 at 21:58.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/matching-start-end/problem>https://www.hackerrank.com/challenges/matching-start-end/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class MatchStartAndEnd implements Regex {
 

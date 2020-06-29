@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-01-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-window-substring>https://leetcode.com/problems/minimum-window-substring</a>
  *
  * <p>Runtime: O(t + s)
@@ -18,6 +16,7 @@ import java.util.Map;
  * @see P30SubstringWithConcatenationOfAllWords
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P438FindAllAnagramsInAString
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P567PermutationInString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P76MinimumWindowSubstring {
 

@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-12-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/permutation-sequence>https://leetcode.com/problems/permutation-sequence</a>
  *
  * <p>Runtime: O(nk) TODO apparently there is an O(n^2) solution. Given n is in 1..9 and k is in
@@ -15,6 +13,7 @@ import java.util.stream.Collectors;
  * <p>Key: knowledge of next permutation algorithm, just something you have to memorise I guess?
  *
  * @see P31NextPermutation
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P60PermutationSequence {
 

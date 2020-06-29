@@ -6,7 +6,11 @@ import com.google.common.collect.ImmutableList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-10-19. */
+/**
+ * FindAWordTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class FindAWordTest {
 
   @Test

@@ -7,14 +7,12 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-03-13.
- *
- * <p><a
- * href=https://leetcode.com/problems/house-robber>https://leetcode.com/problems/house-robber</a>
+ * <a href=https://leetcode.com/problems/house-robber>https://leetcode.com/problems/house-robber</a>
  *
  * <p>Key: dynamic programming
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P213HouseRobber2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P198HouseRobber {
 

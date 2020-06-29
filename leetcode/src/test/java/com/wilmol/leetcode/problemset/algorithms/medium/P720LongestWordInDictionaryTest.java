@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-22. */
+/**
+ * P720LongestWordInDictionaryTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P720LongestWordInDictionaryTest {
 
   private final P720LongestWordInDictionary p720 = new P720LongestWordInDictionary();

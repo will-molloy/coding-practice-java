@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/random-pick-index>https://leetcode.com/problems/random-pick-index/</a>
  *
  * <p>Extra space: O(n)
@@ -17,9 +15,11 @@ import java.util.concurrent.ThreadLocalRandom;
  * <p>Key: Store indices by num in map for O(1) lookup.
  *
  * @see P528RandomPickWithWeight
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P398RandomPickIndex {
 
+  /** Solution. */
   static class Solution {
 
     private final Map<Integer, List<Integer>> numIndices = new HashMap<>();

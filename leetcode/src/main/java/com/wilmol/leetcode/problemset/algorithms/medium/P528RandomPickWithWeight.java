@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by wilmol on 2020-06-05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/random-pick-with-weight>https://leetcode.com/problems/random-pick-with-weight/</a>
  *
  * <p>Runtime: O(n) {@code Solution} constructor; O(log n) {@code pickIndex}
@@ -16,9 +14,11 @@ import java.util.concurrent.ThreadLocalRandom;
  * <p>Key: Represent probability weights with ranges.
  *
  * @see P398RandomPickIndex
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P528RandomPickWithWeight {
 
+  /** Solution class. */
   static class Solution {
 
     private final int[] prefixSum;

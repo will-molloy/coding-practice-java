@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/range-sum-query-mutable>https://leetcode.com/problems/range-sum-query-mutable</a>
  *
  * <p>Runtime: O(n) build, O(log n) query, O(log n) update.
@@ -11,9 +9,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(n)
  *
  * <p>Key: Segment tree. Key to implementing segment tree? Splitting range in half.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P307RangeSumQueryMutable {
 
+  /** NumArray. */
   static class NumArray {
 
     private final Node root;

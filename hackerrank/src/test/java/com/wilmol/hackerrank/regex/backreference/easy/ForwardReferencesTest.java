@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-04-06 at 20:30. */
+/**
+ * ForwardReferencesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class ForwardReferencesTest {
 
   @Test

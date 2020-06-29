@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/valid-parenthesis-string>https://leetcode.com/problems/valid-parenthesis-string</a>
  *
  * <p>Runtime: O(n)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: Tracking a 'balance' (in this case increment when seeing '(' and decrement when seeing
  * ')'); here we track a balance 'range' (range of current '(').
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P678ValidParenthesisString {
 

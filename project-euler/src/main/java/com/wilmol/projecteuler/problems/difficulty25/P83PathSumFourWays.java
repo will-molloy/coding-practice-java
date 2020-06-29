@@ -9,15 +9,14 @@ import com.wilmol.projecteuler.problems.difficulty20.P82PathSumThreeWays;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by Will on 2019-03-30 at 23:12.
- *
- * <p><a href=https://projecteuler.net/problem=83>https://projecteuler.net/problem=83</a>
+ * <a href=https://projecteuler.net/problem=83>https://projecteuler.net/problem=83</a>
  *
  * <p>Runtime: TODO
  *
  * @see P81PathSumTwoWays
  * @see P82PathSumThreeWays
  * @see P83PathSumFourWays
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P83PathSumFourWays {
 

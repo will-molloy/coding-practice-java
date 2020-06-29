@@ -8,7 +8,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-25. */
+/**
+ * P287FindTheDuplicateNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P287FindTheDuplicateNumberTest {
 
   private final P287FindTheDuplicateNumber p287 = new P287FindTheDuplicateNumber();

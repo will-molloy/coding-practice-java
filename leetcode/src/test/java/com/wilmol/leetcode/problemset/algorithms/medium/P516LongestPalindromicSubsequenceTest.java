@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P516LongestPalindromicSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P516LongestPalindromicSubsequenceTest {
 
   private final P516LongestPalindromicSubsequence p516 = new P516LongestPalindromicSubsequence();

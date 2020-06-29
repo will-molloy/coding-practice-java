@@ -6,14 +6,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 24/03/2019
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps>https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps</a>
  *
  * <p>Determine if the note can be built from the words in the magazine.
  *
  * <p>Runtime:
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class RansomNote {
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram>https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram</a>
  *
  * <p>Runtime: O(s + t)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: counting frequencies
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1347MinimumNumberOfStepsToMakeTwoStringsAnagram {
 

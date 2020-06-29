@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-06-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-the-duplicate-number>https://leetcode.com/problems/find-the-duplicate-number/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Extra memory: O(1)
  *
  * <p>Key: Cycle detection.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P287FindTheDuplicateNumber {
 

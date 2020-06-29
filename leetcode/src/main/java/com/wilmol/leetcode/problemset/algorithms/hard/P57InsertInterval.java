@@ -5,9 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/insert-interval>https://leetcode.com/problems/insert-interval</a>
  *
  * <p>Runtime: O(n)
@@ -19,6 +17,7 @@ import java.util.List;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P986IntervalListIntersections
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P57InsertInterval {
 

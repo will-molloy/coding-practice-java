@@ -5,11 +5,11 @@ import static com.google.common.base.Preconditions.checkArgument;
 import com.wilmol.projecteuler.common.Maths;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=10>https://projecteuler.net/problem=10</a>
+ * <a href=https://projecteuler.net/problem=10>https://projecteuler.net/problem=10</a>
  *
  * <p>Runtime: O(n log(log(n)))
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P10SummationOfPrimes {
 

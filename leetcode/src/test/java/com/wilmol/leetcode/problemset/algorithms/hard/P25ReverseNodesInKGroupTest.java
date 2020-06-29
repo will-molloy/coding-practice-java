@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-25 at 20:13. */
+/**
+ * P25ReverseNodesInKGroupTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P25ReverseNodesInKGroupTest {
 
   private final P25ReverseNodesInKGroup fun = new P25ReverseNodesInKGroup();

@@ -4,9 +4,7 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2020-02-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/valid-palindrome>https://leetcode.com/problems/valid-palindrome</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.regex.Pattern;
  * <p>Space: O(1)
  *
  * <p>Key: 2 pointers
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P125ValidPalindrome {
 

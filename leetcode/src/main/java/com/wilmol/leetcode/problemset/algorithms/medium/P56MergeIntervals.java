@@ -7,13 +7,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-12-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/merge-intervals>https://leetcode.com/problems/merge-intervals</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
  * @see P986IntervalListIntersections
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P56MergeIntervals {
 

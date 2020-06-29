@@ -1,16 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
- * href=https://leetcode.com/problems/132-pattern>https://leetcode.com/problems/132-pattern/</a>
+ * <a href=https://leetcode.com/problems/132-pattern>https://leetcode.com/problems/132-pattern/</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) TODO can do O(n log(n)) or even O(n)
  *
  * <p>Extra space: O(1)
  *
  * <p>Key: Tracking lower bound ({@code minSoFar}).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P456132Pattern {
 

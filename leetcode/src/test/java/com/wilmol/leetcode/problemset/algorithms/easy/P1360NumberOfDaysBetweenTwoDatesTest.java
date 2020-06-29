@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-09. */
+/**
+ * P1360NumberOfDaysBetweenTwoDatesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1360NumberOfDaysBetweenTwoDatesTest {
 
   private final P1360NumberOfDaysBetweenTwoDates p1360 = new P1360NumberOfDaysBetweenTwoDates();

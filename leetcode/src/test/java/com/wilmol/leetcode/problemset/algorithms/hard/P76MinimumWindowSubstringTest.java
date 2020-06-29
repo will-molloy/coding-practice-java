@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-19. */
+/**
+ * P76MinimumWindowSubstringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P76MinimumWindowSubstringTest {
 
   private final P76MinimumWindowSubstring func = new P76MinimumWindowSubstring();

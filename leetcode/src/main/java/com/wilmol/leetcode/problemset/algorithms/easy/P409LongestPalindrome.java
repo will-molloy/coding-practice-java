@@ -6,9 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-palindrome>https://leetcode.com/problems/longest-palindrome/</a>
  *
  * <p>Runtime: O(n)
@@ -19,6 +17,7 @@ import java.util.stream.Collectors;
  * on either side of the centre.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1457PseudoPalindromicPathsInABinaryTree
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P409LongestPalindrome {
 

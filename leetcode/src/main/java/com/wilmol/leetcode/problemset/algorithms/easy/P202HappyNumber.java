@@ -1,16 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-09.
- *
- * <p><a
- * href=https://leetcode.com/problems/happy-number>https://leetcode.com/problems/happy-number</a>
+ * <a href=https://leetcode.com/problems/happy-number>https://leetcode.com/problems/happy-number</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Space: O(1)
  *
  * <p>Key: {@link Character#digit(char, int)} method
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P202HappyNumber {
 

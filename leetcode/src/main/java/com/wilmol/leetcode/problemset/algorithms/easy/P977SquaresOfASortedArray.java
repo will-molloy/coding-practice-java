@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/squares-of-a-sorted-array>https://leetcode.com/problems/squares-of-a-sorted-array/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Array is partitioned into negative half and positive half; negative half squares are
  * arranged in descending order while positive half squares are arranged in ascending order. So
  * having two pointers (one for each half) is optimal.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P977SquaresOfASortedArray {
 

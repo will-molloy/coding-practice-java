@@ -8,12 +8,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 19:01.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem>https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class DetectingValidLatitudeAndLongitudePairs {
 
@@ -21,7 +21,6 @@ public final class DetectingValidLatitudeAndLongitudePairs {
 
   private static final Pattern PATTERN =
       Pattern.compile(
-          // CHECKSTYLE IGNORE LineLength FOR NEXT 1 LINES
           "^[(]([+\\-])?(90([.]0+)?|([1-8]?[\\d])([.]\\d+)?), ([+\\-])?(180([.]0+)?|(1[0-7][\\d]|[1-9]?[\\d])([.]\\d+)?)[)]$");
 
   static boolean isValid(String latitudeLongitudePair) {

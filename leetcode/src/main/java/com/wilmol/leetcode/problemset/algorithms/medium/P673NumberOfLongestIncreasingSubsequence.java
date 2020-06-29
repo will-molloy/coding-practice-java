@@ -1,12 +1,11 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/number-of-longest-increasing-subsequence>https://leetcode.com/problems/number-of-longest-increasing-subsequence</a>
  *
  * @see P300LongestIncreasingSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P673NumberOfLongestIncreasingSubsequence {
 

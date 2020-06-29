@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-21. */
+/**
+ * P1277CountSquareSubmatricesWithAllOnesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1277CountSquareSubmatricesWithAllOnesTest {
 
   private final P1277CountSquareSubmatricesWithAllOnes p1277 =

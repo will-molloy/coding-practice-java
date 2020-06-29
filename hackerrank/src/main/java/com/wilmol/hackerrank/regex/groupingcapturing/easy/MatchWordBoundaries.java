@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-06 at 14:08.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/matching-word-boundaries/problem>https://www.hackerrank.com/challenges/matching-word-boundaries/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class MatchWordBoundaries implements Regex {
 

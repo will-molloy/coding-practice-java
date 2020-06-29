@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-05-07.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/cousins-in-binary-tree>https://leetcode.com/problems/cousins-in-binary-tree/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: The target node data must be stored in global variables (when doing DFS) because
  * otherwise the updates are only seen when data is passed down the tree (not across).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P993CousinsInBinaryTree {
 

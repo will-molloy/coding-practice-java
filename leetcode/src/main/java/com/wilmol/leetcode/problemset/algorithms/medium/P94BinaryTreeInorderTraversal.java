@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-inorder-traversal>https://leetcode.com/problems/binary-tree-inorder-traversal</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,8 @@ import java.util.List;
  * <p>Space: O(n)
  *
  * <p>Key: recursion to traverse depth first
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P94BinaryTreeInorderTraversal {
 

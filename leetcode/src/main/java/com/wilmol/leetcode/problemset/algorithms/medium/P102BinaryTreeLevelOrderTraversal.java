@@ -7,13 +7,12 @@ import java.util.Deque;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-level-order-traversal>https://leetcode.com/problems/binary-tree-level-order-traversal</a>
  *
  * @see P103BinaryTreeZigzagLevelOrderTraversal
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P107BinaryTreeLevelOrderTraversal2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P102BinaryTreeLevelOrderTraversal {
 

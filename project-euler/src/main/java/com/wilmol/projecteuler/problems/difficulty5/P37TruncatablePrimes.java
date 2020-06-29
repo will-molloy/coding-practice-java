@@ -9,11 +9,11 @@ import java.util.Set;
 import java.util.function.BiFunction;
 
 /**
- * Created by will on 2019-04-19 at 3:59 PM.
- *
- * <p><a href=https://projecteuler.net/problem=37>https://projecteuler.net/problem=37</a>
+ * <a href=https://projecteuler.net/problem=37>https://projecteuler.net/problem=37</a>
  *
  * <p>Runtime: none
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P37TruncatablePrimes {
 

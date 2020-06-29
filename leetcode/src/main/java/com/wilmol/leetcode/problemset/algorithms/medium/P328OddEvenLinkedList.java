@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-05-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/odd-even-linked-list>https://leetcode.com/problems/odd-even-linked-list/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>Extra space: O(1)
  *
  * <p>Key: Track odds/evens separately and link them at the end.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P328OddEvenLinkedList {
 

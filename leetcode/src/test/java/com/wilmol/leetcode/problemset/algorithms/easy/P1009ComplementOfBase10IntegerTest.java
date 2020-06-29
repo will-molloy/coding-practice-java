@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-04. */
+/**
+ * P1009ComplementOfBase10IntegerTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1009ComplementOfBase10IntegerTest {
 
   private final P1009ComplementOfBase10Integer p1009 = new P1009ComplementOfBase10Integer();

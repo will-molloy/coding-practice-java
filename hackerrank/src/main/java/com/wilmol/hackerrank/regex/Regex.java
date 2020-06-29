@@ -8,9 +8,9 @@ import java.util.regex.Pattern;
  *
  * <p>Interface so lambda can be used.
  *
- * <p>Created by Will on 2019-04-02 at 21:10
- *
  * <p><a href=https://regex101.com>https://regex101.com</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @FunctionalInterface
 public interface Regex {

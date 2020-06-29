@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/build-an-array-with-stack-operations>https://leetcode.com/problems/build-an-array-with-stack-operations/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.List;
  * <p>Extra space: O(1)
  *
  * <p>Key: The array is just the list ([1, n]) with gaps, so two pointer approach.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1441BuildAnArrayWithStackOperations {
 

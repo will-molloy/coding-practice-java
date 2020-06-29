@@ -7,9 +7,7 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2020-04-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/deepest-leaves-sum>https://leetcode.com/problems/deepest-leaves-sum</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,8 @@ import java.util.stream.Stream;
  * <p>Space: O(n)
  *
  * <p>Key: BFS traversal
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1302DeepestLeavesSum {
 

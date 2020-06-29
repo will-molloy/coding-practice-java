@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-11-03. */
+/**
+ * P54SpiralMatrixTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P54SpiralMatrixTest {
 
   private final P54SpiralMatrix fun = new P54SpiralMatrix();

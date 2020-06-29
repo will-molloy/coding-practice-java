@@ -1,14 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-02-19.
- *
- * <p><a
- * href=https://leetcode.com/problems/n-queens-ii>https://leetcode.com/problems/n-queens-ii</a>
+ * <a href=https://leetcode.com/problems/n-queens-ii>https://leetcode.com/problems/n-queens-ii</a>
  *
  * <p>Key: copy N-Queens-I
  *
  * @see P51NQueens
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P52NQueens2 {
 

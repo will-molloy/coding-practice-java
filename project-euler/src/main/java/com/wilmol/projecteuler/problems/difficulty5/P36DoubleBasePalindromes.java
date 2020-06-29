@@ -5,11 +5,11 @@ import static com.wilmol.projecteuler.common.Strings.isPalindrome;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-19 at 3:05 PM.
- *
- * <p><a href=https://projecteuler.net/problem=36>https://projecteuler.net/problem=36</a>
+ * <a href=https://projecteuler.net/problem=36>https://projecteuler.net/problem=36</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P36DoubleBasePalindromes {
 

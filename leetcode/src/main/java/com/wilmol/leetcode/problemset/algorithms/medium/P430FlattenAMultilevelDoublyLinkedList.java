@@ -7,9 +7,7 @@ import java.util.Deque;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list>https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list</a>
  *
  * <p>Runtime: O(n)
@@ -20,6 +18,7 @@ import java.util.List;
  * first
  *
  * @see P114FlattenBinaryTreeToLinkedList
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P430FlattenAMultilevelDoublyLinkedList {
 
@@ -109,6 +108,7 @@ interface P430FlattenAMultilevelDoublyLinkedList {
     }
   }
 
+  /** Node. */
   @SuppressFBWarnings(
       value = "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
       justification = "Required for leetcode submission")

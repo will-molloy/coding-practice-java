@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/length-of-longest-fibonacci-subsequence>https://leetcode.com/problems/length-of-longest-fibonacci-subsequence</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
@@ -18,6 +16,7 @@ import java.util.Map;
  * Arrays#binarySearch} to find {@code k}) to O(n<sup>2</sup>)).
  *
  * @see P300LongestIncreasingSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P873LengthOfLongestFibonacciSequence {
 

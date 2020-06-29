@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-08-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-and-say>https://leetcode.com/problems/count-and-say</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P38CountAndSay {
 

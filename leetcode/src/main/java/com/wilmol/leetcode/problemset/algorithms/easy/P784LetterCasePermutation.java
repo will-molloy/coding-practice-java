@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/letter-case-permutation>https://leetcode.com/problems/letter-case-permutation/</a>
  *
  * <p>Runtime: O(2<sup>n</sup>)
@@ -16,6 +14,7 @@ import java.util.List;
  * <p>Key: String can be represented by a binary tree.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P494TargetSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P784LetterCasePermutation {
 

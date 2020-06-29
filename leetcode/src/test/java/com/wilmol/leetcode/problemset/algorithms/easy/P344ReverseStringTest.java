@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-25. */
+/**
+ * P344ReverseStringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P344ReverseStringTest {
 
   private final P344ReverseString p344 = new P344ReverseString();

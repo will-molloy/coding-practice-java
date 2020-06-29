@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-16. */
+/**
+ * P300LongestIncreasingSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P300LongestIncreasingSubsequenceTest {
 
   private final P300LongestIncreasingSubsequence fun = new P300LongestIncreasingSubsequence();

@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/pascals-triangle-ii>https://leetcode.com/problems/pascals-triangle-ii</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) TODO can be O(n) with some math formula
@@ -16,6 +14,7 @@ import java.util.List;
  * <p>Key: optimising DP for reduced space use by iterating backwards
  *
  * @see P118PascalTriangle
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P119PascalTriangle2 {
 

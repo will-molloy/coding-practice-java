@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-palindromic-subsequence>https://leetcode.com/problems/longest-palindromic-subsequence/</a>
  *
  * <p>Difficulty: Medium.
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * 1])} because both subsequences (remove first/remove last) need to be considered.
  *
  * @see P5LongestPalindromicSubstring
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P516LongestPalindromicSubsequence {
 

@@ -4,9 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Created by wilmol on 2020-05-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/online-stock-span>https://leetcode.com/problems/online-stock-span/</a>
  *
  * <p>Runtime: O(n) (amortised cost of {@code next} is O(1))
@@ -16,6 +14,7 @@ import java.util.Deque;
  * <p>Key: Stack because we want to access most recently added items first.
  *
  * @see P739DailyTemperatures
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P901OnlineStockSpan {
 

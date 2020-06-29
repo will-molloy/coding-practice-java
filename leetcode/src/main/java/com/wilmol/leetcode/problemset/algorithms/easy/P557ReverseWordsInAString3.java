@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-04-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-words-in-a-string-iii>https://leetcode.com/problems/reverse-words-in-a-string-iii/</a>
  *
  * <p>Difficulty: Easy.
@@ -21,6 +19,7 @@ import java.util.stream.Collectors;
  * @see P344ReverseString
  * @see P541ReverseString2
  * @see P345ReverseVowelsOfAString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P557ReverseWordsInAString3 {
 

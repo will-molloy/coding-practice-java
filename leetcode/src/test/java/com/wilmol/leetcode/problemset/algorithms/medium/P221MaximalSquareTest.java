@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P221MaximalSquareTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P221MaximalSquareTest {
 
   private final P221MaximalSquare p221 = new P221MaximalSquare();

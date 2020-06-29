@@ -8,9 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree>https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/</a>
  *
  * <p>Runtime: O(n)
@@ -25,6 +23,8 @@ import java.util.Set;
  *
  * <p>Also DFS is just recursion; don't need a {@code Stack} or a {@code Node} class, just call the
  * method as soon as child is seen.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1443MinimumTimeToCollectAllApplesInATree {
 

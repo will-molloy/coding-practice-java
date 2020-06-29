@@ -3,15 +3,15 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-02-17.
- *
- * <p><a href=https://leetcode.com/problems/path-sum>https://leetcode.com/problems/path-sum</a>
+ * <a href=https://leetcode.com/problems/path-sum>https://leetcode.com/problems/path-sum</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Space: O(h)
  *
  * <p>Key: A leaf is a node with no children.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P112PathSum {
 

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-numbers-with-even-number-of-digits>https://leetcode.com/problems/find-numbers-with-even-number-of-digits/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: Log base 10 + 1 gets number of digits.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1295FindNumbersWithEvenNumberOfDigits {
 

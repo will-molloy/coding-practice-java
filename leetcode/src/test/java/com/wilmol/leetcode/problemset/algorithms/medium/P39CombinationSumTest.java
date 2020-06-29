@@ -6,7 +6,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-21. */
+/**
+ * P39CombinationSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P39CombinationSumTest {
 
   private P39CombinationSum.TopDownRecursive topDownRecursive =

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/bitwise-and-of-numbers-range>https://leetcode.com/problems/bitwise-and-of-numbers-range/</a>
  *
  * <p>Difficulty: Medium.
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1)
  *
  * <p>Key: Using bitwise operations (here, shifts) given it is a bitwise operator problem (hint!).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P201BitwiseAndOfNumbersRange {
 

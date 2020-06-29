@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-03. */
+/**
+ * P1436DestinationCityTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1436DestinationCityTest {
 
   private final P1436DestinationCity p1436 = new P1436DestinationCity();

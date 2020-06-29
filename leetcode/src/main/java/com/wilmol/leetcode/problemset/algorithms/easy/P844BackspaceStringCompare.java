@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/backspace-string-compare>https://leetcode.com/problems/backspace-string-compare</a>
  *
  * <p>Runtime: O(s + t)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: once finished backspacing, need to check string again cause may have ended up on another
  * backspace character. Also must not backspace over backspace characters, rather increment the
  * count of them.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P844BackspaceStringCompare {
 

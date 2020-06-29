@@ -7,9 +7,7 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2020-03-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/populating-next-right-pointers-in-each-node>https://leetcode.com/problems/populating-next-right-pointers-in-each-node</a>
  *
  * <p>Runtime: O(n)
@@ -19,6 +17,7 @@ import java.util.stream.Stream;
  * <p>Key: BFS
  *
  * @see P117PopulatingNextRightPointersInEachNode2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P116PopulatingNextRightPointersInEachNode {
 
@@ -44,6 +43,7 @@ class P116PopulatingNextRightPointersInEachNode {
     return root;
   }
 
+  /** Node. */
   @SuppressFBWarnings("UWF_UNWRITTEN_FIELD")
   static class Node {
     int val;

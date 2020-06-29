@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-21. */
+/**
+ * P1487MakingFileNamesUniqueTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1487MakingFileNamesUniqueTest {
 
   private final P1487MakingFileNamesUnique p1487 = new P1487MakingFileNamesUnique();

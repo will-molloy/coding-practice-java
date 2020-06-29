@@ -1,14 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-03-01.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/unique-binary-search-trees>https://leetcode.com/problems/unique-binary-search-trees</a>
  *
  * <p>Key: dynamic programming; coming up with math formula before writing code
  *
  * @see P95UniqueBinarySearchTrees2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P96UniqueBinarySearchTrees {
 

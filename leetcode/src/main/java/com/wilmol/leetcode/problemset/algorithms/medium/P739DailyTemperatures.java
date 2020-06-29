@@ -5,14 +5,13 @@ import java.util.Arrays;
 import java.util.Deque;
 
 /**
- * Created by wilmol on 2020-05-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/daily-temperatures>https://leetcode.com/problems/daily-temperatures/</a>
  *
  * <p>Key: Iterate in reverse so can store day of each future temp.
  *
  * @see P901OnlineStockSpan
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P739DailyTemperatures {
 

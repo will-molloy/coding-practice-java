@@ -4,14 +4,17 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-15. */
+/**
+ * BuildAStackExchangeScraperTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class BuildAStackExchangeScraperTest {
 
   @Test
   void sampleTestCase0() {
     // NOTE there was a typo on "operational" ... fixed it here
     String markUp =
-        // CHECKSTYLE IGNORE LineLength FOR NEXT 105 LINES
         "        <div class=\"question-summary\" id=\"question-summary-80407\">\n"
             + "        <div class=\"statscontainer\">\n"
             + "            <div class=\"statsarrow\"></div>\n"

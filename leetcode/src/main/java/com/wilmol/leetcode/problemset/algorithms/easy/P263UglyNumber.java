@@ -1,10 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-09.
- *
- * <p><a
- * href=https://leetcode.com/problems/ugly-number>https://leetcode.com/problems/ugly-number</a>
+ * <a href=https://leetcode.com/problems/ugly-number>https://leetcode.com/problems/ugly-number</a>
  *
  * <p>Runtime: O(n)
  *
@@ -14,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * moving onto next ({@code i = [2..n]})
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P264UglyNumber2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P263UglyNumber {
 

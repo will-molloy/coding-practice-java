@@ -1,6 +1,10 @@
 package com.wilmol.leetcode.common;
 
-/** Created by Will on 2019-07-19 at 21:16. */
+/**
+ * UncheckedRunnable.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @FunctionalInterface
 public interface UncheckedRunnable extends Runnable {
   @Override

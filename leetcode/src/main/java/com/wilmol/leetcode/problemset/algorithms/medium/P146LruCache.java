@@ -3,11 +3,11 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.LinkedHashMap;
 
 /**
- * Created by wilmol on 2020-02-21.
- *
- * <p><a href=https://leetcode.com/problems/lru-cache>https://leetcode.com/problems/lru-cache</a>
+ * <a href=https://leetcode.com/problems/lru-cache>https://leetcode.com/problems/lru-cache</a>
  *
  * <p>Key: map for O(1) operations + linked list to track least recently used
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P146LruCache {
 

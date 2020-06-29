@@ -4,14 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Will on 2019-06-23 at 20:34.
- *
- * <p><a href=https://leetcode.com/problems/two-sum>https://leetcode.com/problems/two-sum</a>
+ * <a href=https://leetcode.com/problems/two-sum>https://leetcode.com/problems/two-sum</a>
  *
  * <p>Runtime: O(n) - single pass on ints, but O(n) memory too
  *
  * @see com.wilmol.hackerrank.interviewpreparationkit.search.medium.HashTablesIceCreamParlor
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1497CheckIfArrayPairsAreDivisibleByK
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1TwoSum {
 

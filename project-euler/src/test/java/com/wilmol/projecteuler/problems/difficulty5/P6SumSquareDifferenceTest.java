@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 16/03/2019. */
+/**
+ * P6SumSquareDifferenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P6SumSquareDifferenceTest {
 
   private final P6SumSquareDifference sumSquareDifference = new P6SumSquareDifference();

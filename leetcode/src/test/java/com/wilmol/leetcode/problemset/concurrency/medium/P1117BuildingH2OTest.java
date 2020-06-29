@@ -8,7 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
-/** Created by Will on 2019-07-20 at 16:43. */
+/**
+ * P1117BuildingH2OTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @Timeout(value = 10)
 class P1117BuildingH2OTest {
 

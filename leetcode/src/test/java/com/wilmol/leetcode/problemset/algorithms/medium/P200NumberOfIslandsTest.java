@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-05. */
+/**
+ * P200NumberOfIslandsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P200NumberOfIslandsTest {
 
   private final P200NumberOfIslands fun = new P200NumberOfIslands();

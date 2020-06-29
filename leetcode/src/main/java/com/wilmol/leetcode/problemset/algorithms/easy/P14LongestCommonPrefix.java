@@ -1,15 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-20 at 21:33.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-common-prefix>https://leetcode.com/problems/longest-common-prefix</a>
  *
  * <p>Runtime: O(n) - inner while loop does not run for each n
  *
  * <p>TODO use a trie - apparently best for very large inputs, and good to practice (especially for
  * Google!)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P14LongestCommonPrefix {
 

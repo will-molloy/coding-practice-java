@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-12. */
+/**
+ * P540SingleElementInASortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P540SingleElementInASortedArrayTest {
 
   private final P540SingleElementInASortedArray p540 = new P540SingleElementInASortedArray();

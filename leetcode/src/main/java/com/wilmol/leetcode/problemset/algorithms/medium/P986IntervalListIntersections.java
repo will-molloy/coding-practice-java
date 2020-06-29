@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/interval-list-intersections>https://leetcode.com/problems/interval-list-intersections/</a>
  *
  * @see P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P986IntervalListIntersections {
 

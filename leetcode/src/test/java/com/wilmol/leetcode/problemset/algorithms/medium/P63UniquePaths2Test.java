@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-12. */
+/**
+ * P63UniquePaths2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P63UniquePaths2Test {
 
   private final P63UniquePaths2 fun = new P63UniquePaths2();

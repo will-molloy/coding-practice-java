@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by Will on 2019-07-08 at 19:50.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-palindromic-substring>https://leetcode.com/problems/longest-palindromic-substring/</a>
  *
  * <p>Difficulty: Medium.
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * {@code l} in reverse order so {@code l + 1} is computed first.
  *
  * @see P516LongestPalindromicSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P5LongestPalindromicSubstring {
 

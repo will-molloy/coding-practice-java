@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P268MissingNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P268MissingNumberTest {
 
   private final P268MissingNumber p268 = new P268MissingNumber();

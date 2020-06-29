@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-04. */
+/**
+ * P456132PatternTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P456132PatternTest {
 
   private final P456132Pattern p456 = new P456132Pattern();

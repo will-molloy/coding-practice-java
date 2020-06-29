@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-16. */
+/**
+ * P74SearchA2dMatrixTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P74SearchA2dMatrixTest {
 
   private final P74SearchA2dMatrix fun = new P74SearchA2dMatrix();

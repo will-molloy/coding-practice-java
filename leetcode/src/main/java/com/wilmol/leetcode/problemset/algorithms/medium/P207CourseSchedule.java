@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/course-schedule>https://leetcode.com/problems/course-schedule/</a>
  *
  * <p>Runtime: O(n + p) - {@code dfs} is O(n + p)
@@ -24,6 +22,7 @@ import java.util.Set;
  * traversed its neighbours.
  *
  * @see P886PossibleBipartition
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P207CourseSchedule {
 

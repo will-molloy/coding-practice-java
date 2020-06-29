@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side>https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Track max so far from right.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1299ReplaceElementsWithGreatestElementOnRightSide {
 

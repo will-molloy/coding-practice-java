@@ -3,14 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-07-21 at 14:31.
- *
- * <p><a
- * href=https://leetcode.com/problems/3sum-closest>https://leetcode.com/problems/3sum-closest</a>
+ * <a href=https://leetcode.com/problems/3sum-closest>https://leetcode.com/problems/3sum-closest</a>
  *
  * <p>Runtime: O(n ^ 2)
  *
  * @see P15ThreeSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P16ThreeSumClosest {
 

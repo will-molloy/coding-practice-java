@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/number-of-islands>https://leetcode.com/problems/number-of-islands</a>
  *
  * <p>Runtime: O(rows * cols) (yes we do more computation when there are '1's in the grid - but that
@@ -17,6 +15,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
  * @see P695MaxAreaOfIsland
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P200NumberOfIslands {
 

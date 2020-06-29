@@ -11,11 +11,11 @@ import java.util.Set;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-20 at 5:43 PM.
- *
- * <p><a href=https://projecteuler.net/problem=47>https://projecteuler.net/problem=47</a>
+ * <a href=https://projecteuler.net/problem=47>https://projecteuler.net/problem=47</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P47DistinctPrimeFactors {
 

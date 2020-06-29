@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-18. */
+/**
+ * P274HIndexTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P274HIndexTest {
 
   private final P274HIndex p274 = new P274HIndex();

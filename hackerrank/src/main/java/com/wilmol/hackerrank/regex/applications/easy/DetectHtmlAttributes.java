@@ -17,9 +17,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2019-10-16.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/html-attributes/problem>https://www.hackerrank.com/challenges/html-attributes/problem</a>
  *
  * <p>Runtime: O(n)
@@ -29,6 +27,7 @@ import java.util.stream.Stream;
  *
  * @see DetectHtmlTags
  * @see com.wilmol.hackerrank.regex.applications.medium.DetectHtmlLinks
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class DetectHtmlAttributes {
 

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-13. */
+/**
+ * P525ContiguousArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P525ContiguousArrayTest {
 
   private final P525ContiguousArray fun = new P525ContiguousArray();

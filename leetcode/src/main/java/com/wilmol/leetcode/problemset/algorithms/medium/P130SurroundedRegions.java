@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/surrounded-regions>https://leetcode.com/problems/surrounded-regions</a>
  *
  * <p>Runtime: O(row * col)
@@ -15,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
  * @see P695MaxAreaOfIsland
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P130SurroundedRegions {
 

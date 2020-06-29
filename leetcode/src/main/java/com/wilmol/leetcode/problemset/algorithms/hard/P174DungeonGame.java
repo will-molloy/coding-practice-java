@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-06-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/dungeon-game>https://leetcode.com/problems/dungeon-game/</a>
  *
  * <p>Runtime: O(numRows * numCols)
@@ -17,6 +15,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P63UniquePaths2
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P64MinimumPathSum
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P120Triangle
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P174DungeonGame {
 

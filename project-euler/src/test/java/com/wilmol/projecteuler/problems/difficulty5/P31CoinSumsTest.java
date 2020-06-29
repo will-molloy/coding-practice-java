@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-13 at 11:26 AM. */
+/**
+ * P31CoinSumsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P31CoinSumsTest {
 
   private static final int[] COINS = new int[] {1, 2, 5, 10, 20, 50, 100, 200};

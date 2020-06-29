@@ -8,9 +8,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-06-28.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reconstruct-itinerary>https://leetcode.com/problems/reconstruct-itinerary/</a>
  *
  * <p>Runtime: O(|v| + |e|)
@@ -18,6 +16,8 @@ import java.util.PriorityQueue;
  * <p>Extra memory: O(|v|)
  *
  * <p>Key: Topological sort.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P332ReconstructItinerary {
 

@@ -7,14 +7,13 @@ import java.nio.charset.StandardCharsets;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-07 at 15:25.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ip-address-validation/problem>https://www.hackerrank.com/challenges/ip-address-validation/problem</a>
  *
  * <p>Runtime: O(n)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P468ValidateIpAddress
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class IpAddressValidation {
 
@@ -30,6 +29,7 @@ final class IpAddressValidation {
   private static final Pattern IPV6_PATTERN =
       Pattern.compile("^(" + HEX_REGEX + ":){7}" + HEX_REGEX + "$");
 
+  /** Ip type. */
   enum Type {
     IPv6 {
       @Override

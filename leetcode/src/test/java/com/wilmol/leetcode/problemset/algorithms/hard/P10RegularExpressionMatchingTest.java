@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-15 at 19:42. */
+/**
+ * P10RegularExpressionMatchingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P10RegularExpressionMatchingTest {
 
   private final P10RegularExpressionMatching function = new P10RegularExpressionMatching();

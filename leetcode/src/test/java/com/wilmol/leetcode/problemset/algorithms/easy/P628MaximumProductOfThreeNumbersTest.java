@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-29. */
+/**
+ * P628MaximumProductOfThreeNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P628MaximumProductOfThreeNumbersTest {
 
   private final P628MaximumProductOfThreeNumbers fun = new P628MaximumProductOfThreeNumbers();

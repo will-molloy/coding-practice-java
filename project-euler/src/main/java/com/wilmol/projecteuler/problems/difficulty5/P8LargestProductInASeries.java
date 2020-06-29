@@ -7,11 +7,11 @@ import com.wilmol.projecteuler.common.Maths;
 import java.util.List;
 
 /**
- * Created by Will on 16/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=8>https://projecteuler.net/problem=8</a>
+ * <a href=https://projecteuler.net/problem=8>https://projecteuler.net/problem=8</a>
  *
  * <p>Runtime: O(n * k)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P8LargestProductInASeries {
 

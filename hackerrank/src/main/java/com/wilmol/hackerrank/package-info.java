@@ -1,6 +1,6 @@
 /**
  * <a href=https://www.hackerrank.com>https://www.hackerrank.com</a>
  *
- * <p>Created by wilmol on 2019-09-09.
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 package com.wilmol.hackerrank;

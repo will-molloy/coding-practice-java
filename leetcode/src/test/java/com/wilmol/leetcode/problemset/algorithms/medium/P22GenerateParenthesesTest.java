@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-23 at 20:46. */
+/**
+ * P22GenerateParenthesesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P22GenerateParenthesesTest {
 
   private final P22GenerateParentheses fun = new P22GenerateParentheses();

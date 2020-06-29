@@ -8,11 +8,11 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * Created by Will on 2019-04-25 at 21:25.
- *
- * <p><a href=https://projecteuler.net/problem=55>https://projecteuler.net/problem=55</a>
+ * <a href=https://projecteuler.net/problem=55>https://projecteuler.net/problem=55</a>
  *
  * <p>Runtime: O(n) - iterate all numbers, check caps out at 50 iterations
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P55LychrelNumbers {
 

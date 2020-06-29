@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-12. */
+/**
+ * P1046LastStoneWeightTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1046LastStoneWeightTest {
 
   private final P1046LastStoneWeight fun = new P1046LastStoneWeight();

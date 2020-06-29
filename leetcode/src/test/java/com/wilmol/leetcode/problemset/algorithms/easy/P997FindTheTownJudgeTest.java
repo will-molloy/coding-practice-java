@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-10. */
+/**
+ * P997FindTheTownJudgeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P997FindTheTownJudgeTest {
 
   private final P997FindTheTownJudge p997 = new P997FindTheTownJudge();

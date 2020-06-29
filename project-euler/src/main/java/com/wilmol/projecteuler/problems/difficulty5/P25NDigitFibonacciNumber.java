@@ -5,11 +5,11 @@ import com.wilmol.projecteuler.common.Maths;
 import java.math.BigInteger;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=25>https://projecteuler.net/problem=25</a>
+ * <a href=https://projecteuler.net/problem=25>https://projecteuler.net/problem=25</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P25NDigitFibonacciNumber {
 

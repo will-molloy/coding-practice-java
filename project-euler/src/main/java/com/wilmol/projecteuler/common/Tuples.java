@@ -11,7 +11,7 @@ import org.apache.commons.lang3.tuple.Pair;
 /**
  * Extensions to {@link org.apache.commons.lang3.tuple}.
  *
- * <p>Created by Will on 2019-06-05 at 21:32
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class Tuples {
 

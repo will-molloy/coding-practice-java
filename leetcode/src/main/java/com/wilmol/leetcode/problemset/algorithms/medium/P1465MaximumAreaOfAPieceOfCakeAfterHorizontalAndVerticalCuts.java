@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-05-31.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts>https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/</a>
  *
  * <p>Runtime: O(hn * log(hn) + vn * log(vn))
@@ -14,6 +12,8 @@ import java.util.Arrays;
  *
  * <p>Key: Find the largest gaps between array elements (sort arrays first). Cast to {@code long} to
  * avoid integer overflow.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts {
 

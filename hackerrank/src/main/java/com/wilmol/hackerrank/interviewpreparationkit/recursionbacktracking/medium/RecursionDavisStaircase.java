@@ -1,9 +1,7 @@
 package com.wilmol.hackerrank.interviewpreparationkit.recursionbacktracking.medium;
 
 /**
- * Created by wilmol on 2019-09-10.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-recursive-staircase/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking>https://www.hackerrank.com/challenges/ctci-recursive-staircase/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking</a>
  *
  * <p>Not sure why it is categorised under recursion? Top-down recursive solution times out.
@@ -12,6 +10,8 @@ package com.wilmol.hackerrank.interviewpreparationkit.recursionbacktracking.medi
  * int.
  *
  * <p>Runtime: O(3^n) (recursive top down) O(n) (iterative/tail recursive bottom up).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class RecursionDavisStaircase {
 

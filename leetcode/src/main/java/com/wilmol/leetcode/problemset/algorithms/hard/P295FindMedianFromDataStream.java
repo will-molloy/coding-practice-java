@@ -4,9 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-03-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-median-from-data-stream>https://leetcode.com/problems/find-median-from-data-stream</a>
  *
  * <p>Runtime: see methods
@@ -14,6 +12,8 @@ import java.util.PriorityQueue;
  * <p>Space: O(n)
  *
  * <p>Key: heap data structure ({@link PriorityQueue} in Java)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P295FindMedianFromDataStream {
 

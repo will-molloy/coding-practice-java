@@ -6,13 +6,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2020-03-18.
- *
- * <p><a href=https://leetcode.com/problems/word-break>https://leetcode.com/problems/word-break</a>
+ * <a href=https://leetcode.com/problems/word-break>https://leetcode.com/problems/word-break</a>
  *
  * <p>Key: dynamic programming
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P140WordBreak2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P139WordBreak {
 

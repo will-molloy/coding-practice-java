@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-16. */
+/**
+ * P918MaximumSumCircularSubarrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P918MaximumSumCircularSubarrayTest {
 
   private final P918MaximumSumCircularSubarray p918 = new P918MaximumSumCircularSubarray();

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-20 at 11:49 AM. */
+/**
+ * P43SubstringDivisibilityTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P43SubstringDivisibilityTest {
 
   @Test

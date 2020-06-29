@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-04-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer>https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>Space: O(n)
  *
  * <p>Key: Bubble up result from the end of the list (dfs/dp).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1290ConvertBinaryNumberInALinkedListToInteger {
 

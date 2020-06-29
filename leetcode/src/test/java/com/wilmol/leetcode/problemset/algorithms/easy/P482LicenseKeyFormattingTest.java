@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-14. */
+/**
+ * P482LicenseKeyFormattingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P482LicenseKeyFormattingTest {
 
   private final P482LicenseKeyFormatting p482 = new P482LicenseKeyFormatting();

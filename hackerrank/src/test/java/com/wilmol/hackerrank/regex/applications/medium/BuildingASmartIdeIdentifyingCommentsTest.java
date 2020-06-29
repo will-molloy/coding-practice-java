@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-10-31. */
+/**
+ * BuildingASmartIdeIdentifyingCommentsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class BuildingASmartIdeIdentifyingCommentsTest {
 
   @Test

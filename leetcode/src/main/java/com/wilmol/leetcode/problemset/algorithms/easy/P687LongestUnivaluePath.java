@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-05-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-univalue-path>https://leetcode.com/problems/longest-univalue-path/</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * go up and down through one node, so have to return max of left/right not combine them.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P124BinaryTreeMaximumPathSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P687LongestUnivaluePath {
 

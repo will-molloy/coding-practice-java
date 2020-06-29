@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 18/03/2019. */
+/**
+ * P24LexicographicPermutationsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P24LexicographicPermutationsTest {
 
   private final P24LexicographicPermutations lexicographicPermutations =

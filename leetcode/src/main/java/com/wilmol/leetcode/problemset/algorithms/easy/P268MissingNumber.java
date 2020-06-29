@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/missing-number>https://leetcode.com/problems/missing-number/</a>
  *
  * <p>Difficulty: Easy.
@@ -16,6 +14,8 @@ import java.util.stream.IntStream;
  * <p>Space: O(1)
  *
  * <p>Key: Summing the numbers.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P268MissingNumber {
 

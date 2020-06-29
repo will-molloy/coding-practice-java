@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/coin-change-2>https://leetcode.com/problems/coin-change-2</a>
  *
  * <p>Key: Figuring out the dp formula was harder than the previous problem ({@link
@@ -15,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *     href=https://en.wikipedia.org/wiki/Knapsack_problem>https://en.wikipedia.org/wiki/Knapsack_problem</a>
  * @see <a
  *     href=https://en.wikipedia.org/wiki/Dynamic_programming>https://en.wikipedia.org/wiki/Dynamic_programming</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P518CoinChange2 {
 

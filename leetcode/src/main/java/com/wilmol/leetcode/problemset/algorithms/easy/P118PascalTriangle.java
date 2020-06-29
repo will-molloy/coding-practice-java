@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/pascals-triangle>https://leetcode.com/problems/pascals-triangle</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
@@ -17,6 +15,7 @@ import java.util.List;
  * <p>Key: just coded the steps in the visualisation (dynamic programming)
  *
  * @see P119PascalTriangle2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P118PascalTriangle {
 

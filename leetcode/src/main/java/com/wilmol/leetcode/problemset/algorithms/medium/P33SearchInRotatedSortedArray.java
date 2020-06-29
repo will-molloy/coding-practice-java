@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-08-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/search-in-rotated-sorted-array>https://leetcode.com/problems/search-in-rotated-sorted-array/</a>
  *
  * <p>Runtime: O(log n)
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P153FindMinimumInRotatedSortedArray
  * @see P81SearchInRotatedSortedArray2
  * @see <a href=https://youtu.be/84a8fQp5hJA>Errichto's video</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P33SearchInRotatedSortedArray {
 

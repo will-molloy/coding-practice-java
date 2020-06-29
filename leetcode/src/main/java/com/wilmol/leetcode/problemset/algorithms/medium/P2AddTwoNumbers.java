@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-06-23 at 20:43.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/add-two-numbers>https://leetcode.com/problems/add-two-numbers</a>
  *
  * <p>Runtime: O(n + m) - single pass on each list
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P2AddTwoNumbers {
 

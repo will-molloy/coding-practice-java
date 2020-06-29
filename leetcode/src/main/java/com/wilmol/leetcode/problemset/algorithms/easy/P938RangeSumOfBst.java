@@ -7,9 +7,7 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2020-03-30.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/range-sum-of-bst>https://leetcode.com/problems/range-sum-of-bst</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,8 @@ import java.util.stream.Stream;
  * <p>Space: O(n)
  *
  * <p>Key: binary tree traversal
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P938RangeSumOfBst {
 

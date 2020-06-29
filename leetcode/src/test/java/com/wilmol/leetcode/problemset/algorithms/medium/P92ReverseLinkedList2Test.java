@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-08. */
+/**
+ * P92ReverseLinkedList2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P92ReverseLinkedList2Test {
 
   private final P92ReverseLinkedList2 func = new P92ReverseLinkedList2();

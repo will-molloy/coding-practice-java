@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array>https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,8 @@ import java.util.List;
  *
  * <p>Key: Got the hint you use a[i]-1 as an index (since a[i]:[1, n]) but was marking with 0s,
  * really needed to mark with negative numbers.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P448FindAllNumbersDisappearedInAnArray {
 

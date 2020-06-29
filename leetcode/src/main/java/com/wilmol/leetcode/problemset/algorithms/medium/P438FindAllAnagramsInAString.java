@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-all-anagrams-in-a-string>https://leetcode.com/problems/find-all-anagrams-in-a-string/</a>
  *
  * <p>Difficulty: Medium.
@@ -21,6 +19,7 @@ import java.util.List;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P76MinimumWindowSubstring
  * @see P567PermutationInString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P438FindAllAnagramsInAString {
 

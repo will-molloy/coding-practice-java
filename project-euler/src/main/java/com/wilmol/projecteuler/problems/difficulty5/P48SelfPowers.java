@@ -5,11 +5,11 @@ import java.math.BigInteger;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-21 at 12:35 PM.
- *
- * <p><a href=https://projecteuler.net/problem=48>https://projecteuler.net/problem=48</a>
+ * <a href=https://projecteuler.net/problem=48>https://projecteuler.net/problem=48</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P48SelfPowers {
 

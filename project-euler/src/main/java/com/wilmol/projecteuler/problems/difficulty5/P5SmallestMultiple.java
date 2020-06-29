@@ -5,11 +5,11 @@ import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 16/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=5>https://projecteuler.net/problem=5</a>
+ * <a href=https://projecteuler.net/problem=5>https://projecteuler.net/problem=5</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P5SmallestMultiple {
 

@@ -7,7 +7,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-03-28. */
+/**
+ * P140WordBreak2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P140WordBreak2Test {
 
   @ParameterizedTest

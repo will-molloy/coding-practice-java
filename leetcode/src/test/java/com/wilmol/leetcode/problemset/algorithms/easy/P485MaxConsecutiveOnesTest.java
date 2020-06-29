@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-14. */
+/**
+ * P485MaxConsecutiveOnesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P485MaxConsecutiveOnesTest {
 
   private final P485MaxConsecutiveOnes p485 = new P485MaxConsecutiveOnes();

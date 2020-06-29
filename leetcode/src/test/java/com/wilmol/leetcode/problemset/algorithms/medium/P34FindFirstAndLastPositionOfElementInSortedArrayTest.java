@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-17. */
+/**
+ * P34FindFirstAndLastPositionOfElementInSortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P34FindFirstAndLastPositionOfElementInSortedArrayTest {
 
   private final P34FindFirstAndLastPositionOfElementInSortedArray fun =

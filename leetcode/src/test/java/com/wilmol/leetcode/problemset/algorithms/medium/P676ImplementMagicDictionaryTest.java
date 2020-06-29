@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-23. */
+/**
+ * P676ImplementMagicDictionaryTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P676ImplementMagicDictionaryTest {
 
   private final P676ImplementMagicDictionary p676 = new P676ImplementMagicDictionary();

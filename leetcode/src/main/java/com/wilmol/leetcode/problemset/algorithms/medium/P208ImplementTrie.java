@@ -1,14 +1,14 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-22.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/implement-trie-prefix-tree>https://leetcode.com/problems/implement-trie-prefix-tree/</a>
  *
  * <p>Difficulty: Medium.
  *
  * <p>Key: Trie behaves like an n-ary tree. All traversals are DFS. {@link isLeaf} field is crucial.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P208ImplementTrie {
 

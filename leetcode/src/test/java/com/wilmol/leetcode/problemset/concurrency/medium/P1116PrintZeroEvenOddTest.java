@@ -9,7 +9,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
-/** Created by Will on 2019-07-19 at 21:15. */
+/**
+ * P1116PrintZeroEvenOddTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @Timeout(value = 10)
 class P1116PrintZeroEvenOddTest {
 

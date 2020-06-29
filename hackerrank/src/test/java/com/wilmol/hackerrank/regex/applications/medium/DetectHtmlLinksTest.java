@@ -6,7 +6,11 @@ import static com.wilmol.hackerrank.regex.applications.medium.DetectHtmlLinks.de
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-11-01. */
+/**
+ * DetectHtmlLinksTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class DetectHtmlLinksTest {
 
   @Test
@@ -26,7 +30,6 @@ class DetectHtmlLinksTest {
         .containsExactly("http://www.hackerrank.com,HackerRank");
   }
 
-  // CHECKSTYLE IGNORE LineLength FOR NEXT 200 LINES
   @Test
   void sampleInput1() {
     assertThat(

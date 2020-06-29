@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-06-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree>https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,8 @@ import java.util.Set;
  * <p>Extra space: O(n)
  *
  * <p>Key: Store parents in table so can traverse up tree.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P236LowestCommonAncestorOfABinaryTree {
 

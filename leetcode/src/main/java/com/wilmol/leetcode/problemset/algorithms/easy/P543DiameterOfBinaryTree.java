@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/diameter-of-binary-tree>https://leetcode.com/problems/diameter-of-binary-tree</a>
  *
  * <p>Key: the longest path must be between leaf nodes
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P543DiameterOfBinaryTree {
 

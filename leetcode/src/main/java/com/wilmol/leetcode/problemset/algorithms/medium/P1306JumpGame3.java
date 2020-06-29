@@ -4,9 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-04-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/jump-game-iii>https://leetcode.com/problems/jump-game-iii/</a>
  *
  * <p>Difficulty: Medium.
@@ -20,6 +18,7 @@ import java.util.Set;
  * @see P55JumpGame
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P45JumpGame2
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P1345JumpGame4
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1306JumpGame3 {
 

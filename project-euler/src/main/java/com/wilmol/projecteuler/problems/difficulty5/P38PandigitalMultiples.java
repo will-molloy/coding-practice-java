@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-19 at 5:20 PM.
- *
- * <p><a href=https://projecteuler.net/problem=38>https://projecteuler.net/problem=38</a>
+ * <a href=https://projecteuler.net/problem=38>https://projecteuler.net/problem=38</a>
  *
  * <p>Runtime: none
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P38PandigitalMultiples {
 

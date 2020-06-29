@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2019-08-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/first-missing-positive>https://leetcode.com/problems/first-missing-positive</a>
  *
  * <p>Runtime: O(n), O(1) extra memory (TODO does decrementing index break O(n)??)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P41FirstMissingPositive {
 

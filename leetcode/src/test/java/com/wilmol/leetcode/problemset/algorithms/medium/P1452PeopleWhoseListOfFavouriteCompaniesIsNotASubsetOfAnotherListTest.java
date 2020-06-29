@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTest {
 
   private final P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList p1452 =

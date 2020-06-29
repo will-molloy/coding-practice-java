@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.HashSet;
 
 /**
- * Created by wilmol on 2020-04-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/n-repeated-element-in-size-2n-array>https://leetcode.com/problems/n-repeated-element-in-size-2n-array</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import java.util.HashSet;
  * <p>Space: O(n)
  *
  * <p>Key: duplicate detection
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P961NRepeatedElementInSize2nArray {
 

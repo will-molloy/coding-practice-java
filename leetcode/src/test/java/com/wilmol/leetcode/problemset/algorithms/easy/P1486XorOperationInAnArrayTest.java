@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-21. */
+/**
+ * P1486XorOperationInAnArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1486XorOperationInAnArrayTest {
 
   private final P1486XorOperationInAnArray p1486 = new P1486XorOperationInAnArray();

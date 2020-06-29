@@ -5,9 +5,7 @@ import static java.lang.Math.max;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-03-31 at 13:59.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming>https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming</a>
  *
  * <p>Minimum candies required such that all kids get candies and kid with higher score than their
@@ -20,6 +18,7 @@ import java.util.Arrays;
  * href=https://leetcode.com/articles/candy>https://leetcode.com/articles/candy</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P135Candy
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class Candies {
 

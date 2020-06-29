@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.sun.tools.javac.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-20. */
+/**
+ * P77CombinationsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P77CombinationsTest {
 
   private final P77Combinations fun = new P77Combinations();

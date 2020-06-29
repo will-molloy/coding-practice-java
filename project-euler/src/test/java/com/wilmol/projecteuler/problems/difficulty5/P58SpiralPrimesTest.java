@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-05-19 at 17:44. */
+/**
+ * P58SpiralPrimesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P58SpiralPrimesTest {
 
   @Test

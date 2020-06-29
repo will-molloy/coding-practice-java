@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-21 at 15:13. */
+/**
+ * P16ThreeSumClosestTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P16ThreeSumClosestTest {
 
   private final P16ThreeSumClosest function = new P16ThreeSumClosest();

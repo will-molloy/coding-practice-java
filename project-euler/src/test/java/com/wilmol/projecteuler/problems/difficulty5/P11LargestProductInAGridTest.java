@@ -7,7 +7,11 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P11LargestProductInAGridTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P11LargestProductInAGridTest {
 
   private static final String GRID_20X20 =

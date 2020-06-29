@@ -5,9 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-22.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/queens-that-can-attack-the-king>https://leetcode.com/problems/queens-that-can-attack-the-king/</a>
  *
  * <p>Difficulty: Medium.
@@ -19,6 +17,7 @@ import java.util.List;
  * <p>Key: Look out from king, rather than in from each queen.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P51NQueens
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1222QueensThatCanAttackTheKing {
 

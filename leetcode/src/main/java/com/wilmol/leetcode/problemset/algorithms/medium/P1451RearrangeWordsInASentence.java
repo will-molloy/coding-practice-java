@@ -6,9 +6,7 @@ import java.util.Comparator;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/rearrange-words-in-a-sentence>https://leetcode.com/problems/rearrange-words-in-a-sentence/</a>
  *
  * <p>Runtime: O(n * log(n))
@@ -16,6 +14,8 @@ import java.util.stream.Collectors;
  * <p>Extra space: O(n)
  *
  * <p>Key: Custom comparator to sort the words.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @SuppressFBWarnings("DM_CONVERT_CASE")
 class P1451RearrangeWordsInASentence {

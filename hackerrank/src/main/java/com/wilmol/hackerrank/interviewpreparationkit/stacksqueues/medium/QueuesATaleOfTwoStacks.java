@@ -3,16 +3,22 @@ package com.wilmol.hackerrank.interviewpreparationkit.stacksqueues.medium;
 import java.util.ArrayDeque;
 
 /**
- * Created by wilmol on 2019-09-09.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues>https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class QueuesATaleOfTwoStacks {
 
   private QueuesATaleOfTwoStacks() {}
 
   // Queue = FIFO, Stack = LIFO
+
+  /**
+   * Queue.
+   *
+   * @param <E> element type
+   */
   static class MyQueue<E> {
     // stack1, will hold incoming elements
     private final ArrayDeque<E> stack1 = new ArrayDeque<>();

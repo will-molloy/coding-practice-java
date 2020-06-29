@@ -1,10 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-10.
- *
- * <p><a
- * href=https://leetcode.com/problems/move-zeroes>https://leetcode.com/problems/move-zeroes</a>
+ * <a href=https://leetcode.com/problems/move-zeroes>https://leetcode.com/problems/move-zeroes</a>
  *
  * <p>Runtime: O(n)
  *
@@ -14,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * will be written to later
  *
  * @see <a href=https://www.youtube.com/watch?v=E7xxGi84Tso>Errichto's video</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P283MoveZeroes {
 

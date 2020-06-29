@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/set-matrix-zeroes>https://leetcode.com/problems/set-matrix-zeroes</a>
  *
  * <p>Runtime: O(mn)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1) (this is a goal of the problem as medium difficulty)
  *
  * <p>Key: marking on first iteration; filling in on second iteration. Smart marker variables.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P73SetMatrixZeroes {
 

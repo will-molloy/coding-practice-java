@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard>https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/</a>
  *
  * <p>Runtime: O(n<sup>3</sup>)
@@ -14,6 +12,8 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  *
  * <p>IMO these computational geometry problems should provide formulas/apis you'll need, not
  * everyone knows the math.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1453MaximumNumberOfDartsInsidesACircularDartboard {
 

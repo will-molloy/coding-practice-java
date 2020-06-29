@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/island-perimeter>https://leetcode.com/problems/island-perimeter/</a>
  *
  * <p>Runtime: O(rows * cols)
@@ -16,6 +14,7 @@ import java.util.Arrays;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P695MaxAreaOfIsland
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P463IslandPerimeter {
 

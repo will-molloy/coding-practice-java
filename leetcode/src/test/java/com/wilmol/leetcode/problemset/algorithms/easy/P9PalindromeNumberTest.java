@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-13 at 21:19. */
+/**
+ * P9PalindromeNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P9PalindromeNumberTest {
 
   private final P9PalindromeNumber function = new P9PalindromeNumber();

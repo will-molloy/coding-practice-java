@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-03. */
+/**
+ * P771JewelsAndStonesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P771JewelsAndStonesTest {
 
   private final P771JewelsAndStones fun = new P771JewelsAndStones();

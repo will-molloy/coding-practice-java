@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 23/03/2019. */
+/**
+ * P29DistinctPowersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P29DistinctPowersTest {
 
   private final P29DistinctPowers distinctPowers = new P29DistinctPowers();

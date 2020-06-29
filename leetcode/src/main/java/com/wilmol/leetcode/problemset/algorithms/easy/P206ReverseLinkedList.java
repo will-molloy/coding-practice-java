@@ -3,14 +3,13 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-02-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-linked-list>https://leetcode.com/problems/reverse-linked-list/</a>
  *
  * <p>Key: pointer manipulation, and using temporary variable for swap.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P92ReverseLinkedList2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P206ReverseLinkedList {
 

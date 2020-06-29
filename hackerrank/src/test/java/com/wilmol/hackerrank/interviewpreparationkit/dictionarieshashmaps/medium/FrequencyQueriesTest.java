@@ -6,7 +6,11 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-21. */
+/**
+ * FrequencyQueriesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class FrequencyQueriesTest {
 
   @Test

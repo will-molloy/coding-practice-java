@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-04-07 at 13:45. */
+/**
+ * AlienUserNameTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class AlienUserNameTest {
 
   @Test

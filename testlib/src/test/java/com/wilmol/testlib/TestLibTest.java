@@ -9,7 +9,11 @@ import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.provider.Arguments;
 
-/** Created by wilmol on 2020-05-25. */
+/**
+ * TestLibTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class TestLibTest {
 
   @Test

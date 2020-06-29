@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-30. */
+/**
+ * P973KClosestPointsToOriginTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P973KClosestPointsToOriginTest {
 
   private final P973KClosestPointsToOrigin p973 = new P973KClosestPointsToOrigin();

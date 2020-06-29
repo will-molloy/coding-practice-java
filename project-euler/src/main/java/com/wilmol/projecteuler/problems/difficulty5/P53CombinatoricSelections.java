@@ -6,11 +6,11 @@ import java.math.BigInteger;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-22 at 3:55 PM.
- *
- * <p><a href=https://projecteuler.net/problem=53>https://projecteuler.net/problem=53</a>
+ * <a href=https://projecteuler.net/problem=53>https://projecteuler.net/problem=53</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P53CombinatoricSelections {
 

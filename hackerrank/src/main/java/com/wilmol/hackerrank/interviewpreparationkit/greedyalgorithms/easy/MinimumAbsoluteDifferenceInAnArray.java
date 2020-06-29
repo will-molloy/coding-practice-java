@@ -3,12 +3,12 @@ package com.wilmol.hackerrank.interviewpreparationkit.greedyalgorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by Will on 28/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms>https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms</a>
  *
  * <p>Runtime: O(n log n) -> Must sort ? (Well can avoid sort but then its O(n ^ 2))
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class MinimumAbsoluteDifferenceInAnArray {
 

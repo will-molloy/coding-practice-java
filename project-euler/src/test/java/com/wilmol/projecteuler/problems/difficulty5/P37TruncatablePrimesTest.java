@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-19 at 3:59 PM. */
+/**
+ * P37TruncatablePrimesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P37TruncatablePrimesTest {
 
   @Test

@@ -3,15 +3,15 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-01-13.
- *
- * <p><a href=https://leetcode.com/problems/plus-one>https://leetcode.com/problems/plus-one</a>
+ * <a href=https://leetcode.com/problems/plus-one>https://leetcode.com/problems/plus-one</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Space: O(n) (sometimes copy array)
  *
  * <p>Key: recursion
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P66PlusOne {
 

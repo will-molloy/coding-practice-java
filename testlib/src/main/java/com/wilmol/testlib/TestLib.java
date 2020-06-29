@@ -5,7 +5,11 @@ import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.provider.Arguments;
 
-/** Created by wilmol on 2020-05-25. */
+/**
+ * TestLib.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 public final class TestLib {
 
   /**

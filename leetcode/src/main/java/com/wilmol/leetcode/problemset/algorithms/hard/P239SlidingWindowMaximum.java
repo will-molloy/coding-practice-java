@@ -4,9 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Created by wilmol on 2020-05-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sliding-window-maximum>https://leetcode.com/problems/sliding-window-maximum/</a>
  *
  * <p>Runtime: O(n)
@@ -24,6 +22,7 @@ import java.util.Deque;
  * smaller meaning they'll become the maximum(s)).
  *
  * @see P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P239SlidingWindowMaximum {
 

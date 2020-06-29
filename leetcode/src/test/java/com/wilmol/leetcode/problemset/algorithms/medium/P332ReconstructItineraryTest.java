@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-28. */
+/**
+ * P332ReconstructItineraryTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P332ReconstructItineraryTest {
 
   private final P332ReconstructItinerary p332 = new P332ReconstructItinerary();

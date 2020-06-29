@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-06-18.
- *
- * <p><a href=https://leetcode.com/problems/h-index>https://leetcode.com/problems/h-index/</a>
+ * <a href=https://leetcode.com/problems/h-index>https://leetcode.com/problems/h-index/</a>
  *
  * <p>Runtime: O(n * log(n))
  *
@@ -14,6 +12,7 @@ import java.util.Arrays;
  * <p>Key: H index is number of papers, not a number of citations.
  *
  * @see P275HIndex2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P274HIndex {
 

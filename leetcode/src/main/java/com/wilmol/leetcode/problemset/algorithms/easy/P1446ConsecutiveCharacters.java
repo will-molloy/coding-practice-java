@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/consecutive-characters>https://leetcode.com/problems/consecutive-characters/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Two pointers: one to anchor start of sequence, second to reach end.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1446ConsecutiveCharacters {
 

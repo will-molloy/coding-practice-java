@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-21 at 21:37. */
+/**
+ * P20ValidParenthesisTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P20ValidParenthesisTest {
 
   private final P20ValidParenthesis function = new P20ValidParenthesis();

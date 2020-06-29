@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-12-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/n-th-tribonacci-number>https://leetcode.com/problems/n-th-tribonacci-number</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: dynamic programming
  *
  * @see P509FibonacciNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1137NthTribonacciNumber {
 

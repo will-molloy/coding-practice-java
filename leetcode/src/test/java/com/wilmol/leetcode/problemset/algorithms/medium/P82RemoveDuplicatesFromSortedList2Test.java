@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-14. */
+/**
+ * P82RemoveDuplicatesFromSortedList2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P82RemoveDuplicatesFromSortedList2Test {
 
   private final P82RemoveDuplicatesFromSortedList2 fun = new P82RemoveDuplicatesFromSortedList2();

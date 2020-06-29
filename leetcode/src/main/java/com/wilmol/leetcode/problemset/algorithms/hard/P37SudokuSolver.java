@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-02-06.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sudoku-solver>https://leetcode.com/problems/sudoku-solver</a>
  *
  * <p>Runtime: O(9<sup>n</sup>) (n = number of initially empty squares) TODO probably exists a more
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * <p>Key: knowing that pure bruteforce (via. recursive backtracking) is fine for small inputs
  *
  * @see P51NQueens
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P37SudokuSolver {
 

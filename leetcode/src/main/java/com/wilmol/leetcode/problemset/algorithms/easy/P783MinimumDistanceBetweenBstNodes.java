@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-distance-between-bst-nodes>https://leetcode.com/problems/minimum-distance-between-bst-nodes</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: Tracking prev node (well, just it's value) in the inorder traversal.
  *
  * @see P530MinimumAbsoluteDifferentInBst
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P783MinimumDistanceBetweenBstNodes {
 

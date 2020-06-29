@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-07. */
+/**
+ * P90Subsets2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P90Subsets2Test {
 
   private final P90Subsets2 func = new P90Subsets2();

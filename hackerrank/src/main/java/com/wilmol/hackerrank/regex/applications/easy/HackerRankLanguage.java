@@ -8,12 +8,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2019-09-15.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/hackerrank-language/problem>https://www.hackerrank.com/challenges/hackerrank-language/problem</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class HackerRankLanguage {
 
@@ -23,7 +23,6 @@ final class HackerRankLanguage {
   // hackerrank has poor test coverage for it
   private static final Pattern LANGUAGE_PATTERN =
       Pattern.compile(
-          // CHECKSTYLE IGNORE LineLength FOR NEXT 1 LINES
           "^\\d{5,6} (C|CPP|JAVA|PYTHON|PERL|PHP|RUBY|CSHARP|HASKELL|CLOJURE|BASH|SCALA|ERLANG|CLISP|LUA|BRAINFUCK|JAVASCRIPT|GO|D|OCAML|R|PASCAL|SBCL|DART|GROOVY|OBJECTIVEC)$");
 
   static boolean isValidLanguage(String line) {

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/arranging-coins>https://leetcode.com/problems/arranging-coins/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Subtract 1, 2, 3, etc. until no more coins.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P441ArrangingCoins {
 

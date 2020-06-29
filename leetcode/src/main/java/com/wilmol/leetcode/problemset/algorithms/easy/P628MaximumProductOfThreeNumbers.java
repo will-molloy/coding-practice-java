@@ -4,9 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-03-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-product-of-three-numbers>https://leetcode.com/problems/maximum-product-of-three-numbers</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.PriorityQueue;
  * <p>Space: O(1)
  *
  * <p>Key: heap to track k largest/smallest
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P628MaximumProductOfThreeNumbers {
 

@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-04-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/prime-arrangements>https://leetcode.com/problems/prime-arrangements/</a>
  *
  * <p>Difficulty: Easy.
@@ -18,6 +16,7 @@ import java.util.stream.IntStream;
  * <p>Key: When computing {@code result} use {@code long} to avoid overflows.
  *
  * @see P204CountPrimes
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1175PrimeArrangements {
 

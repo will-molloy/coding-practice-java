@@ -8,7 +8,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-19. */
+/**
+ * P1044LongestDuplicateSubstringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1044LongestDuplicateSubstringTest {
 
   @ParameterizedTest

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-05-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/single-element-in-a-sorted-array>https://leetcode.com/problems/single-element-in-a-sorted-array/</a>
  *
  * <p>Runtime: O(log(n))
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: Duplicate pairings are [even, odd] indices before the target and [odd, even] after.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P540SingleElementInASortedArray {
 

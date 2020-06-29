@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/shortest-distance-to-a-character>https://leetcode.com/problems/shortest-distance-to-a-character/</a>
  *
  * <p>Difficulty: Easy.
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(n) (O(1) excluding returned array... but it is mutated).
  *
  * <p>Key: Two passes; one forward and one backward.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P821ShortestDistanceToACharacter {
 

@@ -5,9 +5,7 @@ import java.util.Deque;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-k-digits>https://leetcode.com/problems/remove-k-digits/</a>
  *
  * <p>Runtime: O(n)
@@ -18,6 +16,8 @@ import java.util.stream.Collectors;
  * the same digit order as the original string. Therefore, want smaller digits at the front of the
  * string (greatest place value); therefore, makes sense to traverse left to right and make the
  * greedy choice of throwing away larger digits.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P402RemoveKDigits {
 

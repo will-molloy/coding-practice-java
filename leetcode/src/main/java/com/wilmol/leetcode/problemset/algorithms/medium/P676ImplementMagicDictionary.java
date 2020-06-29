@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/implement-magic-dictionary>https://leetcode.com/problems/implement-magic-dictionary/</a>
  *
  * <p>Difficulty: Medium.
@@ -15,6 +13,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: Having separate method ({@link #continueSearch}) to continue the search once a character
  * had been changed.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P676ImplementMagicDictionary {
 

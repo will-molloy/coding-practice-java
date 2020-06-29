@@ -8,7 +8,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-09. */
+/**
+ * P1346CheckIfNAndItsDoubleExistsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1346CheckIfNAndItsDoubleExistsTest {
 
   private final P1346CheckIfNAndItsDoubleExists p1346 = new P1346CheckIfNAndItsDoubleExists();

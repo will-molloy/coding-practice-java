@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-20. */
+/**
+ * P119PascalTriangle2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P119PascalTriangle2Test {
 
   private final P119PascalTriangle2 fun = new P119PascalTriangle2();

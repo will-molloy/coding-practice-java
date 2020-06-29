@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-12. */
+/**
+ * P169MajorityElementTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P169MajorityElementTest {
 
   private final P169MajorityElement fun = new P169MajorityElement();

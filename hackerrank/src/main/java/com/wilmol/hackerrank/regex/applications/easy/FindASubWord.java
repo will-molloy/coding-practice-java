@@ -11,12 +11,12 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 2019-04-07 at 13:18.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/find-substring/problem>https://www.hackerrank.com/challenges/find-substring/problem</a>
  *
  * <p>Runtime: O(nq) (n - num sentences, q - num queries)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class FindASubWord {
 

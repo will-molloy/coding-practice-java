@@ -1,10 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-11-03.
- *
- * <p><a
- * href=https://leetcode.com/problems/rotate-image>https://leetcode.com/problems/rotate-image</a>
+ * <a href=https://leetcode.com/problems/rotate-image>https://leetcode.com/problems/rotate-image</a>
  *
  * <p>Runtime: O(n^2) - process each element once, matrix is size n*n so... must be n*n (i.e. n^2).
  *
@@ -12,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * matrix -> (n-2)x(n-2) matrix).
  *
  * @see P54SpiralMatrix
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P48RotateImage {
 

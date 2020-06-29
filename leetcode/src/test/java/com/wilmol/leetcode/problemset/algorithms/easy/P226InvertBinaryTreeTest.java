@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 21:43. */
+/**
+ * P226InvertBinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P226InvertBinaryTreeTest {
 
   @Test

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-11-30. */
+/**
+ * P43MultiplyStringsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P43MultiplyStringsTest {
 
   private final P43MultiplyStrings fun = new P43MultiplyStrings();

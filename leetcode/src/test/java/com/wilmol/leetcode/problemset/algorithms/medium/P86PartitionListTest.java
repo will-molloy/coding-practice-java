@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-06. */
+/**
+ * P86PartitionListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P86PartitionListTest {
 
   private final P86PartitionList func = new P86PartitionList();

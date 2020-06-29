@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-04-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/ugly-number-ii>https://leetcode.com/problems/ugly-number-ii</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import java.util.stream.IntStream;
  * <p>Key: faster to generate the numbers rather than test
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P263UglyNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P264UglyNumber2 {
 

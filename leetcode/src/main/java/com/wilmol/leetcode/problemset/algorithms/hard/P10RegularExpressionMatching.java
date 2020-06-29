@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by Will on 2019-07-15 at 19:41.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/regular-expression-matching>https://leetcode.com/problems/regular-expression-matching</a>
  *
  * <p>Runtime: TODO O()
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P10RegularExpressionMatching {
 

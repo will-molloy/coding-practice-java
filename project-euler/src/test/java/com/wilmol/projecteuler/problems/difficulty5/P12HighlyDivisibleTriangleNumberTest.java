@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.OptionalLong;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P12HighlyDivisibleTriangleNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P12HighlyDivisibleTriangleNumberTest {
 
   private final P12HighlyDivisibleTriangleNumber highlyDivisibleTriangleNumber =

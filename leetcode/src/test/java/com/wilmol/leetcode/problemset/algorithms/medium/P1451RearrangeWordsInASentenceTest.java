@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P1451RearrangeWordsInASentenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1451RearrangeWordsInASentenceTest {
 
   private final P1451RearrangeWordsInASentence p1451 = new P1451RearrangeWordsInASentence();

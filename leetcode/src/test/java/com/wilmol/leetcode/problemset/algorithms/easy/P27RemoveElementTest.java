@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.primitives.Ints;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-28 at 00:10. */
+/**
+ * P27RemoveElementTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P27RemoveElementTest {
 
   private final P27RemoveElement fun = new P27RemoveElement();

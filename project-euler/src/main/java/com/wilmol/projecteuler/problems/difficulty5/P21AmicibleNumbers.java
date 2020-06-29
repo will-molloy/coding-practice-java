@@ -6,11 +6,11 @@ import static java.util.stream.IntStream.rangeClosed;
 import com.wilmol.projecteuler.common.Maths;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=21>https://projecteuler.net/problem=21</a>
+ * <a href=https://projecteuler.net/problem=21>https://projecteuler.net/problem=21</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P21AmicibleNumbers {
 

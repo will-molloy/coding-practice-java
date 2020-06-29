@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reformat-the-string>https://leetcode.com/problems/reformat-the-string/</a>
  *
  * <p><a
@@ -21,6 +19,8 @@ import java.util.List;
  * <p>Space: O(n)
  *
  * <p>Key: Build the string rather than generate permutations.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1417ReformatTheString {
 

@@ -1,12 +1,11 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-02-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/largest-rectangle-in-histogram>https://leetcode.com/problems/largest-rectangle-in-histogram</a>
  *
  * @see P42TrappingRainWater
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P84LargestRectangleInHistogram {
 

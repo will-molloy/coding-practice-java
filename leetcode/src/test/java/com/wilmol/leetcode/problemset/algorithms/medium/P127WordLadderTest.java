@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-09. */
+/**
+ * P127WordLadderTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P127WordLadderTest {
 
   private final P127WordLadder fn = new P127WordLadder();

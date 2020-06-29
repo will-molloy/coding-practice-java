@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-08-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array>https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array</a>
  *
  * <p>Runtime: O(log n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1)
  *
  * <p>Key: sorted sequence, so O(log n) binary search can be used
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P34FindFirstAndLastPositionOfElementInSortedArray {
 

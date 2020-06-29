@@ -5,13 +5,12 @@ import static java.lang.Math.max;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-03-31 at 15:04.
- *
- * <p><a href=https://leetcode.com/problems/candy>https://leetcode.com/problems/candy</a>
+ * <a href=https://leetcode.com/problems/candy>https://leetcode.com/problems/candy</a>
  *
  * <p>Runtime: O(2n) - two passes, left to right and right to left
  *
  * @see com.wilmol.hackerrank.interviewpreparationkit.dynamicprogramming.medium.Candies
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P135Candy {
 

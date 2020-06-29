@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-13 at 15:20. */
+/**
+ * P6ZigZagConversionTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P6ZigZagConversionTest {
 
   private final P6ZigZagConversion function = new P6ZigZagConversion();

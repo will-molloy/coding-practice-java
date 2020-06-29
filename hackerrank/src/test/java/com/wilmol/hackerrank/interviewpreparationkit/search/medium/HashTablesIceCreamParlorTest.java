@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-09. */
+/**
+ * HashTablesIceCreamParlorTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class HashTablesIceCreamParlorTest {
 
   @Test

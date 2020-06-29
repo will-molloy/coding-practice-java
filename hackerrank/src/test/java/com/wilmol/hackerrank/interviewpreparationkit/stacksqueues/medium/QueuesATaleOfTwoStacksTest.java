@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.hackerrank.interviewpreparationkit.stacksqueues.medium.QueuesATaleOfTwoStacks.MyQueue;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-09. */
+/**
+ * QueuesATaleOfTwoStacksTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class QueuesATaleOfTwoStacksTest {
 
   // TODO more than 1 test

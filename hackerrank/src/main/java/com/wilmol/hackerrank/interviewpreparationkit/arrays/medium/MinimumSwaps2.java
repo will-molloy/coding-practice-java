@@ -1,14 +1,14 @@
 package com.wilmol.hackerrank.interviewpreparationkit.arrays.medium;
 
 /**
- * Created by Will on 2019-03-30 at 20:36.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays>https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays</a>
  *
  * <p>Minimum swaps to sort the array (array has heavy constraints)
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class MinimumSwaps2 {
 

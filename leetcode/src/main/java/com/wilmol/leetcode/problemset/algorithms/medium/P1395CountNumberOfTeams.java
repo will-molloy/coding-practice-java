@@ -3,13 +3,13 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.TreeSet;
 
 /**
- * Created by wilmol on 2020-04-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-number-of-teams>https://leetcode.com/problems/count-number-of-teams</a>
  *
  * <p>Key: figuring out how to compute a 'count' of something (will involve multiplication -
  * cartesian product), in this case number of teams for a given soldier
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1395CountNumberOfTeams {
 

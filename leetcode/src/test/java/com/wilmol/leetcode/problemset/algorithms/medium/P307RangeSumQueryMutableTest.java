@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.medium.P307RangeSumQueryMutable.NumArray;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-15. */
+/**
+ * P307RangeSumQueryMutableTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P307RangeSumQueryMutableTest {
 
   @Test

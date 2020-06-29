@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-25 at 19:58. */
+/**
+ * P24SwapNodesInPairsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P24SwapNodesInPairsTest {
 
   private final P24SwapNodesInPairs fun = new P24SwapNodesInPairs();

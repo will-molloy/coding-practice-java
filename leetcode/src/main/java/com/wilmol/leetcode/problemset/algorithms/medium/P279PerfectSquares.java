@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/perfect-squares>https://leetcode.com/problems/perfect-squares/</a>
  *
  * <p>Runtime: O(n<sup>3/2</sup>)
@@ -17,6 +15,7 @@ import java.util.List;
  * array list.
  *
  * @see P322CoinChange
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P279PerfectSquares {
 

@@ -4,14 +4,13 @@ import com.google.common.math.LongMath;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 2019-05-19 at 17:44.
- *
- * <p><a href=https://projecteuler.net/problem=58>https://projecteuler.net/problem=58</a>
+ * <a href=https://projecteuler.net/problem=58>https://projecteuler.net/problem=58</a>
  *
  * <p>Runtime: unknown ... cannot predict % of primes versus side length, iterations are O(1)
  * however
  *
  * @see P28NumberSpiralDiagonals
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P58SpiralPrimes {
 

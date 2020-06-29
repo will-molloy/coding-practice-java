@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-15 at 20:22. */
+/**
+ * P11ContainerWithMostWaterTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P11ContainerWithMostWaterTest {
 
   private final P11ContainerWithMostWater function = new P11ContainerWithMostWater();

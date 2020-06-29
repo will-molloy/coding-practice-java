@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-20. */
+/**
+ * P118PascalTriangleTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P118PascalTriangleTest {
 
   private final P118PascalTriangle fun = new P118PascalTriangle();

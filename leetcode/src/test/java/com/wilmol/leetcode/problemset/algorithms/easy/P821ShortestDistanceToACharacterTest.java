@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P821ShortestDistanceToACharacterTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P821ShortestDistanceToACharacterTest {
 
   private final P821ShortestDistanceToACharacter p821 = new P821ShortestDistanceToACharacter();

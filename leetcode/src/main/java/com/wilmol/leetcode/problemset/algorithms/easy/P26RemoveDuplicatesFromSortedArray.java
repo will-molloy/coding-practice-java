@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-27 at 20:51.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-duplicates-from-sorted-array>https://leetcode.com/problems/remove-duplicates-from-sorted-array</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * @see P27RemoveElement
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P80RemoveDuplicateFromSortedArray2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P26RemoveDuplicatesFromSortedArray {
 

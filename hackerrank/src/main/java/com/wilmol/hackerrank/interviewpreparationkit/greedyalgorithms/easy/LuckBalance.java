@@ -3,14 +3,14 @@ package com.wilmol.hackerrank.interviewpreparationkit.greedyalgorithms.easy;
 import java.util.PriorityQueue;
 
 /**
- * Created by Will on 28/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/luck-balance/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms>https://www.hackerrank.com/challenges/luck-balance/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms</a>
  *
  * <p>Would have preferred to 'win' as many contests as possible, why would you want to lose?
  *
  * <p>Runtime: O(n log k) with O(k) extra space
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class LuckBalance {
 

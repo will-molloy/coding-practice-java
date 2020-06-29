@@ -1,16 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
- * href=https://leetcode.com/problems/gas-station>https://leetcode.com/problems/gas-station</a>
+ * <a href=https://leetcode.com/problems/gas-station>https://leetcode.com/problems/gas-station</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
  *
  * <p>Space: O(1)
  *
  * <p>Key: Simulate the process.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P134GasStation {
 

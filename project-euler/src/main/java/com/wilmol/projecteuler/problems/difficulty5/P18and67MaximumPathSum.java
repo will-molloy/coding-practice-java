@@ -10,13 +10,13 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=18>https://projecteuler.net/problem=18</a>
+ * <a href=https://projecteuler.net/problem=18>https://projecteuler.net/problem=18</a>
  *
  * <p><a href=https://projecteuler.net/problem=67>https://projecteuler.net/problem=67</a>
  *
  * <p>Runtime: O(n) ?
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P18and67MaximumPathSum {
 

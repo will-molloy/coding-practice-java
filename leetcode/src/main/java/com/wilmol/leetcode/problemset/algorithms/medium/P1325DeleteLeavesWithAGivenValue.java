@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/delete-leaves-with-a-given-value>https://leetcode.com/problems/delete-leaves-with-a-given-value</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Space: O(n) (worst case recursive stack size - nodes form a linked list)
  *
  * <p>Key: reach depth before deleting nodes
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1325DeleteLeavesWithAGivenValue {
 

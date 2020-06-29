@@ -6,11 +6,11 @@ import java.util.Set;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 18/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=23>https://projecteuler.net/problem=23</a>
+ * <a href=https://projecteuler.net/problem=23>https://projecteuler.net/problem=23</a>
  *
  * <p>Runtime: O(n ^ 2) ...
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P23NonAbundantSums {
 

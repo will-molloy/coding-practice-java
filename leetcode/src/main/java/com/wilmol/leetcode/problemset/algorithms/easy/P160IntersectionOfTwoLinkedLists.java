@@ -6,10 +6,10 @@ import java.util.IdentityHashMap;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/intersection-of-two-linked-lists>https://leetcode.com/problems/intersection-of-two-linked-lists/</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P160IntersectionOfTwoLinkedLists {
 

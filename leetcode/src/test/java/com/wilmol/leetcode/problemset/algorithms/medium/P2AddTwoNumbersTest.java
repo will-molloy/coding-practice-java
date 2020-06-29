@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-06-23 at 20:49. */
+/**
+ * P2AddTwoNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P2AddTwoNumbersTest {
 
   private final P2AddTwoNumbers function = new P2AddTwoNumbers();

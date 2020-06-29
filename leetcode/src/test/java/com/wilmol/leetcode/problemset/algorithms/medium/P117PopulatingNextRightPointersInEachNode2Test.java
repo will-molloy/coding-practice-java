@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.medium.P116PopulatingNextRightPointersInEachNode.Node;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-08. */
+/**
+ * P117PopulatingNextRightPointersInEachNode2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P117PopulatingNextRightPointersInEachNode2Test {
 
   private final P117PopulatingNextRightPointersInEachNode2 fn =

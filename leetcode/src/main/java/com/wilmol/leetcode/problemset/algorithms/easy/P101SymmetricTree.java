@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-02-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/symmetric-tree>https://leetcode.com/problems/symmetric-tree</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Space: O(log n) best case, O(n) worst case (recursion stack size)
  *
  * <p>Key: recursion, knowledge of BT structure
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P101SymmetricTree {
 

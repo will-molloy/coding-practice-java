@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-05-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/kth-smallest-element-in-a-bst>https://leetcode.com/problems/kth-smallest-element-in-a-bst/</a>
  *
  * <p>Runtime: O(n) (could reduce to O(k) by short circuit when {@code ans} is set, but worst case k
@@ -14,6 +12,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Extra space: O(h)
  *
  * <p>Key: Inorder traversal of BST gets the nodes in order!
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P230KthSmallestElementInABst {
 

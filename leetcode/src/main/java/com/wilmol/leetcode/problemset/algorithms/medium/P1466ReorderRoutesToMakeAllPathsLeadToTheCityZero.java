@@ -8,9 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-31.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero>https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/</a>
  *
  * <p>Runtime: O(n) (only {@code dfs} onto nodes once, there are O(n) nodes and O(n) edges so
@@ -20,6 +18,8 @@ import java.util.Set;
  *
  * <p>Key: Problem wording is confusing. Because it is a tree, there is only one path back to zero,
  * so simply need to count the edges pointing away from zero (i.e. min count = exact count).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
 class P1466ReorderRoutesToMakeAllPathsLeadToTheCityZero {

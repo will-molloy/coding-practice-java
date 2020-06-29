@@ -5,9 +5,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 /**
- * Created by wilmol on 2020-03-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-width-of-binary-tree>https://leetcode.com/problems/maximum-width-of-binary-tree</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,8 @@ import java.util.Queue;
  * <p>Space: O(w) = O(n)
  *
  * <p>Key: labelling nodes, in this case [0, n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P662MaximumWidthOfBinaryTree {
 

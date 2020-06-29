@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 27/03/2019. */
+/**
+ * InsertNodeAtPositionTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class InsertNodeAtPositionTest {
 
   @Test

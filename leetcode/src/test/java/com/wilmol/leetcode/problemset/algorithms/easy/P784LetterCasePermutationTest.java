@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-04. */
+/**
+ * P784LetterCasePermutationTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P784LetterCasePermutationTest {
 
   private final P784LetterCasePermutation p784 = new P784LetterCasePermutation();

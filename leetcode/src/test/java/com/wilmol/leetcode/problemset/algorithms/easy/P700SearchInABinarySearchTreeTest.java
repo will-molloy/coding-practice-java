@@ -7,7 +7,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-09. */
+/**
+ * P700SearchInABinarySearchTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P700SearchInABinarySearchTreeTest {
 
   @ParameterizedTest

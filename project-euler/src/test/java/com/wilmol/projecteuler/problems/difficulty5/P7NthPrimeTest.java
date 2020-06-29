@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 16/03/2019. */
+/**
+ * P7NthPrimeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P7NthPrimeTest {
 
   private final P7NthPrime nthPrime = new P7NthPrime();

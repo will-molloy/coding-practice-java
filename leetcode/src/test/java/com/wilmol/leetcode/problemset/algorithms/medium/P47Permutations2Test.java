@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-01. */
+/**
+ * P47Permutations2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P47Permutations2Test {
 
   private final P47Permutations2 fun = new P47Permutations2();

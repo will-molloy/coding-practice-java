@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-03-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/range-sum-query-2d-immutable>https://leetcode.com/problems/range-sum-query-2d-immutable</a>
  *
  * <p>Runtime: See methods
@@ -13,9 +11,11 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: dynamic programming, ranges
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P304RangeSumQuery2dImmutable {
 
+  /** NumMatrix. */
   static class NumMatrix {
 
     // O(mn) space

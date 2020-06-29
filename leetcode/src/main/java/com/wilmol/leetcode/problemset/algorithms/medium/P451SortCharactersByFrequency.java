@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sort-characters-by-frequency>https://leetcode.com/problems/sort-characters-by-frequency/</a>
  *
  * <p>Runtime: O(n log(n))
@@ -17,6 +15,8 @@ import java.util.stream.Collectors;
  * <p>Extra space: O(n)
  *
  * <p>Key: Count char freqs.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P451SortCharactersByFrequency {
 

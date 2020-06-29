@@ -5,11 +5,11 @@ import com.wilmol.projecteuler.common.Maths;
 import java.util.stream.LongStream;
 
 /**
- * Created by will on 2019-04-20 at 3:05 PM.
- *
- * <p><a href=https://projecteuler.net/problem=45>https://projecteuler.net/problem=45</a>
+ * <a href=https://projecteuler.net/problem=45>https://projecteuler.net/problem=45</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P45TriangularPentagonalHexagonalNumber {
 

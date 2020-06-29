@@ -9,9 +9,7 @@ import java.util.Map;
 import java.util.Queue;
 
 /**
- * Created by wilmol on 2020-05-26.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/employee-importance>https://leetcode.com/problems/employee-importance/</a>
  *
  * <p>Runtime: O(n)
@@ -19,6 +17,8 @@ import java.util.Queue;
  * <p>Extra space: O(n)
  *
  * <p>Key: Hashmap to make the graph traversal more efficient.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P690EmployeeImportance {
 
@@ -48,6 +48,7 @@ class P690EmployeeImportance {
     return ans;
   }
 
+  /** Employee. */
   static final class Employee {
     private final int id;
     private final int importance;

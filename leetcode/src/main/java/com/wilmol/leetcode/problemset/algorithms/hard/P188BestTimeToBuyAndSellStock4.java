@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-02-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv>https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv</a>
  *
  * <p>Runtime: O(kn)
@@ -15,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2
  * @see P123BestTimeToBuyAndSellStock3
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P188BestTimeToBuyAndSellStock4 {
 

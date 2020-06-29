@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-18. */
+/**
+ * P179LargestNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P179LargestNumberTest {
 
   private final P179LargestNumber p179 = new P179LargestNumber();

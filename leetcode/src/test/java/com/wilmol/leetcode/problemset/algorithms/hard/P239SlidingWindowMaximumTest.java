@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-03. */
+/**
+ * P239SlidingWindowMaximumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P239SlidingWindowMaximumTest {
 
   private final P239SlidingWindowMaximum p239 = new P239SlidingWindowMaximum();

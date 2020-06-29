@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-09. */
+/**
+ * P1051HeightCheckerTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1051HeightCheckerTest {
 
   private final P1051HeightChecker p1051 = new P1051HeightChecker();

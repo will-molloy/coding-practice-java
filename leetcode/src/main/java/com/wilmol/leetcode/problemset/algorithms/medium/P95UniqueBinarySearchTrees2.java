@@ -6,9 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-03-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/unique-binary-search-trees-ii>https://leetcode.com/problems/unique-binary-search-trees-ii</a>
  *
  * <p>Runtime: O(n<sup>log n</sup>) (recurrence: T(n) = SUMi(0 to n-1)T(i)+T(n-i-1))
@@ -18,6 +16,7 @@ import java.util.List;
  * <p>Key: returning singleton null node when end < start
  *
  * @see P96UniqueBinarySearchTrees
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P95UniqueBinarySearchTrees2 {
 

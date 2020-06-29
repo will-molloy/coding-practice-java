@@ -6,7 +6,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-04-15. */
+/**
+ * P673NumberOfLongestIncreasingSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P673NumberOfLongestIncreasingSubsequenceTest {
 
   @ParameterizedTest

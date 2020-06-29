@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2020-06-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/validate-ip-address>https://leetcode.com/problems/validate-ip-address/</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import java.util.regex.Pattern;
  * <p>Key: Regular expressions.
  *
  * @see com.wilmol.hackerrank.regex.applications.easy.IpAddressValidation
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P468ValidateIpAddress {
 

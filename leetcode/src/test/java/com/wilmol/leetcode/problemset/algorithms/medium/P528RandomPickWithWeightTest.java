@@ -6,7 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-05. */
+/**
+ * P528RandomPickWithWeightTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P528RandomPickWithWeightTest {
 
   private static final int NUM_TRIALS = 1_000_000;

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/perfect-number>https://leetcode.com/problems/perfect-number/</a>
  *
  * <p>Runtime: O(sqrt(n))
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: Finding divisors; go up to sqrt cause divisors form pairs (since multiplication is a
  * binary operation), one on left side of sqrt, other on right side.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P507PerfectNumber {
 

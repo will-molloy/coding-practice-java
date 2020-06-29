@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-08. */
+/**
+ * P222CountCompleteTreeNodesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P222CountCompleteTreeNodesTest {
 
   private final P222CountCompleteTreeNodes fun = new P222CountCompleteTreeNodes();

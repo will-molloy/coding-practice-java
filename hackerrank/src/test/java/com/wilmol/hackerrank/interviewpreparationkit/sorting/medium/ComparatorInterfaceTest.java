@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.hackerrank.interviewpreparationkit.sorting.medium.ComparatorInterface.Player;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 25/03/2019. */
+/**
+ * ComparatorInterfaceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class ComparatorInterfaceTest {
 
   @Test

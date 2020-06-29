@@ -8,7 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
-/** Created by will on 2019-07-17 at 9:04 PM. */
+/**
+ * P1114PrintInOrderTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @Timeout(value = 10)
 class P1114PrintInOrderTest {
 

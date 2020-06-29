@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 23/03/2019. */
+/**
+ * P30DigitNPowersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P30DigitNPowersTest {
 
   private final P30DigitNPowers digitNPowers = new P30DigitNPowers();

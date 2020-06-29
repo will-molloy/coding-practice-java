@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-20 at 22:07. */
+/**
+ * P14LongestCommonPrefixTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P14LongestCommonPrefixTest {
 
   private final P14LongestCommonPrefix function = new P14LongestCommonPrefix();

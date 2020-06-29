@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 26/03/2019. */
+/**
+ * DetectACycleTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class DetectACycleTest {
 
   @Test

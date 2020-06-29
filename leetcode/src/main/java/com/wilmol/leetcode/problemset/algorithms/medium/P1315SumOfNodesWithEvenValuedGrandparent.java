@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent>https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: cycle through node -> parent -> grandparent
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P404SumOfLeftLeaves
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1315SumOfNodesWithEvenValuedGrandparent {
 

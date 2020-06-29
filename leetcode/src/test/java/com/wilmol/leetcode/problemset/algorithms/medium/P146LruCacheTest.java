@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-21. */
+/**
+ * P146LruCacheTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P146LruCacheTest {
 
   @Test

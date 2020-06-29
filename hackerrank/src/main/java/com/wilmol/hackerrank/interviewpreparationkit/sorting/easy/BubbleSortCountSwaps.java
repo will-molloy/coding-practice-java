@@ -1,14 +1,14 @@
 package com.wilmol.hackerrank.interviewpreparationkit.sorting.easy;
 
 /**
- * Created by Will on 25/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-bubble-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting>https://www.hackerrank.com/challenges/ctci-bubble-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting</a>
  *
  * <p>Count the swaps in bubble sort.
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class BubbleSortCountSwaps {
 

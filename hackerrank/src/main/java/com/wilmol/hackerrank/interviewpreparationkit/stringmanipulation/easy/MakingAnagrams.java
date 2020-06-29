@@ -9,14 +9,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 30/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings</a>
  *
  * <p>Count number of character deletions required to make the strings anagrams of each other.
  *
  * <p>Runtime: O(n) (~3 passes)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class MakingAnagrams {
 

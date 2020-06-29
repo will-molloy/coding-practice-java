@@ -7,15 +7,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-02-07.
- *
- * <p><a href=https://leetcode.com/problems/gray-code>https://leetcode.com/problems/gray-code</a>
+ * <a href=https://leetcode.com/problems/gray-code>https://leetcode.com/problems/gray-code</a>
  *
  * <p>Runtime: O(2<sup>n</sup>)
  *
  * <p>Space: O(2<sup>n</sup>)
  *
  * <p>Key: recursive construction
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P89GrayCode {
 

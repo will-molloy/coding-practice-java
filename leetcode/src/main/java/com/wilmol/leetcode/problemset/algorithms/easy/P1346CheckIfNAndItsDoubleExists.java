@@ -4,9 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-06-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/check-if-n-and-its-double-exist>https://leetcode.com/problems/check-if-n-and-its-double-exist/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.Set;
  * <p>Extra space: O(n)
  *
  * <p>Key: Make memory tradeoff with set to achieve O(n) time (otherwise best is O(n * log(n))).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1346CheckIfNAndItsDoubleExists {
 

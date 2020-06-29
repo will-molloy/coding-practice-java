@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-02-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/balanced-binary-tree>https://leetcode.com/problems/balanced-binary-tree</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: encoding result into another algorithm to reduce work done (getting height of each child
  * and then calling {@code isBalanced} on each child would be O(n<sup>2</sup>) runtime)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P110BalancedBinaryTree {
 

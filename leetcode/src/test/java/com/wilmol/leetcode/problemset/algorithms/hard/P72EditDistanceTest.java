@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-05-31. */
+/**
+ * P72EditDistanceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P72EditDistanceTest {
 
   private final P72EditDistance p72 = new P72EditDistance();

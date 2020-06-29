@@ -7,12 +7,11 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2019-08-18.
- *
- * <p><a
- * href=https://leetcode.com/problems/valid-sudoku>https://leetcode.com/problems/valid-sudoku</a>
+ * <a href=https://leetcode.com/problems/valid-sudoku>https://leetcode.com/problems/valid-sudoku</a>
  *
  * <p>Runtime: O(1) - board is always same size (9x9)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P36ValidSudoku {
 

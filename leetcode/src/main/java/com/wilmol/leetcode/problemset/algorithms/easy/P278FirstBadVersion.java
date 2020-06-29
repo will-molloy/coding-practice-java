@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-01.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/first-bad-version>https://leetcode.com/problems/first-bad-version/</a>
  *
  * <p>Difficulty: Easy.
@@ -13,9 +11,12 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Binary search.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P278FirstBadVersion {
 
+  /** VersionControl class. */
   static class VersionControl {
     private final int firstBadVersion;
 
@@ -28,6 +29,7 @@ class P278FirstBadVersion {
     }
   }
 
+  /** Solution class. */
   static class Solution extends VersionControl {
 
     Solution(int firstBadVersion) {

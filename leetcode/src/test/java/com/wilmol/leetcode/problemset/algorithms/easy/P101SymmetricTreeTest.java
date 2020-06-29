@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-10. */
+/**
+ * P101SymmetricTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P101SymmetricTreeTest {
 
   private final P101SymmetricTree func = new P101SymmetricTree();

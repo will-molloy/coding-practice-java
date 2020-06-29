@@ -1,15 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-01-13.
- *
- * <p><a href=https://leetcode.com/problems/add-binary>https://leetcode.com/problems/add-binary</a>
+ * <a href=https://leetcode.com/problems/add-binary>https://leetcode.com/problems/add-binary</a>
  *
  * <p>Runtime: O(max(a, b))
  *
  * <p>Space: O(max(a, b))
  *
  * <p>Key: double pointer, one for each string, then step by step merge (very similar to merge sort)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P67AddBinary {
 

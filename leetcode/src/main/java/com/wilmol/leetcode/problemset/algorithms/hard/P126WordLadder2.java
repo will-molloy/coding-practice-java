@@ -10,15 +10,14 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-03-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/word-ladder-ii>https://leetcode.com/problems/word-ladder-ii</a>
  *
  * <p>Key: Traverse 'paths' rather than 'nodes'
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P127WordLadder
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P129SumRootToLeafNumbers
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public interface P126WordLadder2 {
 

@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-02-07.
- *
- * <p><a href=https://leetcode.com/problems/subsets-ii>https://leetcode.com/problems/subsets-ii</a>
+ * <a href=https://leetcode.com/problems/subsets-ii>https://leetcode.com/problems/subsets-ii</a>
  *
  * <p>Runtime: O(2<sup>n</sup>)
  *
@@ -19,6 +17,7 @@ import java.util.Set;
  * <p>Key: Set to implicitly filter dupes
  *
  * @see P78Subsets
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P90Subsets2 {
 

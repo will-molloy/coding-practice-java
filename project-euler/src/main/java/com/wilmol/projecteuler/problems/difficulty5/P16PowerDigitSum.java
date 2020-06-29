@@ -3,11 +3,11 @@ package com.wilmol.projecteuler.problems.difficulty5;
 import java.math.BigInteger;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=16>https://projecteuler.net/problem=16</a>
+ * <a href=https://projecteuler.net/problem=16>https://projecteuler.net/problem=16</a>
  *
  * <p>Runtime: O(b ^ e)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P16PowerDigitSum {
 

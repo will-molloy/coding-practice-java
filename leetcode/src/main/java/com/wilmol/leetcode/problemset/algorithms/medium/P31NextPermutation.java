@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-08-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/next-permutation>https://leetcode.com/problems/next-permutation</a>
  *
  * <p>Runtime: O(n), with O(1) extra memory
@@ -11,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>TODO Key:
  *
  * @see P60PermutationSequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P31NextPermutation {
 

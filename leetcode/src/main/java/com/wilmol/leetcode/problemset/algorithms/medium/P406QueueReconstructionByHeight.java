@@ -6,9 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-06-07.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/queue-reconstruction-by-height>https://leetcode.com/problems/queue-reconstruction-by-height/</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
@@ -17,6 +15,8 @@ import java.util.List;
  *
  * <p>Key: Sort before starting insertion procedure. Don't reconstruct in-place, easier to insert
  * via {@code ArrayList}.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P406QueueReconstructionByHeight {
 

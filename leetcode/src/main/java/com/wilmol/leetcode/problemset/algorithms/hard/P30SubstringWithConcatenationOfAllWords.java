@@ -10,9 +10,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-02-06.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/substring-with-concatenation-of-all-words>https://leetcode.com/problems/substring-with-concatenation-of-all-words</a>
  *
  * <p>Runtime: O(s.length * words.length) TODO can be O(s.length)... but quite complex, see leetcode
@@ -23,6 +21,7 @@ import java.util.stream.Collectors;
  * <p>Key: map to track required count, and map to track seen count for each starting index
  *
  * @see P76MinimumWindowSubstring
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P30SubstringWithConcatenationOfAllWords {
 

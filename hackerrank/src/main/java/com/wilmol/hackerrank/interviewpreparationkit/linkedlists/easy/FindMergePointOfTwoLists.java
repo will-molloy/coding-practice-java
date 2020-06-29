@@ -3,14 +3,14 @@ package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 
 /**
- * Created by Will on 28/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists>https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists</a>
  *
  * <p>Given two lists which have a common suffix, contains the merge point.
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class FindMergePointOfTwoLists {
 

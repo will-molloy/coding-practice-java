@@ -12,9 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2019-09-15.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/stack-exchange-scraper/problem>https://www.hackerrank.com/challenges/stack-exchange-scraper/problem</a>
  *
  * <p>Trick is to find common patterns in the input. (Hence regex Pattern.)
@@ -22,6 +20,8 @@ import java.util.stream.Stream;
  * <p>Use capturing group to extract information.
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class BuildAStackExchangeScraper {
 

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 20:36. */
+/**
+ * MinimumSwaps2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class MinimumSwaps2Test {
 
   @Test

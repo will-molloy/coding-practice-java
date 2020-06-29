@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-13. */
+/**
+ * P66PlusOneTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P66PlusOneTest {
 
   private final P66PlusOne fun = new P66PlusOne();

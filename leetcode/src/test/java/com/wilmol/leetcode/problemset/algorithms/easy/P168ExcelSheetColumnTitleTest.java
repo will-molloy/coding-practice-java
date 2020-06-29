@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-18. */
+/**
+ * P168ExcelSheetColumnTitleTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P168ExcelSheetColumnTitleTest {
 
   private final P168ExcelSheetColumnTitle p168 = new P168ExcelSheetColumnTitle();

@@ -3,6 +3,6 @@
  *
  * <p><a href=https://projecteuler.net/progress>https://projecteuler.net/progress</a>
  *
- * <p>Created by wilmol on 2019-09-09.
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 package com.wilmol.projecteuler.problems;

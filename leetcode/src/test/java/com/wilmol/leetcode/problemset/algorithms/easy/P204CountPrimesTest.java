@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-12. */
+/**
+ * P204CountPrimesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P204CountPrimesTest {
 
   private final P204CountPrimes fun = new P204CountPrimes();

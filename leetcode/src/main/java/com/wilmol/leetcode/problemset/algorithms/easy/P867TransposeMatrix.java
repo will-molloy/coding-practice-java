@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/transpose-matrix>https://leetcode.com/problems/transpose-matrix/</a>
  *
  * <p>Difficulty: Easy.
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(nm) (O(1) if returned array is excluded here)
  *
  * <p>Key: Linear algebra.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P867TransposeMatrix {
 

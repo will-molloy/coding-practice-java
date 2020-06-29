@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-14. */
+/**
+ * P1290ConvertBinaryNumberInALinkedListToIntegerTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1290ConvertBinaryNumberInALinkedListToIntegerTest {
 
   private final P1290ConvertBinaryNumberInALinkedListToInteger fun =

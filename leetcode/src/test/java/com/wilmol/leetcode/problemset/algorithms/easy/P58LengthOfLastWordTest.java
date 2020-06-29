@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-10. */
+/**
+ * P58LengthOfLastWordTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P58LengthOfLastWordTest {
 
   private final P58LengthOfLastWord fun = new P58LengthOfLastWord();

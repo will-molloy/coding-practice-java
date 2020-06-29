@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-22.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-word-in-dictionary>https://leetcode.com/problems/longest-word-in-dictionary/</a>
  *
  * <p>Difficulty: Medium
@@ -15,6 +13,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: Storing word represented by leaf nodes. This serves two purposes, (1) if that node is a
  * leaf and therefore if we can continue with the traversal and (2) what word is represented by that
  * leaf, so can return it directly rather than rebuilding words for each root to leaf path.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P720LongestWordInDictionary {
 

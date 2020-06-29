@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/string-compression>https://leetcode.com/problems/string-compression/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Two pointers, one for writing the result, one for traversing the array. Can write
  * in-place because the traversal pointer will always be ahead or even (1 or 2 chars - even, >2
  * chars - ahead).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P443StringCompression {
 

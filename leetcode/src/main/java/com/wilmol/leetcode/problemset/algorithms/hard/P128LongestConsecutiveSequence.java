@@ -5,9 +5,7 @@ import java.util.HashSet;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-03-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-consecutive-sequence>https://leetcode.com/problems/longest-consecutive-sequence</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,8 @@ import java.util.stream.Collectors;
  *
  * <p>Key: hash table, pretty obvious since it asks for O(n) solution and expects elements to be
  * compared
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P128LongestConsecutiveSequence {
 

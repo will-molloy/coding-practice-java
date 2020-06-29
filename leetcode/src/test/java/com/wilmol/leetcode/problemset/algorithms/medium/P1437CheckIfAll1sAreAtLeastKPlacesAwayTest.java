@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-03. */
+/**
+ * P1437CheckIfAll1sAreAtLeastKPlacesAwayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1437CheckIfAll1sAreAtLeastKPlacesAwayTest {
 
   private final P1437CheckIfAll1sAreAtLeastKPlacesAway p1437 =

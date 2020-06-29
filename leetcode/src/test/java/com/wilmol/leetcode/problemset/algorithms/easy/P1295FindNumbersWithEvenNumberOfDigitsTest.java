@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-08. */
+/**
+ * P1295FindNumbersWithEvenNumberOfDigitsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1295FindNumbersWithEvenNumberOfDigitsTest {
 
   private final P1295FindNumbersWithEvenNumberOfDigits p1295 =

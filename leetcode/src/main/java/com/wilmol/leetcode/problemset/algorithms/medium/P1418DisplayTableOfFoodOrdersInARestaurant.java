@@ -9,9 +9,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 /**
- * Created by wilmol on 2020-04-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant>https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/</a>
  *
  * <p><a
@@ -27,6 +25,8 @@ import java.util.TreeSet;
  * <p>Space: O(o)
  *
  * <p>Key: TreeMap/TreeSet to implicitly sort.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1418DisplayTableOfFoodOrdersInARestaurant {
 

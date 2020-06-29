@@ -15,7 +15,11 @@ import java.util.Set;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-04-25 at 15:37. */
+/**
+ * P54PokerHandsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P54PokerHandsTest {
 
   private Pair<Hand, Hand> lineToHand(String line) {

@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-02. */
+/**
+ * P295FindMedianFromDataStreamTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P295FindMedianFromDataStreamTest {
 
   @Test

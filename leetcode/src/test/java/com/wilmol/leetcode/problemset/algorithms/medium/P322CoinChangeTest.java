@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-13. */
+/**
+ * P322CoinChangeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P322CoinChangeTest {
 
   private final P322CoinChange fun = new P322CoinChange();

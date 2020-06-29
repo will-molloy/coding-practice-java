@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-17. */
+/**
+ * P873LengthOfLongestFibonacciSequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P873LengthOfLongestFibonacciSequenceTest {
 
   private final P873LengthOfLongestFibonacciSequence fun =

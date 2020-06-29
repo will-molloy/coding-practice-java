@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-02 at 21:07.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/matching-specific-string/problem>https://www.hackerrank.com/challenges/matching-specific-string/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class MatchSpecificString implements Regex {
 

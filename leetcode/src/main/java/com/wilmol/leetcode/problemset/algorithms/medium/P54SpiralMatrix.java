@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2019-11-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/spiral-matrix>https://leetcode.com/problems/spiral-matrix/</a>
  *
  * <p>Runtime: O(n*m), process each element once.
@@ -23,6 +21,7 @@ import java.util.List;
  *
  * @see P48RotateImage
  * @see P59SpiralMatrix2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P54SpiralMatrix {
 

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-04 at 21:59. */
+/**
+ * P3LongestSubstringWithoutRepeatingCharactersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P3LongestSubstringWithoutRepeatingCharactersTest {
 
   private final P3LongestSubstringWithoutRepeatingCharacters function =

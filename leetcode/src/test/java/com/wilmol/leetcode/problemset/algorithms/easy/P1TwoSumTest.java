@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 21:49. */
+/**
+ * P1TwoSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1TwoSumTest {
 
   private static final int[] EMPTY = {};

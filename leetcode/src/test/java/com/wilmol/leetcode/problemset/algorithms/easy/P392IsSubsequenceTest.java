@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-17. */
+/**
+ * P392IsSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P392IsSubsequenceTest {
 
   private final P392IsSubsequence p392 = new P392IsSubsequence();

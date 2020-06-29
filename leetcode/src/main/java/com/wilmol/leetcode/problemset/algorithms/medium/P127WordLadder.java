@@ -5,10 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-03-09.
- *
- * <p><a
- * href=https://leetcode.com/problems/word-ladder>https://leetcode.com/problems/word-ladder</a>
+ * <a href=https://leetcode.com/problems/word-ladder>https://leetcode.com/problems/word-ladder</a>
  *
  * <p>Runtime: O(n * n * m) (worst case process all words, branch algorithm used is O(n * m))
  *
@@ -17,6 +14,7 @@ import java.util.List;
  * <p>Key: BFS; in particular how the branching/neighbour traversing works
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P126WordLadder2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P127WordLadder {
 

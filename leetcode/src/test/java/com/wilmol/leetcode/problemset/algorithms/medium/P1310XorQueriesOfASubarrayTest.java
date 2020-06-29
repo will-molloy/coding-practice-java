@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-27. */
+/**
+ * P1310XorQueriesOfASubarrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1310XorQueriesOfASubarrayTest {
 
   private final P1310XorQueriesOfASubarray p1310 = new P1310XorQueriesOfASubarray();

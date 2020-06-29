@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-03-29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-product-subarray>https://leetcode.com/problems/maximum-product-subarray</a>
  *
  * <p>Key: math knowledge (in particular, products)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P152MaximumProductSubarray {
 

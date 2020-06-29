@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-23.
- *
- * <p><a href=https://leetcode.com/problems/triangle>https://leetcode.com/problems/triangle</a>
+ * <a href=https://leetcode.com/problems/triangle>https://leetcode.com/problems/triangle</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
  *
@@ -17,6 +15,7 @@ import java.util.List;
  * @see P63UniquePaths2
  * @see P64MinimumPathSum
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P120Triangle {
 

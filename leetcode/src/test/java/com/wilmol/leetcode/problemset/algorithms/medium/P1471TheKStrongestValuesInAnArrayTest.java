@@ -9,7 +9,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-08. */
+/**
+ * P1471TheKStrongestValuesInAnArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1471TheKStrongestValuesInAnArrayTest {
 
   private final P1471TheKStrongestValuesInAnArray p1471 = new P1471TheKStrongestValuesInAnArray();

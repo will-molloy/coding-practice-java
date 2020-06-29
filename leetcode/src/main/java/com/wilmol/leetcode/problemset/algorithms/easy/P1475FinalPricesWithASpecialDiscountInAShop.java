@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop>https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) TODO can do O(n) with stack (monotonic queue)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Simulate problem statement.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1475FinalPricesWithASpecialDiscountInAShop {
 

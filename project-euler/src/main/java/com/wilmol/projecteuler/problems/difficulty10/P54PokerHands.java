@@ -21,14 +21,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Created by Will on 2019-04-25 at 15:37
- *
- * <p><a href=https://projecteuler.net/problem=54>https://projecteuler.net/problem=54</a>
+ * <a href=https://projecteuler.net/problem=54>https://projecteuler.net/problem=54</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Note: decided on OOP/functional 'declarative' and 'readable' solution. Not the most efficient
  * (i.e. don't need to compute ranks eagerly, can just compare hands lazily).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UPM_UNCALLED_PRIVATE_METHOD") // TODO remove later, bug with java 11
 final class P54PokerHands {
@@ -68,6 +68,7 @@ final class P54PokerHands {
     return player1Hand.compareTo(player2Hand) > 0;
   }
 
+  /** Hand. */
   static final class Hand implements Comparable<Hand> {
 
     private final Set<Card> cards;
@@ -128,6 +129,7 @@ final class P54PokerHands {
     }
   }
 
+  /** Card. */
   static final class Card {
 
     @Override
@@ -166,6 +168,7 @@ final class P54PokerHands {
     }
   }
 
+  /** Suit. */
   enum Suit {
     CLUBS("C"),
     DIAMONDS("D"),
@@ -186,6 +189,7 @@ final class P54PokerHands {
     }
   }
 
+  /** Value. */
   enum Value {
     TWO("2"),
     THREE("3"),

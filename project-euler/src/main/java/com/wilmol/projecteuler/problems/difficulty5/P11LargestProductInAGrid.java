@@ -7,11 +7,11 @@ import com.wilmol.projecteuler.common.Maths;
 import java.util.List;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=11>https://projecteuler.net/problem=11</a>
+ * <a href=https://projecteuler.net/problem=11>https://projecteuler.net/problem=11</a>
  *
  * <p>Runtime: ??? O(n * m * k) ? but larger k means less sliding windows.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P11LargestProductInAGrid {
 

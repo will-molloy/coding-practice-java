@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-11. */
+/**
+ * P441ArrangingCoinsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P441ArrangingCoinsTest {
 
   private final P441ArrangingCoins p441 = new P441ArrangingCoins();

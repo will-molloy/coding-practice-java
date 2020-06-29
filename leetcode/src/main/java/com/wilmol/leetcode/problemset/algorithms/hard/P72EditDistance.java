@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-05-31.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/edit-distance>https://leetcode.com/problems/edit-distance/</a>
  *
  * <p>Runtime: O(w1 * w2)
@@ -21,6 +19,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * experience/practice as you gain intuition.
  *
  * @see <a href=https://youtu.be/MiqoA-yF-0M>Back To Back SWE's video</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P72EditDistance {
 

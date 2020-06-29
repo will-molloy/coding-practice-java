@@ -10,9 +10,7 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2020-02-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-level-order-traversal-ii>https://leetcode.com/problems/binary-tree-level-order-traversal-ii</a>
  *
  * <p>Runtime: O(n)
@@ -23,6 +21,7 @@ import java.util.stream.Stream;
  * way to view the leave nodes first...
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P102BinaryTreeLevelOrderTraversal
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P107BinaryTreeLevelOrderTraversal2 {
 

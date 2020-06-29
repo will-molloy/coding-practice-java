@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-04. */
+/**
+ * P455AssignCookiesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P455AssignCookiesTest {
 
   private final P455AssignCookies p455 = new P455AssignCookies();

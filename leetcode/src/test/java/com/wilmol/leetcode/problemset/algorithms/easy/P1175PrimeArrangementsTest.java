@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-25. */
+/**
+ * P1175PrimeArrangementsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1175PrimeArrangementsTest {
 
   private final P1175PrimeArrangements p1175 = new P1175PrimeArrangements();

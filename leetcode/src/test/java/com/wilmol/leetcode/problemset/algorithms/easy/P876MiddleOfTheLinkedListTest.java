@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-10. */
+/**
+ * P876MiddleOfTheLinkedListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P876MiddleOfTheLinkedListTest {
 
   private final P876MiddleOfTheLinkedList fun = new P876MiddleOfTheLinkedList();

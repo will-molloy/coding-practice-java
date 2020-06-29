@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-06-19.
- *
- * <p><a href=https://leetcode.com/problems/h-index-ii>https://leetcode.com/problems/h-index-ii/</a>
+ * <a href=https://leetcode.com/problems/h-index-ii>https://leetcode.com/problems/h-index-ii/</a>
  *
  * <p>Runtime: O(log(n))
  *
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P274HIndex
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P35SearchInsertPosition
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P1044LongestDuplicateSubstring
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P275HIndex2 {
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/excel-sheet-column-title>https://leetcode.com/problems/excel-sheet-column-title</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * one errors!
  *
  * @see P171ExcelSheetColumnNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P168ExcelSheetColumnTitle {
 

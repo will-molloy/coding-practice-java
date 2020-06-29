@@ -6,7 +6,11 @@ import static com.wilmol.hackerrank.regex.applications.easy.FindHackerRank.findH
 import com.wilmol.hackerrank.regex.applications.easy.FindHackerRank.Type;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-09-15. */
+/**
+ * FindHackerRankTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class FindHackerRankTest {
 
   @Test

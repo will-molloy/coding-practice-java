@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 28/03/2019. */
+/**
+ * LuckBalanceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class LuckBalanceTest {
 
   @Test

@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-06-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/is-graph-bipartite>https://leetcode.com/problems/is-graph-bipartite/</a>
  *
  * <p>Runtime: O(|v| + |e|)
@@ -16,6 +14,7 @@ import java.util.Map;
  * <p>Key: DFS colouring algorithm.
  *
  * @see P886PossibleBipartition
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P785IsGraphBipartite {
 

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-26. */
+/**
+ * P692TopKFrequentWordsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P692TopKFrequentWordsTest {
 
   private final P692TopKFrequentWords p692 = new P692TopKFrequentWords();

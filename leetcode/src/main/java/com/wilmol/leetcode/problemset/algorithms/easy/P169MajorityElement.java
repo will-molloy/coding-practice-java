@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-03-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/majority-element>https://leetcode.com/problems/majority-element</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.Map;
  * <p>Space: O(n) TODO exists O(1) space solution (Boyer-Moore Voting Algorithm)
  *
  * <p>Key: hash table
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P169MajorityElement {
 

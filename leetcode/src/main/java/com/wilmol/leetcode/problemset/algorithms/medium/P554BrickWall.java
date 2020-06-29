@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-04-13.
- *
- * <p><a href=https://leetcode.com/problems/brick-wall>https://leetcode.com/problems/brick-wall</a>
+ * <a href=https://leetcode.com/problems/brick-wall>https://leetcode.com/problems/brick-wall</a>
  *
  * <p>Runtime: O(height * width)
  *
@@ -20,6 +18,7 @@ import java.util.Map;
  *
  * @see <a
  *     href=https://en.wikipedia.org/wiki/Prefix_sum>https://en.wikipedia.org/wiki/Prefix_sum</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P554BrickWall {
 

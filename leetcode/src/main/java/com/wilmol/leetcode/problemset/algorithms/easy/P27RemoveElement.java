@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-28 at 00:10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-element>https://leetcode.com/problems/remove-element</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * val}.
  *
  * @see P26RemoveDuplicatesFromSortedArray
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P27RemoveElement {
 

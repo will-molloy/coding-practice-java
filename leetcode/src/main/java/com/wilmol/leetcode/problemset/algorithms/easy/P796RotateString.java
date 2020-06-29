@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/rotate-string>https://leetcode.com/problems/rotate-string</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) ({@link String#contains} is O(nm) here we have O(2nn) =
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(n) ({@link String#concat} creates a {@code new} {@link String})
  *
  * <p>Key: a rotation of "s" must be a substring of "s" + "s".
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P796RotateString {
 

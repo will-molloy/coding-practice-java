@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Will on 2019-07-25 at 21:42.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/design-linked-list>https://leetcode.com/problems/design-linked-list</a>
  *
  * <p>Runtime: O(n) get, O(1) addAtHead, O(n) addAtTail, O(n) addAtIndex, O(n) deleteAtIndex
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P707DesignLinkedList {
 

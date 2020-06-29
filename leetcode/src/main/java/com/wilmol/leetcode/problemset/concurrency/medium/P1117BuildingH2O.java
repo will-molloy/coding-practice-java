@@ -3,14 +3,13 @@ package com.wilmol.leetcode.problemset.concurrency.medium;
 import java.util.concurrent.Semaphore;
 
 /**
- * Created by Will on 2019-07-20 at 13:34.
- *
- * <p><a
- * href=https://leetcode.com/problems/building-h2o>https://leetcode.com/problems/building-h2o</a>
+ * <a href=https://leetcode.com/problems/building-h2o>https://leetcode.com/problems/building-h2o</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Print in consistent manner to simplify the requirements.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1117BuildingH2O {
 

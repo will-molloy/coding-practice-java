@@ -9,13 +9,12 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=30>https://projecteuler.net/problem=30</a>
+ * <a href=https://projecteuler.net/problem=30>https://projecteuler.net/problem=30</a>
  *
  * <p>Runtime: O(n ^ 9) ??? potentially, but many short circuits
  *
  * @see P34DigitFactorials
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P30DigitNPowers {
 

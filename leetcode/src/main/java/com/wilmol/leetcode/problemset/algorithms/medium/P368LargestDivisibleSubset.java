@@ -7,9 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-06-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/largest-divisible-subset>https://leetcode.com/problems/largest-divisible-subset/</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
@@ -19,6 +17,7 @@ import java.util.List;
  * <p>Key: Only need to test divisibility with largest element in subset.
  *
  * @see P300LongestIncreasingSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P368LargestDivisibleSubset {
 

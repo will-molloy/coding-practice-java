@@ -4,9 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-05-30.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/k-closest-points-to-origin>https://leetcode.com/problems/k-closest-points-to-origin/</a>
  *
  * <p>Runtime: O(n log(k))
@@ -18,6 +16,7 @@ import java.util.PriorityQueue;
  *
  * @see P692TopKFrequentWords
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P973KClosestPointsToOrigin {
 

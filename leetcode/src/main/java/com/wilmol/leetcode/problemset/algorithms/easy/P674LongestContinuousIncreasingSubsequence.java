@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-continuous-increasing-subsequence>https://leetcode.com/problems/longest-continuous-increasing-subsequence</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * sequence. In other words, all continuous increasing subsequences are <b>disjoint</b>.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P673NumberOfLongestIncreasingSubsequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P674LongestContinuousIncreasingSubsequence {
 

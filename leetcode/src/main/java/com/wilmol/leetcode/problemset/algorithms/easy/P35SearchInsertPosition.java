@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/search-insert-position>https://leetcode.com/problems/search-insert-position/</a>
  *
  * <p>Runtime: O(log(n))
@@ -19,6 +17,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * next index, otherwise {@code l} is kept at the current index.
  *
  * @see java.util.Arrays#binarySearch
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P35SearchInsertPosition {
 

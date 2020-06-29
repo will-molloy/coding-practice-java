@@ -3,12 +3,12 @@ package com.wilmol.hackerrank.interviewpreparationkit.misc.medium;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 2019-03-30 at 16:18.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/interview/interview-preparation-kit/miscellaneous/challenges>https://www.hackerrank.com/interview/interview-preparation-kit/miscellaneous/challenges</a>
  *
  * <p>Runtime: O(sqrt(n))
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class Primality {
 

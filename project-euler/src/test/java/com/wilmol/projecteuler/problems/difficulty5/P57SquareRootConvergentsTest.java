@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-05-19 at 16:56. */
+/**
+ * P57SquareRootConvergentsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P57SquareRootConvergentsTest {
 
   @Test

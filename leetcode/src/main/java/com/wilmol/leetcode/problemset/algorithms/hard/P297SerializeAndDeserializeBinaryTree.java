@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/serialize-and-deserialize-binary-tree>https://leetcode.com/problems/serialize-and-deserialize-binary-tree/</a>
  *
  * <p>Difficulty: Hard.
@@ -15,6 +13,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P606ConstructStringFromBinaryTree
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P297SerializeAndDeserializeBinaryTree {
 

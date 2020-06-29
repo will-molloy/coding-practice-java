@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-19. */
+/**
+ * P1418DisplayTableOfFoodOrdersInARestaurantTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1418DisplayTableOfFoodOrdersInARestaurantTest {
 
   private final P1418DisplayTableOfFoodOrdersInARestaurant b =

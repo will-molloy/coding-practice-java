@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-07-25 at 19:52.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/swap-nodes-in-pairs>https://leetcode.com/problems/swap-nodes-in-pairs</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P24SwapNodesInPairs {
 

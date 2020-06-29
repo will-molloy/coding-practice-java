@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-04-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/middle-of-the-linked-list>https://leetcode.com/problems/middle-of-the-linked-list</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>Space: O(1)
  *
  * <p>Key: slow and faster pointer
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P876MiddleOfTheLinkedList {
 

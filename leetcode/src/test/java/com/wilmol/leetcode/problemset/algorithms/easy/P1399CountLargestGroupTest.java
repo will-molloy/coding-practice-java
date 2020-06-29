@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-16. */
+/**
+ * P1399CountLargestGroupTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1399CountLargestGroupTest {
 
   private final P1399CountLargestGroup p1399 = new P1399CountLargestGroup();

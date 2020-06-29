@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-09. */
+/**
+ * P367ValidPerfectSquareTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P367ValidPerfectSquareTest {
 
   private final P367ValidPerfectSquare p367 = new P367ValidPerfectSquare();

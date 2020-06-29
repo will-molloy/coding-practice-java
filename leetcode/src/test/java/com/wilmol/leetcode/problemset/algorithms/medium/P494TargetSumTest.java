@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-04. */
+/**
+ * P494TargetSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P494TargetSumTest {
 
   private final P494TargetSum p494 = new P494TargetSum();

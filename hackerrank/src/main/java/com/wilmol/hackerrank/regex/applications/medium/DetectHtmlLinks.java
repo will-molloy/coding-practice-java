@@ -11,9 +11,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-11-01.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/detect-html-links/problem>https://www.hackerrank.com/challenges/detect-html-links/problem</a>
  *
  * <p>The last hackerrank regex problem! And the one with lowest acceptance rate; really using all
@@ -29,6 +27,7 @@ import java.util.stream.Collectors;
  *
  * @see com.wilmol.hackerrank.regex.applications.easy.DetectHtmlAttributes
  * @see com.wilmol.hackerrank.regex.applications.easy.DetectHtmlTags
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class DetectHtmlLinks {
 

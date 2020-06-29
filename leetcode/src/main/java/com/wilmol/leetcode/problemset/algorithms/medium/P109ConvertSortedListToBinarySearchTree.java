@@ -4,9 +4,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-02-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree>https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree</a>
  *
  * <p>Runtime: O(n lg n) (recurrence T(n) = 2T(n/2) + O(n))
@@ -17,6 +15,7 @@ import com.wilmol.leetcode.common.ListNode;
  * avoids NPE
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P108ConvertSortedArrayToBinarySearchTree
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P109ConvertSortedListToBinarySearchTree {
 

@@ -7,9 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-02-18.
- *
- * <p><a href=https://leetcode.com/problems/n-queens>https://leetcode.com/problems/n-queens/</a>
+ * <a href=https://leetcode.com/problems/n-queens>https://leetcode.com/problems/n-queens/</a>
  *
  * <p>Runtime: O(n!) TODO is this right? Maybe its O(n * n * n!) ...? (Loop = O(n), canPlaceQueen =
  * O(n), recursion back tracking = O(n!)), but O(n*n!) is still O(n!)???
@@ -21,6 +19,7 @@ import java.util.stream.IntStream;
  *
  * @see P37SudokuSolver
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1222QueensThatCanAttackTheKing
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P51NQueens {
 

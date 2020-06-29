@@ -8,7 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P13LargeSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P13LargeSumTest {
 
   private static final String DIGIT_NUMBERS_100X50 =

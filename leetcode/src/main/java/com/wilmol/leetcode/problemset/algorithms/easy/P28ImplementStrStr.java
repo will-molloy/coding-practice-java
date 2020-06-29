@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-28 at 16:08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/implement-strstr>https://leetcode.com/problems/implement-strstr</a>
  *
  * <p>Runtime: O(n * m) (haystack length = n, needle length = m)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P28ImplementStrStr {
 

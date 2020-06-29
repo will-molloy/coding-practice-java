@@ -9,12 +9,12 @@ import java.util.function.IntUnaryOperator;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 2019-07-15 at 20:27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/integer-to-roman>https://leetcode.com/problems/integer-to-roman</a>
  *
  * <p>Runtime: O(n) ? maxLessThan is repeated proportionate to n also, but SYMBOLS is constant size
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P12IntegerToRoman {
 

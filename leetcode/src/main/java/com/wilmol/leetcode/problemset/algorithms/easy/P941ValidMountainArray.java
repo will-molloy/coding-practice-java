@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/valid-mountain-array>https://leetcode.com/problems/valid-mountain-array/</a>
  *
  * <p>Runtime: O(n) (one pass)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(1)
  *
  * <p>Key: Separate loops for climb and descent.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P941ValidMountainArray {
 

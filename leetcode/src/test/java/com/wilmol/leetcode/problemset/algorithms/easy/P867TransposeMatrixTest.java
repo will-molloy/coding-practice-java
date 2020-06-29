@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P867TransposeMatrixTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P867TransposeMatrixTest {
 
   private final P867TransposeMatrix p867 = new P867TransposeMatrix();

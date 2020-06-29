@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-06-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets>https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/</a>
  *
  * <p>Runtime: O(n * log(max(bloomDays)))
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: Binary search over the day range.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1482MinimumNumberOfDaysToMakeMBouquets {
 

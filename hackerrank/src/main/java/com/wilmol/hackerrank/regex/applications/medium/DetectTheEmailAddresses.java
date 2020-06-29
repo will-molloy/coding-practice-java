@@ -12,9 +12,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-10-19.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/detect-the-email-addresses/problem>https://www.hackerrank.com/challenges/detect-the-email-addresses/problem</a>
  *
  * <p>Runtime: O(n)
@@ -23,6 +21,7 @@ import java.util.stream.Collectors;
  * regex. Otherwise a standard {@code find()} loop.
  *
  * @see DetectTheDomainName
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class DetectTheEmailAddresses {
 

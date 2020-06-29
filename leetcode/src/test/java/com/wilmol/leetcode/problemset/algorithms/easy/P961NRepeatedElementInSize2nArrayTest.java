@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-04. */
+/**
+ * P961NRepeatedElementInSize2nArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P961NRepeatedElementInSize2nArrayTest {
 
   private final P961NRepeatedElementInSize2nArray fun = new P961NRepeatedElementInSize2nArray();

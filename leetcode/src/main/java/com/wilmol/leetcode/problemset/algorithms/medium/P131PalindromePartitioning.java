@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-01.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/palindrome-partitioning>https://leetcode.com/problems/palindrome-partitioning</a>
  *
  * <p>Runtime: O(n * 2<sup>n</sup>)
@@ -15,6 +13,8 @@ import java.util.List;
  *
  * <p>Key: optimisation of passing indices as parameters (avoids cost of extra {@code
  * String.substring} calls)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P131PalindromePartitioning {
 

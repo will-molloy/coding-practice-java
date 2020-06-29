@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-26.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards>https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/</a>
  *
  * <p>Difficulty: Medium.
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * taking them) doesn't matter.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P1422MaximumScoreAfterSplittingAString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1423MaximumPointsYouCanObtainFromCards {
 

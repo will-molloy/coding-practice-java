@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-16. */
+/**
+ * P213HouseRobber2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P213HouseRobber2Test {
 
   private final P213HouseRobber2 fun = new P213HouseRobber2();

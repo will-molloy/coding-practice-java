@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P10SummationOfPrimesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P10SummationOfPrimesTest {
 
   private final P10SummationOfPrimes summationOfPrimes = new P10SummationOfPrimes();

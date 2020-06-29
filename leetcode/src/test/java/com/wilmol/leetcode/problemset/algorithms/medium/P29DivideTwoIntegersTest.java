@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-04. */
+/**
+ * P29DivideTwoIntegersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P29DivideTwoIntegersTest {
 
   private final P29DivideTwoIntegers fun = new P29DivideTwoIntegers();

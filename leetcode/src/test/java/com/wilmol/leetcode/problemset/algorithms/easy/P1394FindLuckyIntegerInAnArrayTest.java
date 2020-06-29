@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-17. */
+/**
+ * P1394FindLuckyIntegerInAnArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1394FindLuckyIntegerInAnArrayTest {
   private final P1394FindLuckyIntegerInAnArray p1394 = new P1394FindLuckyIntegerInAnArray();
 

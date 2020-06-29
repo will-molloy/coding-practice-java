@@ -1,16 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-01-22.
- *
- * <p><a
- * href=https://leetcode.com/problems/word-search>https://leetcode.com/problems/word-search</a>
+ * <a href=https://leetcode.com/problems/word-search>https://leetcode.com/problems/word-search</a>
  *
  * <p>Runtime: O(n*n*w) TODO ?? DFS part is O(w) i.e. longest path searched ??
  *
  * <p>Space: O(1)
  *
  * <p>Key: got the DFS part. Marking node as unused as alternative to copying 'used' boolean array.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P79WordSearch {
 

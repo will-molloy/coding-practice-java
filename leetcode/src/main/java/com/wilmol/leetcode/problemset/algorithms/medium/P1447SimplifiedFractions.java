@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/simplified-fractions>https://leetcode.com/problems/simplified-fractions/</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) * O(gcd)
@@ -15,6 +13,8 @@ import java.util.List;
  * <p>Extra space: O(1)
  *
  * <p>Key: Fraction is simplified if GCD of numerator and denominator is 1.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1447SimplifiedFractions {
 

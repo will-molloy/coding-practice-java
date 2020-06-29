@@ -4,11 +4,11 @@ import java.math.BigInteger;
 import java.util.List;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=13>https://projecteuler.net/problem=13</a>
+ * <a href=https://projecteuler.net/problem=13>https://projecteuler.net/problem=13</a>
  *
  * <p>Runtime: O(n * m) (addition is linear?)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P13LargeSum {
 

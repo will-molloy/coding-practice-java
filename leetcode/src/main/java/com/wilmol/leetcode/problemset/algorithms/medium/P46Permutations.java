@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2019-12-01.
- *
- * <p>Input doesn't have duplicates.
+ * Input doesn't have duplicates.
  *
  * <p><a
  * href=https://leetcode.com/problems/permutations>https://leetcode.com/problems/permutations</a>
@@ -16,6 +14,7 @@ import java.util.List;
  * <p>Key: bruteforce (gather all candidates), recursive backtracking
  *
  * @see P47Permutations2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P46Permutations {
 

@@ -7,12 +7,11 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-06-19.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-duplicate-substring>https://leetcode.com/problems/longest-duplicate-substring/</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P275HIndex2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1044LongestDuplicateSubstring {
 

@@ -3,14 +3,14 @@ package com.wilmol.hackerrank.interviewpreparationkit.sorting.medium;
 import java.util.Objects;
 
 /**
- * Created by Will on 25/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting>https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting</a>
  *
  * <p>Implement a Comparator
  *
  * <p>Runtime: whatever the sorting algorithm run time is (best case O(n log n))
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class ComparatorInterface {
 
@@ -30,6 +30,7 @@ public final class ComparatorInterface {
     return players;
   }
 
+  /** Player. */
   // Comparable, Comparator, basically the same thing..
   // Comparator is a separate class (no clean private field access)
   static class Player implements Comparable<Player> {

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-25. */
+/**
+ * P409LongestPalindromeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P409LongestPalindromeTest {
 
   private final P409LongestPalindrome p409 = new P409LongestPalindrome();

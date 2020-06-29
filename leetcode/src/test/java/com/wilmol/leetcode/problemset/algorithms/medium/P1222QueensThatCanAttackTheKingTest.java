@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-22. */
+/**
+ * P1222QueensThatCanAttackTheKingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1222QueensThatCanAttackTheKingTest {
 
   private final P1222QueensThatCanAttackTheKing p1222 = new P1222QueensThatCanAttackTheKing();

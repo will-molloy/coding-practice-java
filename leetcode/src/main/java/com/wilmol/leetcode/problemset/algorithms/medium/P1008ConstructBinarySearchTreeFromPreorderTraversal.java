@@ -3,15 +3,14 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal>https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/</a>
  *
  * <p>Difficulty: Medium.
  *
  * @see P105ConstructBinaryTreeFromPreorderAndInorderTraversal
  * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
 

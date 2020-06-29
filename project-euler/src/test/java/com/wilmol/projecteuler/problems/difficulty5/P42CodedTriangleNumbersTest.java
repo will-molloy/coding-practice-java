@@ -8,7 +8,11 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-20 at 11:21 AM. */
+/**
+ * P42CodedTriangleNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P42CodedTriangleNumbersTest {
 
   @Test

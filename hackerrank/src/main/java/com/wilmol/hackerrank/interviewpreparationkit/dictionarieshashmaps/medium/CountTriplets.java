@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2019-09-22.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/count-triplets-1/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps>https://www.hackerrank.com/challenges/count-triplets-1/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,8 @@ import java.util.Map;
  *
  * <p>Also using multiple maps of COUNTS not actual results. (Again, read the problem statement,
  * asks for COUNT of triplets not the actual triplets (HINT HINT HINT).)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface CountTriplets {
 

@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * Created by wilmol on 2020-06-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-right-side-view>https://leetcode.com/problems/binary-tree-right-side-view/</a>
  *
  * <p>Runtime: O(n)
@@ -18,6 +16,8 @@ import java.util.Queue;
  * <p>Extra space: O(n)
  *
  * <p>Key: Take right most node in each level.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P199BinaryTreeRightSideView {
 

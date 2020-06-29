@@ -7,9 +7,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-03-06.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal>https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal</a>
  *
  * <p>Runtime: O(n lgn) (recurrence T(n) = 2T(n/2 - 1) + O(n))
@@ -21,6 +19,7 @@ import java.util.stream.Collectors;
  *
  * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
  * @see P1008ConstructBinarySearchTreeFromPreorderTraversal
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
 

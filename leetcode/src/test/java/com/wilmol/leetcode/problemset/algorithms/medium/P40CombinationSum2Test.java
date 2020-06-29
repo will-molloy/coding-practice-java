@@ -6,7 +6,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-25. */
+/**
+ * P40CombinationSum2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P40CombinationSum2Test {
 
   private final P40CombinationSum2 fun = new P40CombinationSum2();

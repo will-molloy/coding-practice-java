@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/is-subsequence>https://leetcode.com/problems/is-subsequence</a>
  *
  * <p>Runtime: O(t)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: separate pointer for s and t.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P392IsSubsequence {
 

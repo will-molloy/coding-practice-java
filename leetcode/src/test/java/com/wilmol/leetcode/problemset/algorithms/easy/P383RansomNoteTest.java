@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-03. */
+/**
+ * P383RansomNoteTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P383RansomNoteTest {
 
   private final P383RansomNote p383 = new P383RansomNote();

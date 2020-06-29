@@ -1,14 +1,14 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-12-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/length-of-last-word>https://leetcode.com/problems/length-of-last-word</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Key: knowledge of {@link String} class.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P58LengthOfLastWord {
 

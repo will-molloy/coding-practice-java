@@ -8,12 +8,11 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * Created by wilmol on 2020-03-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sum-root-to-leaf-numbers>https://leetcode.com/problems/sum-root-to-leaf-numbers/</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P126WordLadder2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P129SumRootToLeafNumbers {
 

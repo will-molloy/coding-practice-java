@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/largest-number>https://leetcode.com/problems/largest-number</a>
  *
  * <p>Runtime: O(n log n)
@@ -14,6 +12,8 @@ import java.util.stream.Collectors;
  * <p>Space: O(n) (create string for each int)
  *
  * <p>Key: Sorting.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P179LargestNumber {
 

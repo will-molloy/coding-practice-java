@@ -4,14 +4,14 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 24/03/2019
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/two-strings/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps>https://www.hackerrank.com/challenges/two-strings/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps</a>
  *
  * <p>Determine if the strings have a common substring.
  *
  * <p>Runtime: O(s1 + s2) -> O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class TwoStringsHasCommonSubString {
 

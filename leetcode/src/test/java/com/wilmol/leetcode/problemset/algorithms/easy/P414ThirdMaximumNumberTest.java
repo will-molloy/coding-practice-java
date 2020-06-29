@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-09. */
+/**
+ * P414ThirdMaximumNumberTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P414ThirdMaximumNumberTest {
 
   private final P414ThirdMaximumNumber p414 = new P414ThirdMaximumNumber();

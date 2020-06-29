@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-05-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/kids-with-the-greatest-number-of-candies>https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import java.util.List;
  * <p>Extra space: O(1)
  *
  * <p>Key: Take all the candies.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1431KidsWithTheGreatestNumberOfCandies {
 

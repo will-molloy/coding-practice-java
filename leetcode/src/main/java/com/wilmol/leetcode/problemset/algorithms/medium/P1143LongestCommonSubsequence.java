@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-common-subsequence>https://leetcode.com/problems/longest-common-subsequence/</a>
  *
  * <p>Difficulty: Medium.
@@ -19,6 +17,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P1035UncrossedLines
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1143LongestCommonSubsequence {
 

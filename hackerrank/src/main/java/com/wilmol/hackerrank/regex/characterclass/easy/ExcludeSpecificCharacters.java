@@ -4,10 +4,10 @@ import com.wilmol.hackerrank.regex.Regex;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-04-04 at 22:27.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/excluding-specific-characters/problem>https://www.hackerrank.com/challenges/excluding-specific-characters/problem</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class ExcludeSpecificCharacters implements Regex {
 

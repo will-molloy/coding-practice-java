@@ -1,10 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-25.
- *
- * <p><a
- * href=https://leetcode.com/problems/add-strings>https://leetcode.com/problems/add-strings/</a>
+ * <a href=https://leetcode.com/problems/add-strings>https://leetcode.com/problems/add-strings/</a>
  *
  * <p>Runtime: O(max(num1, num2))
  *
@@ -12,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: Simulate process of adding decimal numbers. I.e. line up their ends and sum individual
  * digits with a carry.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P415AddStrings {
 

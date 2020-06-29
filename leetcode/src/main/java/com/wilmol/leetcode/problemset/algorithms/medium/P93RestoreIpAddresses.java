@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2020-02-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/restore-ip-addresses>https://leetcode.com/problems/restore-ip-addresses</a>
  *
  * <p>Runtime: O(1) input doesn't grow
@@ -15,6 +13,8 @@ import java.util.regex.Pattern;
  * <p>Space: O(1) input doesn't grow
  *
  * <p>Key: depth first search (back tracking generation, similar to permutation problem)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P93RestoreIpAddresses {
 

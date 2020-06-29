@@ -11,7 +11,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P22NameScoresTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P22NameScoresTest {
 
   private final P22NameScores nameScores = new P22NameScores();

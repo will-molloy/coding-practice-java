@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-04-06 at 15:11. */
+/**
+ * CapturingAndNonCapturingGroupsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class CapturingAndNonCapturingGroupsTest {
 
   @Test

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-21 at 17:31. */
+/**
+ * P18FourSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P18FourSumTest {
 
   private final P18FourSum function = new P18FourSum();

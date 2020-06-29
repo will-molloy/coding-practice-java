@@ -5,9 +5,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-search-tree-iterator>https://leetcode.com/problems/binary-search-tree-iterator</a>
  *
  * <p>Runtime: O(n)
@@ -15,9 +13,12 @@ import java.util.Deque;
  * <p>Space: O(h)
  *
  * <p>Key: Stack.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P173BinarySearchTreeIterator {
 
+  /** BstIterator. */
   static class BstIterator {
     private final Deque<BinaryTreeNode> stack = new ArrayDeque<>();
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/uncrossed-lines>https://leetcode.com/problems/uncrossed-lines/</a>
  *
  * <p>Runtime: O(a * b)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P1143LongestCommonSubsequence
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1035UncrossedLines {
 

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-01. */
+/**
+ * P131PalindromePartitioningTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P131PalindromePartitioningTest {
 
   private final P131PalindromePartitioning fun = new P131PalindromePartitioning();

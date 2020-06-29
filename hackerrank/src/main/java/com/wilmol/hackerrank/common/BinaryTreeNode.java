@@ -3,7 +3,11 @@ package com.wilmol.hackerrank.common;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Objects;
 
-/** Created by Will on 24/03/2019. */
+/**
+ * BinaryTreeNode.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @SuppressFBWarnings("UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD")
 public final class BinaryTreeNode {
 

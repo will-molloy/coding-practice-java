@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-06-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/search-in-a-binary-search-tree>https://leetcode.com/problems/search-in-a-binary-search-tree/</a>
  *
  * <p>Key: In BST larger values are on the right, smaller on left.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P700SearchInABinarySearchTree {
 

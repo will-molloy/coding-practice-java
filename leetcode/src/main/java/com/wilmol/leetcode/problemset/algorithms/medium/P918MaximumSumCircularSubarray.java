@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-sum-circular-subarray>https://leetcode.com/problems/maximum-sum-circular-subarray/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: After computing prefix sum, compute max prefix sum so don't have to compare every {@code
  * i} with every {@code j} ({@code j - i >= 2}) cause we're able to compare j with the closest
  * possible {@code i} ({@code j - i == 2}) instead.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P918MaximumSumCircularSubarray {
 

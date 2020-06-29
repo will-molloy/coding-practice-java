@@ -8,20 +8,21 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-11-01.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/programming-language-detection/problem>https://www.hackerrank.com/challenges/programming-language-detection/problem</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Key: exhaustiveness, don't need to check for Python since if its not Java or C it must be
  * Python per the problem statement.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class BuildingASmartIdeProgrammingLanguageDetection {
 
   private BuildingASmartIdeProgrammingLanguageDetection() {}
 
+  /** Language type. */
   enum Language {
     JAVA("Java"),
     C("C"),

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-05-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-the-distance-value-between-two-arrays>https://leetcode.com/problems/find-the-distance-value-between-two-arrays/</a>
  *
  * <p>Runtime: O(n * m) TODO O(n log m) and even O(n + m) is possible
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: Brute force.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1385FindTheDistanceValueBetweenTwoArrays {
 

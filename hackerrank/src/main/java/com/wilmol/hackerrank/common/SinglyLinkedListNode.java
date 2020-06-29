@@ -2,7 +2,11 @@ package com.wilmol.hackerrank.common;
 
 import java.util.Objects;
 
-/** Created by Will on 26/03/2019. */
+/**
+ * SinglyLinkedListNode.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 public final class SinglyLinkedListNode {
 
   public final int data;

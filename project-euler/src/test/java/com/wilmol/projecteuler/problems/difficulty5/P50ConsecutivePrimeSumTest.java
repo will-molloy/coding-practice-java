@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-21 at 2:48 PM. */
+/**
+ * P50ConsecutivePrimeSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P50ConsecutivePrimeSumTest {
 
   @Test

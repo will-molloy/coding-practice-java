@@ -3,14 +3,13 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2019-12-11.
- *
- * <p><a
- * href=https://leetcode.com/problems/rotate-list>https://leetcode.com/problems/rotate-list</a>
+ * <a href=https://leetcode.com/problems/rotate-list>https://leetcode.com/problems/rotate-list</a>
  *
  * <p>Runtime: O(2n)
  *
  * <p>Key: get size of list (n) first.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P61RotateList {
 

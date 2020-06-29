@@ -4,11 +4,11 @@ import java.math.BigInteger;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2019-05-02.
- *
- * <p><a href=https://projecteuler.net/problem=56>https://projecteuler.net/problem=56</a>
+ * <a href=https://projecteuler.net/problem=56>https://projecteuler.net/problem=56</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P56PowerfulDigitSum {
 

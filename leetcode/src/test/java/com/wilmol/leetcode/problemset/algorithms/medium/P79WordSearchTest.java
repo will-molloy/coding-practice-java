@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-22. */
+/**
+ * P79WordSearchTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P79WordSearchTest {
 
   private final P79WordSearch fun = new P79WordSearch();

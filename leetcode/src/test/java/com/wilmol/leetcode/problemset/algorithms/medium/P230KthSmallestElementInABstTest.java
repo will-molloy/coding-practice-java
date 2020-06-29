@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-20. */
+/**
+ * P230KthSmallestElementInABstTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P230KthSmallestElementInABstTest {
 
   @Test

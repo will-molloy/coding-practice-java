@@ -1,13 +1,10 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
-import com.wilmol.leetcode.common.ListNode;
 import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
- * Created by wilmol on 2020-06-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/delete-node-in-a-linked-list>https://leetcode.com/problems/delete-node-in-a-linked-list/</a>
  *
  * <p>Runtime: O(1)
@@ -16,6 +13,8 @@ import java.util.StringJoiner;
  *
  * <p>Key: Since we can't access the previous node, overwrite current node with next node
  * (effectively duplicating the next node while deleting the current node) then delete next node.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P237DeleteNodeInALinkedList {
 
@@ -26,6 +25,7 @@ class P237DeleteNodeInALinkedList {
     node.next = node.next.next;
   }
 
+  /** Linked list node. */
   static class ListNode {
     int val;
     ListNode next;

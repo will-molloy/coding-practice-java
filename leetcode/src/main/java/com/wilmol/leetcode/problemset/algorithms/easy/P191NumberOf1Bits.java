@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/number-of-1-bits>https://leetcode.com/problems/number-of-1-bits/</a>
  *
  * <p>Difficulty: Easy.
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: {@link Integer#bitCount} method.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P191NumberOf1Bits {
 

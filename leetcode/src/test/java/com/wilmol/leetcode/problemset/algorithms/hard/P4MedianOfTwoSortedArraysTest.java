@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-03 at 21:00. */
+/**
+ * P4MedianOfTwoSortedArraysTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P4MedianOfTwoSortedArraysTest {
 
   private static final int[] EMPTY = new int[0];

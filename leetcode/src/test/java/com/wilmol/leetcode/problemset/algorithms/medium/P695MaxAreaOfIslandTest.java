@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P695MaxAreaOfIslandTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P695MaxAreaOfIslandTest {
 
   private final P695MaxAreaOfIsland p695 = new P695MaxAreaOfIsland();

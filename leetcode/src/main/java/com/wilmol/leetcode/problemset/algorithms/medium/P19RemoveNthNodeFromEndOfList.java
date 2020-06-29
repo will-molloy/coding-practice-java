@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-07-21 at 19:29.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-nth-node-from-end-of-list>https://leetcode.com/problems/remove-nth-node-from-end-of-list</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P19RemoveNthNodeFromEndOfList {
 

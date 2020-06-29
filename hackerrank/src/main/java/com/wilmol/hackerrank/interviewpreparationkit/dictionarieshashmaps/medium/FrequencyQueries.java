@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2019-09-21.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/frequency-queries/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps>https://www.hackerrank.com/challenges/frequency-queries/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,8 @@ import java.util.Map;
  * <p>Key: Second HashMap to track the frequency counts. Since frequencies are stored as values and
  * value check is O(n) (on maps); this allows O(1) lookup on the values too, allowing O(n) overall
  * to avoid TLE.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class FrequencyQueries {
 

@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/diagonal-traverse-ii>https://leetcode.com/problems/diagonal-traverse-ii/</a>
  *
  * <p>Difficulty: Medium.
@@ -23,6 +21,7 @@ import java.util.List;
  * due to iterating over 'holes' in the matrix, so need to use this transformation solution.
  *
  * @see P498DiagonalTraverse
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1424DiagonalTraverse2 {
 

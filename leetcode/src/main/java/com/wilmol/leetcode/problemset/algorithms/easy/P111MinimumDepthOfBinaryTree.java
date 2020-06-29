@@ -7,9 +7,7 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 /**
- * Created by wilmol on 2020-02-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-depth-of-binary-tree>https://leetcode.com/problems/minimum-depth-of-binary-tree</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,8 @@ import java.util.stream.Stream;
  * <p>Space: O(w) = O(n)
  *
  * <p>Key: a leaf is a node with no children
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P111MinimumDepthOfBinaryTree {
 

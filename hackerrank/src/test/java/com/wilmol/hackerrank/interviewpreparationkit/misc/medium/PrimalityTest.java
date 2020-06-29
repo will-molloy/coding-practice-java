@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 16:18. */
+/**
+ * PrimalityTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class PrimalityTest {
 
   @Test

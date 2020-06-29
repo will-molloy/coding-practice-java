@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-06-28.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/path-crossing>https://leetcode.com/problems/path-crossing/</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,8 @@ import java.util.Set;
  * <p>Extra memory: O(n)
  *
  * <p>Key: Duplicate detection; track previous locations in set.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1496PathCrossing {
 

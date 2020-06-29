@@ -6,7 +6,11 @@ import com.google.common.collect.ImmutableList;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-12. */
+/**
+ * P107BinaryTreeLevelOrderTraversal2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P107BinaryTreeLevelOrderTraversal2Test {
 
   private final P107BinaryTreeLevelOrderTraversal2 fun = new P107BinaryTreeLevelOrderTraversal2();

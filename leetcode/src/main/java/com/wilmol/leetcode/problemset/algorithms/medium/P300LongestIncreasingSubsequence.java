@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-increasing-subsequence>https://leetcode.com/problems/longest-increasing-subsequence</a>
  *
  * <p>Runtime: O(n<sup>2</sup>)
@@ -18,6 +16,7 @@ import java.util.Arrays;
  * @see P368LargestDivisibleSubset
  * @see P673NumberOfLongestIncreasingSubsequence
  * @see P873LengthOfLongestFibonacciSequence
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P300LongestIncreasingSubsequence {
 

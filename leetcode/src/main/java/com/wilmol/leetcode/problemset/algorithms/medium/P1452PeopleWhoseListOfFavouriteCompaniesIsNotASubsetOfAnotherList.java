@@ -7,9 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list>https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/</a>
  *
  * <p>Runtime: O(n * n * m * s) (n = outer list size, m = inner list size, s = string size)
@@ -17,6 +15,8 @@ import java.util.stream.Collectors;
  * <p>Extra space: O(n * m * s)
  *
  * <p>Key: Convert lists to sets to make contains check faster.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList {
 

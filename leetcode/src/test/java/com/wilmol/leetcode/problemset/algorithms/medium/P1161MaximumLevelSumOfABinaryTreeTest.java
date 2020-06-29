@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-16. */
+/**
+ * P1161MaximumLevelSumOfABinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1161MaximumLevelSumOfABinaryTreeTest {
 
   private final P1161MaximumLevelSumOfABinaryTree fun = new P1161MaximumLevelSumOfABinaryTree();

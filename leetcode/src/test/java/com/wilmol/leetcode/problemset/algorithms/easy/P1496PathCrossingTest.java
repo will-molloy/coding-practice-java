@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-28. */
+/**
+ * P1496PathCrossingTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1496PathCrossingTest {
 
   private final P1496PathCrossing p1496 = new P1496PathCrossing();

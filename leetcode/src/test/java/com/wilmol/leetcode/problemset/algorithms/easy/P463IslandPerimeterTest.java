@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P463IslandPerimeterTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P463IslandPerimeterTest {
 
   private final P463IslandPerimeter p463 = new P463IslandPerimeter();

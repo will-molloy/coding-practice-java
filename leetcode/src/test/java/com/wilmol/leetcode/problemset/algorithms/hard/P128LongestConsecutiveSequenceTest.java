@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-03-13. */
+/**
+ * P128LongestConsecutiveSequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P128LongestConsecutiveSequenceTest {
 
   private final P128LongestConsecutiveSequence fun = new P128LongestConsecutiveSequence();

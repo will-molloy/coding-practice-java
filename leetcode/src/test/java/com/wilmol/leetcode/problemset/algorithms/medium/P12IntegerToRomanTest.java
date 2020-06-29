@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-15 at 20:59. */
+/**
+ * P12IntegerToRomanTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P12IntegerToRomanTest {
 
   private final P12IntegerToRoman function = new P12IntegerToRoman();

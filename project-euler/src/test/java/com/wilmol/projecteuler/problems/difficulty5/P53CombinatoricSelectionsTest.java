@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-22 at 3:55 PM. */
+/**
+ * P53CombinatoricSelectionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P53CombinatoricSelectionsTest {
 
   @Test

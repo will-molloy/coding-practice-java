@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-13. */
+/**
+ * P402RemoveKDigitsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P402RemoveKDigitsTest {
 
   private final P402RemoveKDigits p402 = new P402RemoveKDigits();

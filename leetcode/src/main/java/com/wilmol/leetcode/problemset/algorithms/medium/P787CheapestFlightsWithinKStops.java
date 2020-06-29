@@ -10,10 +10,10 @@ import java.util.Queue;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-06-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/cheapest-flights-within-k-stops>https://leetcode.com/problems/cheapest-flights-within-k-stops/</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P787CheapestFlightsWithinKStops {
 

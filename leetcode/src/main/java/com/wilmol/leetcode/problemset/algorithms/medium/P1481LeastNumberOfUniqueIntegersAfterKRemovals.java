@@ -7,9 +7,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-06-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals>https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/</a>
  *
  * <p>Runtime: O(n log(n))
@@ -17,6 +15,8 @@ import java.util.stream.Collectors;
  * <p>Extra space: O(n)
  *
  * <p>Key: Greedily remove those with least frequency first.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1481LeastNumberOfUniqueIntegersAfterKRemovals {
 

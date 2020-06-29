@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-19. */
+/**
+ * P52NQueens2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P52NQueens2Test {
 
   private final P52NQueens2 fun = new P52NQueens2();

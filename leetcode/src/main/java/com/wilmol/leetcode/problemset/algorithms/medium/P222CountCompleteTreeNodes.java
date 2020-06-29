@@ -4,9 +4,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
 import java.util.function.UnaryOperator;
 
 /**
- * Created by wilmol on 2020-04-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-complete-tree-nodes>https://leetcode.com/problems/count-complete-tree-nodes</a>
  *
  * <p>Runtime: O((log(n))<sup>2</sup>)
@@ -14,6 +12,8 @@ import java.util.function.UnaryOperator;
  * <p>Space: O(log(n))
  *
  * <p>Key: recursive step: can simply add num nodes in left and right subtrees
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P222CountCompleteTreeNodes {
 

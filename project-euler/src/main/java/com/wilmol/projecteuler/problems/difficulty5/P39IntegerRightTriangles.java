@@ -4,11 +4,11 @@ import java.util.Comparator;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-19 at 7:54 PM.
- *
- * <p><a href=https://projecteuler.net/problem=39>https://projecteuler.net/problem=39</a>
+ * <a href=https://projecteuler.net/problem=39>https://projecteuler.net/problem=39</a>
  *
  * <p>Runtime: O(n ^ 3)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P39IntegerRightTriangles {
 

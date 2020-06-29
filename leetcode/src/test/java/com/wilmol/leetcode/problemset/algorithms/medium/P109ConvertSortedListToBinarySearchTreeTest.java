@@ -6,7 +6,11 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-14. */
+/**
+ * P109ConvertSortedListToBinarySearchTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P109ConvertSortedListToBinarySearchTreeTest {
 
   private final P109ConvertSortedListToBinarySearchTree fun =

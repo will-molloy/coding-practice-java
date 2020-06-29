@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Will on 2019-07-23 at 20:46.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/generate-parentheses>https://leetcode.com/problems/generate-parentheses</a>
  *
  * <p>Runtime: TODO O() ?? some x^n
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P22GenerateParentheses {
 

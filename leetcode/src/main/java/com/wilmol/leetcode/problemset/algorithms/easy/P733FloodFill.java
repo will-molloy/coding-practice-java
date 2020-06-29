@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a href=https://leetcode.com/problems/flood-fill>https://leetcode.com/problems/flood-fill/</a>
+ * <a href=https://leetcode.com/problems/flood-fill>https://leetcode.com/problems/flood-fill/</a>
  *
  * <p>Runtime: O(rows * cols)
  *
@@ -16,6 +14,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P130SurroundedRegions
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P695MaxAreaOfIsland
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P733FloodFill {
 

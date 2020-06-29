@@ -8,14 +8,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Created by will on 2019-04-22 at 8:25 PM.
- *
- * <p><a href=https://projecteuler.net/problem=78>https://projecteuler.net/problem=78</a>
+ * <a href=https://projecteuler.net/problem=78>https://projecteuler.net/problem=78</a>
  *
  * <p>Runtime: O(n * sqrt(n)) - inner loop generates k proportional to sqrt(n) see: <a
  * href=https://en.wikipedia.org/wiki/Partition_function_(number_theory)#Recurrence_relations>https://en.wikipedia.org/wiki/Partition_function_(number_theory)#Recurrence_relations</a>
  *
  * @see P31CoinSums
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P78CoinPartitions {
 

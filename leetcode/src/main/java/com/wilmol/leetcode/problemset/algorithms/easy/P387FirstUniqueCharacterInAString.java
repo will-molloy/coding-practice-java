@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/first-unique-character-in-a-string>https://leetcode.com/problems/first-unique-character-in-a-string/</a>
  *
  * <p>Runtime: O(n)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: It is the <b>index</b> of the <b>first</b> unique character. Not the character. Not any
  * unique character.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P387FirstUniqueCharacterInAString {
 

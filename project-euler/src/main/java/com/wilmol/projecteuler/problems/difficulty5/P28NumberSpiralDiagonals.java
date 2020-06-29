@@ -4,13 +4,12 @@ import com.google.common.base.Preconditions;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=28>https://projecteuler.net/problem=28</a>
+ * <a href=https://projecteuler.net/problem=28>https://projecteuler.net/problem=28</a>
  *
  * <p>Runtime: O(n)
  *
  * @see P58SpiralPrimes
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P28NumberSpiralDiagonals {
   int sumDiagonals(int n) {

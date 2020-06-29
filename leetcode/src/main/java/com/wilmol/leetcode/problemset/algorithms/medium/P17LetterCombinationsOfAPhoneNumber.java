@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Will on 2019-07-21 at 15:22.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/letter-combinations-of-a-phone-number>https://leetcode.com/problems/letter-combinations-of-a-phone-number</a>
  *
  * <p>Runtime: O(3 ^ n * 4 ^ m) - n = num digits mapping to 3 letters, m = num digits mapping to 4
@@ -19,6 +17,8 @@ import java.util.Map;
  * <p>E.g. "23" -> 9 combinations (3 ^ 2)
  *
  * <p>E.g.2 "27" -> 12 combinations (3 ^ 1 * 4 ^ 1)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P17LetterCombinationsOfAPhoneNumber {
 

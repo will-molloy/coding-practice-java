@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-12. */
+/**
+ * P108ConvertSortedArrayToBinarySearchTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P108ConvertSortedArrayToBinarySearchTreeTest {
 
   private final P108ConvertSortedArrayToBinarySearchTree fun =

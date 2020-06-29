@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by will on 2019-04-14 at 7:35 PM. */
+/**
+ * P33DigitCancellingFractionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P33DigitCancellingFractionsTest {
 
   @Test

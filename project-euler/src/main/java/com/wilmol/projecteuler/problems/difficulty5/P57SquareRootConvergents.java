@@ -6,11 +6,11 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by Will on 2019-05-19 at 16:56.
- *
- * <p><a href=https://projecteuler.net/problem=57>https://projecteuler.net/problem=57</a>
+ * <a href=https://projecteuler.net/problem=57>https://projecteuler.net/problem=57</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P57SquareRootConvergents {
 

@@ -10,7 +10,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2019-09-22. */
+/**
+ * CountTripletsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 @Timeout(value = 1)
 class CountTripletsTest {
 

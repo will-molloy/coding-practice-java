@@ -1,11 +1,11 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-01.
- *
- * <p><a href=https://leetcode.com/problems/powx-n>https://leetcode.com/problems/powx-n</a>
+ * <a href=https://leetcode.com/problems/powx-n>https://leetcode.com/problems/powx-n</a>
  *
  * <p>Key: knowledge of math, recursion, memoization of sub problem solution, ultimately dp
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P50PowXn {
 

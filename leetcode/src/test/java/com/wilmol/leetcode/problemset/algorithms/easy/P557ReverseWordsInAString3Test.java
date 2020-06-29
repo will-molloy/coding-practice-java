@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-25. */
+/**
+ * P557ReverseWordsInAString3Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P557ReverseWordsInAString3Test {
 
   private final P557ReverseWordsInAString3 p557 = new P557ReverseWordsInAString3();

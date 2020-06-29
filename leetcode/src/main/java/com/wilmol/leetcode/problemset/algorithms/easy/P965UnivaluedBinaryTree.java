@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-05-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/univalued-binary-tree>https://leetcode.com/problems/univalued-binary-tree/</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Extra space: O(h)
  *
  * <p>Key: dfs helper method.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P965UnivaluedBinaryTree {
 

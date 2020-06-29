@@ -5,15 +5,15 @@ import java.util.Deque;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-03-04.
- *
- * <p><a href=https://leetcode.com/problems/min-stack>https://leetcode.com/problems/min-stack</a>
+ * <a href=https://leetcode.com/problems/min-stack>https://leetcode.com/problems/min-stack</a>
  *
  * <p>Runtime: see methods
  *
  * <p>Space: O(n)
  *
  * <p>Key: priority queue to track minimum
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P155MinStack {
 

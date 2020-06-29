@@ -11,7 +11,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P18and67MaximumPathSumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P18and67MaximumPathSumTest {
 
   private final P18and67MaximumPathSum maximumPathSum = new P18and67MaximumPathSum();

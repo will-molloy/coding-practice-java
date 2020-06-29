@@ -5,7 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-11. */
+/**
+ * P59SpiralMatrix2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P59SpiralMatrix2Test {
 
   private final P59SpiralMatrix2 fun = new P59SpiralMatrix2();

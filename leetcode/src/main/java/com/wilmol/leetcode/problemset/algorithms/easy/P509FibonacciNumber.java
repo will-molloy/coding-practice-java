@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-12-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/fibonacci-number>https://leetcode.com/problems/fibonacci-number</a>
  *
  * <p>Runtime: O(n) TODO can be O(1) with mathematical formula, see leetcode solution page
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * @see com.wilmol.dsa.dp.Fibonacci
  * @see P1137NthTribonacciNumber
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P509FibonacciNumber {
 

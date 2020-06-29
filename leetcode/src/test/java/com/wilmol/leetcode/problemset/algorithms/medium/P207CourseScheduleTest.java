@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-29. */
+/**
+ * P207CourseScheduleTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P207CourseScheduleTest {
 
   private final P207CourseSchedule p207 = new P207CourseSchedule();

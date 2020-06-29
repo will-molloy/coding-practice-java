@@ -3,10 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-04-13.
- *
- * <p><a
- * href=https://leetcode.com/problems/coin-change>https://leetcode.com/problems/coin-change</a>
+ * <a href=https://leetcode.com/problems/coin-change>https://leetcode.com/problems/coin-change</a>
  *
  * <p>Runtime: O(coins * n)
  *
@@ -18,6 +15,7 @@ import java.util.Arrays;
  * dp[i]} without risk of overflows.
  *
  * @see P518CoinChange2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P322CoinChange {
 

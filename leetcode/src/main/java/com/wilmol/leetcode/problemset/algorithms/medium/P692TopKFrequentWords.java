@@ -12,9 +12,7 @@ import java.util.function.ToLongFunction;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2020-05-26.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/top-k-frequent-words>https://leetcode.com/problems/top-k-frequent-words/</a>
  *
  * <p>Runtime: O(n + n log(k) + k) = O(n log(k))
@@ -25,6 +23,7 @@ import java.util.stream.Collectors;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
  * @see P973KClosestPointsToOrigin
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P692TopKFrequentWords {
 

@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/subarray-sum-equals-k>https://leetcode.com/problems/subarray-sum-equals-k</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ import java.util.Map;
  * <p>Key: Prefix sums, in particular [l, r] = [0, r] - [0, l).
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable.PrefixSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P560SubarraySumEqualsK {
 

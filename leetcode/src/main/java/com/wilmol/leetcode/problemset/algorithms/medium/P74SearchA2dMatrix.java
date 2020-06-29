@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/search-a-2d-matrix>https://leetcode.com/problems/search-a-2d-matrix</a>
  *
  * <p>Runtime: O(log nm)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1)
  *
  * <p>Key: treating as 1d array; formula to deconstruct 'index' into 'rowIndex' and 'colIndex'
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P74SearchA2dMatrix {
 

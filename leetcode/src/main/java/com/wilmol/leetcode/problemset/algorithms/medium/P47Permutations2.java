@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2019-12-01.
- *
- * <p>Input can have duplicates, results should be unique.
+ * Input can have duplicates, results should be unique.
  *
  * <p><a
  * href=https://leetcode.com/problems/permutations-ii>https://leetcode.com/problems/permutations-ii</a>
@@ -20,6 +18,7 @@ import java.util.List;
  * <p>TODO can make various optimisations... but would still be O(n!)
  *
  * @see P46Permutations
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P47Permutations2 {
 

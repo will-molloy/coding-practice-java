@@ -5,11 +5,11 @@ import static com.wilmol.projecteuler.common.Maths.factorial;
 import java.math.BigInteger;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=15>https://projecteuler.net/problem=15</a>
+ * <a href=https://projecteuler.net/problem=15>https://projecteuler.net/problem=15</a>
  *
  * <p>Runtime: O((n + m) * n * m)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P15LatticePaths {
 

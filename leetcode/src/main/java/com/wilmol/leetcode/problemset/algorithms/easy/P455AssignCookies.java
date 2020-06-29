@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/assign-cookies>https://leetcode.com/problems/assign-cookies/</a>
  *
  * <p>Runtime: O(n log(n))
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(1)
  *
  * <p>Key: Sort the inputs so greedy approach can be used.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P455AssignCookies {
 

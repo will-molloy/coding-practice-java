@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/to-lower-case>https://leetcode.com/problems/to-lower-case/</a>
  *
  * <p>Difficulty: Easy.
@@ -14,6 +12,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: {@code - 'A' + 'a'} will add the difference of upper/lower case ascii value and therefore
  * shifts the ascii value from upper to lower case.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P709ToLowerCase {
 

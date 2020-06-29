@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-05-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree>https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/</a>
  *
  * <p>Runtime: O(n)
@@ -15,6 +13,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * <p>Key: Palindrome permutation if at most one odd frequency.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P409LongestPalindrome
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1457PseudoPalindromicPathsInABinaryTree {
 

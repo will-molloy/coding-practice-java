@@ -10,9 +10,7 @@ import java.util.Queue;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-04-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/jump-game-iv>https://leetcode.com/problems/jump-game-iv/</a>
  *
  * <p>Difficulty: Hard.
@@ -26,6 +24,7 @@ import java.util.Set;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P55JumpGame
  * @see P45JumpGame2
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1306JumpGame3
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1345JumpGame4 {
 

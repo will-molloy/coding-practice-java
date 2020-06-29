@@ -7,7 +7,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by Will on 2019-07-23 at 20:29. */
+/**
+ * P21MergeTwoSortedListsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P21MergeTwoSortedListsTest {
 
   @ParameterizedTest

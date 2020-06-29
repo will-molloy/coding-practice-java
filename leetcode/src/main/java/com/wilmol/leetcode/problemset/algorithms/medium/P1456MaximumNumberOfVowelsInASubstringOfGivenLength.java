@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length>https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Extra space: O(1)
  *
  * <p>Key: Sliding window.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1456MaximumNumberOfVowelsInASubstringOfGivenLength {
 

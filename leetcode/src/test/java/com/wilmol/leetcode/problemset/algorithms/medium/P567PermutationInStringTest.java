@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-18. */
+/**
+ * P567PermutationInStringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P567PermutationInStringTest {
 
   private final P567PermutationInString p567 = new P567PermutationInString();

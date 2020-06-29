@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-13 at 15:50.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-integer>https://leetcode.com/problems/reverse-integer</a>
  *
  * <p>Runtime: O(n) (num digits in n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P7ReverseInteger {
 

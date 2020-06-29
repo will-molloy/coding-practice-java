@@ -6,11 +6,11 @@ import java.util.function.Supplier;
 import java.util.stream.LongStream;
 
 /**
- * Created by Will on 16/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=4>https://projecteuler.net/problem=4</a>
+ * <a href=https://projecteuler.net/problem=4>https://projecteuler.net/problem=4</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P4LargestPalindromeProduct {
 

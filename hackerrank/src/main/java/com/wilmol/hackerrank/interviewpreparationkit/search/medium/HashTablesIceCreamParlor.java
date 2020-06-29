@@ -4,14 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2019-09-09.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search>https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search</a>
  *
  * <p>Runtime: O(n)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P1TwoSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class HashTablesIceCreamParlor {
 

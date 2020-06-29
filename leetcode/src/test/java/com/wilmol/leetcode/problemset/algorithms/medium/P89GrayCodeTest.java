@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-07. */
+/**
+ * P89GrayCodeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P89GrayCodeTest {
 
   private final P89GrayCode func = new P89GrayCode();

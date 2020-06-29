@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-01-20.
- *
- * <p><a
- * href=https://leetcode.com/problems/combinations>https://leetcode.com/problems/combinations</a>
+ * <a href=https://leetcode.com/problems/combinations>https://leetcode.com/problems/combinations</a>
  *
  * <p>Runtime: TODO O()
  *
  * <p>Space: O(n!/k!(n-k)!)
  *
  * <p>Key: permutations algorithm, (recursive backtracking, DFS)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P77Combinations {
 

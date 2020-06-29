@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-25. */
+/**
+ * P297SerializeAndDeserializeBinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P297SerializeAndDeserializeBinaryTreeTest {
 
   private final P297SerializeAndDeserializeBinaryTree p297 =

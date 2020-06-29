@@ -7,7 +7,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2019-08-29. */
+/**
+ * P42TrappingRainWaterTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P42TrappingRainWaterTest {
 
   @ParameterizedTest

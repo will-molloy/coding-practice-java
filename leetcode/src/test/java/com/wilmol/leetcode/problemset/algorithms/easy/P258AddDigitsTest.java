@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-12. */
+/**
+ * P258AddDigitsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P258AddDigitsTest {
 
   private final P258AddDigits fun = new P258AddDigits();

@@ -7,9 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/possible-bipartition>https://leetcode.com/problems/possible-bipartition/</a>
  *
  * <p>Runtime: O(n + d) - creating adj list is O(d), DFS is O(n + d)
@@ -21,6 +19,7 @@ import java.util.Set;
  *
  * @see P207CourseSchedule
  * @see P785IsGraphBipartite
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P886PossibleBipartition {
 

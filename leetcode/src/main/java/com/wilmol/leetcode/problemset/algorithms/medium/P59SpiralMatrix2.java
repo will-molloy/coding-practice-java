@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/spiral-matrix-ii>https://leetcode.com/problems/spiral-matrix-ii</a>
  *
  * <p>Runtime: O(n*n)
@@ -11,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: going extra on top and right borders so final elements are filled in
  *
  * @see P54SpiralMatrix
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P59SpiralMatrix2 {
 

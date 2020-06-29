@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-13. */
+/**
+ * P67AddBinaryTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P67AddBinaryTest {
 
   private final P67AddBinary func = new P67AddBinary();

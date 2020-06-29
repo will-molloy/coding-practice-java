@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/max-area-of-island>https://leetcode.com/problems/max-area-of-island/</a>
  *
  * <p>Runtime: O(rows * cols)
@@ -15,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * @see P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P695MaxAreaOfIsland {
 

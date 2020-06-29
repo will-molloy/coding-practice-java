@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-20 at 3:37 PM.
- *
- * <p><a href=https://projecteuler.net/problem=46>https://projecteuler.net/problem=46</a>
+ * <a href=https://projecteuler.net/problem=46>https://projecteuler.net/problem=46</a>
  *
  * <p>Runtime: none
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P46GoldbachsOtherConjecture {
 

@@ -10,7 +10,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-06-08. */
+/**
+ * P977SquaresOfASortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P977SquaresOfASortedArrayTest {
 
   private final P977SquaresOfASortedArray p977 = new P977SquaresOfASortedArray();

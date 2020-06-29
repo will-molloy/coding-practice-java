@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-04. */
+/**
+ * P1342NumberOfStepsToReduceANumberToZeroTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1342NumberOfStepsToReduceANumberToZeroTest {
 
   private final P1342NumberOfStepsToReduceANumberToZero fun =

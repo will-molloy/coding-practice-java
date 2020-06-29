@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Created by wilmol on 2020-06-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/two-city-scheduling>https://leetcode.com/problems/two-city-scheduling/</a>
  *
  * <p>Runtime: O(n * log(n))
@@ -14,6 +12,8 @@ import java.util.Comparator;
  * <p>Extra space: O(1)
  *
  * <p>Key: Sort first so greedy approach can be used.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1029TwoCityScheduling {
 

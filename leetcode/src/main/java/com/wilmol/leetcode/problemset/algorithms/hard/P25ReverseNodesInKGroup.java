@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-07-25 at 20:10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-nodes-in-k-group>https://leetcode.com/problems/reverse-nodes-in-k-group</a>
  *
  * <p>Runtime: O(n) - does not scale with k, larger k means fewer recursive calls
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P25ReverseNodesInKGroup {
 

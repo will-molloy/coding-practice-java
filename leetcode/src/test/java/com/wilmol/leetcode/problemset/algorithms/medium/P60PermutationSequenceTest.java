@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-12-14. */
+/**
+ * P60PermutationSequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P60PermutationSequenceTest {
 
   private final P60PermutationSequence fun = new P60PermutationSequence();

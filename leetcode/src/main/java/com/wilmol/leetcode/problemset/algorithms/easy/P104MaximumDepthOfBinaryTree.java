@@ -5,10 +5,10 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Created by wilmol on 2020-02-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-depth-of-binary-tree>https://leetcode.com/problems/maximum-depth-of-binary-tree</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P104MaximumDepthOfBinaryTree {
 

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-01-21. */
+/**
+ * P78SubsetsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P78SubsetsTest {
 
   private final P78Subsets fun = new P78Subsets();

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.hackerrank.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 24/03/2019. */
+/**
+ * HeightOfBinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class HeightOfBinaryTreeTest {
 
   @Test

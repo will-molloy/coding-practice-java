@@ -3,12 +3,12 @@ package com.wilmol.hackerrank.interviewpreparationkit.linkedlists.easy;
 import com.wilmol.hackerrank.common.SinglyLinkedListNode;
 
 /**
- * Created by Will on 26/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists>https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=linked-lists</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class DetectACycle {
 

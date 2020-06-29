@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by Will on 2019-07-13 at 21:18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/palindrome-number>https://leetcode.com/problems/palindrome-number</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P9PalindromeNumber {
 

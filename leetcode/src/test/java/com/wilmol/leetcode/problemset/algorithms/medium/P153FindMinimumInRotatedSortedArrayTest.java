@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-13. */
+/**
+ * P153FindMinimumInRotatedSortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P153FindMinimumInRotatedSortedArrayTest {
 
   private final P153FindMinimumInRotatedSortedArray fun = new P153FindMinimumInRotatedSortedArray();

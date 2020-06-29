@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-12.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/unique-paths-ii>https://leetcode.com/problems/unique-paths-ii</a>
  *
  * <p>Runtime: O(numRows * numCols), Space: O(numRows * numCols)
@@ -15,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P64MinimumPathSum
  * @see P120Triangle
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P63UniquePaths2 {
 

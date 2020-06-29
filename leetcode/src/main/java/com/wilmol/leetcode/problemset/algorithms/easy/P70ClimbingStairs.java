@@ -1,14 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-12-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/climbing-stairs>https://leetcode.com/problems/climbing-stairs</a>
  *
  * <p>Key: dynamic programming, fibonacci sequence
  *
  * @see com.wilmol.dsa.dp.Fibonacci
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P70ClimbingStairs {
 

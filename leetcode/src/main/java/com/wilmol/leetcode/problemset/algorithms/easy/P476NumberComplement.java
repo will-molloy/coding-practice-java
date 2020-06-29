@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/number-complement>https://leetcode.com/problems/number-complement/</a>
  *
  * <p>Runtime: O(bitLength(num))
@@ -13,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Converting decimal to binary; you get the bits (from the remainders) in reverse order.
  *
  * @see P1009ComplementOfBase10Integer
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P476NumberComplement {
 

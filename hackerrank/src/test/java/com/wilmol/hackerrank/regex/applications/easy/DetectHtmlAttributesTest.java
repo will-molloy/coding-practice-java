@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-10-19. */
+/**
+ * DetectHtmlAttributesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class DetectHtmlAttributesTest {
 
   @Test

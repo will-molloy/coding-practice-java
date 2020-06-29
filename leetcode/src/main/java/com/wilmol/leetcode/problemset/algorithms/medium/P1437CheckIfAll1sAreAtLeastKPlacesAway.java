@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away>https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/</a>
  *
  * <p>Runtime: O(n)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: Not sure why the problem description shows gaps between all 1s; the answer only depends
  * on gaps between adjacent 1s (so only need to track most recent 1 in a single pass solution).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1437CheckIfAll1sAreAtLeastKPlacesAway {
 

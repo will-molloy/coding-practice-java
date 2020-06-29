@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-16. */
+/**
+ * P523ContinuousSubarraySumTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P523ContinuousSubarraySumTest {
   private final P523ContinuousSubarraySum fun = new P523ContinuousSubarraySum();
 

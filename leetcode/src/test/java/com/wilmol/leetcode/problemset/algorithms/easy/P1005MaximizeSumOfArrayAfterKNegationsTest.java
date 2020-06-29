@@ -6,7 +6,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-04-16. */
+/**
+ * P1005MaximizeSumOfArrayAfterKNegationsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1005MaximizeSumOfArrayAfterKNegationsTest {
 
   @ParameterizedTest

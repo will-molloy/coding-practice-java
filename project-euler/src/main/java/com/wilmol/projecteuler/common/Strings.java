@@ -6,12 +6,11 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p>Common string functions
+ * Common string functions.
  *
  * @see java.lang.String
  * @see com.google.common.base.Strings
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class Strings {
 

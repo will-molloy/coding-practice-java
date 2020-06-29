@@ -14,12 +14,11 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p>Common math functions
+ * Common math functions.
  *
  * @see java.lang.Math
  * @see com.google.common.math
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class Maths {
 

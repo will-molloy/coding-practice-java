@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-04-05.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sort-an-array>https://leetcode.com/problems/sort-an-array</a>
  *
  * <p>Runtime: O(n<sup>2</sup>) (worst case quick sort - array is already sorted)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Space: O(1)
  *
  * <p>Key: using indices in a consistent manner - e.g. always inclusive/exclusive
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P914SortAnArray {
 

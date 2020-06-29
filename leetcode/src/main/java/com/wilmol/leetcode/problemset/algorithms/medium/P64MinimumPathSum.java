@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-15.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-path-sum>https://leetcode.com/problems/minimum-path-sum</a>
  *
  * <p>Key: dynamic programming TODO shortest path algorithm (graph) is faster?
@@ -12,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P63UniquePaths2
  * @see P120Triangle
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P64MinimumPathSum {
 

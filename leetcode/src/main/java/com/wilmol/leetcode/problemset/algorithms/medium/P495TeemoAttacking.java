@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/teemo-attacking>https://leetcode.com/problems/teemo-attacking/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * per attack by definition.
  *
  * @see P56MergeIntervals
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P495TeemoAttacking {
 

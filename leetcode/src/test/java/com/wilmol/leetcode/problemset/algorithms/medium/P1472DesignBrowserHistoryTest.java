@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.medium.P1472DesignBrowserHistory.BrowserHistory;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-08. */
+/**
+ * P1472DesignBrowserHistoryTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1472DesignBrowserHistoryTest {
 
   @Test

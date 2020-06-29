@@ -1,10 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-12-11.
- *
- * <p><a
- * href=https://leetcode.com/problems/unique-paths>https://leetcode.com/problems/unique-paths</a>
+ * <a href=https://leetcode.com/problems/unique-paths>https://leetcode.com/problems/unique-paths</a>
  *
  * <p>Key: dynamic programming
  *
@@ -12,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P64MinimumPathSum
  * @see P120Triangle
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P62UniquePaths {
 

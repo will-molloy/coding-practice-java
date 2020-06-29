@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-09. */
+/**
+ * P98ValidateBinarySearchTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P98ValidateBinarySearchTreeTest {
 
   private final P98ValidateBinarySearchTree fun = new P98ValidateBinarySearchTree();

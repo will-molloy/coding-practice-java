@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-04. */
+/**
+ * P1347MinimumNumberOfStepsToMakeTwoStringsAnagramTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1347MinimumNumberOfStepsToMakeTwoStringsAnagramTest {
 
   private final P1347MinimumNumberOfStepsToMakeTwoStringsAnagram fun =

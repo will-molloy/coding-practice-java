@@ -6,7 +6,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-05-24. */
+/**
+ * P986IntervalListIntersectionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P986IntervalListIntersectionsTest {
 
   @ParameterizedTest

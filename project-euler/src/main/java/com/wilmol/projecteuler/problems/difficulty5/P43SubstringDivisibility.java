@@ -3,11 +3,11 @@ package com.wilmol.projecteuler.problems.difficulty5;
 import com.wilmol.projecteuler.common.Strings;
 
 /**
- * Created by will on 2019-04-20 at 11:49 AM.
- *
- * <p><a href=https://projecteuler.net/problem=43>https://projecteuler.net/problem=43</a>
+ * <a href=https://projecteuler.net/problem=43>https://projecteuler.net/problem=43</a>
  *
  * <p>Runtime: none
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P43SubstringDivisibility {
 

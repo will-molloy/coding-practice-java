@@ -6,11 +6,11 @@ import java.util.function.Supplier;
 import java.util.stream.IntStream;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=29>https://projecteuler.net/problem=29</a>
+ * <a href=https://projecteuler.net/problem=29>https://projecteuler.net/problem=29</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P29DistinctPowers {
 

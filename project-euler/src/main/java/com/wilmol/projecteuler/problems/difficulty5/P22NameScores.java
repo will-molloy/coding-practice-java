@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=22>https://projecteuler.net/problem=22</a>
+ * <a href=https://projecteuler.net/problem=22>https://projecteuler.net/problem=22</a>
  *
  * <p>Runtime: O(n log n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P22NameScores {
 

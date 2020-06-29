@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2019-12-14.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii>https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,7 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>Key: helper method with recursive call to skip runs of duplicates, even if differing value
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P83RemoveDuplicatesFromSortedList
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P82RemoveDuplicatesFromSortedList2 {
 

@@ -21,15 +21,14 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by Will on 2019-03-30 at 15:59.
- *
- * <p><a href=https://projecteuler.net/problem=81>https://projecteuler.net/problem=81</a>
+ * <a href=https://projecteuler.net/problem=81>https://projecteuler.net/problem=81</a>
  *
  * <p>Runtime: TODO
  *
  * @see P81PathSumTwoWays
  * @see P82PathSumThreeWays
  * @see P83PathSumFourWays
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 public final class P81PathSumTwoWays {
 

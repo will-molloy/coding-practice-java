@@ -1,14 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by Will on 2019-07-27 at 22:16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii>https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii</a>
  *
  * <p>Runtime: O(n), O(1) extra memory
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P26RemoveDuplicatesFromSortedArray
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P80RemoveDuplicatesFromSortedArray2 {
 

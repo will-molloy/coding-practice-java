@@ -12,9 +12,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by wilmol on 2019-10-20.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/uk-and-us/problem>https://www.hackerrank.com/challenges/uk-and-us/problem</a>
  *
  * <p>Runtime: O(s + w)
@@ -23,6 +21,7 @@ import java.util.stream.Collectors;
  *
  * @see com.wilmol.hackerrank.regex.applications.medium.FindAWord
  * @see UkAndUsPart2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class TheBritishAndAmericanStyleOfSpelling {
 

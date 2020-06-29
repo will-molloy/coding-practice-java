@@ -6,9 +6,7 @@ import java.util.PriorityQueue;
 import java.util.function.ToIntFunction;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/the-k-strongest-values-in-an-array>https://leetcode.com/problems/the-k-strongest-values-in-an-array/</a>
  *
  * <p>Runtime: O(n * log(n))
@@ -16,6 +14,8 @@ import java.util.function.ToIntFunction;
  * <p>Extra space: O(k)
  *
  * <p>Key: Sort first to get median.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1471TheKStrongestValuesInAnArray {
 

@@ -8,11 +8,11 @@ import java.util.stream.IntStream;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by Will on 23/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=27>https://projecteuler.net/problem=27</a>
+ * <a href=https://projecteuler.net/problem=27>https://projecteuler.net/problem=27</a>
  *
  * <p>Runtime: O(a * b)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P27QuadraticPrimes {
 

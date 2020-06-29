@@ -5,9 +5,7 @@ import static java.lang.Math.max;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximal-square>https://leetcode.com/problems/maximal-square/</a>
  *
  * <p>Difficulty: Medium.
@@ -19,6 +17,7 @@ import java.util.stream.IntStream;
  * <p>Key: Tracking side length in the dp (since it's a square).
  *
  * @see P1277CountSquareSubmatricesWithAllOnes
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P221MaximalSquare {
 

@@ -6,11 +6,11 @@ import static com.google.common.primitives.Ints.join;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-21 at 2:31 PM.
- *
- * <p><a href=https://projecteuler.net/problem=49>https://projecteuler.net/problem=49</a>
+ * <a href=https://projecteuler.net/problem=49>https://projecteuler.net/problem=49</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P49PrimePermutations {
 

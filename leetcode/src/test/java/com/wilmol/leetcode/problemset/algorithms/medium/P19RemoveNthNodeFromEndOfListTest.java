@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-21 at 19:53. */
+/**
+ * P19RemoveNthNodeFromEndOfListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P19RemoveNthNodeFromEndOfListTest {
 
   private P19RemoveNthNodeFromEndOfList function = new P19RemoveNthNodeFromEndOfList();

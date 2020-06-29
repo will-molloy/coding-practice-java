@@ -4,9 +4,7 @@ import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
- * Created by wilmol on 2020-04-26.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/merge-two-binary-trees>https://leetcode.com/problems/merge-two-binary-trees/</a>
  *
  * <p>Difficulty: Easy.
@@ -16,6 +14,8 @@ import java.util.StringJoiner;
  * <p>Space: O(min(height(t1), height(t2))) (stops at first null subtree)
  *
  * <p>Key: Think about just one node.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P617MergeTwoBinaryTrees {
 
@@ -34,6 +34,7 @@ class P617MergeTwoBinaryTrees {
     return t1;
   }
 
+  /** TreeNode. */
   static class TreeNode {
     int val;
     TreeNode left;

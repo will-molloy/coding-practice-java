@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-13 at 16:04. */
+/**
+ * P8StringToIntegerAtoiTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P8StringToIntegerAtoiTest {
 
   private final P8StringToIntegerAtoi function = new P8StringToIntegerAtoi();

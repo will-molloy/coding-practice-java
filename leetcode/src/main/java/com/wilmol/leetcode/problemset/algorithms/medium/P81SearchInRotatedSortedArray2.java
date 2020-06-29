@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-02-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/search-in-rotated-sorted-array-ii>https://leetcode.com/problems/search-in-rotated-sorted-array-ii</a>
  *
  * <p>Runtime: O(lg n)
@@ -13,6 +11,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: either left or right side must be sorted ..?
  *
  * @see P33SearchInRotatedSortedArray
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P81SearchInRotatedSortedArray2 {
 

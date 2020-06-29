@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-27. */
+/**
+ * P1306JumpGame3Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1306JumpGame3Test {
 
   private final P1306JumpGame3 p1306 = new P1306JumpGame3();

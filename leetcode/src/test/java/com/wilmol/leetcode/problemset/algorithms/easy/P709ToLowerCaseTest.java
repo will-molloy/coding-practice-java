@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P709ToLowerCaseTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P709ToLowerCaseTest {
 
   private final P709ToLowerCase p709 = new P709ToLowerCase();

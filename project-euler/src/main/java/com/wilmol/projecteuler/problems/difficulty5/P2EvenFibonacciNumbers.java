@@ -1,11 +1,11 @@
 package com.wilmol.projecteuler.problems.difficulty5;
 
 /**
- * Created by Will on 16/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=2>https://projecteuler.net/problem=2</a>
+ * <a href=https://projecteuler.net/problem=2>https://projecteuler.net/problem=2</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P2EvenFibonacciNumbers {
 

@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-06-28.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k>https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/</a>
  *
  * <p>Runtime: O(n)
@@ -29,6 +27,7 @@ import java.util.Map;
  * <p>So for {@code a = 1}, check equal number of {@code b = 5 - 1 = 4}. Etc.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P1TwoSum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1497CheckIfArrayPairsAreDivisibleByK {
 

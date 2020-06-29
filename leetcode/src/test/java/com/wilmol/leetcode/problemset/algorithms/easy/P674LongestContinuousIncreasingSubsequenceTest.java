@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-14. */
+/**
+ * P674LongestContinuousIncreasingSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P674LongestContinuousIncreasingSubsequenceTest {
 
   private final P674LongestContinuousIncreasingSubsequence fun =

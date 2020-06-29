@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2020-05-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/destination-city>https://leetcode.com/problems/destination-city/</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,8 @@ import java.util.Set;
  *
  * <p>Key: Answer is set difference of all cities - origin cities. Guaranteed to be single
  * destination city. (I.e. no need to simulate the process of traversing some graph.)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1436DestinationCity {
 

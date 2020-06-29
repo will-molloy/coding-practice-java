@@ -5,11 +5,11 @@ import java.util.OptionalLong;
 import java.util.stream.LongStream;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=12>https://projecteuler.net/problem=12</a>
+ * <a href=https://projecteuler.net/problem=12>https://projecteuler.net/problem=12</a>
  *
  * <p>Runtime: O(n * sqrt(n))
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P12HighlyDivisibleTriangleNumber {
   public OptionalLong apply(long divisorsAbove) {

@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-24. */
+/**
+ * P191NumberOf1BitsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P191NumberOf1BitsTest {
 
   private final P191NumberOf1Bits p191 = new P191NumberOf1Bits();

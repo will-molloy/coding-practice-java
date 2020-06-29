@@ -3,14 +3,14 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.math.BigInteger;
 
 /**
- * Created by wilmol on 2019-11-30.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/multiply-strings>https://leetcode.com/problems/multiply-strings</a>
  *
  * <p>Runtime: O(nm)
  *
  * <p>Key: cheat and use bigint TODO supposed to implement multiplication algorithm!
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P43MultiplyStrings {
 

@@ -4,12 +4,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 2019-07-13 at 16:03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/string-to-integer-atoi>https://leetcode.com/problems/string-to-integer-atoi</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P8StringToIntegerAtoi {
 

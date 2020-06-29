@@ -7,12 +7,11 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wilmol on 2019-08-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/combination-sum>https://leetcode.com/problems/combination-sum</a>
  *
  * @see P40CombinationSum2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P39CombinationSum {
 

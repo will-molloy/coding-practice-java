@@ -10,9 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-06-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-common-characters>https://leetcode.com/problems/find-common-characters/</a>
  *
  * <p>Runtime: O(n)
@@ -20,6 +18,8 @@ import java.util.stream.IntStream;
  * <p>Extra space: O(n)
  *
  * <p>Key: Compute minimum character frequency.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1002FindCommonCharacters {
 

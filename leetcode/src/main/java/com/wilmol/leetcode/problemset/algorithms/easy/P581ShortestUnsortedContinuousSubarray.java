@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-18.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/shortest-unsorted-continuous-subarray>https://leetcode.com/problems/shortest-unsorted-continuous-subarray</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Was able to use two-pointer approach to find where array stops increasing (from the left)
  * and where array stops decreasing (from the right). Was missing finding insertion location for
  * min/max element which covers the case when elements are equal.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P581ShortestUnsortedContinuousSubarray {
 

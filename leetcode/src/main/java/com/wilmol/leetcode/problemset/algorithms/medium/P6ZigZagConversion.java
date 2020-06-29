@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 
 /**
- * Created by Will on 2019-07-13 at 14:45.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/zigzag-conversion>https://leetcode.com/problems/zigzag-conversion</a>
  *
  * <p>Runtime: O(n) - one pass on characters in {@code s}
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P6ZigZagConversion {
 

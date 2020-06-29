@@ -6,7 +6,11 @@ import java.util.stream.IntStream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-25 at 21:55. */
+/**
+ * P707DesignLinkedListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P707DesignLinkedListTest {
 
   private P707DesignLinkedList linkedList;

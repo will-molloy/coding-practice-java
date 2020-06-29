@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-18. */
+/**
+ * P51NQueensTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P51NQueensTest {
 
   private final P51NQueens fun = new P51NQueens();

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/jewels-and-stones>https://leetcode.com/problems/jewels-and-stones</a>
  *
  * <p>Runtime: O(j + s)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: lookup table
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P771JewelsAndStones {
 

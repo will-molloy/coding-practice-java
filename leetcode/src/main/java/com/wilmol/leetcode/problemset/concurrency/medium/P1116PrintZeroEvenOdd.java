@@ -4,12 +4,12 @@ import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
- * Created by Will on 2019-07-19 at 20:58.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/print-zero-even-odd>https://leetcode.com/problems/print-zero-even-odd</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1116PrintZeroEvenOdd {
 

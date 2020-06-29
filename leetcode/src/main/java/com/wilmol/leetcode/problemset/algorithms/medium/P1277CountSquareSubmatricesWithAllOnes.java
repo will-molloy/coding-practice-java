@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import static java.lang.Math.min;
 
 /**
- * Created by wilmol on 2020-05-21.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/count-square-submatrices-with-all-ones>https://leetcode.com/problems/count-square-submatrices-with-all-ones/</a>
  *
  * <p>Difficulty: Medium.
@@ -18,6 +16,7 @@ import static java.lang.Math.min;
  * P221MaximalSquare}) and realising that adding these side lengths is the answer.
  *
  * @see P221MaximalSquare
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1277CountSquareSubmatricesWithAllOnes {
 

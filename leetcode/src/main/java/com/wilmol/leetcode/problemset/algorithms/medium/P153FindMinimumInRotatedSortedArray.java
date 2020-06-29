@@ -1,14 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-08-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-minimum-in-rotated-sorted-array>https://leetcode.com/problems/find-minimum-in-rotated-sorted-array</a>
  *
  * <p>Runtime: O(log n)
  *
  * @see P33SearchInRotatedSortedArray
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P153FindMinimumInRotatedSortedArray {
 

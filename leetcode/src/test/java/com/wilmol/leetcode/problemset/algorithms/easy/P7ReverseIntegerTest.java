@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-13 at 15:51. */
+/**
+ * P7ReverseIntegerTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P7ReverseIntegerTest {
 
   private final P7ReverseInteger function = new P7ReverseInteger();

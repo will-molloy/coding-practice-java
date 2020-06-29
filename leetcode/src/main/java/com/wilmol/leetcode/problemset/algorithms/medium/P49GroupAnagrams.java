@@ -8,14 +8,14 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Created by wilmol on 2019-11-03.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/group-anagrams>https://leetcode.com/problems/group-anagrams/</a>
  *
  * <p>Runtime: O(n), memory trade-off made using hashmap.
  *
  * <p>Key: group -> grouping by -> indicates hashmap, just need to figure out the key.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P49GroupAnagrams {
 

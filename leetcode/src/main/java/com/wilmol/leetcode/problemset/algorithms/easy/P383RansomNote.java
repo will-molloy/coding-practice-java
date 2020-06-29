@@ -1,16 +1,15 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-03.
- *
- * <p><a
- * href=https://leetcode.com/problems/ransom-note>https://leetcode.com/problems/ransom-note/</a>
+ * <a href=https://leetcode.com/problems/ransom-note>https://leetcode.com/problems/ransom-note/</a>
  *
  * <p>Runtime: O(ransomNote + magazine)
  *
  * <p>Extra space: O(1) (fixed sized array used)
  *
  * <p>Key: Count frequency of letters.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P383RansomNote {
 

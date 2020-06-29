@@ -4,16 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-02-08.
- *
- * <p><a
- * href=https://leetcode.com/problems/decode-ways>https://leetcode.com/problems/decode-ways</a>
+ * <a href=https://leetcode.com/problems/decode-ways>https://leetcode.com/problems/decode-ways</a>
  *
  * <p>Runtime: O(n)
  *
  * <p>Space: O(n)
  *
  * <p>Key: dynamic programming
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P91DecodeWays {
 

@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons>https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/</a>
  *
  * <p>Runtime: O(n log(n))
@@ -17,6 +15,7 @@ import java.util.Comparator;
  *
  * @see <a href=https://en.wikipedia.org/wiki/Activity_selection_problem>Activity selection problem
  *     (classic greedy algorithm problem)</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P452MinimumNumberOfArrowsToBurstBalloons {
 

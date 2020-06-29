@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sum-of-left-leaves>https://leetcode.com/problems/sum-of-left-leaves</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  * or update within sub problems (then base case needs to be the current sum)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1315SumOfNodesWithEvenValuedGrandparent
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P404SumOfLeftLeaves {
 

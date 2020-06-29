@@ -4,9 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2019-10-06.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting>https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting</a>
  *
  * <p>Runtime: O(nd) (heap remove specific element is O(n))
@@ -15,6 +13,7 @@ import java.util.PriorityQueue;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P480SlidingWindowMedian (TODO its in the old
  *     project but not here)
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class FraudulentActivityNotifications {
 

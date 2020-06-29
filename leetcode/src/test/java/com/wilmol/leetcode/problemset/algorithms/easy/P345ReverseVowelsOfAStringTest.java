@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-25. */
+/**
+ * P345ReverseVowelsOfAStringTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P345ReverseVowelsOfAStringTest {
 
   private final P345ReverseVowelsOfAString p345 = new P345ReverseVowelsOfAString();

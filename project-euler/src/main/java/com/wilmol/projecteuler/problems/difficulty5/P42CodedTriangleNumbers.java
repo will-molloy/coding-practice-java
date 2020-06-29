@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * Created by will on 2019-04-20 at 11:21 AM.
- *
- * <p><a href=https://projecteuler.net/problem=42>https://projecteuler.net/problem=42</a>
+ * <a href=https://projecteuler.net/problem=42>https://projecteuler.net/problem=42</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P42CodedTriangleNumbers {
 

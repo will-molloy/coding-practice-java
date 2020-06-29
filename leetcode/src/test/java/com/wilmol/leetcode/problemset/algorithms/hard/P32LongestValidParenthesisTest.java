@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-11. */
+/**
+ * P32LongestValidParenthesisTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P32LongestValidParenthesisTest {
 
   private final P32LongestValidParenthesis fun = new P32LongestValidParenthesis();

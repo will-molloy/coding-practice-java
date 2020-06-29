@@ -8,14 +8,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by wilmol on 2019-09-15.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/utopian-identification-number/problem>https://www.hackerrank.com/challenges/utopian-identification-number/problem</a>
  *
  * <p>Runtime: O(n)
  *
  * @see AlienUserName
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class UtopianIdentificationNumber {
 

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.Arrays;
 
 /**
- * Created by wilmol on 2020-06-09.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/height-checker>https://leetcode.com/problems/height-checker/</a>
  *
  * <p>Runtime: O(n * log(n))
@@ -13,6 +11,8 @@ import java.util.Arrays;
  * <p>Extra space: O(n)
  *
  * <p>Key: Copy, sort and compare.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1051HeightChecker {
 

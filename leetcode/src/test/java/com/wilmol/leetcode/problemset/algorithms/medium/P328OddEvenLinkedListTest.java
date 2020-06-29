@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-16. */
+/**
+ * P328OddEvenLinkedListTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P328OddEvenLinkedListTest {
 
   private final P328OddEvenLinkedList p328 = new P328OddEvenLinkedList();

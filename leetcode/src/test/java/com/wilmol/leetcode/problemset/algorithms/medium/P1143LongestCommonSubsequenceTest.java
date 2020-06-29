@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-21. */
+/**
+ * P1143LongestCommonSubsequenceTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1143LongestCommonSubsequenceTest {
   private final P1143LongestCommonSubsequence p1143 = new P1143LongestCommonSubsequence();
 

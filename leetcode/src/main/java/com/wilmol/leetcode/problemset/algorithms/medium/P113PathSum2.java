@@ -5,10 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-17.
- *
- * <p><a
- * href=https://leetcode.com/problems/path-sum-ii>https://leetcode.com/problems/path-sum-ii</a>
+ * <a href=https://leetcode.com/problems/path-sum-ii>https://leetcode.com/problems/path-sum-ii</a>
  *
  * <p>Runtime: O(n)
  *
@@ -16,6 +13,8 @@ import java.util.List;
  * (full tree) O(height*width) ???
  *
  * <p>Key: A leaf is a node with no children. Knowing when to copy temporary data.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P113PathSum2 {
 

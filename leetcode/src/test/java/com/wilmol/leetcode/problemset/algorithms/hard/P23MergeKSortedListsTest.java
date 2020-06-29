@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-23 at 21:37. */
+/**
+ * P23MergeKSortedListsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P23MergeKSortedListsTest {
 
   private final P23MergeKSortedLists fun = new P23MergeKSortedLists();

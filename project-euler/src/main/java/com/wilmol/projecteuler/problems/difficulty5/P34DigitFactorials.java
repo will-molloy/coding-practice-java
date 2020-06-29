@@ -10,13 +10,12 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 /**
- * Created by will on 2019-04-18 at 9:54 PM.
- *
- * <p><a href=https://projecteuler.net/problem=34>https://projecteuler.net/problem=34</a>
+ * <a href=https://projecteuler.net/problem=34>https://projecteuler.net/problem=34</a>
  *
  * <p>Runtime: no input, no scaling
  *
  * @see P30DigitNPowers
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P34DigitFactorials {
 

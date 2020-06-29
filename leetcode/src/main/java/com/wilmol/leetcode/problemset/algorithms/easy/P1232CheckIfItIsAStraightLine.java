@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
- * Created by wilmol on 2020-05-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/check-if-it-is-a-straight-line>https://leetcode.com/problems/check-if-it-is-a-straight-line/</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,8 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * <p>Key: Declare variables as {@code double} before division to avoid divide by zero errors.
  * ({@code double} returns infinity, while {@code int} throws an {@link ArithmeticException}.)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @SuppressFBWarnings("FE_FLOATING_POINT_EQUALITY")
 class P1232CheckIfItIsAStraightLine {

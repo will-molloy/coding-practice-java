@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-24.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping>https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/</a>
  *
  * <p>Difficulty: Easy.
@@ -13,6 +11,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(n)
  *
  * <p>Key: Greedy, look ahead for '#' since it must be processed.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1309DecryptStringFromAlphabetToIntegerMapping {
 

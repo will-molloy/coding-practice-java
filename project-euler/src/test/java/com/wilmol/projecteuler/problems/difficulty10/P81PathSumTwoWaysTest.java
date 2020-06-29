@@ -8,7 +8,11 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-03-30 at 15:59. */
+/**
+ * P81PathSumTwoWaysTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 public class P81PathSumTwoWaysTest {
 
   private static final int[][] MATRIX_5X5 = {

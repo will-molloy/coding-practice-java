@@ -3,12 +3,12 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by Will on 2019-03-30 at 21:43.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/invert-binary-tree>https://leetcode.com/problems/invert-binary-tree</a>
  *
  * <p>Runtime: O(n) - see each node once
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P226InvertBinaryTree {
 

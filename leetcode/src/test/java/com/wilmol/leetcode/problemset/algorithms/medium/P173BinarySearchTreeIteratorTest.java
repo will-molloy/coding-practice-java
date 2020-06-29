@@ -6,7 +6,11 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
 import com.wilmol.leetcode.problemset.algorithms.medium.P173BinarySearchTreeIterator.BstIterator;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-17. */
+/**
+ * P173BinarySearchTreeIteratorTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P173BinarySearchTreeIteratorTest {
 
   @Test

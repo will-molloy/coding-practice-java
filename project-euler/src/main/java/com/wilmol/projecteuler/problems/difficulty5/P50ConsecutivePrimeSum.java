@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * Created by will on 2019-04-21 at 2:48 PM.
- *
- * <p><a href=https://projecteuler.net/problem=50>https://projecteuler.net/problem=50</a>
+ * <a href=https://projecteuler.net/problem=50>https://projecteuler.net/problem=50</a>
  *
  * <p>Runtime: O(n ^ 2)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P50ConsecutivePrimeSum {
 

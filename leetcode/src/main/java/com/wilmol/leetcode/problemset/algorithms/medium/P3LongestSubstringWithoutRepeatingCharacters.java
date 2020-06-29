@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by Will on 2019-07-04 at 21:40.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/longest-substring-without-repeating-characters>https://leetcode.com/problems/longest-substring-without-repeating-characters</a>
  *
  * <p>Runtime: O(n) - single pass on s
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P3LongestSubstringWithoutRepeatingCharacters {
 

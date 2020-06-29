@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-09. */
+/**
+ * P93RestoreIpAddressesTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P93RestoreIpAddressesTest {
 
   private final P93RestoreIpAddresses func = new P93RestoreIpAddresses();

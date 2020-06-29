@@ -5,12 +5,12 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.IntConsumer;
 
 /**
- * Created by wilmol on 2019-09-20.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/fizz-buzz-multithreaded>https://leetcode.com/problems/fizz-buzz-multithreaded</a>
  *
  * <p>Runtime: O(n) (all solutions)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1195FizzBuzzMultithreaded {
 

@@ -11,7 +11,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-05-24. */
+/**
+ * P1457PseudoPalindromicPathsInABinaryTreeTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1457PseudoPalindromicPathsInABinaryTreeTest {
 
   @ParameterizedTest

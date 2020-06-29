@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P1447SimplifiedFractionsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1447SimplifiedFractionsTest {
 
   private final P1447SimplifiedFractions p1447 = new P1447SimplifiedFractions();

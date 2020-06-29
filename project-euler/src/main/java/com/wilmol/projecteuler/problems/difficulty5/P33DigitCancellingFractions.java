@@ -9,11 +9,11 @@ import java.util.stream.IntStream;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by will on 2019-04-14 at 7:35 PM.
- *
- * <p><a href=https://projecteuler.net/problem=33>https://projecteuler.net/problem=33</a>
+ * <a href=https://projecteuler.net/problem=33>https://projecteuler.net/problem=33</a>
  *
  * <p>Runtime: doesn't scale, no input
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P33DigitCancellingFractions {
 

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.problemset.algorithms.medium.P133CloneGraph.Node;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-03. */
+/**
+ * P133CloneGraphTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P133CloneGraphTest {
 
   private final P133CloneGraph p133 = new P133CloneGraph();

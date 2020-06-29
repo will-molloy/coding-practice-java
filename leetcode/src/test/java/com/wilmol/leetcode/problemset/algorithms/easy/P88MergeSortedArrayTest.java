@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-03. */
+/**
+ * P88MergeSortedArrayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P88MergeSortedArrayTest {
 
   private final P88MergeSortedArray fun = new P88MergeSortedArray();

@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-05-10.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/find-the-town-judge>https://leetcode.com/problems/find-the-town-judge/</a>
  *
  * <p>Runtime: O(n + t)
@@ -14,6 +12,8 @@ import java.util.Map;
  * <p>Extra space: O(n)
  *
  * <p>Key: Node degree.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P997FindTheTownJudge {
 

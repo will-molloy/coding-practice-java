@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-14. */
+/**
+ * P785IsGraphBipartiteTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P785IsGraphBipartiteTest {
 
   private final P785IsGraphBipartite p785 = new P785IsGraphBipartite();

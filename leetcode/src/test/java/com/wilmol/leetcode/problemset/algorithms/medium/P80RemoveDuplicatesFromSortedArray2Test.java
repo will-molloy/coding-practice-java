@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.primitives.Ints;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 2019-07-27 at 22:17. */
+/**
+ * P80RemoveDuplicatesFromSortedArray2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P80RemoveDuplicatesFromSortedArray2Test {
 
   private final P80RemoveDuplicatesFromSortedArray2 fun = new P80RemoveDuplicatesFromSortedArray2();

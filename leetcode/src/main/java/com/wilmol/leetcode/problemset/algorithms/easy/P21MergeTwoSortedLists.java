@@ -3,12 +3,11 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by Will on 2019-07-22 at 19:45.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/merge-two-sorted-lists>https://leetcode.com/problems/merge-two-sorted-lists/</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P23MergeKSortedLists
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P21MergeTwoSortedLists {
 

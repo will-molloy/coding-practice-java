@@ -1,10 +1,10 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-05-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/sort-array-by-parity>https://leetcode.com/problems/sort-array-by-parity/</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P905SortArrayByParity {
 

@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/shuffle-the-array>https://leetcode.com/problems/shuffle-the-array/</a>
  *
  * <p>Runtime: O(n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Extra space: O(n)
  *
  * <p>Key: Two pointers.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1470ShuffleTheArray {
 

@@ -4,9 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wilmol on 2020-04-13.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/contiguous-array>https://leetcode.com/problems/contiguous-array</a>
  *
  * <p>Runtime: O(n)
@@ -19,6 +17,7 @@ import java.util.Map;
  * (excluding that first element).
  *
  * @see P523ContinuousSubarraySum
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P525ContiguousArray {
 

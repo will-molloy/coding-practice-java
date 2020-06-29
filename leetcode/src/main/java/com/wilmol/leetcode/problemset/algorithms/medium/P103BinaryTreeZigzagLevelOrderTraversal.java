@@ -7,9 +7,7 @@ import java.util.Deque;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-02-11.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal>https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal</a>
  *
  * <p>Runtime: O(n)
@@ -23,6 +21,7 @@ import java.util.List;
  * ordering between levels but without reaching depth.
  *
  * @see P102BinaryTreeLevelOrderTraversal
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P103BinaryTreeZigzagLevelOrderTraversal {
 

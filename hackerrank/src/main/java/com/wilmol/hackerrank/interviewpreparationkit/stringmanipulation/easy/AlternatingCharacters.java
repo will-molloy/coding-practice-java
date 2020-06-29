@@ -1,14 +1,14 @@
 package com.wilmol.hackerrank.interviewpreparationkit.stringmanipulation.easy;
 
 /**
- * Created by Will on 30/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings</a>
  *
  * <p>Return number of deletions such that the string has no matching adjacent characters.
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class AlternatingCharacters {
 

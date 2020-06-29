@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2019-12-01.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximum-subarray>https://leetcode.com/problems/maximum-subarray</a>
  *
  * <p>Runtime: O(n)
@@ -14,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * @see <a href=https://www.youtube.com/watch?v=umt7t1_X8Rc>Errichto's video</a>
  * @see <a href=https://en.wikipedia.org/wiki/Maximum_subarray_proble>Kadane's algorithm</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P53MaximumSubarray {
 

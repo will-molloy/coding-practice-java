@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
 /**
- * Created by wilmol on 2020-04-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/jump-game-ii>https://leetcode.com/problems/jump-game-ii/</a>
  *
  * <p>Difficulty: Hard.
@@ -19,6 +17,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P55JumpGame
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1306JumpGame3
  * @see P1345JumpGame4
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P45JumpGame2 {
 

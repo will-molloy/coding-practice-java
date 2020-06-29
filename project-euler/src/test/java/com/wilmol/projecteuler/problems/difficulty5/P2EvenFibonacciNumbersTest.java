@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 16/03/2019. */
+/**
+ * P2EvenFibonacciNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P2EvenFibonacciNumbersTest {
 
   @Test

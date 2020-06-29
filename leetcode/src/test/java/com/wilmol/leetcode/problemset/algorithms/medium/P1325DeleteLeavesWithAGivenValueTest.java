@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-04-04. */
+/**
+ * P1325DeleteLeavesWithAGivenValueTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1325DeleteLeavesWithAGivenValueTest {
 
   private final P1325DeleteLeavesWithAGivenValue fun = new P1325DeleteLeavesWithAGivenValue();

@@ -5,14 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-04-27.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/diagonal-traverse>https://leetcode.com/problems/diagonal-traverse/</a>
  *
  * <p>Difficulty: Medium.
  *
  * @see P1424DiagonalTraverse2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P498DiagonalTraverse {
 

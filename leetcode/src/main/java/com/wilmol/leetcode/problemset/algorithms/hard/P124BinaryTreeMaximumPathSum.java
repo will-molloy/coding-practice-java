@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-02-23.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/binary-tree-maximum-path-sum>https://leetcode.com/problems/binary-tree-maximum-path-sum/</a>
  *
  * <p>Runtime: O(n)
@@ -16,6 +14,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * @see <a href=https://youtu.be/bm0q6huoriY>Errichto's video</a>
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P687LongestUnivaluePath
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P124BinaryTreeMaximumPathSum {
 

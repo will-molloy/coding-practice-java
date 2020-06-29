@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/largest-triangle-area>https://leetcode.com/problems/largest-triangle-area</a>
  *
  * <p>Runtime: O(n<sup>3</sup>)
@@ -12,6 +10,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: <a href=https://en.wikipedia.org/wiki/Shoelace_formula>Formula to compute polygon area
  * given cartesian coordinates.</a>
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P812LargestTriangleArea {
 

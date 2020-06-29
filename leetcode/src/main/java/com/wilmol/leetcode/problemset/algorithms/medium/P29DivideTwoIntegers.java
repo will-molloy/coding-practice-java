@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2019-08-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/divide-two-integers>https://leetcode.com/problems/divide-two-integers</a>
  *
  * <p>Runtime: TODO O()
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P29DivideTwoIntegers {
 

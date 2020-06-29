@@ -6,7 +6,11 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-/** Created by wilmol on 2020-04-13. */
+/**
+ * P518CoinChange2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P518CoinChange2Test {
 
   @ParameterizedTest

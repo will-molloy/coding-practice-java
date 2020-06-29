@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /**
- * Created by wilmol on 2020-04-16.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/maximize-sum-of-array-after-k-negations>https://leetcode.com/problems/maximize-sum-of-array-after-k-negations</a>
  *
  * <p>Key: Sort/min heap to get access to smallest values first.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1005MaximizeSumOfArrayAfterKNegations {
 

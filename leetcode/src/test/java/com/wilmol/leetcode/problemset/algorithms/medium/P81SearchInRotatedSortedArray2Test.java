@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-02-02. */
+/**
+ * P81SearchInRotatedSortedArray2Test.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P81SearchInRotatedSortedArray2Test {
 
   private final P81SearchInRotatedSortedArray2 fun = new P81SearchInRotatedSortedArray2();

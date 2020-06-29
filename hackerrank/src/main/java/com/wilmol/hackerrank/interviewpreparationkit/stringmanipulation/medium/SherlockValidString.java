@@ -10,12 +10,12 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by Will on 30/03/2019.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings</a>
  *
  * <p>Runtime: O(n)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class SherlockValidString {
 

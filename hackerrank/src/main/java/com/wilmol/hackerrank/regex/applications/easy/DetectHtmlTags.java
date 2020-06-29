@@ -10,15 +10,14 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * Created by Will on 2019-04-07 at 11:38.
- *
- * <p><a
+ * <a
  * href=https://www.hackerrank.com/challenges/detect-html-tags/problem>https://www.hackerrank.com/challenges/detect-html-tags/problem</a>
  *
  * <p>Runtime: O(n)
  *
  * @see DetectHtmlAttributes
  * @see com.wilmol.hackerrank.regex.applications.medium.DetectHtmlLinks
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class DetectHtmlTags {
 

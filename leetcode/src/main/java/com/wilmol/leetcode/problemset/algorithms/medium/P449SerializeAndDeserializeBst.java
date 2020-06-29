@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 
 /**
- * Created by wilmol on 2020-04-17.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/serialize-and-deserialize-bst>https://leetcode.com/problems/serialize-and-deserialize-bst</a>
  *
  * <p>Key: Pretty standard to use recursion to traverse/build tree. So I'd say the key thing was
@@ -14,6 +12,7 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P606ConstructStringFromBinaryTree
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P449SerializeAndDeserializeBst {
 

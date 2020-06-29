@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2019-08-20. */
+/**
+ * P38CountAndSayTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P38CountAndSayTest {
 
   private final P38CountAndSay fun = new P38CountAndSay();

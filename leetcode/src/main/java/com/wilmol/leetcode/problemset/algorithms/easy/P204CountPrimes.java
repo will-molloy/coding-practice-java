@@ -3,10 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 import java.util.stream.IntStream;
 
 /**
- * Created by wilmol on 2020-04-12.
- *
- * <p><a
- * href=https://leetcode.com/problems/count-primes>https://leetcode.com/problems/count-primes</a>
+ * <a href=https://leetcode.com/problems/count-primes>https://leetcode.com/problems/count-primes</a>
  *
  * <p>Runtime: O(n log log n)
  *
@@ -17,6 +14,7 @@ import java.util.stream.IntStream;
  *
  * @see <a
  *     href=https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes>https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a>
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P204CountPrimes {
 

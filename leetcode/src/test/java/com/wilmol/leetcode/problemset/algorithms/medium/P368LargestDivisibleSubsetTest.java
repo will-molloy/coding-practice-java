@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-06-14. */
+/**
+ * P368LargestDivisibleSubsetTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P368LargestDivisibleSubsetTest {
 
   private final P368LargestDivisibleSubset p368 = new P368LargestDivisibleSubset();

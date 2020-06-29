@@ -3,11 +3,11 @@ package com.wilmol.projecteuler.problems.difficulty5;
 import com.wilmol.projecteuler.common.Maths;
 
 /**
- * Created by Will on 17/03/2019.
- *
- * <p><a href=https://projecteuler.net/problem=20>https://projecteuler.net/problem=20</a>
+ * <a href=https://projecteuler.net/problem=20>https://projecteuler.net/problem=20</a>
  *
  * <p>Runtime: O(n) (product and sum..)
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P20FactorialDigitSum {
 

@@ -5,7 +5,11 @@ import static com.google.common.truth.Truth.assertThat;
 import java.math.BigInteger;
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P15LatticePathsTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P15LatticePathsTest {
 
   private final P15LatticePaths latticePaths = new P15LatticePaths();

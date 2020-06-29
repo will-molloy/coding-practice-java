@@ -1,12 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-06-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/duplicate-zeros>https://leetcode.com/problems/duplicate-zeros/</a>
  *
  * <p>Key: First count how many shifts need to be performed and then shift (two passes).
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1089DuplicateZeros {
 

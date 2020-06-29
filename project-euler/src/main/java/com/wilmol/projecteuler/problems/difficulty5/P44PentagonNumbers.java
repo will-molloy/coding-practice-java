@@ -6,11 +6,11 @@ import java.util.stream.IntStream;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * Created by will on 2019-04-20 at 12:11 PM.
- *
- * <p><a href=https://projecteuler.net/problem=44>https://projecteuler.net/problem=44</a>
+ * <a href=https://projecteuler.net/problem=44>https://projecteuler.net/problem=44</a>
  *
  * <p>Runtime: none
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 final class P44PentagonNumbers {
 

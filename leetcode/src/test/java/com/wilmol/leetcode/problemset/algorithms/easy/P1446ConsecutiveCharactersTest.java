@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by wilmol on 2020-05-17. */
+/**
+ * P1446ConsecutiveCharactersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P1446ConsecutiveCharactersTest {
 
   private final P1446ConsecutiveCharacters p1446 = new P1446ConsecutiveCharacters();

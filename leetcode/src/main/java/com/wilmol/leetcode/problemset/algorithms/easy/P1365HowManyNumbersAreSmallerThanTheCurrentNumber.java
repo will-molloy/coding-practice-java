@@ -4,13 +4,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Created by wilmol on 2020-04-02.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number>https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number</a>
  *
  * <p>Key: reading the problem constraints and realising that there are only 101 possible values for
  * {@code nums[i]}.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
 

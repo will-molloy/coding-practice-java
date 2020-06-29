@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-02-08.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-linked-list-ii>https://leetcode.com/problems/reverse-linked-list-ii</a>
  *
  * <p>Runtime: O(n)
@@ -17,6 +15,7 @@ import com.wilmol.leetcode.common.ListNode;
  * to return tuple to achieve 1-pass requirement
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P206ReverseLinkedList
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P92ReverseLinkedList2 {
 

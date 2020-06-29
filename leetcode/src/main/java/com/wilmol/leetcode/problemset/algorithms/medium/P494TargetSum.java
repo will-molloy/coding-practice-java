@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 /**
- * Created by wilmol on 2020-05-04.
- *
- * <p><a href=https://leetcode.com/problems/target-sum>https://leetcode.com/problems/target-sum/</a>
+ * <a href=https://leetcode.com/problems/target-sum>https://leetcode.com/problems/target-sum/</a>
  *
  * <p>Runtime: O(2<sup>n</sup>)
  *
@@ -12,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: Sequence forms a binary tree.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P784LetterCasePermutation
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P494TargetSum {
 

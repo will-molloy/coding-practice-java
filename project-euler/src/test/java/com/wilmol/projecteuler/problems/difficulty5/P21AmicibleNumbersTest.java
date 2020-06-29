@@ -4,7 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/** Created by Will on 17/03/2019. */
+/**
+ * P21AmicibleNumbersTest.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
 class P21AmicibleNumbersTest {
 
   private final P21AmicibleNumbers amicibleNumbers = new P21AmicibleNumbers();

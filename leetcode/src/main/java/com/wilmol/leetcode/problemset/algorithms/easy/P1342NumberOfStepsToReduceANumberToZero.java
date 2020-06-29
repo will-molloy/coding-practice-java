@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-04.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero>https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero</a>
  *
  * <p>Runtime: O(log n)
@@ -11,6 +9,8 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Space: O(1)
  *
  * <p>Key: coding up problem steps
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1342NumberOfStepsToReduceANumberToZero {
 

@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by wilmol on 2020-01-21.
- *
- * <p><a href=https://leetcode.com/problems/subsets>https://leetcode.com/problems/subsets</a>
+ * <a href=https://leetcode.com/problems/subsets>https://leetcode.com/problems/subsets</a>
  *
  * <p>Runtime: O(2<sup>n</sup>)
  *
@@ -17,6 +15,7 @@ import java.util.List;
  * 'state' helped.
  *
  * @see P90Subsets2
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P78Subsets {
 

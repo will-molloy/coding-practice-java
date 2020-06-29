@@ -1,9 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 /**
- * Created by wilmol on 2020-04-25.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/reverse-string>https://leetcode.com/problems/reverse-string/</a>
  *
  * <p>Difficulty: Easy.
@@ -17,6 +15,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * @see P541ReverseString2
  * @see P557ReverseWordsInAString3
  * @see P345ReverseVowelsOfAString
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P344ReverseString {
 

@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import com.wilmol.leetcode.common.ListNode;
 
 /**
- * Created by wilmol on 2020-02-06.
- *
- * <p><a
+ * <a
  * href=https://leetcode.com/problems/partition-list>https://leetcode.com/problems/partition-list</a>
  *
  * <p>Runtime: O(n)
@@ -13,6 +11,8 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>Space: O(1)
  *
  * <p>Key: partition into two lists and join at the end, also dummy nodes to avoid null problems
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P86PartitionList {
 
