@@ -15,6 +15,9 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * had been changed.
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see P208ImplementTrie
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
+ * @see P720LongestWordInDictionary
  */
 class P676ImplementMagicDictionary {
 

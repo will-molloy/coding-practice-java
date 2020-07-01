@@ -6,9 +6,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Difficulty: Medium.
  *
- * <p>Key: Trie behaves like an n-ary tree. All traversals are DFS. {@link isLeaf} field is crucial.
+ * <p>Key: Trie behaves like an n-ary tree. All traversals are DFS. {@code isLeaf} field is crucial.
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
+ * @see P676ImplementMagicDictionary
+ * @see P720LongestWordInDictionary
  */
 class P208ImplementTrie {
 

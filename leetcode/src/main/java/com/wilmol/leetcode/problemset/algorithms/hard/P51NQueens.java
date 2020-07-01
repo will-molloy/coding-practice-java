@@ -18,6 +18,7 @@ import java.util.stream.IntStream;
  * if queens can be placed, don't bother checking row with queen already etc.).
  *
  * @see P37SudokuSolver
+ * @see P212WordSearch2
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1222QueensThatCanAttackTheKing
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

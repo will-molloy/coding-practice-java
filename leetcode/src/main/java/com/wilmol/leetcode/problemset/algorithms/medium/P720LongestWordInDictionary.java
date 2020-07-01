@@ -15,6 +15,9 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * leaf, so can return it directly rather than rebuilding words for each root to leaf path.
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see P208ImplementTrie
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
+ * @see P676ImplementMagicDictionary
  */
 class P720LongestWordInDictionary {
 

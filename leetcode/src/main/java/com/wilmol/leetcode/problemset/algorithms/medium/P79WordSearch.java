@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: got the DFS part. Marking node as unused as alternative to copying 'used' boolean array.
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
  */
 class P79WordSearch {
 

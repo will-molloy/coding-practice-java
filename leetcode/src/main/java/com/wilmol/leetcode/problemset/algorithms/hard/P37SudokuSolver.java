@@ -12,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * <p>Key: knowing that pure bruteforce (via. recursive backtracking) is fine for small inputs
  *
  * @see P51NQueens
+ * @see P212WordSearch2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P37SudokuSolver {
