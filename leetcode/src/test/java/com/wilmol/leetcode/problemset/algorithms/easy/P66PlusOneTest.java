@@ -1,7 +1,6 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -42,13 +41,5 @@ class P66PlusOneTest {
   void overflowCausesIncreaseInLength() {
     int[] digits = {9, 9, 9};
     assertThat(fun.plusOne(digits)).asList().containsExactly(1, 0, 0, 0).inOrder();
-  }
-
-  @Test
-  void greaterThan9IsIllegal() {
-    int[] digits = {9, 9, 10};
-    IllegalArgumentException thrown =
-        assertThrows(IllegalArgumentException.class, () -> fun.plusOne(digits));
-    assertThat(thrown).hasMessageThat().isEqualTo("Element > 9 at index 2 in array [9, 9, 10]");
   }
 }

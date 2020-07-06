@@ -1,7 +1,5 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
-import java.util.Arrays;
-
 /**
  * <a href=https://leetcode.com/problems/plus-one>https://leetcode.com/problems/plus-one</a>
  *
@@ -16,26 +14,28 @@ import java.util.Arrays;
 class P66PlusOne {
 
   public int[] plusOne(int[] digits) {
-    return plusOne(digits, digits.length - 1);
-  }
+    int n = digits.length;
 
-  private int[] plusOne(int[] digits, int i) {
-    if (i == -1) {
-      // must be array of 9s
-      int[] copy = new int[digits.length + 1];
-      copy[0] = 1;
-      return copy;
-    }
+    int carry = 0;
+    int add = 1;
+    for (int i = n - 1; i >= 0; i--) {
+      int sum = digits[i] + add + carry;
+      add = 0;
+      carry = sum % 9;
 
-    if (digits[i] < 9) {
-      digits[i] = digits[i] + 1;
-      return digits;
-    } else if (digits[i] == 9) {
-      digits[i] = 0;
-      return plusOne(digits, i - 1);
-    } else {
-      throw new IllegalArgumentException(
-          String.format("Element > 9 at index %s in array %s", i, Arrays.toString(digits)));
+      if (sum > 9) {
+        if (i == 0) {
+          int[] newArray = new int[n + 1];
+          newArray[0] = 1;
+          return newArray;
+        } else {
+          digits[i] = 0;
+        }
+      } else {
+        digits[i] = sum;
+        break;
+      }
     }
+    return digits;
   }
 }
