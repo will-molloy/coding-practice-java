@@ -1,7 +1,5 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
-import java.util.Arrays;
-
 /**
  * <a
  * href=https://leetcode.com/problems/island-perimeter>https://leetcode.com/problems/island-perimeter/</a>
@@ -18,60 +16,40 @@ import java.util.Arrays;
  */
 class P463IslandPerimeter {
 
-  // TODO there is a cleaner way using math, but was too lazy
+  private int sum;
 
   public int islandPerimeter(int[][] grid) {
-    int rows = grid.length;
-    int cols = grid[0].length;
-    for (int row = 0; row < rows; row++) {
-      for (int col = 0; col < cols; col++) {
+    sum = 0;
+    // find island
+    for (int row = 0; row < grid.length; row++) {
+      for (int col = 0; col < grid[0].length; col++) {
         if (grid[row][col] == 1) {
-          return dfs(grid, row, col, 0);
+          dfs(grid, row, col);
+          break;
         }
       }
     }
-    throw new IllegalArgumentException(Arrays.toString(grid));
+    return sum;
   }
 
-  private int dfs(int[][] grid, int row, int col, int perimeter) {
-    // invariant: grid[row][col] == 1
-
-    int rows = grid.length;
-    int cols = grid[0].length;
-
-    // mark cell as seen without marking it as water (otherwise incorrectly count extra)
-    grid[row][col] = 2;
-
-    // up
-    if (row > 0 && grid[row - 1][col] == 1) {
-      // island on this side
-      perimeter = dfs(grid, row - 1, col, perimeter);
-    } else if (row == 0 || grid[row - 1][col] == 0) {
-      // water on this side
-      perimeter++;
+  // for each island cell, count surrounding water cells, this is the perimeter
+  private void dfs(int[][] grid, int row, int col) {
+    if (row >= 0 && row < grid.length && col >= 0 && col < grid[0].length) {
+      if (grid[row][col] == 1) {
+        // unseen island
+        // mark seen with something other than island/water
+        grid[row][col] = 2;
+        dfs(grid, row + 1, col);
+        dfs(grid, row - 1, col);
+        dfs(grid, row, col + 1);
+        dfs(grid, row, col - 1);
+      } else if (grid[row][col] == 0) {
+        // water
+        sum++;
+      }
+    } else {
+      // out of bounds (water)
+      sum++;
     }
-
-    // down
-    if (row < rows - 1 && grid[row + 1][col] == 1) {
-      perimeter = dfs(grid, row + 1, col, perimeter);
-    } else if (row == rows - 1 || grid[row + 1][col] == 0) {
-      perimeter++;
-    }
-
-    // left
-    if (col > 0 && grid[row][col - 1] == 1) {
-      perimeter = dfs(grid, row, col - 1, perimeter);
-    } else if (col == 0 || grid[row][col - 1] == 0) {
-      perimeter++;
-    }
-
-    // right
-    if (col < cols - 1 && grid[row][col + 1] == 1) {
-      perimeter = dfs(grid, row, col + 1, perimeter);
-    } else if (col == cols - 1 || grid[row][col + 1] == 0) {
-      perimeter++;
-    }
-
-    return perimeter;
   }
 }
