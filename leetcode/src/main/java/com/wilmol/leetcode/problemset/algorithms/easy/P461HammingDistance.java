@@ -15,6 +15,7 @@ import java.util.stream.IntStream;
  * <p>Key: Convert to fixed length binary then count differing bits. Xor sum simplifies the
  * differing bits part.
  *
+ * @see P190ReverseBits
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P461HammingDistance {
