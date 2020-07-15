@@ -12,6 +12,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: Two pointers moving inwards.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P541ReverseString2
  * @see P557ReverseWordsInAString3
  * @see P345ReverseVowelsOfAString

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
  * <p>Key: Reverse word by word and join again. (Cheating? Otherwise reverse up to index of next
  * {@code ' '}.)
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P344ReverseString
  * @see P541ReverseString2
  * @see P345ReverseVowelsOfAString

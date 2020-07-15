@@ -13,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Reverse in chunks of size {@code k} (i.e. {@code [i, i + k)}). Can just use {@link
  * Math#min} to cover case where k covers the rest of the array.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P344ReverseString
  * @see P557ReverseWordsInAString3
  * @see P345ReverseVowelsOfAString
