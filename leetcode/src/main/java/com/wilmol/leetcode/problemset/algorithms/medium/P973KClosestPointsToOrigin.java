@@ -14,8 +14,9 @@ import java.util.PriorityQueue;
  * <p>Key: Priority queue (heap). Placing the furthest points at the top of the heap such that they
  * are evicted first.
  *
- * @see P692TopKFrequentWords
+ * @see P347TopKFrequentElements
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
+ * @see P692TopKFrequentWords
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P973KClosestPointsToOrigin {
