@@ -22,6 +22,7 @@ import java.util.Set;
  * traversed its neighbours.
  *
  * @see P210CourseSchedule2
+ * @see P332ReconstructItinerary
  * @see P785IsGraphBipartite
  * @see P886PossibleBipartition
  * @author <a href=https://wilmol.com>Will Molloy</a>
