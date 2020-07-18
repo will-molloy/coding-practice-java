@@ -13,6 +13,8 @@ import java.util.Map;
  *
  * <p>Key: DFS colouring algorithm.
  *
+ * @see P207CourseSchedule
+ * @see P210CourseSchedule2
  * @see P886PossibleBipartition
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

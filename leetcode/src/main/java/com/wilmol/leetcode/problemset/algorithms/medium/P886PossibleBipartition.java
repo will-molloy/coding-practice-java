@@ -18,6 +18,7 @@ import java.util.Set;
  * node.
  *
  * @see P207CourseSchedule
+ * @see P210CourseSchedule2
  * @see P785IsGraphBipartite
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

@@ -21,6 +21,8 @@ import java.util.Set;
  * O(n)) because it memoises the result; when a node is {@code DONE} we know we have already
  * traversed its neighbours.
  *
+ * @see P210CourseSchedule2
+ * @see P785IsGraphBipartite
  * @see P886PossibleBipartition
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
