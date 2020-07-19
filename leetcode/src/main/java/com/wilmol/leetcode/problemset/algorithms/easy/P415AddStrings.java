@@ -10,6 +10,9 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * <p>Key: Simulate process of adding decimal numbers. I.e. line up their ends and sum individual
  * digits with a carry.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
+ * @see P67AddBinary
+ * @see P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P415AddStrings {

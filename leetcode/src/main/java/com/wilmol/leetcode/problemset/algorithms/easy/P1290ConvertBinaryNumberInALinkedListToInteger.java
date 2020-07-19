@@ -12,6 +12,9 @@ import com.wilmol.leetcode.common.ListNode;
  *
  * <p>Key: Bubble up result from the end of the list (dfs/dp).
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
+ * @see P67AddBinary
+ * @see P415AddStrings
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1290ConvertBinaryNumberInALinkedListToInteger {

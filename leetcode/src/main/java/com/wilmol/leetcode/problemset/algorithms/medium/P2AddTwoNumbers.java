@@ -8,6 +8,10 @@ import com.wilmol.leetcode.common.ListNode;
  *
  * <p>Runtime: O(n + m) - single pass on each list
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P67AddBinary
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P415AddStrings
+ * @see
+ *     com.wilmol.leetcode.problemset.algorithms.easy.P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P2AddTwoNumbers {

@@ -7,96 +7,35 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(max(a, b))
  *
- * <p>Key: double pointer, one for each string, then step by step merge (very similar to merge sort)
+ * <p>Key: double pointer, one for each string, convert chars to digits and sum from back with
+ * carry.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
+ * @see P415AddStrings
+ * @see P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P67AddBinary {
 
   public String addBinary(String a, String b) {
     StringBuilder result = new StringBuilder();
-    int ai = a.length() - 1;
-    int bi = b.length() - 1;
-    int carry = 0;
-
-    // similar idea to merge sort
-
-    // exhaust first string
-    while (ai > -1 && bi > -1) {
-      char aChar = a.charAt(ai);
-      char bChar = b.charAt(bi);
-      if (aChar == '1' && bChar == '1') {
-        if (carry == 1) {
-          // 1 + 1 + 1 = 11
-          carry = 1;
-          result.insert(0, '1');
-        } else {
-          // 0 + 1 + 1 = 10
-          carry = 1;
-          result.insert(0, '0');
-        }
-      } else if (aChar == '1' || bChar == '1') {
-        if (carry == 1) {
-          // 1 + 1 + 0 = 10
-          carry = 1;
-          result.insert(0, '0');
-        } else {
-          // 0 + 1 + 0 = 01
-          carry = 0;
-          result.insert(0, '1');
-        }
-      } else {
-        if (carry == 1) {
-          // 0 + 0 + 1 = 01
-          carry = 0;
-          result.insert(0, '1');
-        } else {
-          // 0 + 0 + 0 = 00
-          carry = 0;
-          result.insert(0, '0');
-        }
-      }
-      ai--;
-      bi--;
-    }
-
-    // exhaust remaining string
-    carry = exhaust(a, result, ai, carry);
-    carry = exhaust(b, result, bi, carry);
-
-    // consider leading carry
-    if (carry == 1) {
-      result.insert(0, '1');
-    }
-
+    add(a, b, a.length() - 1, b.length() - 1, 0, result);
     return result.toString();
   }
 
-  private int exhaust(String s, StringBuilder result, int i, int carry) {
-    while (i > -1) {
-      if (s.charAt(i) == '1') {
-        if (carry == 1) {
-          // 1 + 1 = 10
-          carry = 1;
-          result.insert(0, '0');
-        } else {
-          // 0 + 1 = 01
-          carry = 0;
-          result.insert(0, '1');
-        }
-      } else {
-        if (carry == 1) {
-          // 1 + 0 = 01
-          carry = 0;
-          result.insert(0, '1');
-        } else {
-          // 0 + 0 = 00
-          carry = 0;
-          result.insert(0, '0');
-        }
-      }
-      i--;
+  private void add(String a, String b, int aI, int bI, int carry, StringBuilder result) {
+    if (aI < 0 && bI < 0 && carry == 0) {
+      return;
     }
-    return carry;
+
+    int aDigit = aI >= 0 ? Character.digit(a.charAt(aI--), 10) : 0;
+    int bDigit = bI >= 0 ? Character.digit(b.charAt(bI--), 10) : 0;
+    int sum = aDigit + bDigit + carry;
+    int remainder = sum % 2;
+    int quotient = sum / 2;
+
+    result.insert(0, remainder);
+
+    add(a, b, aI, bI, quotient, result);
   }
 }
