@@ -1,0 +1,30 @@
+package com.wilmol.leetcode.problemset.algorithms.easy;
+
+/**
+ * <a
+ * href=https://leetcode.com/problems/water-bottles>https://leetcode.com/problems/water-bottles/</a>
+ *
+ * <p>Runtime: O(lg(n))
+ *
+ * <p>Extra memory: O(1)
+ *
+ * <p>Key: Simulate the process.
+ *
+ * @author <a href=https://wilmol.com>Will Molloy</a>
+ */
+class P1518WaterBottles {
+
+  public int numWaterBottles(int numBottles, int numExchange) {
+    int numFull = numBottles;
+    int numEmpty = 0;
+
+    int numDrink = 0;
+    while (numFull > 0) {
+      numDrink += numFull;
+      numEmpty += numFull;
+      numFull = numEmpty / numExchange;
+      numEmpty = numEmpty % numExchange;
+    }
+    return numDrink;
+  }
+}
