@@ -14,6 +14,7 @@ import java.util.Deque;
  * <p>Key: Stack because we want to access most recently added items first.
  *
  * @see P739DailyTemperatures
+ * @see P1019NextGreaterNodeInLinkedList
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P901OnlineStockSpan {

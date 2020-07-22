@@ -11,6 +11,7 @@ import java.util.Deque;
  * <p>Key: Iterate in reverse so can store day of each future temp.
  *
  * @see P901OnlineStockSpan
+ * @see P1019NextGreaterNodeInLinkedList
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P739DailyTemperatures {
