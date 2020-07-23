@@ -13,6 +13,7 @@ import java.util.Arrays;
  * <p>Key: bitwise operators
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P137SingleNumber2
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P260SingleNumber3
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P136SingleNumber {
