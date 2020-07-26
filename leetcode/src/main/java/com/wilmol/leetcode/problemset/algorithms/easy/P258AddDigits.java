@@ -15,14 +15,15 @@ class P258AddDigits {
   // TODO followup asks for O(1) runtime - probably some math trick
 
   public int addDigits(int num) {
-    int sum = num;
     while (num > 9) {
-      sum = 0;
-      for (char c : String.valueOf(num).toCharArray()) {
-        sum += Character.digit(c, 10);
+      int digitSum = 0;
+      int numCopy = num;
+      while (numCopy > 0) {
+        digitSum += numCopy % 10;
+        numCopy /= 10;
       }
-      num = sum;
+      num = digitSum;
     }
-    return sum;
+    return num;
   }
 }
