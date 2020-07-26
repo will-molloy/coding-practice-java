@@ -6,13 +6,14 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O(log n)
  *
- * <p>Space: O(1)
+ * <p>Extra space: O(1)
  *
  * <p>Key: The rotation partitions the sorted sequence into 2 sorted partitions. E.g. <3,4,5,0,1,2>
  * = <3,4,5> ++ <0,1,2>. (If no rotation then second partition is empty.)
  *
- * @see P153FindMinimumInRotatedSortedArray
  * @see P81SearchInRotatedSortedArray2
+ * @see P153FindMinimumInRotatedSortedArray
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P154FindMinimumInRotatedSortedArray2
  * @see <a href=https://youtu.be/84a8fQp5hJA>Errichto's video</a>
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
@@ -30,12 +31,12 @@ class P33SearchInRotatedSortedArray {
 
     // searching range [l, r] hence need to include l == r
     while (l <= r) {
-      int mid = l + (r - l) / 2;
-      int value = nums[mid];
+      int m = l + (r - l) / 2;
+      int value = nums[m];
 
       if (value == target) {
         // target found
-        return mid;
+        return m;
       }
 
       // true if current value is in the left sorted partition
@@ -47,21 +48,21 @@ class P33SearchInRotatedSortedArray {
         // current value and target are in the same sorted partition
         // can perform standard binary search
         if (value > target) {
-          // search left
-          r = mid - 1;
+          // search left [l, m)
+          r = m - 1;
         } else {
-          // search right
-          l = mid + 1;
+          // search right (m, r]
+          l = m + 1;
         }
       } else {
         // current value and target are in different sorted partitions
         // need to search the partition that contains target
         if (targetLeft) {
-          // search left
-          r = mid - 1;
+          // search left [l, m)
+          r = m - 1;
         } else {
-          // search right
-          l = mid + 1;
+          // search right (m, r]
+          l = m + 1;
         }
       }
     }

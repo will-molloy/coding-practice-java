@@ -4,52 +4,55 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <a
  * href=https://leetcode.com/problems/search-in-rotated-sorted-array-ii>https://leetcode.com/problems/search-in-rotated-sorted-array-ii</a>
  *
- * <p>Runtime: O(lg n)
+ * <p>Runtime: O(n) worst case, O(log n) average case
  *
- * <p>Space: O(1)
+ * <p>Extra space: O(1)
  *
- * <p>Key: either left or right side must be sorted ..?
+ * <p>Key: Test from P33 for rotated case no longer works (comparing with head) since head may also
+ * be last. Instead need to handle worst case {@code nums[l] == nums[m]} and move linearly.
  *
  * @see P33SearchInRotatedSortedArray
+ * @see P153FindMinimumInRotatedSortedArray
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P154FindMinimumInRotatedSortedArray2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P81SearchInRotatedSortedArray2 {
 
-  // NOTE that the 'getLeftRotation` method in P33 doesn't work here (now that there are dupes!)
+  // NOTE that the 'getLeftRotation` method doesn't work here (now that there are dupes!)
 
   public boolean search(int[] nums, int target) {
-    int left = 0;
-    int right = nums.length - 1;
+    int l = 0;
+    int r = nums.length - 1;
 
-    while (left <= right) {
-      int mid = (left + right) >>> 1;
+    while (l <= r) {
+      int m = l + (r - l) / 2;
 
-      if (nums[mid] == target) {
+      if (nums[m] == target) {
         // target found
         return true;
       }
 
-      if (nums[left] < nums[mid]) {
-        // left side is sorted
-        if (nums[left] <= target && target < nums[mid]) {
-          // target on left side
-          right = mid - 1;
+      if (nums[l] < nums[m]) {
+        // [l, m] is sorted TODO ???
+        if (nums[l] <= target && target < nums[m]) {
+          // target on left side [l, m)
+          r = m - 1;
         } else {
-          // target on right side
-          left = mid + 1;
+          // target on right side (m, r]
+          l = m + 1;
         }
-      } else if (nums[left] > nums[mid]) {
-        // right side is sorted
-        if (nums[mid] < target && target <= nums[right]) {
-          // target on right side
-          left = mid + 1;
+      } else if (nums[l] > nums[m]) {
+        // [m, r] is sorted TODO ???
+        if (nums[m] < target && target <= nums[r]) {
+          // target on right side (m, r]
+          l = m + 1;
         } else {
-          // target on left side
-          right = mid - 1;
+          // target on left side [l, m)
+          r = m - 1;
         }
       } else {
-        // nums[left] = nums[mid], just move pointer to skip over dupe
-        left++;
+        // nums[l] = nums[m], move pointer to skip over dupe
+        l++;
       }
     }
     return false;
