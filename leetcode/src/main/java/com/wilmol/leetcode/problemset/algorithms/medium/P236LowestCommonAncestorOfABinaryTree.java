@@ -16,6 +16,7 @@ import java.util.Set;
  *
  * <p>Key: Store parents in table so can traverse up tree.
  *
+ * @see P1530NumberOfGoodLeafNodesPairs
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P236LowestCommonAncestorOfABinaryTree {
