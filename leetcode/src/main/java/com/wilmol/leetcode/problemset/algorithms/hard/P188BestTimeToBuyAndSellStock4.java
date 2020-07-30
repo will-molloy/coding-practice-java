@@ -13,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2
  * @see P123BestTimeToBuyAndSellStock3
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P309BestTimeToBuyAndSellStockWithCooldown
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P188BestTimeToBuyAndSellStock4 {

@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2
  * @see P188BestTimeToBuyAndSellStock4
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P309BestTimeToBuyAndSellStockWithCooldown
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P123BestTimeToBuyAndSellStock3 {
