@@ -9,6 +9,7 @@ import java.util.List;
  *
  * <p>Runtime: O(n) get, O(1) addAtHead, O(n) addAtTail, O(n) addAtIndex, O(n) deleteAtIndex
  *
+ * @see P705DesignHashSet
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P707DesignLinkedList {
