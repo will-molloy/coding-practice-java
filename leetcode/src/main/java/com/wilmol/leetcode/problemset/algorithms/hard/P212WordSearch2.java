@@ -18,6 +18,7 @@ import java.util.List;
  * @see P51NQueens
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P79WordSearch
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P208ImplementTrie
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P211AddAndSearchWordDataStructureDesign
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P676ImplementMagicDictionary
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P720LongestWordInDictionary
  * @author <a href=https://wilmol.com>Will Molloy</a>

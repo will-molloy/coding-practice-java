@@ -9,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: Trie behaves like an n-ary tree. All traversals are DFS. {@code isLeaf} field is crucial.
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see P211AddAndSearchWordDataStructureDesign
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
  * @see P676ImplementMagicDictionary
  * @see P720LongestWordInDictionary
