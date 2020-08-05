@@ -6,19 +6,22 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Difficulty: Easy.
  *
- * <p>Runtime: O(bitlen(n))
- *
- * <p>Space: O(1)
- *
  * <p>Key: Power of two has one '1' bit (which is the MSB).
  *
+ * @see P342PowerOfFour
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P231PowerOfTwo {
 
   boolean isPowerOfTwo(int n);
 
-  /** LibraryMethod. */
+  /**
+   * LibraryMethod.
+   *
+   * <p>Runtime: O(bitlen(n))
+   *
+   * <p>Space: O(1)
+   */
   class LibraryMethod implements P231PowerOfTwo {
 
     @Override
@@ -28,7 +31,13 @@ interface P231PowerOfTwo {
     }
   }
 
-  /** BitManipulation. */
+  /**
+   * BitManipulation.
+   *
+   * <p>Runtime: O(bitlen(n))
+   *
+   * <p>Space: O(1)
+   */
   class BitManipulation implements P231PowerOfTwo {
 
     @Override
@@ -42,7 +51,13 @@ interface P231PowerOfTwo {
     }
   }
 
-  /** Recursive. */
+  /**
+   * Recursive.
+   *
+   * <p>Runtime: O(log(n))
+   *
+   * <p>Space: O(log(n))
+   */
   class Recursive implements P231PowerOfTwo {
 
     @Override
@@ -52,7 +67,13 @@ interface P231PowerOfTwo {
     }
   }
 
-  /** Iterative. */
+  /**
+   * Iterative.
+   *
+   * <p>Runtime: O(log(n))
+   *
+   * <p>Space: O(1)
+   */
   class Iterative implements P231PowerOfTwo {
 
     @Override
