@@ -14,6 +14,7 @@ import java.util.Map;
  * <p>Key: Prefix sums, in particular [l, r] = [0, r] - [0, l).
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable.PrefixSum
+ * @see P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P560SubarraySumEqualsK {
