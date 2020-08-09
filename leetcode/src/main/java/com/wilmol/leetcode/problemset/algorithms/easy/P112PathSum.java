@@ -11,6 +11,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: A leaf is a node with no children.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P113PathSum2
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P437PathSum3
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P112PathSum {
