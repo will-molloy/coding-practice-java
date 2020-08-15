@@ -9,6 +9,8 @@ import java.util.List;
  *
  * @see P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
+ * @see P435NonOverlappingIntervals
+ * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P986IntervalListIntersections {

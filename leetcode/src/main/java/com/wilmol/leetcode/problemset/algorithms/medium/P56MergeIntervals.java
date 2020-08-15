@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
  * href=https://leetcode.com/problems/merge-intervals>https://leetcode.com/problems/merge-intervals</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
+ * @see P435NonOverlappingIntervals
+ * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @see P986IntervalListIntersections
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

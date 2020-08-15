@@ -16,6 +16,8 @@ import java.util.List;
  * newInterval} can be merged into {@code intervals[i]} (i.e. need to check both, not just one).
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P56MergeIntervals
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P435NonOverlappingIntervals
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P452MinimumNumberOfArrowsToBurstBalloons
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P986IntervalListIntersections
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
