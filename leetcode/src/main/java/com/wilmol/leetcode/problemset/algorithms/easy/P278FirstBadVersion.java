@@ -10,8 +10,11 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Binary search.
+ * <p>Key: Binary search. Essentially have an array partitioned into false (good version) and true
+ * (bad version) ([false, false, ..., true, true]) want the first true.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1482MinimumNumberOfDaysToMakeMBouquets
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1552MagneticForceBetweenTwoBalls
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P278FirstBadVersion {

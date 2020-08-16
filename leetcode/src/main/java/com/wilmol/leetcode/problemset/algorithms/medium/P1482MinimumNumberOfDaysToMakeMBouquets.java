@@ -10,8 +10,12 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Binary search over the day range.
+ * <p>Key: Binary search over the day range. Essentially have an array partitioned into false (can't
+ * make m bouquets) and true (can make m bouquets) ([false, false, ..., true, true]) want the first
+ * true.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P278FirstBadVersion
+ * @see P1552MagneticForceBetweenTwoBalls
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1482MinimumNumberOfDaysToMakeMBouquets {
