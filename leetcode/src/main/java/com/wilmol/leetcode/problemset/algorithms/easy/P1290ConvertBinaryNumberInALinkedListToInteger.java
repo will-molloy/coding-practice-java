@@ -15,6 +15,7 @@ import com.wilmol.leetcode.common.ListNode;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
  * @see P67AddBinary
  * @see P415AddStrings
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P445AddTwoNumbers2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1290ConvertBinaryNumberInALinkedListToInteger {
