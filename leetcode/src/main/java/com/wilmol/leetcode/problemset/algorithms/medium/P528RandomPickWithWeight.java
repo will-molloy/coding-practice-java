@@ -1,15 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.NavigableMap;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * <a
  * href=https://leetcode.com/problems/random-pick-with-weight>https://leetcode.com/problems/random-pick-with-weight/</a>
- *
- * <p>Runtime: O(n) {@code Solution} constructor; O(log n) {@code pickIndex}
- *
- * <p>Extra space: O(n)
  *
  * <p>Key: Represent probability weights with ranges.
  *
@@ -21,11 +19,23 @@ import java.util.concurrent.ThreadLocalRandom;
 class P528RandomPickWithWeight {
 
   /** Solution class. */
-  static class Solution {
+  interface Solution {
+
+    int pickIndex();
+  }
+
+  /**
+   * {@link Arrays#binarySearch} approach.
+   *
+   * <p>Runtime: O(n) constructor; O(log n) {@code pickIndex}
+   *
+   * <p>Extra space: O(n)
+   */
+  static class BinarySearch implements Solution {
 
     private final int[] prefixSum;
 
-    Solution(int[] w) {
+    BinarySearch(int[] w) {
       int n = w.length;
 
       // compute cumulative sum (prefix sum)
@@ -43,12 +53,12 @@ class P528RandomPickWithWeight {
 
       // pick random number in range [0, bound)
       // e.g. w = [2, 5, 3] (prefixSum = [2, 7, 10])
-      // so we pick uniformly random number in range [0, 10)
-      // [0, 1] -> 0 (2/10 -> 20% chance)
-      // [2, 6] -> 1 (5/10 -> 50% chance)
-      // [7, 9] -> 2 (3/10 -> 30% chance)
+      // pick uniformly random number in range [0, 10)
+      // [0, 2) -> 0 (2/10 -> 20% chance)
+      // [2, 7) -> 1 (5/10 -> 50% chance)
+      // [7, 10) -> 2 (3/10 -> 30% chance)
       // i.e. the weights translate to ranges, which represent the correct probabilities
-      // so we return the index of the range we land in
+      // return the index of the range we land in
 
       // because prefix sum is always sorted binary search can be used
       int target = ThreadLocalRandom.current().nextInt(bound);
@@ -69,6 +79,38 @@ class P528RandomPickWithWeight {
         // this is the same as inverting the bits
         return ~index;
       }
+    }
+  }
+
+  /**
+   * {@link java.util.TreeMap} approach.
+   *
+   * <p>Runtime: O(n * log(n)) constructor; O(log n) {@code pickIndex}
+   *
+   * <p>Extra space: O(n)
+   */
+  static class TreeMap implements Solution {
+
+    private final NavigableMap<Integer, Integer> map;
+
+    private final int bound;
+
+    TreeMap(int[] w) {
+      int n = w.length;
+      NavigableMap<Integer, Integer> map = new java.util.TreeMap<>();
+      int prefixSum = 0;
+
+      for (int i = 0; i < n; i++) {
+        prefixSum += w[i];
+        map.put(prefixSum, i);
+      }
+
+      this.map = Collections.unmodifiableNavigableMap(map);
+      this.bound = prefixSum;
+    }
+
+    public int pickIndex() {
+      return map.higherEntry(ThreadLocalRandom.current().nextInt(bound)).getValue();
     }
   }
 }

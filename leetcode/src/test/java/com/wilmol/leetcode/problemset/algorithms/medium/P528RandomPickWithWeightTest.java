@@ -7,7 +7,9 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 /**
  * P528RandomPickWithWeightTest.
@@ -20,17 +22,21 @@ class P528RandomPickWithWeightTest {
 
   private static final double TOLERANCE = 0.02;
 
-  @Test
-  void example1() {
-    Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {1});
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void example1(Function<int[], P528RandomPickWithWeight.Solution> solutionFunction) {
+    Map<Integer, Double> actualProbabilities =
+        getActualProbabilities(solutionFunction.apply(new int[] {1}));
     assertThat(actualProbabilities.keySet()).containsExactly(0);
     assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
     assertThat(actualProbabilities.get(0)).isEqualTo(1);
   }
 
-  @Test
-  void example2() {
-    Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {1, 3});
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void example2(Function<int[], P528RandomPickWithWeight.Solution> solutionFunction) {
+    Map<Integer, Double> actualProbabilities =
+        getActualProbabilities(solutionFunction.apply(new int[] {1, 3}));
     assertThat(actualProbabilities.keySet()).containsExactly(0, 1);
     assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum())
         .isWithin(TOLERANCE)
@@ -39,9 +45,11 @@ class P528RandomPickWithWeightTest {
     assertThat(actualProbabilities.get(1)).isWithin(TOLERANCE).of(0.75);
   }
 
-  @Test
-  void codeCommentExample() {
-    Map<Integer, Double> actualProbabilities = getActualProbabilities(new int[] {2, 5, 3});
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void codeCommentExample(Function<int[], P528RandomPickWithWeight.Solution> solutionFunction) {
+    Map<Integer, Double> actualProbabilities =
+        getActualProbabilities(solutionFunction.apply(new int[] {2, 5, 3}));
     assertThat(actualProbabilities.keySet()).containsExactly(0, 1, 2);
     assertThat(actualProbabilities.values().stream().mapToDouble(i -> i).sum())
         .isWithin(TOLERANCE)
@@ -52,15 +60,19 @@ class P528RandomPickWithWeightTest {
   }
 
   // helper method to run random trials
-  private Map<Integer, Double> getActualProbabilities(int[] weights) {
-    P528RandomPickWithWeight.Solution p528 = new P528RandomPickWithWeight.Solution(weights);
+  private Map<Integer, Double> getActualProbabilities(P528RandomPickWithWeight.Solution solution) {
 
     Map<Integer, Long> indexCounts =
         IntStream.range(0, NUM_TRIALS)
-            .mapToObj(i -> p528.pickIndex())
+            .mapToObj(i -> solution.pickIndex())
             .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
     return indexCounts.entrySet().stream()
         .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
+  }
+
+  static Stream<Function<int[], P528RandomPickWithWeight.Solution>> solutions() {
+    return Stream.of(
+        P528RandomPickWithWeight.BinarySearch::new, P528RandomPickWithWeight.TreeMap::new);
   }
 }

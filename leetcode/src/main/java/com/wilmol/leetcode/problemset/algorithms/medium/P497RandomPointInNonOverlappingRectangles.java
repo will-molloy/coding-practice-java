@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * <a
  * href=https://leetcode.com/problems/random-point-in-non-overlapping-rectangles>https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/</a>
  *
- * <p>Runtime: O(n) {@code Solution} constructor; O(log n) {@code pick}
+ * <p>Runtime: O(n * log(n)) {@code Solution} constructor; O(log n) {@code pick}
  *
  * <p>Extra space: O(n)
  *
@@ -52,9 +52,9 @@ class P497RandomPointInNonOverlappingRectangles {
     }
 
     public int[] pick() {
-      // pick random rectangle by picking random key in the range:
+      // pick random rectangle by picking random number in the range:
       // [0, bound), where bound = a1 + a2 + a3 + ... an
-      // then take next key
+      // and taking next highest entry
       // so if picking in range [0, a1) get rect1 for example
       // this shows the rectangles are weighted by their area
       int[] rect = map.higherEntry(ThreadLocalRandom.current().nextInt(bound)).getValue();
