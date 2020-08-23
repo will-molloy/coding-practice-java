@@ -66,7 +66,8 @@ class P528RandomPickWithWeight {
         // (see above)
         // so we need to invert this return value by multiplying by -1 and then adding -1
         // i.e. return value: -i - 1; multiply -1: i + 1; add -1: i
-        return -index - 1;
+        // this is the same as inverting the bits
+        return ~index;
       }
     }
   }
