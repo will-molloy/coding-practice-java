@@ -66,7 +66,8 @@ class P497RandomPointInNonOverlappingRectanglesTest {
     P497RandomPointInNonOverlappingRectangles.Solution p497 =
         new P497RandomPointInNonOverlappingRectangles.Solution(rects);
 
-    Map<List<Integer>, Long> pointCounts =
+    // workaround for https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8219318
+    Map<? extends List<Integer>, Long> pointCounts =
         IntStream.range(0, NUM_TRIALS)
             .mapToObj(i -> p497.pick())
             .map(a -> Arrays.stream(a).boxed().collect(toImmutableList()))
