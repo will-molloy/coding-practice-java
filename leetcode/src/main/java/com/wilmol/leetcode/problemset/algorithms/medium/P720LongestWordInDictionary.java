@@ -14,11 +14,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * leaf and therefore if we can continue with the traversal and (2) what word is represented by that
  * leaf, so can return it directly rather than rebuilding words for each root to leaf path.
  *
- * @author <a href=https://wilmol.com>Will Molloy</a>
  * @see P208ImplementTrie
  * @see P211AddAndSearchWordDataStructureDesign
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
  * @see P676ImplementMagicDictionary
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P720LongestWordInDictionary {
 

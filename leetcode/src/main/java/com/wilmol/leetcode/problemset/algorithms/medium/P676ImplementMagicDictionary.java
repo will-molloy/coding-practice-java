@@ -14,11 +14,12 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: Having separate method ({@link #continueSearch}) to continue the search once a character
  * had been changed.
  *
- * @author <a href=https://wilmol.com>Will Molloy</a>
  * @see P208ImplementTrie
  * @see P211AddAndSearchWordDataStructureDesign
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
  * @see P720LongestWordInDictionary
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P676ImplementMagicDictionary {
 

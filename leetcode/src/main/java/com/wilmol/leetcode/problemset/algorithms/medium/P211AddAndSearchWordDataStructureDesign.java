@@ -16,6 +16,7 @@ import java.util.stream.IntStream;
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P212WordSearch2
  * @see P676ImplementMagicDictionary
  * @see P720LongestWordInDictionary
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P211AddAndSearchWordDataStructureDesign {
