@@ -14,6 +14,8 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Key: Store indices by num in map for O(1) lookup.
  *
+ * @see P380InsertDeleteGetRandomO1
+ * @see P497RandomPointInNonOverlappingRectangles
  * @see P528RandomPickWithWeight
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

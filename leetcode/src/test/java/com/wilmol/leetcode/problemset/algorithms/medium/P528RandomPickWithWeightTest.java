@@ -1,9 +1,12 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
+import static com.google.common.collect.ImmutableMap.toImmutableMap;
 import static com.google.common.truth.Truth.assertThat;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -51,15 +54,13 @@ class P528RandomPickWithWeightTest {
   // helper method to run random trials
   private Map<Integer, Double> getActualProbabilities(int[] weights) {
     P528RandomPickWithWeight.Solution p528 = new P528RandomPickWithWeight.Solution(weights);
-    Map<Integer, Integer> indexCounts = new HashMap<>();
-    for (int i = 0; i < NUM_TRIALS; i++) {
-      int index = p528.pickIndex();
-      indexCounts.put(index, indexCounts.getOrDefault(index, 0) + 1);
-    }
-    Map<Integer, Double> actualIndexProbabilities = new HashMap<>();
-    for (int i = 0; i < weights.length; i++) {
-      actualIndexProbabilities.put(i, (double) indexCounts.get(i) / NUM_TRIALS);
-    }
-    return actualIndexProbabilities;
+
+    Map<Integer, Long> indexCounts =
+        IntStream.range(0, NUM_TRIALS)
+            .mapToObj(i -> p528.pickIndex())
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+    return indexCounts.entrySet().stream()
+        .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
   }
 }

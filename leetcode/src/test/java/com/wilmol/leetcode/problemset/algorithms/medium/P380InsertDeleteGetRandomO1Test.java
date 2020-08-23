@@ -1,10 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
+import static com.google.common.collect.ImmutableMap.toImmutableMap;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.wilmol.leetcode.problemset.algorithms.medium.P380InsertDeleteGetRandomO1.RandomizedSet;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -44,16 +47,12 @@ class P380InsertDeleteGetRandomO1Test {
   }
 
   private static Map<Integer, Double> runRandomTrials(RandomizedSet randomSet) {
-    Map<Integer, Integer> counts = new HashMap<>();
-    for (int i = 0; i < NUM_TRIALS; i++) {
-      int random = randomSet.getRandom();
-      counts.put(random, counts.getOrDefault(random, 0) + 1);
-    }
+    Map<Integer, Long> counts =
+        IntStream.range(0, NUM_TRIALS)
+            .mapToObj(i -> randomSet.getRandom())
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-    Map<Integer, Double> actualProbabilities = new HashMap<>();
-    for (Map.Entry<Integer, Integer> e : counts.entrySet()) {
-      actualProbabilities.put(e.getKey(), (double) e.getValue() / NUM_TRIALS);
-    }
-    return actualProbabilities;
+    return counts.entrySet().stream()
+        .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
   }
 }

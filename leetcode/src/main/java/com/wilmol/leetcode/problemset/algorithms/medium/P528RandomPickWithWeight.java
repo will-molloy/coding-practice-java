@@ -13,7 +13,9 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Key: Represent probability weights with ranges.
  *
+ * @see P380InsertDeleteGetRandomO1
  * @see P398RandomPickIndex
+ * @see P497RandomPointInNonOverlappingRectangles
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P528RandomPickWithWeight {

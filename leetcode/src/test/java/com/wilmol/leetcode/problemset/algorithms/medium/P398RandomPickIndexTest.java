@@ -1,10 +1,13 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
+import static com.google.common.collect.ImmutableMap.toImmutableMap;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.wilmol.leetcode.problemset.algorithms.medium.P398RandomPickIndex.Solution;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -21,9 +24,8 @@ class P398RandomPickIndexTest {
   @Test
   void example() {
     int[] nums = new int[] {1, 2, 3, 3, 3};
-    Solution solution = new Solution(nums);
 
-    Map<Integer, Double> actualProbabilitiesPick3 = getActualProbabilities(solution, 3);
+    Map<Integer, Double> actualProbabilitiesPick3 = getActualProbabilities(nums, 3);
     assertThat(actualProbabilitiesPick3.keySet()).containsExactly(2, 3, 4);
     assertThat(actualProbabilitiesPick3.values().stream().mapToDouble(i -> i).sum())
         .isWithin(TOLERANCE)
@@ -32,24 +34,22 @@ class P398RandomPickIndexTest {
     assertThat(actualProbabilitiesPick3.get(3)).isWithin(TOLERANCE).of((double) 1 / 3);
     assertThat(actualProbabilitiesPick3.get(4)).isWithin(TOLERANCE).of((double) 1 / 3);
 
-    Map<Integer, Double> actualProbabilitiesPick1 = getActualProbabilities(solution, 1);
+    Map<Integer, Double> actualProbabilitiesPick1 = getActualProbabilities(nums, 1);
     assertThat(actualProbabilitiesPick1.keySet()).containsExactly(0);
     assertThat(actualProbabilitiesPick1.values().stream().mapToDouble(i -> i).sum()).isEqualTo(1);
     assertThat(actualProbabilitiesPick1.get(0)).isEqualTo(1);
   }
 
   // helper method to run random trials
-  private Map<Integer, Double> getActualProbabilities(Solution solution, int target) {
-    Map<Integer, Integer> indexCounts = new HashMap<>();
-    for (int i = 0; i < NUM_TRIALS; i++) {
-      int randomlyPickedIndex = solution.pick(target);
-      indexCounts.put(randomlyPickedIndex, indexCounts.getOrDefault(randomlyPickedIndex, 0) + 1);
-    }
+  private Map<Integer, Double> getActualProbabilities(int[] nums, int target) {
+    Solution solution = new Solution(nums);
 
-    Map<Integer, Double> actualIndexProbabilities = new HashMap<>();
-    for (Map.Entry<Integer, Integer> e : indexCounts.entrySet()) {
-      actualIndexProbabilities.put(e.getKey(), (double) e.getValue() / NUM_TRIALS);
-    }
-    return actualIndexProbabilities;
+    Map<Integer, Long> indexCounts =
+        IntStream.range(0, NUM_TRIALS)
+            .mapToObj(i -> solution.pick(target))
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+    return indexCounts.entrySet().stream()
+        .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
   }
 }

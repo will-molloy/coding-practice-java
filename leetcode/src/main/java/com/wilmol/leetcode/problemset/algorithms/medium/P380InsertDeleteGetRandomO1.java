@@ -18,6 +18,9 @@ import java.util.concurrent.ThreadLocalRandom;
  * Therefore need a combination. Key is storing indices in map and overwriting with last element in
  * list so list remove becomes O(1) because we always just delete the last list element.
  *
+ * @see P398RandomPickIndex
+ * @see P497RandomPointInNonOverlappingRectangles
+ * @see P528RandomPickWithWeight
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P380InsertDeleteGetRandomO1 {
