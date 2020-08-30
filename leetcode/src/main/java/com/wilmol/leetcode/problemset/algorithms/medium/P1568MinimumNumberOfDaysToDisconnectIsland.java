@@ -6,11 +6,16 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O((rows * cols)<sup>2</sup>)
  *
- * <p>Extra memory: O(1)
+ * <p>Extra memory: O(rows * cols) (recursion stack space)
  *
  * <p>Key: Result is always <= 2, since can isolate any corner block with at most two removals.
  * Therefore only need to test case where result is 0 (test initially) and 1 (try remove each 1).
  *
+ * @see P130SurroundedRegions
+ * @see P200NumberOfIslands
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
+ * @see P695MaxAreaOfIsland
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1568MinimumNumberOfDaysToDisconnectIsland {

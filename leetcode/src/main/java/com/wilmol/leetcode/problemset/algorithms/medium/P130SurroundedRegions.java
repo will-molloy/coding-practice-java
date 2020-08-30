@@ -11,8 +11,10 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: better to mark regions which we don't want to flip first (a sort of preprocessing)
  *
  * @see P200NumberOfIslands
- * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
  * @see P695MaxAreaOfIsland
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
+ * @see P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P130SurroundedRegions {

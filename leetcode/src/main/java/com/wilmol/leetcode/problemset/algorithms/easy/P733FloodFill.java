@@ -11,9 +11,11 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  * color. Also need to check {@code replaceColor != newColor} otherwise won't halt cause its
  * 'pinging' between adjacent pixels.
  *
- * @see com.wilmol.leetcode.problemset.algorithms.medium.P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P130SurroundedRegions
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P200NumberOfIslands
+ * @see P463IslandPerimeter
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P695MaxAreaOfIsland
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P733FloodFill {

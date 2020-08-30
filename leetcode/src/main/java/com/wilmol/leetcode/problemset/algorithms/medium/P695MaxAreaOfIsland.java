@@ -11,8 +11,11 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <p>Key: care taken when passing around {@code area} parameter. Either use reference (e.g. int
  * array), or update based on recursive call results.
  *
+ * @see P130SurroundedRegions
  * @see P200NumberOfIslands
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P463IslandPerimeter
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P733FloodFill
+ * @see P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P695MaxAreaOfIsland {
