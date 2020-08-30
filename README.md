@@ -15,4 +15,4 @@ projecteuler, leetcode, hackerrank etc. using Java
   - [ ] [Interview Preparation Kit](hackerrank/src/main/java/com/wilmol/hackerrank/interviewpreparationkit) (40/69)
   - [x] [Regex](hackerrank/src/main/java/com/wilmol/hackerrank/regex) (47/47)
 
-*Repository created with [Copybara](https://github.com/google/copybara)*
+_Repository created with https://github.com/wilmol/copybara-action_
