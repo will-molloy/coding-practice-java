@@ -46,7 +46,8 @@ public final class BinaryTreeNode {
     return root;
   }
 
-  public final int val;
+  @SuppressWarnings("PublicField")
+  public int val;
 
   @SuppressWarnings("PublicField")
   public BinaryTreeNode left;
