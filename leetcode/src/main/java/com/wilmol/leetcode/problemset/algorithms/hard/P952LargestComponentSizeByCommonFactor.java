@@ -19,12 +19,15 @@ import java.util.Map;
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
 class P952LargestComponentSizeByCommonFactor {
 
-  private int[] parents;
+  private int[] parent;
+
+  private int[] rank;
 
   public int largestComponentSize(int[] nums) {
     // node values are in the range [1, 100000]
     // using root '0' for nodes not yet in the disjoint set
-    parents = new int[100000 + 1];
+    parent = new int[100000 + 1];
+    rank = new int[100000 + 1];
 
     // create disjoint set
     for (int num : nums) {
@@ -46,19 +49,29 @@ class P952LargestComponentSizeByCommonFactor {
   }
 
   private void union(int nodeA, int nodeB) {
-    // TODO rank heuristic
-    parents[find(nodeA)] = find(nodeB);
+    int setA = find(nodeA);
+    int setB = find(nodeB);
+    // rank heuristic:
+    // make smaller tree subtree of larger tree
+    // (here, rank is upper bound on height)
+    if (rank[setA] < rank[setB]) {
+      parent[setA] = setB;
+    } else {
+      parent[setB] = setA;
+      if (rank[setA] == rank[setB]) {
+        rank[setA]++;
+      }
+    }
   }
 
   private int find(int node) {
-    if (parents[node] == 0) {
-      // make set
-      parents[node] = node;
-    } else if (node != parents[node]) {
-      // path compression
-      // TODO one pass path compression
-      parents[node] = find(parents[node]);
+    if (parent[node] == 0) {
+      // make set (lazy)
+      parent[node] = node;
+    } else if (node != parent[node]) {
+      // path compression (two pass)
+      parent[node] = find(parent[node]);
     }
-    return parents[node];
+    return parent[node];
   }
 }
