@@ -14,6 +14,7 @@ import java.util.Map;
  *
  * <p>Key: Disjoint set.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P547FriendCircles
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
