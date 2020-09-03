@@ -2,7 +2,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.sun.tools.javac.util.List;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
