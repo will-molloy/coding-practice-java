@@ -18,6 +18,7 @@ import java.util.List;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P435NonOverlappingIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P452MinimumNumberOfArrowsToBurstBalloons
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P763PartitionLabels
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P986IntervalListIntersections
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

@@ -16,6 +16,7 @@ import java.util.Comparator;
  * @see P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
  * @see P435NonOverlappingIntervals
+ * @see P763PartitionLabels
  * @see P986IntervalListIntersections
  * @see <a href=https://en.wikipedia.org/wiki/Activity_selection_problem>Activity selection problem
  *     (classic greedy algorithm problem)</a>

@@ -11,6 +11,7 @@ import java.util.List;
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
  * @see P435NonOverlappingIntervals
  * @see P452MinimumNumberOfArrowsToBurstBalloons
+ * @see P763PartitionLabels
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P986IntervalListIntersections {

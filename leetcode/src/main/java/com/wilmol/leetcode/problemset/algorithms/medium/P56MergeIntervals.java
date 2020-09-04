@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
  * @see P435NonOverlappingIntervals
  * @see P452MinimumNumberOfArrowsToBurstBalloons
+ * @see P763PartitionLabels
  * @see P986IntervalListIntersections
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

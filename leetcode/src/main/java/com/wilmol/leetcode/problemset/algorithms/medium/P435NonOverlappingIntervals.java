@@ -19,6 +19,7 @@ import java.util.Comparator;
  * @see P56MergeIntervals
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P57InsertInterval
  * @see P452MinimumNumberOfArrowsToBurstBalloons
+ * @see P763PartitionLabels
  * @see P986IntervalListIntersections
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
