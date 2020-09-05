@@ -11,6 +11,7 @@ import com.wilmol.leetcode.common.ListNode;
  * <p>TODO Can be done in O(n log k)
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P21MergeTwoSortedLists
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P23MergeKSortedLists {

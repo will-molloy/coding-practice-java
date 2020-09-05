@@ -7,6 +7,7 @@ import com.wilmol.leetcode.common.ListNode;
  * href=https://leetcode.com/problems/merge-two-sorted-lists>https://leetcode.com/problems/merge-two-sorted-lists/</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P23MergeKSortedLists
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P21MergeTwoSortedLists {

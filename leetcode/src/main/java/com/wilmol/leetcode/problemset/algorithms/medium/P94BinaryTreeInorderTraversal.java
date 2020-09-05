@@ -14,6 +14,7 @@ import java.util.List;
  *
  * <p>Key: recursion to traverse depth first
  *
+ * @see P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P94BinaryTreeInorderTraversal {
