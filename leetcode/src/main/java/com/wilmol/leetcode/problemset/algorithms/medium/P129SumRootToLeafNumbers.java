@@ -12,6 +12,7 @@ import java.util.Queue;
  * href=https://leetcode.com/problems/sum-root-to-leaf-numbers>https://leetcode.com/problems/sum-root-to-leaf-numbers/</a>
  *
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P126WordLadder2
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P1022SumOfRootToLeafBinaryNumbers
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P129SumRootToLeafNumbers {
