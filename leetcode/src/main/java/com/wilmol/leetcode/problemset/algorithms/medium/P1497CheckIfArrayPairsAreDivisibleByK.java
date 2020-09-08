@@ -41,7 +41,7 @@ class P1497CheckIfArrayPairsAreDivisibleByK {
     for (int a : arr) {
       // in case a is negative, first add to k
       int x = ((k + (a % k))) % k;
-      map.put(x, map.getOrDefault(x, 0) + 1);
+      map.merge(x, 1, Integer::sum);
     }
 
     // check counts

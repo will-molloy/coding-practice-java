@@ -45,7 +45,7 @@ class P560SubarraySumEqualsK {
         count += map.get(prefixSum - k);
       }
       // update count of sum[0, l] (will become sum[0, l) on next iteration)
-      map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
+      map.merge(prefixSum, 1, Integer::sum);
     }
     return count;
   }

@@ -79,7 +79,7 @@ interface CountTriplets {
         // update potentialPair count (always, any value can start a triplet)
         // i.e. simply counting how many triplets could be started by 'value'
         // must do this last, otherwise may form triplet with duplicates
-        potentialPair.put(value * ratio, potentialPair.getOrDefault(value * ratio, 0L) + 1);
+        potentialPair.merge(value * ratio, 1L, Long::sum);
       }
       return result;
     }

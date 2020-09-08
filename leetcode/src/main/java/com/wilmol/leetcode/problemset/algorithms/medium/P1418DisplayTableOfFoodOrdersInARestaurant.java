@@ -43,7 +43,7 @@ class P1418DisplayTableOfFoodOrdersInARestaurant {
       items.add(item);
       Map<String, Integer> tableOrders = allTableOrders.getOrDefault(tableNum, new TreeMap<>());
       // O(log i)
-      tableOrders.put(item, tableOrders.getOrDefault(item, 0) + 1);
+      tableOrders.merge(item, 1, Integer::sum);
       // O(log t)
       allTableOrders.put(tableNum, tableOrders);
     }

@@ -43,7 +43,7 @@ final class TheBritishAndAmericanStyleOfSpelling {
       while (wordMatcher.find()) {
         String word = wordMatcher.group(1);
         String americanWord = word.substring(0, word.length() - 2) + "ze";
-        map.put(americanWord, map.getOrDefault(americanWord, 0) + 1);
+        map.merge(americanWord, 1, Integer::sum);
       }
     }
 

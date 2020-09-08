@@ -25,7 +25,7 @@ class P451SortCharactersByFrequency {
   public String frequencySort(String s) {
     Map<Character, Integer> charFreqs = new HashMap<>();
     for (char c : s.toCharArray()) {
-      charFreqs.put(c, charFreqs.getOrDefault(c, 0) + 1);
+      charFreqs.merge(c, 1, Integer::sum);
     }
 
     return charFreqs.entrySet().stream()

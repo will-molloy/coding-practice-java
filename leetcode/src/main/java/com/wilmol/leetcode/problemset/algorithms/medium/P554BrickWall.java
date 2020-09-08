@@ -34,7 +34,7 @@ class P554BrickWall {
       for (int brickI = 0; brickI < row.size() - 1; brickI++) {
         int brick = row.get(brickI);
         brickSum += brick;
-        map.put(brickSum, map.getOrDefault(brickSum, 0) + 1);
+        map.merge(brickSum, 1, Integer::sum);
       }
     }
 

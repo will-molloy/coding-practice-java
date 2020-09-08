@@ -44,7 +44,7 @@ class P952LargestComponentSizeByCommonFactor {
     // find largest set in the disjoint set
     Map<Integer, Integer> freq = new HashMap<>();
     for (int num : nums) {
-      freq.put(find(num), freq.getOrDefault(find(num), 0) + 1);
+      freq.merge(find(num), 1, Integer::sum);
     }
     return freq.values().stream().mapToInt(Integer::intValue).max().getAsInt();
   }

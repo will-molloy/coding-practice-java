@@ -26,7 +26,7 @@ class P76MinimumWindowSubstring {
     Map<Character, Integer> counts = new HashMap<>();
     char[] chars = t.toCharArray();
     for (char c : chars) {
-      counts.put(c, counts.getOrDefault(c, 0) + 1);
+      counts.merge(c, 1, Integer::sum);
     }
 
     int l = 0;

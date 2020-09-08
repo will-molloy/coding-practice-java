@@ -39,7 +39,7 @@ class P49GroupAnagrams {
       Map<Character, Integer> map = new HashMap<>();
       char[] chars = s.toCharArray();
       for (char aChar : chars) {
-        map.put(aChar, map.getOrDefault(aChar, 0) + 1);
+        map.merge(aChar, 1, Integer::sum);
       }
       charCounts = Collections.unmodifiableMap(map);
     }

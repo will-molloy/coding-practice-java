@@ -35,7 +35,7 @@ interface P1044LongestDuplicateSubstring {
       for (int i = 0; i < n; i++) {
         for (int j = i; j <= n; j++) {
           String substring = s.substring(i, j);
-          map.put(substring, map.getOrDefault(substring, 0) + 1);
+          map.merge(substring, 1, Integer::sum);
         }
       }
 

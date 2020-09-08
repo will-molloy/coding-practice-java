@@ -22,7 +22,7 @@ final class SockMerchant {
     // count the colours
     Map<Integer, Integer> sockColourCounts = new HashMap<>();
     for (int i : ar) {
-      sockColourCounts.put(i, sockColourCounts.getOrDefault(i, 0) + 1);
+      sockColourCounts.merge(i, 1, Integer::sum);
     }
     // sum the number of pairs per colour
     return sockColourCounts.values().stream()

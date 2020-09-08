@@ -46,7 +46,7 @@ final class FindAWord {
       Matcher wordMatcher = WORD_PATTERN.matcher(sentence);
       while (wordMatcher.find()) {
         String word = wordMatcher.group(1);
-        allWordCounts.put(word, allWordCounts.getOrDefault(word, 0) + 1);
+        allWordCounts.merge(word, 1, Integer::sum);
       }
     }
 

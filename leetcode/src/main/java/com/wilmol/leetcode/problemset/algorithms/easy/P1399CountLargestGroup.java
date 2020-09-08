@@ -27,7 +27,7 @@ class P1399CountLargestGroup {
         digitSum += num % 10;
         num /= 10;
       }
-      map.put(digitSum, map.getOrDefault(digitSum, 0) + 1);
+      map.merge(digitSum, 1, Integer::sum);
     }
 
     int maxGroupSize = 0;

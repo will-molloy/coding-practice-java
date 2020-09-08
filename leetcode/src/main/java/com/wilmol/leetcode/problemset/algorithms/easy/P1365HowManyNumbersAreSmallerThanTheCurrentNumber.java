@@ -37,7 +37,7 @@ interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
       // count freq of each number - O(n log n) (TreeMap.put is O(log n))
       // TODO may as well just sort the array lol
       for (int num : nums) {
-        map.put(num, map.getOrDefault(num, 0) + 1);
+        map.merge(num, 1, Integer::sum);
       }
 
       // for each number, sum freqs of all numbers less than it - O(n)

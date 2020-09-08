@@ -52,11 +52,11 @@ class P1519NumberOfNodesInTheSubTreeWithTheSameLabel {
       Map<Character, Integer> childMap = dfs(child, result, seen);
       // merge child counts
       for (Map.Entry<Character, Integer> e : childMap.entrySet()) {
-        map.put(e.getKey(), map.getOrDefault(e.getKey(), 0) + e.getValue());
+        map.merge(e.getKey(), e.getValue(), Integer::sum);
       }
     }
     // tree rooted at 'node' includes itself
-    map.put(node.label, map.getOrDefault(node.label, 0) + 1);
+    map.merge(node.label, 1, Integer::sum);
 
     result[node.num] = map.get(node.label);
 

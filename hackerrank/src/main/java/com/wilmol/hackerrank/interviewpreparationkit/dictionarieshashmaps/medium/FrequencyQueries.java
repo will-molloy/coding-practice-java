@@ -42,8 +42,8 @@ final class FrequencyQueries {
           int newFreq = currentFreq + 1;
           valueCounts.put(value, newFreq);
           // don't worry about 0 it's never tested
-          freqCounts.put(currentFreq, freqCounts.getOrDefault(currentFreq, 0) - 1);
-          freqCounts.put(newFreq, freqCounts.getOrDefault(newFreq, 0) + 1);
+          freqCounts.merge(currentFreq, -1, Integer::sum);
+          freqCounts.merge(newFreq, 1, Integer::sum);
           break;
         case 2: // delete (if present)
           currentFreq = valueCounts.getOrDefault(value, 0);
@@ -51,8 +51,8 @@ final class FrequencyQueries {
             newFreq = currentFreq - 1;
             valueCounts.put(value, valueCounts.get(value) - 1);
             // don't worry about 0 it's never tested
-            freqCounts.put(currentFreq, freqCounts.getOrDefault(currentFreq, 0) - 1);
-            freqCounts.put(newFreq, freqCounts.getOrDefault(newFreq, 0) + 1);
+            freqCounts.merge(currentFreq, -1, Integer::sum);
+            freqCounts.merge(newFreq, 1, Integer::sum);
           }
           break;
         case 3: // check

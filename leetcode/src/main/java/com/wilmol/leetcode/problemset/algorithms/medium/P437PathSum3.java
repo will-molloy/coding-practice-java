@@ -43,7 +43,7 @@ class P437PathSum3 {
       pathSumCountsCopy.put(e.getKey() + node.val, e.getValue());
     }
     // new singleton path for this node
-    pathSumCountsCopy.put(node.val, pathSumCountsCopy.getOrDefault(node.val, 0) + 1);
+    pathSumCountsCopy.merge(node.val, 1, Integer::sum);
 
     result += pathSumCountsCopy.getOrDefault(target, 0);
 

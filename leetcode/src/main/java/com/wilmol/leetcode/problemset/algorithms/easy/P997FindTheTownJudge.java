@@ -27,8 +27,8 @@ class P997FindTheTownJudge {
     Map<Integer, Integer> inDegree = new HashMap<>();
 
     for (int[] trust : trusts) {
-      outDegree.put(trust[0], outDegree.getOrDefault(trust[0], 0) + 1);
-      inDegree.put(trust[1], inDegree.getOrDefault(trust[1], 0) + 1);
+      outDegree.merge(trust[0], 1, Integer::sum);
+      inDegree.merge(trust[1], 1, Integer::sum);
     }
 
     for (int i = 1; i <= n; i++) {

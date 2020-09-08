@@ -43,7 +43,7 @@ final class UkAndUsPart2 {
       while (wordMatcher.find()) {
         String word = wordMatcher.group(1);
         String britishWord = word.replaceAll("or", "our");
-        map.put(britishWord, map.getOrDefault(britishWord, 0) + 1);
+        map.merge(britishWord, 1, Integer::sum);
       }
     }
 
