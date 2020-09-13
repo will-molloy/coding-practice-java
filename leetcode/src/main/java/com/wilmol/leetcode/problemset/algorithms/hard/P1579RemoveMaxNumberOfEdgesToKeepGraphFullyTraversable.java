@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
  *
  * <p>Key: Get combined MST for both Alice and Bob favouring the shared edges.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1584MinCostToConnectAllPoints
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable {
