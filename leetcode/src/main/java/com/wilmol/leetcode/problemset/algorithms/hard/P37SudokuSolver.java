@@ -13,6 +13,7 @@ package com.wilmol.leetcode.problemset.algorithms.hard;
  *
  * @see P51NQueens
  * @see P212WordSearch2
+ * @see P980UniquePaths3
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P37SudokuSolver {
