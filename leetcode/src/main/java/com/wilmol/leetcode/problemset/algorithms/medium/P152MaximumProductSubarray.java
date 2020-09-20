@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
  *
  * <p>Key: math knowledge (in particular, products)
  *
+ * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P152MaximumProductSubarray {

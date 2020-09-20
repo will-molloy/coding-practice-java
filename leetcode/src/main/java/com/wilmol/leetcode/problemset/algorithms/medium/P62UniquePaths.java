@@ -9,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P64MinimumPathSum
  * @see P120Triangle
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P62UniquePaths {
@@ -18,7 +19,7 @@ interface P62UniquePaths {
   /**
    * Top down recursive solution. TLE on leetcode.
    *
-   * <p>Runtime: O(2<sup>m+n</sup>), Space: O(m*n) TODO is this correct? IDK arghh!!
+   * <p>Runtime: O(2<sup>m + n</sup>), Space: O(m + n)
    */
   class TopDownRecursive implements P62UniquePaths {
 

@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * @see P63UniquePaths2
  * @see P120Triangle
  * @see com.wilmol.leetcode.problemset.algorithms.hard.P174DungeonGame
+ * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P64MinimumPathSum {
@@ -19,9 +20,9 @@ interface P64MinimumPathSum {
   /**
    * Recursive (top down), correct but TLE on leetcode.
    *
-   * <p>Runtime: TODO O(2<sup>n + m</sup>) ??? Same as {@link P62UniquePaths.TopDownRecursive}
+   * <p>Runtime: O(2<sup>n + m</sup>)
    *
-   * <p>Space: TODO O(nm) ??? Same as {@link P62UniquePaths.TopDownRecursive}
+   * <p>Space: O(n + m)
    */
   class RecursiveTopDown implements P64MinimumPathSum {
 
