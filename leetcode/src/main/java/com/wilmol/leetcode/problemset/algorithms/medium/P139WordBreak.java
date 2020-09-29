@@ -1,17 +1,14 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * <a href=https://leetcode.com/problems/word-break>https://leetcode.com/problems/word-break</a>
  *
  * <p>Key: dynamic programming
  *
- * @see com.wilmol.leetcode.problemset.algorithms.hard.P140WordBreak2
  * @author <a href=https://wilmol.com>Will Molloy</a>
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P140WordBreak2
  */
 interface P139WordBreak {
 
@@ -20,23 +17,26 @@ interface P139WordBreak {
   /**
    * Top down solution; TLE on leetcode.
    *
-   * <p>Runtime: TODO O() idk lol; the brute force on leetcode doesn't loop over 'wordDict' instead
-   * it uses a set, so this is even worse
+   * <p>Runtime: O({@code s}<sup>{@code wordDict}</sup>)
    *
-   * <p>Space: O(n) (n = size of 's'; determines the recursion depth)
+   * <p>Space: O({@code s}) (recursion depth)
    */
   class TopDown implements P139WordBreak {
 
     @Override
     public boolean wordBreak(String s, List<String> wordDict) {
       if (s.isEmpty()) {
+        // base case, can always build empty string
         return true;
       }
-      for (String word : wordDict) {
-        Pattern p = Pattern.compile(word + "(.*)");
-        Matcher m = p.matcher(s);
-        if (m.matches() && wordBreak(m.group(1), wordDict)) {
-          return true;
+
+      // recursive case, try all words as prefixes and test if suffix can be built recursively
+      for (String prefix : wordDict) {
+        if (s.startsWith(prefix)) {
+          String suffix = s.substring(prefix.length());
+          if (wordBreak(suffix, wordDict)) {
+            return true;
+          }
         }
       }
       return false;
@@ -46,35 +46,32 @@ interface P139WordBreak {
   /**
    * Bottom up solution.
    *
-   * <p>Runtime: O(n<sup>2</sup>) (n = size of 's')
+   * <p>Runtime: O({@code s} * {@code wordDict})
    *
-   * <p>Space: O(n) (n = size of 's'; 1d dp array size)
+   * <p>Space: O({@code s}) (dp table size)
    */
   class BottomUp implements P139WordBreak {
 
     @Override
     public boolean wordBreak(String s, List<String> wordDict) {
-      return wordBreak(s, new HashSet<>(wordDict));
-    }
+      int n = s.length();
 
-    private boolean wordBreak(String s, HashSet<String> words) {
-      // dp[i] means we can build the string s.substring(0, i);
-      boolean[] dp = new boolean[s.length() + 1];
-
+      // dp[i] = can build s[0, i)
+      boolean[] dp = new boolean[n + 1];
       // base case, can always build empty string
       dp[0] = true;
 
-      // check if whole string can be built
-      for (int i = 1; i <= s.length(); i++) {
-        // find word which can build
-        for (int j = 0; j < i; j++) {
-          if (dp[j] && words.contains(s.substring(j, i))) {
-            dp[i] = true;
-            break;
+      // recursive case, extend known prefixes with every word
+      for (int i = 0; i <= n; i++) {
+        if (dp[i]) {
+          for (String word : wordDict) {
+            if (word.length() + i <= n && word.equals(s.substring(i, i + word.length()))) {
+              dp[i + word.length()] = true;
+            }
           }
         }
       }
-      return dp[s.length()];
+      return dp[n];
     }
   }
 }
