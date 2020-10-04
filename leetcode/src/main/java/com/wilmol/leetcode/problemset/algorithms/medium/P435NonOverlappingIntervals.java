@@ -21,6 +21,7 @@ import java.util.Comparator;
  * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @see P763PartitionLabels
  * @see P986IntervalListIntersections
+ * @see P1288RemoveCoveredIntervals
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P435NonOverlappingIntervals {

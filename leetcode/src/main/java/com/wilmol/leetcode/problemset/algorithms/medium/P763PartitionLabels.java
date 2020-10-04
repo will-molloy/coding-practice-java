@@ -17,6 +17,7 @@ import java.util.stream.Collectors;
  * @see P435NonOverlappingIntervals
  * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @see P986IntervalListIntersections
+ * @see P1288RemoveCoveredIntervals
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P763PartitionLabels {

@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
  * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @see P763PartitionLabels
  * @see P986IntervalListIntersections
+ * @see P1288RemoveCoveredIntervals
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P56MergeIntervals {

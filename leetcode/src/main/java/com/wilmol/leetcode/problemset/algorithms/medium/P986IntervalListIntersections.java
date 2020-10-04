@@ -12,6 +12,7 @@ import java.util.List;
  * @see P435NonOverlappingIntervals
  * @see P452MinimumNumberOfArrowsToBurstBalloons
  * @see P763PartitionLabels
+ * @see P1288RemoveCoveredIntervals
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P986IntervalListIntersections {

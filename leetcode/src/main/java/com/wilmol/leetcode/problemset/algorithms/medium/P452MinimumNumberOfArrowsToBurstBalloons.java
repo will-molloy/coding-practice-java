@@ -18,6 +18,7 @@ import java.util.Comparator;
  * @see P435NonOverlappingIntervals
  * @see P763PartitionLabels
  * @see P986IntervalListIntersections
+ * @see P1288RemoveCoveredIntervals
  * @see <a href=https://en.wikipedia.org/wiki/Activity_selection_problem>Activity selection problem
  *     (classic greedy algorithm problem)</a>
  * @author <a href=https://wilmol.com>Will Molloy</a>

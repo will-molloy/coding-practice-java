@@ -20,6 +20,7 @@ import java.util.List;
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P452MinimumNumberOfArrowsToBurstBalloons
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P763PartitionLabels
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P986IntervalListIntersections
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1288RemoveCoveredIntervals
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P57InsertInterval {
