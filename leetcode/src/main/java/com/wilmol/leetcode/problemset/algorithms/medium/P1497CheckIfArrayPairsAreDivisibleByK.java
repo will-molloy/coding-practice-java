@@ -27,6 +27,7 @@ import java.util.Map;
  * <p>So for {@code a = 1}, check equal number of {@code b = 5 - 1 = 4}. Etc.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P1TwoSum
+ * @see P532KDiffPairsInAnArray
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1497CheckIfArrayPairsAreDivisibleByK {

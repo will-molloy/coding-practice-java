@@ -8,8 +8,9 @@ import java.util.Map;
  *
  * <p>Runtime: O(n) - single pass on ints, but O(n) memory too
  *
- * @see com.wilmol.hackerrank.interviewpreparationkit.search.medium.HashTablesIceCreamParlor
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P532KDiffPairsInAnArray
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P1497CheckIfArrayPairsAreDivisibleByK
+ * @see com.wilmol.hackerrank.interviewpreparationkit.search.medium.HashTablesIceCreamParlor
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1TwoSum {
