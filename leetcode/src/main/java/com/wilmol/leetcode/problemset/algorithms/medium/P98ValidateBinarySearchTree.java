@@ -12,6 +12,8 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: knowledge of BST structure, pointer manipulation
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P700SearchInABinarySearchTree
+ * @see P701InsertIntoABinarySearchTree
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P98ValidateBinarySearchTree {

@@ -8,6 +8,9 @@ import com.wilmol.leetcode.common.BinaryTreeNode;
  *
  * <p>Key: In BST larger values are on the right, smaller on left.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P98ValidateBinarySearchTree
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P701InsertIntoABinarySearchTree
+ * @see com.wilmol.dsa.trees.TreeSearch
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P700SearchInABinarySearchTree {
