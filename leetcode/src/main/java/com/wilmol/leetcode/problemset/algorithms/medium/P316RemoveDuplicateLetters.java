@@ -19,6 +19,7 @@ import java.util.Set;
  * <p>Precomputing character frequencies to know if a character occurs in the string again later was
  * helpful.
  *
+ * @see P1081SmallestSubsequenceOfDistinctCharacters
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P316RemoveDuplicateLetters {
