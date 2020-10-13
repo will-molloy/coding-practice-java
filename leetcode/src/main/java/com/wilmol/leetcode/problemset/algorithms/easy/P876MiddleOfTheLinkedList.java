@@ -12,6 +12,7 @@ import com.wilmol.leetcode.common.ListNode;
  *
  * <p>Key: slow and faster pointer
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P148SortLinkedList
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P876MiddleOfTheLinkedList {
