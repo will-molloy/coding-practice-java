@@ -1,11 +1,9 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
-import static com.google.common.collect.ImmutableList.toImmutableList;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.primitives.ImmutableIntArray;
 import com.wilmol.testlib.TestLib;
-import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -30,8 +28,8 @@ class P189RotateArrayTest {
     return TestLib.cartesianProduct(solutions(), examplesArgs());
   }
 
-  static List<Arguments> examplesArgs() {
-    return List.of(
+  static Stream<Arguments> examplesArgs() {
+    return Stream.of(
         Arguments.of(
             ImmutableIntArray.of(1, 2, 3, 4, 5, 6, 7),
             3,
@@ -48,9 +46,7 @@ class P189RotateArrayTest {
     assertThat(nums).asList().containsExactly(2, 1).inOrder();
   }
 
-  static List<Arguments> solutions() {
-    return Stream.of(new P189RotateArray.CopyArray(), new P189RotateArray.ReverseArray())
-        .map(Arguments::of)
-        .collect(toImmutableList());
+  static Stream<P189RotateArray> solutions() {
+    return Stream.of(new P189RotateArray.CopyArray(), new P189RotateArray.ReverseArray());
   }
 }

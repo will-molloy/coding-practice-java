@@ -3,9 +3,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 import static com.wilmol.testlib.TestLib.cartesianProduct;
 
-import com.google.common.collect.ImmutableList;
 import com.wilmol.leetcode.common.BinaryTreeNode;
-import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -28,14 +26,14 @@ class P1457PseudoPalindromicPathsInABinaryTreeTest {
     return cartesianProduct(funs(), args());
   }
 
-  private static List<Arguments> funs() {
-    return ImmutableList.of(
-        Arguments.of(new P1457PseudoPalindromicPathsInABinaryTree.Array()),
-        Arguments.of(new P1457PseudoPalindromicPathsInABinaryTree.BitMask()));
+  private static Stream<P1457PseudoPalindromicPathsInABinaryTree> funs() {
+    return Stream.of(
+        new P1457PseudoPalindromicPathsInABinaryTree.Array(),
+        new P1457PseudoPalindromicPathsInABinaryTree.BitMask());
   }
 
-  private static List<Arguments> args() {
-    return ImmutableList.of(
+  private static Stream<Arguments> args() {
+    return Stream.of(
         Arguments.of(BinaryTreeNode.fromLevelOrder(2, 3, 1, 3, 1, null, 1), 2),
         Arguments.of(
             BinaryTreeNode.fromLevelOrder(2, 1, 1, 1, 3, null, null, null, null, null, 1), 1),

@@ -1,6 +1,5 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
-import static com.google.common.collect.ImmutableList.toImmutableList;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.collect.ImmutableList;
@@ -31,16 +30,14 @@ class P436FindRightIntervalTest {
     return TestLib.cartesianProduct(approaches(), examplesArguments());
   }
 
-  private static ImmutableList<Arguments> approaches() {
+  private static Stream<P436FindRightInterval> approaches() {
     return Stream.of(
-            new P436FindRightInterval.WithCustomObjectAndBinarySearch(),
-            new P436FindRightInterval.WithTreeMap())
-        .map(Arguments::of)
-        .collect(toImmutableList());
+        new P436FindRightInterval.WithCustomObjectAndBinarySearch(),
+        new P436FindRightInterval.WithTreeMap());
   }
 
-  private static ImmutableList<Arguments> examplesArguments() {
-    return ImmutableList.of(
+  private static Stream<Arguments> examplesArguments() {
+    return Stream.of(
         Arguments.of(new int[][] {{1, 2}}, ImmutableList.of(-1)),
         Arguments.of(new int[][] {{3, 4}, {2, 3}, {1, 2}}, ImmutableList.of(-1, 0, 1)),
         Arguments.of(new int[][] {{1, 4}, {2, 3}, {3, 4}}, ImmutableList.of(-1, 2, -1)));

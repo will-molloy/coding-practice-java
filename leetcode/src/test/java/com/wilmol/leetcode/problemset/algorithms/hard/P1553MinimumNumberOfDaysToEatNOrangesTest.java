@@ -1,10 +1,8 @@
 package com.wilmol.leetcode.problemset.algorithms.hard;
 
-import static com.google.common.collect.ImmutableList.toImmutableList;
 import static com.google.common.truth.Truth.assertThat;
 import static com.wilmol.testlib.TestLib.cartesianProduct;
 
-import com.google.common.collect.ImmutableList;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -27,16 +25,14 @@ class P1553MinimumNumberOfDaysToEatNOrangesTest {
     return cartesianProduct(p1553(), examplesArgs());
   }
 
-  private static ImmutableList<Arguments> examplesArgs() {
-    return ImmutableList.of(
+  private static Stream<Arguments> examplesArgs() {
+    return Stream.of(
         Arguments.of(10, 4), Arguments.of(6, 3), Arguments.of(1, 1), Arguments.of(56, 6));
   }
 
-  private static ImmutableList<Arguments> p1553() {
+  private static Stream<P1553MinimumNumberOfDaysToEatNOranges> p1553() {
     return Stream.of(
-            new P1553MinimumNumberOfDaysToEatNOranges.Dp(),
-            new P1553MinimumNumberOfDaysToEatNOranges.Bfs())
-        .map(Arguments::of)
-        .collect(toImmutableList());
+        new P1553MinimumNumberOfDaysToEatNOranges.Dp(),
+        new P1553MinimumNumberOfDaysToEatNOranges.Bfs());
   }
 }

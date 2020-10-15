@@ -1,6 +1,9 @@
 package com.wilmol.testlib;
 
+import static java.util.stream.Collectors.toList;
+
 import com.google.common.collect.Lists;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.provider.Arguments;
@@ -15,12 +18,14 @@ public final class TestLib {
   /**
    * Computes the cartesian product of arguments for use in parameterised tests.
    *
+   * <p>Nested {@link Arguments} instances will be treated as tuples.
+   *
    * <p>E.g.
    *
    * <pre>{@code
    * cartesianProduct(
-   *   List.of(Arguments.of(x), Arguments.of(y)),
-   *   List.of(Arguments.of(a, b), Arguments.of(c, d))
+   *   Stream.of(x, y),
+   *   Stream.of(Arguments.of(a, b), Arguments.of(c, d))
    * );
    * }</pre>
    *
@@ -34,14 +39,24 @@ public final class TestLib {
    *   <li>{@code Arguments.of(y, c, d)}
    * </ul>
    *
-   * @param lists argument sources
+   * @param arguments argument sources
    * @return the cartesian product as a {@code Stream<Arguments>}
    * @see Lists#cartesianProduct
    */
-  @SafeVarargs
-  public static Stream<Arguments> cartesianProduct(List<Arguments>... lists) {
-    return Lists.cartesianProduct(lists).stream()
-        .map(cartesianList -> cartesianList.stream().map(Arguments::get).flatMap(Stream::of))
+  public static Stream<Arguments> cartesianProduct(Stream<?>... arguments) {
+    List<List<?>> argumentsAsLists =
+        Arrays.stream(arguments).map(s -> s.collect(toList())).collect(toList());
+    List<List<Object>> cartesianProduct = Lists.cartesianProduct(argumentsAsLists);
+
+    return cartesianProduct.stream()
+        .map(
+            l ->
+                l.stream()
+                    .flatMap(
+                        o ->
+                            o instanceof Arguments
+                                ? Stream.of(((Arguments) o).get())
+                                : Stream.of(o)))
         .map(Stream::toArray)
         .map(Arguments::of);
   }

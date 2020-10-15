@@ -2,7 +2,6 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.wilmol.testlib.TestLib;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -26,9 +25,8 @@ class P231PowerOfTwoTest {
     return TestLib.cartesianProduct(solutions(), exampleArgs());
   }
 
-  private static ImmutableList<Arguments> exampleArgs() {
-    return ImmutableList.of(
-        Arguments.of(1, true), Arguments.of(16, true), Arguments.of(218, false));
+  private static Stream<Arguments> exampleArgs() {
+    return Stream.of(Arguments.of(1, true), Arguments.of(16, true), Arguments.of(218, false));
   }
 
   @ParameterizedTest
@@ -43,11 +41,11 @@ class P231PowerOfTwoTest {
     assertThat(p231.isPowerOfTwo(-1)).isFalse();
   }
 
-  private static ImmutableList<Arguments> solutions() {
-    return ImmutableList.of(
-        Arguments.of(new P231PowerOfTwo.LibraryMethod()),
-        Arguments.of(new P231PowerOfTwo.BitManipulation()),
-        Arguments.of(new P231PowerOfTwo.Recursive()),
-        Arguments.of(new P231PowerOfTwo.Iterative()));
+  private static Stream<P231PowerOfTwo> solutions() {
+    return Stream.of(
+        new P231PowerOfTwo.LibraryMethod(),
+        new P231PowerOfTwo.BitManipulation(),
+        new P231PowerOfTwo.Recursive(),
+        new P231PowerOfTwo.Iterative());
   }
 }

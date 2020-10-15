@@ -27,14 +27,14 @@ class P1002FindCommonCharactersTest {
     return TestLib.cartesianProduct(p1002Solutions(), examplesInputsAndOutputs());
   }
 
-  private static List<Arguments> p1002Solutions() {
-    return ImmutableList.of(
-        Arguments.of(new P1002FindCommonCharacters.ArraysAndLoops()),
-        Arguments.of(new P1002FindCommonCharacters.MapsAndStreams()));
+  private static Stream<P1002FindCommonCharacters> p1002Solutions() {
+    return Stream.of(
+        new P1002FindCommonCharacters.ArraysAndLoops(),
+        new P1002FindCommonCharacters.MapsAndStreams());
   }
 
-  private static List<Arguments> examplesInputsAndOutputs() {
-    return ImmutableList.of(
+  private static Stream<Arguments> examplesInputsAndOutputs() {
+    return Stream.of(
         Arguments.of(new String[] {"bella", "label", "roller"}, ImmutableList.of("e", "l", "l")),
         Arguments.of(new String[] {"cool", "lock", "cook"}, ImmutableList.of("c", "o")));
   }

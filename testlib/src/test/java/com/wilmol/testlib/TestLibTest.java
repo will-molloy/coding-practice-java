@@ -4,8 +4,8 @@ import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.truth.Correspondence;
 import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.provider.Arguments;
 
@@ -20,8 +20,7 @@ class TestLibTest {
   void testCartesianProduct() {
     assertThat(
             TestLib.cartesianProduct(
-                    List.of(Arguments.of("x"), Arguments.of("y")),
-                    List.of(Arguments.of("a", "b"), Arguments.of("c", "d")))
+                    Stream.of("x", "y"), Stream.of(Arguments.of("a", "b"), Arguments.of("c", "d")))
                 // TODO remove when StreamSubject supports comparingElementsUsing
                 .collect(Collectors.toList()))
         .comparingElementsUsing(argumentsCorrespondence())
