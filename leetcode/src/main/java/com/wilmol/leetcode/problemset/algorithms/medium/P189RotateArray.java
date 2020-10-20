@@ -4,6 +4,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  * <a
  * href=https://leetcode.com/problems/rotate-array>https://leetcode.com/problems/rotate-array/</a>
  *
+ * @see P1625LexicographicallySmallestStringAfterApplyingOperations
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P189RotateArray {
