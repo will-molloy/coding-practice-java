@@ -16,6 +16,7 @@ import java.util.Arrays;
  * @see P368LargestDivisibleSubset
  * @see P673NumberOfLongestIncreasingSubsequence
  * @see P873LengthOfLongestFibonacciSequence
+ * @see P1626BestTeamWithNoConflicts
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P300LongestIncreasingSubsequence {
