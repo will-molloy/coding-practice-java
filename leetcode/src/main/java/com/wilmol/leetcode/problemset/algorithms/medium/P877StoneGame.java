@@ -9,6 +9,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: understand problem constraints
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P1510StoneGame4
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P877StoneGame {
