@@ -8,6 +8,7 @@ import java.util.Set;
  * <a
  * href=https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence>https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/</a>
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1630ArithmeticSubarrays
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P1502CanMakeArithmeticProgressionFromSequence {
