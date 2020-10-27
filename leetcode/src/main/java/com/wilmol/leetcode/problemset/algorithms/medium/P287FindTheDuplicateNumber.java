@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: Cycle detection.
  *
+ * @see P142LinkedListCycle2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P287FindTheDuplicateNumber {
@@ -35,6 +36,7 @@ class P287FindTheDuplicateNumber {
     }
 
     // find the start of the cycle (not always the intersection point)
+    // see P142LinkedListCycle2 for explanation
     int node = head;
     int intersection = fast;
     while (node != intersection) {
