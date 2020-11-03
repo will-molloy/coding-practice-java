@@ -23,14 +23,16 @@ final class P44PentagonNumbers {
 
     // outer: 2..infinity
     // inner: 1..outer
-    return IntStream.iterate(2, i -> i + 1).boxed()
+    return IntStream.iterate(2, i -> i + 1)
+        .boxed()
         .flatMap(
             i -> {
               int pi = pentagon(i);
               return IntStream.range(1, i).mapToObj(j -> Pair.of(pentagon(j), pi));
             })
         .filter(Tuples.predicate((pj, pi) -> isPentagon(pi + pj) && isPentagon(pi - pj)))
-        .findFirst().stream()
+        .findFirst()
+        .stream()
         .map(Tuples.function((pj, pi) -> pi - pj))
         .findAny()
         .orElseThrow();

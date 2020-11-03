@@ -459,7 +459,8 @@ final class P54PokerHands {
               i ->
                   IntStream.range(1, rangeSize)
                       .allMatch(j -> sortedCards.get(i).value == sortedCards.get(i + j).value))
-          .findFirst().stream()
+          .findFirst()
+          .stream()
           .mapToObj(i -> sortedCards.get(i).value)
           .findFirst();
     }

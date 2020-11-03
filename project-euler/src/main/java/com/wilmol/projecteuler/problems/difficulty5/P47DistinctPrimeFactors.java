@@ -36,7 +36,8 @@ final class P47DistinctPrimeFactors {
               }
               return count[0] == n;
             })
-        .findFirst().stream()
+        .findFirst()
+        .stream()
         // take first element in the set of size 'n' (simply subtract, since they are consecutive)
         .map(lastOfSet -> lastOfSet - n + 1)
         .findFirst()

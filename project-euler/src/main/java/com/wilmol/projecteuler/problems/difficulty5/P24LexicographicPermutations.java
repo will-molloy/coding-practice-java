@@ -21,7 +21,10 @@ class P24LexicographicPermutations {
             .boxed()
             .collect(ImmutableList.toImmutableList());
 
-    return Collections.permutations(digits).skip(indexStartingFromOne - 1).findFirst().get()
+    return Collections.permutations(digits)
+        .skip(indexStartingFromOne - 1)
+        .findFirst()
+        .get()
         .stream()
         .map(String::valueOf)
         .collect(Collectors.joining());

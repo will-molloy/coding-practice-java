@@ -27,8 +27,10 @@ class P470ImplementRand10UsingRand7Test {
     Solution solution = new Solution();
 
     ImmutableMap<Integer, Double> probabilities =
-        IntStream.range(0, NUM_TRIALS).mapToObj(i -> solution.rand10())
-            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet()
+        IntStream.range(0, NUM_TRIALS)
+            .mapToObj(i -> solution.rand10())
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+            .entrySet()
             .stream()
             .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
 

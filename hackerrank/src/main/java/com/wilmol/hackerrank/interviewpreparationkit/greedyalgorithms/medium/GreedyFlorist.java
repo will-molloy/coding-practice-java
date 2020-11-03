@@ -31,7 +31,8 @@ final class GreedyFlorist {
     for (int i = 0; i < flowersSortedByPriceDesc.size(); i += k) {
       int setMultiplier = multiplier;
       int setCost =
-          flowersSortedByPriceDesc.subList(i, Math.min(i + k, flowersSortedByPriceDesc.size()))
+          flowersSortedByPriceDesc
+              .subList(i, Math.min(i + k, flowersSortedByPriceDesc.size()))
               .stream()
               .mapToInt(a -> a * setMultiplier)
               .sum();

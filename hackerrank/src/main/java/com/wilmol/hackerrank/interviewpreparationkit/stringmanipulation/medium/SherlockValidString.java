@@ -24,7 +24,11 @@ final class SherlockValidString {
   // valid if char counts are equal, OR they can be made equal with one deletion
   static boolean isValid(String s) {
     Map<Long, Long> charCountCounts =
-        s.chars().mapToObj(c -> (char) c).collect(groupingBy(identity(), counting())).values()
+        s
+            .chars()
+            .mapToObj(c -> (char) c)
+            .collect(groupingBy(identity(), counting()))
+            .values()
             .stream()
             .collect(groupingBy(identity(), counting()));
 

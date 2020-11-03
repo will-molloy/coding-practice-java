@@ -98,8 +98,7 @@ final class P34DigitFactorials {
     // e.g. the sequence will look like: [0 .. 9] [11 .. 19] [22 .. 29] .. [77 .. 79] 88 89 99 (when
     // numDigits = 2)
     List<String> nextIntSequence =
-        digitsSequence
-            .parallelStream()
+        digitsSequence.parallelStream()
             .flatMap(
                 a ->
                     IntStream.rangeClosed(Character.getNumericValue(a.charAt(a.length() - 1)), 9)
@@ -107,8 +106,7 @@ final class P34DigitFactorials {
             .collect(ImmutableList.toImmutableList());
 
     long validIntsSummed =
-        nextIntSequence
-            .parallelStream()
+        nextIntSequence.parallelStream()
             // reverse to put largest digits first (i.e. the maximum permutation value)
             // allows early exit when computing the digit factorial sum
             // as we know when the sum exceeds the maximum permutation of n
