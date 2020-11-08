@@ -15,6 +15,7 @@ import java.util.Arrays;
  * true.
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P278FirstBadVersion
+ * @see P1283FindTheSmallestDivisorGivenAThreshold
  * @see P1552MagneticForceBetweenTwoBalls
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */

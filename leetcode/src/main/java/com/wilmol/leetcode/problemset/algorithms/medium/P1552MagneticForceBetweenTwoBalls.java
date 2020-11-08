@@ -14,9 +14,10 @@ import java.util.Arrays;
  * distance apart) and false (can't place balls x distance apart) ([true, true, ..., false, false])
  * want the last true.
  *
- * @author <a href=https://wilmol.com>Will Molloy</a>
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P278FirstBadVersion
+ * @see P1283FindTheSmallestDivisorGivenAThreshold
  * @see P1482MinimumNumberOfDaysToMakeMBouquets
+ * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P1552MagneticForceBetweenTwoBalls {
 
