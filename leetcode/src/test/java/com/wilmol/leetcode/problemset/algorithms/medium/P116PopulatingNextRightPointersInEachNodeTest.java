@@ -3,7 +3,9 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.wilmol.leetcode.problemset.algorithms.medium.P116PopulatingNextRightPointersInEachNode.Node;
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 /**
  * P116PopulatingNextRightPointersInEachNodeTest.
@@ -12,11 +14,9 @@ import org.junit.jupiter.api.Test;
  */
 class P116PopulatingNextRightPointersInEachNodeTest {
 
-  private final P116PopulatingNextRightPointersInEachNode fn =
-      new P116PopulatingNextRightPointersInEachNode();
-
-  @Test
-  void example() {
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void example(P116PopulatingNextRightPointersInEachNode solution) {
     Node root = new Node(1);
     root.left = new Node(2);
     root.right = new Node(3);
@@ -36,11 +36,18 @@ class P116PopulatingNextRightPointersInEachNodeTest {
     expectedConnectedRoot.left.left.next = expectedConnectedRoot.left.right;
     expectedConnectedRoot.left.right.next = expectedConnectedRoot.right.left;
     expectedConnectedRoot.right.left.next = expectedConnectedRoot.right.right;
-    assertThat(fn.connect(root)).isEqualTo(expectedConnectedRoot);
+    assertThat(solution.connect(root)).isEqualTo(expectedConnectedRoot);
   }
 
-  @Test
-  void nullRoot() {
-    assertThat(fn.connect(null)).isNull();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void nullRoot(P116PopulatingNextRightPointersInEachNode solution) {
+    assertThat(solution.connect(null)).isNull();
+  }
+
+  static Stream<P116PopulatingNextRightPointersInEachNode> solutions() {
+    return Stream.of(
+        new P116PopulatingNextRightPointersInEachNode.ExtraSpace(),
+        new P116PopulatingNextRightPointersInEachNode.ConstantSpace());
   }
 }

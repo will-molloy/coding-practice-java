@@ -13,8 +13,10 @@ import com.wilmol.leetcode.problemset.algorithms.medium.P116PopulatingNextRightP
  */
 class P117PopulatingNextRightPointersInEachNode2 {
 
+  // TODO O(1) space solution
+
   private final P116PopulatingNextRightPointersInEachNode delegate =
-      new P116PopulatingNextRightPointersInEachNode();
+      new P116PopulatingNextRightPointersInEachNode.ExtraSpace();
 
   public Node connect(Node root) {
     return delegate.connect(root);
