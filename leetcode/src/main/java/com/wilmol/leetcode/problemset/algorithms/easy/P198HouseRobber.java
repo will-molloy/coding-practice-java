@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  * <p>Key: dynamic programming
  *
  * @see com.wilmol.leetcode.problemset.algorithms.medium.P213HouseRobber2
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P337HouseRobber3
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P198HouseRobber {

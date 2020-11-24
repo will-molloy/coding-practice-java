@@ -14,6 +14,7 @@ import java.util.stream.IntStream;
  * <p>Key: modify existing algorithm
  *
  * @see com.wilmol.leetcode.problemset.algorithms.easy.P198HouseRobber
+ * @see P337HouseRobber3
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P213HouseRobber2 {
