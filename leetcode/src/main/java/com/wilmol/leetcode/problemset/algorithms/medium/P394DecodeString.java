@@ -13,6 +13,7 @@ import java.util.ArrayDeque;
  * <p>Key: 2 stacks - 1 for most recent repeat number, 1 to store result before processing bracket
  * contents.
  *
+ * @see P227BasicCalculator2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P394DecodeString {
