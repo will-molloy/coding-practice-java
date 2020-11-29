@@ -38,6 +38,7 @@ class P1673FindTheMostCompetitiveSubsequenceTest {
   void notMonotonicToEnsureSizeK() {
     assertThat(p1673.mostCompetitive(new int[] {71, 18, 52, 29, 55, 73, 24, 42, 66, 8, 80, 2}, 3))
         .asList()
-        .containsExactly(8, 80, 2);
+        .containsExactly(8, 80, 2)
+        .inOrder();
   }
 }
