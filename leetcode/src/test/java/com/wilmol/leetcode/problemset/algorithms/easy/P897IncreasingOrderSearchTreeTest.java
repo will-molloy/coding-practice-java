@@ -2,7 +2,6 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.Iterables;
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
