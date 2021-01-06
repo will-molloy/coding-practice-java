@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: leaving out negative prefixes/suffixes from the sum (which may include positive values).
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P1695MaximumErasureValue
  * @see <a href=https://www.youtube.com/watch?v=umt7t1_X8Rc>Errichto's video</a>
  * @see <a href=https://en.wikipedia.org/wiki/Maximum_subarray_proble>Kadane's algorithm</a>
  * @author <a href=https://wilmol.com>Will Molloy</a>
