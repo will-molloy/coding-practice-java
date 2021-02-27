@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.medium;
  *
  * <p>Key: treating as 1d array; formula to deconstruct 'index' into 'rowIndex' and 'colIndex'
  *
+ * @see P240SearchA2DMatrix2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P74SearchA2dMatrix {
