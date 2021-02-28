@@ -11,6 +11,7 @@ import java.util.List;
  * <p>Difficulty: Medium.
  *
  * @see P1424DiagonalTraverse2
+ * @see P1329SortTheMatrixDiagonally
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 interface P498DiagonalTraverse {
