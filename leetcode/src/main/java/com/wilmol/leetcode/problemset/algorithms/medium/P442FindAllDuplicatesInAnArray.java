@@ -14,6 +14,7 @@ import java.util.List;
  * <p>Key: Mark {@code num} seen by making {@code nums[num]} negative. Works since {@code num} is in
  * [1, n], so each has a bucket.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.easy.P645SetMismatch
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P442FindAllDuplicatesInAnArray {
