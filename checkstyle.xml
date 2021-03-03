@@ -362,7 +362,7 @@
         </module>
         <module name="RegexpSinglelineJava">
             <property name="format"
-                      value="(?&lt;!import static.*)(Truth|Assertions|Mockito|ArgumentMatchers)"/>
+                      value="(?&lt;!import static.*)(Truth|Assertions|Mockito|ArgumentMatchers)(?!.*(Extension|Settings))"/>
             <property name="ignoreComments" value="true"/>
             <property name="message" value="Use a static import."/>
         </module>
