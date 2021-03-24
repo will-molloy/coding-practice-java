@@ -1,9 +1,9 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
 import com.google.common.primitives.ImmutableIntArray;
-import com.wilmol.testlib.TestLib;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -25,7 +25,7 @@ class P189RotateArrayTest {
   }
 
   static Stream<Arguments> examples() {
-    return TestLib.cartesianProduct(solutions(), examplesArgs());
+    return cartesianProduct(solutions(), examplesArgs());
   }
 
   static Stream<Arguments> examplesArgs() {

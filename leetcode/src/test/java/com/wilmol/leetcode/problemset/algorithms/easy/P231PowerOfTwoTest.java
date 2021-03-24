@@ -1,8 +1,8 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
-import com.wilmol.testlib.TestLib;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -22,7 +22,7 @@ class P231PowerOfTwoTest {
   }
 
   static Stream<Arguments> examples() {
-    return TestLib.cartesianProduct(solutions(), exampleArgs());
+    return cartesianProduct(solutions(), exampleArgs());
   }
 
   private static Stream<Arguments> exampleArgs() {

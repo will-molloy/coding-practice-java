@@ -9,11 +9,12 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.provider.Arguments;
 
 /**
- * TestLib.
+ * Computes the cartesian product of arguments for use in parameterised tests.
  *
+ * @see #cartesianProduct
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
-public final class TestLib {
+public final class CartesianProduct {
 
   /**
    * Computes the cartesian product of arguments for use in parameterised tests.
@@ -61,5 +62,5 @@ public final class TestLib {
         .map(Arguments::of);
   }
 
-  private TestLib() {}
+  private CartesianProduct() {}
 }

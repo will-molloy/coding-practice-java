@@ -14,12 +14,12 @@ import org.junit.jupiter.params.provider.Arguments;
  *
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
-class TestLibTest {
+class CartesianProductTest {
 
   @Test
   void testCartesianProduct() {
     assertThat(
-            TestLib.cartesianProduct(
+            CartesianProduct.cartesianProduct(
                     Stream.of("x", "y"), Stream.of(Arguments.of("a", "b"), Arguments.of("c", "d")))
                 // TODO remove when StreamSubject supports comparingElementsUsing
                 .collect(Collectors.toList()))

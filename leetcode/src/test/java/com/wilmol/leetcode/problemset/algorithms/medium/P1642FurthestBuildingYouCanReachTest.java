@@ -1,8 +1,8 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
-import com.wilmol.testlib.TestLib;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -27,7 +27,7 @@ class P1642FurthestBuildingYouCanReachTest {
   }
 
   static Stream<Arguments> examples() {
-    return TestLib.cartesianProduct(
+    return cartesianProduct(
         solutions(),
         Stream.of(
             Arguments.of(new int[] {4, 2, 7, 6, 9, 14, 12}, 5, 1, 4),

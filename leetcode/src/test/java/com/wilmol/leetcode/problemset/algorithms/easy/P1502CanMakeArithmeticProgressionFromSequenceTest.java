@@ -1,8 +1,8 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
-import com.wilmol.testlib.TestLib;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -25,7 +25,7 @@ class P1502CanMakeArithmeticProgressionFromSequenceTest {
     Stream<Arguments> args =
         Stream.of(
             Arguments.of(new int[] {3, 5, 1}, true), Arguments.of(new int[] {1, 2, 4}, false));
-    return TestLib.cartesianProduct(p1502(), args);
+    return cartesianProduct(p1502(), args);
   }
 
   @ParameterizedTest

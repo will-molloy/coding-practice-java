@@ -1,7 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
-import static com.wilmol.testlib.TestLib.cartesianProduct;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
 import com.wilmol.leetcode.common.BinaryTreeNode;
 import java.util.stream.Stream;

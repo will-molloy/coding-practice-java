@@ -1,7 +1,7 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
-import static com.wilmol.testlib.TestLib.cartesianProduct;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;

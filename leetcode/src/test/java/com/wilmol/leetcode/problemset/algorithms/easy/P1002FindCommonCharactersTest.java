@@ -1,9 +1,9 @@
 package com.wilmol.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
 import com.google.common.collect.ImmutableList;
-import com.wilmol.testlib.TestLib;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -24,7 +24,7 @@ class P1002FindCommonCharactersTest {
   }
 
   static Stream<Arguments> examples() {
-    return TestLib.cartesianProduct(p1002Solutions(), examplesInputsAndOutputs());
+    return cartesianProduct(p1002Solutions(), examplesInputsAndOutputs());
   }
 
   private static Stream<P1002FindCommonCharacters> p1002Solutions() {

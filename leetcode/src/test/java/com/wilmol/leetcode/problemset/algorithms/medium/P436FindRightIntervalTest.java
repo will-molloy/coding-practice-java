@@ -1,9 +1,9 @@
 package com.wilmol.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.wilmol.testlib.CartesianProduct.cartesianProduct;
 
 import com.google.common.collect.ImmutableList;
-import com.wilmol.testlib.TestLib;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -27,7 +27,7 @@ class P436FindRightIntervalTest {
   }
 
   static Stream<Arguments> examples() {
-    return TestLib.cartesianProduct(approaches(), examplesArguments());
+    return cartesianProduct(approaches(), examplesArguments());
   }
 
   private static Stream<P436FindRightInterval> approaches() {
