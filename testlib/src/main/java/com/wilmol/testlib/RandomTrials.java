@@ -1,11 +1,9 @@
 package com.wilmol.testlib;
 
-import static com.google.common.collect.ImmutableMap.toImmutableMap;
-
 import com.google.common.collect.ImmutableMap;
-import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -28,15 +26,19 @@ public final class RandomTrials {
    */
   public static <T> ImmutableMap<T, Double> getActualProbabilities(
       Supplier<? extends T> randomEventGenerator) {
-    // run trials, collecting distribution of each event
-    Map<? extends T, Long> map =
-        IntStream.range(0, NUM_TRIALS)
-            .mapToObj(i -> randomEventGenerator.get())
-            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+    // run trials
+    return IntStream.range(0, NUM_TRIALS)
+        .mapToObj(i -> randomEventGenerator.get())
+        // collect probability (percentage) of each event
+        .collect(
+            Collectors.collectingAndThen(
+                Collectors.groupingBy(Function.identity(), percentage(NUM_TRIALS)),
+                ImmutableMap::copyOf));
+  }
 
-    // convert distribution to probability percentage
-    return map.entrySet().stream()
-        .collect(toImmutableMap(Map.Entry::getKey, e -> (double) e.getValue() / NUM_TRIALS));
+  private static <T> Collector<T, ?, Double> percentage(int totalCount) {
+    return Collectors.collectingAndThen(
+        Collectors.counting(), count -> (double) count / totalCount);
   }
 
   private RandomTrials() {}
