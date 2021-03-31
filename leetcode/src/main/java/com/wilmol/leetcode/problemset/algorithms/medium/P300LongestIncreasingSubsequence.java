@@ -17,6 +17,7 @@ import java.util.Arrays;
  * @see P673NumberOfLongestIncreasingSubsequence
  * @see P873LengthOfLongestFibonacciSequence
  * @see P1626BestTeamWithNoConflicts
+ * @see com.wilmol.leetcode.problemset.algorithms.hard.P354RussianDollEnvelopes
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P300LongestIncreasingSubsequence {
