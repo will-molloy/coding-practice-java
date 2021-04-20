@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Objects;
 
 /**
@@ -52,8 +53,9 @@ class P341FlattenNestedListIterator {
     private void addAll(List<NestedInteger> nestedList) {
       // push the elements in reverse order
       // this way the list is at the front of the stack and the order of the list is maintained
-      for (int i = nestedList.size() - 1; i >= 0; i--) {
-        stack.push(nestedList.get(i));
+      ListIterator<NestedInteger> listIterator = nestedList.listIterator(nestedList.size());
+      while (listIterator.hasPrevious()) {
+        stack.push(listIterator.previous());
       }
     }
   }
