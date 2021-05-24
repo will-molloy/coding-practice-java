@@ -10,6 +10,7 @@ package com.wilmol.leetcode.problemset.algorithms.easy;
  *
  * <p>Key: Math trick to simplify the problem.
  *
+ * @see com.wilmol.leetcode.problemset.algorithms.medium.P462MinimumMovesToEqualArrayElements2
  * @author <a href=https://wilmol.com>Will Molloy</a>
  */
 class P453MinimumMovesToEqualArrayElements {
