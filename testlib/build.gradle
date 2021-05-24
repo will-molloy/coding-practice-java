@@ -1,4 +1,4 @@
 dependencies {
-    implementation "org.junit.jupiter:junit-jupiter:$junitVersion"
-    implementation "com.google.guava:guava:$guavaVersion"
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: "$junitVersion"
+    implementation group: 'com.google.guava', name: 'guava', version: "$guavaVersion"
 }

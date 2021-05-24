@@ -1,5 +1,5 @@
 dependencies {
-    implementation "com.google.guava:guava:$guavaVersion"
-    implementation "org.apache.logging.log4j:log4j-core:$log4jVersion"
-    implementation "org.apache.commons:commons-lang3:$commonsLangVersion"
+    implementation group: 'com.google.guava', name: 'guava', version: "$guavaVersion"
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$log4jVersion"
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: "$commonsLangVersion"
 }
