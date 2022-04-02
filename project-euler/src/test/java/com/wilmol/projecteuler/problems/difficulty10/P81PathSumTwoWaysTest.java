@@ -40,11 +40,15 @@ public class P81PathSumTwoWaysTest {
   }
 
   public static int[][] get5x5Matrix() {
-    return MATRIX_5X5.clone();
+    return deepCopy(MATRIX_5X5);
   }
 
   public static int[][] get80x80Matrix() {
-    return MATRIX_80X80.clone();
+    return deepCopy(MATRIX_80X80);
+  }
+
+  private static int[][] deepCopy(int[][] array) {
+    return Arrays.stream(array).map(row -> row.clone()).toArray(i -> array.clone());
   }
 
   @Test
