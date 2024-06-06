@@ -1,7 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
-import static com.google.common.truth.Truth8.assertThat;
 
 import com.google.common.collect.Streams;
 import com.willmolloy.leetcode.problemset.algorithms.medium.P341FlattenNestedListIterator.NestedInteger;
