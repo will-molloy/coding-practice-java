@@ -1,5 +1,6 @@
 package com.willmolloy.leetcode.common;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Deque;
@@ -46,13 +47,12 @@ public final class BinaryTreeNode {
     return root;
   }
 
-  @SuppressWarnings("PublicField")
   public int val;
 
-  @SuppressWarnings("PublicField")
+  @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
   public BinaryTreeNode left;
 
-  @SuppressWarnings("PublicField")
+  @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
   public BinaryTreeNode right;
 
   /** public constructor required for leetcode submission. */

@@ -18,16 +18,16 @@ class P1694ReformatPhoneNumber {
   public String reformatNumber(String number) {
     String digits = number.replaceAll("\\D", "");
 
-    String result = "";
+    StringBuilder result = new StringBuilder();
     int i;
     for (i = 0; i < digits.length() - 4; i += 3) {
-      result += digits.substring(i, i + 3) + "-";
+      result.append(digits, i, i + 3).append("-");
     }
     if (i == digits.length() - 4) {
-      result += digits.substring(i, i + 2) + "-";
+      result.append(digits, i, i + 2).append("-");
       i += 2;
     }
-    result += digits.substring(i);
-    return result;
+    result.append(digits.substring(i));
+    return result.toString();
   }
 }

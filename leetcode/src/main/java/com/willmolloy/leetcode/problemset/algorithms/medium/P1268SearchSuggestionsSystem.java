@@ -1,5 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.Map;
  */
 class P1268SearchSuggestionsSystem {
 
+  @SuppressFBWarnings("SBSC_USE_STRINGBUFFER_CONCATENATION")
   List<List<String>> suggestedProducts(String[] products, String searchWord) {
     Trie trie = new Trie();
     for (String product : products) {

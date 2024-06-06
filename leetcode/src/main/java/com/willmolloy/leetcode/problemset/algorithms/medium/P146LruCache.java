@@ -1,5 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.LinkedHashMap;
 
 /**
@@ -16,6 +17,7 @@ class P146LruCache {
   // in an interview may be required to implement our own linked map...
   private final LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
 
+  @SuppressFBWarnings("CT_CONSTRUCTOR_THROW")
   P146LruCache(int capacity) {
     if (capacity <= 0) {
       throw new IllegalArgumentException(String.format("Invalid capacity: %s", capacity));

@@ -1,5 +1,7 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 /**
  * <a
  * href=https://leetcode.com/problems/find-kth-bit-in-nth-binary-string>https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/</a>
@@ -14,6 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  */
 class P1545FindKthBitInNthBinaryString {
 
+  @SuppressFBWarnings("SBSC_USE_STRINGBUFFER_CONCATENATION")
   public char findKthBit(int n, int k) {
     String s = "0";
     for (int i = 2; i <= n; i++) {

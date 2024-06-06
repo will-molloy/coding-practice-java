@@ -1,5 +1,6 @@
 package com.willmolloy.leetcode.common;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.IdentityHashMap;
@@ -26,7 +27,7 @@ public final class ListNode {
 
   public final int val;
 
-  @SuppressWarnings("PublicField")
+  @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
   public ListNode next;
 
   /** public constructor required for leetcode submission. */

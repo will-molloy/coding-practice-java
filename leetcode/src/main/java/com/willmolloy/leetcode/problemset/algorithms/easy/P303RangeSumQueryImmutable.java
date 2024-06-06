@@ -128,6 +128,7 @@ class P303RangeSumQueryImmutable {
 
         /** Start of the range (inclusive) represented by this node. */
         private final int start;
+
         /** End of the range (inclusive) represented by this node. */
         private final int end;
 
@@ -136,6 +137,7 @@ class P303RangeSumQueryImmutable {
 
         /** Left child. */
         private final Node left;
+
         /** Right child. */
         private final Node right;
 
