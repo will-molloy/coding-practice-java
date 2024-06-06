@@ -15,4 +15,6 @@ projecteuler, leetcode, hackerrank etc. using Java
   - [ ] [Interview Preparation Kit](hackerrank/src/main/java/com/willmolloy/hackerrank/interviewpreparationkit) (40/69)
   - [x] [Regex](hackerrank/src/main/java/com/willmolloy/hackerrank/regex) (47/47)
 
-_Repository created with https://github.com/will-molloy/copybara-action_
+___
+
+Repository created with https://github.com/will-molloy/copybara-action

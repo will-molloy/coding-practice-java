@@ -21,15 +21,14 @@ jobs:
           distribution: adopt
           java-version: 17
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Build
-        run: ./gradlew projects clean build jacocoTestReport --no-daemon --refresh-dependencies
+        run: |
+          chmod +x gradlew
+          ./gradlew projects clean build jacocoTestReport --no-daemon --refresh-dependencies
 
       - name: Upload coverage to Codecov
-        if: matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unit-tests-${{ matrix.os }}
           fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
