@@ -5,30 +5,34 @@ import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsTask
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 
 logger.quiet("Java version: ${JavaVersion.current()}")
 logger.quiet("Gradle version: ${gradle.gradleVersion}")
 
 plugins {
   id("java-library")
-  id("com.diffplug.gradle.spotless") version "6.25.0" apply (false)
-  id("com.github.spotbugs") version "6.0.27" apply (false)
-  id("com.asarkar.gradle.build-time-tracker") version "4.3.0"
+  kotlin("jvm") version libs.versions.kotlin
+  alias(libs.plugins.spotless)
+  alias(libs.plugins.spotbugs)
+  alias(libs.plugins.buildtimetracker)
 }
 
 allprojects {
   group = "com.willmolloy"
-  version = "1.0.0"
   repositories {
     mavenCentral()
   }
-}
 
-subprojects {
   apply(plugin = "java")
   configure<JavaPluginExtension> {
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21
+  }
+
+  apply(plugin = "kotlin")
+  configure<KotlinJvmProjectExtension> {
+    jvmToolchain(21)
   }
 
   apply(plugin = "com.diffplug.spotless")
@@ -36,9 +40,22 @@ subprojects {
     java {
       removeUnusedImports()
       googleJavaFormat()
+      trimTrailingWhitespace()
+      endWithNewline()
+    }
+    kotlin {
+      ktlint().editorConfigOverride(mapOf("ktlint_standard_package-name" to "disabled"))
+      trimTrailingWhitespace()
+      endWithNewline()
+    }
+    kotlinGradle {
+      ktlint().editorConfigOverride(mapOf("ktlint_standard_no-empty-file" to "disabled"))
+      trimTrailingWhitespace()
+      endWithNewline()
     }
   }
 
+  // TODO detekt for kotlin
   apply(plugin = "checkstyle")
   configure<CheckstyleExtension> {
     toolVersion = "10.12.0"
@@ -68,17 +85,19 @@ subprojects {
       showExceptions = true
       showCauses = true
       showStackTraces = true
-      afterSuite(KotlinClosure2({ desc: TestDescriptor, result: TestResult ->
-        if (desc.parent == null) {
-          println(
-            "Results: ${result.resultType} " +
+      afterSuite(
+        KotlinClosure2({ desc: TestDescriptor, result: TestResult ->
+          if (desc.parent == null) {
+            println(
+              "Results: ${result.resultType} " +
                 "(${result.testCount} test${if (result.testCount > 1) "s" else ""}, " +
                 "${result.successfulTestCount} passed, " +
                 "${result.failedTestCount} failed, " +
-                "${result.skippedTestCount} skipped)"
-          )
-        }
-      }))
+                "${result.skippedTestCount} skipped)",
+            )
+          }
+        }),
+      )
     }
     finalizedBy(tasks.withType<JacocoReport>())
   }
@@ -102,23 +121,19 @@ subprojects {
   }
 
   dependencies {
-    val guavaVersion = "33.4.0-jre"
-    implementation("com.github.spotbugs:spotbugs-annotations:4.8.6")
+    implementation(rootProject.libs.spotbugs.annotations)
 
-    val junitVersion = "5.11.4"
-    val truthVersion = "1.4.4"
-    val mockitoVersion = "5.14.2"
-    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
-    testImplementation("com.google.truth:truth:$truthVersion")
-    testImplementation("org.mockito:mockito-core:$mockitoVersion")
-    testImplementation("org.mockito:mockito-junit-jupiter:$mockitoVersion")
-    testImplementation("com.google.guava:guava-testlib:$guavaVersion")
+    testImplementation(rootProject.libs.junit)
+    testImplementation(rootProject.libs.truth)
+    testImplementation(rootProject.libs.mockito.core)
+    testImplementation(rootProject.libs.mockito.junit)
+    testImplementation(rootProject.libs.guava.testlib)
     testImplementation(project(":testlib"))
 
     configurations.all {
-      exclude("org.assertj")
+      exclude(group = "org.assertj")
       resolutionStrategy {
-        force("com.google.guava:guava:$guavaVersion") // exclude android version
+        force("com.google.guava:guava:${rootProject.libs.versions.guava.get()}") // exclude android version
       }
     }
   }
