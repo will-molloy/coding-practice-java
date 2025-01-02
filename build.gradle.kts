@@ -12,7 +12,7 @@ logger.quiet("Gradle version: ${gradle.gradleVersion}")
 plugins {
   id("java-library")
   id("com.diffplug.gradle.spotless") version "6.25.0" apply (false)
-  id("com.github.spotbugs") version "6.0.15" apply (false)
+  id("com.github.spotbugs") version "6.0.27" apply (false)
   id("com.asarkar.gradle.build-time-tracker") version "4.3.0"
 }
 
@@ -102,12 +102,12 @@ subprojects {
   }
 
   dependencies {
-    val guavaVersion = "33.2.1-jre"
-    implementation("com.github.spotbugs:spotbugs-annotations:4.8.5")
+    val guavaVersion = "33.4.0-jre"
+    implementation("com.github.spotbugs:spotbugs-annotations:4.8.6")
 
-    val junitVersion = "5.10.2"
-    val truthVersion = "1.4.2"
-    val mockitoVersion = "5.12.0"
+    val junitVersion = "5.11.4"
+    val truthVersion = "1.4.4"
+    val mockitoVersion = "5.14.2"
     testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
     testImplementation("com.google.truth:truth:$truthVersion")
     testImplementation("org.mockito:mockito-core:$mockitoVersion")

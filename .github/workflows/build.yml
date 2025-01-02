@@ -27,7 +27,7 @@ jobs:
           ./gradlew projects clean build jacocoTestReport --no-daemon --refresh-dependencies
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           flags: unit-tests-${{ matrix.os }}
           fail_ci_if_error: true
