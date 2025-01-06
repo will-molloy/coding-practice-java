@@ -37,14 +37,19 @@ allprojects {
 
   apply(plugin = "com.diffplug.spotless")
   configure<SpotlessExtension> {
+    // https://github.com/diffplug/spotless/tree/main/plugin-gradle#java
     java {
       removeUnusedImports()
       googleJavaFormat()
       trimTrailingWhitespace()
       endWithNewline()
     }
+    // https://github.com/diffplug/spotless/tree/main/plugin-gradle#kotlin
+    // Compared to ktlint, it seems ktfmt is better for actual Kotlin code (more deterministic/consistent output).
+    // Furthermore, spotless is more for formatting than linting.
+    // However, it has some weird output with Gradle scripts, so using ktlint for that.
     kotlin {
-      ktlint().editorConfigOverride(mapOf("ktlint_standard_package-name" to "disabled"))
+      ktfmt().googleStyle()
       trimTrailingWhitespace()
       endWithNewline()
     }
@@ -55,7 +60,7 @@ allprojects {
     }
   }
 
-  // TODO detekt for kotlin
+  // TODO Kotlin alternative?
   apply(plugin = "checkstyle")
   configure<CheckstyleExtension> {
     toolVersion = "10.12.0"
