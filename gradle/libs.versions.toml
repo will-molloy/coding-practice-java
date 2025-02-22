@@ -1,10 +1,10 @@
 [plugins]
-spotless = { id = "com.diffplug.spotless", version = "6.25.0" }
-spotbugs = { id = "com.github.spotbugs", version = "6.0.27" }
+spotless = { id = "com.diffplug.spotless", version = "7.0.2" }
+spotbugs = { id = "com.github.spotbugs", version = "6.1.5" }
 buildtimetracker = { id = "com.asarkar.gradle.build-time-tracker", version = "4.3.0" }
 
 [versions]
-spotbugs = "4.8.6"
+spotbugs = "4.9.1"
 guava = "33.4.0-jre"
 log4j = "2.24.3"
 commons-lang = "3.17.0"
@@ -12,9 +12,9 @@ jackson = "2.18.2"
 # test libs
 junit = "5.11.4"
 truth = "1.4.4"
-mockito = "5.14.2"
+mockito = "5.15.2"
 # langs
-scala = "3.6.2"
+scala = "3.6.3"
 kotlin = "2.1.0"
 
 [libraries]
