@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: |
           chmod +x gradlew
-          ./gradlew projects clean build jacocoTestReport --no-daemon --refresh-dependencies
+          ./gradlew projects clean build --no-daemon --refresh-dependencies
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
