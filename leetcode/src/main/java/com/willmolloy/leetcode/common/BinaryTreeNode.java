@@ -7,7 +7,6 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * BinaryTreeNode.
@@ -25,10 +24,8 @@ public final class BinaryTreeNode {
     root.left = buildLevelOrder(1, values);
     root.right = buildLevelOrder(2, values);
 
-    List<Integer> serialisedValues =
-        root.serialise().stream().filter(Objects::nonNull).collect(Collectors.toList());
-    List<Integer> inputValues =
-        Arrays.stream(values).filter(Objects::nonNull).collect(Collectors.toList());
+    List<Integer> serialisedValues = root.serialise().stream().filter(Objects::nonNull).toList();
+    List<Integer> inputValues = Arrays.stream(values).filter(Objects::nonNull).toList();
     if (!serialisedValues.equals(inputValues)) {
       // serialise method will skip unreachable node values (... since they're unreachable)
       // so if doesn't equal input value list, throw iae
