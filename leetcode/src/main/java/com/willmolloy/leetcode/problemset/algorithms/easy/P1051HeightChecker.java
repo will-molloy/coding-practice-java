@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Copy, sort and compare.
+ * <p>Key idea: Copy, sort and compare.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

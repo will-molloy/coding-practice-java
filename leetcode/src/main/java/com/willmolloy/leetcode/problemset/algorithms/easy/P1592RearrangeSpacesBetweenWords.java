@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Count spaces per word and extra spaces and then reconstruct.
+ * <p>Key idea: Count spaces per word and extra spaces and then reconstruct.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

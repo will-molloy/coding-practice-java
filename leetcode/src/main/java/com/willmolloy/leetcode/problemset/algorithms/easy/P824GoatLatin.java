@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * <p>Extra memory: O(1) (including return value, average O(n), worst O(n<sup>2</sup>), same as time
  * complexity)
  *
- * <p>Key: Transform words one by one.
+ * <p>Key idea: Transform words one by one.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

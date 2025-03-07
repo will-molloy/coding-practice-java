@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Two pointers.
+ * <p>Key idea: Two pointers.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

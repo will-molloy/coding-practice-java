@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Convert to fixed length binary then count differing bits. Xor sum simplifies the
+ * <p>Key idea: Convert to fixed length binary then count differing bits. Xor sum simplifies the
  * differing bits part.
  *
  * @see P190ReverseBits

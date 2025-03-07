@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Node degree.
+ * <p>Key idea: Node degree.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

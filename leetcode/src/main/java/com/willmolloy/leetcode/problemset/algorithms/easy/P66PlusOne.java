@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n) (sometimes copy array)
  *
- * <p>Key: recursion
+ * <p>Key idea: recursion
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

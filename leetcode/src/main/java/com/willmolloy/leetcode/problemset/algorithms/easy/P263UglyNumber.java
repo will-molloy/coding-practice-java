@@ -7,8 +7,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: prime factorisation: while divisible by factor {@code i}, repeatedly divide by it before
- * moving onto next ({@code i = [2..n]})
+ * <p>Key idea: prime factorisation: while divisible by factor {@code i}, repeatedly divide by it
+ * before moving onto next ({@code i = [2..n]})
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P264UglyNumber2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

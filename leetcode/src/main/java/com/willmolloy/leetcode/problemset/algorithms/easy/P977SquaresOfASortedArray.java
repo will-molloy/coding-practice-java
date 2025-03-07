@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Array is partitioned into negative half and positive half; negative half squares are
+ * <p>Key idea: Array is partitioned into negative half and positive half; negative half squares are
  * arranged in descending order while positive half squares are arranged in ascending order. So
  * having two pointers (one for each half) is optimal.
  *

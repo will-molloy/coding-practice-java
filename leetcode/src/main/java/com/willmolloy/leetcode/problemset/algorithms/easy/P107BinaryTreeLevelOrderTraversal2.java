@@ -17,8 +17,8 @@ import java.util.stream.Stream;
  *
  * <p>Space: O(w) = O(n)
  *
- * <p>Key: implicitly reverse levels by inserting each level into front TODO is this cheating? No
- * way to view the leave nodes first...
+ * <p>Key idea: implicitly reverse levels by inserting each level into front TODO is this cheating?
+ * No way to view the leave nodes first...
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P102BinaryTreeLevelOrderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>

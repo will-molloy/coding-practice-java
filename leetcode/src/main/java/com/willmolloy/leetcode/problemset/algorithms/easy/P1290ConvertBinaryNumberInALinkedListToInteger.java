@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Bubble up result from the end of the list (dfs/dp).
+ * <p>Key idea: Bubble up result from the end of the list (dfs/dp).
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
  * @see P67AddBinary

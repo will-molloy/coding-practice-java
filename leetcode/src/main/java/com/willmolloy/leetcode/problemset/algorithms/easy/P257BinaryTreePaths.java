@@ -14,8 +14,8 @@ import java.util.List;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: Just do string concatenation; passing around mutable objects like list of ints or string
- * builder is problematic and requires copying the data structure anyway.
+ * <p>Key idea: Just do string concatenation; passing around mutable objects like list of ints or
+ * string builder is problematic and requires copying the data structure anyway.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

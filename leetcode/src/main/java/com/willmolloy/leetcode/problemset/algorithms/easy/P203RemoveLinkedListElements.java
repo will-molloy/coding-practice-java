@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Dummy node to handle case head needs to be removed.
+ * <p>Key idea: Dummy node to handle case head needs to be removed.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

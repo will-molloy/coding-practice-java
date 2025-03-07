@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Subtract 1, 2, 3, etc. until no more coins.
+ * <p>Key idea: Subtract 1, 2, 3, etc. until no more coins.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

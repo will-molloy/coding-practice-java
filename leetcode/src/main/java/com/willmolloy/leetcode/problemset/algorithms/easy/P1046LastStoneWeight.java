@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  *
  * <p>Space: O(n)
  *
- * <p>Key: heap ({@link PriorityQueue})
+ * <p>Key idea: heap ({@link PriorityQueue})
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

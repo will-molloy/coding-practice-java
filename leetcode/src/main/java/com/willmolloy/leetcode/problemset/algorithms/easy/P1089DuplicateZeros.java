@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * <a
  * href=https://leetcode.com/problems/duplicate-zeros>https://leetcode.com/problems/duplicate-zeros/</a>
  *
- * <p>Key: First count how many shifts need to be performed and then shift (two passes).
+ * <p>Key idea: First count how many shifts need to be performed and then shift (two passes).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

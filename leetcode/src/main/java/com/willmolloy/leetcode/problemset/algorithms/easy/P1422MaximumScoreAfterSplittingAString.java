@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Prefix sum.
+ * <p>Key idea: Prefix sum.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1423MaximumPointsYouCanObtainFromCards
  * @author <a href=https://willmolloy.com>Will Molloy</a>

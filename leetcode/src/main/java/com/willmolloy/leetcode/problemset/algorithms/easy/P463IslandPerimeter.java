@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(rows * cols)
  *
- * <p>Key: Setting {@code grid[row][col] = 2} so mark it as seen without marking it as water.
+ * <p>Key idea: Setting {@code grid[row][col] = 2} so mark it as seen without marking it as water.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P130SurroundedRegions
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P200NumberOfIslands

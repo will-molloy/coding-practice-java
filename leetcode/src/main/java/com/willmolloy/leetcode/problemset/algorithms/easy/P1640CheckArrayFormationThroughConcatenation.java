@@ -11,8 +11,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: The elements are distinct so you can remove pieces greedily (won't have situation like
- * arr = [1, 2, 1], pieces = [[1], [1, 2]]).
+ * <p>Key idea: The elements are distinct so you can remove pieces greedily (won't have situation
+ * like arr = [1, 2, 1], pieces = [[1], [1, 2]]).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

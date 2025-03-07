@@ -10,7 +10,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Declare variables as {@code double} before division to avoid divide by zero errors.
+ * <p>Key idea: Declare variables as {@code double} before division to avoid divide by zero errors.
  * ({@code double} returns infinity, while {@code int} throws an {@link ArithmeticException}.)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

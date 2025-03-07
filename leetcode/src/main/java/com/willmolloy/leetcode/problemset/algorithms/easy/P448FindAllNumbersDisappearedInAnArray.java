@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Got the hint you use a[i]-1 as an index (since a[i]:[1, n]) but was marking with 0s,
+ * <p>Key idea: Got the hint you use a[i]-1 as an index (since a[i]:[1, n]) but was marking with 0s,
  * really needed to mark with negative numbers.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

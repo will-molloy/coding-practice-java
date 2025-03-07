@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Sum each account and get max.
+ * <p>Key idea: Sum each account and get max.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

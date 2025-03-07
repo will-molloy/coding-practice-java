@@ -6,7 +6,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * <a
  * href=https://leetcode.com/problems/reverse-linked-list>https://leetcode.com/problems/reverse-linked-list/</a>
  *
- * <p>Key: pointer manipulation, and using temporary variable for swap.
+ * <p>Key idea: pointer manipulation, and using temporary variable for swap.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P92ReverseLinkedList2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  *
  * <p>Space: O(1)
  *
- * <p>Key: heap to track k largest/smallest
+ * <p>Key idea: heap to track k largest/smallest
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

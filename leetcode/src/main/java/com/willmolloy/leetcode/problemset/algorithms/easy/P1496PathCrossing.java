@@ -13,7 +13,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Duplicate detection; track previous locations in set.
+ * <p>Key idea: Duplicate detection; track previous locations in set.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

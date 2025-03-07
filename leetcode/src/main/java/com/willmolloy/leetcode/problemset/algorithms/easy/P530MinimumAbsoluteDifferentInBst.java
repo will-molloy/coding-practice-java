@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: Tracking prev node (well, just it's value) in the inorder traversal.
+ * <p>Key idea: Tracking prev node (well, just it's value) in the inorder traversal.
  *
  * @see P783MinimumDistanceBetweenBstNodes
  * @author <a href=https://willmolloy.com>Will Molloy</a>

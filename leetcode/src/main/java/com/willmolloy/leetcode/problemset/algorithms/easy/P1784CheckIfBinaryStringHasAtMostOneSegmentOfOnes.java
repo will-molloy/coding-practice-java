@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Simulation. Once a one is seen, test if another one is seen after a zero is seen.
+ * <p>Key idea: Simulation. Once a one is seen, test if another one is seen after a zero is seen.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

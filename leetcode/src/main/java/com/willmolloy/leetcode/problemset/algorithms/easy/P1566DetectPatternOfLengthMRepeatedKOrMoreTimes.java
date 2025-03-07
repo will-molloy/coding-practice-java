@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: First gather all patterns, then check if any pattern repeats {@code k} times
+ * <p>Key idea: First gather all patterns, then check if any pattern repeats {@code k} times
  * contiguously.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

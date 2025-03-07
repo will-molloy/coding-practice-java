@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Track max distance and char associated with that max distance.
+ * <p>Key idea: Track max distance and char associated with that max distance.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

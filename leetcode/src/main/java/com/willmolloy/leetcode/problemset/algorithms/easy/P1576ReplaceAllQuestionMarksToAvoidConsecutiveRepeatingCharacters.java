@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Brute force; find first valid replacement [a, z].
+ * <p>Key idea: Brute force; find first valid replacement [a, z].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

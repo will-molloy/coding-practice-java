@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * <a href=https://leetcode.com/problems/house-robber>https://leetcode.com/problems/house-robber</a>
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P213HouseRobber2
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P337HouseRobber3

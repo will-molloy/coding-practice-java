@@ -25,7 +25,7 @@ interface P645SetMismatch {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Duplicate has frequency of 2. Missing is num in range [1, n] that is missing.
+   * <p>Key idea: Duplicate has frequency of 2. Missing is num in range [1, n] that is missing.
    */
   class LinearSpace implements P645SetMismatch {
 
@@ -61,8 +61,8 @@ interface P645SetMismatch {
    *
    * <p>Extra memory: O(1)
    *
-   * <p>Key: Mark {@code num} seen by making {@code nums[num]} negative. Works since {@code num} is
-   * in [1, n], so each has a bucket. (Same idea as {@link
+   * <p>Key idea: Mark {@code num} seen by making {@code nums[num]} negative. Works since {@code
+   * num} is in [1, n], so each has a bucket. (Same idea as {@link
    * com.willmolloy.leetcode.problemset.algorithms.medium.P442FindAllDuplicatesInAnArray}.)
    */
   class ConstantSpace implements P645SetMismatch {

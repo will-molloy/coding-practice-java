@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Math trick to simplify the problem.
+ * <p>Key idea: Math trick to simplify the problem.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P462MinimumMovesToEqualArrayElements2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

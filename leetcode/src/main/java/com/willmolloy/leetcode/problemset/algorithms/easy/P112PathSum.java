@@ -9,7 +9,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: A leaf is a node with no children.
+ * <p>Key idea: A leaf is a node with no children.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P113PathSum2
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P437PathSum3

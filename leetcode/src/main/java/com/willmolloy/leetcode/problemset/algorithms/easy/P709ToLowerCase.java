@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n)
  *
- * <p>Key: {@code - 'A' + 'a'} will add the difference of upper/lower case ascii value and therefore
- * shifts the ascii value from upper to lower case.
+ * <p>Key idea: {@code - 'A' + 'a'} will add the difference of upper/lower case ascii value and
+ * therefore shifts the ascii value from upper to lower case.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

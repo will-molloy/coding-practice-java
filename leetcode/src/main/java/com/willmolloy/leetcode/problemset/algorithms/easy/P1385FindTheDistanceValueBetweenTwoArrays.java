@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Brute force.
+ * <p>Key idea: Brute force.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

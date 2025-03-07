@@ -20,7 +20,7 @@ interface P21MergeTwoSortedLists {
    *
    * <p>Extra space: O(1)
    *
-   * <p>Key: Choose smaller node.
+   * <p>Key idea: Choose smaller node.
    */
   class Iterative implements P21MergeTwoSortedLists {
 
@@ -60,7 +60,7 @@ interface P21MergeTwoSortedLists {
    *
    * <p>Extra space: O(n)
    *
-   * <p>Key: Choose smaller node.
+   * <p>Key idea: Choose smaller node.
    */
   class Recursive implements P21MergeTwoSortedLists {
 

@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  *
  * <p>Space: O(n)
  *
- * <p>Key: priority queue to track minimum
+ * <p>Key idea: priority queue to track minimum
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

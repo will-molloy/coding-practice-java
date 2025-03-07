@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Take all the candies.
+ * <p>Key idea: Take all the candies.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Converting decimal to binary; you get the bits (from the remainders) in reverse order.
+ * <p>Key idea: Converting decimal to binary; you get the bits (from the remainders) in reverse
+ * order.
  *
  * @see P1009ComplementOfBase10Integer
  * @author <a href=https://willmolloy.com>Will Molloy</a>

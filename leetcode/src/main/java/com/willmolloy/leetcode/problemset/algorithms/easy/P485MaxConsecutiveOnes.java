@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: The runs of 1s are disjoint so can reset {@code current} and update {@code max} when they
- * end.
+ * <p>Key idea: The runs of 1s are disjoint so can reset {@code current} and update {@code max} when
+ * they end.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Once we have a sequence, never need to change the starting point (since we want the
+ * <p>Key idea: Once we have a sequence, never need to change the starting point (since we want the
  * longest sequence), only see if the end point can be progressed. If the end point cannot progress
  * then can simply start over, as all previous elements are 'blocked' from entering the new
  * sequence. In other words, all continuous increasing subsequences are <b>disjoint</b>.

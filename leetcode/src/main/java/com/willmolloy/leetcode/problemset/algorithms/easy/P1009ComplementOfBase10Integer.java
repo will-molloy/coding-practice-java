@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Duplicate problem of {@link P476NumberComplement}
+ * <p>Key idea: Duplicate problem of {@link P476NumberComplement}
  *
  * @see P476NumberComplement
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,7 +11,7 @@ import java.util.Deque;
  *
  * <p>Space: O(n)
  *
- * <p>Key: stack (LIFO)
+ * <p>Key idea: stack (LIFO)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

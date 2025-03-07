@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Track depth as you go.
+ * <p>Key idea: Track depth as you go.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

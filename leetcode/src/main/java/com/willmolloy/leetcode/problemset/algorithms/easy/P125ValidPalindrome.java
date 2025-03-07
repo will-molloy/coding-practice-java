@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  *
  * <p>Space: O(1)
  *
- * <p>Key: 2 pointers
+ * <p>Key idea: 2 pointers
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Bruteforce the simulation; keep going until string stops changing.
+ * <p>Key idea: Bruteforce the simulation; keep going until string stops changing.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

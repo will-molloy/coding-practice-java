@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: The target node data must be stored in global variables (when doing DFS) because
+ * <p>Key idea: The target node data must be stored in global variables (when doing DFS) because
  * otherwise the updates are only seen when data is passed down the tree (not across).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

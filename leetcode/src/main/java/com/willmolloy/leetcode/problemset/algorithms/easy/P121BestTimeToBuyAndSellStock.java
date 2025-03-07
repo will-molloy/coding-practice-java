@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: tracking current minimum/maximum
+ * <p>Key idea: tracking current minimum/maximum
  *
  * @see P122BestTimeToBuyAndSellStock2
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P123BestTimeToBuyAndSellStock3

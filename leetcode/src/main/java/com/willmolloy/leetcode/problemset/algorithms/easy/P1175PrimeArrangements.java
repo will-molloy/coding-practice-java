@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: When computing {@code result} use {@code long} to avoid overflows.
+ * <p>Key idea: When computing {@code result} use {@code long} to avoid overflows.
  *
  * @see P204CountPrimes
  * @author <a href=https://willmolloy.com>Will Molloy</a>

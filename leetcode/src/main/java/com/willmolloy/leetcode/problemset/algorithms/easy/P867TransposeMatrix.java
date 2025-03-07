@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(nm) (O(1) if returned array is excluded here)
  *
- * <p>Key: Linear algebra.
+ * <p>Key idea: Linear algebra.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

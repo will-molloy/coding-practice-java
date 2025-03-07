@@ -8,9 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy. Choice each iteration is to place flowers or not. You should always place flowers
- * if you can because not planting only frees up the next iteration and compared to planting in the
- * next iteration, planting now blocks less of the array.
+ * <p>Key idea: Greedy. Choice each iteration is to place flowers or not. You should always place
+ * flowers if you can because not planting only frees up the next iteration and compared to planting
+ * in the next iteration, planting now blocks less of the array.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

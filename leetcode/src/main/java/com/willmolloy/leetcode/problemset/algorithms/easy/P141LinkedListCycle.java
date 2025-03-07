@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Fast and slow pointer.
+ * <p>Key idea: Fast and slow pointer.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P142LinkedListCycle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

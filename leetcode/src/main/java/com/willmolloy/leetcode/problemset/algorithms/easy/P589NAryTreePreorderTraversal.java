@@ -14,9 +14,9 @@ import java.util.ListIterator;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Recursive DFS or iterative DFS with stack. For the stack, it's important children are
- * pushed in reverse order such that their original order is maintained (recursion doesn't need this
- * as it eagerly processes the next node).
+ * <p>Key idea: Recursive DFS or iterative DFS with stack. For the stack, it's important children
+ * are pushed in reverse order such that their original order is maintained (recursion doesn't need
+ * this as it eagerly processes the next node).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

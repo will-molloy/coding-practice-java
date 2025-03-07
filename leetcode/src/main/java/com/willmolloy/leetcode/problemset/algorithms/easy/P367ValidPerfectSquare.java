@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Searching a sequence ([1, num]) so use binary search.
+ * <p>Key idea: Searching a sequence ([1, num]) so use binary search.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Binary search. Essentially have an array partitioned into false (good version) and true
- * (bad version) ([false, false, ..., true, true]) want the first true.
+ * <p>Key idea: Binary search. Essentially have an array partitioned into false (good version) and
+ * true (bad version) ([false, false, ..., true, true]) want the first true.
  *
  * @see
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1283FindTheSmallestDivisorGivenAThreshold

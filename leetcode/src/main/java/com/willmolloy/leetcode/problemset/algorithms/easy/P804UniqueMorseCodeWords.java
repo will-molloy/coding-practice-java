@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(sum(s: words))
  *
- * <p>Key: Convert to morse and get unique count (hashset).
+ * <p>Key idea: Convert to morse and get unique count (hashset).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

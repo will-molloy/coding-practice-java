@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Removing <b>subsequence</b> - so if not already empty or palindrome can remove all 'a's
- * or 'b's to be left with the other letter which is a palindrome.
+ * <p>Key idea: Removing <b>subsequence</b> - so if not already empty or palindrome can remove all
+ * 'a's or 'b's to be left with the other letter which is a palindrome.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

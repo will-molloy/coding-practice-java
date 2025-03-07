@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Brute force. {@code nums.length} is upper bound on {@code x} since if every element were
- * larger, {@code nums.length} would be returned.
+ * <p>Key idea: Brute force. {@code nums.length} is upper bound on {@code x} since if every element
+ * were larger, {@code nums.length} would be returned.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

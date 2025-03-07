@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Precompute keyboard letter row numbers.
+ * <p>Key idea: Precompute keyboard letter row numbers.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

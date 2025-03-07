@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * <a
  * href=https://leetcode.com/problems/range-sum-query-immutable>https://leetcode.com/problems/range-sum-query-immutable</a>
  *
- * <p>Key: knowledge of ranges/intervals, prefix sum/segment tree.
+ * <p>Key idea: knowledge of ranges/intervals, prefix sum/segment tree.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P304RangeSumQuery2dImmutable
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P307RangeSumQueryMutable

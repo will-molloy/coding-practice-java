@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Space: O(k)
  *
- * <p>Key: optimising DP for reduced space use by iterating backwards
+ * <p>Key idea: optimising DP for reduced space use by iterating backwards
  *
  * @see P118PascalTriangle
  * @author <a href=https://willmolloy.com>Will Molloy</a>

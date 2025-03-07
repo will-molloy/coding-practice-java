@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1) TODO don't think regex allocates memory proportional to input?
  *
- * <p>Key: Regex.
+ * <p>Key idea: Regex.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

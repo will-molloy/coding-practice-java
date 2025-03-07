@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Alice limits herself to one of each candy and at most n/2 candies. So the answer is:
+ * <p>Key idea: Alice limits herself to one of each candy and at most n/2 candies. So the answer is:
  *
  * <ul>
  *   <li>n/2 - if NUM_UNIQUE is greater than n/2

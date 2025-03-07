@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: converting number into its digits (use {@link Character#digit(char, int)})
+ * <p>Key idea: converting number into its digits (use {@link Character#digit(char, int)})
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

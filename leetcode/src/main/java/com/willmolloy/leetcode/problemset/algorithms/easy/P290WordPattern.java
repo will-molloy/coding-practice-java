@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Map tracking [word -> letter] and vice versa (BiMap).
+ * <p>Key idea: Map tracking [word -> letter] and vice versa (BiMap).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

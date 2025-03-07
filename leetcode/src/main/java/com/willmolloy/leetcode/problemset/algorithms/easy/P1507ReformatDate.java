@@ -11,8 +11,8 @@ import java.time.format.DateTimeFormatter;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Remove {@code "(st|nd|rd|th)"} first. {@link DateTimeFormatter} with {@code "d"} formats
- * both 1 and 2 digit days.
+ * <p>Key idea: Remove {@code "(st|nd|rd|th)"} first. {@link DateTimeFormatter} with {@code "d"}
+ * formats both 1 and 2 digit days.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

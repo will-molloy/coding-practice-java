@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: encoding result into another algorithm to reduce work done (getting height of each child
- * and then calling {@code isBalanced} on each child would be O(n<sup>2</sup>) runtime)
+ * <p>Key idea: encoding result into another algorithm to reduce work done (getting height of each
+ * child and then calling {@code isBalanced} on each child would be O(n<sup>2</sup>) runtime)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

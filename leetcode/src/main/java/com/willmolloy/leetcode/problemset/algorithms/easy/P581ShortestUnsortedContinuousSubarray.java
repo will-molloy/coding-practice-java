@@ -8,9 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Was able to use two-pointer approach to find where array stops increasing (from the left)
- * and where array stops decreasing (from the right). Was missing finding insertion location for
- * min/max element which covers the case when elements are equal.
+ * <p>Key idea: Was able to use two-pointer approach to find where array stops increasing (from the
+ * left) and where array stops decreasing (from the right). Was missing finding insertion location
+ * for min/max element which covers the case when elements are equal.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

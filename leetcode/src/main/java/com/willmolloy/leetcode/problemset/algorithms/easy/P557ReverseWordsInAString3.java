@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Reverse word by word and join again. (Cheating? Otherwise reverse up to index of next
- * {@code ' '}.)
+ * <p>Key idea: Reverse word by word and join again. (Cheating? Otherwise reverse up to index of
+ * next {@code ' '}.)
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P344ReverseString

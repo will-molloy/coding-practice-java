@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: {@link String#replaceAll}.
+ * <p>Key idea: {@link String#replaceAll}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

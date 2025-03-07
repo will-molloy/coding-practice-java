@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(w1 + w2)
  *
- * <p>Key: {@link String#join}
+ * <p>Key idea: {@link String#join}
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

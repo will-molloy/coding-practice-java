@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: Path is count of edges not nodes. Think about what the DFS should return; path can only
- * go up and down through one node, so have to return max of left/right not combine them.
+ * <p>Key idea: Path is count of edges not nodes. Think about what the DFS should return; path can
+ * only go up and down through one node, so have to return max of left/right not combine them.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P124BinaryTreeMaximumPathSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -23,7 +23,7 @@ interface P104MaximumDepthOfBinaryTree {
    *
    * <p>Space: O(h)
    *
-   * <p>Key: recursion
+   * <p>Key idea: recursion
    */
   class Dfs implements P104MaximumDepthOfBinaryTree {
 
@@ -43,7 +43,7 @@ interface P104MaximumDepthOfBinaryTree {
    *
    * <p>Space: O(w) = O(n)
    *
-   * <p>Key: queue data structure; caching level size
+   * <p>Key idea: queue data structure; caching level size
    */
   class Bfs implements P104MaximumDepthOfBinaryTree {
 

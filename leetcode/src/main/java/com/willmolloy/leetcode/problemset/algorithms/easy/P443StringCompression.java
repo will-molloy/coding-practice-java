@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Two pointers, one for writing the result, one for traversing the array. Can write
+ * <p>Key idea: Two pointers, one for writing the result, one for traversing the array. Can write
  * in-place because the traversal pointer will always be ahead or even (1 or 2 chars - even, >2
  * chars - ahead).
  *

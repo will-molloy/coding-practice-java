@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Track next positive number while scanning the array.
+ * <p>Key idea: Track next positive number while scanning the array.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

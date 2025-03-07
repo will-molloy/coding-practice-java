@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1) (O(n) including return value)
  *
- * <p>Key: Simulate candy distribution, modulo helps clean up code.
+ * <p>Key idea: Simulate candy distribution, modulo helps clean up code.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

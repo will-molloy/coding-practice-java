@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: how to update the sum, could add to sub problem results (then base case needs to be zero)
- * or update within sub problems (then base case needs to be the current sum)
+ * <p>Key idea: how to update the sum, could add to sub problem results (then base case needs to be
+ * zero) or update within sub problems (then base case needs to be the current sum)
  *
  * @see
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1315SumOfNodesWithEvenValuedGrandparent

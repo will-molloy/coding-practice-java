@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Space: O(1)
  *
- * <p>Key: bitwise operators
+ * <p>Key idea: bitwise operators
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P137SingleNumber2
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P260SingleNumber3

@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Space: O(n<sup>2</sup>)
  *
- * <p>Key: just coded the steps in the visualisation (dynamic programming)
+ * <p>Key idea: just coded the steps in the visualisation (dynamic programming)
  *
  * @see P119PascalTriangle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

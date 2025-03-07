@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
  * <a
  * href=https://leetcode.com/problems/maximize-sum-of-array-after-k-negations>https://leetcode.com/problems/maximize-sum-of-array-after-k-negations</a>
  *
- * <p>Key: Sort/min heap to get access to smallest values first.
+ * <p>Key idea: Sort/min heap to get access to smallest values first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

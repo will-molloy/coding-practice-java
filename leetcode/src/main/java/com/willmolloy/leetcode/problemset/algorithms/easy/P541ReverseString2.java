@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Reverse in chunks of size {@code k} (i.e. {@code [i, i + k)}). Can just use {@link
+ * <p>Key idea: Reverse in chunks of size {@code k} (i.e. {@code [i, i + k)}). Can just use {@link
  * Math#min} to cover case where k covers the rest of the array.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString

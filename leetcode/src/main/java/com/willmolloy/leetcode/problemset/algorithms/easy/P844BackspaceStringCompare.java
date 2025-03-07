@@ -8,9 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: once finished backspacing, need to check string again cause may have ended up on another
- * backspace character. Also must not backspace over backspace characters, rather increment the
- * count of them.
+ * <p>Key idea: once finished backspacing, need to check string again cause may have ended up on
+ * another backspace character. Also must not backspace over backspace characters, rather increment
+ * the count of them.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
