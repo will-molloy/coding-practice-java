@@ -6,7 +6,7 @@ import com.google.common.testing.EqualsTester;
 import org.junit.jupiter.api.Test;
 
 /**
- * ListNodeTest.
+ * Unit tests for {@link ListNode}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
@@ -28,7 +28,7 @@ class ListNodeTest {
   }
 
   @Test
-  void testEquals() {
+  void testEqualsAndStaticFactory() {
     ListNode threeElements = new ListNode(1);
     threeElements.next = new ListNode(2);
     threeElements.next.next = new ListNode(3);
@@ -38,13 +38,13 @@ class ListNodeTest {
     threeElementsCycling.next.next = new ListNode(3);
     threeElementsCycling.next.next.next = threeElementsCycling;
 
-    ListNode threeElementsCyclingViaStaticFactory = ListNode.of(1, 2, 3);
-    threeElementsCyclingViaStaticFactory.next.next.next = threeElementsCyclingViaStaticFactory;
+    ListNode threeElementsCyclingStaticFactory = ListNode.of(1, 2, 3);
+    threeElementsCyclingStaticFactory.next.next.next = threeElementsCyclingStaticFactory;
 
     new EqualsTester()
         .addEqualityGroup(new ListNode(1), ListNode.of(1))
         .addEqualityGroup(threeElements, ListNode.of(1, 2, 3))
-        .addEqualityGroup(threeElementsCycling, threeElementsCyclingViaStaticFactory)
+        .addEqualityGroup(threeElementsCycling, threeElementsCyclingStaticFactory)
         .testEquals();
   }
 }
