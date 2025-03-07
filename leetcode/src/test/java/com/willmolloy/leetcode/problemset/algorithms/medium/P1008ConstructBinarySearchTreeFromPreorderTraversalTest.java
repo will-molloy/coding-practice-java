@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -18,7 +18,7 @@ class P1008ConstructBinarySearchTreeFromPreorderTraversalTest {
   @MethodSource("p1008")
   void example(P1008ConstructBinarySearchTreeFromPreorderTraversal p1008) {
     assertThat(p1008.bstFromPreorder(new int[] {8, 5, 1, 7, 10, 12}))
-        .isEqualTo(BinaryTreeNode.fromLevelOrder(8, 5, 10, 1, 7, null, 12));
+        .isEqualTo(TreeNode.fromLevelOrder(8, 5, 10, 1, 7, null, 12));
   }
 
   @ParameterizedTest

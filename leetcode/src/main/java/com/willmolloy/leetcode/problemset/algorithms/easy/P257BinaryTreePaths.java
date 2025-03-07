@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,13 +21,13 @@ import java.util.List;
  */
 class P257BinaryTreePaths {
 
-  public List<String> binaryTreePaths(BinaryTreeNode root) {
+  public List<String> binaryTreePaths(TreeNode root) {
     List<String> paths = new ArrayList<>();
     dfs(root, "", paths);
     return paths;
   }
 
-  private void dfs(BinaryTreeNode node, String path, List<String> paths) {
+  private void dfs(TreeNode node, String path, List<String> paths) {
     if (node == null) {
       return;
     }

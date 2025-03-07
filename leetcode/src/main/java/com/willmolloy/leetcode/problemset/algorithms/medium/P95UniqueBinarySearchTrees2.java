@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,34 +20,34 @@ import java.util.List;
  */
 class P95UniqueBinarySearchTrees2 {
 
-  public List<BinaryTreeNode> generateTrees(int n) {
+  public List<TreeNode> generateTrees(int n) {
     if (n == 0) {
       return Collections.emptyList();
     }
     return trees(1, n);
   }
 
-  private List<BinaryTreeNode> trees(int start, int end) {
+  private List<TreeNode> trees(int start, int end) {
     if (end < start) {
       // need null node, so empty tree is paired with non-empty tree, otherwise non-empty tree is
       // ignored because (if returning empty list) the size would be 0
       return Collections.singletonList(null);
     }
     if (start == end) {
-      return Collections.singletonList(new BinaryTreeNode(start));
+      return Collections.singletonList(new TreeNode(start));
     }
 
-    ArrayList<BinaryTreeNode> trees = new ArrayList<>();
+    ArrayList<TreeNode> trees = new ArrayList<>();
     // try every node as root
     for (int i = start; i <= end; i++) {
       // recursively build subtrees
-      List<BinaryTreeNode> leftTrees = trees(start, i - 1);
-      List<BinaryTreeNode> rightTrees = trees(i + 1, end);
+      List<TreeNode> leftTrees = trees(start, i - 1);
+      List<TreeNode> rightTrees = trees(i + 1, end);
       // pair every left tree with every right tree (cartesian product)
-      for (BinaryTreeNode leftTree : leftTrees) {
-        for (BinaryTreeNode rightTree : rightTrees) {
+      for (TreeNode leftTree : leftTrees) {
+        for (TreeNode rightTree : rightTrees) {
           // now construct root, so avoids need to copy trees
-          BinaryTreeNode root = new BinaryTreeNode(i);
+          TreeNode root = new TreeNode(i);
           root.left = leftTree;
           root.right = rightTree;
           trees.add(root);

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -20,11 +20,11 @@ class P1315SumOfNodesWithEvenValuedGrandparent {
   // alternatively, find even valued nodes and sum their grandchildren (this is not as efficient,
   // nor as elegant)
 
-  public int sumEvenGrandparent(BinaryTreeNode root) {
+  public int sumEvenGrandparent(TreeNode root) {
     return sum(root, null, null, 0);
   }
 
-  private int sum(BinaryTreeNode node, BinaryTreeNode parent, BinaryTreeNode grandparent, int sum) {
+  private int sum(TreeNode node, TreeNode parent, TreeNode grandparent, int sum) {
     if (node == null) {
       // bottomed out
       return sum;

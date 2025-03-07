@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Objects;
 import java.util.Queue;
@@ -20,9 +20,9 @@ import java.util.stream.Stream;
  */
 class P1302DeepestLeavesSum {
 
-  public int deepestLeavesSum(BinaryTreeNode root) {
+  public int deepestLeavesSum(TreeNode root) {
     // just find the deepest level with bfs
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
 
     int deepestSum = root.val;
@@ -31,7 +31,7 @@ class P1302DeepestLeavesSum {
       // traversed to a new level, reset the sum
       deepestSum = 0;
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         deepestSum += node.val;
         Stream.of(node.left, node.right).filter(Objects::nonNull).forEach(queue::add);
       }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,11 +17,11 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P865SmallestSubtreeWithAllTheDeepestNodes {
 
-  public BinaryTreeNode subtreeWithAllDeepest(BinaryTreeNode root) {
+  public TreeNode subtreeWithAllDeepest(TreeNode root) {
     return dfs(root).node;
   }
 
-  private TreeNodeLevel dfs(BinaryTreeNode node) {
+  private TreeNodeLevel dfs(TreeNode node) {
     if (node == null) {
       return new TreeNodeLevel(null, 0);
     }
@@ -40,10 +40,10 @@ class P865SmallestSubtreeWithAllTheDeepestNodes {
   }
 
   private static class TreeNodeLevel {
-    BinaryTreeNode node;
+    TreeNode node;
     int level;
 
-    TreeNodeLevel(BinaryTreeNode node, int level) {
+    TreeNodeLevel(TreeNode node, int level) {
       this.node = node;
       this.level = level;
     }

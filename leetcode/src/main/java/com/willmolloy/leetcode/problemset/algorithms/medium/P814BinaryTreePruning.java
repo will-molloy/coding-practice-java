@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P814BinaryTreePruning {
 
-  public BinaryTreeNode pruneTree(BinaryTreeNode root) {
+  public TreeNode pruneTree(TreeNode root) {
     if (dfs(root)) {
       return null;
     }
@@ -24,7 +24,7 @@ class P814BinaryTreePruning {
   }
 
   // return true if 'node' should be deleted (it's a leaf with val = 0)
-  private boolean dfs(BinaryTreeNode node) {
+  private boolean dfs(TreeNode node) {
     if (node == null) {
       return false;
     }

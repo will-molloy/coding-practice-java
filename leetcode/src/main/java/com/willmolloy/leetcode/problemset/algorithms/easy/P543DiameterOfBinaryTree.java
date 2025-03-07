@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -12,7 +12,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 interface P543DiameterOfBinaryTree {
 
-  int diameterOfBinaryTree(BinaryTreeNode root);
+  int diameterOfBinaryTree(TreeNode root);
 
   /**
    * Initial solution.
@@ -27,7 +27,7 @@ interface P543DiameterOfBinaryTree {
   class Quadratic implements P543DiameterOfBinaryTree {
 
     @Override
-    public int diameterOfBinaryTree(BinaryTreeNode root) {
+    public int diameterOfBinaryTree(TreeNode root) {
       // must be a path between leaves
       // so get height of left and right tree and add together
       // do this with every node as root (O(n^2))
@@ -41,7 +41,7 @@ interface P543DiameterOfBinaryTree {
       return Math.max(leftHeight + rightHeight, Math.max(leftDiameter, rightDiameter));
     }
 
-    private int height(BinaryTreeNode root) {
+    private int height(TreeNode root) {
       if (root == null) {
         return 0;
       }
@@ -62,7 +62,7 @@ interface P543DiameterOfBinaryTree {
   class Linear implements P543DiameterOfBinaryTree {
 
     @Override
-    public int diameterOfBinaryTree(BinaryTreeNode root) {
+    public int diameterOfBinaryTree(TreeNode root) {
       if (root == null) {
         return 0;
       }
@@ -71,7 +71,7 @@ interface P543DiameterOfBinaryTree {
       return max[0];
     }
 
-    private int height(BinaryTreeNode root, int[] max) {
+    private int height(TreeNode root, int[] max) {
       if (root == null) {
         return 0;
       }

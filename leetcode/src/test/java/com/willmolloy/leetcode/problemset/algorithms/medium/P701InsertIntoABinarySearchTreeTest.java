@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,18 +16,18 @@ class P701InsertIntoABinarySearchTreeTest {
 
   @Test
   void example1() {
-    assertThat(p701.insertIntoBST(BinaryTreeNode.fromLevelOrder(4, 2, 7, 1, 3), 5))
-        .isEqualTo(BinaryTreeNode.fromLevelOrder(4, 2, 7, 1, 3, 5));
+    assertThat(p701.insertIntoBST(TreeNode.fromLevelOrder(4, 2, 7, 1, 3), 5))
+        .isEqualTo(TreeNode.fromLevelOrder(4, 2, 7, 1, 3, 5));
   }
 
   @Test
   void example2() {
-    assertThat(p701.insertIntoBST(BinaryTreeNode.fromLevelOrder(40, 20, 60, 10, 30, 50, 70), 25))
-        .isEqualTo(BinaryTreeNode.fromLevelOrder(40, 20, 60, 10, 30, 50, 70, null, null, 25));
+    assertThat(p701.insertIntoBST(TreeNode.fromLevelOrder(40, 20, 60, 10, 30, 50, 70), 25))
+        .isEqualTo(TreeNode.fromLevelOrder(40, 20, 60, 10, 30, 50, 70, null, null, 25));
   }
 
   @Test
   void initiallyEmptyTree() {
-    assertThat(p701.insertIntoBST(null, 1)).isEqualTo(BinaryTreeNode.fromLevelOrder(1));
+    assertThat(p701.insertIntoBST(null, 1)).isEqualTo(TreeNode.fromLevelOrder(1));
   }
 }

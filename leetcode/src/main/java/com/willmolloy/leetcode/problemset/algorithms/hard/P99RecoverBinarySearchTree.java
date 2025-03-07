@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.hard;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P99RecoverBinarySearchTree {
 
-  public void recoverTree(BinaryTreeNode root) {
+  public void recoverTree(TreeNode root) {
     inorder(root);
 
     // swap the two (exactly two nodes were swapped)
@@ -26,15 +26,15 @@ class P99RecoverBinarySearchTree {
   }
 
   // first node in swap
-  private BinaryTreeNode first;
+  private TreeNode first;
   // second node in swap
-  private BinaryTreeNode second;
+  private TreeNode second;
   // will track previous node in inorder traversal state, initially INT_MIN
-  private BinaryTreeNode prev = new BinaryTreeNode(Integer.MIN_VALUE);
+  private TreeNode prev = new TreeNode(Integer.MIN_VALUE);
 
   // inorder is traversing the BST in sorted order
   // think of it like going left to right on sorted list
-  private void inorder(BinaryTreeNode node) {
+  private void inorder(TreeNode node) {
     if (node == null) {
       return;
     }

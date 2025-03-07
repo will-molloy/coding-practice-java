@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -17,7 +17,7 @@ class P297SerializeAndDeserializeBinaryTreeTest {
 
   @Test
   void example() {
-    BinaryTreeNode asTree = BinaryTreeNode.fromLevelOrder(1, 2, 3, null, null, 4, 5);
+    TreeNode asTree = TreeNode.fromLevelOrder(1, 2, 3, null, null, 4, 5);
     String asString = "1(2)(3(4)(5))";
     assertThat(p297.serialize(asTree)).isEqualTo("1(2)(3(4)(5))");
     assertThat(p297.deserialize(asString)).isEqualTo(asTree);

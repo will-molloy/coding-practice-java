@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,12 +20,12 @@ import java.util.List;
  */
 class P113PathSum2 {
 
-  public List<List<Integer>> pathSum(BinaryTreeNode root, int sum) {
+  public List<List<Integer>> pathSum(TreeNode root, int sum) {
     return pathSum(root, sum, 0, new ArrayList<>(), new ArrayList<>());
   }
 
   private List<List<Integer>> pathSum(
-      BinaryTreeNode node,
+      TreeNode node,
       int sum,
       int currentSum,
       List<List<Integer>> validPaths,

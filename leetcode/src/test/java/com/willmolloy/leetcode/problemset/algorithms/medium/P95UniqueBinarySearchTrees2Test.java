@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,11 +18,11 @@ class P95UniqueBinarySearchTrees2Test {
   void example() {
     assertThat(fun.generateTrees(3))
         .containsExactly(
-            BinaryTreeNode.fromLevelOrder(1, null, 3, null, null, 2),
-            BinaryTreeNode.fromLevelOrder(3, 2, null, 1),
-            BinaryTreeNode.fromLevelOrder(3, 1, null, null, 2),
-            BinaryTreeNode.fromLevelOrder(2, 1, 3),
-            BinaryTreeNode.fromLevelOrder(1, null, 2, null, null, null, 3));
+            TreeNode.fromLevelOrder(1, null, 3, null, null, 2),
+            TreeNode.fromLevelOrder(3, 2, null, 1),
+            TreeNode.fromLevelOrder(3, 1, null, null, 2),
+            TreeNode.fromLevelOrder(2, 1, 3),
+            TreeNode.fromLevelOrder(1, null, 2, null, null, null, 3));
   }
 
   @Test
@@ -32,6 +32,6 @@ class P95UniqueBinarySearchTrees2Test {
 
   @Test
   void one() {
-    assertThat(fun.generateTrees(1)).containsExactly(new BinaryTreeNode(1));
+    assertThat(fun.generateTrees(1)).containsExactly(new TreeNode(1));
   }
 }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,13 +17,13 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P783MinimumDistanceBetweenBstNodes {
 
-  public int minDiffInBst(BinaryTreeNode root) {
+  public int minDiffInBst(TreeNode root) {
     // all nodes contain non-negative values, so mark null node as -1
     return inorder(root, new int[] {-1, Integer.MAX_VALUE})[1];
   }
 
   // return {prev node value, current min difference}
-  private int[] inorder(BinaryTreeNode node, int[] prev) {
+  private int[] inorder(TreeNode node, int[] prev) {
     if (node == null) {
       return prev;
     }

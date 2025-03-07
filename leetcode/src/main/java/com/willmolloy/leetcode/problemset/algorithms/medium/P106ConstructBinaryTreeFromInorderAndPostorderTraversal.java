@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,15 +21,15 @@ import java.util.stream.Collectors;
  */
 class P106ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
-  public BinaryTreeNode buildTree(int[] inorder, int[] postorder) {
+  public TreeNode buildTree(int[] inorder, int[] postorder) {
     return buildTree(asList(inorder), asList(postorder));
   }
 
-  private BinaryTreeNode buildTree(List<Integer> inorder, List<Integer> postorder) {
+  private TreeNode buildTree(List<Integer> inorder, List<Integer> postorder) {
     if (postorder.isEmpty()) {
       return null;
     }
-    BinaryTreeNode root = new BinaryTreeNode(postorder.get(postorder.size() - 1));
+    TreeNode root = new TreeNode(postorder.get(postorder.size() - 1));
     if (postorder.size() == 1) {
       return root;
     }

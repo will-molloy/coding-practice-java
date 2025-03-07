@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Objects;
 import java.util.Queue;
@@ -20,15 +20,15 @@ import java.util.stream.Stream;
  */
 class P938RangeSumOfBst {
 
-  public int rangeSumBst(BinaryTreeNode root, int l, int r) {
+  public int rangeSumBst(TreeNode root, int l, int r) {
     // traverse the tree somehow, chose BFS here
 
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     int sum = 0;
 
     while (!queue.isEmpty()) {
-      BinaryTreeNode node = queue.remove();
+      TreeNode node = queue.remove();
       if (node.val >= l && node.val <= r) {
         sum += node.val;
       }

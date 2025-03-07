@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +22,8 @@ import java.util.stream.Stream;
  */
 class P637AverageOfLevelsInBinaryTree {
 
-  public List<Double> averageOfLevels(BinaryTreeNode root) {
-    Queue<BinaryTreeNode> bfs = new ArrayDeque<>();
+  public List<Double> averageOfLevels(TreeNode root) {
+    Queue<TreeNode> bfs = new ArrayDeque<>();
     bfs.add(root);
 
     List<Double> answer = new ArrayList<>();
@@ -32,7 +32,7 @@ class P637AverageOfLevelsInBinaryTree {
       long sum = 0;
       int size = bfs.size();
       for (int i = 0; i < size; i++) {
-        BinaryTreeNode node = bfs.remove();
+        TreeNode node = bfs.remove();
         sum += node.val;
         Stream.of(node.left, node.right).filter(Objects::nonNull).forEach(bfs::add);
       }

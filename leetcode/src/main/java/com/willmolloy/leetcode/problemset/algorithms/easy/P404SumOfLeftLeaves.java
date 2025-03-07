@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,11 +19,11 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P404SumOfLeftLeaves {
 
-  public int sumOfLeftLeaves(BinaryTreeNode root) {
+  public int sumOfLeftLeaves(TreeNode root) {
     return sum(root, 0);
   }
 
-  private int sum(BinaryTreeNode node, int sum) {
+  private int sum(TreeNode node, int sum) {
     if (node == null) {
       return sum;
     }

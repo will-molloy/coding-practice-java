@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -21,7 +21,7 @@ class P971FlipBinaryTreeToMatchPreorderTraversalTest {
 
   @ParameterizedTest
   @MethodSource
-  void examples(BinaryTreeNode root, int[] voyage, List<Integer> expected) {
+  void examples(TreeNode root, int[] voyage, List<Integer> expected) {
     assertThat(p971FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage))
         .containsExactlyElementsIn(expected)
         .inOrder();
@@ -29,8 +29,8 @@ class P971FlipBinaryTreeToMatchPreorderTraversalTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 2), new int[] {2, 1}, List.of(-1)),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 2, 3), new int[] {1, 3, 2}, List.of(1)),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 2, 3), new int[] {1, 2, 3}, List.of()));
+        Arguments.of(TreeNode.fromLevelOrder(1, 2), new int[] {2, 1}, List.of(-1)),
+        Arguments.of(TreeNode.fromLevelOrder(1, 2, 3), new int[] {1, 3, 2}, List.of(1)),
+        Arguments.of(TreeNode.fromLevelOrder(1, 2, 3), new int[] {1, 2, 3}, List.of()));
   }
 }

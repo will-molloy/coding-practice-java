@@ -1,7 +1,7 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
 import com.willmolloy.leetcode.common.ListNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,18 +19,18 @@ import com.willmolloy.leetcode.common.ListNode;
  */
 class P109ConvertSortedListToBinarySearchTree {
 
-  public BinaryTreeNode sortedListToBst(ListNode head) {
+  public TreeNode sortedListToBst(ListNode head) {
     if (head == null) {
       // empty list; empty tree
       return null;
     }
     if (head.next == null) {
       // singleton list; singleton tree
-      return new BinaryTreeNode(head.val);
+      return new TreeNode(head.val);
     }
     // same idea as array; build tree by taking middle element at each step
     ListNode mid = getMidAndSplit(head);
-    BinaryTreeNode node = new BinaryTreeNode(mid.val);
+    TreeNode node = new TreeNode(mid.val);
     node.left = sortedListToBst(head);
     node.right = sortedListToBst(mid.next);
     return node;

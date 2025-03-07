@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.hard;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -18,13 +18,13 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P124BinaryTreeMaximumPathSum {
 
-  public int maxPathSum(BinaryTreeNode root) {
+  public int maxPathSum(TreeNode root) {
     int[] ref = {Integer.MIN_VALUE};
     dfs(root, ref);
     return ref[0];
   }
 
-  private int dfs(BinaryTreeNode root, int[] globalMax) {
+  private int dfs(TreeNode root, int[] globalMax) {
     if (root == null) {
       return 0;
     }

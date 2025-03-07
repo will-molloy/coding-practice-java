@@ -7,20 +7,23 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import javax.annotation.Nullable;
 
 /**
- * BinaryTreeNode.
+ * Definition for a binary tree node.
  *
+ * @author leetcode
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-public final class BinaryTreeNode {
+public final class TreeNode {
 
   /**
-   * Constructs a new binary tree containing the given values, in level order. {@code null}
-   * indicates a missing node.
+   * Constructs a new binary tree containing the given values, in level order.
+   *
+   * <p>{@code null} indicates a missing node.
    */
-  public static BinaryTreeNode fromLevelOrder(Integer... values) {
-    BinaryTreeNode root = new BinaryTreeNode(values[0]);
+  public static TreeNode fromLevelOrder(Integer... values) {
+    TreeNode root = new TreeNode(values[0]);
     root.left = buildLevelOrder(1, values);
     root.right = buildLevelOrder(2, values);
 
@@ -34,10 +37,10 @@ public final class BinaryTreeNode {
     return root;
   }
 
-  private static BinaryTreeNode buildLevelOrder(int i, Integer... remainingValues) {
-    BinaryTreeNode root = null;
+  private static TreeNode buildLevelOrder(int i, Integer... remainingValues) {
+    TreeNode root = null;
     if (i < remainingValues.length && remainingValues[i] != null) {
-      root = new BinaryTreeNode(remainingValues[i]);
+      root = new TreeNode(remainingValues[i]);
       root.left = buildLevelOrder(2 * i + 1, remainingValues);
       root.right = buildLevelOrder(2 * i + 2, remainingValues);
     }
@@ -47,13 +50,14 @@ public final class BinaryTreeNode {
   public int val;
 
   @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
-  public BinaryTreeNode left;
+  @Nullable
+  public TreeNode left;
 
   @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
-  public BinaryTreeNode right;
+  @Nullable
+  public TreeNode right;
 
-  /** public constructor required for leetcode submission. */
-  public BinaryTreeNode(int value) {
+  public TreeNode(int value) {
     this.val = value;
   }
 
@@ -65,7 +69,7 @@ public final class BinaryTreeNode {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BinaryTreeNode that = (BinaryTreeNode) o;
+    TreeNode that = (TreeNode) o;
     return serialise().equals(that.serialise());
   }
 
@@ -80,11 +84,11 @@ public final class BinaryTreeNode {
   }
 
   // serialises by level order
-  // won't halt if cycles exist (shouldn't given this class is used for binary trees!)
+  // won't halt if cycles exist (unlikely given this class represents a tree!)
   private List<Integer> serialise() {
     List<Integer> list = new ArrayList<>();
     // LinkedList permits null
-    Deque<BinaryTreeNode> queue = new LinkedList<>();
+    Deque<TreeNode> queue = new LinkedList<>();
     queue.addFirst(this);
 
     boolean emptyLevel = false;
@@ -94,7 +98,7 @@ public final class BinaryTreeNode {
       emptyLevel = true;
       levelSize = queue.size();
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.removeFirst();
+        TreeNode node = queue.removeFirst();
         if (node != null) {
           emptyLevel = false;
           list.add(node.val);

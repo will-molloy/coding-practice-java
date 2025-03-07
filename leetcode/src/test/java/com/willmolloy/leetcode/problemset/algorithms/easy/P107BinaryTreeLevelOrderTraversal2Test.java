@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.collect.ImmutableList;
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -17,7 +17,7 @@ class P107BinaryTreeLevelOrderTraversal2Test {
 
   @Test
   void example() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
+    TreeNode root = TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
     assertThat(fun.levelOrderBottom(root))
         .containsExactly(ImmutableList.of(15, 7), ImmutableList.of(9, 20), ImmutableList.of(3))
         .inOrder();

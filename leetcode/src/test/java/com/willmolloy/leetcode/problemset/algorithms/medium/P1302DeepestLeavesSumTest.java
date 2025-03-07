@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,23 +18,23 @@ class P1302DeepestLeavesSumTest {
   void example() {
     assertThat(
             fun.deepestLeavesSum(
-                BinaryTreeNode.fromLevelOrder(
+                TreeNode.fromLevelOrder(
                     1, 2, 3, 4, 5, null, 6, 7, null, null, null, null, null, null, 8)))
         .isEqualTo(15);
   }
 
   @Test
   void singleNode() {
-    assertThat(fun.deepestLeavesSum(BinaryTreeNode.fromLevelOrder(1))).isEqualTo(1);
+    assertThat(fun.deepestLeavesSum(TreeNode.fromLevelOrder(1))).isEqualTo(1);
   }
 
   @Test
   void twoNodes() {
-    assertThat(fun.deepestLeavesSum(BinaryTreeNode.fromLevelOrder(1, 2))).isEqualTo(2);
+    assertThat(fun.deepestLeavesSum(TreeNode.fromLevelOrder(1, 2))).isEqualTo(2);
   }
 
   @Test
   void deepestSumIsNotLargest() {
-    assertThat(fun.deepestLeavesSum(BinaryTreeNode.fromLevelOrder(2, 1))).isEqualTo(1);
+    assertThat(fun.deepestLeavesSum(TreeNode.fromLevelOrder(2, 1))).isEqualTo(1);
   }
 }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Objects;
 import java.util.Queue;
@@ -20,18 +20,18 @@ import java.util.stream.Stream;
  */
 class P111MinimumDepthOfBinaryTree {
 
-  public int minDepth(BinaryTreeNode root) {
+  public int minDepth(TreeNode root) {
     if (root == null) {
       return 0;
     }
     // BFS, find first leaf
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     int minDepth = 1;
     while (!queue.isEmpty()) {
       int levelSize = queue.size();
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         if (node.left == null && node.right == null) {
           // node has no children, therefore leaf
           return minDepth;

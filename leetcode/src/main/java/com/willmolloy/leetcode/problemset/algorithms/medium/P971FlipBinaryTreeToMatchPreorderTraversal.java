@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +27,7 @@ class P971FlipBinaryTreeToMatchPreorderTraversal {
   private List<Integer> flipped;
   private int i;
 
-  public List<Integer> flipMatchVoyage(BinaryTreeNode root, int[] voyage) {
+  public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
     flipped = new ArrayList<>();
     i = 0;
 
@@ -41,7 +41,7 @@ class P971FlipBinaryTreeToMatchPreorderTraversal {
   }
 
   // dfs - pre-order traversal
-  private void dfs(BinaryTreeNode node, int[] voyage) {
+  private void dfs(TreeNode node, int[] voyage) {
     if (node == null) {
       return;
     }

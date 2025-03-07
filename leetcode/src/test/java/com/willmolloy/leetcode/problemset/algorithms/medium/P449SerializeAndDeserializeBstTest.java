@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void oneNode() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1);
+    TreeNode root = TreeNode.fromLevelOrder(1);
     String data = "1";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -24,7 +24,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void twoNodesLeft() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(2, 1);
+    TreeNode root = TreeNode.fromLevelOrder(2, 1);
     String data = "2(1)";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -32,7 +32,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void twoNodesRight() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(2, null, 3);
+    TreeNode root = TreeNode.fromLevelOrder(2, null, 3);
     String data = "2()(3)";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -40,7 +40,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void threeNodes() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(2, 1, 3);
+    TreeNode root = TreeNode.fromLevelOrder(2, 1, 3);
     String data = "2(1)(3)";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -48,7 +48,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void fourNodes() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(2, 1, 3, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(2, 1, 3, null, null, null, 4);
     String data = "2(1)(3()(4))";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -56,7 +56,7 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void leftLinkedList() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(4, 3, null, 2, null, null, null, 1);
+    TreeNode root = TreeNode.fromLevelOrder(4, 3, null, 2, null, null, null, 1);
     String data = "4(3(2(1)))";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -64,8 +64,8 @@ class P449SerializeAndDeserializeBstTest {
 
   @Test
   void rightLinkedList() {
-    BinaryTreeNode root =
-        BinaryTreeNode.fromLevelOrder(
+    TreeNode root =
+        TreeNode.fromLevelOrder(
             1, null, 2, null, null, null, 3, null, null, null, null, null, null, null, 4);
     String data = "1()(2()(3()(4)))";
     assertThat(fun.serialize(root)).isEqualTo(data);

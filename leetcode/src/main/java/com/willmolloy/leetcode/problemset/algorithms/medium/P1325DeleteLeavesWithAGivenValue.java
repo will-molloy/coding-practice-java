@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P1325DeleteLeavesWithAGivenValue {
 
-  public BinaryTreeNode removeLeafNodes(BinaryTreeNode node, int target) {
+  public TreeNode removeLeafNodes(TreeNode node, int target) {
     if (node == null) {
       return null;
     }

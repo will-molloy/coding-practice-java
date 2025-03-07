@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ class P1161MaximumLevelSumOfABinaryTreeTest {
 
   @Test
   void example() {
-    assertThat(fun.maxLevelSum(BinaryTreeNode.fromLevelOrder(1, 7, 0, -7, -8))).isEqualTo(2);
+    assertThat(fun.maxLevelSum(TreeNode.fromLevelOrder(1, 7, 0, -7, -8))).isEqualTo(2);
   }
 
   @Test
@@ -26,6 +26,6 @@ class P1161MaximumLevelSumOfABinaryTreeTest {
 
   @Test
   void levelSumsAreEqualTakeFirst() {
-    assertThat(fun.maxLevelSum(BinaryTreeNode.fromLevelOrder(4, 2, 2, 1, 1, 1, 1))).isEqualTo(1);
+    assertThat(fun.maxLevelSum(TreeNode.fromLevelOrder(4, 2, 2, 1, 1, 1, 1))).isEqualTo(1);
   }
 }

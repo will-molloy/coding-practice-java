@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,13 +17,13 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P110BalancedBinaryTree {
 
-  public boolean isBalanced(BinaryTreeNode root) {
+  public boolean isBalanced(TreeNode root) {
     // encoding -1 height as unbalanced tree to propagate unbalanced result
     // i.e. if child is unbalanced, parent node must be unbalanced, essentially bottom up algorithm
     return height(root) != -1;
   }
 
-  private int height(BinaryTreeNode root) {
+  private int height(TreeNode root) {
     if (root == null) {
       return 0;
     }

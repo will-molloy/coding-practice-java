@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,8 +16,7 @@ class P111MinimumDepthOfBinaryTreeTest {
 
   @Test
   void example() {
-    assertThat(fun.minDepth(BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7)))
-        .isEqualTo(2);
+    assertThat(fun.minDepth(TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7))).isEqualTo(2);
   }
 
   @Test
@@ -27,11 +26,11 @@ class P111MinimumDepthOfBinaryTreeTest {
 
   @Test
   void singleNode() {
-    assertThat(fun.minDepth(BinaryTreeNode.fromLevelOrder(1))).isEqualTo(1);
+    assertThat(fun.minDepth(TreeNode.fromLevelOrder(1))).isEqualTo(1);
   }
 
   @Test
   void twoNodes() {
-    assertThat(fun.minDepth(BinaryTreeNode.fromLevelOrder(1, 2))).isEqualTo(2);
+    assertThat(fun.minDepth(TreeNode.fromLevelOrder(1, 2))).isEqualTo(2);
   }
 }

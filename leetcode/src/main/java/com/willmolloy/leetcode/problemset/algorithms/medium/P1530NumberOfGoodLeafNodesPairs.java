@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
@@ -27,7 +27,7 @@ class P1530NumberOfGoodLeafNodesPairs {
 
   // TODO better solution, don't need nested loop on leafs?
 
-  public int countPairs(BinaryTreeNode root, int distance) {
+  public int countPairs(TreeNode root, int distance) {
     // copy graph adding some useful information such as height, parent, isLeaf
     // also assign unique label
     Map<Integer, MyBinaryTreeNode> nodes = new HashMap<>();
@@ -50,7 +50,7 @@ class P1530NumberOfGoodLeafNodesPairs {
   }
 
   private MyBinaryTreeNode dfsCopy(
-      BinaryTreeNode node,
+      TreeNode node,
       Map<Integer, MyBinaryTreeNode> nodes,
       MyBinaryTreeNode parent,
       int[] count,

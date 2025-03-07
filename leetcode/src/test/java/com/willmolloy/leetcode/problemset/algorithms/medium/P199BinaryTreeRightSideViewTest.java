@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ class P199BinaryTreeRightSideViewTest {
 
   @Test
   void example() {
-    assertThat(p199.rightSideView(BinaryTreeNode.fromLevelOrder(1, 2, 3, null, 5, null, 4)))
+    assertThat(p199.rightSideView(TreeNode.fromLevelOrder(1, 2, 3, null, 5, null, 4)))
         .containsExactly(1, 3, 4)
         .inOrder();
   }
@@ -28,7 +28,7 @@ class P199BinaryTreeRightSideViewTest {
 
   @Test
   void cantJustTraverseRightPath() {
-    assertThat(p199.rightSideView(BinaryTreeNode.fromLevelOrder(1, 2, 3, null, 5)))
+    assertThat(p199.rightSideView(TreeNode.fromLevelOrder(1, 2, 3, null, 5)))
         .containsExactly(1, 3, 5)
         .inOrder();
   }

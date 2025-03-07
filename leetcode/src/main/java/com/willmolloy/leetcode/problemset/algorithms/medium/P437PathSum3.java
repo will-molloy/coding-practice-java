@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -26,13 +26,13 @@ class P437PathSum3 {
 
   private int result;
 
-  public int pathSum(BinaryTreeNode root, int sum) {
+  public int pathSum(TreeNode root, int sum) {
     result = 0;
     dfs(root, Collections.emptyMap(), sum);
     return result;
   }
 
-  private void dfs(BinaryTreeNode node, Map<Integer, Integer> pathSumCounts, int target) {
+  private void dfs(TreeNode node, Map<Integer, Integer> pathSumCounts, int target) {
     if (node == null) {
       return;
     }

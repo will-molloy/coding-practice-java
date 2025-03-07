@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,6 +18,6 @@ class P106ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
   @Test
   void example() {
     assertThat(fun.buildTree(new int[] {9, 3, 15, 20, 7}, new int[] {9, 15, 7, 20, 3}))
-        .isEqualTo(BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7));
+        .isEqualTo(TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7));
   }
 }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a href=https://leetcode.com/problems/path-sum>https://leetcode.com/problems/path-sum</a>
@@ -17,11 +17,11 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P112PathSum {
 
-  public boolean hasPathSum(BinaryTreeNode root, int sum) {
+  public boolean hasPathSum(TreeNode root, int sum) {
     return hasPathSum(root, sum, 0);
   }
 
-  private boolean hasPathSum(BinaryTreeNode node, int sum, int currentSum) {
+  private boolean hasPathSum(TreeNode node, int sum, int currentSum) {
     if (node == null) {
       return false;
     }

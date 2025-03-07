@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -12,7 +12,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P226InvertBinaryTree {
 
-  BinaryTreeNode invertTree(BinaryTreeNode root) {
+  TreeNode invertTree(TreeNode root) {
     if (root != null) {
       swapChildren(root);
       invertTree(root.right);
@@ -21,8 +21,8 @@ class P226InvertBinaryTree {
     return root;
   }
 
-  private void swapChildren(BinaryTreeNode root) {
-    BinaryTreeNode temp = root.right;
+  private void swapChildren(TreeNode root) {
+    TreeNode temp = root.right;
     root.right = root.left;
     root.left = temp;
   }

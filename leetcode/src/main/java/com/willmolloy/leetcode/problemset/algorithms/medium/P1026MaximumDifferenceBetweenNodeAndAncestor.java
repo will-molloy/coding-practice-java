@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -18,13 +18,13 @@ class P1026MaximumDifferenceBetweenNodeAndAncestor {
 
   private int best;
 
-  public int maxAncestorDiff(BinaryTreeNode root) {
+  public int maxAncestorDiff(TreeNode root) {
     best = Integer.MIN_VALUE;
     dfs(Integer.MAX_VALUE, Integer.MIN_VALUE, root);
     return best;
   }
 
-  private void dfs(int minParent, int maxParent, BinaryTreeNode node) {
+  private void dfs(int minParent, int maxParent, TreeNode node) {
     if (node == null) {
       best = Math.max(best, maxParent - minParent);
       return;

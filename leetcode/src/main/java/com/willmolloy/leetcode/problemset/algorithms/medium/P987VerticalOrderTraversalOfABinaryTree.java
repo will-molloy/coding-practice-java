@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
  */
 class P987VerticalOrderTraversalOfABinaryTree {
 
-  public List<List<Integer>> verticalTraversal(BinaryTreeNode root) {
+  public List<List<Integer>> verticalTraversal(TreeNode root) {
     Map<Integer, Integer> x = new HashMap<>();
     Map<Integer, Integer> y = new HashMap<>();
     dfs(root, 0, 0, x, y);
@@ -48,7 +48,7 @@ class P987VerticalOrderTraversalOfABinaryTree {
   }
 
   private void dfs(
-      BinaryTreeNode node, int x, int y, Map<Integer, Integer> xMap, Map<Integer, Integer> yMap) {
+      TreeNode node, int x, int y, Map<Integer, Integer> xMap, Map<Integer, Integer> yMap) {
     if (node == null) {
       return;
     }

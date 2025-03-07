@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -14,7 +14,7 @@ class P1123LowestCommonAncestorOfDeepestLeaves {
   private final P865SmallestSubtreeWithAllTheDeepestNodes delegate =
       new P865SmallestSubtreeWithAllTheDeepestNodes();
 
-  public BinaryTreeNode lcaDeepestLeaves(BinaryTreeNode root) {
+  public TreeNode lcaDeepestLeaves(TreeNode root) {
     return delegate.subtreeWithAllDeepest(root);
   }
 }

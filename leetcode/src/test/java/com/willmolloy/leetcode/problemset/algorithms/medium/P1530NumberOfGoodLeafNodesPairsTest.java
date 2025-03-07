@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -19,19 +19,17 @@ class P1530NumberOfGoodLeafNodesPairsTest {
 
   @ParameterizedTest
   @MethodSource
-  void examples(BinaryTreeNode root, int distance, int expected) {
+  void examples(TreeNode root, int distance, int expected) {
     assertThat(p1530.countPairs(root, distance)).isEqualTo(expected);
   }
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 2, 3, null, 4), 3, 1),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7), 3, 2),
+        Arguments.of(TreeNode.fromLevelOrder(1, 2, 3, null, 4), 3, 1),
+        Arguments.of(TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7), 3, 2),
         Arguments.of(
-            BinaryTreeNode.fromLevelOrder(7, 1, 4, 6, null, 5, 3, null, null, null, null, null, 2),
-            3,
-            1),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(100), 1, 0),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(1, 1, 1), 2, 1));
+            TreeNode.fromLevelOrder(7, 1, 4, 6, null, 5, 3, null, null, null, null, null, 2), 3, 1),
+        Arguments.of(TreeNode.fromLevelOrder(100), 1, 0),
+        Arguments.of(TreeNode.fromLevelOrder(1, 1, 1), 2, 1));
   }
 }

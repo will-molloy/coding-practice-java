@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -21,7 +21,7 @@ class P230KthSmallestElementInABst {
   private int ans;
   private int k;
 
-  public int kthSmallest(BinaryTreeNode root, int k) {
+  public int kthSmallest(TreeNode root, int k) {
     this.k = k;
     this.count = 0;
     this.ans = -1;
@@ -29,7 +29,7 @@ class P230KthSmallestElementInABst {
     return ans;
   }
 
-  private void inorderDfs(BinaryTreeNode node) {
+  private void inorderDfs(TreeNode node) {
     if (node == null) {
       return;
     }

@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,11 +16,11 @@ class P965UnivaluedBinaryTreeTest {
 
   @Test
   void example1() {
-    assertThat(p965.isUnivalTree(BinaryTreeNode.fromLevelOrder(1, 1, 1, 1, 1, null, 1))).isTrue();
+    assertThat(p965.isUnivalTree(TreeNode.fromLevelOrder(1, 1, 1, 1, 1, null, 1))).isTrue();
   }
 
   @Test
   void example2() {
-    assertThat(p965.isUnivalTree(BinaryTreeNode.fromLevelOrder(2, 2, 2, 5, 2))).isFalse();
+    assertThat(p965.isUnivalTree(TreeNode.fromLevelOrder(2, 2, 2, 5, 2))).isFalse();
   }
 }

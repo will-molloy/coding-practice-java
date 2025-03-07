@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,17 +16,17 @@ class P222CountCompleteTreeNodesTest {
 
   @Test
   void notFullTree() {
-    assertThat(fun.countNodes(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6))).isEqualTo(6);
+    assertThat(fun.countNodes(TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6))).isEqualTo(6);
   }
 
   @Test
   void fullTree() {
-    assertThat(fun.countNodes(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7))).isEqualTo(7);
+    assertThat(fun.countNodes(TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7))).isEqualTo(7);
   }
 
   @Test
   void oneNode() {
-    assertThat(fun.countNodes(BinaryTreeNode.fromLevelOrder(1))).isEqualTo(1);
+    assertThat(fun.countNodes(TreeNode.fromLevelOrder(1))).isEqualTo(1);
   }
 
   @Test

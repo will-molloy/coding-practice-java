@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +21,7 @@ import java.util.Queue;
  */
 class P199BinaryTreeRightSideView {
 
-  public List<Integer> rightSideView(BinaryTreeNode root) {
+  public List<Integer> rightSideView(TreeNode root) {
     if (root == null) {
       return Collections.emptyList();
     }
@@ -29,12 +29,12 @@ class P199BinaryTreeRightSideView {
     List<Integer> result = new ArrayList<>();
 
     // BFS
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     while (!queue.isEmpty()) {
       int levelSize = queue.size();
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         if (i == levelSize - 1) {
           // take right most node in level
           result.add(node.val);

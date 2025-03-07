@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,13 +21,13 @@ import java.util.List;
  */
 class P1305AllElementsInTwoBinarySearchTrees {
 
-  public List<Integer> getAllElements(BinaryTreeNode root1, BinaryTreeNode root2) {
+  public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
     List<Integer> list1 = inorder(root1, new ArrayList<>());
     List<Integer> list2 = inorder(root2, new ArrayList<>());
     return mergeSortedLists(list1, list2);
   }
 
-  private List<Integer> inorder(BinaryTreeNode root, List<Integer> result) {
+  private List<Integer> inorder(TreeNode root, List<Integer> result) {
     if (root == null) {
       return result;
     }

@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -17,19 +17,19 @@ class P1123LowestCommonAncestorOfDeepestLeavesTest {
 
   @Test
   void example1() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4);
+    TreeNode root = TreeNode.fromLevelOrder(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4);
     assertThat(p1123.lcaDeepestLeaves(root)).isSameInstanceAs(root.left.right);
   }
 
   @Test
   void example2() {
-    BinaryTreeNode root = new BinaryTreeNode(1);
+    TreeNode root = new TreeNode(1);
     assertThat(p1123.lcaDeepestLeaves(root)).isSameInstanceAs(root);
   }
 
   @Test
   void example3() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(0, 1, 3, null, 2);
+    TreeNode root = TreeNode.fromLevelOrder(0, 1, 3, null, 2);
     assertThat(p1123.lcaDeepestLeaves(root)).isSameInstanceAs(root.left.right);
   }
 }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,14 +16,14 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P101SymmetricTree {
 
-  public boolean isSymmetric(BinaryTreeNode root) {
+  public boolean isSymmetric(TreeNode root) {
     if (root == null) {
       return true;
     }
     return isMirror(root.left, root.right);
   }
 
-  private boolean isMirror(BinaryTreeNode left, BinaryTreeNode right) {
+  private boolean isMirror(TreeNode left, TreeNode right) {
     if (left == null && right == null) {
       return true;
     }

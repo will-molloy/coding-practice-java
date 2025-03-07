@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,7 +18,7 @@ class P112PathSumTest {
   void example() {
     assertThat(
             fun.hasPathSum(
-                BinaryTreeNode.fromLevelOrder(
+                TreeNode.fromLevelOrder(
                     5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1),
                 22))
         .isTrue();
@@ -28,7 +28,7 @@ class P112PathSumTest {
   void exampleBut2IsntALeaf() {
     assertThat(
             fun.hasPathSum(
-                BinaryTreeNode.fromLevelOrder(
+                TreeNode.fromLevelOrder(
                     5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1, null, null,
                     null, 3),
                 22))
@@ -42,11 +42,11 @@ class P112PathSumTest {
 
   @Test
   void singleNode() {
-    assertThat(fun.hasPathSum(BinaryTreeNode.fromLevelOrder(100), 100)).isTrue();
+    assertThat(fun.hasPathSum(TreeNode.fromLevelOrder(100), 100)).isTrue();
   }
 
   @Test
   void twoNodes() {
-    assertThat(fun.hasPathSum(BinaryTreeNode.fromLevelOrder(1, 2), 3)).isTrue();
+    assertThat(fun.hasPathSum(TreeNode.fromLevelOrder(1, 2), 3)).isTrue();
   }
 }

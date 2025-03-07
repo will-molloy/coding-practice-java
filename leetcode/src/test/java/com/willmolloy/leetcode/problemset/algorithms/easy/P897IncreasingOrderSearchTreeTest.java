@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
@@ -15,14 +15,13 @@ class P897IncreasingOrderSearchTreeTest {
 
   @Test
   void example1() {
-    BinaryTreeNode root =
-        BinaryTreeNode.fromLevelOrder(
-            5, 3, 6, 2, 4, null, 8, 1, null, null, null, null, null, 7, 9);
+    TreeNode root =
+        TreeNode.fromLevelOrder(5, 3, 6, 2, 4, null, 8, 1, null, null, null, null, null, 7, 9);
 
-    BinaryTreeNode expectedRoot = new BinaryTreeNode(1);
-    BinaryTreeNode expected = expectedRoot;
+    TreeNode expectedRoot = new TreeNode(1);
+    TreeNode expected = expectedRoot;
     for (int i : IntStream.rangeClosed(2, 9).toArray()) {
-      expected.right = new BinaryTreeNode(i);
+      expected.right = new TreeNode(i);
       expected = expected.right;
     }
 
@@ -31,9 +30,7 @@ class P897IncreasingOrderSearchTreeTest {
 
   @Test
   void example2() {
-    assertThat(
-            new P897IncreasingOrderSearchTree()
-                .increasingBST(BinaryTreeNode.fromLevelOrder(5, 1, 7)))
-        .isEqualTo(BinaryTreeNode.fromLevelOrder(1, null, 5, null, null, null, 7));
+    assertThat(new P897IncreasingOrderSearchTree().increasingBST(TreeNode.fromLevelOrder(5, 1, 7)))
+        .isEqualTo(TreeNode.fromLevelOrder(1, null, 5, null, null, null, 7));
   }
 }

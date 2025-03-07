@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
@@ -18,8 +18,8 @@ import java.util.Queue;
  */
 class P1609EvenOddTree {
 
-  public boolean isEvenOddTree(BinaryTreeNode root) {
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+  public boolean isEvenOddTree(TreeNode root) {
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
 
     boolean even = true;
@@ -29,7 +29,7 @@ class P1609EvenOddTree {
       int prevVal = even ? Integer.MIN_VALUE : Integer.MAX_VALUE;
 
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         if (even) {
           // For every even-indexed level, all nodes at the level have odd integer values in
           // strictly increasing order (from left to right).

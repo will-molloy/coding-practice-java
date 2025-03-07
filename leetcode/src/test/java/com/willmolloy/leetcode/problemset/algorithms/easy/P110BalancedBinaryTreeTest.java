@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,25 +16,24 @@ class P110BalancedBinaryTreeTest {
 
   @Test
   void example1() {
-    assertThat(fun.isBalanced(BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7))).isTrue();
+    assertThat(fun.isBalanced(TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7))).isTrue();
   }
 
   @Test
   void example2() {
-    assertThat(fun.isBalanced(BinaryTreeNode.fromLevelOrder(1, 2, 2, 3, 3, null, null, 4, 4)))
-        .isFalse();
+    assertThat(fun.isBalanced(TreeNode.fromLevelOrder(1, 2, 2, 3, 3, null, null, 4, 4))).isFalse();
   }
 
   @Test
   void unbalancedLeftChild() {
-    assertThat(fun.isBalanced(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, null, 5, 6, 7))).isFalse();
+    assertThat(fun.isBalanced(TreeNode.fromLevelOrder(1, 2, 3, 4, null, 5, 6, 7))).isFalse();
   }
 
   @Test
   void unbalancedRightChild() {
     assertThat(
             fun.isBalanced(
-                BinaryTreeNode.fromLevelOrder(
+                TreeNode.fromLevelOrder(
                     1, 2, 3, 4, 5, null, 6, null, null, null, null, null, null, null, 7)))
         .isFalse();
   }

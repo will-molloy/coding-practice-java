@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,13 +19,13 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P606ConstructStringFromBinaryTree {
 
-  public String tree2str(BinaryTreeNode t) {
+  public String tree2str(TreeNode t) {
     StringBuilder s = new StringBuilder();
     tree2str(t, s);
     return s.toString();
   }
 
-  private void tree2str(BinaryTreeNode t, StringBuilder s) {
+  private void tree2str(TreeNode t, StringBuilder s) {
     if (t == null) {
       return;
     }

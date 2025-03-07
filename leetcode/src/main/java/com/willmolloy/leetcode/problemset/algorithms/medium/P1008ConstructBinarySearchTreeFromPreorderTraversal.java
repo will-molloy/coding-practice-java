@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
-  BinaryTreeNode bstFromPreorder(int[] preorder);
+  TreeNode bstFromPreorder(int[] preorder);
 
   /**
    * Recursively splits the array into [node/left subtree/right subtree].
@@ -30,7 +30,7 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
   class SplitLeftAndRight implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
     @Override
-    public BinaryTreeNode bstFromPreorder(int[] preorder) {
+    public TreeNode bstFromPreorder(int[] preorder) {
       // preorder is this->left->right
       // in BST all nodes in left are smaller than nodes in right
       // so can determine when left becomes right by finding first node > current node
@@ -38,7 +38,7 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
     }
 
     // build tree for preorder[l, r]
-    private BinaryTreeNode build(int[] preorder, int l, int r) {
+    private TreeNode build(int[] preorder, int l, int r) {
       if (r < l) {
         return null;
       }
@@ -56,7 +56,7 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
           break;
         }
       }
-      BinaryTreeNode node = new BinaryTreeNode(preorder[l]);
+      TreeNode node = new TreeNode(preorder[l]);
       node.left = build(preorder, leftStart, rightStart - 1);
       node.right = build(preorder, rightStart, r);
       return node;
@@ -77,16 +77,16 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
   class ProvideUpperBound implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
     @Override
-    public BinaryTreeNode bstFromPreorder(int[] preorder) {
+    public TreeNode bstFromPreorder(int[] preorder) {
       // using singleton array so index writes are maintained between recursive calls (int ref)
       return build(preorder, new int[] {0}, Integer.MAX_VALUE);
     }
 
-    private BinaryTreeNode build(int[] preorder, int[] i, int maxValue) {
+    private TreeNode build(int[] preorder, int[] i, int maxValue) {
       if (i[0] == preorder.length || preorder[i[0]] > maxValue) {
         return null;
       }
-      BinaryTreeNode node = new BinaryTreeNode(preorder[i[0]]);
+      TreeNode node = new TreeNode(preorder[i[0]]);
       i[0]++;
       node.left = build(preorder, i, node.val);
       node.right = build(preorder, i, maxValue);

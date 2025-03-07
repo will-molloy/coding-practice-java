@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -18,7 +18,7 @@ class P104MaximumDepthOfBinaryTreeTest {
   @ParameterizedTest
   @MethodSource("funs")
   void example(P104MaximumDepthOfBinaryTree fun) {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
+    TreeNode root = TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
     assertThat(fun.maxDepth(root)).isEqualTo(3);
   }
 
@@ -31,7 +31,7 @@ class P104MaximumDepthOfBinaryTreeTest {
   @ParameterizedTest
   @MethodSource("funs")
   void singleNodePerLevel(P104MaximumDepthOfBinaryTree fun) {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
     assertThat(fun.maxDepth(root)).isEqualTo(4);
   }
 

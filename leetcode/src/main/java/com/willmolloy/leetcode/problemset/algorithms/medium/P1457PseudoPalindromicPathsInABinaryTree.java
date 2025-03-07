@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,14 +17,14 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 interface P1457PseudoPalindromicPathsInABinaryTree {
 
-  int pseudoPalindromicPaths(BinaryTreeNode root);
+  int pseudoPalindromicPaths(TreeNode root);
 
   /** Solution which uses an array to track the path. */
   class Array implements P1457PseudoPalindromicPathsInABinaryTree {
 
     private int ans;
 
-    public int pseudoPalindromicPaths(BinaryTreeNode root) {
+    public int pseudoPalindromicPaths(TreeNode root) {
       // gather all root to leaf paths, dfs
 
       // is palindrome if at most ONE odd count of some node
@@ -35,7 +35,7 @@ interface P1457PseudoPalindromicPathsInABinaryTree {
       return ans;
     }
 
-    private void dfs(BinaryTreeNode node, int[] valFreqs) {
+    private void dfs(TreeNode node, int[] valFreqs) {
       if (node == null) {
         return;
       }
@@ -74,13 +74,13 @@ interface P1457PseudoPalindromicPathsInABinaryTree {
 
     private int ans;
 
-    public int pseudoPalindromicPaths(BinaryTreeNode root) {
+    public int pseudoPalindromicPaths(TreeNode root) {
       ans = 0;
       dfs(root, 0);
       return ans;
     }
 
-    private void dfs(BinaryTreeNode node, int bitmask) {
+    private void dfs(TreeNode node, int bitmask) {
       if (node == null) {
         return;
       }

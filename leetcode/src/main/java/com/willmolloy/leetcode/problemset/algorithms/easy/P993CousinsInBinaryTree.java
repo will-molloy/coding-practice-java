@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,15 +17,15 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P993CousinsInBinaryTree {
 
-  private BinaryTreeNode xParent;
+  private TreeNode xParent;
 
   private int xDepth;
 
-  private BinaryTreeNode yParent;
+  private TreeNode yParent;
 
   private int yDepth;
 
-  public boolean isCousins(BinaryTreeNode root, int x, int y) {
+  public boolean isCousins(TreeNode root, int x, int y) {
     xParent = null;
     xDepth = -1;
     yParent = null;
@@ -34,7 +34,7 @@ class P993CousinsInBinaryTree {
     return dfs(null, root, x, y, 0);
   }
 
-  private boolean dfs(BinaryTreeNode parent, BinaryTreeNode node, int x, int y, int depth) {
+  private boolean dfs(TreeNode parent, TreeNode node, int x, int y, int depth) {
     // null check
     if (node == null) {
       return false;

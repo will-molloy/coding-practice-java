@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -21,16 +21,16 @@ class P114FlattenBinaryTreeToLinkedList {
 
   // TODO some smarter answers on leetcode.com ("reversed pre-order traversal")
 
-  public void flatten(BinaryTreeNode root) {
+  public void flatten(TreeNode root) {
     if (root == null) {
       return;
     }
-    Deque<BinaryTreeNode> stack = new ArrayDeque<>();
+    Deque<TreeNode> stack = new ArrayDeque<>();
 
     flatten(root, stack);
   }
 
-  private void flatten(BinaryTreeNode node, Deque<BinaryTreeNode> stack) {
+  private void flatten(TreeNode node, Deque<TreeNode> stack) {
     if (node.left == null && node.right == null && stack.isEmpty()) {
       // no children, no stack
       // nothing left to process
@@ -38,13 +38,13 @@ class P114FlattenBinaryTreeToLinkedList {
     } else if (node.left == null && node.right == null && !stack.isEmpty()) {
       // no children
       // process stack contents
-      BinaryTreeNode next = stack.removeFirst();
+      TreeNode next = stack.removeFirst();
       flatten(next, stack);
       node.right = next;
     } else if (node.left != null && node.right == null) {
       // only left child
       // flatten left tree and set as right tree
-      BinaryTreeNode next = node.left;
+      TreeNode next = node.left;
       flatten(next, stack);
       node.right = next;
       node.left = null;
@@ -57,7 +57,7 @@ class P114FlattenBinaryTreeToLinkedList {
       // store right in stack
       stack.addFirst(node.right);
       // flatten left tree and set as right tree
-      BinaryTreeNode next = node.left;
+      TreeNode next = node.left;
       flatten(next, stack);
       node.right = next;
       node.left = null;

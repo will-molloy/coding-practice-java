@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -14,7 +14,7 @@ interface P104MaximumDepthOfBinaryTree {
 
   // Why is it called maxDepth? depth/height is the same thing?
 
-  int maxDepth(BinaryTreeNode root);
+  int maxDepth(TreeNode root);
 
   /**
    * DFS solution.
@@ -28,7 +28,7 @@ interface P104MaximumDepthOfBinaryTree {
   class Dfs implements P104MaximumDepthOfBinaryTree {
 
     @Override
-    public int maxDepth(BinaryTreeNode root) {
+    public int maxDepth(TreeNode root) {
       if (root == null) {
         return 0;
       }
@@ -48,18 +48,18 @@ interface P104MaximumDepthOfBinaryTree {
   class Bfs implements P104MaximumDepthOfBinaryTree {
 
     @Override
-    public int maxDepth(BinaryTreeNode root) {
+    public int maxDepth(TreeNode root) {
       if (root == null) {
         return 0;
       }
-      Deque<BinaryTreeNode> queue = new ArrayDeque<>();
+      Deque<TreeNode> queue = new ArrayDeque<>();
       queue.add(root);
       int depth = 0;
       while (!queue.isEmpty()) {
         // process all nodes at this level before incrementing depth
         int levelSize = queue.size();
         for (int i = 0; i < levelSize; i++) {
-          BinaryTreeNode node = queue.remove();
+          TreeNode node = queue.remove();
           if (node.left != null) {
             queue.add(node.left);
           }

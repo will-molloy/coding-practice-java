@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,9 +17,9 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P623AddOneRowToTree {
 
-  public BinaryTreeNode addOneRow(BinaryTreeNode root, int v, int d) {
+  public TreeNode addOneRow(TreeNode root, int v, int d) {
     if (d == 1) {
-      BinaryTreeNode newRoot = new BinaryTreeNode(v);
+      TreeNode newRoot = new TreeNode(v);
       newRoot.left = root;
       return newRoot;
     } else {
@@ -28,14 +28,14 @@ class P623AddOneRowToTree {
     }
   }
 
-  private void dfs(BinaryTreeNode node, int v, int d, int depth) {
+  private void dfs(TreeNode node, int v, int d, int depth) {
     if (node == null) {
       return;
     }
     if (depth == d - 1) {
-      BinaryTreeNode newLeft = new BinaryTreeNode(v);
+      TreeNode newLeft = new TreeNode(v);
       newLeft.left = node.left;
-      BinaryTreeNode newRight = new BinaryTreeNode(v);
+      TreeNode newRight = new TreeNode(v);
       newRight.right = node.right;
 
       node.left = newLeft;

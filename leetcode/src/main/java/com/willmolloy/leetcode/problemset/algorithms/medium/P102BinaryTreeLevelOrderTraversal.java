@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -16,7 +16,7 @@ import java.util.List;
  */
 interface P102BinaryTreeLevelOrderTraversal {
 
-  List<List<Integer>> levelOrder(BinaryTreeNode root);
+  List<List<Integer>> levelOrder(TreeNode root);
 
   /**
    * Dfs; tracks depth to know level to insert node into.
@@ -30,12 +30,11 @@ interface P102BinaryTreeLevelOrderTraversal {
   class Dfs implements P102BinaryTreeLevelOrderTraversal {
 
     @Override
-    public List<List<Integer>> levelOrder(BinaryTreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode root) {
       return levelOrder(new ArrayList<>(), root, 0);
     }
 
-    public List<List<Integer>> levelOrder(
-        List<List<Integer>> levels, BinaryTreeNode node, int depth) {
+    public List<List<Integer>> levelOrder(List<List<Integer>> levels, TreeNode node, int depth) {
       if (node == null) {
         return levels;
       }
@@ -68,13 +67,13 @@ interface P102BinaryTreeLevelOrderTraversal {
   class Bfs implements P102BinaryTreeLevelOrderTraversal {
 
     @Override
-    public List<List<Integer>> levelOrder(BinaryTreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode root) {
       List<List<Integer>> levels = new ArrayList<>();
       if (root == null) {
         return levels;
       }
 
-      Deque<BinaryTreeNode> queue = new ArrayDeque<>();
+      Deque<TreeNode> queue = new ArrayDeque<>();
       queue.add(root);
 
       while (!queue.isEmpty()) {
@@ -83,7 +82,7 @@ interface P102BinaryTreeLevelOrderTraversal {
         int levelSize = queue.size();
         for (int i = 0; i < levelSize; i++) {
           // remove from front of queue
-          BinaryTreeNode node = queue.removeFirst();
+          TreeNode node = queue.removeFirst();
           level.add(node.val);
           // add to back of queue
           if (node.left != null) {

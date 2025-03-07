@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,6 @@ class P1022SumOfRootToLeafBinaryNumbersTest {
 
   @Test
   void example() {
-    assertThat(p1022.sumRootToLeaf(BinaryTreeNode.fromLevelOrder(1, 0, 1, 0, 1, 0, 1)))
-        .isEqualTo(22);
+    assertThat(p1022.sumRootToLeaf(TreeNode.fromLevelOrder(1, 0, 1, 0, 1, 0, 1))).isEqualTo(22);
   }
 }

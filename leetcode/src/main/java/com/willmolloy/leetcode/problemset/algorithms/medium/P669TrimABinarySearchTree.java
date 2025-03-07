@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -22,7 +22,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P669TrimABinarySearchTree {
 
-  public BinaryTreeNode trimBst(BinaryTreeNode node, int l, int r) {
+  public TreeNode trimBst(TreeNode node, int l, int r) {
     if (node == null) {
       return null;
     } else if (node.val > r) {

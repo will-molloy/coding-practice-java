@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,13 +19,13 @@ class P1022SumOfRootToLeafBinaryNumbers {
 
   private int totalSum;
 
-  public int sumRootToLeaf(BinaryTreeNode root) {
+  public int sumRootToLeaf(TreeNode root) {
     totalSum = 0;
     dfs(root, 0);
     return totalSum;
   }
 
-  private void dfs(BinaryTreeNode root, int pathSum) {
+  private void dfs(TreeNode root, int pathSum) {
     if (root == null) {
       return;
     }

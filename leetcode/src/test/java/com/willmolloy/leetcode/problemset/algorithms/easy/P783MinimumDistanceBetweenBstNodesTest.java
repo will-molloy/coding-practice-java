@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,6 +16,6 @@ class P783MinimumDistanceBetweenBstNodesTest {
 
   @Test
   void example() {
-    assertThat(fun.minDiffInBst(BinaryTreeNode.fromLevelOrder(4, 2, 6, 1, 3))).isEqualTo(1);
+    assertThat(fun.minDiffInBst(TreeNode.fromLevelOrder(4, 2, 6, 1, 3))).isEqualTo(1);
   }
 }

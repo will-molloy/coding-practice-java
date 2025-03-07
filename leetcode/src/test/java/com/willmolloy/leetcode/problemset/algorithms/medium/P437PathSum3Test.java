@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,22 +16,20 @@ class P437PathSum3Test {
 
   @Test
   void example() {
-    assertThat(
-            p437.pathSum(
-                BinaryTreeNode.fromLevelOrder(10, 5, -3, 3, 2, null, 11, 3, -2, null, 1), 8))
+    assertThat(p437.pathSum(TreeNode.fromLevelOrder(10, 5, -3, 3, 2, null, 11, 3, -2, null, 1), 8))
         .isEqualTo(3);
   }
 
   @Test
   void wa1() {
-    assertThat(p437.pathSum(BinaryTreeNode.fromLevelOrder(0, 1, 1), 1)).isEqualTo(4);
+    assertThat(p437.pathSum(TreeNode.fromLevelOrder(0, 1, 1), 1)).isEqualTo(4);
   }
 
   @Test
   void wa2() {
     assertThat(
             p437.pathSum(
-                BinaryTreeNode.fromLevelOrder(1, 0, 1, 1, 2, 0, -1, 0, 1, -1, 0, -1, 0, 1, 0), 2))
+                TreeNode.fromLevelOrder(1, 0, 1, 1, 2, 0, -1, 0, 1, -1, 0, -1, 0, 1, 0), 2))
         .isEqualTo(13);
   }
 }

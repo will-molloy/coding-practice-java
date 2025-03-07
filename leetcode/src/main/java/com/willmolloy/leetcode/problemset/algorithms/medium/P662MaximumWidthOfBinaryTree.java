@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
@@ -18,7 +18,7 @@ import java.util.Queue;
  */
 class P662MaximumWidthOfBinaryTree {
 
-  public int widthOfBinaryTree(BinaryTreeNode root) {
+  public int widthOfBinaryTree(TreeNode root) {
     if (root == null) {
       return 0;
     }
@@ -51,10 +51,10 @@ class P662MaximumWidthOfBinaryTree {
    * Wraps a node with its 'index' (i.e. index if the binary tree were serialised into a 1d array).
    */
   private static final class NodeWrapper {
-    private final BinaryTreeNode node;
+    private final TreeNode node;
     private final int index;
 
-    private NodeWrapper(BinaryTreeNode node, int index) {
+    private NodeWrapper(TreeNode node, int index) {
       this.node = node;
       this.index = index;
     }

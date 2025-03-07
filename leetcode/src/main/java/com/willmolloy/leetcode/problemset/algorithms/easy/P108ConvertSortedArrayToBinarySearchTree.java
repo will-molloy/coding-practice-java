@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,17 +19,17 @@ class P108ConvertSortedArrayToBinarySearchTree {
 
   // sorted = inorder traversal, so pick middle element as current nodes value at each step
 
-  public BinaryTreeNode sortedArrayToBst(int[] nums) {
+  public TreeNode sortedArrayToBst(int[] nums) {
     return toBst(0, nums.length - 1, nums);
   }
 
   // left and right are both inclusive (i.e. represent the range nums[left, right])
-  private BinaryTreeNode toBst(int left, int right, int[] nums) {
+  private TreeNode toBst(int left, int right, int[] nums) {
     if (right < left) {
       return null;
     }
     int mid = (left + right) >>> 1;
-    BinaryTreeNode node = new BinaryTreeNode(nums[mid]);
+    TreeNode node = new TreeNode(nums[mid]);
     node.left = toBst(left, mid - 1, nums);
     node.right = toBst(mid + 1, right, nums);
     return node;

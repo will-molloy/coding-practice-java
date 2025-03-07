@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -29,14 +29,14 @@ class P103BinaryTreeZigzagLevelOrderTraversal {
   // forward/reverse
   // but that isn't really a true zigzag traversal (want the node encounter order to be zigzagging)
 
-  public List<List<Integer>> zigzagLevelOrder(BinaryTreeNode root) {
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     List<List<Integer>> levels = new ArrayList<>();
     if (root == null) {
       return levels;
     }
 
     // BFS
-    Deque<BinaryTreeNode> deque = new ArrayDeque<>();
+    Deque<TreeNode> deque = new ArrayDeque<>();
     deque.addLast(root);
     boolean forward = true;
 
@@ -50,7 +50,7 @@ class P103BinaryTreeZigzagLevelOrderTraversal {
         if (forward) {
           // standard level order
           // remove from front of queue
-          BinaryTreeNode node = deque.removeFirst();
+          TreeNode node = deque.removeFirst();
           level.add(node.val);
           // add to back of queue; left node first
           // (want to receive right node first on next iteration)
@@ -63,7 +63,7 @@ class P103BinaryTreeZigzagLevelOrderTraversal {
         } else {
           // reverse level order
           // remove from back of queue
-          BinaryTreeNode node = deque.removeLast();
+          TreeNode node = deque.removeLast();
           level.add(node.val);
           // add to front of queue; right node first
           // (want to receive left node first on next iteration)

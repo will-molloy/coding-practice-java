@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.IdentityHashMap;
 import java.util.Map;
@@ -25,16 +25,16 @@ class P337HouseRobber3 {
 
   // dp is valid because solution to subtree is optimal and merging them is optimal (+ overlapping)
 
-  private Map<BinaryTreeNode, Integer> dpRob;
-  private Map<BinaryTreeNode, Integer> dpNotRob;
+  private Map<TreeNode, Integer> dpRob;
+  private Map<TreeNode, Integer> dpNotRob;
 
-  public int rob(BinaryTreeNode root) {
+  public int rob(TreeNode root) {
     dpRob = new IdentityHashMap<>();
     dpNotRob = new IdentityHashMap<>();
     return rob(root, false);
   }
 
-  private int rob(BinaryTreeNode current, boolean parentRobbed) {
+  private int rob(TreeNode current, boolean parentRobbed) {
     if (current == null) {
       return 0;
     }

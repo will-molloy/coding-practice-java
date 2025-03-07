@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -25,16 +25,16 @@ class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
   // can assume no duplicate keys in the tree
 
-  public BinaryTreeNode buildTree(int[] preorder, int[] inorder) {
+  public TreeNode buildTree(int[] preorder, int[] inorder) {
     return buildTree(asList(preorder), asList(inorder));
   }
 
-  private BinaryTreeNode buildTree(List<Integer> preorder, List<Integer> inorder) {
+  private TreeNode buildTree(List<Integer> preorder, List<Integer> inorder) {
     if (preorder.isEmpty()) {
       return null;
     }
     // root of tree is head of preorder seq
-    BinaryTreeNode root = new BinaryTreeNode(preorder.get(0));
+    TreeNode root = new TreeNode(preorder.get(0));
     if (preorder.size() == 1) {
       return root;
     }

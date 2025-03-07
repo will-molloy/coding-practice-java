@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ class P230KthSmallestElementInABstTest {
   void example1() {
     assertThat(
             new P230KthSmallestElementInABst()
-                .kthSmallest(BinaryTreeNode.fromLevelOrder(3, 1, 4, null, 2), 1))
+                .kthSmallest(TreeNode.fromLevelOrder(3, 1, 4, null, 2), 1))
         .isEqualTo(1);
   }
 
@@ -24,7 +24,7 @@ class P230KthSmallestElementInABstTest {
   void example2() {
     assertThat(
             new P230KthSmallestElementInABst()
-                .kthSmallest(BinaryTreeNode.fromLevelOrder(5, 3, 6, 2, 4, null, null, 1), 3))
+                .kthSmallest(TreeNode.fromLevelOrder(5, 3, 6, 2, 4, null, null, 1), 3))
         .isEqualTo(3);
   }
 }

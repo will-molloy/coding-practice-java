@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -25,7 +25,7 @@ import java.util.stream.Stream;
  */
 class P107BinaryTreeLevelOrderTraversal2 {
 
-  public List<List<Integer>> levelOrderBottom(BinaryTreeNode root) {
+  public List<List<Integer>> levelOrderBottom(TreeNode root) {
     // LinkedList has more efficient head insertion than array based list
     LinkedList<List<Integer>> levels = new LinkedList<>();
     if (root == null) {
@@ -33,13 +33,13 @@ class P107BinaryTreeLevelOrderTraversal2 {
     }
 
     // BFS
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     while (!queue.isEmpty()) {
       List<Integer> level = new ArrayList<>();
       int levelSize = queue.size();
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         level.add(node.val);
         Stream.of(node.left, node.right).filter(Objects::nonNull).forEach(queue::add);
       }

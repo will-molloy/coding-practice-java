@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,12 +16,12 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P563BinaryTreeTilt {
 
-  public int findTilt(BinaryTreeNode root) {
+  public int findTilt(TreeNode root) {
     return dfs(root)[1];
   }
 
   // returns {val sum, tilt sum}
-  private int[] dfs(BinaryTreeNode node) {
+  private int[] dfs(TreeNode node) {
     if (node == null) {
       return new int[] {0, 0};
     }

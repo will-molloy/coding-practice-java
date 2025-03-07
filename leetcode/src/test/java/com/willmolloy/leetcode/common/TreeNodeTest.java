@@ -10,22 +10,20 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class BinaryTreeNodeTest {
+class TreeNodeTest {
 
   @Test
   void testToStringFullTree() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
-    assertThat(root.toString()).isEqualTo("BinaryTreeNode[1, 2, 3, 4, 5, 6, 7]");
+    TreeNode root = TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
+    assertThat(root.toString()).isEqualTo("TreeNode[1, 2, 3, 4, 5, 6, 7]");
   }
 
   @Test
   void testToStringSparseTree() {
-    BinaryTreeNode root =
-        BinaryTreeNode.fromLevelOrder(
-            1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6);
+    TreeNode root =
+        TreeNode.fromLevelOrder(1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6);
     assertThat(root.toString())
-        .isEqualTo(
-            "BinaryTreeNode[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6]");
+        .isEqualTo("TreeNode[1, 2, 3, 4, null, null, 5, null, null, null, null, null, null, 6]");
   }
 
   @Test
@@ -33,7 +31,7 @@ class BinaryTreeNodeTest {
     IllegalArgumentException thrown =
         assertThrows(
             // 4 has no parent
-            IllegalArgumentException.class, () -> BinaryTreeNode.fromLevelOrder(1, null, 3, 4));
+            IllegalArgumentException.class, () -> TreeNode.fromLevelOrder(1, null, 3, 4));
     assertThat(thrown).hasMessageThat().isEqualTo("Expected all nodes to be reachable");
   }
 }

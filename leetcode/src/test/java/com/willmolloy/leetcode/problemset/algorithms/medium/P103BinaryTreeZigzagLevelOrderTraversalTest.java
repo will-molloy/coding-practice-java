@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.collect.ImmutableList;
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,7 +18,7 @@ class P103BinaryTreeZigzagLevelOrderTraversalTest {
 
   @Test
   void example() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
+    TreeNode root = TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
     assertThat(fun.zigzagLevelOrder(root))
         .containsExactly(ImmutableList.of(3), ImmutableList.of(20, 9), ImmutableList.of(15, 7))
         .inOrder();
@@ -31,7 +31,7 @@ class P103BinaryTreeZigzagLevelOrderTraversalTest {
 
   @Test
   void singleNodePerLevel() {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
     assertThat(fun.zigzagLevelOrder(root))
         .containsExactly(
             ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(3), ImmutableList.of(4))

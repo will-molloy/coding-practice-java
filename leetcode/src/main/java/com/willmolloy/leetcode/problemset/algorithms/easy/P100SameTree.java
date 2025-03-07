@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a href=https://leetcode.com/problems/same-tree>https://leetcode.com/problems/same-tree</a>
@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P100SameTree {
 
-  public boolean isSameTree(BinaryTreeNode p, BinaryTreeNode q) {
+  public boolean isSameTree(TreeNode p, TreeNode q) {
     // it's like overriding Objects#equals
     if (p == null && q == null) {
       return true;

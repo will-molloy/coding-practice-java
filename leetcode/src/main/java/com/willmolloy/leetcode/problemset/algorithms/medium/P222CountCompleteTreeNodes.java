@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.function.UnaryOperator;
 
 /**
@@ -20,7 +20,7 @@ class P222CountCompleteTreeNodes {
   // precondition:
   // binary tree represented by root is complete
 
-  public int countNodes(BinaryTreeNode root) {
+  public int countNodes(TreeNode root) {
     int leftHeight = height(root, node -> node.left);
     int rightHeight = height(root, node -> node.right);
 
@@ -33,7 +33,7 @@ class P222CountCompleteTreeNodes {
     return 1 + countNodes(root.left) + countNodes(root.right);
   }
 
-  private int height(BinaryTreeNode node, UnaryOperator<BinaryTreeNode> next) {
+  private int height(TreeNode node, UnaryOperator<TreeNode> next) {
     // TODO doesn't this repeat work? I.e. see path 1 -> 2 -> 4, then see path 2 -> 4 again
     int height = 0;
     while (node != null) {

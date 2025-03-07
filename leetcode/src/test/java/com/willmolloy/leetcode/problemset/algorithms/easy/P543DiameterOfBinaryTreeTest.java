@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -17,7 +17,7 @@ class P543DiameterOfBinaryTreeTest {
   @ParameterizedTest
   @MethodSource("funs")
   void example(P543DiameterOfBinaryTree fun) {
-    assertThat(fun.diameterOfBinaryTree(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5))).isEqualTo(3);
+    assertThat(fun.diameterOfBinaryTree(TreeNode.fromLevelOrder(1, 2, 3, 4, 5))).isEqualTo(3);
   }
 
   @ParameterizedTest
@@ -25,7 +25,7 @@ class P543DiameterOfBinaryTreeTest {
   void bestNotThroughRoot(P543DiameterOfBinaryTree fun) {
     assertThat(
             fun.diameterOfBinaryTree(
-                BinaryTreeNode.fromLevelOrder(1, 2, null, 3, 4, null, null, 5, null, 6)))
+                TreeNode.fromLevelOrder(1, 2, null, 3, 4, null, null, 5, null, 6)))
         .isEqualTo(4);
   }
 

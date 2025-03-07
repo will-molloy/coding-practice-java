@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,7 +17,7 @@ import java.util.Queue;
  */
 interface P129SumRootToLeafNumbers {
 
-  int sumNumbers(BinaryTreeNode root);
+  int sumNumbers(TreeNode root);
 
   /**
    * BFS solution.
@@ -33,20 +33,20 @@ interface P129SumRootToLeafNumbers {
   class Bfs implements P129SumRootToLeafNumbers {
 
     @Override
-    public int sumNumbers(BinaryTreeNode root) {
+    public int sumNumbers(TreeNode root) {
       if (root == null) {
         return 0;
       }
 
       // build all paths, chose bfs here but dfs would also work (have to process every node)
 
-      Queue<List<BinaryTreeNode>> queue = new ArrayDeque<>();
+      Queue<List<TreeNode>> queue = new ArrayDeque<>();
       queue.add(new ArrayList<>(Collections.singletonList(root)));
       int sum = 0;
 
       while (!queue.isEmpty()) {
-        List<BinaryTreeNode> path = queue.remove();
-        BinaryTreeNode last = path.get(path.size() - 1);
+        List<TreeNode> path = queue.remove();
+        TreeNode last = path.get(path.size() - 1);
         if (last.left == null && last.right == null) {
           // No more branching, create the number
           int number = createNumber(path);
@@ -68,7 +68,7 @@ interface P129SumRootToLeafNumbers {
       return sum;
     }
 
-    private int createNumber(List<BinaryTreeNode> path) {
+    private int createNumber(List<TreeNode> path) {
       int number = 0;
       int multiplier = 1;
       for (int i = path.size() - 1; i >= 0; i--) {
@@ -100,13 +100,13 @@ interface P129SumRootToLeafNumbers {
     private int total;
 
     @Override
-    public int sumNumbers(BinaryTreeNode root) {
+    public int sumNumbers(TreeNode root) {
       total = 0;
       dfs(root, 0);
       return total;
     }
 
-    private void dfs(BinaryTreeNode node, int pathSum) {
+    private void dfs(TreeNode node, int pathSum) {
       if (node == null) {
         return;
       }

@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,15 +16,14 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree {
 
-  private BinaryTreeNode ans;
+  private TreeNode ans;
 
-  public BinaryTreeNode getTargetCopy(
-      BinaryTreeNode original, BinaryTreeNode cloned, BinaryTreeNode target) {
+  public TreeNode getTargetCopy(TreeNode original, TreeNode cloned, TreeNode target) {
     dfs(original, cloned, target);
     return ans;
   }
 
-  private void dfs(BinaryTreeNode original, BinaryTreeNode cloned, BinaryTreeNode target) {
+  private void dfs(TreeNode original, TreeNode cloned, TreeNode target) {
     if (original == null) {
       return;
     }

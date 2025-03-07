@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -19,13 +19,13 @@ class P337HouseRobber3Test {
 
   @ParameterizedTest
   @MethodSource
-  void examples(BinaryTreeNode root, int expected) {
+  void examples(TreeNode root, int expected) {
     assertThat(p337.rob(root)).isEqualTo(expected);
   }
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(BinaryTreeNode.fromLevelOrder(3, 2, 3, null, 3, null, 1), 7),
-        Arguments.of(BinaryTreeNode.fromLevelOrder(3, 4, 5, 1, 3, null, 1), 9));
+        Arguments.of(TreeNode.fromLevelOrder(3, 2, 3, null, 3, null, 1), 7),
+        Arguments.of(TreeNode.fromLevelOrder(3, 4, 5, 1, 3, null, 1), 9));
   }
 }

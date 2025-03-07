@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,43 +16,38 @@ class P687LongestUnivaluePathTest {
 
   @Test
   void example1() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(5, 4, 5, 1, 1, null, 5)))
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(5, 4, 5, 1, 1, null, 5)))
         .isEqualTo(2);
   }
 
   @Test
   void example2() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 4, 5, 4, 4, null, 5)))
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 4, 5, 4, 4, null, 5)))
         .isEqualTo(2);
   }
 
   @Test
   void noPaths() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7)))
-        .isEqualTo(0);
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7))).isEqualTo(0);
   }
 
   @Test
   void pathLeft() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 1, 3, 4, 5, 6, 7)))
-        .isEqualTo(1);
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 1, 3, 4, 5, 6, 7))).isEqualTo(1);
   }
 
   @Test
   void pathRight() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 2, 1, 4, 5, 6, 7)))
-        .isEqualTo(1);
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 2, 1, 4, 5, 6, 7))).isEqualTo(1);
   }
 
   @Test
   void pathLeftAndRight() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 1, 1, 4, 5, 6, 7)))
-        .isEqualTo(2);
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 1, 1, 4, 5, 6, 7))).isEqualTo(2);
   }
 
   @Test
   void pathCanOnlyGoUpAndDownThroughOneNode() {
-    assertThat(p687.longestUnivaluePath(BinaryTreeNode.fromLevelOrder(1, 1, 1, 1, 1, 1, 1)))
-        .isEqualTo(4);
+    assertThat(p687.longestUnivaluePath(TreeNode.fromLevelOrder(1, 1, 1, 1, 1, 1, 1))).isEqualTo(4);
   }
 }

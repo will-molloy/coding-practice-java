@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -12,7 +12,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P1038BinarySearchTreeToGreaterSumTree {
 
-  public BinaryTreeNode bstToGst(BinaryTreeNode root) {
+  public TreeNode bstToGst(TreeNode root) {
     return new P538ConvertBstToGreaterTree().convertBst(root);
   }
 }

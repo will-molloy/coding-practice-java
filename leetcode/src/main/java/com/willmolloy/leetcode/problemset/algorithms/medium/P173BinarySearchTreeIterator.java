@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -20,14 +20,14 @@ class P173BinarySearchTreeIterator {
 
   /** BstIterator. */
   static class BstIterator {
-    private final Deque<BinaryTreeNode> stack = new ArrayDeque<>();
+    private final Deque<TreeNode> stack = new ArrayDeque<>();
 
-    BstIterator(BinaryTreeNode root) {
+    BstIterator(TreeNode root) {
       // dump left path since that leads to the minimum element (inorder traversal, left first)
       addLeft(root);
     }
 
-    private void addLeft(BinaryTreeNode node) {
+    private void addLeft(TreeNode node) {
       if (node == null) {
         return;
       }
@@ -36,7 +36,7 @@ class P173BinarySearchTreeIterator {
     }
 
     int next() {
-      BinaryTreeNode minNode = stack.removeLast();
+      TreeNode minNode = stack.removeLast();
       // now that we have processed the left node (and now this node)
       // we can process the right node, put it on top of the stack
       // i.e. inorder traversal left -> this -> right

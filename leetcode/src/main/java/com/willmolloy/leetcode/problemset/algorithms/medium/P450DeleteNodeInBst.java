@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P450DeleteNodeInBst {
 
-  public BinaryTreeNode deleteNode(BinaryTreeNode root, int key) {
+  public TreeNode deleteNode(TreeNode root, int key) {
     if (root == null) {
       return null;
     }
@@ -41,7 +41,7 @@ class P450DeleteNodeInBst {
 
         // find successor
         // since right subtree exists successor is simply smallest node in right subtree
-        BinaryTreeNode successor = min(root.right);
+        TreeNode successor = min(root.right);
 
         // promote successor by overriding node to deletes value with its value
         root.val = successor.val;
@@ -55,7 +55,7 @@ class P450DeleteNodeInBst {
     return root;
   }
 
-  private BinaryTreeNode min(BinaryTreeNode node) {
+  private TreeNode min(TreeNode node) {
     while (node.left != null) {
       node = node.left;
     }

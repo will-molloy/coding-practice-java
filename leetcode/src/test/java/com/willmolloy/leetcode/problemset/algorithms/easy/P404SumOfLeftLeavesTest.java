@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,13 +16,13 @@ class P404SumOfLeftLeavesTest {
 
   @Test
   void example() {
-    assertThat(fun.sumOfLeftLeaves(BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7)))
+    assertThat(fun.sumOfLeftLeaves(TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7)))
         .isEqualTo(24);
   }
 
   @Test
   void oneNode() {
-    assertThat(fun.sumOfLeftLeaves(BinaryTreeNode.fromLevelOrder(123))).isEqualTo(0);
+    assertThat(fun.sumOfLeftLeaves(TreeNode.fromLevelOrder(123))).isEqualTo(0);
   }
 
   @Test

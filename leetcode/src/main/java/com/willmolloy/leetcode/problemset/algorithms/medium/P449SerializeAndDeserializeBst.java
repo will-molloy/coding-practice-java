@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,7 +19,7 @@ class P449SerializeAndDeserializeBst {
   // Runtime: O(n)
   // Space: O(h)
   // TODO string isn't as compact as possible? Apparently don't need to represent null nodes
-  public String serialize(BinaryTreeNode root) {
+  public String serialize(TreeNode root) {
     // want to prefer the structure, so inorder traversal wont work
     // can store it by level order, and omit null nodes unless needed
     // (when left is null and right isnt)
@@ -29,7 +29,7 @@ class P449SerializeAndDeserializeBst {
     return s.toString();
   }
 
-  private void ser(BinaryTreeNode node, StringBuilder s) {
+  private void ser(TreeNode node, StringBuilder s) {
     if (node == null) {
       return;
     }
@@ -54,7 +54,7 @@ class P449SerializeAndDeserializeBst {
   //  subtree
   // TODO surely exists an O(n) solution
   // Space: O(h)
-  public BinaryTreeNode deserialize(String data) {
+  public TreeNode deserialize(String data) {
     if (data.isEmpty()) {
       return null;
     }
@@ -80,10 +80,10 @@ class P449SerializeAndDeserializeBst {
     }
 
     if (leftStart == 0) {
-      return new BinaryTreeNode(Integer.parseInt(data));
+      return new TreeNode(Integer.parseInt(data));
     } else {
       String thisData = data.substring(0, leftStart);
-      BinaryTreeNode node = new BinaryTreeNode(Integer.parseInt(thisData));
+      TreeNode node = new TreeNode(Integer.parseInt(thisData));
       // +1, -1, to skip parenthesis
       String leftData = data.substring(leftStart + 1, rightStart - 1);
       node.left = deserialize(leftData);

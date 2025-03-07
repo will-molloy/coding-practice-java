@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ class P637AverageOfLevelsInBinaryTreeTest {
 
   @Test
   void example1() {
-    assertThat(p637.averageOfLevels(BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7)))
+    assertThat(p637.averageOfLevels(TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7)))
         .containsExactly(3d, 14.5d, 11d)
         .inOrder();
   }
@@ -25,8 +25,7 @@ class P637AverageOfLevelsInBinaryTreeTest {
   void integerOverflow() {
     assertThat(
             p637.averageOfLevels(
-                BinaryTreeNode.fromLevelOrder(
-                    Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE)))
+                TreeNode.fromLevelOrder(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE)))
         .containsExactly(
             Integer.valueOf(Integer.MAX_VALUE).doubleValue(),
             Integer.valueOf(Integer.MAX_VALUE).doubleValue())

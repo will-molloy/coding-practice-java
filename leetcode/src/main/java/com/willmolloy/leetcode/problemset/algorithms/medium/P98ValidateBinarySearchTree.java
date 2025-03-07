@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -18,11 +18,11 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P98ValidateBinarySearchTree {
 
-  public boolean isValidBst(BinaryTreeNode root) {
+  public boolean isValidBst(TreeNode root) {
     return isValid(root, Long.MAX_VALUE, Long.MIN_VALUE);
   }
 
-  private boolean isValid(BinaryTreeNode node, long max, long min) {
+  private boolean isValid(TreeNode node, long max, long min) {
     if (node == null) {
       // all nodes checked
       return true;

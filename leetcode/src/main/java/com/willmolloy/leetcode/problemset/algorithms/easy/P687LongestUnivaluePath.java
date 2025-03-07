@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -21,14 +21,14 @@ class P687LongestUnivaluePath {
   // global answer
   private int ans;
 
-  public int longestUnivaluePath(BinaryTreeNode root) {
+  public int longestUnivaluePath(TreeNode root) {
     ans = 0;
     dfs(root);
     return ans;
   }
 
   // return longest path going strictly down from the given node
-  private int dfs(BinaryTreeNode node) {
+  private int dfs(TreeNode node) {
     if (node == null) {
       return 0;
     }

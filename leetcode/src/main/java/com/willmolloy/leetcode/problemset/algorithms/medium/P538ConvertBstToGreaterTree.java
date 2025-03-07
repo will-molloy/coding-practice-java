@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -19,13 +19,13 @@ class P538ConvertBstToGreaterTree {
 
   private int sum;
 
-  public BinaryTreeNode convertBst(BinaryTreeNode root) {
+  public TreeNode convertBst(TreeNode root) {
     sum = 0;
     dfs(root);
     return root;
   }
 
-  private void dfs(BinaryTreeNode node) {
+  private void dfs(TreeNode node) {
     if (node == null) {
       return;
     }

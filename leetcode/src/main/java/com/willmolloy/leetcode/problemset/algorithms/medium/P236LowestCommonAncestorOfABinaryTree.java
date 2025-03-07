@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.Collections;
 import java.util.IdentityHashMap;
 import java.util.Map;
@@ -21,30 +21,28 @@ import java.util.Set;
  */
 class P236LowestCommonAncestorOfABinaryTree {
 
-  public BinaryTreeNode lowestCommonAncestor(
-      BinaryTreeNode root, BinaryTreeNode p, BinaryTreeNode q) {
+  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     // store parent of every node in map so can traverse up tree
-    Map<BinaryTreeNode, BinaryTreeNode> parents = parents(root);
+    Map<TreeNode, TreeNode> parents = parents(root);
 
     // get path from p to root
-    Set<BinaryTreeNode> pAncestors = ancestors(parents, p);
+    Set<TreeNode> pAncestors = ancestors(parents, p);
 
     // traverse path from q to root, stop at first node common on p to root path, that is the LCA
-    BinaryTreeNode node = q;
+    TreeNode node = q;
     while (!pAncestors.contains(node)) {
       node = parents.get(node);
     }
     return node;
   }
 
-  private Map<BinaryTreeNode, BinaryTreeNode> parents(BinaryTreeNode root) {
-    Map<BinaryTreeNode, BinaryTreeNode> parents = new IdentityHashMap<>();
+  private Map<TreeNode, TreeNode> parents(TreeNode root) {
+    Map<TreeNode, TreeNode> parents = new IdentityHashMap<>();
     parentDfs(parents, root, null);
     return Collections.unmodifiableMap(parents);
   }
 
-  private void parentDfs(
-      Map<BinaryTreeNode, BinaryTreeNode> parents, BinaryTreeNode node, BinaryTreeNode parent) {
+  private void parentDfs(Map<TreeNode, TreeNode> parents, TreeNode node, TreeNode parent) {
     if (node == null) {
       return;
     }
@@ -53,9 +51,8 @@ class P236LowestCommonAncestorOfABinaryTree {
     parentDfs(parents, node.right, node);
   }
 
-  private Set<BinaryTreeNode> ancestors(
-      Map<BinaryTreeNode, BinaryTreeNode> parents, BinaryTreeNode node) {
-    Set<BinaryTreeNode> ancestors = Collections.newSetFromMap(new IdentityHashMap<>());
+  private Set<TreeNode> ancestors(Map<TreeNode, TreeNode> parents, TreeNode node) {
+    Set<TreeNode> ancestors = Collections.newSetFromMap(new IdentityHashMap<>());
     while (node != null) {
       ancestors.add(node);
       node = parents.get(node);

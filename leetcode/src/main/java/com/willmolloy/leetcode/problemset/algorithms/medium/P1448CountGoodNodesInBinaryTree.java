@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -18,13 +18,13 @@ class P1448CountGoodNodesInBinaryTree {
 
   private int count;
 
-  public int goodNodes(BinaryTreeNode root) {
+  public int goodNodes(TreeNode root) {
     count = 0;
     dfs(root, Integer.MIN_VALUE);
     return count;
   }
 
-  private void dfs(BinaryTreeNode node, int maxInPathFromRoot) {
+  private void dfs(TreeNode node, int maxInPathFromRoot) {
     if (node == null) {
       return;
     }

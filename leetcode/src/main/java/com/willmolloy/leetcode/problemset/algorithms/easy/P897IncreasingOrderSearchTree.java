@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +20,8 @@ import java.util.List;
 class P897IncreasingOrderSearchTree {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
-  public BinaryTreeNode increasingBST(BinaryTreeNode root) {
-    List<BinaryTreeNode> list = new ArrayList<>();
+  public TreeNode increasingBST(TreeNode root) {
+    List<TreeNode> list = new ArrayList<>();
     inorder(root, list);
 
     for (int i = 0; i < list.size(); i++) {
@@ -33,7 +33,7 @@ class P897IncreasingOrderSearchTree {
     return list.get(0);
   }
 
-  private void inorder(BinaryTreeNode node, List<BinaryTreeNode> list) {
+  private void inorder(TreeNode node, List<TreeNode> list) {
     if (node == null) {
       return;
     }

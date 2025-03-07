@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.google.common.collect.ImmutableList;
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -19,7 +19,7 @@ class P102BinaryTreeLevelOrderTraversalTest {
   @ParameterizedTest
   @MethodSource("funs")
   void example(P102BinaryTreeLevelOrderTraversal fun) {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
+    TreeNode root = TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
     assertThat(fun.levelOrder(root))
         .containsExactly(ImmutableList.of(3), ImmutableList.of(9, 20), ImmutableList.of(15, 7))
         .inOrder();
@@ -34,7 +34,7 @@ class P102BinaryTreeLevelOrderTraversalTest {
   @ParameterizedTest
   @MethodSource("funs")
   void singleNodePerLeve(P102BinaryTreeLevelOrderTraversal fun) {
-    BinaryTreeNode root = BinaryTreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
     assertThat(fun.levelOrder(root))
         .containsExactly(
             ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(3), ImmutableList.of(4))

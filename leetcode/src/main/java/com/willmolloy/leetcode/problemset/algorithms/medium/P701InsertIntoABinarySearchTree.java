@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -20,11 +20,11 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
 class P701InsertIntoABinarySearchTree {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
-  public BinaryTreeNode insertIntoBST(BinaryTreeNode root, int val) {
+  public TreeNode insertIntoBST(TreeNode root, int val) {
     // find leaf to insert onto (parent = leaf after loop finishes)
     // essentially tree search algorithm
-    BinaryTreeNode parent = null;
-    BinaryTreeNode node = root;
+    TreeNode parent = null;
+    TreeNode node = root;
     while (node != null) {
       parent = node;
       if (val < node.val) {
@@ -38,12 +38,12 @@ class P701InsertIntoABinarySearchTree {
     if (parent == null) {
       // root was null (empty tree)
       // make new singleton tree
-      return new BinaryTreeNode(val);
+      return new TreeNode(val);
     }
     if (val < parent.val) {
-      parent.left = new BinaryTreeNode(val);
+      parent.left = new TreeNode(val);
     } else {
-      parent.right = new BinaryTreeNode(val);
+      parent.right = new TreeNode(val);
     }
     return root;
   }

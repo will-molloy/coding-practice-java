@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 interface P700SearchInABinarySearchTree {
 
-  BinaryTreeNode searchBst(BinaryTreeNode root, int val);
+  TreeNode searchBst(TreeNode root, int val);
 
   /**
    * Recursive solution.
@@ -27,7 +27,7 @@ interface P700SearchInABinarySearchTree {
   class Recursive implements P700SearchInABinarySearchTree {
 
     @Override
-    public BinaryTreeNode searchBst(BinaryTreeNode root, int val) {
+    public TreeNode searchBst(TreeNode root, int val) {
       if (root == null || root.val == val) {
         return root;
       }
@@ -49,7 +49,7 @@ interface P700SearchInABinarySearchTree {
   class Iterative implements P700SearchInABinarySearchTree {
 
     @Override
-    public BinaryTreeNode searchBst(BinaryTreeNode root, int val) {
+    public TreeNode searchBst(TreeNode root, int val) {
       while (root != null) {
         if (root.val == val) {
           break;

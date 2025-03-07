@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 
 /**
  * <a
@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.BinaryTreeNode;
  */
 class P965UnivaluedBinaryTree {
 
-  public boolean isUnivalTree(BinaryTreeNode root) {
+  public boolean isUnivalTree(TreeNode root) {
     if (root == null) {
       return true;
     }
@@ -25,7 +25,7 @@ class P965UnivaluedBinaryTree {
     return dfs(root.left, value) && dfs(root.right, value);
   }
 
-  private boolean dfs(BinaryTreeNode node, int value) {
+  private boolean dfs(TreeNode node, int value) {
     if (node == null) {
       return true;
     }

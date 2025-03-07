@@ -6,10 +6,12 @@ import java.util.Collections;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
+import javax.annotation.Nullable;
 
 /**
- * ListNode.
+ * Definition for singly-linked list.
  *
+ * @author leetcode
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 public final class ListNode {
@@ -28,9 +30,9 @@ public final class ListNode {
   public final int val;
 
   @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
+  @Nullable
   public ListNode next;
 
-  /** public constructor required for leetcode submission. */
   public ListNode(int val) {
     this.val = val;
   }

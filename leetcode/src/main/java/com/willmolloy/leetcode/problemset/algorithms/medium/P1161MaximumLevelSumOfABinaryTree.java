@@ -1,6 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
-import com.willmolloy.leetcode.common.BinaryTreeNode;
+import com.willmolloy.leetcode.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.Objects;
 import java.util.Queue;
@@ -20,7 +20,7 @@ import java.util.stream.Stream;
  */
 class P1161MaximumLevelSumOfABinaryTree {
 
-  public int maxLevelSum(BinaryTreeNode root) {
+  public int maxLevelSum(TreeNode root) {
     if (root == null) {
       return 0;
     }
@@ -29,14 +29,14 @@ class P1161MaximumLevelSumOfABinaryTree {
     int maxSum = Integer.MIN_VALUE;
 
     // Bfs
-    Queue<BinaryTreeNode> queue = new ArrayDeque<>();
+    Queue<TreeNode> queue = new ArrayDeque<>();
     queue.add(root);
     int level = 1;
     while (!queue.isEmpty()) {
       int sum = 0;
       int levelSize = queue.size();
       for (int i = 0; i < levelSize; i++) {
-        BinaryTreeNode node = queue.remove();
+        TreeNode node = queue.remove();
         sum += node.val;
         Stream.of(node.left, node.right).filter(Objects::nonNull).forEach(queue::add);
       }
