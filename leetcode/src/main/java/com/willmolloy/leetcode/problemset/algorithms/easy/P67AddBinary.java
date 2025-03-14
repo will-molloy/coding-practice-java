@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(max(a, b))
  *
- * <p>Key: double pointer, one for each string, convert chars to digits and sum from back with
+ * <p>Key idea: double pointer, one for each string, convert chars to digits and sum from back with
  * carry.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P2AddTwoNumbers

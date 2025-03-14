@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Disjoint set.
+ * <p>Key idea: Disjoint set.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P547FriendCircles
  * @author <a href=https://willmolloy.com>Will Molloy</a>

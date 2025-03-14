@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Test from P33 for rotated case no longer works (comparing with head) since head may also
- * be last. Instead need to handle worst case {@code nums[l] == nums[m]} and move linearly.
+ * <p>Key idea: Test from P33 for rotated case no longer works (comparing with head) since head may
+ * also be last. Instead need to handle worst case {@code nums[l] == nums[m]} and move linearly.
  *
  * @see P33SearchInRotatedSortedArray
  * @see P153FindMinimumInRotatedSortedArray

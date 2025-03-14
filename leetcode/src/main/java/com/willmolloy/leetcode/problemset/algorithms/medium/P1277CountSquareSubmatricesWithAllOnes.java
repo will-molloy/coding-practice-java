@@ -12,7 +12,7 @@ import static java.lang.Math.min;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Dynamic programming to compute square side lengths (same process as {@link
+ * <p>Key idea: Dynamic programming to compute square side lengths (same process as {@link
  * P221MaximalSquare}) and realising that adding these side lengths is the answer.
  *
  * @see P221MaximalSquare

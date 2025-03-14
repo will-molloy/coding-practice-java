@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Finding circle centre.
+ * <p>Key idea: Finding circle centre.
  *
  * <p>IMO these computational geometry problems should provide formulas/apis you'll need, not
  * everyone knows the math.

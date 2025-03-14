@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(1) - fixed number of keys (at most 26)
  *
- * <p>Key: Test key/value sets are equal (separately):
+ * <p>Key idea: Test key/value sets are equal (separately):
  *
  * <ul>
  *   <li>Can use operation 1 to swap characters - position doesn't matter - can compare sets rather

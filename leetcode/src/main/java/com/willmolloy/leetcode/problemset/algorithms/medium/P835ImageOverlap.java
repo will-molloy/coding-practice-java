@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Brute force; try all combinations of shifting in x and y direction.
+ * <p>Key idea: Brute force; try all combinations of shifting in x and y direction.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -11,8 +11,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: {@code a + b % k == 0} is same as {@code (a % k) + (b % k) == k}, therefore can compute
- * {@code b} from {@code a} and {@code k} (similar to {@linkplain
+ * <p>Key idea: {@code a + b % k == 0} is same as {@code (a % k) + (b % k) == k}, therefore can
+ * compute {@code b} from {@code a} and {@code k} (similar to {@linkplain
  * com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum two sum problem}), then just ensure
  * equal number of a's and b's.
  *

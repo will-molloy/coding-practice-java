@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Regex.
+ * <p>Key idea: Regex.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

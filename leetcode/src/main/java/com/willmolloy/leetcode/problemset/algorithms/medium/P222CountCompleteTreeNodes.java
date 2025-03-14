@@ -11,7 +11,7 @@ import java.util.function.UnaryOperator;
  *
  * <p>Space: O(log(n))
  *
- * <p>Key: recursive step: can simply add num nodes in left and right subtrees
+ * <p>Key idea: recursive step: can simply add num nodes in left and right subtrees
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,9 +10,9 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Space: O(1)
  *
- * <p>Key: dummy node, pointer manipulation, understanding once list is joined problem is solved
- * (since unlike an array, the contents are already present as if they were processed), using array
- * to return tuple to achieve 1-pass requirement
+ * <p>Key idea: dummy node, pointer manipulation, understanding once list is joined problem is
+ * solved (since unlike an array, the contents are already present as if they were processed), using
+ * array to return tuple to achieve 1-pass requirement
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P206ReverseLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>

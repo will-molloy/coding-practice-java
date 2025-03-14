@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 /**
  * <a href=https://leetcode.com/problems/n-queens-ii>https://leetcode.com/problems/n-queens-ii</a>
  *
- * <p>Key: copy N-Queens-I
+ * <p>Key idea: copy N-Queens-I
  *
  * @see P51NQueens
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,8 +11,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: All edges point to the center node, i.e. the center node is common/duplicate across all
- * edges.
+ * <p>Key idea: All edges point to the center node, i.e. the center node is common/duplicate across
+ * all edges.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

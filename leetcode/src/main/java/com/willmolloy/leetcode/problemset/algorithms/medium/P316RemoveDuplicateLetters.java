@@ -13,8 +13,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Going left to right on {@code s}: remove character if it occurs in the string again later
- * and there is a smaller character after it.
+ * <p>Key idea: Going left to right on {@code s}: remove character if it occurs in the string again
+ * later and there is a smaller character after it.
  *
  * <p>Precomputing character frequencies to know if a character occurs in the string again later was
  * helpful.

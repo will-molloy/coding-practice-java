@@ -15,8 +15,8 @@ import java.util.Set;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: When doing DFS think about what should be returned; here, whether or not the subtree has
- * an apple.
+ * <p>Key idea: When doing DFS think about what should be returned; here, whether or not the subtree
+ * has an apple.
  *
  * <p>Also the structure is a tree (not any graph) so nodes only have one parent, so can use simple
  * algorithms like DFS, no need for MST.

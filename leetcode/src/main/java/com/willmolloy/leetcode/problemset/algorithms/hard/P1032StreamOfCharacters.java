@@ -9,9 +9,9 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(sum(w : words)) + {@code query} calls
  *
- * <p>Key: Insert reversed words into the Trie such that you can search the stream in reverse order
- * (newest to oldest rather than oldest to newest). This makes the search more efficient since it
- * can continue from the previous k.
+ * <p>Key idea: Insert reversed words into the Trie such that you can search the stream in reverse
+ * order (newest to oldest rather than oldest to newest). This makes the search more efficient since
+ * it can continue from the previous k.
  *
  * <p>E.g. without reversal searches for {@code stream = abcd} are:
  *

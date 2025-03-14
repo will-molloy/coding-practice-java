@@ -11,8 +11,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(sum(w : words)) (i.e. space of trie)
  *
- * <p>Key: Having separate method ({@link #continueSearch}) to continue the search once a character
- * had been changed.
+ * <p>Key idea: Having separate method ({@link #continueSearch}) to continue the search once a
+ * character had been changed.
  *
  * @see P208ImplementTrie
  * @see P211AddAndSearchWordDataStructureDesign

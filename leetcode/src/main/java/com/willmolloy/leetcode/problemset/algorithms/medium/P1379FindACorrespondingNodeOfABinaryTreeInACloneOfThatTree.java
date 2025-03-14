@@ -10,7 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Traverse the trees in lockstep, when original is target, cloned node must be the answer.
+ * <p>Key idea: Traverse the trees in lockstep, when original is target, cloned node must be the
+ * answer.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

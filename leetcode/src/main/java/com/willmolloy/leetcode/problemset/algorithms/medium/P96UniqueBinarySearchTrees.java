@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * <a
  * href=https://leetcode.com/problems/unique-binary-search-trees>https://leetcode.com/problems/unique-binary-search-trees</a>
  *
- * <p>Key: dynamic programming; coming up with math formula before writing code
+ * <p>Key idea: dynamic programming; coming up with math formula before writing code
  *
  * @see P95UniqueBinarySearchTrees2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

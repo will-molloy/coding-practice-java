@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  * <p>Runtime: O(n log n)
  *
- * <p>Key: Sort the array ahead of time.
+ * <p>Key idea: Sort the array ahead of time.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

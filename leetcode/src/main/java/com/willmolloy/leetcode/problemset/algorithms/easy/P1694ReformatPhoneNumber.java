@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: First get the digits, then build result by adding 3 digits until 4 are left and handling
- * the 3 cases.
+ * <p>Key idea: First get the digits, then build result by adding 3 digits until 4 are left and
+ * handling the 3 cases.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

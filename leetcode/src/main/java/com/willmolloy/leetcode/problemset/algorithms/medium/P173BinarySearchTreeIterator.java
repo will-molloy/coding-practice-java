@@ -12,7 +12,7 @@ import java.util.Deque;
  *
  * <p>Space: O(h)
  *
- * <p>Key: Stack.
+ * <p>Key idea: Stack.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

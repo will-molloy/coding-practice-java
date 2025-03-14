@@ -6,7 +6,7 @@ import java.util.TreeSet;
  * <a
  * href=https://leetcode.com/problems/count-number-of-teams>https://leetcode.com/problems/count-number-of-teams</a>
  *
- * <p>Key: figuring out how to compute a 'count' of something (will involve multiplication -
+ * <p>Key idea: figuring out how to compute a 'count' of something (will involve multiplication -
  * cartesian product), in this case number of teams for a given soldier
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

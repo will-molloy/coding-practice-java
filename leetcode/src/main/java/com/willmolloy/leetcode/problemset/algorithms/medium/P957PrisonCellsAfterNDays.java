@@ -13,8 +13,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(1) for same reasons
  *
- * <p>Key: Max n is 1e9 but number of possible states is 2<sup>6</sup> (64) so the state must repeat
- * for large enough n.
+ * <p>Key idea: Max n is 1e9 but number of possible states is 2<sup>6</sup> (64) so the state must
+ * repeat for large enough n.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

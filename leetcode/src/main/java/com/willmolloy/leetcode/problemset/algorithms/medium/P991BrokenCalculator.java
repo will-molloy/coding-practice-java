@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy and work backwards. Divide y by 2 (if even - greedy) otherwise add 1.
+ * <p>Key idea: Greedy and work backwards. Divide y by 2 (if even - greedy) otherwise add 1.
  *
  * <p>Working backwards works because it means we know if we can divide y by 2 (and therefore
  * multiply x by 2) - based on y's parity.

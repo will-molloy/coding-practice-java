@@ -17,7 +17,8 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n) - copy tree + store each path root to leaf (essentially copy again)
  *
- * <p>Key: Distance between nodes in tree is: d(root, n1) + d(root, n2) - 2 * d(root, lca(n1, n2)).
+ * <p>Key idea: Distance between nodes in tree is: d(root, n1) + d(root, n2) - 2 * d(root, lca(n1,
+ * n2)).
  *
  * @see P236LowestCommonAncestorOfABinaryTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>

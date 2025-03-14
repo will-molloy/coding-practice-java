@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Simulate with stack. Ignore "..", "." and "".
+ * <p>Key idea: Simulate with stack. Ignore "..", "." and "".
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

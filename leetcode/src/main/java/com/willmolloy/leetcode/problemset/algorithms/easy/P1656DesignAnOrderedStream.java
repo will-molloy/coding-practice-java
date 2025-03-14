@@ -14,7 +14,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n) - exactly n calls to insert
  *
- * <p>Key: Reading the question carefully:
+ * <p>Key idea: Reading the question carefully:
  *
  * <ul>
  *   <li>Sequence must be contiguous - as soon as key not in map, stop collecting.

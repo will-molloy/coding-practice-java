@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Count every "()", track depth to know what its worth (2<sup>depth</sup>).
+ * <p>Key idea: Count every "()", track depth to know what its worth (2<sup>depth</sup>).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

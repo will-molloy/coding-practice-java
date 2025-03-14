@@ -13,8 +13,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Top down (with memoise) is easier for this one where you're traversing a tree rather than
- * an array.
+ * <p>Key idea: Top down (with memoise) is easier for this one where you're traversing a tree rather
+ * than an array.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P198HouseRobber
  * @see P213HouseRobber2

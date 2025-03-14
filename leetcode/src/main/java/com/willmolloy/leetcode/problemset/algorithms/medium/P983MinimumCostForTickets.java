@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Recurrence is comparing how we can cover the current day; day ticket vs. week ticket
+ * <p>Key idea: Recurrence is comparing how we can cover the current day; day ticket vs. week ticket
  * (ending today) vs. month ticket (ending today).
  *
  * <p>Tricky part is figuring out what the result was 'x' days ago since the array can be sparse. So

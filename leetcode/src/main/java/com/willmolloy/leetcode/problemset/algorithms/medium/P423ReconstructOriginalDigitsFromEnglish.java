@@ -15,8 +15,9 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Find unique letters for each digit. E.g. only zero has 'z'. Then count the occurrence of
- * those letters. Digits which have such unique letters will now have the correct/final count.
+ * <p>Key idea: Find unique letters for each digit. E.g. only zero has 'z'. Then count the
+ * occurrence of those letters. Digits which have such unique letters will now have the
+ * correct/final count.
  *
  * <p>For digits which don't have any unique letters, find a shared letter such that the digits it
  * shares the letter with would have their count finalised first. I.e. the graph of shared letters

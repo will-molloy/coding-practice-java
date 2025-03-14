@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Fraction is simplified if GCD of numerator and denominator is 1.
+ * <p>Key idea: Fraction is simplified if GCD of numerator and denominator is 1.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

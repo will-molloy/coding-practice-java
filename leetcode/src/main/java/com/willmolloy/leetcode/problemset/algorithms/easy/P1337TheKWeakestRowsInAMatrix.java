@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O(rows)
  *
- * <p>Key: Process score for each row ([index, soldier count]). Store in priority queue for k
+ * <p>Key idea: Process score for each row ([index, soldier count]). Store in priority queue for k
  * weakest.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: filter and count. Initially looking up item index is nice.
+ * <p>Key idea: filter and count. Initially looking up item index is nice.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

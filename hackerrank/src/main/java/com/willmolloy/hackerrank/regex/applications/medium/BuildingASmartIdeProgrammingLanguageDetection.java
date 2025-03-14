@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: exhaustiveness, don't need to check for Python since if its not Java or C it must be
+ * <p>Key idea: exhaustiveness, don't need to check for Python since if its not Java or C it must be
  * Python per the problem statement.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

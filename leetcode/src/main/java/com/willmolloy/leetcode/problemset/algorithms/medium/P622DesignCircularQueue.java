@@ -11,7 +11,7 @@ import java.util.Deque;
  *
  * <p>Extra memory: O(1) for all operations
  *
- * <p>Key: Delegate to {@link Deque}.
+ * <p>Key idea: Delegate to {@link Deque}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

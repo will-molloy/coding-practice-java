@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(sum(word: {@code addWord} calls)) (i.e. Trie space)
  *
- * <p>Key: Trie.
+ * <p>Key idea: Trie.
  *
  * @see P208ImplementTrie
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P212WordSearch2

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: {@link String#startsWith} method.
+ * <p>Key idea: {@link String#startsWith} method.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

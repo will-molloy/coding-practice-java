@@ -18,8 +18,8 @@ import java.util.PriorityQueue;
  * <p>Extra memory: O(n + e) ({@code adjList}) + O(n) (Dijkstra priority queue/costs) + O(n) (DFS
  * stack) + O(n) (DP table) = O(e + n)
  *
- * <p>Key: Dijkstra's to get {@code distanceToLastNode(x)} function. Then DFS with DP to count paths
- * from first to last node.
+ * <p>Key idea: Dijkstra's to get {@code distanceToLastNode(x)} function. Then DFS with DP to count
+ * paths from first to last node.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

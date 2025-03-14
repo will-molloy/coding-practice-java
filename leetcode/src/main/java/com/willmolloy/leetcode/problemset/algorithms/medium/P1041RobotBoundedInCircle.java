@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: If the robot is facing a new direction it will reach the origin again in another 1-3
+ * <p>Key idea: If the robot is facing a new direction it will reach the origin again in another 1-3
  * iterations and is therefore looping.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

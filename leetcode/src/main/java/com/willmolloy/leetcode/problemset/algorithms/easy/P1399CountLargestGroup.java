@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Group nums by their digit sums.
+ * <p>Key idea: Group nums by their digit sums.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

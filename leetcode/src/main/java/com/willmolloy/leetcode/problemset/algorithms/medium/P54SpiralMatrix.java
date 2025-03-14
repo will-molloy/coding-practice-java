@@ -9,7 +9,7 @@ import java.util.List;
  *
  * <p>Runtime: O(n*m), process each element once.
  *
- * <p>Key: breaking the problem down with recursion; i.e. mxn matrix -> (m-2)x(n-2) matrix.
+ * <p>Key idea: breaking the problem down with recursion; i.e. mxn matrix -> (m-2)x(n-2) matrix.
  *
  * <p>Then can simply apply the offset value (depth) consistently to the loop variable and lengths.
  *

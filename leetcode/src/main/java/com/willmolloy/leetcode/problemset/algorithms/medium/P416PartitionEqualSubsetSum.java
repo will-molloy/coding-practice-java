@@ -12,8 +12,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(m * n)
  *
- * <p>Key: Variant of knapsack problem (dynamic programming). Determine if proper subset which sums
- * to sum({@code nums})/2 exists (as other elements must sum to the same thing...).
+ * <p>Key idea: Variant of knapsack problem (dynamic programming). Determine if proper subset which
+ * sums to sum({@code nums})/2 exists (as other elements must sum to the same thing...).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

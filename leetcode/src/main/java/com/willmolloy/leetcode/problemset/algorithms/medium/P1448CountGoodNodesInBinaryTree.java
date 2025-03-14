@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: DFS with global count. Track max in path from root to current node.
+ * <p>Key idea: DFS with global count. Track max in path from root to current node.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

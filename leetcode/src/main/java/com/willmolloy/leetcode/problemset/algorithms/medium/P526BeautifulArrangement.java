@@ -11,8 +11,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(n) (recursion depth)
  *
- * <p>Key: Try all the permutations - can prune the search by checking if an element is good at the
- * time of adding rather than after building the whole list.
+ * <p>Key idea: Try all the permutations - can prune the search by checking if an element is good at
+ * the time of adding rather than after building the whole list.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

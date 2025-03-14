@@ -12,7 +12,7 @@ import java.util.Queue;
  *
  * <p>Space: O(w) = O(n)
  *
- * <p>Key: labelling nodes, in this case [0, n)
+ * <p>Key idea: labelling nodes, in this case [0, n)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Find largest two elements.
+ * <p>Key idea: Find largest two elements.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

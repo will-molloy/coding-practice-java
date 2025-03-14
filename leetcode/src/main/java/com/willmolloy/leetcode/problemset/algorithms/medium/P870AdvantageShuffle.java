@@ -14,8 +14,8 @@ import java.util.Queue;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Greedy. Take smallest {@code a[i]} greater than {@code b[i]} so remaining {@code a[i]}
- * have higher chance of beating a {@code b[i]}.
+ * <p>Key idea: Greedy. Take smallest {@code a[i]} greater than {@code b[i]} so remaining {@code
+ * a[i]} have higher chance of beating a {@code b[i]}.
  *
  * <p>Done by sorting first so smallest {@code a[i]} compare with smallest {@code b[i]} initially,
  * then if an {@code a[i]} can't beat a {@code b[i]} we know it won't beat any {@code b[i]} so can

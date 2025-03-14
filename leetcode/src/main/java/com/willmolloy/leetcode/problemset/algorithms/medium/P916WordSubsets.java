@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Combine b freqs into one, using {@code max} count of each letter.
+ * <p>Key idea: Combine b freqs into one, using {@code max} count of each letter.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

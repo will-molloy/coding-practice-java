@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(rows * cols<sup>2</sup>)
  *
- * <p>Key: Let {@code dp[row][col1][col2]} represent the maximum number of cherries if robot 1
+ * <p>Key idea: Let {@code dp[row][col1][col2]} represent the maximum number of cherries if robot 1
  * starts at (row, col1) and robot 2 starts at (row, col2).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

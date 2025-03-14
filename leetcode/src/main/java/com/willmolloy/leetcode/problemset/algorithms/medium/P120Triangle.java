@@ -9,7 +9,7 @@ import java.util.List;
  *
  * <p>Space: O(n) TODO can do O(1) if you use triangle as dp
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see P62UniquePaths
  * @see P63UniquePaths2

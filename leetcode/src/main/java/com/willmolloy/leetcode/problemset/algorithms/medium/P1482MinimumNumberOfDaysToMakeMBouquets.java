@@ -10,9 +10,9 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Binary search over the day range. Essentially have an array partitioned into false (can't
- * make m bouquets) and true (can make m bouquets) ([false, false, ..., true, true]) want the first
- * true.
+ * <p>Key idea: Binary search over the day range. Essentially have an array partitioned into false
+ * (can't make m bouquets) and true (can make m bouquets) ([false, false, ..., true, true]) want the
+ * first true.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P278FirstBadVersion
  * @see P1283FindTheSmallestDivisorGivenAThreshold

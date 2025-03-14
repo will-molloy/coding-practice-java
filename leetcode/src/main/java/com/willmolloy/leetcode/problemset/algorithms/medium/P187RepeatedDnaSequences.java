@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Hashset.
+ * <p>Key idea: Hashset.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1044LongestDuplicateSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Lookup remainders in hash table.
+ * <p>Key idea: Lookup remainders in hash table.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

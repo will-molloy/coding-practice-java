@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra space: O(numRows * numCols)
  *
- * <p>Key: Dynamic programming, choice is either right or down. Helps to fill in the dp table on
- * paper.
+ * <p>Key idea: Dynamic programming, choice is either right or down. Helps to fill in the dp table
+ * on paper.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P62UniquePaths
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P63UniquePaths2

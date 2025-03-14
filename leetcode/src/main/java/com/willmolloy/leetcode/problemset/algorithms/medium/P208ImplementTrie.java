@@ -6,7 +6,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Difficulty: Medium.
  *
- * <p>Key: Trie behaves like an n-ary tree. All traversals are DFS. {@code isLeaf} field is crucial.
+ * <p>Key idea: Trie behaves like an n-ary tree. All traversals are DFS. {@code isLeaf} field is
+ * crucial.
  *
  * @see P211AddAndSearchWordDataStructureDesign
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P212WordSearch2

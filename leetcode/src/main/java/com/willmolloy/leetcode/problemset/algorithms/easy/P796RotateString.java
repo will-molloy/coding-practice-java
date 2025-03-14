@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n) ({@link String#concat} creates a {@code new} {@link String})
  *
- * <p>Key: a rotation of "s" must be a substring of "s" + "s".
+ * <p>Key idea: a rotation of "s" must be a substring of "s" + "s".
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

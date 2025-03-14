@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(log n) best case, O(n) worst case (recursion stack size)
  *
- * <p>Key: recursion, knowledge of BT structure
+ * <p>Key idea: recursion, knowledge of BT structure
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

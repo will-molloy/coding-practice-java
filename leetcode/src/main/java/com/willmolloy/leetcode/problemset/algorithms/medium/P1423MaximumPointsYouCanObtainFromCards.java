@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(k)
  *
- * <p>Key: Prefix sum; you are simply taking 'k' cards from the left/right sides, the order (of
+ * <p>Key idea: Prefix sum; you are simply taking 'k' cards from the left/right sides, the order (of
  * taking them) doesn't matter.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1422MaximumScoreAfterSplittingAString

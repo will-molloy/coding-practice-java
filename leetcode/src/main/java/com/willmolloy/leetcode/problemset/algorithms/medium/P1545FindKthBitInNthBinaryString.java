@@ -10,7 +10,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * <p>Extra memory: O(2<sup>n</sup>)
  *
- * <p>Key: n is small enough to bruteforce compute the string.
+ * <p>Key idea: n is small enough to bruteforce compute the string.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -16,8 +16,8 @@ import java.util.Set;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Problem wording is confusing. Because it is a tree, there is only one path back to zero,
- * so simply need to count the edges pointing away from zero (i.e. min count = exact count).
+ * <p>Key idea: Problem wording is confusing. Because it is a tree, there is only one path back to
+ * zero, so simply need to count the edges pointing away from zero (i.e. min count = exact count).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Separate loops for climb and descent.
+ * <p>Key idea: Separate loops for climb and descent.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,7 @@ import java.util.Deque;
  * <a
  * href=https://leetcode.com/problems/daily-temperatures>https://leetcode.com/problems/daily-temperatures/</a>
  *
- * <p>Key: Iterate in reverse so can store day of each future temp.
+ * <p>Key idea: Iterate in reverse so can store day of each future temp.
  *
  * @see P901OnlineStockSpan
  * @see P1019NextGreaterNodeInLinkedList

@@ -7,8 +7,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(max(num1, num2)) (recursion stack size)
  *
- * <p>Key: Simulate process of adding decimal numbers. I.e. line up their ends and sum individual
- * digits with a carry.
+ * <p>Key idea: Simulate process of adding decimal numbers. I.e. line up their ends and sum
+ * individual digits with a carry.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P2AddTwoNumbers
  * @see P67AddBinary

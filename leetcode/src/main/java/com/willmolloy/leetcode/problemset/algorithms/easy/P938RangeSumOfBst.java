@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: binary tree traversal
+ * <p>Key idea: binary tree traversal
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

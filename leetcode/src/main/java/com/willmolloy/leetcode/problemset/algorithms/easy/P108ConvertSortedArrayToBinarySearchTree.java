@@ -10,7 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(log n) (recursion stack size)
  *
- * <p>Key: consistently maintaining left/right pointer as inclusive/exclusive to the array range
+ * <p>Key idea: consistently maintaining left/right pointer as inclusive/exclusive to the array
+ * range
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P109ConvertSortedListToBinarySearchTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>

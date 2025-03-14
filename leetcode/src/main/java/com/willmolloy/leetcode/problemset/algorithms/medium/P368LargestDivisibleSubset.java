@@ -14,7 +14,7 @@ import java.util.List;
  *
  * <p>Extra space: O(n<sup>2</sup>)
  *
- * <p>Key: Only need to test divisibility with largest element in subset.
+ * <p>Key idea: Only need to test divisibility with largest element in subset.
  *
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>

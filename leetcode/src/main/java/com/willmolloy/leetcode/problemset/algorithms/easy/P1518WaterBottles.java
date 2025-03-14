@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Simulate the process.
+ * <p>Key idea: Simulate the process.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

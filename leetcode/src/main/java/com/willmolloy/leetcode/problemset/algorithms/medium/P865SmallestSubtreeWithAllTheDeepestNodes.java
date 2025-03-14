@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Smallest subtree is the same as the lowest common ancestor. If heights are same return
- * current node, else return node with larger height.
+ * <p>Key idea: Smallest subtree is the same as the lowest common ancestor. If heights are same
+ * return current node, else return node with larger height.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  *
  * <p>Runtime: O(nd) (heap remove specific element is O(n))
  *
- * <p>Key: two heaps to track a running median
+ * <p>Key idea: two heaps to track a running median
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P480SlidingWindowMedian (TODO its in the
  *     old project but not here)

@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: Global maximum.
+ * <p>Key idea: Global maximum.
  *
  * @see <a href=https://youtu.be/bm0q6huoriY>Errichto's video</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P687LongestUnivaluePath

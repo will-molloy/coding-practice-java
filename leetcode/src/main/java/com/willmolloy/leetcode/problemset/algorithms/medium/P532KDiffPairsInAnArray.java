@@ -11,8 +11,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: In second pass, iterate key/entry set rather than {@code nums} such that duplicate pairs
- * are avoided.
+ * <p>Key idea: In second pass, iterate key/entry set rather than {@code nums} such that duplicate
+ * pairs are avoided.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum
  * @see P1497CheckIfArrayPairsAreDivisibleByK

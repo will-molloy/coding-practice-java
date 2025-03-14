@@ -9,7 +9,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(log(n)) (recursion stack) TODO O(1) space
  *
- * <p>Key: Merge sort - split in half, recursively sort halves, combine halves.
+ * <p>Key idea: Merge sort - split in half, recursively sort halves, combine halves.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P21MergeTwoSortedLists
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P876MiddleOfTheLinkedList

@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Only create the copied nodes once. Used a {@code HashMap} to achieve this.
+ * <p>Key idea: Only create the copied nodes once. Used a {@code HashMap} to achieve this.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

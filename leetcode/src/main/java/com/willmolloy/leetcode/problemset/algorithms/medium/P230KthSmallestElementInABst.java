@@ -11,7 +11,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: Inorder traversal of BST gets the nodes in order!
+ * <p>Key idea: Inorder traversal of BST gets the nodes in order!
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

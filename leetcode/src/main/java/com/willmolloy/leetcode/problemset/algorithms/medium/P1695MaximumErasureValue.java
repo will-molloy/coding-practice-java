@@ -11,7 +11,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Problem is: maximum contiguous sub array sum having unique elements.
+ * <p>Key idea: Problem is: maximum contiguous sub array sum having unique elements.
  *
  * <p>Use two pointers ({@code start} and {@code end}) and maintain a hashset to represent the
  * current subarray. Expand when next element is unique, otherwise shrink until its unique.

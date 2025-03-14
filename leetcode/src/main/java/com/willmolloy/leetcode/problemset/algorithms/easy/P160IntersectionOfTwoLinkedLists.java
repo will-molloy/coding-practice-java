@@ -22,7 +22,7 @@ interface P160IntersectionOfTwoLinkedLists {
    *
    * <p>Extra space: O(a)
    *
-   * <p>Key: {@code HashSet} for O(1) contains call.
+   * <p>Key idea: {@code HashSet} for O(1) contains call.
    */
   class HashSet implements P160IntersectionOfTwoLinkedLists {
 
@@ -62,7 +62,7 @@ interface P160IntersectionOfTwoLinkedLists {
    *
    * <p>Extra space: O(1)
    *
-   * <p>Key: Concatenate the lists.
+   * <p>Key idea: Concatenate the lists.
    */
   class ConcatenateLists implements P160IntersectionOfTwoLinkedLists {
 

@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Find the largest gaps between array elements (sort arrays first). Cast to {@code long} to
- * avoid integer overflow.
+ * <p>Key idea: Find the largest gaps between array elements (sort arrays first). Cast to {@code
+ * long} to avoid integer overflow.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

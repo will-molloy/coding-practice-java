@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy - count when direction changes.
+ * <p>Key idea: Greedy - count when direction changes.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * <a
  * href=https://leetcode.com/problems/random-pick-with-weight>https://leetcode.com/problems/random-pick-with-weight/</a>
  *
- * <p>Key: Represent probability weights with ranges.
+ * <p>Key idea: Represent probability weights with ranges.
  *
  * @see P380InsertDeleteGetRandomO1
  * @see P398RandomPickIndex

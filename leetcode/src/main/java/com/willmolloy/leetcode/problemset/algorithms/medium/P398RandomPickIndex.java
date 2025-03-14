@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Store indices by num in map for O(1) lookup.
+ * <p>Key idea: Store indices by num in map for O(1) lookup.
  *
  * @see P380InsertDeleteGetRandomO1
  * @see P497RandomPointInNonOverlappingRectangles

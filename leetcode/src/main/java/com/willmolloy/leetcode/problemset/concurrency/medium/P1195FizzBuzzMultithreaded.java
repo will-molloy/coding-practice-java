@@ -25,7 +25,7 @@ interface P1195FizzBuzzMultithreaded {
   /**
    * wait/notify/synchronised (primitive) solution.
    *
-   * <p>Key: outer loop to ensure thread keeps running and the exit condition.
+   * <p>Key idea: outer loop to ensure thread keeps running and the exit condition.
    */
   class WaitNotifySolution implements P1195FizzBuzzMultithreaded {
 
@@ -97,7 +97,7 @@ interface P1195FizzBuzzMultithreaded {
    * the conditions may fail several times before the correct thread gains the lock. I.e. there is
    * not much control in this solution, the {@link SemaphoreSolution} has such control.
    *
-   * <p>Key: obtain the lock before checking the condition.
+   * <p>Key idea: obtain the lock before checking the condition.
    */
   class ReentrantLockSolution implements P1195FizzBuzzMultithreaded {
 
@@ -180,8 +180,8 @@ interface P1195FizzBuzzMultithreaded {
    * by that one method/thread), so it can be controlled that the correct thread gains control
    * without the need for rechecking conditions.
    *
-   * <p>Key: check for overlapping case (fizzbuzz) ahead of time. Also conditional logic controlled
-   * by one semaphore (number) (and always release to that one).
+   * <p>Key idea: check for overlapping case (fizzbuzz) ahead of time. Also conditional logic
+   * controlled by one semaphore (number) (and always release to that one).
    */
   class SemaphoreSolution implements P1195FizzBuzzMultithreaded {
 

@@ -6,7 +6,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * <a
  * href=https://leetcode.com/problems/diameter-of-binary-tree>https://leetcode.com/problems/diameter-of-binary-tree</a>
  *
- * <p>Key: the longest path must be between leaf nodes
+ * <p>Key idea: the longest path must be between leaf nodes
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

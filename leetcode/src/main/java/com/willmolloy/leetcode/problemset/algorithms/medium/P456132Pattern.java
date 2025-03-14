@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Tracking lower bound ({@code minSoFar}).
+ * <p>Key idea: Tracking lower bound ({@code minSoFar}).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

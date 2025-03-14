@@ -10,8 +10,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n<sup>2</sup>)
  *
- * <p>Key: Compute {@code a + b} and {@code c + d} separately then look up (count) how many {@code a
- * + b = -(c + d)}.
+ * <p>Key idea: Compute {@code a + b} and {@code c + d} separately then look up (count) how many
+ * {@code a + b = -(c + d)}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -12,7 +12,7 @@ import java.util.Deque;
  *
  * <p>Space: O(h)
  *
- * <p>Key: binary tree traversal, pointer manipulation, stack to track most recent right node
+ * <p>Key idea: binary tree traversal, pointer manipulation, stack to track most recent right node
  *
  * @see P430FlattenAMultilevelDoublyLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(n)
  *
- * <p>Key: can just check for the case where left child is NULL and right child isn't (i.e. DONT
- * have to omit parenthesis after the fact)
+ * <p>Key idea: can just check for the case where left child is NULL and right child isn't (i.e.
+ * DONT have to omit parenthesis after the fact)
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree

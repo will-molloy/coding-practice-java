@@ -12,10 +12,10 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n) (not O(n - k) because there is the case all digits are the same)
  *
- * <p>Key: No matter what choices you make, the output string will have the same length and maintain
- * the same digit order as the original string. Therefore, want smaller digits at the front of the
- * string (greatest place value); therefore, makes sense to traverse left to right and make the
- * greedy choice of throwing away larger digits.
+ * <p>Key idea: No matter what choices you make, the output string will have the same length and
+ * maintain the same digit order as the original string. Therefore, want smaller digits at the front
+ * of the string (greatest place value); therefore, makes sense to traverse left to right and make
+ * the greedy choice of throwing away larger digits.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

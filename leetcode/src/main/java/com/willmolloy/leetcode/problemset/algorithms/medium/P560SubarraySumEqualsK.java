@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Prefix sums, in particular [l, r] = [0, r] - [0, l).
+ * <p>Key idea: Prefix sums, in particular [l, r] = [0, r] - [0, l).
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable.PrefixSum
  * @see P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget

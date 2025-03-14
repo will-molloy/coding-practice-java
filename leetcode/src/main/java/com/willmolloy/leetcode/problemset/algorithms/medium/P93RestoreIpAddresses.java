@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  *
  * <p>Space: O(1) input doesn't grow
  *
- * <p>Key: depth first search (back tracking generation, similar to permutation problem)
+ * <p>Key idea: depth first search (back tracking generation, similar to permutation problem)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

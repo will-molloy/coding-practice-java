@@ -12,9 +12,10 @@ import java.util.Map;
  * <p>Space: O(width) (map size depends only on number of columns as these determine the prefix sums
  * which are the map keys)
  *
- * <p>Key: Clear that it was best to find column with most gaps and that prefix sums and hashtable
- * would help with that. Main fix needed was setting {@code maxGaps} to {@code 0} initially (rather
- * than {@code INT_MIN}) to cover the case when you have to cross a brick in every row.
+ * <p>Key idea: Clear that it was best to find column with most gaps and that prefix sums and
+ * hashtable would help with that. Main fix needed was setting {@code maxGaps} to {@code 0}
+ * initially (rather than {@code INT_MIN}) to cover the case when you have to cross a brick in every
+ * row.
  *
  * @see <a
  *     href=https://en.wikipedia.org/wiki/Prefix_sum>https://en.wikipedia.org/wiki/Prefix_sum</a>

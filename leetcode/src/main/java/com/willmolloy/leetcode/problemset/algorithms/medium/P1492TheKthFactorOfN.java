@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Factors are in [1, n] and can be partitioned into those before sqrt(n) and those after.
- * First loop [1, sqrt(n)), then loop [sqrt(n), n] (via [sqrt(n), 1] - so return n/i).
+ * <p>Key idea: Factors are in [1, n] and can be partitioned into those before sqrt(n) and those
+ * after. First loop [1, sqrt(n)), then loop [sqrt(n), n] (via [sqrt(n), 1] - so return n/i).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

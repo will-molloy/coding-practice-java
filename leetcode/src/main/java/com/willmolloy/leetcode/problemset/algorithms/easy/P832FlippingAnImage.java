@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Not really a problem, just do what is asked.
+ * <p>Key idea: Not really a problem, just do what is asked.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

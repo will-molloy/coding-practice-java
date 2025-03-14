@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Converting to unsigned, if negative add 2<sup>32</sup> (see {@link
+ * <p>Key idea: Converting to unsigned, if negative add 2<sup>32</sup> (see {@link
  * Integer#toUnsignedLong}). When reversing, have to pad with zeros, so iterate all 32 bits.
  *
  * @see P461HammingDistance

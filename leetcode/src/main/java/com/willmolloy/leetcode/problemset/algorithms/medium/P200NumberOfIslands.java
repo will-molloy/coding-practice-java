@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(rows * cols) (worst case recursion stack size - whole grid is '1's)
  *
- * <p>Key: matrix traversal
+ * <p>Key idea: matrix traversal
  *
  * @see P130SurroundedRegions
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P463IslandPerimeter

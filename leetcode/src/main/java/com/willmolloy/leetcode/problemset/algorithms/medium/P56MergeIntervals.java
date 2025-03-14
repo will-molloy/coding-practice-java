@@ -31,8 +31,8 @@ interface P56MergeIntervals {
    * to add in, which is O(n<sup>2</sup>)). Need to figure out average size of 'result'. Leetcode
    * also has a graph algorithm which is O(n<sup>2</sup>)... maybe same as that?
    *
-   * <p>Key: breaking out to a separate method (getMergeIndex) to continue the merging logic for an
-   * unknown amount of iterations.
+   * <p>Key idea: breaking out to a separate method (getMergeIndex) to continue the merging logic
+   * for an unknown amount of iterations.
    */
   class MergeIntervalsInEncounterOrder implements P56MergeIntervals {
 
@@ -94,7 +94,7 @@ interface P56MergeIntervals {
    *
    * <p>Runtime: O(n log n), Space: O(1) (depends on sorting implementation).
    *
-   * <p>Key: consider what happens if you sort first!
+   * <p>Key idea: consider what happens if you sort first!
    */
   class SortFirst implements P56MergeIntervals {
 

@@ -16,7 +16,8 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Answer is centre nodes. Can be at most 2. Trim layers of leaves until centre is left.
+ * <p>Key idea: Answer is centre nodes. Can be at most 2. Trim layers of leaves until centre is
+ * left.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

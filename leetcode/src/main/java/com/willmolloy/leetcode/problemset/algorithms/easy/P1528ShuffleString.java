@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Construct new string.
+ * <p>Key idea: Construct new string.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

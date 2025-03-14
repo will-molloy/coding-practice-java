@@ -10,7 +10,7 @@ import java.util.HashSet;
  *
  * <p>Space: O(n)
  *
- * <p>Key: duplicate detection
+ * <p>Key idea: duplicate detection
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

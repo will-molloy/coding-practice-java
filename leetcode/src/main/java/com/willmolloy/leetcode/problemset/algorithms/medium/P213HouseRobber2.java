@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(1)
  *
- * <p>Key: modify existing algorithm
+ * <p>Key idea: modify existing algorithm
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P198HouseRobber
  * @see P337HouseRobber3

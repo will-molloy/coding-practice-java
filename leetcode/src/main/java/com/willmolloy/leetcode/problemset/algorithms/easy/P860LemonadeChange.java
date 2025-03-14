@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Prefer to use $10 and $5 (as change for $20) so have enough $5 for customers with $10.
+ * <p>Key idea: Prefer to use $10 and $5 (as change for $20) so have enough $5 for customers with
+ * $10.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

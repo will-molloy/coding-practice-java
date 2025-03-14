@@ -10,8 +10,8 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: All local inversions are global inversions, so if any inversion is global but not local,
- * return {@code false}.
+ * <p>Key idea: All local inversions are global inversions, so if any inversion is global but not
+ * local, return {@code false}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

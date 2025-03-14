@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Priority queue (heap) to track the 3 maximums. Place smallest at top of heap so it's
+ * <p>Key idea: Priority queue (heap) to track the 3 maximums. Place smallest at top of heap so it's
  * removed first.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P347TopKFrequentElements

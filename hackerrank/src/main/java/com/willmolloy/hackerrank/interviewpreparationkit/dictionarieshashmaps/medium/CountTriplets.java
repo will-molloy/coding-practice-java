@@ -10,8 +10,8 @@ import java.util.Map;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: read the problem statement (i < j < k) implies single pass without sorting (to maintain
- * the indices).
+ * <p>Key idea: read the problem statement (i < j < k) implies single pass without sorting (to
+ * maintain the indices).
  *
  * <p>Also using multiple maps of COUNTS not actual results. (Again, read the problem statement,
  * asks for COUNT of triplets not the actual triplets (HINT HINT HINT).)

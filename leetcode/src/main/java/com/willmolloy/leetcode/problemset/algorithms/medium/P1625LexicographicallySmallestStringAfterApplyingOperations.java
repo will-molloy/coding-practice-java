@@ -13,8 +13,8 @@ import java.util.Set;
  *
  * <p>Extra memory: Same as runtime since we store all nodes in the hash set.
  *
- * <p>Key: Trying all combinations of {@code add}/{@code rotate} forms a tree. Use DFS to traverse
- * such tree. Use hash set to know when the pattern repeats and we can stop computation.
+ * <p>Key idea: Trying all combinations of {@code add}/{@code rotate} forms a tree. Use DFS to
+ * traverse such tree. Use hash set to know when the pattern repeats and we can stop computation.
  *
  * @see P189RotateArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>

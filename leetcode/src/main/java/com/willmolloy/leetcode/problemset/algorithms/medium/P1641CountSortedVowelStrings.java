@@ -10,7 +10,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: DFS brute force.
+ * <p>Key idea: DFS brute force.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

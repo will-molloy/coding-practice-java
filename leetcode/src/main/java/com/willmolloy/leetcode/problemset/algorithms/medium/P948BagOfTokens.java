@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Spend power on smallest tokens, gain power on largest tokens. Prioritise spending power
- * (as this gains score). (Greedy.)
+ * <p>Key idea: Spend power on smallest tokens, gain power on largest tokens. Prioritise spending
+ * power (as this gains score). (Greedy.)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

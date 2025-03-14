@@ -11,8 +11,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Look for {@code prefixSum[0, i] + suffixSum[j, n) = x} with minimum {@code prefixSize +
- * suffixSize}.
+ * <p>Key idea: Look for {@code prefixSum[0, i] + suffixSum[j, n) = x} with minimum {@code
+ * prefixSize + suffixSize}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

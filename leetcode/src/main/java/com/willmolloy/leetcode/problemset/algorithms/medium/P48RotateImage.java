@@ -5,8 +5,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O(n^2) - process each element once, matrix is size n*n so... must be n*n (i.e. n^2).
  *
- * <p>Key: 4-way swap to achieve O(1) memory constraint. Also breaking it down with recursion (nxn
- * matrix -> (n-2)x(n-2) matrix).
+ * <p>Key idea: 4-way swap to achieve O(1) memory constraint. Also breaking it down with recursion
+ * (nxn matrix -> (n-2)x(n-2) matrix).
  *
  * @see P54SpiralMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>

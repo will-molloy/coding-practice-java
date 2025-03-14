@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n) TODO O(1) space is possible (bit manipulation)
  *
- * <p>Key: Count frequencies.
+ * <p>Key idea: Count frequencies.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P136SingleNumber
  * @see P137SingleNumber2

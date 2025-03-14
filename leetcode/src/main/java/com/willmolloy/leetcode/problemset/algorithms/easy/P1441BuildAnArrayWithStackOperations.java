@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: The array is just the list ([1, n]) with gaps, so two pointer approach.
+ * <p>Key idea: The array is just the list ([1, n]) with gaps, so two pointer approach.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

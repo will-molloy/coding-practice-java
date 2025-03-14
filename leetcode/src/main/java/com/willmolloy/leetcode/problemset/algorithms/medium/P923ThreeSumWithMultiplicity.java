@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n) TODO O(1) is space possible
  *
- * <p>Key: {@code arr[k] = target - arr[i] - arr[j]}, use hashmap to lookup.
+ * <p>Key idea: {@code arr[k] = target - arr[i] - arr[j]}, use hashmap to lookup.
  *
  * @see P15ThreeSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

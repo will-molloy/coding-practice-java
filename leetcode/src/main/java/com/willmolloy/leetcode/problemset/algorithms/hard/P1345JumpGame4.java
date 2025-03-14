@@ -19,7 +19,8 @@ import java.util.Set;
  *
  * <p>Space: O(n)
  *
- * <p>Key: {@code Map neighboursMap} to make the BFS more efficient when adding neighbours to queue.
+ * <p>Key idea: {@code Map neighboursMap} to make the BFS more efficient when adding neighbours to
+ * queue.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P55JumpGame
  * @see P45JumpGame2

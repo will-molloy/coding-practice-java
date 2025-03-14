@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1) if not counting output
  *
- * <p>Key: Brute force. Need to know geometry: for a point to be inside a circle, the euclidean
+ * <p>Key idea: Brute force. Need to know geometry: for a point to be inside a circle, the euclidean
  * distance between it and the circle's center needs to be less than or equal to the radius.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

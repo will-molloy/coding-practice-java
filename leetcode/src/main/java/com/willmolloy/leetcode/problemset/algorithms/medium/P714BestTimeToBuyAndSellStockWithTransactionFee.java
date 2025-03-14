@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Dynamic programming. 2 states to maintain: not holding stock and holding stock.
+ * <p>Key idea: Dynamic programming. 2 states to maintain: not holding stock and holding stock.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @author <a href=https://willmolloy.com>Will Molloy</a>

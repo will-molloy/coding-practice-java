@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(m*n) (m = num rows, n = num columns)
  *
- * <p>Key: dynamic programming, ranges
+ * <p>Key idea: dynamic programming, ranges
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable
  * @author <a href=https://willmolloy.com>Will Molloy</a>

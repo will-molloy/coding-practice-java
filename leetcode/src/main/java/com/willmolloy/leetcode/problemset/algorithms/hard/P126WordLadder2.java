@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  * <a
  * href=https://leetcode.com/problems/word-ladder-ii>https://leetcode.com/problems/word-ladder-ii</a>
  *
- * <p>Key: Traverse 'paths' rather than 'nodes'
+ * <p>Key idea: Traverse 'paths' rather than 'nodes'
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P127WordLadder
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P129SumRootToLeafNumbers

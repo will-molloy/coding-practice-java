@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Space: O(n<sup>2</sup>)
  *
- * <p>Key: Map to store indices (reduced it from O(n<sup>2</sup>log n) (was using {@link
+ * <p>Key idea: Map to store indices (reduced it from O(n<sup>2</sup>log n) (was using {@link
  * Arrays#binarySearch} to find {@code k}) to O(n<sup>2</sup>)).
  *
  * @see P300LongestIncreasingSubsequence

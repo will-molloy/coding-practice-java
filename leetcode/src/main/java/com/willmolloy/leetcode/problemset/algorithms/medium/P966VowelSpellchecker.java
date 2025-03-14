@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O({@code wordList}) - excluding {@code result}
  *
- * <p>Key: Maintain a lookup table for each of the 3 cases:
+ * <p>Key idea: Maintain a lookup table for each of the 3 cases:
  *
  * <ol>
  *   <li>When the query is an exact match (hash set of words)

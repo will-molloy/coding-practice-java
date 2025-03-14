@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Slow and fast pointer. Once cycle is detected, move in lockstep from list head and around
- * the cycle from where slow/fast met, the first same node is the cycle start.
+ * <p>Key idea: Slow and fast pointer. Once cycle is detected, move in lockstep from list head and
+ * around the cycle from where slow/fast met, the first same node is the cycle start.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P141LinkedListCycle
  * @see P287FindTheDuplicateNumber

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: using indices in a consistent manner - e.g. always inclusive/exclusive
+ * <p>Key idea: using indices in a consistent manner - e.g. always inclusive/exclusive
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

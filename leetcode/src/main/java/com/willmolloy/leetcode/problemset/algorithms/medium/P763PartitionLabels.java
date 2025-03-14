@@ -29,7 +29,7 @@ interface P763PartitionLabels {
    *
    * <p>Extra memory: O(1) (constant number of characters/ranges)
    *
-   * <p>Key: Identify intervals for each character and then merge them.
+   * <p>Key idea: Identify intervals for each character and then merge them.
    *
    * <p>Merge intervals: sort by start, then intervals which overlap will be contiguous.
    */
@@ -84,7 +84,7 @@ interface P763PartitionLabels {
    *
    * <p>Extra memory: O(1) (constant number of characters)
    *
-   * <p>Key: Pre compute last index of each character.
+   * <p>Key idea: Pre compute last index of each character.
    */
   class Greedy implements P763PartitionLabels {
 

@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: understand problem constraints
+ * <p>Key idea: understand problem constraints
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1510StoneGame4
  * @author <a href=https://willmolloy.com>Will Molloy</a>

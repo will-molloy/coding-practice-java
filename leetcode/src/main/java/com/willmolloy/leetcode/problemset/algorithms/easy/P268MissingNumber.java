@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Summing the numbers.
+ * <p>Key idea: Summing the numbers.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

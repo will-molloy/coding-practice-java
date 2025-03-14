@@ -12,8 +12,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(|n|)
  *
- * <p>Key: Copy path when it branches out since it is creating new paths. Basically, when they want
- * all results like this you have no choice but to brute force.
+ * <p>Key idea: Copy path when it branches out since it is creating new paths. Basically, when they
+ * want all results like this you have no choice but to brute force.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

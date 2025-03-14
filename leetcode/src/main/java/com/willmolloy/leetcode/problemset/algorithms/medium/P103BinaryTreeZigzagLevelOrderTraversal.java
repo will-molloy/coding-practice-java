@@ -14,7 +14,7 @@ import java.util.List;
  *
  * <p>Space: O(w) = O(n)
  *
- * <p>Key: double ended queue, reversing logic when traversing level in reverse order
+ * <p>Key idea: double ended queue, reversing logic when traversing level in reverse order
  *
  * <p>Notes: call {@code addLast} at end of an iteration, then next iteration {@code removeLast} is
  * the first call (and vice versa with {@code addFirst}/{@code removeFirst}); hence get a 'FIFO'

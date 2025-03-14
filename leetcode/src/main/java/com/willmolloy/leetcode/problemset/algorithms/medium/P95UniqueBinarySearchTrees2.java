@@ -13,7 +13,7 @@ import java.util.List;
  *
  * <p>Space: O(n) (recursion depth)
  *
- * <p>Key: returning singleton null node when end < start
+ * <p>Key idea: returning singleton null node when end < start
  *
  * @see P96UniqueBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>

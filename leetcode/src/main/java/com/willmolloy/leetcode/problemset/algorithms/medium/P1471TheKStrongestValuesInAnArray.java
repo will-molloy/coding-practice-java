@@ -13,7 +13,7 @@ import java.util.function.ToIntFunction;
  *
  * <p>Extra space: O(k)
  *
- * <p>Key: Sort first to get median.
+ * <p>Key idea: Sort first to get median.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

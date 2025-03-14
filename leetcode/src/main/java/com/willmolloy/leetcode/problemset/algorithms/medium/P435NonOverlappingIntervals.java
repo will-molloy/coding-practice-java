@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Sort by smallest end values (so get fewest overlaps) then skip any that overlap.
+ * <p>Key idea: Sort by smallest end values (so get fewest overlaps) then skip any that overlap.
  * (Greedy.) Doesn't matter sorting the start values, will end up with same anchors (e.g. {@code [1,
  * 3]} conflicts with both {@code [1, 2]} and {@code [2, 3]} so doesn't matter which is anchor when
  * {@code [1, 3]} is encountered).

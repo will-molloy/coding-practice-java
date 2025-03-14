@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Space: O(2<sup>n</sup>)
  *
- * <p>Key: Set to implicitly filter dupes
+ * <p>Key idea: Set to implicitly filter dupes
  *
  * @see P78Subsets
  * @author <a href=https://willmolloy.com>Will Molloy</a>

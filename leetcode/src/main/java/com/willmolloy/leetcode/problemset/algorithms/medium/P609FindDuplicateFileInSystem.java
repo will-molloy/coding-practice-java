@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
  *
  * <p>Extra memory: O(p)
  *
- * <p>Key: Map of [file contents -> file names].
+ * <p>Key idea: Map of [file contents -> file names].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

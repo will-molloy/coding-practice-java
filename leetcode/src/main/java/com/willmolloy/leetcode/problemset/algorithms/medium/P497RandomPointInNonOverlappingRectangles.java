@@ -13,8 +13,8 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Pick random rectangle with weight (see {@link P528RandomPickWithWeight} for more details
- * on how this works) then pick point uniformly at random in that rectangle.
+ * <p>Key idea: Pick random rectangle with weight (see {@link P528RandomPickWithWeight} for more
+ * details on how this works) then pick point uniformly at random in that rectangle.
  *
  * @see P380InsertDeleteGetRandomO1
  * @see P398RandomPickIndex

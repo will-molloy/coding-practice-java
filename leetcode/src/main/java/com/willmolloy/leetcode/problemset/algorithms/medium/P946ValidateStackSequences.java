@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Greedy - pop if possible.
+ * <p>Key idea: Greedy - pop if possible.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

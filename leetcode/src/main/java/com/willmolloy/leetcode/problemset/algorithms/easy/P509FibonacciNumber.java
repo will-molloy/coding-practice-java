@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see com.willmolloy.dsa.dp.Fibonacci
  * @see P1137NthTribonacciNumber

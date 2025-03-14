@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Sort first so greedy approach can be used.
+ * <p>Key idea: Sort first so greedy approach can be used.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

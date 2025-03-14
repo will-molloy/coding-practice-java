@@ -23,7 +23,7 @@ interface P309BestTimeToBuyAndSellStockWithCooldown {
    *
    * <p>Extra memory: O(2<sup>n</sup>)
    *
-   * <p>Key: Figure out what choices are available.
+   * <p>Key idea: Figure out what choices are available.
    */
   class TopDown implements P309BestTimeToBuyAndSellStockWithCooldown {
 
@@ -79,7 +79,7 @@ interface P309BestTimeToBuyAndSellStockWithCooldown {
    *
    * <p>Extra memory: O(n) TODO can easily simplify to O(1)
    *
-   * <p>Key: Tricky part is encoding the choices. Consider two scenarios:
+   * <p>Key idea: Tricky part is encoding the choices. Consider two scenarios:
    *
    * <ol>
    *   <li>Holding stock

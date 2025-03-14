@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: These max integers will always be in a rectangle in the top left, since all ops apply out
- * from (0, 0). So answer is simply min op[0] * min op[1].
+ * <p>Key idea: These max integers will always be in a rectangle in the top left, since all ops
+ * apply out from (0, 0). So answer is simply min op[0] * min op[1].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

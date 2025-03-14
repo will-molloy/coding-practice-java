@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Copy the board first.
+ * <p>Key idea: Copy the board first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

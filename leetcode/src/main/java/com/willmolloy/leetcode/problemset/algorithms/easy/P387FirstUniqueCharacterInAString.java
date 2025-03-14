@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: It is the <b>index</b> of the <b>first</b> unique character. Not the character. Not any
- * unique character.
+ * <p>Key idea: It is the <b>index</b> of the <b>first</b> unique character. Not the character. Not
+ * any unique character.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

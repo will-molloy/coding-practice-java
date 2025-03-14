@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Compute minimum character frequency.
+ * <p>Key idea: Compute minimum character frequency.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

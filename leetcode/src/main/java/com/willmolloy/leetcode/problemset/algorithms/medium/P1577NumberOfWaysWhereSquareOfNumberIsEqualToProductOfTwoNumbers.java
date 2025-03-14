@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n1 + n2)
  *
- * <p>Key: Precompute square counts.
+ * <p>Key idea: Precompute square counts.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

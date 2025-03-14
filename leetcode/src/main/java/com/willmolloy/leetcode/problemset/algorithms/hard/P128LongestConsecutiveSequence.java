@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(n)
  *
- * <p>Key: hash table, pretty obvious since it asks for O(n) solution and expects elements to be
- * compared
+ * <p>Key idea: hash table, pretty obvious since it asks for O(n) solution and expects elements to
+ * be compared
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

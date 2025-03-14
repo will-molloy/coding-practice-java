@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Getting angles for minute/hour separately, then taking the difference.
+ * <p>Key idea: Getting angles for minute/hour separately, then taking the difference.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

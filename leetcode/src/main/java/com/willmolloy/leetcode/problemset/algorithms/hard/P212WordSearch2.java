@@ -11,8 +11,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(board + words) - i.e. dfs stack space + trie space
  *
- * <p>Key: Traverse board and trie (built from word set) in sync. This way when we find a word we
- * also find all its prefixes (simply how a Trie (prefix tree) works).
+ * <p>Key idea: Traverse board and trie (built from word set) in sync. This way when we find a word
+ * we also find all its prefixes (simply how a Trie (prefix tree) works).
  *
  * @see P37SudokuSolver
  * @see P51NQueens

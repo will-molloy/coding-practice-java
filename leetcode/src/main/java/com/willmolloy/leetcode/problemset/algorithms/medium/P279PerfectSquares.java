@@ -11,8 +11,8 @@ import java.util.List;
  *
  * <p>Space: O(n<sup>3/2</sup>)
  *
- * <p>Key: Using dp the problem is the same as {@link P322CoinChange}; first generate squares with
- * array list.
+ * <p>Key idea: Using dp the problem is the same as {@link P322CoinChange}; first generate squares
+ * with array list.
  *
  * @see P322CoinChange
  * @author <a href=https://willmolloy.com>Will Molloy</a>

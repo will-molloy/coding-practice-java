@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(text1 * text2) TODO can use O(min(text1, text2)) space
  *
- * <p>Key: Need to loop to {@link String#length} because empty string is covered by i/j = 0, so we
- * are always off (ahead) by 1.
+ * <p>Key idea: Need to loop to {@link String#length} because empty string is covered by i/j = 0, so
+ * we are always off (ahead) by 1.
  *
  * <p>See also: Page 390 of "Introduction to Algorithms" (CLRS, 3rd edition)
  *

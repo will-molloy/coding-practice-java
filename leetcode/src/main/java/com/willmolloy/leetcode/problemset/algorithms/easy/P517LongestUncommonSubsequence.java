@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Supersequence can't be a subsequence (unless it's equal).
+ * <p>Key idea: Supersequence can't be a subsequence (unless it's equal).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

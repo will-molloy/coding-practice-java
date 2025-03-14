@@ -12,8 +12,8 @@ import java.util.Objects;
  *
  * <p>Extra memory: each operation is O(1)
  *
- * <p>Key: Two maps, one to store check in values, and one to store average time for each station
- * pair as a fraction.
+ * <p>Key idea: Two maps, one to store check in values, and one to store average time for each
+ * station pair as a fraction.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

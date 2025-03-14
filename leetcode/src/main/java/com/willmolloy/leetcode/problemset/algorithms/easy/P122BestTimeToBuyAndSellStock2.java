@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
  * <a
  * href=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii>https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii</a>
  *
- * <p>Key: greedy algorithm
+ * <p>Key idea: greedy algorithm
  *
  * @see P121BestTimeToBuyAndSellStock
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P123BestTimeToBuyAndSellStock3

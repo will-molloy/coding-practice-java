@@ -11,8 +11,8 @@ import java.util.PriorityQueue;
  *
  * <p>Extra space: O(k)
  *
- * <p>Key: Priority queue (heap). Placing the furthest points at the top of the heap such that they
- * are evicted first.
+ * <p>Key idea: Priority queue (heap). Placing the furthest points at the top of the heap such that
+ * they are evicted first.
  *
  * @see P347TopKFrequentElements
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber

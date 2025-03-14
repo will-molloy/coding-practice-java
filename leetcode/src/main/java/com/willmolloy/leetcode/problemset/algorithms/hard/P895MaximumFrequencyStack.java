@@ -12,9 +12,9 @@ import java.util.HashMap;
  *
  * <p>Extra memory: O(1) for each element pushed (O(n) for n elements pushed)
  *
- * <p>Key: Store stacks for each frequency. If an element has frequency of {@code n}, it also has
- * frequency of {@code n - 1}, so keep it in stacks mapped by each frequency. Then if its popped,
- * its still maintained in the lower frequency stacks.
+ * <p>Key idea: Store stacks for each frequency. If an element has frequency of {@code n}, it also
+ * has frequency of {@code n - 1}, so keep it in stacks mapped by each frequency. Then if its
+ * popped, its still maintained in the lower frequency stacks.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

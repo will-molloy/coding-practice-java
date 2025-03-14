@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Need to store remainders modulo k to avoid overflow.
+ * <p>Key idea: Need to store remainders modulo k to avoid overflow.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

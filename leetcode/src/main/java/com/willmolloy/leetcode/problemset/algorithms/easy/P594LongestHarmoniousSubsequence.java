@@ -11,8 +11,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Count frequencies. Answer is largest frequencies of some {@code num} and {@code num + 1}
- * - assuming they exist in the array.
+ * <p>Key idea: Count frequencies. Answer is largest frequencies of some {@code num} and {@code num
+ * + 1} - assuming they exist in the array.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

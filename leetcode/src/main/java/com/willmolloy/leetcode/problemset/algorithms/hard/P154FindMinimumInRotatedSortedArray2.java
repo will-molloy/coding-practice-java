@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Tweak to P153, worst case where {@code nums[m] == nums[r]} so scan linearly.
+ * <p>Key idea: Tweak to P153, worst case where {@code nums[m] == nums[r]} so scan linearly.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P33SearchInRotatedSortedArray
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P81SearchInRotatedSortedArray2

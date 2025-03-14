@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
  * <a
  * href=https://leetcode.com/problems/maximum-product-subarray>https://leetcode.com/problems/maximum-product-subarray</a>
  *
- * <p>Key: math knowledge (in particular, products)
+ * <p>Key idea: math knowledge (in particular, products)
  *
  * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n) (O(1) excluding returned array... but it is mutated).
  *
- * <p>Key: Two passes; one forward and one backward.
+ * <p>Key idea: Two passes; one forward and one backward.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

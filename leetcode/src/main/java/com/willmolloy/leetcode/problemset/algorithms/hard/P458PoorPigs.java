@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>TODO Extra memory: O()
  *
- * <p>Key: Each pig can help with {@code minutesToTest / minutesToDie + 1} tests. By arranging
+ * <p>Key idea: Each pig can help with {@code minutesToTest / minutesToDie + 1} tests. By arranging
  * buckets into a square/cube etc we can eliminate several per test.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

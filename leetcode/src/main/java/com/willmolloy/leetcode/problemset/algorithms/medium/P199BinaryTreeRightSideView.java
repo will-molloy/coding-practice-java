@@ -15,7 +15,7 @@ import java.util.Queue;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Take right most node in each level.
+ * <p>Key idea: Take right most node in each level.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

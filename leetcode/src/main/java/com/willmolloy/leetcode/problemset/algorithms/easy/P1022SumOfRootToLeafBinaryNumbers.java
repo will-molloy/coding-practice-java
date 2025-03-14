@@ -10,7 +10,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Extend path by multiplying by 2 (the base), this way can build number starting from MSB.
+ * <p>Key idea: Extend path by multiplying by 2 (the base), this way can build number starting from
+ * MSB.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P129SumRootToLeafNumbers
  * @author <a href=https://willmolloy.com>Will Molloy</a>

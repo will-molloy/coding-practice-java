@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Split on multiple whitespace ({@code \s+}) so don't have to deal with multiple spaces
- * between words or empty words.
+ * <p>Key idea: Split on multiple whitespace ({@code \s+}) so don't have to deal with multiple
+ * spaces between words or empty words.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P344ReverseString
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P541ReverseString2

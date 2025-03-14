@@ -16,7 +16,7 @@ import java.util.stream.Stream;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Level order = BFS. Use {@code long} to avoid integer overflow in addition.
+ * <p>Key idea: Level order = BFS. Use {@code long} to avoid integer overflow in addition.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

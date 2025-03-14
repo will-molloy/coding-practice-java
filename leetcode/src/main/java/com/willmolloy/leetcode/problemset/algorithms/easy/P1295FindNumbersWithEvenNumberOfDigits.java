@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Log base 10 + 1 gets number of digits.
+ * <p>Key idea: Log base 10 + 1 gets number of digits.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

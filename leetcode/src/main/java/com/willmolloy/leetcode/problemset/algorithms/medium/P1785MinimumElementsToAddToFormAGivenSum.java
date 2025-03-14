@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy. Add {@code limit} until goal is reached.
+ * <p>Key idea: Greedy. Add {@code limit} until goal is reached.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

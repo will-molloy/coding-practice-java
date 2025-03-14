@@ -8,7 +8,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: inner while loop to skip runs of duplicate elements greater than size 2
+ * <p>Key idea: inner while loop to skip runs of duplicate elements greater than size 2
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P82RemoveDuplicatesFromSortedList2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

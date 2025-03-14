@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Inner while loop to build a range each iteration.
+ * <p>Key idea: Inner while loop to build a range each iteration.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

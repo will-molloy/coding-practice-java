@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: gathering the requirements for an email (looked at the test cases) to construct the
+ * <p>Key idea: gathering the requirements for an email (looked at the test cases) to construct the
  * regex. Otherwise a standard {@code find()} loop.
  *
  * @see DetectTheDomainName

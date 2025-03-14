@@ -11,8 +11,8 @@ import java.util.TreeSet;
  *
  * <p>Extra memory: O(k)
  *
- * <p>Key: Sorted set ({@link NavigableSet}, {@link TreeSet}); use {@link NavigableSet#subSet} to
- * test if there is anything in a range.
+ * <p>Key idea: Sorted set ({@link NavigableSet}, {@link TreeSet}); use {@link NavigableSet#subSet}
+ * to test if there is anything in a range.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

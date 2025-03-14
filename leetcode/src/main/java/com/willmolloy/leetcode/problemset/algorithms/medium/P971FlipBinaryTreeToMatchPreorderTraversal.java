@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(h) - excluding {@code flipped}
  *
- * <p>Key: Perform the pre-order traversal and:
+ * <p>Key idea: Perform the pre-order traversal and:
  *
  * <ol>
  *   <li>Test the current node - if it doesn't match {@code voyage[i]} return [-1]

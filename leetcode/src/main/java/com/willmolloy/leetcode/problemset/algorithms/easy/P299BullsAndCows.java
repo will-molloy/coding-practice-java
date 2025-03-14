@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Compute secret freqs so cow check is constant. Also count bulls before cows so don't
+ * <p>Key idea: Compute secret freqs so cow check is constant. Also count bulls before cows so don't
  * count bulls as cows (i.e. don't include bulls in freq).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

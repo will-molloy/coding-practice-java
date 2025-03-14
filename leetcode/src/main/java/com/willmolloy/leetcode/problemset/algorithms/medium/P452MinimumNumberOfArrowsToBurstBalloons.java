@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Sort by end rather than start to determine which intervals overlap.
+ * <p>Key idea: Sort by end rather than start to determine which intervals overlap.
  *
  * @see P56MergeIntervals
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P57InsertInterval

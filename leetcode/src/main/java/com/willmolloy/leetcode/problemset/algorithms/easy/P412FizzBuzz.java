@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Build up the string, fewer conditions compared to testing every case.
+ * <p>Key idea: Build up the string, fewer conditions compared to testing every case.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

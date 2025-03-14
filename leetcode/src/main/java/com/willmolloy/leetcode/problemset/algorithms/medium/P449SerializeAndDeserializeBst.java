@@ -6,9 +6,9 @@ import com.willmolloy.leetcode.common.TreeNode;
  * <a
  * href=https://leetcode.com/problems/serialize-and-deserialize-bst>https://leetcode.com/problems/serialize-and-deserialize-bst</a>
  *
- * <p>Key: Pretty standard to use recursion to traverse/build tree. So I'd say the key thing was
- * index handling (+1,-1 to skip parenthesis, knowing where they start (in this case consistently
- * '('), knowing if they're inclusive/exclusive (including library methods) etc.).
+ * <p>Key idea: Pretty standard to use recursion to traverse/build tree. So I'd say the key thing
+ * was index handling (+1,-1 to skip parenthesis, knowing where they start (in this case
+ * consistently '('), knowing if they're inclusive/exclusive (including library methods) etc.).
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P606ConstructStringFromBinaryTree
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree

@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(2<sup>n</sup>)
  *
- * <p>Key: recursive construction
+ * <p>Key idea: recursive construction
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

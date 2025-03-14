@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Binary search. Essentially have an array partitioned into true (can place balls x
+ * <p>Key idea: Binary search. Essentially have an array partitioned into true (can place balls x
  * distance apart) and false (can't place balls x distance apart) ([true, true, ..., false, false])
  * want the last true.
  *

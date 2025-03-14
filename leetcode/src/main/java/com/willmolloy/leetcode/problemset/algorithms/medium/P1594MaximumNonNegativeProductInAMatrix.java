@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(rows + cols) (DFS depth - remember can only move down or right)
  *
- * <p>Key: Try all the paths (DFS) with some pruning.
+ * <p>Key idea: Try all the paths (DFS) with some pruning.
  *
  * @see P62UniquePaths
  * @see P64MinimumPathSum

@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(n)
  *
- * <p>Key: knowledge of BST structure, pointer manipulation
+ * <p>Key idea: knowledge of BST structure, pointer manipulation
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P700SearchInABinarySearchTree
  * @see P701InsertIntoABinarySearchTree

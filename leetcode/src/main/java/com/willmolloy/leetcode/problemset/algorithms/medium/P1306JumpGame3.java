@@ -13,7 +13,7 @@ import java.util.Set;
  *
  * <p>Space: O(n)
  *
- * <p>Key: {@code Set seen} to detect and avoid cycles (stack overflows) in the DFS.
+ * <p>Key idea: {@code Set seen} to detect and avoid cycles (stack overflows) in the DFS.
  *
  * @see P55JumpGame
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P45JumpGame2

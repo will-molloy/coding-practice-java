@@ -12,8 +12,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Inorder traversal, dumping nodes in list before changing pointers. TODO cheating? How
- * about a solution that just manipulates pointers.
+ * <p>Key idea: Inorder traversal, dumping nodes in list before changing pointers. TODO cheating?
+ * How about a solution that just manipulates pointers.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

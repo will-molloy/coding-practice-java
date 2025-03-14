@@ -6,7 +6,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: knowledge of {@link String} class.
+ * <p>Key idea: knowledge of {@link String} class.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

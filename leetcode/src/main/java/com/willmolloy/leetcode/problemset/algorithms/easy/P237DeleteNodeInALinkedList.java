@@ -11,7 +11,7 @@ import java.util.StringJoiner;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Since we can't access the previous node, overwrite current node with next node
+ * <p>Key idea: Since we can't access the previous node, overwrite current node with next node
  * (effectively duplicating the next node while deleting the current node) then delete next node.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: separate pointer for s and t.
+ * <p>Key idea: separate pointer for s and t.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -7,7 +7,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: got the DFS part. Marking node as unused as alternative to copying 'used' boolean array.
+ * <p>Key idea: got the DFS part. Marking node as unused as alternative to copying 'used' boolean
+ * array.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P212WordSearch2

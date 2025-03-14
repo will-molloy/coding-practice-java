@@ -12,9 +12,9 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n) - O(1) if exit when maps grow beyond size 2
  *
- * <p>Key: String is a map where each index maps to a character. Track mismatching mappings. Check
- * if 0 mismatched mappings (strings are equal) or if 2 mismatched mappings and mapped values are
- * equal (can resolve with single swap).
+ * <p>Key idea: String is a map where each index maps to a character. Track mismatching mappings.
+ * Check if 0 mismatched mappings (strings are equal) or if 2 mismatched mappings and mapped values
+ * are equal (can resolve with single swap).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n + e)
  *
- * <p>Key: Get combined MST for both Alice and Bob favouring the shared edges.
+ * <p>Key idea: Get combined MST for both Alice and Bob favouring the shared edges.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1584MinCostToConnectAllPoints
  * @author <a href=https://willmolloy.com>Will Molloy</a>

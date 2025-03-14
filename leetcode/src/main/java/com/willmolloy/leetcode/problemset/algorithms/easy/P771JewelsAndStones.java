@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: lookup table
+ * <p>Key idea: lookup table
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

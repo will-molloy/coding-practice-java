@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: First compute the size, then work backwards to the specific character.
+ * <p>Key idea: First compute the size, then work backwards to the specific character.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

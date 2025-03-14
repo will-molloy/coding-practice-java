@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(n) (create string for each int)
  *
- * <p>Key: Sorting.
+ * <p>Key idea: Sorting.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Track {@code hasPeeked} and {@code peekedElement}.
+ * <p>Key idea: Track {@code hasPeeked} and {@code peekedElement}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

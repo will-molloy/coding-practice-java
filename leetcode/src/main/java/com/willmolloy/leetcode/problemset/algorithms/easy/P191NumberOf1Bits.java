@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: {@link Integer#bitCount} method.
+ * <p>Key idea: {@link Integer#bitCount} method.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

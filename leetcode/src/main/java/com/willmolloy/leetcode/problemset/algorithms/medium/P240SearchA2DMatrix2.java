@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Search rows/cols in opposite sorted direction (start in either top right or bottom left).
+ * <p>Key idea: Search rows/cols in opposite sorted direction (start in either top right or bottom
+ * left).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see P74SearchA2dMatrix

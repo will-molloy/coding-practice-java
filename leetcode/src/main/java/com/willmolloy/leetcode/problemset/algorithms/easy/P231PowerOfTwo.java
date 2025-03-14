@@ -6,7 +6,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Difficulty: Easy.
  *
- * <p>Key: Power of two has one '1' bit (which is the MSB).
+ * <p>Key idea: Power of two has one '1' bit (which is the MSB).
  *
  * @see P342PowerOfFour
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -16,7 +16,7 @@ import java.util.Map;
  * <p>Extra memory: O(c : {@code products} + {@code searchWord}) (trie space and output is
  * proportional to size of {@code searchWord})
  *
- * <p>Key: Trie. When getting suggestions, traverse down to the prefix then do a DFS.
+ * <p>Key idea: Trie. When getting suggestions, traverse down to the prefix then do a DFS.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

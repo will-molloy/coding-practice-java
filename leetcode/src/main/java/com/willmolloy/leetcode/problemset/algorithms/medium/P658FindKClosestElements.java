@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(k)
  *
- * <p>Key: Priority queue to hold the 'k' closest elements.
+ * <p>Key idea: Priority queue to hold the 'k' closest elements.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

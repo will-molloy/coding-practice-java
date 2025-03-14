@@ -19,7 +19,7 @@ interface P1696JumpGame6 {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Question pretty much gives the dp formula.
+   * <p>Key idea: Question pretty much gives the dp formula.
    */
   class NaiveDp implements P1696JumpGame6 {
 
@@ -53,7 +53,7 @@ interface P1696JumpGame6 {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Instead of looking for max each time, remember it with heap.
+   * <p>Key idea: Instead of looking for max each time, remember it with heap.
    */
   class AcceptedDp implements P1696JumpGame6 {
 

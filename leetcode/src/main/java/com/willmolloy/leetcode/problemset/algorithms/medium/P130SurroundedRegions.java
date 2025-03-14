@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(row * col) (worst case recursion stack size - whole board is 'O's)
  *
- * <p>Key: better to mark regions which we don't want to flip first (a sort of preprocessing)
+ * <p>Key idea: better to mark regions which we don't want to flip first (a sort of preprocessing)
  *
  * @see P200NumberOfIslands
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P463IslandPerimeter

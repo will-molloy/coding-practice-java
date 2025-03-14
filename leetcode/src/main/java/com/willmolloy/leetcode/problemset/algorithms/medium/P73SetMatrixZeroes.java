@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1) (this is a goal of the problem as medium difficulty)
  *
- * <p>Key: marking on first iteration; filling in on second iteration. Smart marker variables.
+ * <p>Key idea: marking on first iteration; filling in on second iteration. Smart marker variables.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

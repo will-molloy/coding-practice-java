@@ -14,8 +14,8 @@ import java.util.Set;
  *
  * <p>Extra space: O(n + p) - {@code dfs} stack space is O(n), {@code adjList} is O(p)
  *
- * <p>Key: Topological sort (via DFS), considering each node as the source (could test which nodes
- * are source nodes (those with no incoming edges)).
+ * <p>Key idea: Topological sort (via DFS), considering each node as the source (could test which
+ * nodes are source nodes (those with no incoming edges)).
  *
  * <p>Performance boost by marking nodes as {@code DONE} (drops runtime from O(n<sup>2</sup>) to
  * O(n)) because it memoises the result; when a node is {@code DONE} we know we have already

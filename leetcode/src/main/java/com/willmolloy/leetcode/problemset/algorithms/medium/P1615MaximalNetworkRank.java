@@ -11,7 +11,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O({@code n} + {@code roads})
  *
- * <p>Key: Combine node pair degrees. If pair is connected, only count the connecting edge once.
+ * <p>Key idea: Combine node pair degrees. If pair is connected, only count the connecting edge
+ * once.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

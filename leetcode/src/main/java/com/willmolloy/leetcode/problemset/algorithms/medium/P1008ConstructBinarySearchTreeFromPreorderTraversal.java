@@ -24,8 +24,8 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
    *
    * <p>Space: O(h)
    *
-   * <p>Key: In BST all nodes in left subtree are smaller so can find where right subtree begins by
-   * finding first larger node.
+   * <p>Key idea: In BST all nodes in left subtree are smaller so can find where right subtree
+   * begins by finding first larger node.
    */
   class SplitLeftAndRight implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
@@ -72,7 +72,8 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
    *
    * <p>Space: O(h)
    *
-   * <p>Key: In BST all nodes in left subtree are smaller, so the upper bound is the current node.
+   * <p>Key idea: In BST all nodes in left subtree are smaller, so the upper bound is the current
+   * node.
    */
   class ProvideUpperBound implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 

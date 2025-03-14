@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Easiest to insert onto a leaf.
+ * <p>Key idea: Easiest to insert onto a leaf.
  *
  * @see P98ValidateBinarySearchTree
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P700SearchInABinarySearchTree

@@ -7,7 +7,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Runtime: O(2n)
  *
- * <p>Key: get size of list (n) first.
+ * <p>Key idea: get size of list (n) first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

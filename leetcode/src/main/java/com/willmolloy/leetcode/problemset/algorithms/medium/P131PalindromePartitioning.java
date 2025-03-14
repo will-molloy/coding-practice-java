@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra space: O(n) (maximum recursion depth)
  *
- * <p>Key: optimisation of passing indices as parameters (avoids cost of extra {@code
+ * <p>Key idea: optimisation of passing indices as parameters (avoids cost of extra {@code
  * String.substring} calls)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

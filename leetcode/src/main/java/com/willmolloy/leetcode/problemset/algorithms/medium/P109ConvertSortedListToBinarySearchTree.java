@@ -11,8 +11,8 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(lg n)
  *
- * <p>Key: checking for singleton list; so can assume list of size 2 when splitting in half, which
- * avoids NPE
+ * <p>Key idea: checking for singleton list; so can assume list of size 2 when splitting in half,
+ * which avoids NPE
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P108ConvertSortedArrayToBinarySearchTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>

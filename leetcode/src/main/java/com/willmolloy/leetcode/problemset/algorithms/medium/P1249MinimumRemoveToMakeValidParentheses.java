@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Stack to track valid/invalid (balanced/unbalanced) parentheses. Placeholder removal
+ * <p>Key idea: Stack to track valid/invalid (balanced/unbalanced) parentheses. Placeholder removal
  * character.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: faster to generate the numbers rather than test
+ * <p>Key idea: faster to generate the numbers rather than test
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P263UglyNumber
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Space: O(n)
  *
- * <p>Key: recursion to traverse depth first
+ * <p>Key idea: recursion to traverse depth first
  *
  * @see P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>

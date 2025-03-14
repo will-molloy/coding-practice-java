@@ -14,8 +14,8 @@ import java.util.List;
  *
  * <p>Space: O(1) (fixed sized array used)
  *
- * <p>Key: With the sliding window, don't recompute the entire {@code freqs} array rather remove the
- * start of the old window and add the end of the new window.
+ * <p>Key idea: With the sliding window, don't recompute the entire {@code freqs} array rather
+ * remove the start of the old window and add the end of the new window.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P76MinimumWindowSubstring
  * @see P567PermutationInString

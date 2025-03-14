@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: 3 ways the line can go: up, down, or flat. Up followed by down is a mountain.
+ * <p>Key idea: 3 ways the line can go: up, down, or flat. Up followed by down is a mountain.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

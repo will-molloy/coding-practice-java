@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Answer is the next permutation of n.
+ * <p>Key idea: Answer is the next permutation of n.
  *
  * @see P31NextPermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Count how many meet the condition, the elements don't influence each other.
+ * <p>Key idea: Count how many meet the condition, the elements don't influence each other.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

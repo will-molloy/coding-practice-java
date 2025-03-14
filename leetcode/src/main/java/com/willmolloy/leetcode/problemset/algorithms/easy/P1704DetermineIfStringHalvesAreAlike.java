@@ -10,7 +10,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Compare count of vowels in first and second halves of the string.
+ * <p>Key idea: Compare count of vowels in first and second halves of the string.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

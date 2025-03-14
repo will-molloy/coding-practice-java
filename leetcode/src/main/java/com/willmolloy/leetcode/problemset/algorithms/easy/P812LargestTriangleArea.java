@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: <a href=https://en.wikipedia.org/wiki/Shoelace_formula>Formula to compute polygon area
- * given cartesian coordinates.</a>
+ * <p>Key idea: <a href=https://en.wikipedia.org/wiki/Shoelace_formula>Formula to compute polygon
+ * area given cartesian coordinates.</a>
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

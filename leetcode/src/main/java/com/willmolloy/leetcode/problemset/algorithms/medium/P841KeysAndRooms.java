@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Starting with room 0, traverse (BFS or DFS etc) and see if each room is seen.
+ * <p>Key idea: Starting with room 0, traverse (BFS or DFS etc) and see if each room is seen.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

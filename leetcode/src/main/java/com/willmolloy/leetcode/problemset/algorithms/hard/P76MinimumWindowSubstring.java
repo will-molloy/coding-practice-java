@@ -11,7 +11,8 @@ import java.util.Map;
  *
  * <p>Space: O(t)
  *
- * <p>Key: Hash map to maintain count of characters. Two pointers to 'widen' and 'narrow' window.
+ * <p>Key idea: Hash map to maintain count of characters. Two pointers to 'widen' and 'narrow'
+ * window.
  *
  * @see P30SubstringWithConcatenationOfAllWords
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P438FindAllAnagramsInAString

@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Count flips from front. Must be min because you'd start flipping from the front to avoid
- * redundant flips.
+ * <p>Key idea: Count flips from front. Must be min because you'd start flipping from the front to
+ * avoid redundant flips.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

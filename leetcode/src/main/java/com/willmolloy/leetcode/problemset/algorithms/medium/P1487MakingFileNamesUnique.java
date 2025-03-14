@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: When suffixing a name, must store its suffixed occurrence in map as well so it isn't
+ * <p>Key idea: When suffixing a name, must store its suffixed occurrence in map as well so it isn't
  * repeated. Also should use map to store k values so can start from most recent k (as opposed to a
  * set and always starting at 1).
  *

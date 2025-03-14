@@ -10,7 +10,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Test each string in the dictionary is a subsequence.
+ * <p>Key idea: Test each string in the dictionary is a subsequence.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

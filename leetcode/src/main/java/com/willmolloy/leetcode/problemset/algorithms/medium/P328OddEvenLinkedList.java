@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Track odds/evens separately and link them at the end.
+ * <p>Key idea: Track odds/evens separately and link them at the end.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

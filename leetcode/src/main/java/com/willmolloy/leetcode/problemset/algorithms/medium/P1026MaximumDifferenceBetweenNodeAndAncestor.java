@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Track min/max for each root to leaf path.
+ * <p>Key idea: Track min/max for each root to leaf path.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

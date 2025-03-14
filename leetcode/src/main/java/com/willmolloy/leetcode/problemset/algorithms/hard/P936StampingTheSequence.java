@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(1) - excluding result and converting {@code String} to {@code char[]}.
  *
- * <p>Key: Think of the target as layers of stamps:
+ * <p>Key idea: Think of the target as layers of stamps:
  *
  * <ul>
  *   <li>target = ababc, stamp = abc

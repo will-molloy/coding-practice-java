@@ -8,9 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: After computing prefix sum, compute max prefix sum so don't have to compare every {@code
- * i} with every {@code j} ({@code j - i >= 2}) cause we're able to compare j with the closest
- * possible {@code i} ({@code j - i == 2}) instead.
+ * <p>Key idea: After computing prefix sum, compute max prefix sum so don't have to compare every
+ * {@code i} with every {@code j} ({@code j - i >= 2}) cause we're able to compare j with the
+ * closest possible {@code i} ({@code j - i == 2}) instead.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

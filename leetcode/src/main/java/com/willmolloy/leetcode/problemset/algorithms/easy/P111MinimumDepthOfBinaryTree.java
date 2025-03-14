@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  *
  * <p>Space: O(w) = O(n)
  *
- * <p>Key: a leaf is a node with no children
+ * <p>Key idea: a leaf is a node with no children
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

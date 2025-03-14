@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: BFS.
+ * <p>Key idea: BFS.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

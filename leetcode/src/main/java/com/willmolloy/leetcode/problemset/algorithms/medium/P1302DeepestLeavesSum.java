@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: BFS traversal
+ * <p>Key idea: BFS traversal
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

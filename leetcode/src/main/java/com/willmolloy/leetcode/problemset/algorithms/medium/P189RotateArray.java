@@ -18,7 +18,7 @@ interface P189RotateArray {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Modulo operator.
+   * <p>Key idea: Modulo operator.
    */
   class CopyArray implements P189RotateArray {
 
@@ -41,8 +41,8 @@ interface P189RotateArray {
    *
    * <p>Extra memory: O(1)
    *
-   * <p>Key: Result array can be partitioned into those which wrap around and those that don't. I.e.
-   * {@code <wrapped> + <not wrapped>}, where {@code <wrapped>} has size {@code k}. Reversing
+   * <p>Key idea: Result array can be partitioned into those which wrap around and those that don't.
+   * I.e. {@code <wrapped> + <not wrapped>}, where {@code <wrapped>} has size {@code k}. Reversing
    * creates such a partition, then just need to undo the reversal for each partition.
    */
   class ReverseArray implements P189RotateArray {

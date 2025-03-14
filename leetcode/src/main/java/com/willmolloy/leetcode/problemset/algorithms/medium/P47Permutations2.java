@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Runtime: O(n!), Space: O(n!)
  *
- * <p>Key: bruteforce (gather all candidates), recursive backtracking. This time used {@code
+ * <p>Key idea: bruteforce (gather all candidates), recursive backtracking. This time used {@code
  * boolean[] used} array, because the input can have duplicates so contains check must be applied to
  * index instead.
  *

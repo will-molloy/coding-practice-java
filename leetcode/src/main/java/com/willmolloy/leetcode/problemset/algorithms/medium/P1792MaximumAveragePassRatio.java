@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O({@code classes})
  *
- * <p>Key: Add extra student to the class that'll have the largest increase in pass ratio. Use
+ * <p>Key idea: Add extra student to the class that'll have the largest increase in pass ratio. Use
  * priority queue to get that class.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Prefix sums.
+ * <p>Key idea: Prefix sums.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

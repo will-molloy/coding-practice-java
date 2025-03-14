@@ -18,8 +18,8 @@ import java.util.StringJoiner;
  *
  * <p>Extra memory: O(n + {@code edges}) ({@code adjList} cost)
  *
- * <p>Key: Normal DFS/BFS doesn't work (gets TLE), instead need dynamic programming such that the
- * search only continues if the current path can result in a better result (a kind of pruning).
+ * <p>Key idea: Normal DFS/BFS doesn't work (gets TLE), instead need dynamic programming such that
+ * the search only continues if the current path can result in a better result (a kind of pruning).
  * (Actually, DFS still times out with this dp table, the backtracking prunes too late.)
  *
  * <p>Shortest path algorithm also works (greedy, Dijkstra's), find path with min inverse of

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Track length of 'new' array (but write in-place); only write new numbers.
+ * <p>Key idea: Track length of 'new' array (but write in-place); only write new numbers.
  *
  * @see P27RemoveElement
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P80RemoveDuplicateFromSortedArray2

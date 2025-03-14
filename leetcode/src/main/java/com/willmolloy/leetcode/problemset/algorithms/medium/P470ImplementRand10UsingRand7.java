@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Rejection sampling. Reject samples outside the desired range. Samples in the desired
+ * <p>Key idea: Rejection sampling. Reject samples outside the desired range. Samples in the desired
  * range will still be distributed uniformly.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

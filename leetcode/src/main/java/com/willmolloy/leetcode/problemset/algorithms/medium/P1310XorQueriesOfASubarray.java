@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(a)
  *
- * <p>Key: XOR prefix sum.
+ * <p>Key idea: XOR prefix sum.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

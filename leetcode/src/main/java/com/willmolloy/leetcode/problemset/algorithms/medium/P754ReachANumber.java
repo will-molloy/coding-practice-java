@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Move left/right using numbers [1, k].
+ * <p>Key idea: Move left/right using numbers [1, k].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Stack.
+ * <p>Key idea: Stack.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

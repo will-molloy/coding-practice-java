@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Sequence forms a binary tree.
+ * <p>Key idea: Sequence forms a binary tree.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P784LetterCasePermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>

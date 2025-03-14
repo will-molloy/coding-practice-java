@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Simulate problem statement.
+ * <p>Key idea: Simulate problem statement.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

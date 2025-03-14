@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: Palindrome permutation if at most one odd frequency.
+ * <p>Key idea: Palindrome permutation if at most one odd frequency.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P409LongestPalindrome
  * @author <a href=https://willmolloy.com>Will Molloy</a>

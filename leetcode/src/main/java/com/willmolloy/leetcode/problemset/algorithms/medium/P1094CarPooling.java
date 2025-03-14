@@ -10,9 +10,9 @@ import java.util.TreeMap;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Check if the actual capacity ever exceeds the given capacity. Done by storing increases
- * and decreases in load at each position, then sorting by position, and then computing a cumulative
- * sum.
+ * <p>Key idea: Check if the actual capacity ever exceeds the given capacity. Done by storing
+ * increases and decreases in load at each position, then sorting by position, and then computing a
+ * cumulative sum.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

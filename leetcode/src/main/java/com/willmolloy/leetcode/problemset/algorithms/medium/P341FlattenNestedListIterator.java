@@ -11,8 +11,8 @@ import java.util.Objects;
  * <a
  * href=https://leetcode.com/problems/flatten-nested-list-iterator>https://leetcode.com/problems/flatten-nested-list-iterator/</a>
  *
- * <p>Key: The output could be printed by performing a DFS on the input. This means a {@code stack}
- * should be used.
+ * <p>Key idea: The output could be printed by performing a DFS on the input. This means a {@code
+ * stack} should be used.
  *
  * <p>The tricky part is handling empty nested lists, to handle them, iteratively flatten the front
  * of the stack until it's an integer or the stack is empty.

@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * <a
  * href=https://leetcode.com/problems/min-cost-climbing-stairs>https://leetcode.com/problems/min-cost-climbing-stairs</a>
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

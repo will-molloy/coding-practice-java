@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Consider the two cases:
+ * <p>Key idea: Consider the two cases:
  *
  * <ol>
  *   <li>a == b, then need to swap a duplicate character

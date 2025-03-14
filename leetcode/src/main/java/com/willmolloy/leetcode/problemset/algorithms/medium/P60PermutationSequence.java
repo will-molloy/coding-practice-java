@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
  * <p>Runtime: O(nk) TODO apparently there is an O(n^2) solution. Given n is in 1..9 and k is in
  * 1..n!, that would be faster.
  *
- * <p>Key: knowledge of next permutation algorithm, just something you have to memorise I guess?
+ * <p>Key idea: knowledge of next permutation algorithm, just something you have to memorise I
+ * guess?
  *
  * @see P31NextPermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Very similar to {@link P525ContiguousArray}; think of a cipher wheel with 'k' units,
+ * <p>Key idea: Very similar to {@link P525ContiguousArray}; think of a cipher wheel with 'k' units,
  * returning to the same position means you moved 'n*k' units.
  *
  * @see P525ContiguousArray

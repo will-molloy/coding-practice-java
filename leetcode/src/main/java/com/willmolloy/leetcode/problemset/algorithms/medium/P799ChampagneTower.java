@@ -12,7 +12,8 @@ import java.util.List;
  *
  * <p>Extra memory: O({@code queryRow}<sup>2</sup>)
  *
- * <p>Key: Track total amount poured through each glass, this way can process all pours in one go.
+ * <p>Key idea: Track total amount poured through each glass, this way can process all pours in one
+ * go.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

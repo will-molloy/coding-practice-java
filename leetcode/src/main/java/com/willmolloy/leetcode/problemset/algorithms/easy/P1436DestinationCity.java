@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Answer is set difference of all cities - origin cities. Guaranteed to be single
+ * <p>Key idea: Answer is set difference of all cities - origin cities. Guaranteed to be single
  * destination city. (I.e. no need to simulate the process of traversing some graph.)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

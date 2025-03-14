@@ -9,7 +9,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n), where n = number of cells
  *
- * <p>Key: max n is 100, so can bruteforce the simulation; keep going until grid stops changing.
+ * <p>Key idea: max n is 100, so can bruteforce the simulation; keep going until grid stops
+ * changing.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

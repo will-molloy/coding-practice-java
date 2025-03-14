@@ -13,7 +13,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n) (array copy)
  *
- * <p>Key: Brute force - test every subarray with the code in P1502.
+ * <p>Key idea: Brute force - test every subarray with the code in P1502.
  *
  * @see
  *     com.willmolloy.leetcode.problemset.algorithms.easy.P1502CanMakeArithmeticProgressionFromSequence

@@ -13,8 +13,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Only start/end sectors matter, since that's effectively where the runners must travel,
- * everything else is ran in a loop and visited once fewer.
+ * <p>Key idea: Only start/end sectors matter, since that's effectively where the runners must
+ * travel, everything else is ran in a loop and visited once fewer.
  *
  * <p>E.g. n = 4 with rounds = [1, 3, 1, 2] is really [1, 2, 3, 4, 1, 2] = [1, 2]
  *

@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Prune leaves recursively.
+ * <p>Key idea: Prune leaves recursively.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

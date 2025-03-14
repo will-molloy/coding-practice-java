@@ -7,8 +7,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: able to place elements at the front (while keeping them at the back) because the back
- * will be written to later
+ * <p>Key idea: able to place elements at the front (while keeping them at the back) because the
+ * back will be written to later
  *
  * @see <a href=https://www.youtube.com/watch?v=E7xxGi84Tso>Errichto's video</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>

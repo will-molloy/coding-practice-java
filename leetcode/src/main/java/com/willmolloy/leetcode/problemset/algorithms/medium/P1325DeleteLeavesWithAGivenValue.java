@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(n) (worst case recursive stack size - nodes form a linked list)
  *
- * <p>Key: reach depth before deleting nodes
+ * <p>Key idea: reach depth before deleting nodes
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

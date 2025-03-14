@@ -24,7 +24,7 @@ interface P116PopulatingNextRightPointersInEachNode {
    *
    * <p>Space: O(w) = O(n)
    *
-   * <p>Key: BFS with queue.
+   * <p>Key idea: BFS with queue.
    */
   class ExtraSpace implements P116PopulatingNextRightPointersInEachNode {
 
@@ -57,7 +57,7 @@ interface P116PopulatingNextRightPointersInEachNode {
    *
    * <p>Space: O(1)
    *
-   * <p>Key: BFS by following {@code next} pointer.
+   * <p>Key idea: BFS by following {@code next} pointer.
    */
   class ConstantSpace implements P116PopulatingNextRightPointersInEachNode {
 

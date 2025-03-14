@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: figuring out the domain name regex, otherwise standard {@code find()} loop.
+ * <p>Key idea: figuring out the domain name regex, otherwise standard {@code find()} loop.
  *
  * @see DetectTheEmailAddresses
  * @author <a href=https://willmolloy.com>Will Molloy</a>

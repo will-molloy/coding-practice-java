@@ -16,8 +16,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Figuring out how to represent the tree; using {@code Map} so any node can be retrieved in
- * O(1) and {@code Node} class helped.
+ * <p>Key idea: Figuring out how to represent the tree; using {@code Map} so any node can be
+ * retrieved in O(1) and {@code Node} class helped.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

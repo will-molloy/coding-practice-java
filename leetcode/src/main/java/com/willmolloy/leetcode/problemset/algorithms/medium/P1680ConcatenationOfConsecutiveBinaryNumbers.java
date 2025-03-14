@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Each step multiply number by length of new number and add new number.
+ * <p>Key idea: Each step multiply number by length of new number and add new number.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

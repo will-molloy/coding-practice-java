@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra space: O(n) (recursion stack size)
  *
- * <p>Key: String can be represented by a binary tree.
+ * <p>Key idea: String can be represented by a binary tree.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P494TargetSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

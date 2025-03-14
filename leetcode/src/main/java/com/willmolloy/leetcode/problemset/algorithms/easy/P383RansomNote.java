@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1) (fixed sized array used)
  *
- * <p>Key: Count frequency of letters.
+ * <p>Key idea: Count frequency of letters.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -16,7 +16,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n) (recursion stack space)
  *
- * <p>Key: Monotonic queue.
+ * <p>Key idea: Monotonic queue.
  *
  * @see P739DailyTemperatures
  * @see P901OnlineStockSpan

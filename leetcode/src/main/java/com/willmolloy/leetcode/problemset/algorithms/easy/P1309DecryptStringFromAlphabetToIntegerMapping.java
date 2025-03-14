@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Greedy, look ahead for '#' since it must be processed.
+ * <p>Key idea: Greedy, look ahead for '#' since it must be processed.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

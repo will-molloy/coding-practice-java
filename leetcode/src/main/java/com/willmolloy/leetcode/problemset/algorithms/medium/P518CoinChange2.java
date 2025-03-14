@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * <a
  * href=https://leetcode.com/problems/coin-change-2>https://leetcode.com/problems/coin-change-2</a>
  *
- * <p>Key: Figuring out the dp formula was harder than the previous problem ({@link
+ * <p>Key idea: Figuring out the dp formula was harder than the previous problem ({@link
  * P322CoinChange}); number of ways = number of ways with + number of ways without. Very similar to
  * knapsack problem.
  *

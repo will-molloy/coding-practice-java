@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n) (only cause copied array to list)
  *
- * <p>Key: Greedy, take every second largest coin.
+ * <p>Key idea: Greedy, take every second largest coin.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

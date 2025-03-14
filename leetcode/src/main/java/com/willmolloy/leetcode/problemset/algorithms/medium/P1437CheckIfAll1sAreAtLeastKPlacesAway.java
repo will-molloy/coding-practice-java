@@ -8,8 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Not sure why the problem description shows gaps between all 1s; the answer only depends
- * on gaps between adjacent 1s (so only need to track most recent 1 in a single pass solution).
+ * <p>Key idea: Not sure why the problem description shows gaps between all 1s; the answer only
+ * depends on gaps between adjacent 1s (so only need to track most recent 1 in a single pass
+ * solution).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

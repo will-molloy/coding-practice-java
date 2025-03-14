@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Space: O(n * m) (queue/set size)
  *
- * <p>Key: BFS; in particular how the branching/neighbour traversing works
+ * <p>Key idea: BFS; in particular how the branching/neighbour traversing works
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P126WordLadder2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

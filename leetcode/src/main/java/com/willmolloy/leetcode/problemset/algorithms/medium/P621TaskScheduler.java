@@ -13,9 +13,9 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O(1) (store at most 26 in the queue/temp list)
  *
- * <p>Key: Make each loop iteration one cooldown period. Keep unique tasks in queue such that remove
- * at most once in each loop iteration such that cooldown period is not violated; also allows adding
- * back to queue to retrigger heapify after freqs updated.
+ * <p>Key idea: Make each loop iteration one cooldown period. Keep unique tasks in queue such that
+ * remove at most once in each loop iteration such that cooldown period is not violated; also allows
+ * adding back to queue to retrigger heapify after freqs updated.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

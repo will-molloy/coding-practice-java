@@ -26,7 +26,7 @@ interface P986IntervalListIntersections {
    *
    * <p>Extra space: O(1)
    *
-   * <p>Key: For each range, compare (intersect) with each range in the other list.
+   * <p>Key idea: For each range, compare (intersect) with each range in the other list.
    */
   class Quadratic implements P986IntervalListIntersections {
 
@@ -58,9 +58,9 @@ interface P986IntervalListIntersections {
    *
    * <p>Extra space: O(1)
    *
-   * <p>Key: Since the ranges are pairwise disjoint and sorted, use two pointers, one for each list.
-   * Then can progress the pointer for the range with the smallest endpoint because it won't be able
-   * to intersect anymore ranges.
+   * <p>Key idea: Since the ranges are pairwise disjoint and sorted, use two pointers, one for each
+   * list. Then can progress the pointer for the range with the smallest endpoint because it won't
+   * be able to intersect anymore ranges.
    */
   class Linear implements P986IntervalListIntersections {
 

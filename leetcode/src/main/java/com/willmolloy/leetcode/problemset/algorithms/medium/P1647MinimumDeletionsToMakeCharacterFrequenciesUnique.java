@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: If frequencies are unique then expect them to be in strictly increasing/decreasing order
- * once sorted. Greedily delete each freq down (potentially to 0) such that there is no more
+ * <p>Key idea: If frequencies are unique then expect them to be in strictly increasing/decreasing
+ * order once sorted. Greedily delete each freq down (potentially to 0) such that there is no more
  * duplication - order of processing a char doesn't matter cause you can only delete.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

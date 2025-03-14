@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(rows * cols)
  *
- * <p>Key: care taken when passing around {@code area} parameter. Either use reference (e.g. int
- * array), or update based on recursive call results.
+ * <p>Key idea: care taken when passing around {@code area} parameter. Either use reference (e.g.
+ * int array), or update based on recursive call results.
  *
  * @see P130SurroundedRegions
  * @see P200NumberOfIslands

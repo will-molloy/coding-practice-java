@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Test for rotated/normal case.
+ * <p>Key idea: Test for rotated/normal case.
  *
  * @see P33SearchInRotatedSortedArray
  * @see P81SearchInRotatedSortedArray2

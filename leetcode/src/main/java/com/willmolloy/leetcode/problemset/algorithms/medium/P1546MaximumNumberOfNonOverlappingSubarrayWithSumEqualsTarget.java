@@ -11,7 +11,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Handling non-overlapping requirement; clearing set is sufficient.
+ * <p>Key idea: Handling non-overlapping requirement; clearing set is sufficient.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable.PrefixSum
  * @see P560SubarraySumEqualsK

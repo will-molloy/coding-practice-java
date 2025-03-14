@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Can use binary search since input is sorted.
+ * <p>Key idea: Can use binary search since input is sorted.
  *
  * @see P274HIndex
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P35SearchInsertPosition

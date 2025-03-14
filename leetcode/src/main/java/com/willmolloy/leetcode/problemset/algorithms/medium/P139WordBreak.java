@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * <a href=https://leetcode.com/problems/word-break>https://leetcode.com/problems/word-break</a>
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P140WordBreak2

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(n) (can be O(1) if you reuse input array)
  *
- * <p>Key: Running sum = cumulative sum (prefix sum).
+ * <p>Key idea: Running sum = cumulative sum (prefix sum).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

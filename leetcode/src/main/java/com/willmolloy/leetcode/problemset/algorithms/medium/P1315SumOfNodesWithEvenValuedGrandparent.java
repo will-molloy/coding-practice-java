@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Space: O(h)
  *
- * <p>Key: cycle through node -> parent -> grandparent
+ * <p>Key idea: cycle through node -> parent -> grandparent
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P404SumOfLeftLeaves
  * @author <a href=https://willmolloy.com>Will Molloy</a>

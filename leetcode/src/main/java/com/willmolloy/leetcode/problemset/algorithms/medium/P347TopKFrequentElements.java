@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n + k)
  *
- * <p>Key: Count frequencies then take top k with heap.
+ * <p>Key idea: Count frequencies then take top k with heap.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber
  * @see P692TopKFrequentWords

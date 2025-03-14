@@ -12,8 +12,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O({@code pairs} + {@code preferences}<sup>2</sup>) = O({@code n}<sup>2</sup>)
  *
- * <p>Key: Simulate the problem; "count x's where there exists a v such that ..." (see full problem
- * description). Used hashmaps to make pair/preference lookup constant.
+ * <p>Key idea: Simulate the problem; "count x's where there exists a v such that ..." (see full
+ * problem description). Used hashmaps to make pair/preference lookup constant.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

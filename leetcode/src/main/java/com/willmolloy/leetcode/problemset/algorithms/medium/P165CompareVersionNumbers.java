@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(v1 + v2)
  *
- * <p>Key: Compare number sequences in lockstep.
+ * <p>Key idea: Compare number sequences in lockstep.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(s + w)
  *
- * <p>Key: hashmap to preprocess, and key selection (use what'll be looked up).
+ * <p>Key idea: hashmap to preprocess, and key selection (use what'll be looked up).
  *
  * @see com.willmolloy.hackerrank.regex.applications.medium.FindAWord
  * @see UkAndUsPart2

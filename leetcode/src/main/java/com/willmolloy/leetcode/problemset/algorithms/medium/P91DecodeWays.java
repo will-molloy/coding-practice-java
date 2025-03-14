@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * <p>Space: O(n)
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

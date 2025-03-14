@@ -14,8 +14,8 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(h)
  *
- * <p>Key: the size of the left/right subtree ranges are the same in each array, since each array is
- * for the same tree
+ * <p>Key idea: the size of the left/right subtree ranges are the same in each array, since each
+ * array is for the same tree
  *
  * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
  * @see P1008ConstructBinarySearchTreeFromPreorderTraversal

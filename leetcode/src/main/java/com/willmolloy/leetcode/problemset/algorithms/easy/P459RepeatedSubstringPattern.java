@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n) (substring creates new string - worst case has size n/2)
  *
- * <p>Key: Brute force.
+ * <p>Key idea: Brute force.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

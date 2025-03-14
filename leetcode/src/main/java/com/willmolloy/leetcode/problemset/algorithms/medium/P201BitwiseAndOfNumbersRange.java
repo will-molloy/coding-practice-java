@@ -10,7 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Using bitwise operations (here, shifts) given it is a bitwise operator problem (hint!).
+ * <p>Key idea: Using bitwise operations (here, shifts) given it is a bitwise operator problem
+ * (hint!).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

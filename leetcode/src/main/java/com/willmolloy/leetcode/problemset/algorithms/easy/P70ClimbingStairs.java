@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * <a
  * href=https://leetcode.com/problems/climbing-stairs>https://leetcode.com/problems/climbing-stairs</a>
  *
- * <p>Key: dynamic programming, fibonacci sequence
+ * <p>Key idea: dynamic programming, fibonacci sequence
  *
  * @see com.willmolloy.dsa.dp.Fibonacci
  * @author <a href=https://willmolloy.com>Will Molloy</a>

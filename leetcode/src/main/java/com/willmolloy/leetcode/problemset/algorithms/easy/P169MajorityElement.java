@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Space: O(n) TODO exists O(1) space solution (Boyer-Moore Voting Algorithm)
  *
- * <p>Key: hash table
+ * <p>Key idea: hash table
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n) TODO O(1) is possible (bitwise operators)
  *
- * <p>Key: Count num frequencies.
+ * <p>Key idea: Count num frequencies.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P136SingleNumber
  * @see P260SingleNumber3

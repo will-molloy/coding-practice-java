@@ -10,7 +10,7 @@ import static java.lang.Math.max;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: {@code dp[i]} represents answer for {@code arr[0, i]}.
+ * <p>Key idea: {@code dp[i]} represents answer for {@code arr[0, i]}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

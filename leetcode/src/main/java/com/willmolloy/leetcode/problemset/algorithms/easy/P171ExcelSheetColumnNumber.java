@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: ((0.x + a).x + b).x + c = c.x<sup>0</sup> + b.x<sup>1</sup> + a.x<sup>2</sup>, avoids the
- * need to use {@link Math#pow} and iterate in reverse.
+ * <p>Key idea: ((0.x + a).x + b).x + c = c.x<sup>0</sup> + b.x<sup>1</sup> + a.x<sup>2</sup>,
+ * avoids the need to use {@link Math#pow} and iterate in reverse.
  *
  * @see P168ExcelSheetColumnTitle
  * @author <a href=https://willmolloy.com>Will Molloy</a>

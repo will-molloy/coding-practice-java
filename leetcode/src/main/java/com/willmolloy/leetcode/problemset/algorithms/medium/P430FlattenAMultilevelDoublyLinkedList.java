@@ -14,8 +14,8 @@ import java.util.List;
  *
  * <p>Space: O(n)
  *
- * <p>Key: storing current level before proceeding to next level; stack/recursion to traverse depth
- * first
+ * <p>Key idea: storing current level before proceeding to next level; stack/recursion to traverse
+ * depth first
  *
  * @see P114FlattenBinaryTreeToLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -12,8 +12,8 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: {@code row - col} is the diagonal index. (Different to {@link P1424DiagonalTraverse2} as
- * the diagonals point the other way.)
+ * <p>Key idea: {@code row - col} is the diagonal index. (Different to {@link
+ * P1424DiagonalTraverse2} as the diagonals point the other way.)
  *
  * @see P498DiagonalTraverse
  * @see P1424DiagonalTraverse2

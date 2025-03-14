@@ -28,7 +28,7 @@ interface P129SumRootToLeafNumbers {
    * <p>Space: O(h * w) (worst case = full tree, have 'width' paths of size 'height' in the queue at
    * same instant)
    *
-   * <p>Key: track queue of 'paths' rather than 'nodes'
+   * <p>Key idea: track queue of 'paths' rather than 'nodes'
    */
   class Bfs implements P129SumRootToLeafNumbers {
 
@@ -92,8 +92,9 @@ interface P129SumRootToLeafNumbers {
    *
    * <p>Extra space: O(h)
    *
-   * <p>Key: Global variable for total sum, local variable for path sum. Since {@code int} is passed
-   * by value don't have to worry about creating new path on branching, as it does it implicitly.
+   * <p>Key idea: Global variable for total sum, local variable for path sum. Since {@code int} is
+   * passed by value don't have to worry about creating new path on branching, as it does it
+   * implicitly.
    */
   class Dfs implements P129SumRootToLeafNumbers {
 

@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Identify connected components. Used disjoint set (union find) here.
+ * <p>Key idea: Identify connected components. Used disjoint set (union find) here.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P952LargestComponentSizeByCommonFactor
  * @author <a href=https://willmolloy.com>Will Molloy</a>

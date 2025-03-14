@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Get largest common prefix/suffix and test the middle of either string is palindrome
+ * <p>Key idea: Get largest common prefix/suffix and test the middle of either string is palindrome
  * (greedy).
  *
  * <p>This works because if a middle creates a palindrome, a smaller middle would also create a

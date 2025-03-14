@@ -67,7 +67,7 @@ interface P1642FurthestBuildingYouCanReach {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Greedy. Prefer to use ladders, if forced to use bricks then use on smallest height
+   * <p>Key idea: Greedy. Prefer to use ladders, if forced to use bricks then use on smallest height
    * diff. Use priority queue to track height diffs.
    */
   class Greedy implements P1642FurthestBuildingYouCanReach {

@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(1) (fixed size input)
  *
- * <p>Key: Try all digit permutations. Easier to do this than come up with all the cases.
+ * <p>Key idea: Try all digit permutations. Easier to do this than come up with all the cases.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: coding up problem steps
+ * <p>Key idea: coding up problem steps
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

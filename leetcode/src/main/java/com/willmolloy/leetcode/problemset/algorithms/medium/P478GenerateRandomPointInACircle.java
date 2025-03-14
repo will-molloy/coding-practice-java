@@ -32,8 +32,8 @@ abstract class P478GenerateRandomPointInACircle {
    *
    * <p>Extra memory: O(1)
    *
-   * <p>Key: Use Pythagorean theorem to determine if the point is in the circle (i.e. less than or
-   * equal to hypotenuse, where hypotenuse is the circles radius).
+   * <p>Key idea: Use Pythagorean theorem to determine if the point is in the circle (i.e. less than
+   * or equal to hypotenuse, where hypotenuse is the circles radius).
    */
   static class RejectionSamplingFromSquare extends P478GenerateRandomPointInACircle {
 

@@ -13,7 +13,7 @@ import java.util.Objects;
  *
  * <p>Runtime: O(n), memory trade-off made using hashmap.
  *
- * <p>Key: group -> grouping by -> indicates hashmap, just need to figure out the key.
+ * <p>Key idea: group -> grouping by -> indicates hashmap, just need to figure out the key.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

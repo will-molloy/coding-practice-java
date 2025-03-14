@@ -11,7 +11,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(k)
  *
- * <p>Key: DFS with backtracking. Making child nodes larger than parent nodes to avoid duplicates.
+ * <p>Key idea: DFS with backtracking. Making child nodes larger than parent nodes to avoid
+ * duplicates.
  *
  * @see P39CombinationSum
  * @see P40CombinationSum2

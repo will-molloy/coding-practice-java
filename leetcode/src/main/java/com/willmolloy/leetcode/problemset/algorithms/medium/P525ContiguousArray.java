@@ -11,10 +11,10 @@ import java.util.Map;
  *
  * <p>Space: O(n)
  *
- * <p>Key: hashmap and realising that returning to the same 'diff' results in an equal count of 0s
- * and 1s. Intuition: it's obvious when diff=0 the counts are balanced, but after the first element
- * it will be either 1 or -1, so returning to 1 or -1 means we have essentially returned to 0
- * (excluding that first element).
+ * <p>Key idea: hashmap and realising that returning to the same 'diff' results in an equal count of
+ * 0s and 1s. Intuition: it's obvious when diff=0 the counts are balanced, but after the first
+ * element it will be either 1 or -1, so returning to 1 or -1 means we have essentially returned to
+ * 0 (excluding that first element).
  *
  * @see P523ContinuousSubarraySum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

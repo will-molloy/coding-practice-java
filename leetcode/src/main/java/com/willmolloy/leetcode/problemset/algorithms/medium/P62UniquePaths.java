@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 /**
  * <a href=https://leetcode.com/problems/unique-paths>https://leetcode.com/problems/unique-paths</a>
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see P63UniquePaths2
  * @see P64MinimumPathSum

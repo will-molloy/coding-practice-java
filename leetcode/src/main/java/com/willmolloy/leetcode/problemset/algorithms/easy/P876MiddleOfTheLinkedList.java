@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Space: O(1)
  *
- * <p>Key: slow and faster pointer
+ * <p>Key idea: slow and faster pointer
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P148SortLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>

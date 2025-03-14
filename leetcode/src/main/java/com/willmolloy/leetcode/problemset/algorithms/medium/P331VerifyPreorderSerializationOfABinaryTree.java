@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Just need to track the number of children 'slots'; check each node has a slot and all
- * slots are consumed at the end.
+ * <p>Key idea: Just need to track the number of children 'slots'; check each node has a slot and
+ * all slots are consumed at the end.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

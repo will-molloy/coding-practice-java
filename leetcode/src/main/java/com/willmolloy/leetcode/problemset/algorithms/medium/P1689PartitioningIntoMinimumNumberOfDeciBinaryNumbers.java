@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Answer is the max digit, since you would need at minimum that many 1s in that place, the
- * rest you can fill with 0s.
+ * <p>Key idea: Answer is the max digit, since you would need at minimum that many 1s in that place,
+ * the rest you can fill with 0s.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

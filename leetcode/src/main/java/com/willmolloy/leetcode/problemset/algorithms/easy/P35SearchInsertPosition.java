@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Insert position is found at final left pointer of binary search.
+ * <p>Key idea: Insert position is found at final left pointer of binary search.
  *
  * <p>This is because the search will eventually narrow in on a single element ({@code l == r == m})
  * and decide the target is not found. Then it will create a state where {@code l} is exactly 1

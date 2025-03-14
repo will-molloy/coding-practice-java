@@ -17,8 +17,8 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Store original indices some how (object or map) as they're needed for the result. Then
- * binary search on interval start points.
+ * <p>Key idea: Store original indices some how (object or map) as they're needed for the result.
+ * Then binary search on interval start points.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

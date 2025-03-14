@@ -14,8 +14,8 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(n) (depth of recursion)
  *
- * <p>Key: DFS backtracking to generate board permutations (not all permutations... do check board
- * if queens can be placed, don't bother checking row with queen already etc.).
+ * <p>Key idea: DFS backtracking to generate board permutations (not all permutations... do check
+ * board if queens can be placed, don't bother checking row with queen already etc.).
  *
  * @see P37SudokuSolver
  * @see P212WordSearch2

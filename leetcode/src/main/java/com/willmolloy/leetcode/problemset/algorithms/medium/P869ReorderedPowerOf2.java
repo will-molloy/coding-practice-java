@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(log(n)) - recursion depth
  *
- * <p>Key: Try all permutations of the digits in {@code n} (convert to string first).
+ * <p>Key idea: Try all permutations of the digits in {@code n} (convert to string first).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

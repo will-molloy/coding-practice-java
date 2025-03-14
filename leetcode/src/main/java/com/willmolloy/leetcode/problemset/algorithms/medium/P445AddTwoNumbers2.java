@@ -11,8 +11,8 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(l1 + l2)
  *
- * <p>Key: Convert lists to stacks (naturally reverses them). Don't forget to construct result list
- * in reverse too!
+ * <p>Key idea: Convert lists to stacks (naturally reverses them). Don't forget to construct result
+ * list in reverse too!
  *
  * @see P2AddTwoNumbers
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P67AddBinary

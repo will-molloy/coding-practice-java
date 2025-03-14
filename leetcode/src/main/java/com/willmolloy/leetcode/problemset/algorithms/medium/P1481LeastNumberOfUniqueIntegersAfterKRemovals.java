@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Greedily remove those with least frequency first.
+ * <p>Key idea: Greedily remove those with least frequency first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

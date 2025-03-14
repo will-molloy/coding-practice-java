@@ -14,8 +14,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n + p) - {@code dfs} stack space is O(n), {@code adjList} is O(p)
  *
- * <p>Key: Topological sort (extension to {@link P207CourseSchedule}), remember to reverse list at
- * the end!
+ * <p>Key idea: Topological sort (extension to {@link P207CourseSchedule}), remember to reverse list
+ * at the end!
  *
  * @see P207CourseSchedule
  * @see P332ReconstructItinerary

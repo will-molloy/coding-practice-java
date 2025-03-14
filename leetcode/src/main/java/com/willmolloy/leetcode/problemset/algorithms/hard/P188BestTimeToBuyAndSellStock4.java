@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Space: O(kn)
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2

@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 /**
  * <a href=https://leetcode.com/problems/lru-cache>https://leetcode.com/problems/lru-cache</a>
  *
- * <p>Key: map for O(1) operations + linked list to track least recently used
+ * <p>Key idea: map for O(1) operations + linked list to track least recently used
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

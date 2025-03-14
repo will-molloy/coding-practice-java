@@ -11,7 +11,7 @@ import java.util.Deque;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Stack because we want to access most recently added items first.
+ * <p>Key idea: Stack because we want to access most recently added items first.
  *
  * @see P739DailyTemperatures
  * @see P1019NextGreaterNodeInLinkedList

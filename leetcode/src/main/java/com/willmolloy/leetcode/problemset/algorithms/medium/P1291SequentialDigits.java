@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Generate all paths and then filter. Use BFS so its generated in sorted order.
+ * <p>Key idea: Generate all paths and then filter. Use BFS so its generated in sorted order.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(a * b)
  *
- * <p>Key: Dynamic programming; LCS problem.
+ * <p>Key idea: Dynamic programming; LCS problem.
  *
  * @see P1143LongestCommonSubsequence
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences

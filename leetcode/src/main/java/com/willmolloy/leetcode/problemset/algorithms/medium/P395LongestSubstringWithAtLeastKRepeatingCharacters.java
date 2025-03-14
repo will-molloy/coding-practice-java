@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Brute force - search all substring lengths. Sliding window to determine if a length is
- * ok.
+ * <p>Key idea: Brute force - search all substring lengths. Sliding window to determine if a length
+ * is ok.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

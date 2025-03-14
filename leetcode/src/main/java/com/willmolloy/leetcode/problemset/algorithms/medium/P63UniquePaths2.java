@@ -6,8 +6,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O(numRows * numCols), Space: O(numRows * numCols)
  *
- * <p>Key: filling in base case in reverse order to account for obstacles. I.e. the base case wasn't
- * as trivial compared to first iteration of the problem.
+ * <p>Key idea: filling in base case in reverse order to account for obstacles. I.e. the base case
+ * wasn't as trivial compared to first iteration of the problem.
  *
  * @see P62UniquePaths
  * @see P64MinimumPathSum

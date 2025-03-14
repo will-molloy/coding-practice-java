@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: {@link Character#digit(char, int)} method
+ * <p>Key idea: {@link Character#digit(char, int)} method
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

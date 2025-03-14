@@ -13,7 +13,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: Try all paths with recursion (DFS backtracking). Helps to first count non obstacle
+ * <p>Key idea: Try all paths with recursion (DFS backtracking). Helps to first count non obstacle
  * squares (those with zeros) so know if the path is correct (visit each non obstacle exactly once)
  * when finding the end.
  *

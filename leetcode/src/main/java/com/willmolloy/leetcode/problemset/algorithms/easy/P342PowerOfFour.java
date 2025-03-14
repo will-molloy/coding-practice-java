@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Divide by 4 until 1, at each step check divisible by 4.
+ * <p>Key idea: Divide by 4 until 1, at each step check divisible by 4.
  *
  * @see P231PowerOfTwo
  * @author <a href=https://willmolloy.com>Will Molloy</a>

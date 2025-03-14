@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: A valid tree would have the root being larger than its children, and its children
+ * <p>Key idea: A valid tree would have the root being larger than its children, and its children
  * (recursively) being valid trees. So memoise the result from smaller trees and build up to larger
  * trees (dynamic programming). I.e. {@code dp[root] = dp[left] * dp[right]}; summed over all
  * possible left/right children.

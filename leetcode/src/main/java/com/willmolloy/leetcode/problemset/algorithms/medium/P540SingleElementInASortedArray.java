@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Duplicate pairings are [even, odd] indices before the target and [odd, even] after.
+ * <p>Key idea: Duplicate pairings are [even, odd] indices before the target and [odd, even] after.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra space: O(|v|) (already given adj list, so not included here)
  *
- * <p>Key: DFS colouring algorithm.
+ * <p>Key idea: DFS colouring algorithm.
  *
  * @see P207CourseSchedule
  * @see P210CourseSchedule2

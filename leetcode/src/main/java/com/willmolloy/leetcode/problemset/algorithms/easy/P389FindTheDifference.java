@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Set difference of letters in {@code s} and {@code t}.
+ * <p>Key idea: Set difference of letters in {@code s} and {@code t}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

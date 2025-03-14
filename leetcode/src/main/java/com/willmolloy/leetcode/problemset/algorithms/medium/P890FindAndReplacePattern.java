@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(k)
  *
- * <p>Key: Normalise the words - map first character to 'a', second to 'b' and so on.
+ * <p>Key idea: Normalise the words - map first character to 'a', second to 'b' and so on.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

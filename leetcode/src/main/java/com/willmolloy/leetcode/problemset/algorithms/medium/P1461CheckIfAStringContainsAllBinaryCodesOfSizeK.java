@@ -11,8 +11,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(2<sup>k</sup> * k)
  *
- * <p>Key: Need all binary substrings of length k, which there are 2<sup>k</sup> of. So keep taking
- * unique substrings until we have that many. Set/hashing is perfect for this.
+ * <p>Key idea: Need all binary substrings of length k, which there are 2<sup>k</sup> of. So keep
+ * taking unique substrings until we have that many. Set/hashing is perfect for this.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

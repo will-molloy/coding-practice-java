@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Use separate variable to track length of added characters excluding dashes.
+ * <p>Key idea: Use separate variable to track length of added characters excluding dashes.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

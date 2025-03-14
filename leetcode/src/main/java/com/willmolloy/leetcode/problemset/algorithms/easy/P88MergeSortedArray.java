@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: merging in reverse order to make use of 'empty array space' and achieve O(1) memory use
+ * <p>Key idea: merging in reverse order to make use of 'empty array space' and achieve O(1) memory
+ * use
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

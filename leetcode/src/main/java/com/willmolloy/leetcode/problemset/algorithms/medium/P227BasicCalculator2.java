@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Stack.
+ * <p>Key idea: Stack.
  *
  * @see P394DecodeString
  * @author <a href=https://willmolloy.com>Will Molloy</a>

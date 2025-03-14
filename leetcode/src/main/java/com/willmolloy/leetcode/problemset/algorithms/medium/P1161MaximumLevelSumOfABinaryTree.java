@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: BFS to traverse level by level
+ * <p>Key idea: BFS to traverse level by level
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

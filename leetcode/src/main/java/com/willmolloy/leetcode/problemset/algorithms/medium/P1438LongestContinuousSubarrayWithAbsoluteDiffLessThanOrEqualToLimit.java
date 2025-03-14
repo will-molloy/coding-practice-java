@@ -6,8 +6,8 @@ import java.util.ArrayDeque;
  * <a
  * href=https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit>https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/</a>
  *
- * <p>Key: Two pointers (growing and shrinking subsequence) and {@link java.util.Deque} to track the
- * min/max element in the dynamic subarray.
+ * <p>Key idea: Two pointers (growing and shrinking subsequence) and {@link java.util.Deque} to
+ * track the min/max element in the dynamic subarray.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P239SlidingWindowMaximum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

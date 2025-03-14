@@ -17,7 +17,7 @@ interface P905SortArrayByParity {
    *
    * <p>Extra space: O(n)
    *
-   * <p>Key: Filter for evens then odds, more efficient than sorting.
+   * <p>Key idea: Filter for evens then odds, more efficient than sorting.
    */
   class Linear implements P905SortArrayByParity {
 
@@ -47,7 +47,7 @@ interface P905SortArrayByParity {
    *
    * <p>Extra space: O(1)
    *
-   * <p>Key: Swap even values to the front.
+   * <p>Key idea: Swap even values to the front.
    */
   class LinearInPlace implements P905SortArrayByParity {
 

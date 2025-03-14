@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: The two bit character always starts with a 1 (and the one bit character has no 1s) so can
- * just move forward two units when seeing a 1.
+ * <p>Key idea: The two bit character always starts with a 1 (and the one bit character has no 1s)
+ * so can just move forward two units when seeing a 1.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

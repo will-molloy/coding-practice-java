@@ -12,7 +12,7 @@ import java.util.List;
  * <p>Space: O(h) TODO is that correct? Each stack frame will hold a different path list. Worst case
  * (full tree) O(height*width) ???
  *
- * <p>Key: A leaf is a node with no children. Knowing when to copy temporary data.
+ * <p>Key idea: A leaf is a node with no children. Knowing when to copy temporary data.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P112PathSum
  * @see P437PathSum3

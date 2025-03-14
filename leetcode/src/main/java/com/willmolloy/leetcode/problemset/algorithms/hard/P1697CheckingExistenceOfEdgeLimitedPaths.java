@@ -16,8 +16,8 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(n + q)
  *
- * <p>Key: Build up a shared disjoint set for all the queries. Do this by sorting the queries/edges
- * (smallest first) so only the edges allowed for the current query are in the set.
+ * <p>Key idea: Build up a shared disjoint set for all the queries. Do this by sorting the
+ * queries/edges (smallest first) so only the edges allowed for the current query are in the set.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

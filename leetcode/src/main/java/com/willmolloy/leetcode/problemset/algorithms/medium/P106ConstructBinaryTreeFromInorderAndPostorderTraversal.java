@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(h)
  *
- * <p>Key: how binary tree traversals are laid out in an array
+ * <p>Key idea: how binary tree traversals are laid out in an array
  *
  * @see P105ConstructBinaryTreeFromPreorderAndInorderTraversal
  * @see P1008ConstructBinarySearchTreeFromPreorderTraversal

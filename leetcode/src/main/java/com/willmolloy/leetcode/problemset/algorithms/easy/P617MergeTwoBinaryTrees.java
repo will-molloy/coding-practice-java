@@ -13,7 +13,7 @@ import java.util.StringJoiner;
  *
  * <p>Space: O(min(height(t1), height(t2))) (stops at first null subtree)
  *
- * <p>Key: Think about just one node.
+ * <p>Key idea: Think about just one node.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

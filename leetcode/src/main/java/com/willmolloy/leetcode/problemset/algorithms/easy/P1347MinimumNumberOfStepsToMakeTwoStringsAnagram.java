@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: counting frequencies
+ * <p>Key idea: counting frequencies
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

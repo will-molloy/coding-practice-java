@@ -24,7 +24,7 @@ interface P787CheapestFlightsWithinKStops {
    *
    * <p>Extra space: O(n + flights)
    *
-   * <p>Key: BFS with edge costs; track nodes with costs in the queue.
+   * <p>Key idea: BFS with edge costs; track nodes with costs in the queue.
    */
   class Bfs implements P787CheapestFlightsWithinKStops {
 
@@ -75,9 +75,9 @@ interface P787CheapestFlightsWithinKStops {
    *
    * <p>Extra space: O(n + flights)
    *
-   * <p>Key: Dijkstra's algorithm. Store node with cost in queue. Also store path length because we
-   * remove path with smallest cost not path will smallest length (so not guaranteed to traverse
-   * level by level, so this is only way to know current level).
+   * <p>Key idea: Dijkstra's algorithm. Store node with cost in queue. Also store path length
+   * because we remove path with smallest cost not path will smallest length (so not guaranteed to
+   * traverse level by level, so this is only way to know current level).
    */
   class Dijkstra implements P787CheapestFlightsWithinKStops {
 

@@ -10,9 +10,9 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(sum(w : words)) i.e. dominated by space of trie
  *
- * <p>Key: Storing word represented by leaf nodes. This serves two purposes, (1) if that node is a
- * leaf and therefore if we can continue with the traversal and (2) what word is represented by that
- * leaf, so can return it directly rather than rebuilding words for each root to leaf path.
+ * <p>Key idea: Storing word represented by leaf nodes. This serves two purposes, (1) if that node
+ * is a leaf and therefore if we can continue with the traversal and (2) what word is represented by
+ * that leaf, so can return it directly rather than rebuilding words for each root to leaf path.
  *
  * @see P208ImplementTrie
  * @see P211AddAndSearchWordDataStructureDesign

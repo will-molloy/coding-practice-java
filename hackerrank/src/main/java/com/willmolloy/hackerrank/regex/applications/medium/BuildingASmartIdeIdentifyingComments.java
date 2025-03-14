@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: joining into one string first to account for multiline comments more easily.
+ * <p>Key idea: joining into one string first to account for multiline comments more easily.
  *
  * <p>Also using DOTALL flag such that '.' matches on '\n' (essentially required for the {@code
  * String#join('\n')} to work).

@@ -10,8 +10,8 @@ import java.util.ArrayDeque;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Consider what happens when adding a new asteroid to the right of a sequence of stable
- * asteroids, a stack is natural.
+ * <p>Key idea: Consider what happens when adding a new asteroid to the right of a sequence of
+ * stable asteroids, a stack is natural.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

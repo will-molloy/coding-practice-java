@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Try all pairs.
+ * <p>Key idea: Try all pairs.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

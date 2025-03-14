@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra space: O(n1 * n2)
  *
- * <p>Key: Dynamic programming. Very similar to LCS problem.
+ * <p>Key idea: Dynamic programming. Very similar to LCS problem.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1035UncrossedLines
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1143LongestCommonSubsequence

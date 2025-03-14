@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: DFS. Three cases to consider:
+ * <p>Key idea: DFS. Three cases to consider:
  *
  * <ol>
  *   <li>Current node too large

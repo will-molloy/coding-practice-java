@@ -17,8 +17,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(nodes + edges)
  *
- * <p>Key: Represent the equations as a graph. Variables = nodes, edge costs = values. Path cost =
- * product of edge costs.
+ * <p>Key idea: Represent the equations as a graph. Variables = nodes, edge costs = values. Path
+ * cost = product of edge costs.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Two pointers traversing inwards; iterate each to next vowel.
+ * <p>Key idea: Two pointers traversing inwards; iterate each to next vowel.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P344ReverseString

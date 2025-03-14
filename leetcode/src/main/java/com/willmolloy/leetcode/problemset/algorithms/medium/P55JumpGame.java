@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 /**
  * <a href=https://leetcode.com/problems/jump-game>https://leetcode.com/problems/jump-game</a>
  *
- * <p>Key: greedy algorithm; if you can reach beyond something then you can reach that thing.
+ * <p>Key idea: greedy algorithm; if you can reach beyond something then you can reach that thing.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P45JumpGame2
  * @see P1306JumpGame3

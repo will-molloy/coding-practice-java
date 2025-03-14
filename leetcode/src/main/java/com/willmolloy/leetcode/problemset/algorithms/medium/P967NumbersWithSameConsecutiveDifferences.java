@@ -12,7 +12,8 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(2<sup>n</sup>)
  *
- * <p>Key: The number generation forms a tree. Traverse it to get the results (root to leaf paths).
+ * <p>Key idea: The number generation forms a tree. Traverse it to get the results (root to leaf
+ * paths).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

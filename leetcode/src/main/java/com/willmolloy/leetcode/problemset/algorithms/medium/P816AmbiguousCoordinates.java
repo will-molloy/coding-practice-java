@@ -13,10 +13,10 @@ import java.util.List;
  * {@code dottedPrefix}/{@code dottedSuffix} is O(n<sup>2</sup>), {@code result} is
  * O(n<sup>3</sup>).
  *
- * <p>Key: Split string into two {@code prefix}/{@code suffix} with comma in between. Split those
- * {@code prefix}/{@code suffix} into two with dot in between. Result is all ordered combinations of
- * such substrings (cartesian product). Also need to filter cases where extranneous zeroes are
- * invalid.
+ * <p>Key idea: Split string into two {@code prefix}/{@code suffix} with comma in between. Split
+ * those {@code prefix}/{@code suffix} into two with dot in between. Result is all ordered
+ * combinations of such substrings (cartesian product). Also need to filter cases where extranneous
+ * zeroes are invalid.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

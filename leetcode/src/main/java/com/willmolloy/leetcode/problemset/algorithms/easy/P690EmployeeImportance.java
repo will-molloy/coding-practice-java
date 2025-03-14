@@ -16,7 +16,7 @@ import java.util.Queue;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Hashmap to make the graph traversal more efficient.
+ * <p>Key idea: Hashmap to make the graph traversal more efficient.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

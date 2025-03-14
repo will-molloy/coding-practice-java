@@ -17,7 +17,7 @@ interface P647PalindromicSubstrings {
    *
    * <p>Extra memory: O(1)
    *
-   * <p>Key: Sliding window for all substring sizes [1, n].
+   * <p>Key idea: Sliding window for all substring sizes [1, n].
    */
   class TestAllSubstrings implements P647PalindromicSubstrings {
 
@@ -55,7 +55,7 @@ interface P647PalindromicSubstrings {
    *
    * <p>Extra memory: O(n<sup>2</sup>)
    *
-   * <p>Key: {@code boolean dp[l][r]} represents the substring {@code s[l, r]} is a palindrome.
+   * <p>Key idea: {@code boolean dp[l][r]} represents the substring {@code s[l, r]} is a palindrome.
    *
    * <p>Base case: single letter and double letter palindromes.
    *

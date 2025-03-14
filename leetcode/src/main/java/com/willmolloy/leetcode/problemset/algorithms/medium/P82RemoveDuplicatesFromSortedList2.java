@@ -8,7 +8,8 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: helper method with recursive call to skip runs of duplicates, even if differing value
+ * <p>Key idea: helper method with recursive call to skip runs of duplicates, even if differing
+ * value
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P83RemoveDuplicatesFromSortedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>

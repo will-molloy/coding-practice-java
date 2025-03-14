@@ -12,8 +12,9 @@ import java.util.List;
  *
  * <p>Space: O(1) (O(n) including result list, used list because Java array api is ugly (EJ 28))
  *
- * <p>Key: Checking if {@code intervals[i]} can be merged into {@code newInterval} and if {@code
- * newInterval} can be merged into {@code intervals[i]} (i.e. need to check both, not just one).
+ * <p>Key idea: Checking if {@code intervals[i]} can be merged into {@code newInterval} and if
+ * {@code newInterval} can be merged into {@code intervals[i]} (i.e. need to check both, not just
+ * one).
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P56MergeIntervals
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P435NonOverlappingIntervals

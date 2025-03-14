@@ -6,7 +6,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Runtime: O(n*n)
  *
- * <p>Key: going extra on top and right borders so final elements are filled in
+ * <p>Key idea: going extra on top and right borders so final elements are filled in
  *
  * @see P54SpiralMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>

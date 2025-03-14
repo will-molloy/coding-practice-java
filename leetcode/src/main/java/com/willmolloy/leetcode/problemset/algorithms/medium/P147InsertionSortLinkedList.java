@@ -10,8 +10,8 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Insert one node each iteration (growing sorted list by 1). Will need previous and next
- * pointer to do the insertion.
+ * <p>Key idea: Insert one node each iteration (growing sorted list by 1). Will need previous and
+ * next pointer to do the insertion.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see P148SortLinkedList

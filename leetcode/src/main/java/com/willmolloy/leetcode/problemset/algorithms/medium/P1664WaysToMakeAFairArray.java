@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Array can be partitioned into those before and those after the chosen value. Those before
- * keep original index, those after are shifted back once (even become odd (and vice versa)).
+ * <p>Key idea: Array can be partitioned into those before and those after the chosen value. Those
+ * before keep original index, those after are shifted back once (even become odd (and vice versa)).
  *
  * <p>Maintaining sums for before/after and updating with each num processed (in O(1)) allows for an
  * O(n) time.

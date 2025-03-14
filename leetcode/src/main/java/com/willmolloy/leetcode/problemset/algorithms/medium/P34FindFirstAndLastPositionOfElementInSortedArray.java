@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: sorted sequence, so O(log n) binary search can be used
+ * <p>Key idea: sorted sequence, so O(log n) binary search can be used
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

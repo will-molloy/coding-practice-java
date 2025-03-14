@@ -10,7 +10,8 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: DFS from every cell (consider each cell as the source). Memoise the result for each cell.
+ * <p>Key idea: DFS from every cell (consider each cell as the source). Memoise the result for each
+ * cell.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

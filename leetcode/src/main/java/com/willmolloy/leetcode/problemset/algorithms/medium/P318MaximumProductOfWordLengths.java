@@ -14,8 +14,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Preprocess words into set/bit mask to make the comparison O(1), reducing overall runtime
- * from O(n<sup>2</sup> * s) (or even O(n<sup>2</sup> * s<sup>2</sup>)) to O(n<sup>2</sup>).
+ * <p>Key idea: Preprocess words into set/bit mask to make the comparison O(1), reducing overall
+ * runtime from O(n<sup>2</sup> * s) (or even O(n<sup>2</sup> * s<sup>2</sup>)) to O(n<sup>2</sup>).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

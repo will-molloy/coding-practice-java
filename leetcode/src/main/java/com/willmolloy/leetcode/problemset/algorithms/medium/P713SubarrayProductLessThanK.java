@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: For each {@code end}, find smallest {@code start} such that the window nums[{@code
+ * <p>Key idea: For each {@code end}, find smallest {@code start} such that the window nums[{@code
  * start}, {@code end}] is valid.
  *
  * <p>Intuition: think of the case where the whole array is valid.

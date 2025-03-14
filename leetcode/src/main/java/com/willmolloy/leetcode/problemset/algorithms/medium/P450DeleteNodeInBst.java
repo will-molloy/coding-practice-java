@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: When both children exist promote the successor.
+ * <p>Key idea: When both children exist promote the successor.
  *
  * @see com.willmolloy.dsa.trees.TreeDeleteImpl
  * @author <a href=https://willmolloy.com>Will Molloy</a>

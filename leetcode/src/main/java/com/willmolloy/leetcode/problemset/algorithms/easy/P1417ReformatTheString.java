@@ -18,7 +18,7 @@ import java.util.List;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Build the string rather than generate permutations.
+ * <p>Key idea: Build the string rather than generate permutations.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

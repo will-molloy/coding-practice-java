@@ -8,7 +8,7 @@ import java.math.BigInteger;
  *
  * <p>Runtime: O(nm)
  *
- * <p>Key: cheat and use bigint TODO supposed to implement multiplication algorithm!
+ * <p>Key idea: cheat and use bigint TODO supposed to implement multiplication algorithm!
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

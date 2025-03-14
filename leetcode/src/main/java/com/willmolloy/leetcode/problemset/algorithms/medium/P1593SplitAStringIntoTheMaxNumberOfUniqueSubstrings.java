@@ -11,7 +11,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Recursively try all the combinations (DFS backtracking).
+ * <p>Key idea: Recursively try all the combinations (DFS backtracking).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

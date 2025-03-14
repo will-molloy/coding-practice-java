@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Custom comparator to sort the words.
+ * <p>Key idea: Custom comparator to sort the words.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

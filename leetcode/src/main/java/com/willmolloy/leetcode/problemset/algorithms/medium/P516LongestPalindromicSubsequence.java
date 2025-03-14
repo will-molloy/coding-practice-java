@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(n<sup>2</sup>)
  *
- * <p>Key: When the palindrome can't be extended then {@code dp[l][r] = max(dp[l + 1][r], dp[l][r -
- * 1])} because both subsequences (remove first/remove last) need to be considered.
+ * <p>Key idea: When the palindrome can't be extended then {@code dp[l][r] = max(dp[l + 1][r],
+ * dp[l][r - 1])} because both subsequences (remove first/remove last) need to be considered.
  *
  * @see P5LongestPalindromicSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>

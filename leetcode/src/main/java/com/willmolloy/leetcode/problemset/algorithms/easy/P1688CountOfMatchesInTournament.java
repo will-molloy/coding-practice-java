@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Simulate each round (either odd/even n).
+ * <p>Key idea: Simulate each round (either odd/even n).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

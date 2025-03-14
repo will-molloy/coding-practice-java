@@ -11,8 +11,8 @@ import java.util.Deque;
  *
  * <p>Extra memory: O(n) (NOT O(k), possibly never remove from the deque)
  *
- * <p>Key: Monotonic queue (e.g. 1xx always beats 21x, so remove the 2), but also ensuring it will
- * end with at least k elements.
+ * <p>Key idea: Monotonic queue (e.g. 1xx always beats 21x, so remove the 2), but also ensuring it
+ * will end with at least k elements.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

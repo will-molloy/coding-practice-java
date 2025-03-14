@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(rows * cols) (recursion stack space)
  *
- * <p>Key: Result is always <= 2, since can isolate any corner block with at most two removals.
+ * <p>Key idea: Result is always <= 2, since can isolate any corner block with at most two removals.
  * Therefore only need to test case where result is 0 (test initially) and 1 (try remove each 1).
  *
  * @see P130SurroundedRegions

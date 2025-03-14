@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Two cases:
+ * <p>Key idea: Two cases:
  *
  * <ol>
  *   <li>Numbers with fewer digits than n has (x, xx, etc) - all are valid, use {@link Math#pow} to

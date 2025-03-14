@@ -14,8 +14,8 @@ import java.util.Set;
  *
  * <p>Extra space: O(n + d) - colours map and DFS stack space is O(n), adj list is O(d)
  *
- * <p>Key: Track node colours in hashmap. Colour with DFS. Consider that any node could be a source
- * node.
+ * <p>Key idea: Track node colours in hashmap. Colour with DFS. Consider that any node could be a
+ * source node.
  *
  * @see P207CourseSchedule
  * @see P210CourseSchedule2

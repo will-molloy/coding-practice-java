@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O({@code target})
  *
- * <p>Key: Dynamic programming. The recurrence relation is:
+ * <p>Key idea: Dynamic programming. The recurrence relation is:
  *
  * <ul>
  *   <li>dp[0] = 1

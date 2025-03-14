@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra space: O(w1 * w2)
  *
- * <p>Key: Not hard to code (top down vs bottom up etc.); tricky part is coming up with the
+ * <p>Key idea: Not hard to code (top down vs bottom up etc.); tricky part is coming up with the
  * recurrence.
  *
  * <p>The key here is realising we have 3 choices: insert/delete/replace (and a 4th choice - 'do

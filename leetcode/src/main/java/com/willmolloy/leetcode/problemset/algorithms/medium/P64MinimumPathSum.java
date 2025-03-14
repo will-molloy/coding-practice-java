@@ -4,7 +4,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * <a
  * href=https://leetcode.com/problems/minimum-path-sum>https://leetcode.com/problems/minimum-path-sum</a>
  *
- * <p>Key: dynamic programming TODO shortest path algorithm (graph) is faster?
+ * <p>Key idea: dynamic programming TODO shortest path algorithm (graph) is faster?
  *
  * @see P62UniquePaths
  * @see P63UniquePaths2

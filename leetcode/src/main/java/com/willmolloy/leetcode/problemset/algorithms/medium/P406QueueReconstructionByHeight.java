@@ -13,8 +13,8 @@ import java.util.List;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Sort before starting insertion procedure. Don't reconstruct in-place, easier to insert
- * via {@code ArrayList}.
+ * <p>Key idea: Sort before starting insertion procedure. Don't reconstruct in-place, easier to
+ * insert via {@code ArrayList}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

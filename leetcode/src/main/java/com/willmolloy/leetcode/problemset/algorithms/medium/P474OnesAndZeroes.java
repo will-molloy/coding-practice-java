@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n * maxZeroes * maxOnes)
  *
- * <p>Key: Knapsack problem.
+ * <p>Key idea: Knapsack problem.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

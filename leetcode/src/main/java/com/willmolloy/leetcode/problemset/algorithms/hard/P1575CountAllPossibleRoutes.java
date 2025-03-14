@@ -12,8 +12,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O({@code locations.length} * {@code fuel})
  *
- * <p>Key: DFS from {@code start} with {@code fuel} fuel. When reaching {@code finish}, don't stop,
- * just increment the count, only stop when running out of fuel.
+ * <p>Key idea: DFS from {@code start} with {@code fuel} fuel. When reaching {@code finish}, don't
+ * stop, just increment the count, only stop when running out of fuel.
  *
  * <p>Representing the problem like this (a tree with {@code i}/{@code fuel} as the node/state) the
  * recursive calls overlap, so dynamic programming (memoisation) can be applied.

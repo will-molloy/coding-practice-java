@@ -3,7 +3,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 /**
  * <a href=https://leetcode.com/problems/powx-n>https://leetcode.com/problems/powx-n</a>
  *
- * <p>Key: knowledge of math, recursion, memoization of sub problem solution, ultimately dp
+ * <p>Key idea: knowledge of math, recursion, memoization of sub problem solution, ultimately dp
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

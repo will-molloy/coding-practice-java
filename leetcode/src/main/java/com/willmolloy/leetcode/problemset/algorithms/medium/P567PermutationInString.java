@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Sliding window. Same idea as {@link P438FindAllAnagramsInAString}.
+ * <p>Key idea: Sliding window. Same idea as {@link P438FindAllAnagramsInAString}.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P76MinimumWindowSubstring
  * @see P438FindAllAnagramsInAString

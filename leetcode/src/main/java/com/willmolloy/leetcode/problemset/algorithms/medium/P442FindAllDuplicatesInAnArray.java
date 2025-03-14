@@ -11,8 +11,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Mark {@code num} seen by making {@code nums[num]} negative. Works since {@code num} is in
- * [1, n], so each has a bucket.
+ * <p>Key idea: Mark {@code num} seen by making {@code nums[num]} negative. Works since {@code num}
+ * is in [1, n], so each has a bucket.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P645SetMismatch
  * @author <a href=https://willmolloy.com>Will Molloy</a>

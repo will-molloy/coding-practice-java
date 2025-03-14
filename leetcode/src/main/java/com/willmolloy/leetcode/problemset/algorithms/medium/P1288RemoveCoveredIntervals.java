@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Initially sort by start ascending and end descending such that 'covering' intervals
+ * <p>Key idea: Initially sort by start ascending and end descending such that 'covering' intervals
  * (those which cover other intervals) appear earlier in the array. Can then track the current
  * 'covering' interval ({@code anchor}).
  *

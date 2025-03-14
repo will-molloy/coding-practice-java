@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Segment tree. Key to implementing segment tree? Splitting range in half.
+ * <p>Key idea: Segment tree. Key to implementing segment tree? Splitting range in half.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

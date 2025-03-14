@@ -10,7 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: dynamic programming. dp[i] represents the number of arithmetic subarrays ending at a[i].
+ * <p>Key idea: dynamic programming. dp[i] represents the number of arithmetic subarrays ending at
+ * a[i].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

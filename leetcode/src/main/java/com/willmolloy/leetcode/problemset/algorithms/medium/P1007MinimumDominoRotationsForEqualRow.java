@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: First figure out which values we could flip to. There are at most 2 of them.
+ * <p>Key idea: First figure out which values we could flip to. There are at most 2 of them.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

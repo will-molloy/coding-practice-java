@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(n<sup>2</sup>)
  *
- * <p>Key: Dp formula is {@code dp[l][r] = s[l] == s[r] && dp[l + 1][r - 1]} therefore need to loop
- * {@code l} in reverse order so {@code l + 1} is computed first.
+ * <p>Key idea: Dp formula is {@code dp[l][r] = s[l] == s[r] && dp[l + 1][r - 1]} therefore need to
+ * loop {@code l} in reverse order so {@code l + 1} is computed first.
  *
  * @see P516LongestPalindromicSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>

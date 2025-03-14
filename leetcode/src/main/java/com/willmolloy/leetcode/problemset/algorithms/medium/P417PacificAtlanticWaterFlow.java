@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Extra memory: O({@code rows} * {@code cols})
  *
- * <p>Key: Rather than traverse (with either dfs or bfs) from each cell, work in reverse by
+ * <p>Key idea: Rather than traverse (with either dfs or bfs) from each cell, work in reverse by
  * traversing from the borders (with the opposite rule - that the water level must increase in
  * height).
  *

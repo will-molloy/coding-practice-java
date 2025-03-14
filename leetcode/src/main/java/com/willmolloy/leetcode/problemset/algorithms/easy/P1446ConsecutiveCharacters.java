@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Two pointers: one to anchor start of sequence, second to reach end.
+ * <p>Key idea: Two pointers: one to anchor start of sequence, second to reach end.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Need extra code for the special case (when root is changed) otherwise its a
+ * <p>Key idea: Need extra code for the special case (when root is changed) otherwise its a
  * straightforward DFS.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

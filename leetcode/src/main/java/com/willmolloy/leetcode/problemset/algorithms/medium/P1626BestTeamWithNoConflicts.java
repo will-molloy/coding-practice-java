@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Sort first then it becomes a variant of LIS problem.
+ * <p>Key idea: Sort first then it becomes a variant of LIS problem.
  *
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>

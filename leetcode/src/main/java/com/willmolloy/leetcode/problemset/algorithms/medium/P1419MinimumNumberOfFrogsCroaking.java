@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: State machine.
+ * <p>Key idea: State machine.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

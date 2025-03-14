@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * <p>Space: O(n!/k!(n-k)!)
  *
- * <p>Key: permutations algorithm, (recursive backtracking, DFS)
+ * <p>Key idea: permutations algorithm, (recursive backtracking, DFS)
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

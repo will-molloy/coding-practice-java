@@ -15,8 +15,8 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: DFS from each word, traverse to each word with one character removed. Cache the results
- * (DP).
+ * <p>Key idea: DFS from each word, traverse to each word with one character removed. Cache the
+ * results (DP).
  *
  * <p>DFS always halts because it moves towards empty string.
  *

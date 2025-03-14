@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Just use the range: [-n/2, n/2].
+ * <p>Key idea: Just use the range: [-n/2, n/2].
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -18,7 +18,7 @@ interface P673NumberOfLongestIncreasingSubsequence {
    *
    * <p>Space: O(n)
    *
-   * <p>Key: Tracking 2 things in the dp (in this case length and count).
+   * <p>Key idea: Tracking 2 things in the dp (in this case length and count).
    *
    * @see <a href=https://www.youtube.com/watch?v=fV-TF4OvZpk>Back To Back SWE's video</a>
    */
@@ -89,7 +89,7 @@ interface P673NumberOfLongestIncreasingSubsequence {
    *
    * <p>Space: O(n)
    *
-   * <p>Key: Understanding what information the tree is representing.
+   * <p>Key idea: Understanding what information the tree is representing.
    *
    * @see <a href=https://leetcode.com/articles/number-of-longest-increasing-subsequence>Leetcode
    *     article</a>

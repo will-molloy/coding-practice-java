@@ -13,8 +13,8 @@ import java.util.Set;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: MST. Prims is better than Kruskals for dense graphs (here the graph is complete (worst
- * case scenario), Kruskal has to sort n<sup>2</sup> edges which gets TLE).
+ * <p>Key idea: MST. Prims is better than Kruskals for dense graphs (here the graph is complete
+ * (worst case scenario), Kruskal has to sort n<sup>2</sup> edges which gets TLE).
  *
  * @see
  *     com.willmolloy.leetcode.problemset.algorithms.hard.P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable

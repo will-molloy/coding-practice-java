@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Make every element the median (smallest total distance), each turn change 2 so its sum
- * distance from median divide 2.
+ * <p>Key idea: Make every element the median (smallest total distance), each turn change 2 so its
+ * sum distance from median divide 2.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

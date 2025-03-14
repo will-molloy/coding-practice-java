@@ -13,7 +13,7 @@ import java.util.List;
  *
  * <p>Space: O(nums) (i.e. total number of elements in nums)
  *
- * <p>Key: Adding {@code row} and {@code col} produces the diagonal index:
+ * <p>Key idea: Adding {@code row} and {@code col} produces the diagonal index:
  *
  * <p><img src="https://i.imgur.com/MRDn9hS.png" />
  *

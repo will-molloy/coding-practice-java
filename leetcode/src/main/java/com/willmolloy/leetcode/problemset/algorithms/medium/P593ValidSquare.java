@@ -13,7 +13,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Square can be rotated. Square has 4 equal sides, 2 equal diagonals.
+ * <p>Key idea: Square can be rotated. Square has 4 equal sides, 2 equal diagonals.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

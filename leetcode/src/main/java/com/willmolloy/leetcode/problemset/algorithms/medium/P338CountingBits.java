@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Draw out the dp table to realise the pattern. In this case it repeats every power of 2.
+ * <p>Key idea: Draw out the dp table to realise the pattern. In this case it repeats every power of
+ * 2.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

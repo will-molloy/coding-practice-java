@@ -7,8 +7,8 @@ import java.util.TreeMap;
  * <a
  * href=https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number>https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number</a>
  *
- * <p>Key: reading the problem constraints and realising that there are only 101 possible values for
- * {@code nums[i]}.
+ * <p>Key idea: reading the problem constraints and realising that there are only 101 possible
+ * values for {@code nums[i]}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

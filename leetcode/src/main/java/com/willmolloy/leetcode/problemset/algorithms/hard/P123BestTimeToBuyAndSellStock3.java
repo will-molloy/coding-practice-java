@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
  * <a
  * href=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii>https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii</a>
  *
- * <p>Key: dynamic programming
+ * <p>Key idea: dynamic programming
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P122BestTimeToBuyAndSellStock2

@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n + k) = O(n)
  *
- * <p>Key: Heap (priority queue). Cannot use {@code addAll} with a priority queue it seems.
+ * <p>Key idea: Heap (priority queue). Cannot use {@code addAll} with a priority queue it seems.
  *
  * @see P347TopKFrequentElements
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P414ThirdMaximumNumber

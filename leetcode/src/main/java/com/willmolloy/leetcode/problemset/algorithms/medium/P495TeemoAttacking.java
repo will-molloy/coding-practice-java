@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Take the min of time between attacks and poison duration; that's how long the poison is
- * per attack by definition.
+ * <p>Key idea: Take the min of time between attacks and poison duration; that's how long the poison
+ * is per attack by definition.
  *
  * @see P56MergeIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>

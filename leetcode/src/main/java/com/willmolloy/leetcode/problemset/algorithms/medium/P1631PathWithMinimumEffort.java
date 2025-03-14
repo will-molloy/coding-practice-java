@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: Binary search the minimum effort. Test the effort using BFS or similar.
+ * <p>Key idea: Binary search the minimum effort. Test the effort using BFS or similar.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

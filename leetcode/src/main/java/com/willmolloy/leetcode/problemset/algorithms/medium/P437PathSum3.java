@@ -13,8 +13,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n<sup>2</sup>)
  *
- * <p>Key: Need to consider all possible paths (i.e. starting and ending at any node on path from
- * root to leaf). Make DFS state all paths ending at current node. Easy to see with {@code
+ * <p>Key idea: Need to consider all possible paths (i.e. starting and ending at any node on path
+ * from root to leaf). Make DFS state all paths ending at current node. Easy to see with {@code
  * List<List<Integer>> paths} and then use {@code Map<Integer, Integer> pathSumCounts} for
  * efficiency.
  *

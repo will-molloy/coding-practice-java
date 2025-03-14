@@ -8,7 +8,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Difficulty: Hard.
  *
- * <p>Key: Solution duplicates {@link
+ * <p>Key idea: Solution duplicates {@link
  * com.willmolloy.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst}.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P606ConstructStringFromBinaryTree

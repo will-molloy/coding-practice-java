@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Two pointers moving inwards.
+ * <p>Key idea: Two pointers moving inwards.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P151ReverseWordsInAString
  * @see P541ReverseString2

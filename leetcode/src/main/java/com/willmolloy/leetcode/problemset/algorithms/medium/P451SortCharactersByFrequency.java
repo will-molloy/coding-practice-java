@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Count char freqs.
+ * <p>Key idea: Count char freqs.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

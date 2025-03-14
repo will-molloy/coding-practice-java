@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Result looks like {@code "a*[a-z]z*"} (with length n).
+ * <p>Key idea: Result looks like {@code "a*[a-z]z*"} (with length n).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

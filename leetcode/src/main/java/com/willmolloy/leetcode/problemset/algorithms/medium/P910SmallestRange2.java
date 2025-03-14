@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(log(n)) ({@link Arrays#sort})
  *
- * <p>Key: First sort, add {@code k} to smaller {@code nums[i]} and subtract {@code k} from larger
- * {@code nums[i]}.
+ * <p>Key idea: First sort, add {@code k} to smaller {@code nums[i]} and subtract {@code k} from
+ * larger {@code nums[i]}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Space: O(1)
  *
- * <p>Key: knowing that pure bruteforce (via. recursive backtracking) is fine for small inputs
+ * <p>Key idea: knowing that pure bruteforce (via. recursive backtracking) is fine for small inputs
  *
  * @see P51NQueens
  * @see P212WordSearch2

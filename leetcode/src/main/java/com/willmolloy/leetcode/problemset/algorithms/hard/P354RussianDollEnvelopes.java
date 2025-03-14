@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra memory: O(n) + lis algorithm
  *
- * <p>Key: Longest increasing subsequence in 2 dimensions.
+ * <p>Key idea: Longest increasing subsequence in 2 dimensions.
  *
  * <p>First sort by width/height (calling here the 'former') ascending so its trivially increasing.
  *

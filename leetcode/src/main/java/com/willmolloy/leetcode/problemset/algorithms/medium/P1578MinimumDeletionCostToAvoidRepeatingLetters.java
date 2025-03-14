@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Keep max in each consecutive run of characters.
+ * <p>Key idea: Keep max in each consecutive run of characters.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

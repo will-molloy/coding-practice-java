@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Inorder traversal each BST and then merge the two sorted lists.
+ * <p>Key idea: Inorder traversal each BST and then merge the two sorted lists.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P21MergeTwoSortedLists
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P23MergeKSortedLists

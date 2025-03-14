@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Tracking a 'balance' (in this case increment when seeing '(' and decrement when seeing
- * ')'); here we track a balance 'range' (range of current '(').
+ * <p>Key idea: Tracking a 'balance' (in this case increment when seeing '(' and decrement when
+ * seeing ')'); here we track a balance 'range' (range of current '(').
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -12,8 +12,8 @@ import java.util.Map;
  *
  * <p>Extra memory: O({@code order})
  *
- * <p>Key: Create {@code Map<Character, Integer>} to encode the alien order. Then its a standard
- * 'isSorted' algorithm - check adjacent elements are in order.
+ * <p>Key idea: Create {@code Map<Character, Integer>} to encode the alien order. Then its a
+ * standard 'isSorted' algorithm - check adjacent elements are in order.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

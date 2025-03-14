@@ -9,8 +9,8 @@ import java.util.stream.IntStream;
  *
  * <p>Space: O(n)
  *
- * <p>Key: can stop at {@code sqrt(n)} because beyond that we can not eliminate potential primes as
- * we've already tested the other side of the multiple.
+ * <p>Key idea: can stop at {@code sqrt(n)} because beyond that we can not eliminate potential
+ * primes as we've already tested the other side of the multiple.
  *
  * @see <a
  *     href=https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes>https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a>

@@ -13,7 +13,7 @@ import java.util.List;
  *
  * <p>Extra memory: O((n - k)!) (pre-compute, so hold all combinations in memory) TODO correct?
  *
- * <p>Key: Backtracking, provide starting index to next DFS frame so get next combinations in
+ * <p>Key idea: Backtracking, provide starting index to next DFS frame so get next combinations in
  * lexicographical order (otherwise get permutations).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

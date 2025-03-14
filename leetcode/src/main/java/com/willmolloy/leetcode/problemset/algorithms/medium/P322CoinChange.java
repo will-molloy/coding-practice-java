@@ -9,10 +9,10 @@ import java.util.Arrays;
  *
  * <p>Space: O(n)
  *
- * <p>Key: Getting the dp formula was straight forward. Hard part was handling the case when amounts
- * couldn't be created; most elegant way to handle this was setting {@code dp[i]} to {@code n + 1}
- * (a local maximum) initially. This allowed {@code Math.min} to be used when assigning {@code
- * dp[i]} without risk of overflows.
+ * <p>Key idea: Getting the dp formula was straight forward. Hard part was handling the case when
+ * amounts couldn't be created; most elegant way to handle this was setting {@code dp[i]} to {@code
+ * n + 1} (a local maximum) initially. This allowed {@code Math.min} to be used when assigning
+ * {@code dp[i]} without risk of overflows.
  *
  * @see P518CoinChange2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

@@ -6,7 +6,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * <a
  * href=https://leetcode.com/problems/search-in-a-binary-search-tree>https://leetcode.com/problems/search-in-a-binary-search-tree/</a>
  *
- * <p>Key: In BST larger values are on the right, smaller on left.
+ * <p>Key idea: In BST larger values are on the right, smaller on left.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P98ValidateBinarySearchTree
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P701InsertIntoABinarySearchTree

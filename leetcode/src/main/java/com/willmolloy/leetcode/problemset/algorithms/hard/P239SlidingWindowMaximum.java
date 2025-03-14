@@ -11,7 +11,7 @@ import java.util.Deque;
  *
  * <p>Extra space: O(k)
  *
- * <p>Key: It is guaranteed the beginning of the window is removed first (by definition!).
+ * <p>Key idea: It is guaranteed the beginning of the window is removed first (by definition!).
  *
  * <p>Therefore, can safely remove smaller elements from the end of the queue (e.g. have window =
  * [1, 2, 3], no reason to keep the 1 or the 2; they'll be removed before the 3 and the 3 will

@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: The rotation partitions the sorted sequence into 2 sorted partitions. E.g. <3,4,5,0,1,2>
- * = <3,4,5> ++ <0,1,2>. (If no rotation then second partition is empty.)
+ * <p>Key idea: The rotation partitions the sorted sequence into 2 sorted partitions. E.g.
+ * <3,4,5,0,1,2> = <3,4,5> ++ <0,1,2>. (If no rotation then second partition is empty.)
  *
  * @see P81SearchInRotatedSortedArray2
  * @see P153FindMinimumInRotatedSortedArray

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Cycle detection.
+ * <p>Key idea: Cycle detection.
  *
  * @see P142LinkedListCycle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>

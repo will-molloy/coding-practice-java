@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Store parents in table so can traverse up tree.
+ * <p>Key idea: Store parents in table so can traverse up tree.
  *
  * @see P1530NumberOfGoodLeafNodesPairs
  * @author <a href=https://willmolloy.com>Will Molloy</a>

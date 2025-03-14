@@ -12,7 +12,7 @@ import java.util.Queue;
  *
  * <p>Extra memory: O(w) = O(n)
  *
- * <p>Key: Straight forward. Test each level. Use BFS to traverse level by level.
+ * <p>Key idea: Straight forward. Test each level. Use BFS to traverse level by level.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

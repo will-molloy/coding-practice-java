@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n) TODO O(1) space is possible
  *
- * <p>Key: Store copied nodes in map so lookup same node if already created copy.
+ * <p>Key idea: Store copied nodes in map so lookup same node if already created copy.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

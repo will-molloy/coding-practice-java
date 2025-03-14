@@ -8,9 +8,9 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Visualise the problem as a tree rooted at n where each child is that of subtracting a
- * non-zero square number (each path leads to zero since you can subtract 1). At each step, test if
- * there is a path where the other player can't win.
+ * <p>Key idea: Visualise the problem as a tree rooted at n where each child is that of subtracting
+ * a non-zero square number (each path leads to zero since you can subtract 1). At each step, test
+ * if there is a path where the other player can't win.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P877StoneGame
  * @author <a href=https://willmolloy.com>Will Molloy</a>

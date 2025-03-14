@@ -23,7 +23,7 @@ interface P1044LongestDuplicateSubstring {
    *
    * <p>Extra space: O(n<sup>2</sup>)
    *
-   * <p>Key: Generate all contiguous substrings.
+   * <p>Key idea: Generate all contiguous substrings.
    */
   class BruteForce implements P1044LongestDuplicateSubstring {
 
@@ -55,8 +55,8 @@ interface P1044LongestDuplicateSubstring {
    *
    * <p>Extra space: O(n)
    *
-   * <p>Key: Binary search the substring length. Works because if there is a duplicate substring for
-   * a given length, there must be one for all smaller lengths.
+   * <p>Key idea: Binary search the substring length. Works because if there is a duplicate
+   * substring for a given length, there must be one for all smaller lengths.
    */
   class BinarySearch implements P1044LongestDuplicateSubstring {
 
@@ -103,7 +103,7 @@ interface P1044LongestDuplicateSubstring {
    *
    * <p>Extra space: O(n)
    *
-   * <p>Key: Rolling hash to efficiently find duplicate substring of given length.
+   * <p>Key idea: Rolling hash to efficiently find duplicate substring of given length.
    */
   class BinarySearchWithRollingHash implements P1044LongestDuplicateSubstring {
 

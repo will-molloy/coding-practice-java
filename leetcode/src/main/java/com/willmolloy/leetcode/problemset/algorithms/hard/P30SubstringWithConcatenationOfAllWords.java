@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * <p>Space: O(s.length)
  *
- * <p>Key: map to track required count, and map to track seen count for each starting index
+ * <p>Key idea: map to track required count, and map to track seen count for each starting index
  *
  * @see P76MinimumWindowSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>

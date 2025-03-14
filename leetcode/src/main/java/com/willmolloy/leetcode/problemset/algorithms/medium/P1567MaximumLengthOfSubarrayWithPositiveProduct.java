@@ -11,9 +11,9 @@ import java.util.List;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: First store positions of all zeros. Then consider every subarray between zeros (no longer
- * worry about zeros). When considering a subarray, if the count of negatives is even can use all of
- * it, otherwise compare removing the first and last negative.
+ * <p>Key idea: First store positions of all zeros. Then consider every subarray between zeros (no
+ * longer worry about zeros). When considering a subarray, if the count of negatives is even can use
+ * all of it, otherwise compare removing the first and last negative.
  *
  * <p>Further, considering product as 1, -1, or 0 since we only care about the length and actual
  * product may overflow.

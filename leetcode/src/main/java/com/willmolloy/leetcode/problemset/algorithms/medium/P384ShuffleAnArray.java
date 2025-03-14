@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Swap with random index in not yet processed range.
+ * <p>Key idea: Swap with random index in not yet processed range.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

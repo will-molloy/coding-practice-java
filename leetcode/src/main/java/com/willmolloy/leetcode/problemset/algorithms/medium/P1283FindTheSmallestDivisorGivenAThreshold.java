@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Picking divisor from [1, max(nums)] creates a partition [false, true], so can use binary
- * search to find the best divisor.
+ * <p>Key idea: Picking divisor from [1, max(nums)] creates a partition [false, true], so can use
+ * binary search to find the best divisor.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P278FirstBadVersion
  * @see P1482MinimumNumberOfDaysToMakeMBouquets

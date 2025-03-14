@@ -11,8 +11,8 @@ import java.util.List;
  *
  * <p>Extra memory: O(rows * cols)
  *
- * <p>Key: Precompute both row minimums and column maximums. Then scan matrix again to find elements
- * in both sets.
+ * <p>Key idea: Precompute both row minimums and column maximums. Then scan matrix again to find
+ * elements in both sets.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

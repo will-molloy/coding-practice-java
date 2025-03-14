@@ -10,7 +10,8 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: For O(n) time O(1) space: compare first half of list with reversed second half of list.
+ * <p>Key idea: For O(n) time O(1) space: compare first half of list with reversed second half of
+ * list.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

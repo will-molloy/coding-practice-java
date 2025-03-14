@@ -13,8 +13,8 @@ import java.util.Queue;
  *
  * <p>Extra memory: O(sum(word : words))
  *
- * <p>Key: Want to exclude words which are (proper) suffixes of other words. Trie is efficient data
- * structure for this.
+ * <p>Key idea: Want to exclude words which are (proper) suffixes of other words. Trie is efficient
+ * data structure for this.
  *
  * @see P208ImplementTrie
  * @author <a href=https://willmolloy.com>Will Molloy</a>

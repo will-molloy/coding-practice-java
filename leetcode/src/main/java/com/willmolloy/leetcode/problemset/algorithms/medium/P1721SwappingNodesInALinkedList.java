@@ -12,7 +12,7 @@ import java.util.List;
  *
  * <p>Extra memory: O(n) TODO O(1) memory is possible
  *
- * <p>Key: Dump into array first.
+ * <p>Key idea: Dump into array first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

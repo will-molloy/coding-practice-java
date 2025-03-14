@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Track max so far from right.
+ * <p>Key idea: Track max so far from right.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

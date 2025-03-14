@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Meet at (any) median. More of a math problem than coding.
+ * <p>Key idea: Meet at (any) median. More of a math problem than coding.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P453MinimumMovesToEqualArrayElements
  * @author <a href=https://willmolloy.com>Will Molloy</a>

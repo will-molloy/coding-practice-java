@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h) TODO O(1) which is asked as followup and is why question is 'hard'
  *
- * <p>Key: Inorder traversal. Keep track of previous node.
+ * <p>Key idea: Inorder traversal. Keep track of previous node.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

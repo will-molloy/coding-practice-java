@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Visit larger nodes first so visited {@code sum} is the value the current node should
+ * <p>Key idea: Visit larger nodes first so visited {@code sum} is the value the current node should
  * have.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

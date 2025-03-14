@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Break problem into steps.
+ * <p>Key idea: Break problem into steps.
  *
  * <ol>
  *   <li>Get halves (slow/fast ptr, don't forget to break list at middle!)

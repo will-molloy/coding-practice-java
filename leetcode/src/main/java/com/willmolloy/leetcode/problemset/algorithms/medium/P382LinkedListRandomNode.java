@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra memory: O(n) TODO O(1) space
  *
- * <p>Key: Store nodes in table for O(1) lookup.
+ * <p>Key idea: Store nodes in table for O(1) lookup.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

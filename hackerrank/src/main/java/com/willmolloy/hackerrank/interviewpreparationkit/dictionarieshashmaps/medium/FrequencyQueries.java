@@ -11,9 +11,9 @@ import java.util.Map;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: Second HashMap to track the frequency counts. Since frequencies are stored as values and
- * value check is O(n) (on maps); this allows O(1) lookup on the values too, allowing O(n) overall
- * to avoid TLE.
+ * <p>Key idea: Second HashMap to track the frequency counts. Since frequencies are stored as values
+ * and value check is O(n) (on maps); this allows O(1) lookup on the values too, allowing O(n)
+ * overall to avoid TLE.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

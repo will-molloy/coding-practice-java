@@ -6,7 +6,7 @@ import com.willmolloy.leetcode.problemset.algorithms.medium.P116PopulatingNextRi
  * <a
  * href=https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii>https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii</a>
  *
- * <p>Key: copy Populating-Next-Right-Pointers-in-Each-Node-I
+ * <p>Key idea: copy Populating-Next-Right-Pointers-in-Each-Node-I
  *
  * @see P116PopulatingNextRightPointersInEachNode
  * @author <a href=https://willmolloy.com>Will Molloy</a>

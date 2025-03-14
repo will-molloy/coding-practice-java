@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra memory: O(h)
  *
- * <p>Key: Post order traversal, bubble up val sum and tilt sum.
+ * <p>Key idea: Post order traversal, bubble up val sum and tilt sum.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

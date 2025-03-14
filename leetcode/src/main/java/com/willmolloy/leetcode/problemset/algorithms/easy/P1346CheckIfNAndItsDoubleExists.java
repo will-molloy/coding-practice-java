@@ -11,7 +11,8 @@ import java.util.Set;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Make memory tradeoff with set to achieve O(n) time (otherwise best is O(n * log(n))).
+ * <p>Key idea: Make memory tradeoff with set to achieve O(n) time (otherwise best is O(n *
+ * log(n))).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

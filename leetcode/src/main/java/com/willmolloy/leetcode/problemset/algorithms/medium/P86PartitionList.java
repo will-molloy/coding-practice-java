@@ -10,7 +10,8 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * <p>Space: O(1)
  *
- * <p>Key: partition into two lists and join at the end, also dummy nodes to avoid null problems
+ * <p>Key idea: partition into two lists and join at the end, also dummy nodes to avoid null
+ * problems
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

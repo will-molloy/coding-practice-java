@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Want to maximise the subarray size and maximise the subarray minimum.
+ * <p>Key idea: Want to maximise the subarray size and maximise the subarray minimum.
  *
  * <p>Start with {@code nums[k]} and grow out until entire {@code nums} is considered. When moving
  * {@code i} and {@code j}, grow towards the larger of the two (greedy), this way we get a larger

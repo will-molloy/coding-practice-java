@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(s + w)
  *
- * <p>Key: preprocessing using hashmap, and a simple capturing group.
+ * <p>Key idea: preprocessing using hashmap, and a simple capturing group.
  *
  * @see com.willmolloy.hackerrank.regex.applications.easy.TheBritishAndAmericanStyleOfSpelling
  * @see com.willmolloy.hackerrank.regex.applications.easy.UkAndUsPart2

@@ -10,8 +10,8 @@ import java.util.Arrays;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy. Try pair heaviest person with lightest person, otherwise heaviest person must
- * take their own boat.
+ * <p>Key idea: Greedy. Try pair heaviest person with lightest person, otherwise heaviest person
+ * must take their own boat.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

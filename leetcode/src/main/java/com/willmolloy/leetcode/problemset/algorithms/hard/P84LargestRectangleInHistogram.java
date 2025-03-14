@@ -18,7 +18,7 @@ interface P84LargestRectangleInHistogram {
    *
    * <p>Space: O(1)
    *
-   * <p>Key: try every combination of left/right
+   * <p>Key idea: try every combination of left/right
    */
   class BruteForce implements P84LargestRectangleInHistogram {
 
@@ -46,7 +46,7 @@ interface P84LargestRectangleInHistogram {
    *
    * <p>Space: O(n)
    *
-   * <p>Key: computing indices of minimum left/right heights ahead of time
+   * <p>Key idea: computing indices of minimum left/right heights ahead of time
    */
   class Linear implements P84LargestRectangleInHistogram {
 

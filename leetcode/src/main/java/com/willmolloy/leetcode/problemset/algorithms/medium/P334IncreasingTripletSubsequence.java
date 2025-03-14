@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Track min/second min, if a third is found return true.
+ * <p>Key idea: Track min/second min, if a third is found return true.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -22,7 +22,7 @@ interface P1502CanMakeArithmeticProgressionFromSequence {
    *
    * <p>Extra memory: O(1)
    *
-   * <p>Key: Sort the array and test every distance is the same.
+   * <p>Key idea: Sort the array and test every distance is the same.
    */
   class Sort implements P1502CanMakeArithmeticProgressionFromSequence {
 
@@ -50,8 +50,8 @@ interface P1502CanMakeArithmeticProgressionFromSequence {
    *
    * <p>Extra memory: O(n)
    *
-   * <p>Key: Compute {@code step = (max - min) / (n - 1)} and test each value offset by min is on
-   * the step.
+   * <p>Key idea: Compute {@code step = (max - min) / (n - 1)} and test each value offset by min is
+   * on the step.
    */
   class DivisibleByStep implements P1502CanMakeArithmeticProgressionFromSequence {
 

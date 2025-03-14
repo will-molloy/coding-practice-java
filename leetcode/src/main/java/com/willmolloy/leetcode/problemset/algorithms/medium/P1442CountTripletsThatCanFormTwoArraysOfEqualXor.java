@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: {@code a} doesn't depend on {@code k} so can compute and store it for some {@code i} and
- * {@code j} and then compute all {@code b}s; reducing complexity from O(n<sup>4</sup>) to
+ * <p>Key idea: {@code a} doesn't depend on {@code k} so can compute and store it for some {@code i}
+ * and {@code j} and then compute all {@code b}s; reducing complexity from O(n<sup>4</sup>) to
  * O(n<sup>3</sup>).
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

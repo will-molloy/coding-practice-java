@@ -24,7 +24,7 @@ import java.util.TreeSet;
  *
  * <p>Space: O(o)
  *
- * <p>Key: TreeMap/TreeSet to implicitly sort.
+ * <p>Key idea: TreeMap/TreeSet to implicitly sort.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

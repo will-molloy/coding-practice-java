@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Maximum distance from a seat is in the middle of the seats furthest apart. Also compare
- * sitting in first/last seat.
+ * <p>Key idea: Maximum distance from a seat is in the middle of the seats furthest apart. Also
+ * compare sitting in first/last seat.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

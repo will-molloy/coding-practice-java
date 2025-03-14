@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Gather x and y co-ords for each node then do grouping/sorting into required output
+ * <p>Key idea: Gather x and y co-ords for each node then do grouping/sorting into required output
  * format.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

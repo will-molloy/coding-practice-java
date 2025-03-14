@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * <p>Extra space: O(h)
  *
- * <p>Key: dfs helper method.
+ * <p>Key idea: dfs helper method.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

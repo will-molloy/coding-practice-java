@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Brute force, test every cell.
+ * <p>Key idea: Brute force, test every cell.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -8,7 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Hard part is the mod, need to use {@code long} when computing sum otherwise it overflows.
+ * <p>Key idea: Hard part is the mod, need to use {@code long} when computing sum otherwise it
+ * overflows.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

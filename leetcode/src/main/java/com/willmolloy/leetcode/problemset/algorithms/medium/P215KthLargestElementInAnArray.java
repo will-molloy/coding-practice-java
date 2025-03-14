@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O(k)
  *
- * <p>Key: Maintain k largest elements in a min heap. At the end, head of heap must be the kth
+ * <p>Key idea: Maintain k largest elements in a min heap. At the end, head of heap must be the kth
  * largest overall.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>

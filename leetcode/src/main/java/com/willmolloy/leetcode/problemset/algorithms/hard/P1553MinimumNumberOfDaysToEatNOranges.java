@@ -25,8 +25,8 @@ interface P1553MinimumNumberOfDaysToEatNOranges {
    *
    * <p>Extra memory: O(log(n))
    *
-   * <p>Key: {@code dp[n]} needs to store same value each time (what it means for dp to work...).
-   * Forcing n/2 and n/3 (by adding n%2 and n%3) simplifies the cases.
+   * <p>Key idea: {@code dp[n]} needs to store same value each time (what it means for dp to
+   * work...). Forcing n/2 and n/3 (by adding n%2 and n%3) simplifies the cases.
    */
   class Dp implements P1553MinimumNumberOfDaysToEatNOranges {
 
@@ -60,8 +60,8 @@ interface P1553MinimumNumberOfDaysToEatNOranges {
    *
    * <p>Extra memory: O(log(n))
    *
-   * <p>Key: Traverse tree starting from n, answer is min number of levels to reach 0 (which BFS
-   * solves).
+   * <p>Key idea: Traverse tree starting from n, answer is min number of levels to reach 0 (which
+   * BFS solves).
    *
    * @see P1345JumpGame4
    */

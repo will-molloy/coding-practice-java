@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Custom comparator by first creating {@code orderMap} from {@code order}.
+ * <p>Key idea: Custom comparator by first creating {@code orderMap} from {@code order}.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

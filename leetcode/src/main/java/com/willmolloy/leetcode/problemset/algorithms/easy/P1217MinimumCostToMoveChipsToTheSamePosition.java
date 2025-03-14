@@ -8,8 +8,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Zero cost to move chip to position with same parity, so move all even to odd or all odd
- * to even, whichever is cheapest.
+ * <p>Key idea: Zero cost to move chip to position with same parity, so move all even to odd or all
+ * odd to even, whichever is cheapest.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

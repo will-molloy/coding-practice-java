@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: Sliding window.
+ * <p>Key idea: Sliding window.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

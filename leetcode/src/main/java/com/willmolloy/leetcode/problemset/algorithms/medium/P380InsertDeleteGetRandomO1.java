@@ -14,9 +14,9 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Using just list, {@code remove} is O(n); using just map/set, {@code getRandom} is O(n).
- * Therefore need a combination. Key is storing indices in map and overwriting with last element in
- * list so list remove becomes O(1) because we always just delete the last list element.
+ * <p>Key idea: Using just list, {@code remove} is O(n); using just map/set, {@code getRandom} is
+ * O(n). Therefore need a combination. Key is storing indices in map and overwriting with last
+ * element in list so list remove becomes O(1) because we always just delete the last list element.
  *
  * @see P398RandomPickIndex
  * @see P497RandomPointInNonOverlappingRectangles

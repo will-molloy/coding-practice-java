@@ -11,7 +11,7 @@ import java.util.List;
  *
  * <p>Space: O(2<sup>n</sup>)
  *
- * <p>Key: iteratively building up result set. Caching size variable so only work on previous
+ * <p>Key idea: iteratively building up result set. Caching size variable so only work on previous
  * 'state' helped.
  *
  * @see P90Subsets2

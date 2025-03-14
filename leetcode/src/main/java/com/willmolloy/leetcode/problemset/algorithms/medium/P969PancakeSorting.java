@@ -11,10 +11,10 @@ import java.util.List;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Each iteration swap the maximum element (of the sub array) to its final position by first
- * swapping to the front and then the end of the sub array; where the sub array is initially a[0,
- * n), then a[0, n-1) etc until a[0, 1) (sort done). I.e. the loop maintains the invariant that the
- * suffix is always sorted.
+ * <p>Key idea: Each iteration swap the maximum element (of the sub array) to its final position by
+ * first swapping to the front and then the end of the sub array; where the sub array is initially
+ * a[0, n), then a[0, n-1) etc until a[0, 1) (sort done). I.e. the loop maintains the invariant that
+ * the suffix is always sorted.
  *
  * <p>Conveniently, in this case, the array is always a permutation of the integers [1, n] so know
  * the current maximum and the final position of {@code a[i]} is {@code i - 1}. Otherwise would need

@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * <p>Extra memory: O(1)
  *
- * <p>Key: Greedy. Complete tasks with highest 'savings' (minimum - actual) first.
+ * <p>Key idea: Greedy. Complete tasks with highest 'savings' (minimum - actual) first.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -19,8 +19,8 @@ import java.util.stream.Collectors;
  *
  * <p>Runtime: O(n)
  *
- * <p>Key: joining into one line so single regex can be used, capturing groups, mixing greedy and
- * lazy quantification.
+ * <p>Key idea: joining into one line so single regex can be used, capturing groups, mixing greedy
+ * and lazy quantification.
  *
  * <p>TODO refactor all these problems (the {@link com.willmolloy.hackerrank.regex.applications}
  * ones) to use a single regex? Kinda cheating to use multiple regex.

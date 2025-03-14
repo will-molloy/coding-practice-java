@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(s + t)
  *
- * <p>Key: Anagram if char frequencies are equal.
+ * <p>Key idea: Anagram if char frequencies are equal.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

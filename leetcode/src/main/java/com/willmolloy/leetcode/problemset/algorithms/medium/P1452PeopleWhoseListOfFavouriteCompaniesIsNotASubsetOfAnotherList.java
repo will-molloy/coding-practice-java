@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n * m * s)
  *
- * <p>Key: Convert lists to sets to make contains check faster.
+ * <p>Key idea: Convert lists to sets to make contains check faster.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

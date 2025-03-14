@@ -25,8 +25,8 @@ interface P498DiagonalTraverse {
    *
    * <p>Space: O(1)
    *
-   * <p>Key: Simulating the process of walking through the grid. In particular separate {@code i}
-   * variable so don't have to worry about calculating position in 1d array with {@code row} and
+   * <p>Key idea: Simulating the process of walking through the grid. In particular separate {@code
+   * i} variable so don't have to worry about calculating position in 1d array with {@code row} and
    * {@code col} variables.
    */
   class SimulateWalk implements P498DiagonalTraverse {
@@ -94,7 +94,7 @@ interface P498DiagonalTraverse {
    *
    * <p>Space: O(nm)
    *
-   * <p>Key: Adding {@code row} and {@code col} produces the diagonal index:
+   * <p>Key idea: Adding {@code row} and {@code col} produces the diagonal index:
    *
    * <p><img src="https://i.imgur.com/MRDn9hS.png" />
    */

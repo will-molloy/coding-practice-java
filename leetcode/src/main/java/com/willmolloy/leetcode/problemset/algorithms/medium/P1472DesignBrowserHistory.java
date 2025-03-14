@@ -7,7 +7,7 @@ import java.util.List;
  * <a
  * href=https://leetcode.com/problems/design-browser-history>https://leetcode.com/problems/design-browser-history/</a>
  *
- * <p>Key: Store history in a list and maintain pointers to the current page and the last page.
+ * <p>Key idea: Store history in a list and maintain pointers to the current page and the last page.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

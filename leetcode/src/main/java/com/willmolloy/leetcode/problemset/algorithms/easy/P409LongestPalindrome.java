@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
  *
  * <p>Extra space: O(n)
  *
- * <p>Key: Palindrome can have at most one odd frequency since letters need to be distributed evenly
- * on either side of the centre.
+ * <p>Key idea: Palindrome can have at most one odd frequency since letters need to be distributed
+ * evenly on either side of the centre.
  *
  * @see
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1457PseudoPalindromicPathsInABinaryTree

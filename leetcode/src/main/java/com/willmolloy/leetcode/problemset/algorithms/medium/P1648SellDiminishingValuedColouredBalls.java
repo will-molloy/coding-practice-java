@@ -10,7 +10,7 @@ import java.util.TreeMap;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Sell max value first. Sell batches down to next maximum.
+ * <p>Key idea: Sell max value first. Sell batches down to next maximum.
  *
  * <p>Remember {@code long} to avoid {@code int} overflow. {@code long} can fit {@code
  * INT_MAX}<sup>2</sup>.

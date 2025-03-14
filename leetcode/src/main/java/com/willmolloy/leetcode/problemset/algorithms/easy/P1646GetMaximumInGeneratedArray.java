@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Generate array as described.
+ * <p>Key idea: Generate array as described.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

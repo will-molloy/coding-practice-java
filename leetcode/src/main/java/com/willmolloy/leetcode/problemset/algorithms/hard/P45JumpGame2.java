@@ -10,8 +10,8 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * <p>Space: O(1)
  *
- * <p>Key: Maintain range/interval of where we can jump, then greedily jumping as far as we can.
- * This is basically how a BFS/Dijkstra's algorithm would work.
+ * <p>Key idea: Maintain range/interval of where we can jump, then greedily jumping as far as we
+ * can. This is basically how a BFS/Dijkstra's algorithm would work.
  *
  * @see <a href=https://www.youtube.com/watch?v=0RHXjBKY9EM>Errichto's video</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P55JumpGame

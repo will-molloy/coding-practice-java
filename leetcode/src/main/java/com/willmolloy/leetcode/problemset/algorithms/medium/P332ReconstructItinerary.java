@@ -15,9 +15,9 @@ import java.util.PriorityQueue;
  *
  * <p>Extra memory: O(|e|)
  *
- * <p>Key: Eulerian path (variation of topological sort, except it works with cycles); remove edges
- * as they're used such that cycles are ignored and each edge is used exactly once. It is exactly
- * what this problem wants.
+ * <p>Key idea: Eulerian path (variation of topological sort, except it works with cycles); remove
+ * edges as they're used such that cycles are ignored and each edge is used exactly once. It is
+ * exactly what this problem wants.
  *
  * <p>Note that Eulerian path/circuit doesn't apply to every graph. For Eulerian circuit each node
  * must have even degree. For Eulerian path there must be zero or two nodes with odd degree (for the

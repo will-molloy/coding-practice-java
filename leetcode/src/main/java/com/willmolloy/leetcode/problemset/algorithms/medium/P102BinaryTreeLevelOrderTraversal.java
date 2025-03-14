@@ -25,7 +25,7 @@ interface P102BinaryTreeLevelOrderTraversal {
    *
    * <p>Space: O(h) (i.e. height of tree, corresponds to max recursion stack size)
    *
-   * <p>Key: recursion, knowledge of BT traversal
+   * <p>Key idea: recursion, knowledge of BT traversal
    */
   class Dfs implements P102BinaryTreeLevelOrderTraversal {
 
@@ -62,7 +62,7 @@ interface P102BinaryTreeLevelOrderTraversal {
    *
    * <p>Space: O(w) = O(n) (i.e. max width of tree, corresponds to max queue size)
    *
-   * <p>Key: caching the queue size before processing nodes in the queue
+   * <p>Key idea: caching the queue size before processing nodes in the queue
    */
   class Bfs implements P102BinaryTreeLevelOrderTraversal {
 

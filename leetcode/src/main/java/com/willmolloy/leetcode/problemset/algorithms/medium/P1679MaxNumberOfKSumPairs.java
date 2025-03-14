@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * <p>Extra memory: O(n)
  *
- * <p>Key: Hashmap; 2-sum.
+ * <p>Key idea: Hashmap; 2-sum.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>

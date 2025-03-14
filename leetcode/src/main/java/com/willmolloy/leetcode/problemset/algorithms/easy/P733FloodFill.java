@@ -7,8 +7,8 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * <p>Extra space: O(rows * cols)
  *
- * <p>Key: Need to check {@code image[row][col] == replaceColor} so only replace pixels of the same
- * color. Also need to check {@code replaceColor != newColor} otherwise won't halt cause its
+ * <p>Key idea: Need to check {@code image[row][col] == replaceColor} so only replace pixels of the
+ * same color. Also need to check {@code replaceColor != newColor} otherwise won't halt cause its
  * 'pinging' between adjacent pixels.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P130SurroundedRegions

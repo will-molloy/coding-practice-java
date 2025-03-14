@@ -11,7 +11,7 @@ import java.time.temporal.ChronoUnit;
  *
  * <p>Extra space: O(1)
  *
- * <p>Key: {@link java.time} API.
+ * <p>Key idea: {@link java.time} API.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */

@@ -12,7 +12,7 @@ import java.util.Set;
  * <a
  * href=https://leetcode.com/problems/word-break-ii>https://leetcode.com/problems/word-break-ii</a>
  *
- * <p>Key: dynamic programming, memoization (figuring out what is the key)
+ * <p>Key idea: dynamic programming, memoization (figuring out what is the key)
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P139WordBreak
  * @author <a href=https://willmolloy.com>Will Molloy</a>
