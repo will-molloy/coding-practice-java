@@ -1,5 +1,9 @@
 package com.willmolloy.leetcode.problemset.algorithms.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
 /**
  * <a
  * href=https://leetcode.com/problems/implement-trie-prefix-tree>https://leetcode.com/problems/implement-trie-prefix-tree/</a>
@@ -19,6 +23,16 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  */
 class P208ImplementTrie {
 
+  /** Trie node. */
+  private static class Node {
+    // can use Node[26] array too
+    private final Map<Character, Node> children = new HashMap<>();
+
+    // true if this node is a leaf
+    // needed because may have words as prefixes of other words e.g. fire and firetruck
+    private boolean isLeaf;
+  }
+
   /** Trie (prefix tree) data structure. */
   static class Trie {
     private final Node root = new Node();
@@ -34,12 +48,7 @@ class P208ImplementTrie {
 
       // create path for each letter in "word" from the root
       for (char c : word.toCharArray()) {
-        Node child = node.children[c - 'a'];
-        if (child == null) {
-          child = new Node();
-          node.children[c - 'a'] = child;
-        }
-        node = child;
+        node = node.children.computeIfAbsent(c, k -> new Node());
       }
 
       // mark final node as leaf even if it has children
@@ -55,17 +64,8 @@ class P208ImplementTrie {
      */
     // O(word)
     public boolean search(String word) {
-      Node node = root;
-
       // check there is a path for "word" that ends with a leaf node
-      for (char c : word.toCharArray()) {
-        Node child = node.children[c - 'a'];
-        if (child == null) {
-          return false;
-        }
-        node = child;
-      }
-      return node.isLeaf;
+      return traverse(word).map(node -> node.isLeaf).orElse(false);
     }
 
     /**
@@ -76,27 +76,21 @@ class P208ImplementTrie {
      */
     // O(prefix)
     public boolean startsWith(String prefix) {
-      Node node = root;
-
       // check there is a path for "word" doesn't necessarily have to end with a leaf
-      for (char c : prefix.toCharArray()) {
-        Node child = node.children[c - 'a'];
+      return traverse(prefix).isPresent();
+    }
+
+    // O(path)
+    private Optional<Node> traverse(String path) {
+      Node node = root;
+      for (char c : path.toCharArray()) {
+        Node child = node.children.get(c);
         if (child == null) {
-          return false;
+          return Optional.empty();
         }
         node = child;
       }
-      return true;
-    }
-
-    /** Trie node. */
-    private static class Node {
-      // children represent pointers to [a, z]
-      private final Node[] children = new Node[26];
-
-      // true if this node is a leaf
-      // needed because may have words as prefixes of other words e.g. fire and firetruck
-      private boolean isLeaf;
+      return Optional.of(node);
     }
   }
 }
