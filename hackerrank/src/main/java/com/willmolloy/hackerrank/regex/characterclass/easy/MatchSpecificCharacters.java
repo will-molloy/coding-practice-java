@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchSpecificCharacters implements Regex {
+final class MatchSpecificCharacters implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^[123][120][xs0][30Aa][xsu][.,]$");
 

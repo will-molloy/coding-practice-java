@@ -22,7 +22,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P436FindRightInterval {
+sealed interface P436FindRightInterval {
 
   int[] findRightInterval(int[][] intervals);
 
@@ -30,7 +30,7 @@ interface P436FindRightInterval {
    * Approach which uses a custom object to track original interval indices and a manual binary
    * search over interval start points.
    */
-  class WithCustomObjectAndBinarySearch implements P436FindRightInterval {
+  final class WithCustomObjectAndBinarySearch implements P436FindRightInterval {
 
     @Override
     public int[] findRightInterval(int[][] intervals) {
@@ -87,7 +87,7 @@ interface P436FindRightInterval {
    * Approach which uses a {@code TreeMap} to both track original interval indices and also provide
    * efficient searches of interval start points.
    */
-  class WithTreeMap implements P436FindRightInterval {
+  final class WithTreeMap implements P436FindRightInterval {
 
     @Override
     public int[] findRightInterval(int[][] intervals) {

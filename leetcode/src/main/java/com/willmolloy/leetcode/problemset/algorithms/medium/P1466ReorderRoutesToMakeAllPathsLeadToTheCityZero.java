@@ -22,7 +22,7 @@ import java.util.Set;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P1466ReorderRoutesToMakeAllPathsLeadToTheCityZero {
+final class P1466ReorderRoutesToMakeAllPathsLeadToTheCityZero {
 
   private Map<Integer, Set<Integer>> adjList;
   private Set<Integer> seen;

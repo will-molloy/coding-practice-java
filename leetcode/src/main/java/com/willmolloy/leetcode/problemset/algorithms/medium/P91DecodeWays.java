@@ -14,12 +14,12 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P91DecodeWays {
+sealed interface P91DecodeWays {
 
   int numDecodings(String s);
 
   /** Top down approach, uses memoization to pass time limit. */
-  class TopDownWithMemoize implements P91DecodeWays {
+  final class TopDownWithMemoize implements P91DecodeWays {
 
     @Override
     public int numDecodings(String s) {
@@ -71,7 +71,7 @@ interface P91DecodeWays {
   }
 
   /** Bottom up approach. */
-  class BottomUpDp implements P91DecodeWays {
+  final class BottomUpDp implements P91DecodeWays {
 
     @Override
     public int numDecodings(String s) {

@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P13RomanToInteger {
+final class P13RomanToInteger {
 
   private static final Map<String, Integer> SYMBOLS;
 

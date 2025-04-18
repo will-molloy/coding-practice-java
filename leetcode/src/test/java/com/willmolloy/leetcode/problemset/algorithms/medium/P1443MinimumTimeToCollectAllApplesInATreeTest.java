@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1443MinimumTimeToCollectAllApplesInATreeTest {
+final class P1443MinimumTimeToCollectAllApplesInATreeTest {
 
   private final P1443MinimumTimeToCollectAllApplesInATree p1443 =
       new P1443MinimumTimeToCollectAllApplesInATree();

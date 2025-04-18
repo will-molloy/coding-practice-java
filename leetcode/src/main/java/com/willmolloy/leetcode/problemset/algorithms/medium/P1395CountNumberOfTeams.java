@@ -11,7 +11,7 @@ import java.util.TreeSet;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1395CountNumberOfTeams {
+sealed interface P1395CountNumberOfTeams {
 
   int numTeams(int[] rating);
 
@@ -22,7 +22,7 @@ interface P1395CountNumberOfTeams {
    *
    * <p>Space: O(1)
    */
-  class Cubic implements P1395CountNumberOfTeams {
+  final class Cubic implements P1395CountNumberOfTeams {
 
     @Override
     public int numTeams(int[] rating) {
@@ -48,7 +48,7 @@ interface P1395CountNumberOfTeams {
    *
    * <p>Space: O(1)
    */
-  class Quadratic implements P1395CountNumberOfTeams {
+  final class Quadratic implements P1395CountNumberOfTeams {
 
     @Override
     public int numTeams(int[] rating) {
@@ -92,7 +92,7 @@ interface P1395CountNumberOfTeams {
    *
    * <p>Space: O(n)
    */
-  class Linearithmic implements P1395CountNumberOfTeams {
+  final class Linearithmic implements P1395CountNumberOfTeams {
 
     @Override
     public int numTeams(int[] ratings) {

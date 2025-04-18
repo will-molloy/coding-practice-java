@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P227BasicCalculator2Test {
+final class P227BasicCalculator2Test {
 
   private final P227BasicCalculator2 p227 = new P227BasicCalculator2();
 

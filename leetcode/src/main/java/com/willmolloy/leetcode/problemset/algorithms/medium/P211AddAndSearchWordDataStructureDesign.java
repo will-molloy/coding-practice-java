@@ -19,10 +19,10 @@ import java.util.stream.IntStream;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P211AddAndSearchWordDataStructureDesign {
+final class P211AddAndSearchWordDataStructureDesign {
 
   /** Word dictionary. */
-  static class WordDictionary {
+  static final class WordDictionary {
 
     private final Node root;
 

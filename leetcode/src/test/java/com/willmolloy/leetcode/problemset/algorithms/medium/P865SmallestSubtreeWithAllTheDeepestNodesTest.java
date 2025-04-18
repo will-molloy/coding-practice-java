@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P865SmallestSubtreeWithAllTheDeepestNodesTest {
+final class P865SmallestSubtreeWithAllTheDeepestNodesTest {
 
   private final P865SmallestSubtreeWithAllTheDeepestNodes p865 =
       new P865SmallestSubtreeWithAllTheDeepestNodes();

@@ -17,10 +17,10 @@ import java.util.Objects;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1396DesignUndergroundSystem {
+final class P1396DesignUndergroundSystem {
 
   /** UndergroundSystem. */
-  static class UndergroundSystem {
+  static final class UndergroundSystem {
 
     private final Map<Integer, Pair<String, Integer>> checkIn;
     private final Map<Pair<String, String>, Pair<Integer, Integer>> avgTime;

@@ -15,7 +15,7 @@ import java.util.function.UnaryOperator;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P222CountCompleteTreeNodes {
+final class P222CountCompleteTreeNodes {
 
   // precondition:
   // binary tree represented by root is complete

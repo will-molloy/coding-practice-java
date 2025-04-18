@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1615MaximalNetworkRankTest {
+final class P1615MaximalNetworkRankTest {
 
   private final P1615MaximalNetworkRank p1615 = new P1615MaximalNetworkRank();
 

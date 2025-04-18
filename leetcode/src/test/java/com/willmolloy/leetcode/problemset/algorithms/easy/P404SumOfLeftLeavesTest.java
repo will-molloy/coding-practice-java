@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P404SumOfLeftLeavesTest {
+final class P404SumOfLeftLeavesTest {
 
   private final P404SumOfLeftLeaves fun = new P404SumOfLeftLeaves();
 

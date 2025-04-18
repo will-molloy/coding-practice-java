@@ -17,7 +17,7 @@ import java.util.Deque;
  * @see P1019NextGreaterNodeInLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P901OnlineStockSpan {
+final class P901OnlineStockSpan {
 
   // holds (price, span)
   private final Deque<int[]> stack = new ArrayDeque<>();

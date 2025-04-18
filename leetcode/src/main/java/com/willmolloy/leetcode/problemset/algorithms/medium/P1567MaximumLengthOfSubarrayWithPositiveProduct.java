@@ -20,7 +20,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1567MaximumLengthOfSubarrayWithPositiveProduct {
+final class P1567MaximumLengthOfSubarrayWithPositiveProduct {
 
   public int getMaxLen(int[] nums) {
 

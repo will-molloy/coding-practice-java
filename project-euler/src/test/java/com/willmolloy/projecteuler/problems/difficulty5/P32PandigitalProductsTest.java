@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P32PandigitalProductsTest {
+final class P32PandigitalProductsTest {
 
   @Test
   void digits1To3() {

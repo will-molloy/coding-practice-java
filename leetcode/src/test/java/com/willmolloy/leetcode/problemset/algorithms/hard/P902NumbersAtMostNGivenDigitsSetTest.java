@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P902NumbersAtMostNGivenDigitsSetTest {
+final class P902NumbersAtMostNGivenDigitsSetTest {
 
   private final P902NumbersAtMostNGivenDigitsSet p902 = new P902NumbersAtMostNGivenDigitsSet();
 

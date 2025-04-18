@@ -23,7 +23,7 @@ import java.util.stream.IntStream;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1222QueensThatCanAttackTheKing
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P51NQueens {
+final class P51NQueens {
 
   public List<List<String>> solveNQueens(int n) {
     return solve(new ArrayList<>(), newEmptyBoard(n), n, 0);

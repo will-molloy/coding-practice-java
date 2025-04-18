@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1640CheckArrayFormationThroughConcatenation {
+final class P1640CheckArrayFormationThroughConcatenation {
 
   public boolean canFormArray(int[] arr, int[][] pieces) {
 

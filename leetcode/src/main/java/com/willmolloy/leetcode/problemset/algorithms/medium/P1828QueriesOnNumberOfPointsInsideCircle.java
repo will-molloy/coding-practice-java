@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1828QueriesOnNumberOfPointsInsideCircle {
+final class P1828QueriesOnNumberOfPointsInsideCircle {
 
   public int[] countPoints(int[][] points, int[][] circles) {
     int n = circles.length;

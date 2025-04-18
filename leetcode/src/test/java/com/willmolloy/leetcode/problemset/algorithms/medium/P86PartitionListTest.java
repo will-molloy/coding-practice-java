@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P86PartitionListTest {
+final class P86PartitionListTest {
 
   private final P86PartitionList func = new P86PartitionList();
 

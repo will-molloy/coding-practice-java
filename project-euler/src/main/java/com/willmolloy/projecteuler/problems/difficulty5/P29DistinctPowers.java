@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P29DistinctPowers {
+final class P29DistinctPowers {
 
   public int apply(int lower, int higher) {
     Preconditions.checkArgument(higher > lower);

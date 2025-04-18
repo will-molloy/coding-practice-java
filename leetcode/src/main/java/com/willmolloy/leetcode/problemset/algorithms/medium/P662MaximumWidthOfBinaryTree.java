@@ -16,7 +16,7 @@ import java.util.Queue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P662MaximumWidthOfBinaryTree {
+final class P662MaximumWidthOfBinaryTree {
 
   public int widthOfBinaryTree(TreeNode root) {
     if (root == null) {

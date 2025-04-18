@@ -11,7 +11,7 @@ import java.util.function.IntConsumer;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1116PrintZeroEvenOdd {
+final class P1116PrintZeroEvenOdd {
 
   // initially allow zero thread to run
   private final Semaphore zero = new Semaphore(1);

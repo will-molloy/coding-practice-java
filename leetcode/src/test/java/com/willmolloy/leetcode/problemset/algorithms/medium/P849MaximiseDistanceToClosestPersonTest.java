@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P849MaximiseDistanceToClosestPersonTest {
+final class P849MaximiseDistanceToClosestPersonTest {
 
   private final P849MaximiseDistanceToClosestPerson p849 =
       new P849MaximiseDistanceToClosestPerson();

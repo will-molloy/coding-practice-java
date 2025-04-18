@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P445AddTwoNumbers2Test {
+final class P445AddTwoNumbers2Test {
 
   private final P445AddTwoNumbers2 p445 = new P445AddTwoNumbers2();
 

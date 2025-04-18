@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1035UncrossedLines {
+final class P1035UncrossedLines {
 
   public int maxUncrossedLines(int[] a, int[] b) {
     // longest common subsequence problem

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P81SearchInRotatedSortedArray2Test {
+final class P81SearchInRotatedSortedArray2Test {
 
   private final P81SearchInRotatedSortedArray2 fun = new P81SearchInRotatedSortedArray2();
 

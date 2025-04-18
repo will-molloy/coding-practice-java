@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P543DiameterOfBinaryTree {
+sealed interface P543DiameterOfBinaryTree {
 
   int diameterOfBinaryTree(TreeNode root);
 
@@ -24,7 +24,7 @@ interface P543DiameterOfBinaryTree {
    *
    * <p>Space: O(h) = O(n)
    */
-  class Quadratic implements P543DiameterOfBinaryTree {
+  final class Quadratic implements P543DiameterOfBinaryTree {
 
     @Override
     public int diameterOfBinaryTree(TreeNode root) {
@@ -59,7 +59,7 @@ interface P543DiameterOfBinaryTree {
    *
    * <p>Space: O(n)
    */
-  class Linear implements P543DiameterOfBinaryTree {
+  final class Linear implements P543DiameterOfBinaryTree {
 
     @Override
     public int diameterOfBinaryTree(TreeNode root) {

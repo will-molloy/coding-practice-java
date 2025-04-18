@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P916WordSubsetsTest {
+final class P916WordSubsetsTest {
 
   private final P916WordSubsets p916WordSubsets = new P916WordSubsets();
 

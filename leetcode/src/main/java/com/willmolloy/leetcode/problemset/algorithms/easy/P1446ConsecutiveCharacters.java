@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1446ConsecutiveCharacters {
+final class P1446ConsecutiveCharacters {
 
   public int maxPower(String s) {
     int n = s.length();

@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1019NextGreaterNodeInLinkedListTest {
+final class P1019NextGreaterNodeInLinkedListTest {
 
   private final P1019NextGreaterNodeInLinkedList p1019 = new P1019NextGreaterNodeInLinkedList();
 

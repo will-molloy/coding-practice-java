@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P28ImplementStrStrTest {
+final class P28ImplementStrStrTest {
 
   private final P28ImplementStrStr fun = new P28ImplementStrStr();
 

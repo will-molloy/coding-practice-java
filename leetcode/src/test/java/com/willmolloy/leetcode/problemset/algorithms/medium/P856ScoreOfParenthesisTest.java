@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P856ScoreOfParenthesisTest {
+final class P856ScoreOfParenthesisTest {
 
   @ParameterizedTest
   @MethodSource

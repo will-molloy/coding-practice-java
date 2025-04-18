@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P406QueueReconstructionByHeightTest {
+final class P406QueueReconstructionByHeightTest {
 
   private final P406QueueReconstructionByHeight p406 = new P406QueueReconstructionByHeight();
 

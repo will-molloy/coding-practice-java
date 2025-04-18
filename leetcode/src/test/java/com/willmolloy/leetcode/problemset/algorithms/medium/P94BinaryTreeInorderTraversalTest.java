@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P94BinaryTreeInorderTraversalTest {
+final class P94BinaryTreeInorderTraversalTest {
 
   private final P94BinaryTreeInorderTraversal func = new P94BinaryTreeInorderTraversal();
 

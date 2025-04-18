@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P520DetectCapital {
+final class P520DetectCapital {
 
   public boolean detectCapitalUse(String word) {
     return word.matches("[A-Z]+") || word.matches("[a-z]+") || word.matches("[A-Z][a-z]+");

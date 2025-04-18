@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P23NonAbundantSums {
+final class P23NonAbundantSums {
 
   private static boolean isAbundant(int n) {
     return IntStream.range(1, n).filter(i -> n % i == 0).sum() > n;

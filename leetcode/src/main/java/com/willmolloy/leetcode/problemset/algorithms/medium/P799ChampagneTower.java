@@ -17,7 +17,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P799ChampagneTower {
+final class P799ChampagneTower {
 
   public double champagneTower(int poured, int queryRow, int queryGlass) {
     // lists[row][col] = total amount poured through that glass

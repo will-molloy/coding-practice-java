@@ -19,12 +19,12 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P318MaximumProductOfWordLengths {
+sealed interface P318MaximumProductOfWordLengths {
 
   int maxProduct(String[] words);
 
   /** Solution which preprocesses words into a {@code Set<Character>}. */
-  class LetterSet implements P318MaximumProductOfWordLengths {
+  final class LetterSet implements P318MaximumProductOfWordLengths {
 
     @Override
     public int maxProduct(String[] words) {
@@ -54,7 +54,7 @@ interface P318MaximumProductOfWordLengths {
   }
 
   /** Solution which preprocesses words into a bit mask. */
-  class LetterBitMask implements P318MaximumProductOfWordLengths {
+  final class LetterBitMask implements P318MaximumProductOfWordLengths {
 
     @Override
     public int maxProduct(String[] words) {

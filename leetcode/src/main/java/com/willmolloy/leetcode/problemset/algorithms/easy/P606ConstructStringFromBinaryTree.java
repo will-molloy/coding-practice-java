@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P297SerializeAndDeserializeBinaryTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P606ConstructStringFromBinaryTree {
+final class P606ConstructStringFromBinaryTree {
 
   public String tree2str(TreeNode t) {
     StringBuilder s = new StringBuilder();

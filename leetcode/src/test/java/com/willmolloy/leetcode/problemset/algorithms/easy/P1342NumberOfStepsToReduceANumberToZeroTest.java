@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1342NumberOfStepsToReduceANumberToZeroTest {
+final class P1342NumberOfStepsToReduceANumberToZeroTest {
 
   private final P1342NumberOfStepsToReduceANumberToZero fun =
       new P1342NumberOfStepsToReduceANumberToZero();

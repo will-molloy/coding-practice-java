@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P538ConvertBstToGreaterTreeTest {
+final class P538ConvertBstToGreaterTreeTest {
 
   private final P538ConvertBstToGreaterTree p538 = new P538ConvertBstToGreaterTree();
 

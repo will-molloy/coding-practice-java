@@ -18,7 +18,7 @@ import java.util.List;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P797AllPathsFromSourceToTarget {
+final class P797AllPathsFromSourceToTarget {
 
   private int[][] adjList;
   private int n;

@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P328OddEvenLinkedList {
+final class P328OddEvenLinkedList {
 
   public ListNode oddEvenList(ListNode head) {
     if (head == null || head.next == null) {

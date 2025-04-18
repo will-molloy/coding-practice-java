@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P29DistinctPowersTest {
+final class P29DistinctPowersTest {
 
   private final P29DistinctPowers distinctPowers = new P29DistinctPowers();
 

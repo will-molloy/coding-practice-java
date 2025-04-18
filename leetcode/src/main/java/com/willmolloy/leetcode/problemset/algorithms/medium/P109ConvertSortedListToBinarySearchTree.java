@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P108ConvertSortedArrayToBinarySearchTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P109ConvertSortedListToBinarySearchTree {
+final class P109ConvertSortedListToBinarySearchTree {
 
   public TreeNode sortedListToBst(ListNode head) {
     if (head == null) {

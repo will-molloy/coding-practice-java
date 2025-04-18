@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P687LongestUnivaluePathTest {
+final class P687LongestUnivaluePathTest {
 
   private final P687LongestUnivaluePath p687 = new P687LongestUnivaluePath();
 

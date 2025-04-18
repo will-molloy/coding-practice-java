@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P231PowerOfTwo
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P342PowerOfFour {
+final class P342PowerOfFour {
 
   // TODO Follow up: Could you solve it without loops/recursion?
 

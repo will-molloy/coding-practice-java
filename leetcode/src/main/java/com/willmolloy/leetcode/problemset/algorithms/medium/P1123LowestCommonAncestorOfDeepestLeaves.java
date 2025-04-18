@@ -9,7 +9,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see P865SmallestSubtreeWithAllTheDeepestNodes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1123LowestCommonAncestorOfDeepestLeaves {
+final class P1123LowestCommonAncestorOfDeepestLeaves {
 
   private final P865SmallestSubtreeWithAllTheDeepestNodes delegate =
       new P865SmallestSubtreeWithAllTheDeepestNodes();

@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1417ReformatTheString {
+final class P1417ReformatTheString {
 
   public String reformat(String s) {
     List<Character> letters = new ArrayList<>();

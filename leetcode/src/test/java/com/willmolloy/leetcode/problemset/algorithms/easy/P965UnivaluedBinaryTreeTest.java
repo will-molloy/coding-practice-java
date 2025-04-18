@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P965UnivaluedBinaryTreeTest {
+final class P965UnivaluedBinaryTreeTest {
 
   private final P965UnivaluedBinaryTree p965 = new P965UnivaluedBinaryTree();
 

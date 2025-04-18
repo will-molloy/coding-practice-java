@@ -23,14 +23,14 @@ import java.util.concurrent.ThreadLocalRandom;
  * @see P528RandomPickWithWeight
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P380InsertDeleteGetRandomO1 {
+final class P380InsertDeleteGetRandomO1 {
 
   // originally got it working with just a list (which had O(n) remove)
   // answer is explained here:
   // https://leetcode.com/problems/insert-delete-getrandom-o1/discuss/683165/Algorithm-Explained-or-O(1)-insert()-or-O(1)-delete-or-O(1)-getRandom()
 
   /** RandomizedSet. */
-  static class RandomizedSet {
+  static final class RandomizedSet {
 
     private final List<Integer> list;
 

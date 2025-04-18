@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P19RemoveNthNodeFromEndOfListTest {
+final class P19RemoveNthNodeFromEndOfListTest {
 
   private P19RemoveNthNodeFromEndOfList function = new P19RemoveNthNodeFromEndOfList();
 

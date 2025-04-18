@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1344AngleBetweenHandsOfAClockTest {
+final class P1344AngleBetweenHandsOfAClockTest {
 
   private final P1344AngleBetweenHandsOfAClock p1344 = new P1344AngleBetweenHandsOfAClock();
 

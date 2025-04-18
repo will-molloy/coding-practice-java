@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P455AssignCookiesTest {
+final class P455AssignCookiesTest {
 
   private final P455AssignCookies p455 = new P455AssignCookies();
 

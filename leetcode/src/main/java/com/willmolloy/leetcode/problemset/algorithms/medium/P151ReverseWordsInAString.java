@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P345ReverseVowelsOfAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P151ReverseWordsInAString {
+final class P151ReverseWordsInAString {
 
   public String reverseWords(String s) {
     String[] words = s.split("\\s+");

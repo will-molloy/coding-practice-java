@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1051HeightCheckerTest {
+final class P1051HeightCheckerTest {
 
   private final P1051HeightChecker p1051 = new P1051HeightChecker();
 

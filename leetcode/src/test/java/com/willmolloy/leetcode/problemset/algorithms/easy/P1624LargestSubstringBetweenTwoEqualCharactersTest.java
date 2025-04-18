@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1624LargestSubstringBetweenTwoEqualCharactersTest {
+final class P1624LargestSubstringBetweenTwoEqualCharactersTest {
 
   private final P1624LargestSubstringBetweenTwoEqualCharacters p1624 =
       new P1624LargestSubstringBetweenTwoEqualCharacters();

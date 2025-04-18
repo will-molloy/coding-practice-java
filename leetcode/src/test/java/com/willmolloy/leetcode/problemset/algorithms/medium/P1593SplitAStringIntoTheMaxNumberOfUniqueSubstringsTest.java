@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1593SplitAStringIntoTheMaxNumberOfUniqueSubstringsTest {
+final class P1593SplitAStringIntoTheMaxNumberOfUniqueSubstringsTest {
 
   private final P1593SplitAStringIntoTheMaxNumberOfUniqueSubstrings p1593 =
       new P1593SplitAStringIntoTheMaxNumberOfUniqueSubstrings();

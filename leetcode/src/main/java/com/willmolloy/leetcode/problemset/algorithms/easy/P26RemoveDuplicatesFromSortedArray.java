@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P80RemoveDuplicateFromSortedArray2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P26RemoveDuplicatesFromSortedArray {
+final class P26RemoveDuplicatesFromSortedArray {
 
   public int removeDuplicates(int[] nums) {
     int n = nums.length;

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P869ReorderedPowerOf2Test {
+final class P869ReorderedPowerOf2Test {
 
   private final P869ReorderedPowerOf2 p869ReorderedPowerOf2 = new P869ReorderedPowerOf2();
 

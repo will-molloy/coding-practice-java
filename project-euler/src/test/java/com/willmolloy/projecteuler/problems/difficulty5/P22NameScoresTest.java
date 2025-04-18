@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P22NameScoresTest {
+final class P22NameScoresTest {
 
   private final P22NameScores nameScores = new P22NameScores();
 

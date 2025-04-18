@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P814BinaryTreePruningTest {
+final class P814BinaryTreePruningTest {
 
   private final P814BinaryTreePruning p814BinaryTreePruning = new P814BinaryTreePruning();
 

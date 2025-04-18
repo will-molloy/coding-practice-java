@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1475FinalPricesWithASpecialDiscountInAShop {
+final class P1475FinalPricesWithASpecialDiscountInAShop {
 
   public int[] finalPrices(int[] prices) {
     int n = prices.length;

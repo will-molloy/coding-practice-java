@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P11ContainerWithMostWaterTest {
+final class P11ContainerWithMostWaterTest {
 
   private final P11ContainerWithMostWater function = new P11ContainerWithMostWater();
 

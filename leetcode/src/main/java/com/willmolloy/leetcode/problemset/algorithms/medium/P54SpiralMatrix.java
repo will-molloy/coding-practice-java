@@ -23,7 +23,7 @@ import java.util.List;
  * @see P59SpiralMatrix2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P54SpiralMatrix {
+final class P54SpiralMatrix {
 
   public List<Integer> spiralOrder(int[][] matrix) {
     List<Integer> order = new ArrayList<>();

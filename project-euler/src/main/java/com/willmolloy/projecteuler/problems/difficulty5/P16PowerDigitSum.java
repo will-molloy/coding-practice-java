@@ -9,7 +9,7 @@ import java.math.BigInteger;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P16PowerDigitSum {
+final class P16PowerDigitSum {
 
   public int apply(int base, int exp) {
     return BigInteger.valueOf(base)

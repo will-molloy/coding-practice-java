@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1315SumOfNodesWithEvenValuedGrandparent
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P404SumOfLeftLeaves {
+final class P404SumOfLeftLeaves {
 
   public int sumOfLeftLeaves(TreeNode root) {
     return sum(root, 0);

@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P897IncreasingOrderSearchTreeTest {
+final class P897IncreasingOrderSearchTreeTest {
 
   @Test
   void example1() {

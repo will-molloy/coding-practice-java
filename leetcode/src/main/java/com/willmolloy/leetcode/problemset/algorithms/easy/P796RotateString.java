@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P796RotateString {
+final class P796RotateString {
 
   // TODO O(n) time solution
 

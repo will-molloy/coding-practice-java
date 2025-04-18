@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P368LargestDivisibleSubsetTest {
+final class P368LargestDivisibleSubsetTest {
 
   private final P368LargestDivisibleSubset p368 = new P368LargestDivisibleSubset();
 

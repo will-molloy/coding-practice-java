@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P399EvaluateDivisionTest {
+final class P399EvaluateDivisionTest {
 
   private final P399EvaluateDivision p399 = new P399EvaluateDivision();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class SherlockAndAnagramsTest {
+final class SherlockAndAnagramsTest {
 
   @Test
   void abba4AnagramPairs() {

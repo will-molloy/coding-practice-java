@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P623AddOneRowToTree {
+final class P623AddOneRowToTree {
 
   public TreeNode addOneRow(TreeNode root, int v, int d) {
     if (d == 1) {

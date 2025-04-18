@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P841KeysAndRooms {
+final class P841KeysAndRooms {
 
   public boolean canVisitAllRooms(List<List<Integer>> rooms) {
     Queue<Integer> queue = new ArrayDeque<>();

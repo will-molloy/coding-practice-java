@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
  * @see P1277CountSquareSubmatricesWithAllOnes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P221MaximalSquare {
+final class P221MaximalSquare {
 
   public int maximalSquare(char[][] matrix) {
     int n = matrix.length;

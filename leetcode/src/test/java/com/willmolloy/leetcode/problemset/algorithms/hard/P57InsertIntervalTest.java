@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P57InsertIntervalTest {
+final class P57InsertIntervalTest {
 
   private final P57InsertInterval p57 = new P57InsertInterval();
 

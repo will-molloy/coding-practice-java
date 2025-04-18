@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P787CheapestFlightsWithinKStops {
+sealed interface P787CheapestFlightsWithinKStops {
 
   int findCheapestPrice(int n, int[][] flights, int src, int dst, int k);
 
@@ -26,7 +26,7 @@ interface P787CheapestFlightsWithinKStops {
    *
    * <p>Key idea: BFS with edge costs; track nodes with costs in the queue.
    */
-  class Bfs implements P787CheapestFlightsWithinKStops {
+  final class Bfs implements P787CheapestFlightsWithinKStops {
 
     @Override
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
@@ -79,7 +79,7 @@ interface P787CheapestFlightsWithinKStops {
    * because we remove path with smallest cost not path will smallest length (so not guaranteed to
    * traverse level by level, so this is only way to know current level).
    */
-  class Dijkstra implements P787CheapestFlightsWithinKStops {
+  final class Dijkstra implements P787CheapestFlightsWithinKStops {
 
     @Override
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {

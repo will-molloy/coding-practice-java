@@ -18,7 +18,7 @@ import java.util.List;
  * @see P40CombinationSum2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P216CombinationSum3 {
+final class P216CombinationSum3 {
 
   public List<List<Integer>> combinationSum3(int k, int n) {
     return dfs(new ArrayList<>(), new ArrayList<>(), 0, k, n, 0);

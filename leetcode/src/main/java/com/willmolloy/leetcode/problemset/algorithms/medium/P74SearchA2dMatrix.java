@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P240SearchA2DMatrix2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P74SearchA2dMatrix {
+final class P74SearchA2dMatrix {
 
   public boolean searchMatrix(int[][] matrix, int target) {
     // binary search, need to convert some 'i' to row/col pair

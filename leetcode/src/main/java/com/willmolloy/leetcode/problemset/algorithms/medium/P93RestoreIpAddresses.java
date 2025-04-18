@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P93RestoreIpAddresses {
+final class P93RestoreIpAddresses {
 
   // TODO can use some counter parameter to count number of "\.\d+" added, cheaper than using Regex
 

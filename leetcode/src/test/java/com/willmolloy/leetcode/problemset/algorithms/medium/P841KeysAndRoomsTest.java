@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P841KeysAndRoomsTest {
+final class P841KeysAndRoomsTest {
 
   private final P841KeysAndRooms p841KeysAndRooms = new P841KeysAndRooms();
 

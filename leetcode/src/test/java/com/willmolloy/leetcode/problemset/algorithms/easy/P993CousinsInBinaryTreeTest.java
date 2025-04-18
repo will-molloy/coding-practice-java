@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P993CousinsInBinaryTreeTest {
+final class P993CousinsInBinaryTreeTest {
 
   private final P993CousinsInBinaryTree p993 = new P993CousinsInBinaryTree();
 

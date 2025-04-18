@@ -16,7 +16,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1792MaximumAveragePassRatio {
+final class P1792MaximumAveragePassRatio {
 
   public double maxAverageRatio(int[][] classes, int extraStudents) {
     // make top of priority queue the class that'll have the largest increase in pass ratio

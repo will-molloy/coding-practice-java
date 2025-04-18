@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P341FlattenNestedListIteratorTest {
+final class P341FlattenNestedListIteratorTest {
 
   @Test
   void example1() {

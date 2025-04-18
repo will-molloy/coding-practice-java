@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P733FloodFill
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1568MinimumNumberOfDaysToDisconnectIsland {
+final class P1568MinimumNumberOfDaysToDisconnectIsland {
 
   public int minDays(int[][] grid) {
     if (numIslands(grid) != 1) {

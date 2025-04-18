@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1337TheKWeakestRowsInAMatrixTest {
+final class P1337TheKWeakestRowsInAMatrixTest {
 
   private final P1337TheKWeakestRowsInAMatrix p1337TheKWeakestRowsInAMatrix =
       new P1337TheKWeakestRowsInAMatrix();

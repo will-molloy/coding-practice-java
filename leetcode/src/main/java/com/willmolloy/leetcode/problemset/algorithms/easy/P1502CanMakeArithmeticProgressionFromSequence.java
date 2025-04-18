@@ -11,7 +11,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1630ArithmeticSubarrays
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1502CanMakeArithmeticProgressionFromSequence {
+sealed interface P1502CanMakeArithmeticProgressionFromSequence {
 
   boolean canMakeArithmeticProgression(int[] copy);
 
@@ -24,7 +24,7 @@ interface P1502CanMakeArithmeticProgressionFromSequence {
    *
    * <p>Key idea: Sort the array and test every distance is the same.
    */
-  class Sort implements P1502CanMakeArithmeticProgressionFromSequence {
+  final class Sort implements P1502CanMakeArithmeticProgressionFromSequence {
 
     @Override
     public boolean canMakeArithmeticProgression(int[] a) {
@@ -53,7 +53,7 @@ interface P1502CanMakeArithmeticProgressionFromSequence {
    * <p>Key idea: Compute {@code step = (max - min) / (n - 1)} and test each value offset by min is
    * on the step.
    */
-  class DivisibleByStep implements P1502CanMakeArithmeticProgressionFromSequence {
+  final class DivisibleByStep implements P1502CanMakeArithmeticProgressionFromSequence {
 
     @Override
     public boolean canMakeArithmeticProgression(int[] a) {

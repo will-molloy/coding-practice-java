@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P621TaskSchedulerTest {
+final class P621TaskSchedulerTest {
 
   private final P621TaskScheduler p621 = new P621TaskScheduler();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1665MinimumInitialEnergyToFinishTasksTest {
+final class P1665MinimumInitialEnergyToFinishTasksTest {
 
   private final P1665MinimumInitialEnergyToFinishTasks p1665 =
       new P1665MinimumInitialEnergyToFinishTasks();

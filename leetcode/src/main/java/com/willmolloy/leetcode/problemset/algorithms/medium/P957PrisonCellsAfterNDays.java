@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P957PrisonCellsAfterNDays {
+final class P957PrisonCellsAfterNDays {
 
   public int[] prisonAfterNDays(int[] cells, int n) {
     List<int[]> states = new ArrayList<>();

@@ -13,7 +13,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.dsa.trees.TreeSearch
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P700SearchInABinarySearchTree {
+sealed interface P700SearchInABinarySearchTree {
 
   TreeNode searchBst(TreeNode root, int val);
 
@@ -24,7 +24,7 @@ interface P700SearchInABinarySearchTree {
    *
    * <p>Extra space: O(h)
    */
-  class Recursive implements P700SearchInABinarySearchTree {
+  final class Recursive implements P700SearchInABinarySearchTree {
 
     @Override
     public TreeNode searchBst(TreeNode root, int val) {
@@ -46,7 +46,7 @@ interface P700SearchInABinarySearchTree {
    *
    * <p>Extra space: O(1)
    */
-  class Iterative implements P700SearchInABinarySearchTree {
+  final class Iterative implements P700SearchInABinarySearchTree {
 
     @Override
     public TreeNode searchBst(TreeNode root, int val) {

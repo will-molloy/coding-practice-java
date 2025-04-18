@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P859BuddyStringsTest {
+final class P859BuddyStringsTest {
 
   private final P859BuddyStrings p859 = new P859BuddyStrings();
 

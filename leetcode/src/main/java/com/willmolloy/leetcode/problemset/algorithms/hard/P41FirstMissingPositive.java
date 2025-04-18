@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P41FirstMissingPositive {
+final class P41FirstMissingPositive {
 
   public int firstMissingPositive(int[] nums) {
     // first pass: swap positive values to their position ('sort' them for this problem)

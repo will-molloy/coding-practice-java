@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P334IncreasingTripletSubsequenceTest {
+final class P334IncreasingTripletSubsequenceTest {
 
   private final P334IncreasingTripletSubsequence p334IncreasingTripletSubsequence =
       new P334IncreasingTripletSubsequence();

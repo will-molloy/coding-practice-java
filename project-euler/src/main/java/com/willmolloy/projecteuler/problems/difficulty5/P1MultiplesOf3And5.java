@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1MultiplesOf3And5 {
+final class P1MultiplesOf3And5 {
 
   public Integer solve(int limit) {
     return IntStream.range(0, limit).filter(i -> i % 3 == 0 || i % 5 == 0).sum();

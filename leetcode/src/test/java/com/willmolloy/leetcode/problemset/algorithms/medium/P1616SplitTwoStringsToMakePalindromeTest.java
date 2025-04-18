@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1616SplitTwoStringsToMakePalindromeTest {
+final class P1616SplitTwoStringsToMakePalindromeTest {
 
   private final P1616SplitTwoStringsToMakePalindrome p1616 =
       new P1616SplitTwoStringsToMakePalindrome();

@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1529BulbSwitcher4 {
+final class P1529BulbSwitcher4 {
 
   public int minFlips(String target) {
     char curr = '0';

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P52PermutedMultiplesTest {
+final class P52PermutedMultiplesTest {
 
   @Test
   void test2x() {

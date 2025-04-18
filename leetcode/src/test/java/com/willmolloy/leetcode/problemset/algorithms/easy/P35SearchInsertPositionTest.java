@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P35SearchInsertPositionTest {
+final class P35SearchInsertPositionTest {
 
   private final P35SearchInsertPosition fun = new P35SearchInsertPosition();
 

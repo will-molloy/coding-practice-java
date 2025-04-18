@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList {
+final class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList {
 
   // TODO probably more efficient way, this was contest code
 

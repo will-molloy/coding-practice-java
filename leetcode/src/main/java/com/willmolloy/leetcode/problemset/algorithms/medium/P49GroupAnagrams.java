@@ -17,7 +17,7 @@ import java.util.Objects;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P49GroupAnagrams {
+final class P49GroupAnagrams {
 
   public List<List<String>> groupAnagrams(String[] strs) {
     // ListMultimap of anagrams

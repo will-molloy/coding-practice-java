@@ -14,7 +14,7 @@ import org.apache.commons.lang3.tuple.Pair;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P26ReciprocalCycles {
+final class P26ReciprocalCycles {
 
   public int apply(int limit) {
     return IntStream.range(3, limit)

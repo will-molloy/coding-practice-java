@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1463CherryPickup2 {
+final class P1463CherryPickup2 {
 
   public int cherryPickup(int[][] grid) {
     int rows = grid.length;

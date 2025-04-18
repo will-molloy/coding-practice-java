@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P509FibonacciNumber
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1137NthTribonacciNumber {
+final class P1137NthTribonacciNumber {
 
   public int tribonacci(int n) {
     // assumed n >= 0

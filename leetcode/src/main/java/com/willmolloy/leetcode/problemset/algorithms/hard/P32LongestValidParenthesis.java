@@ -12,7 +12,7 @@ import java.util.Deque;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P20ValidParenthesis
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P32LongestValidParenthesis {
+final class P32LongestValidParenthesis {
 
   public int longestValidParentheses(String s) {
     int max = 0;

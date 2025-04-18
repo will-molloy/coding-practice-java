@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1453MaximumNumberOfDartsInsidesACircularDartboard {
+final class P1453MaximumNumberOfDartsInsidesACircularDartboard {
 
   // solution outlined here
   // https://stackoverflow.com/a/3229582/6122976

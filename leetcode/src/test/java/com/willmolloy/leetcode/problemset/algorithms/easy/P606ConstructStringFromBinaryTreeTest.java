@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P606ConstructStringFromBinaryTreeTest {
+final class P606ConstructStringFromBinaryTreeTest {
 
   private final P606ConstructStringFromBinaryTree fun = new P606ConstructStringFromBinaryTree();
 

@@ -18,10 +18,10 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1286IteratorForCombination {
+final class P1286IteratorForCombination {
 
   /** CombinationIterator. */
-  static class CombinationIterator {
+  static final class CombinationIterator {
 
     private final Iterator<String> iterator;
 

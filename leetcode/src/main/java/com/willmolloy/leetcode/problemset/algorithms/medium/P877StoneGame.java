@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1510StoneGame4
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P877StoneGame {
+final class P877StoneGame {
 
   // preconditions:
   // piles.length is even

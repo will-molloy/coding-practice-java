@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P463IslandPerimeter {
+final class P463IslandPerimeter {
 
   private int sum;
 

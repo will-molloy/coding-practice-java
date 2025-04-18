@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P623AddOneRowToTreeTest {
+final class P623AddOneRowToTreeTest {
 
   private final P623AddOneRowToTree p623AddOneRowToTree = new P623AddOneRowToTree();
 

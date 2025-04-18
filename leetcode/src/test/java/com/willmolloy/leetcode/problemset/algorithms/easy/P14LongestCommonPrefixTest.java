@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P14LongestCommonPrefixTest {
+final class P14LongestCommonPrefixTest {
 
   private final P14LongestCommonPrefix function = new P14LongestCommonPrefix();
 

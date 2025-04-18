@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P54PokerHandsTest {
+final class P54PokerHandsTest {
 
   private Pair<Hand, Hand> lineToHand(String line) {
     List<Card> cards =

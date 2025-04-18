@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1641CountSortedVowelStringsTest {
+final class P1641CountSortedVowelStringsTest {
 
   private final P1641CountSortedVowelStrings p1641 = new P1641CountSortedVowelStrings();
 

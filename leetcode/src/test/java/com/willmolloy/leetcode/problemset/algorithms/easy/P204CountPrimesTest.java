@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P204CountPrimesTest {
+final class P204CountPrimesTest {
 
   private final P204CountPrimes fun = new P204CountPrimes();
 

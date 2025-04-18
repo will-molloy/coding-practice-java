@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P134GasStation {
+final class P134GasStation {
 
   // TODO O(n) solution, relies on math proof
 

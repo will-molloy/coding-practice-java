@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P540SingleElementInASortedArrayTest {
+final class P540SingleElementInASortedArrayTest {
 
   private final P540SingleElementInASortedArray p540 = new P540SingleElementInASortedArray();
 

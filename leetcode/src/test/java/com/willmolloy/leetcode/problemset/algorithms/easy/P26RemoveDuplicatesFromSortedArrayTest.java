@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P26RemoveDuplicatesFromSortedArrayTest {
+final class P26RemoveDuplicatesFromSortedArrayTest {
 
   private final P26RemoveDuplicatesFromSortedArray fun = new P26RemoveDuplicatesFromSortedArray();
 

@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P448FindAllNumbersDisappearedInAnArray {
+final class P448FindAllNumbersDisappearedInAnArray {
 
   public List<Integer> findDisappearedNumbers(int[] a) {
     // since a[i] fits into [1, n] can use it as an index

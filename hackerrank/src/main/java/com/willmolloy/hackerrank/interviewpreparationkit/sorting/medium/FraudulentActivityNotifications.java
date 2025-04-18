@@ -39,7 +39,7 @@ final class FraudulentActivityNotifications {
   }
 
   /** Tracks a running median. */
-  private static class RunningMedian {
+  private static final class RunningMedian {
     // minheap - store larger elements
     // maxheap - store smaller elements
     // keep them balanced in size (if odd size, max heap defaults to being larger)

@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P910SmallestRange2 {
+final class P910SmallestRange2 {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
   public int smallestRangeII(int[] nums, int k) {

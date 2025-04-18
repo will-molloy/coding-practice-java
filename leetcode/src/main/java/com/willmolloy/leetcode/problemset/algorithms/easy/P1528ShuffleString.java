@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1528ShuffleString {
+final class P1528ShuffleString {
 
   public String restoreString(String s, int[] indices) {
     char[] chars = new char[indices.length];

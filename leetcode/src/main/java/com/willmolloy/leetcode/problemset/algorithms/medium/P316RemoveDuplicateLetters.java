@@ -22,7 +22,7 @@ import java.util.Set;
  * @see P1081SmallestSubsequenceOfDistinctCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P316RemoveDuplicateLetters {
+final class P316RemoveDuplicateLetters {
 
   public String removeDuplicateLetters(String s) {
     // precompute char frequencies to know if a character occurs in the string again later

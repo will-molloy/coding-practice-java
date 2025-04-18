@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P230KthSmallestElementInABst {
+final class P230KthSmallestElementInABst {
 
   private int count;
   private int ans;

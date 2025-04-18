@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1277CountSquareSubmatricesWithAllOnesTest {
+final class P1277CountSquareSubmatricesWithAllOnesTest {
 
   private final P1277CountSquareSubmatricesWithAllOnes p1277 =
       new P1277CountSquareSubmatricesWithAllOnes();

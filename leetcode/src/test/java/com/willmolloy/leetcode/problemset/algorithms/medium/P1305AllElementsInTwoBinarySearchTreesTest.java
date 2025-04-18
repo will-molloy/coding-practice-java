@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1305AllElementsInTwoBinarySearchTreesTest {
+final class P1305AllElementsInTwoBinarySearchTreesTest {
 
   private final P1305AllElementsInTwoBinarySearchTrees p1305 =
       new P1305AllElementsInTwoBinarySearchTrees();

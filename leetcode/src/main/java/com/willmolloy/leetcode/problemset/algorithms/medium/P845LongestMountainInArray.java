@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P845LongestMountainInArray {
+final class P845LongestMountainInArray {
 
   public int longestMountain(int[] a) {
     int n = a.length;

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1015SmallestIntegerDivisibleByKTest {
+final class P1015SmallestIntegerDivisibleByKTest {
 
   private final P1015SmallestIntegerDivisibleByK p1015 = new P1015SmallestIntegerDivisibleByK();
 

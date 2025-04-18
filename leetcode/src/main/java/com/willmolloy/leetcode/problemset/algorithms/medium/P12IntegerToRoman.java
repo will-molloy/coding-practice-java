@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P12IntegerToRoman {
+final class P12IntegerToRoman {
 
   private static final Map<Integer, String> SYMBOLS;
 

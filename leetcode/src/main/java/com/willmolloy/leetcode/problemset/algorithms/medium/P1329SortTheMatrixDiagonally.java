@@ -19,7 +19,7 @@ import java.util.PriorityQueue;
  * @see P1424DiagonalTraverse2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1329SortTheMatrixDiagonally {
+final class P1329SortTheMatrixDiagonally {
 
   public int[][] diagonalSort(int[][] a) {
     int rows = a.length;

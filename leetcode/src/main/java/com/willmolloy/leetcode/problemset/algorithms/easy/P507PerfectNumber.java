@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P507PerfectNumber {
+final class P507PerfectNumber {
 
   public boolean checkPerfectNumber(int num) {
     if (num <= 1) {

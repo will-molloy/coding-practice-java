@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @see P137SingleNumber2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P260SingleNumber3 {
+final class P260SingleNumber3 {
 
   public int[] singleNumber(int[] nums) {
     return Arrays.stream(nums)

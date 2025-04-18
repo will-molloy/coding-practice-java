@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P88MergeSortedArray {
+final class P88MergeSortedArray {
 
   public void merge(int[] nums1, int m, int[] nums2, int n) {
 

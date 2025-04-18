@@ -19,10 +19,10 @@ import java.util.concurrent.ThreadLocalRandom;
  * @see P528RandomPickWithWeight
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P398RandomPickIndex {
+final class P398RandomPickIndex {
 
   /** Solution. */
-  static class Solution {
+  static final class Solution {
 
     private final Map<Integer, List<Integer>> numIndices = new HashMap<>();
 

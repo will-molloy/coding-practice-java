@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P598RangeAddition2 {
+final class P598RangeAddition2 {
 
   public int maxCount(int rows, int cols, int[][] ops) {
     int minRow = rows;

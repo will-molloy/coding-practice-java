@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P451SortCharactersByFrequency {
+final class P451SortCharactersByFrequency {
 
   // TODO can do O(n) (bucket sort)
 

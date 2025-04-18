@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1437CheckIfAll1sAreAtLeastKPlacesAwayTest {
+final class P1437CheckIfAll1sAreAtLeastKPlacesAwayTest {
 
   private final P1437CheckIfAll1sAreAtLeastKPlacesAway p1437 =
       new P1437CheckIfAll1sAreAtLeastKPlacesAway();

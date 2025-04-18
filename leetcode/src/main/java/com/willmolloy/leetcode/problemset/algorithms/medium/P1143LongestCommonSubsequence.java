@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1458MaxDotProductOfTwoSubsequences
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1143LongestCommonSubsequence {
+final class P1143LongestCommonSubsequence {
 
   public int longestCommonSubsequence(String text1, String text2) {
     // dp[i][j] = length of LCS for text1[0, i) and text2[0, j)

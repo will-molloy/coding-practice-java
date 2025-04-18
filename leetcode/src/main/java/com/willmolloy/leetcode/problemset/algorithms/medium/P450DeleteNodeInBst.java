@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.dsa.trees.TreeDeleteImpl
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P450DeleteNodeInBst {
+final class P450DeleteNodeInBst {
 
   public TreeNode deleteNode(TreeNode root, int key) {
     if (root == null) {

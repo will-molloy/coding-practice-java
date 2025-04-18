@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P226InvertBinaryTreeTest {
+final class P226InvertBinaryTreeTest {
 
   @Test
   void example() {

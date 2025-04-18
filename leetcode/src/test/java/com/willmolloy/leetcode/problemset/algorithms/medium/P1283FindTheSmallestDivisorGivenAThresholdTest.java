@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1283FindTheSmallestDivisorGivenAThresholdTest {
+final class P1283FindTheSmallestDivisorGivenAThresholdTest {
 
   private final P1283FindTheSmallestDivisorGivenAThreshold p1283 =
       new P1283FindTheSmallestDivisorGivenAThreshold();

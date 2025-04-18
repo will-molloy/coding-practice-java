@@ -20,7 +20,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @Timeout(value = 10)
-class P1195FizzBuzzMultithreadedTest {
+final class P1195FizzBuzzMultithreadedTest {
 
   private List<String> output;
 

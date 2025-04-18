@@ -12,7 +12,7 @@ import com.willmolloy.projecteuler.common.Maths;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P21AmicibleNumbers {
+final class P21AmicibleNumbers {
 
   public int apply(int under) {
     // must map from zero else the indices don't line up

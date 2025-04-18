@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P39CombinationSumTest {
+final class P39CombinationSumTest {
 
   private P39CombinationSum.TopDownRecursive topDownRecursive =
       new P39CombinationSum.TopDownRecursive();

@@ -16,7 +16,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P77Combinations {
+final class P77Combinations {
 
   public List<List<Integer>> combine(int n, int k) {
     List<List<Integer>> result = new ArrayList<>();

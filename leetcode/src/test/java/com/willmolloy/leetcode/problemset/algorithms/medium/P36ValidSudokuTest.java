@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P36ValidSudokuTest {
+final class P36ValidSudokuTest {
 
   private final P36ValidSudoku fun = new P36ValidSudoku();
 

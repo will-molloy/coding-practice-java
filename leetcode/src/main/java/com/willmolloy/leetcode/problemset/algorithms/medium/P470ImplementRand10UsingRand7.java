@@ -15,9 +15,9 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P470ImplementRand10UsingRand7 {
+final class P470ImplementRand10UsingRand7 {
 
-  private static class SolBase {
+  private abstract static sealed class SolBase {
 
     final int rand7() {
       return ThreadLocalRandom.current().nextInt(7) + 1;
@@ -25,7 +25,7 @@ class P470ImplementRand10UsingRand7 {
   }
 
   /** The rand7() API is already defined in the parent class SolBase. public int rand7(); */
-  static class Solution extends SolBase {
+  static final class Solution extends SolBase {
 
     public int rand10() {
       int row = rand7();

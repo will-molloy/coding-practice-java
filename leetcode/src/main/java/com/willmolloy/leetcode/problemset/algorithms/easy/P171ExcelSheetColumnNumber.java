@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P168ExcelSheetColumnTitle
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P171ExcelSheetColumnNumber {
+final class P171ExcelSheetColumnNumber {
 
   public int titleToNumber(String s) {
     int n = 0;

@@ -12,7 +12,7 @@ import java.util.Deque;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P32LongestValidParenthesis
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P20ValidParenthesis {
+final class P20ValidParenthesis {
 
   public boolean isValid(String s) {
     Deque<Character> stack = new ArrayDeque<>();

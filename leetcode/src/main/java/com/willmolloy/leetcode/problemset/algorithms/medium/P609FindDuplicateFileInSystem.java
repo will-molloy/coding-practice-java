@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P609FindDuplicateFileInSystem {
+final class P609FindDuplicateFileInSystem {
 
   public List<List<String>> findDuplicate(String[] paths) {
     // map of [file contents -> file names]

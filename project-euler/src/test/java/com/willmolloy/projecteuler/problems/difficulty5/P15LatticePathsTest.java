@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P15LatticePathsTest {
+final class P15LatticePathsTest {
 
   private final P15LatticePaths latticePaths = new P15LatticePaths();
 

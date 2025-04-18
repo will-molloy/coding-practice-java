@@ -17,7 +17,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1496PathCrossing {
+final class P1496PathCrossing {
 
   public boolean isPathCrossing(String path) {
     Set<List<Integer>> set = new HashSet<>();

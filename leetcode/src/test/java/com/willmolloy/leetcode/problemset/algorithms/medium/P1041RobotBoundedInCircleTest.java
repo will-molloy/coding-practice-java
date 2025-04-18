@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1041RobotBoundedInCircleTest {
+final class P1041RobotBoundedInCircleTest {
 
   private final P1041RobotBoundedInCircle p1041 = new P1041RobotBoundedInCircle();
 

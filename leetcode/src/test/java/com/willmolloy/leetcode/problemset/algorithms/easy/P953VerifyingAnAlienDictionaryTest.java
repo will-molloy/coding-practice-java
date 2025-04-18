@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P953VerifyingAnAlienDictionaryTest {
+final class P953VerifyingAnAlienDictionaryTest {
 
   private final P953VerifyingAnAlienDictionary p953VerifyingAnAlienDictionary =
       new P953VerifyingAnAlienDictionary();

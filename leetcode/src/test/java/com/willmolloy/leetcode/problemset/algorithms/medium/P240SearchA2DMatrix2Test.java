@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P240SearchA2DMatrix2Test {
+final class P240SearchA2DMatrix2Test {
 
   @Test
   void example1() {

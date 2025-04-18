@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P82RemoveDuplicatesFromSortedList2Test {
+final class P82RemoveDuplicatesFromSortedList2Test {
 
   private final P82RemoveDuplicatesFromSortedList2 fun = new P82RemoveDuplicatesFromSortedList2();
 

@@ -20,7 +20,7 @@ import java.util.Queue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P690EmployeeImportance {
+final class P690EmployeeImportance {
 
   public int getImportance(List<Employee> employees, int id) {
     // just a graph

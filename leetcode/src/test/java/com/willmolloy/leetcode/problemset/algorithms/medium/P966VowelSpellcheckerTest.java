@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P966VowelSpellcheckerTest {
+final class P966VowelSpellcheckerTest {
 
   private final P966VowelSpellchecker p966VowelSpellchecker = new P966VowelSpellchecker();
 

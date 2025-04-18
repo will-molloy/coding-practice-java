@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1657DetermineIfTwoStringsAreCloseTest {
+final class P1657DetermineIfTwoStringsAreCloseTest {
 
   private final P1657DetermineIfTwoStringsAreClose p1657 = new P1657DetermineIfTwoStringsAreClose();
 

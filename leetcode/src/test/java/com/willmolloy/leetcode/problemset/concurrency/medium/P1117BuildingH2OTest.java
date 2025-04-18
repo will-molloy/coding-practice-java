@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Timeout;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @Timeout(value = 10)
-class P1117BuildingH2OTest {
+final class P1117BuildingH2OTest {
 
   private P1117BuildingH2O object; // lock on object so tests can run in parallel
 

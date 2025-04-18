@@ -16,7 +16,7 @@ import java.util.Set;
  * @see P216CombinationSum3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P40CombinationSum2 {
+final class P40CombinationSum2 {
 
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
     Set<List<Integer>> result = new HashSet<>();

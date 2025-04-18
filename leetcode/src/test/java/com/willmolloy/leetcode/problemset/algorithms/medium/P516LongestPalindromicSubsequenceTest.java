@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P516LongestPalindromicSubsequenceTest {
+final class P516LongestPalindromicSubsequenceTest {
 
   private final P516LongestPalindromicSubsequence p516 = new P516LongestPalindromicSubsequence();
 

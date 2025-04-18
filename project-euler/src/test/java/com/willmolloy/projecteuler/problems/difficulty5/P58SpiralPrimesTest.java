@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P58SpiralPrimesTest {
+final class P58SpiralPrimesTest {
 
   @Test
   void sideLengthWithLessThan10PercentPrimesOnDiagonals() {

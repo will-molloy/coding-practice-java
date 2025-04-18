@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P10RegularExpressionMatching {
+final class P10RegularExpressionMatching {
 
   public boolean isMatch(String s, String p) {
     return s != null && p != null && s.matches(p);

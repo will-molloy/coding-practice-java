@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P150EvaluateReversePolishNotationTest {
+final class P150EvaluateReversePolishNotationTest {
 
   private final P150EvaluateReversePolishNotation p150EvaluateReversePolishNotation =
       new P150EvaluateReversePolishNotation();

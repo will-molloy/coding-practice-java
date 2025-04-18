@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P7ReverseIntegerTest {
+final class P7ReverseIntegerTest {
 
   private final P7ReverseInteger function = new P7ReverseInteger();
 

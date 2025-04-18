@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1507ReformatDate {
+final class P1507ReformatDate {
 
   public String reformatDate(String date) {
     return LocalDate.parse(

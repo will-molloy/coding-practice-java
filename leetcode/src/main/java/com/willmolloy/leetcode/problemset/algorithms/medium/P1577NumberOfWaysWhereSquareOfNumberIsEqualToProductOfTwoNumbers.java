@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers {
+final class P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers {
 
   // TODO can do O(n1 + n2) time
 

@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P11LargestProductInAGridTest {
+final class P11LargestProductInAGridTest {
 
   private static final String GRID_20X20 =
       ""

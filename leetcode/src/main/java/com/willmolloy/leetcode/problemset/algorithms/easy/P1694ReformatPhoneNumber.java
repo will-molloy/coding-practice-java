@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1694ReformatPhoneNumber {
+final class P1694ReformatPhoneNumber {
 
   public String reformatNumber(String number) {
     String digits = number.replaceAll("\\D", "");

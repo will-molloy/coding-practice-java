@@ -18,10 +18,10 @@ import java.util.HashMap;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P895MaximumFrequencyStack {
+final class P895MaximumFrequencyStack {
 
   /** FreqStack implementation. */
-  static class FreqStack {
+  static final class FreqStack {
 
     private final HashMap<Integer, Integer> freqs;
     private final HashMap<Integer, Deque<Integer>> stacks;

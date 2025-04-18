@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1345JumpGame4
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P55JumpGame {
+sealed interface P55JumpGame {
 
   boolean canJump(int[] nums);
 
@@ -21,7 +21,7 @@ interface P55JumpGame {
    * can be thought of as edges. So something to do with avg number of nodes without edges (i.e.
    * zeros).
    */
-  class BackTracking implements P55JumpGame {
+  final class BackTracking implements P55JumpGame {
 
     public boolean canJump(int[] nums) {
       // just find the zeros and check if they can be passed
@@ -53,7 +53,7 @@ interface P55JumpGame {
    *
    * <p>Runtime: O(n)
    */
-  class Greedy implements P55JumpGame {
+  final class Greedy implements P55JumpGame {
 
     public boolean canJump(int[] nums) {
       int maxPos = 0;

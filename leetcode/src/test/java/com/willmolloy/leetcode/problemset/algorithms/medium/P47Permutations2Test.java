@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P47Permutations2Test {
+final class P47Permutations2Test {
 
   private final P47Permutations2 fun = new P47Permutations2();
 

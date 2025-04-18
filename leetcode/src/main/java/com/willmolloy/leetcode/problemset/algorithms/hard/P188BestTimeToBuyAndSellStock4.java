@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P309BestTimeToBuyAndSellStockWithCooldown
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P188BestTimeToBuyAndSellStock4 {
+final class P188BestTimeToBuyAndSellStock4 {
 
   public int maxProfit(int maxTransactions, int[] prices) {
     if (prices.length <= 1 || maxTransactions == 0) {

@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P902NumbersAtMostNGivenDigitsSet {
+final class P902NumbersAtMostNGivenDigitsSet {
 
   // example:
   // n = 357, digits = [1, 3, 5, 7]

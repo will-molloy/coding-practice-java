@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P329LongestIncreasingPathInAMatrixTest {
+final class P329LongestIncreasingPathInAMatrixTest {
 
   private final P329LongestIncreasingPathInAMatrix p329LongestIncreasingPathInAMatrix =
       new P329LongestIncreasingPathInAMatrix();

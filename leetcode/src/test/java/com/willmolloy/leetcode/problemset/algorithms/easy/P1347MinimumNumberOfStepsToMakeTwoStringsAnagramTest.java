@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1347MinimumNumberOfStepsToMakeTwoStringsAnagramTest {
+final class P1347MinimumNumberOfStepsToMakeTwoStringsAnagramTest {
 
   private final P1347MinimumNumberOfStepsToMakeTwoStringsAnagram fun =
       new P1347MinimumNumberOfStepsToMakeTwoStringsAnagram();

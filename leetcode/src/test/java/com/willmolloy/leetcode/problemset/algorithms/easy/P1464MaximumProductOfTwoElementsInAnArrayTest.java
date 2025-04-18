@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1464MaximumProductOfTwoElementsInAnArrayTest {
+final class P1464MaximumProductOfTwoElementsInAnArrayTest {
 
   private final P1464MaximumProductOfTwoElementsInAnArray p1464 =
       new P1464MaximumProductOfTwoElementsInAnArray();

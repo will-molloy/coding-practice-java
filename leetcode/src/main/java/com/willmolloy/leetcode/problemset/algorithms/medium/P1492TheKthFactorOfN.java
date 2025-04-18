@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1492TheKthFactorOfN {
+final class P1492TheKthFactorOfN {
 
   public int kthFactor(int n, int k) {
     // [1, sqrt(n))

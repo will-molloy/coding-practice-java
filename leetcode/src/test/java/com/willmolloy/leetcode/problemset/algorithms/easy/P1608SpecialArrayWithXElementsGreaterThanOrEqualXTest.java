@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1608SpecialArrayWithXElementsGreaterThanOrEqualXTest {
+final class P1608SpecialArrayWithXElementsGreaterThanOrEqualXTest {
 
   private final P1608SpecialArrayWithXElementsGreaterThanOrEqualX p1608 =
       new P1608SpecialArrayWithXElementsGreaterThanOrEqualX();

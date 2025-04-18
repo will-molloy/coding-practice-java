@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1704DetermineIfStringHalvesAreAlikeTest {
+final class P1704DetermineIfStringHalvesAreAlikeTest {
 
   private final P1704DetermineIfStringHalvesAreAlike p1704DetermineIfStringHalvesAreAlike =
       new P1704DetermineIfStringHalvesAreAlike();

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P783MinimumDistanceBetweenBstNodesTest {
+final class P783MinimumDistanceBetweenBstNodesTest {
 
   private final P783MinimumDistanceBetweenBstNodes fun = new P783MinimumDistanceBetweenBstNodes();
 

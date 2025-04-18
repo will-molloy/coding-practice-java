@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P98ValidateBinarySearchTreeTest {
+final class P98ValidateBinarySearchTreeTest {
 
   private final P98ValidateBinarySearchTree fun = new P98ValidateBinarySearchTree();
 

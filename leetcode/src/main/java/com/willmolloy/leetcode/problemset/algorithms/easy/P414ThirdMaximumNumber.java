@@ -20,7 +20,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P973KClosestPointsToOrigin
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P414ThirdMaximumNumber {
+final class P414ThirdMaximumNumber {
 
   public int thirdMax(int[] nums) {
     Set<Integer> distinctNums = new HashSet<>();

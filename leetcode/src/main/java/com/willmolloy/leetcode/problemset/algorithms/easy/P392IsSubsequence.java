@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P392IsSubsequence {
+final class P392IsSubsequence {
 
   public boolean isSubsequence(String s, String t) {
     int sI = 0;

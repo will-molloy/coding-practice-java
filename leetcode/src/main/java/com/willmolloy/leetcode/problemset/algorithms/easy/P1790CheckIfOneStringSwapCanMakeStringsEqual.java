@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1790CheckIfOneStringSwapCanMakeStringsEqual {
+final class P1790CheckIfOneStringSwapCanMakeStringsEqual {
 
   public boolean areAlmostEqual(String s1, String s2) {
     Map<Integer, Character> map1 = new HashMap<>();

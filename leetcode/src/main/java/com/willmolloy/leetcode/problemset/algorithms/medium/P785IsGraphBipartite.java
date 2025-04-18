@@ -19,7 +19,7 @@ import java.util.Map;
  * @see P886PossibleBipartition
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P785IsGraphBipartite {
+final class P785IsGraphBipartite {
 
   private enum Colour {
     BLACK,

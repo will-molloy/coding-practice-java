@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P918MaximumSumCircularSubarrayTest {
+final class P918MaximumSumCircularSubarrayTest {
 
   private final P918MaximumSumCircularSubarray p918 = new P918MaximumSumCircularSubarray();
 

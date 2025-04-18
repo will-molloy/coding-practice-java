@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P678ValidParenthesisString {
+final class P678ValidParenthesisString {
 
   public boolean checkValidString(String s) {
     // range of how many open brackets there currently are

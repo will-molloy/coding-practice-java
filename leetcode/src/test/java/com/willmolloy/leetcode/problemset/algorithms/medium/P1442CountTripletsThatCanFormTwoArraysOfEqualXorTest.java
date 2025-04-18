@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1442CountTripletsThatCanFormTwoArraysOfEqualXorTest {
+final class P1442CountTripletsThatCanFormTwoArraysOfEqualXorTest {
 
   private final P1442CountTripletsThatCanFormTwoArraysOfEqualXor p1442 =
       new P1442CountTripletsThatCanFormTwoArraysOfEqualXor();

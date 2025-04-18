@@ -17,7 +17,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P645SetMismatch
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P442FindAllDuplicatesInAnArray {
+final class P442FindAllDuplicatesInAnArray {
 
   public List<Integer> findDuplicates(int[] nums) {
     List<Integer> result = new ArrayList<>();

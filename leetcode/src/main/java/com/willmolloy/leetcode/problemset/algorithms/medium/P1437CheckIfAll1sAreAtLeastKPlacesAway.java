@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1437CheckIfAll1sAreAtLeastKPlacesAway {
+final class P1437CheckIfAll1sAreAtLeastKPlacesAway {
 
   public boolean kLengthApart(int[] nums, int k) {
     if (nums.length == 0) {

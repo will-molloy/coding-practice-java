@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1447SimplifiedFractionsTest {
+final class P1447SimplifiedFractionsTest {
 
   private final P1447SimplifiedFractions p1447 = new P1447SimplifiedFractions();
 

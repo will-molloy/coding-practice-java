@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P169MajorityElementTest {
+final class P169MajorityElementTest {
 
   private final P169MajorityElement fun = new P169MajorityElement();
 

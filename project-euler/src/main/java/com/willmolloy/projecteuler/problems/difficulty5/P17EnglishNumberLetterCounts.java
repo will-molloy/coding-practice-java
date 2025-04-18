@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P17EnglishNumberLetterCounts {
+final class P17EnglishNumberLetterCounts {
 
   public int apply(int from, int to) {
     Preconditions.checkArgument(to >= from);

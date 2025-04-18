@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P131PalindromePartitioningTest {
+final class P131PalindromePartitioningTest {
 
   private final P131PalindromePartitioning fun = new P131PalindromePartitioning();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversableTest {
+final class P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversableTest {
 
   private final P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable p1579 =
       new P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable();

@@ -14,7 +14,7 @@ import java.util.Arrays;
  * @see P275HIndex2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P274HIndex {
+final class P274HIndex {
 
   public int hIndex(int[] citations) {
     int n = citations.length;

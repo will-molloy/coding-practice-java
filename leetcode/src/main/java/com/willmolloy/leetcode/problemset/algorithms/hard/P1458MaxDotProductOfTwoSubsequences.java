@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1143LongestCommonSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1458MaxDotProductOfTwoSubsequences {
+final class P1458MaxDotProductOfTwoSubsequences {
 
   public int maxDotProduct(int[] nums1, int[] nums2) {
     int n1 = nums1.length;

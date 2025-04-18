@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P658FindKClosestElements {
+final class P658FindKClosestElements {
 
   public List<Integer> findClosestElements(int[] arr, int k, int x) {
     Comparator<Integer> c =

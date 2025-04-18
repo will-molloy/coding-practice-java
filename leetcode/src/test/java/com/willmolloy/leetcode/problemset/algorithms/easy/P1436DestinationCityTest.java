@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1436DestinationCityTest {
+final class P1436DestinationCityTest {
 
   private final P1436DestinationCity p1436 = new P1436DestinationCity();
 

@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P54SpiralMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P59SpiralMatrix2 {
+final class P59SpiralMatrix2 {
 
   public int[][] generateMatrix(int n) {
     if (n < 0) {

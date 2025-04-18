@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P309BestTimeToBuyAndSellStockWithCooldown
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P122BestTimeToBuyAndSellStock2 {
+sealed interface P122BestTimeToBuyAndSellStock2 {
 
   int maxProfit(int[] prices);
 
@@ -28,7 +28,7 @@ interface P122BestTimeToBuyAndSellStock2 {
    *
    * <p>Space: O(n) (recursion depth)
    */
-  class BruteForce implements P122BestTimeToBuyAndSellStock2 {
+  final class BruteForce implements P122BestTimeToBuyAndSellStock2 {
 
     @Override
     public int maxProfit(int[] prices) {
@@ -73,7 +73,7 @@ interface P122BestTimeToBuyAndSellStock2 {
    *
    * <p>Space: O(1)
    */
-  class Linear implements P122BestTimeToBuyAndSellStock2 {
+  final class Linear implements P122BestTimeToBuyAndSellStock2 {
 
     @Override
     public int maxProfit(int[] prices) {

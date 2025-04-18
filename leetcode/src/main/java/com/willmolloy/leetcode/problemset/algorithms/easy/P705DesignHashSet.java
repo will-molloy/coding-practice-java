@@ -13,10 +13,10 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P707DesignLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P705DesignHashSet {
+final class P705DesignHashSet {
 
   /** My hash set. */
-  static class MyHashSet {
+  static final class MyHashSet {
 
     private final boolean[] array;
 

@@ -18,7 +18,7 @@ import java.util.stream.IntStream;
  * @see P190ReverseBits
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P461HammingDistance {
+final class P461HammingDistance {
 
   public static final int MAX_BIT_LEN = 31;
 

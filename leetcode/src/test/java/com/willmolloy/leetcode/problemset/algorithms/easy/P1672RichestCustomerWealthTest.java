@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1672RichestCustomerWealthTest {
+final class P1672RichestCustomerWealthTest {
 
   private final P1672RichestCustomerWealth p1672 = new P1672RichestCustomerWealth();
 

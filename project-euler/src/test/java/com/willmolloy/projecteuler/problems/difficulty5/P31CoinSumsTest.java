@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P31CoinSumsTest {
+final class P31CoinSumsTest {
 
   private static final int[] COINS = new int[] {1, 2, 5, 10, 20, 50, 100, 200};
 

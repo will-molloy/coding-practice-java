@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P421MaximumXorOfTwoNumbersInAnArrayTest {
+final class P421MaximumXorOfTwoNumbersInAnArrayTest {
 
   private final P421MaximumXorOfTwoNumbersInAnArray p421 =
       new P421MaximumXorOfTwoNumbersInAnArray();

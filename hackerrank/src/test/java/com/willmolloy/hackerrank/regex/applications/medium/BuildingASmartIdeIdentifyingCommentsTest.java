@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class BuildingASmartIdeIdentifyingCommentsTest {
+final class BuildingASmartIdeIdentifyingCommentsTest {
 
   @Test
   void singleLineComments() {

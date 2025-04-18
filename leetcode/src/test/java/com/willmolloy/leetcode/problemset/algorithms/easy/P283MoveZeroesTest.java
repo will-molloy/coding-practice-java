@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P283MoveZeroesTest {
+final class P283MoveZeroesTest {
 
   private final P283MoveZeroes fun = new P283MoveZeroes();
 

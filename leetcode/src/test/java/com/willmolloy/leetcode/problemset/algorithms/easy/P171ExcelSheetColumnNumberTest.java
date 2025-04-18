@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P171ExcelSheetColumnNumberTest {
+final class P171ExcelSheetColumnNumberTest {
 
   private final P171ExcelSheetColumnNumber p171 = new P171ExcelSheetColumnNumber();
 

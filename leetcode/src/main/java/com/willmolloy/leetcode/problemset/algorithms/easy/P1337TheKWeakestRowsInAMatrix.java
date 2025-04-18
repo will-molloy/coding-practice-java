@@ -17,7 +17,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1337TheKWeakestRowsInAMatrix {
+final class P1337TheKWeakestRowsInAMatrix {
 
   public int[] kWeakestRows(int[][] mat, int k) {
     // inner list of [index, soldier count]

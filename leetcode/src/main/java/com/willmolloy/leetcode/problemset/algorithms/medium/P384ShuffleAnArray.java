@@ -14,10 +14,10 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P384ShuffleAnArray {
+final class P384ShuffleAnArray {
 
   /** Solution. */
-  static class Solution {
+  static final class Solution {
 
     private final int[] nums;
 

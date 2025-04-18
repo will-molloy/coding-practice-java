@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P148SortLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P876MiddleOfTheLinkedList {
+final class P876MiddleOfTheLinkedList {
 
   public ListNode middleNode(ListNode head) {
     ListNode slow = head;

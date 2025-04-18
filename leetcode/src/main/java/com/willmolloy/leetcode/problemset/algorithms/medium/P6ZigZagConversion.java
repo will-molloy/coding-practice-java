@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P6ZigZagConversion {
+final class P6ZigZagConversion {
 
   public String convert(String s, int numRows) {
     if (numRows <= 1) {

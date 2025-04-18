@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P289GameOfLife {
+final class P289GameOfLife {
 
   public void gameOfLife(int[][] board) {
     int rows = board.length;

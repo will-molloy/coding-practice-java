@@ -19,7 +19,7 @@ import java.util.Arrays;
  * @see P1552MagneticForceBetweenTwoBalls
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1482MinimumNumberOfDaysToMakeMBouquets {
+final class P1482MinimumNumberOfDaysToMakeMBouquets {
 
   public int minDays(int[] bloomDays, int m, int k) {
     int n = bloomDays.length;

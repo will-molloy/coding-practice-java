@@ -17,7 +17,7 @@ import java.util.Set;
  * @see P560SubarraySumEqualsK
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget {
+final class P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget {
 
   public int maxNonOverlapping(int[] nums, int target) {
     int n = nums.length;

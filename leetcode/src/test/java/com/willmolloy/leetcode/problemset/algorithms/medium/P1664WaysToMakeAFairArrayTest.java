@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1664WaysToMakeAFairArrayTest {
+final class P1664WaysToMakeAFairArrayTest {
 
   private final P1664WaysToMakeAFairArray p1664 = new P1664WaysToMakeAFairArray();
 

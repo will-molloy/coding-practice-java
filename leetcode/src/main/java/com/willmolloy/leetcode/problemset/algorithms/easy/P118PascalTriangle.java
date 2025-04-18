@@ -17,7 +17,7 @@ import java.util.List;
  * @see P119PascalTriangle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P118PascalTriangle {
+final class P118PascalTriangle {
 
   public List<List<Integer>> generate(int n) {
     if (n == 0) {

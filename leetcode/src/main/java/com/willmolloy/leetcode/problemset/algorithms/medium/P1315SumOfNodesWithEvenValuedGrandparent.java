@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P404SumOfLeftLeaves
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1315SumOfNodesWithEvenValuedGrandparent {
+final class P1315SumOfNodesWithEvenValuedGrandparent {
 
   // alternatively, find even valued nodes and sum their grandchildren (this is not as efficient,
   // nor as elegant)

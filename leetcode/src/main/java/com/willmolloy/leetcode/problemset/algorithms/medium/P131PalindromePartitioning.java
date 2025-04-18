@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P131PalindromePartitioning {
+final class P131PalindromePartitioning {
 
   public List<List<String>> partition(String s) {
     return partition(s, 0, new ArrayList<>(), new ArrayList<>());

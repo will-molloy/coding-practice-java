@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P83PathSumFourWaysTest {
+final class P83PathSumFourWaysTest {
 
   @Test
   void test5x5Matrix() {

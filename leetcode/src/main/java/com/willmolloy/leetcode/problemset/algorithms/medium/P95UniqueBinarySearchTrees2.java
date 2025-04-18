@@ -18,7 +18,7 @@ import java.util.List;
  * @see P96UniqueBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P95UniqueBinarySearchTrees2 {
+final class P95UniqueBinarySearchTrees2 {
 
   public List<TreeNode> generateTrees(int n) {
     if (n == 0) {

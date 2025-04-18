@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCutsTest {
+final class P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCutsTest {
 
   private final P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts p1465 =
       new P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts();

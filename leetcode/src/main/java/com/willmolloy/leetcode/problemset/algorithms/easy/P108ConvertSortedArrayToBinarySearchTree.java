@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P109ConvertSortedListToBinarySearchTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P108ConvertSortedArrayToBinarySearchTree {
+final class P108ConvertSortedArrayToBinarySearchTree {
 
   // sorted = inorder traversal, so pick middle element as current nodes value at each step
 

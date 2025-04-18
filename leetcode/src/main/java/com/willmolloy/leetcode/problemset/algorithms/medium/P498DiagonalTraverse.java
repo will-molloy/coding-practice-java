@@ -14,7 +14,7 @@ import java.util.List;
  * @see P1329SortTheMatrixDiagonally
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P498DiagonalTraverse {
+sealed interface P498DiagonalTraverse {
 
   int[] findDiagonalOrder(int[][] matrix);
 
@@ -29,7 +29,7 @@ interface P498DiagonalTraverse {
    * i} variable so don't have to worry about calculating position in 1d array with {@code row} and
    * {@code col} variables.
    */
-  class SimulateWalk implements P498DiagonalTraverse {
+  final class SimulateWalk implements P498DiagonalTraverse {
 
     @Override
     public int[] findDiagonalOrder(int[][] matrix) {
@@ -98,7 +98,7 @@ interface P498DiagonalTraverse {
    *
    * <p><img src="https://i.imgur.com/MRDn9hS.png" />
    */
-  class CollectDiagonals implements P498DiagonalTraverse {
+  final class CollectDiagonals implements P498DiagonalTraverse {
 
     @Override
     public int[] findDiagonalOrder(int[][] matrix) {

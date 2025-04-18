@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P993CousinsInBinaryTree {
+final class P993CousinsInBinaryTree {
 
   private TreeNode xParent;
 

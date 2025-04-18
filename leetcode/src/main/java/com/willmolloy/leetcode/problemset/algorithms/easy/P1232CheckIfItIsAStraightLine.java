@@ -16,7 +16,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("FE_FLOATING_POINT_EQUALITY")
-class P1232CheckIfItIsAStraightLine {
+final class P1232CheckIfItIsAStraightLine {
 
   public boolean checkStraightLine(int[][] coordinates) {
     int n = coordinates.length;

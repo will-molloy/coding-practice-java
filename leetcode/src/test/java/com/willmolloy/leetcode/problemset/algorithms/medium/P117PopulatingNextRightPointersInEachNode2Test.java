@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P117PopulatingNextRightPointersInEachNode2Test {
+final class P117PopulatingNextRightPointersInEachNode2Test {
 
   private final P117PopulatingNextRightPointersInEachNode2 fn =
       new P117PopulatingNextRightPointersInEachNode2();

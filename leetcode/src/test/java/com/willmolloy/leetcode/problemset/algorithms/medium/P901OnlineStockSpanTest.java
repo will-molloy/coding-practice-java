@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P901OnlineStockSpanTest {
+final class P901OnlineStockSpanTest {
 
   @Test
   void example() {

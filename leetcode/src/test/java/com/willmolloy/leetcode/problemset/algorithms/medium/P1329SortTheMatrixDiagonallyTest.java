@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1329SortTheMatrixDiagonallyTest {
+final class P1329SortTheMatrixDiagonallyTest {
 
   private final P1329SortTheMatrixDiagonally p1329SortTheMatrixDiagonally =
       new P1329SortTheMatrixDiagonally();

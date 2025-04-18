@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P695MaxAreaOfIslandTest {
+final class P695MaxAreaOfIslandTest {
 
   private final P695MaxAreaOfIsland p695 = new P695MaxAreaOfIsland();
 

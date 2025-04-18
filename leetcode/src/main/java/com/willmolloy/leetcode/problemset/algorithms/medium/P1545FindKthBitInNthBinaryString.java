@@ -14,7 +14,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1545FindKthBitInNthBinaryString {
+final class P1545FindKthBitInNthBinaryString {
 
   @SuppressFBWarnings("SBSC_USE_STRINGBUFFER_CONCATENATION")
   public char findKthBit(int n, int k) {

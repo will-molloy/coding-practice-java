@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P438FindAllAnagramsInAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P567PermutationInString {
+final class P567PermutationInString {
 
   public boolean checkInclusion(String s1, String s2) {
     if (s1.length() > s2.length()) {

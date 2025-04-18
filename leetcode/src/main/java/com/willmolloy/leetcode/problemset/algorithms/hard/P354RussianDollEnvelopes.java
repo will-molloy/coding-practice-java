@@ -21,7 +21,7 @@ import java.util.Comparator;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P354RussianDollEnvelopes {
+final class P354RussianDollEnvelopes {
 
   public int maxEnvelopes(int[][] envelopes) {
     int[] heights =

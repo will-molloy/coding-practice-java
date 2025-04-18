@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P880DecodedStringAtIndexTest {
+final class P880DecodedStringAtIndexTest {
 
   private final P880DecodedStringAtIndex p880DecodedStringAtIndex = new P880DecodedStringAtIndex();
 

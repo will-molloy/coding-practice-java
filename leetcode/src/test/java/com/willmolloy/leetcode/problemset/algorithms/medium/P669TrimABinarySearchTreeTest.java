@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P669TrimABinarySearchTreeTest {
+final class P669TrimABinarySearchTreeTest {
 
   private final P669TrimABinarySearchTree p669TrimABinarySearchTree =
       new P669TrimABinarySearchTree();

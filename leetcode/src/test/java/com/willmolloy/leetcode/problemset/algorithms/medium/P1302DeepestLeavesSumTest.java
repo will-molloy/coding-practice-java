@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1302DeepestLeavesSumTest {
+final class P1302DeepestLeavesSumTest {
 
   private final P1302DeepestLeavesSum fun = new P1302DeepestLeavesSum();
 

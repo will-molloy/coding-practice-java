@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P658FindKClosestElementsTest {
+final class P658FindKClosestElementsTest {
 
   private final P658FindKClosestElements p658FindKClosestElements = new P658FindKClosestElements();
 

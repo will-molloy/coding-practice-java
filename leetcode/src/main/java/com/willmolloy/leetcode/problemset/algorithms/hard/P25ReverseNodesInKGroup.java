@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P25ReverseNodesInKGroup {
+final class P25ReverseNodesInKGroup {
 
   public ListNode reverseKGroup(ListNode head, int k) {
     if (k == 1) {

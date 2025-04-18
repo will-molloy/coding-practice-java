@@ -21,7 +21,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1519NumberOfNodesInTheSubTreeWithTheSameLabel {
+final class P1519NumberOfNodesInTheSubTreeWithTheSameLabel {
 
   public int[] countSubTrees(int n, int[][] edges, String labels) {
     // build tree data structure
@@ -63,7 +63,7 @@ class P1519NumberOfNodesInTheSubTreeWithTheSameLabel {
     return map;
   }
 
-  private static class Node {
+  private static final class Node {
     final int num;
     final char label;
     final List<Node> children = new ArrayList<>();

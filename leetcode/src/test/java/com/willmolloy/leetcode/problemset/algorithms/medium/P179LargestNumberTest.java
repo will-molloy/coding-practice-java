@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P179LargestNumberTest {
+final class P179LargestNumberTest {
 
   private final P179LargestNumber p179 = new P179LargestNumber();
 

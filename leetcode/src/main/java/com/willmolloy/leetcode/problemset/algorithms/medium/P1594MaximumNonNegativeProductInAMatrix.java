@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P152MaximumProductSubarray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1594MaximumNonNegativeProductInAMatrix {
+final class P1594MaximumNonNegativeProductInAMatrix {
 
   // constraints were small enough (rows/cols <= 15) that this was accepted in the contest
 

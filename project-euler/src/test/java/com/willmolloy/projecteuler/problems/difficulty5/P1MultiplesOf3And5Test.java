@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1MultiplesOf3And5Test {
+final class P1MultiplesOf3And5Test {
 
   @Test
   void multiplesOf3And5() {

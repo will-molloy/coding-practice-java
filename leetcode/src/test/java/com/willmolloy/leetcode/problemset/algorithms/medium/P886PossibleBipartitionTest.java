@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P886PossibleBipartitionTest {
+final class P886PossibleBipartitionTest {
 
   private final P886PossibleBipartition p886 = new P886PossibleBipartition();
 

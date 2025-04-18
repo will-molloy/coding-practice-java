@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1626BestTeamWithNoConflictsTest {
+final class P1626BestTeamWithNoConflictsTest {
 
   private final P1626BestTeamWithNoConflicts p1626 = new P1626BestTeamWithNoConflicts();
 

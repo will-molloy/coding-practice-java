@@ -18,7 +18,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P445AddTwoNumbers2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1290ConvertBinaryNumberInALinkedListToInteger {
+final class P1290ConvertBinaryNumberInALinkedListToInteger {
 
   // example: head = [1, 0, 1] -> 1*2^2 + 0*2^1 + 1*2^0 = 5
 

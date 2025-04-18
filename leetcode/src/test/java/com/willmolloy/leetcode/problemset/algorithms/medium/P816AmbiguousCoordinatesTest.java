@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P816AmbiguousCoordinatesTest {
+final class P816AmbiguousCoordinatesTest {
 
   private final P816AmbiguousCoordinates p816AmbiguousCoordinates = new P816AmbiguousCoordinates();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P60PermutationSequenceTest {
+final class P60PermutationSequenceTest {
 
   private final P60PermutationSequence fun = new P60PermutationSequence();
 

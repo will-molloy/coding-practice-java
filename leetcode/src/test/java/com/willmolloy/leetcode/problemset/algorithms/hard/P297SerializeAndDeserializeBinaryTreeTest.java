@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P297SerializeAndDeserializeBinaryTreeTest {
+final class P297SerializeAndDeserializeBinaryTreeTest {
 
   private final P297SerializeAndDeserializeBinaryTree p297 =
       new P297SerializeAndDeserializeBinaryTree();

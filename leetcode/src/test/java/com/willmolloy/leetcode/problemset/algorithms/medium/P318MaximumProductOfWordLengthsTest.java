@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P318MaximumProductOfWordLengthsTest {
+final class P318MaximumProductOfWordLengthsTest {
 
   static Stream<P318MaximumProductOfWordLengths> solutions() {
     return Stream.of(

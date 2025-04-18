@@ -20,7 +20,7 @@ import java.util.stream.IntStream;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1584MinCostToConnectAllPoints
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable {
+final class P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable {
 
   public int maxNumEdgesToRemove(int n, int[][] edges) {
     // solution:

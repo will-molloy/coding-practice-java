@@ -10,7 +10,7 @@ import java.util.LinkedHashMap;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P146LruCache {
+final class P146LruCache {
 
   private final int capacity;
 

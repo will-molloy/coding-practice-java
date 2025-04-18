@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P201BitwiseAndOfNumbersRangeTest {
+final class P201BitwiseAndOfNumbersRangeTest {
 
   private final P201BitwiseAndOfNumbersRange p201 = new P201BitwiseAndOfNumbersRange();
 

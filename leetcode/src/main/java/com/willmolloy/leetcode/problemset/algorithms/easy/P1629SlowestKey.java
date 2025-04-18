@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1629SlowestKey {
+final class P1629SlowestKey {
 
   public char slowestKey(int[] releaseTimes, String keysPressed) {
     int n = releaseTimes.length;

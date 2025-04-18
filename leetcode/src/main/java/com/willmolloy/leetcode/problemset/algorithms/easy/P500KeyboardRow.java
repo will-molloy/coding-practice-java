@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P500KeyboardRow {
+final class P500KeyboardRow {
 
   private static final Map<Character, Integer> MAP;
 

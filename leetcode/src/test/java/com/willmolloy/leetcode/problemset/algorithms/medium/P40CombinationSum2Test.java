@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P40CombinationSum2Test {
+final class P40CombinationSum2Test {
 
   private final P40CombinationSum2 fun = new P40CombinationSum2();
 

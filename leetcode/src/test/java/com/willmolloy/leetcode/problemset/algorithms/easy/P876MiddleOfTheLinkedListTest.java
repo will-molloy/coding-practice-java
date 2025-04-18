@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P876MiddleOfTheLinkedListTest {
+final class P876MiddleOfTheLinkedListTest {
 
   private final P876MiddleOfTheLinkedList fun = new P876MiddleOfTheLinkedList();
 

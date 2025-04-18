@@ -22,7 +22,7 @@ import java.util.Map;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P112PathSum
  * @see P113PathSum2
  */
-class P437PathSum3 {
+final class P437PathSum3 {
 
   private int result;
 

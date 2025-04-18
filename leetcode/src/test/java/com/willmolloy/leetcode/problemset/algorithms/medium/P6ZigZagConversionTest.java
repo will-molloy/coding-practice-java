@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P6ZigZagConversionTest {
+final class P6ZigZagConversionTest {
 
   private final P6ZigZagConversion function = new P6ZigZagConversion();
 

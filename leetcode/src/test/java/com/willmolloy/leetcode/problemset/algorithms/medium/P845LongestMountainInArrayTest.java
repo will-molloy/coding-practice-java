@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P845LongestMountainInArrayTest {
+final class P845LongestMountainInArrayTest {
 
   private final P845LongestMountainInArray p845 = new P845LongestMountainInArray();
 

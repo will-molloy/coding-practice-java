@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P791CustomSortStringTest {
+final class P791CustomSortStringTest {
 
   private final P791CustomSortString p791CustomSortString = new P791CustomSortString();
 

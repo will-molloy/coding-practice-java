@@ -22,7 +22,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P399EvaluateDivision {
+final class P399EvaluateDivision {
 
   // TODO disjoint set version
 

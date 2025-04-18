@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P10SummationOfPrimesTest {
+final class P10SummationOfPrimesTest {
 
   private final P10SummationOfPrimes summationOfPrimes = new P10SummationOfPrimes();
 

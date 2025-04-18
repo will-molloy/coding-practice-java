@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1497CheckIfArrayPairsAreDivisibleByKTest {
+final class P1497CheckIfArrayPairsAreDivisibleByKTest {
 
   private final P1497CheckIfArrayPairsAreDivisibleByK p1498 =
       new P1497CheckIfArrayPairsAreDivisibleByK();

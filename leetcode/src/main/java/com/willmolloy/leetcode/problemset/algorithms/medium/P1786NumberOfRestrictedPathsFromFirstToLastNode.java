@@ -23,7 +23,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1786NumberOfRestrictedPathsFromFirstToLastNode {
+final class P1786NumberOfRestrictedPathsFromFirstToLastNode {
 
   private static final int MOD = (int) 1e9 + 7;
 

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P835ImageOverlap {
+final class P835ImageOverlap {
 
   public int largestOverlap(int[][] a, int[][] b) {
     // a and b have same dimensions, only need to shift one

@@ -10,7 +10,7 @@ import java.util.List;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P140WordBreak2
  */
-interface P139WordBreak {
+sealed interface P139WordBreak {
 
   boolean wordBreak(String s, List<String> wordDict);
 
@@ -21,7 +21,7 @@ interface P139WordBreak {
    *
    * <p>Space: O({@code s}) (recursion depth)
    */
-  class TopDown implements P139WordBreak {
+  final class TopDown implements P139WordBreak {
 
     @Override
     public boolean wordBreak(String s, List<String> wordDict) {
@@ -50,7 +50,7 @@ interface P139WordBreak {
    *
    * <p>Space: O({@code s}) (dp table size)
    */
-  class BottomUp implements P139WordBreak {
+  final class BottomUp implements P139WordBreak {
 
     @Override
     public boolean wordBreak(String s, List<String> wordDict) {

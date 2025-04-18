@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P28ImplementStrStr {
+final class P28ImplementStrStr {
 
   public int strStr(String haystack, String needle) {
     // return 0 if empty string (problem description)

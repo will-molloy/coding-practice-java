@@ -20,7 +20,7 @@ import java.util.List;
  * @see P46Permutations
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P47Permutations2 {
+final class P47Permutations2 {
 
   public List<List<Integer>> permuteUnique(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P9PalindromeNumber {
+final class P9PalindromeNumber {
 
   public boolean isPalindrome(int x) {
     if (x < 0 || x != 0 && x % 10 == 0) {

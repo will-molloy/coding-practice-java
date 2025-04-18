@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P83RemoveDuplicatesFromSortedListTest {
+final class P83RemoveDuplicatesFromSortedListTest {
 
   private final P83RemoveDuplicatesFromSortedList fun = new P83RemoveDuplicatesFromSortedList();
 

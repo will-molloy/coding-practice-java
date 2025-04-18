@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1566DetectPatternOfLengthMRepeatedKOrMoreTimesTest {
+final class P1566DetectPatternOfLengthMRepeatedKOrMoreTimesTest {
 
   private final P1566DetectPatternOfLengthMRepeatedKOrMoreTimes p1566 =
       new P1566DetectPatternOfLengthMRepeatedKOrMoreTimes();

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1582SpecialPositionsInABinaryMatrix {
+final class P1582SpecialPositionsInABinaryMatrix {
 
   public int numSpecial(int[][] mat) {
     int count = 0;

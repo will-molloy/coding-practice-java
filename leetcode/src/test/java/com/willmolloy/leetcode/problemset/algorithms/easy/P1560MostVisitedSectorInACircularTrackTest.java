@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1560MostVisitedSectorInACircularTrackTest {
+final class P1560MostVisitedSectorInACircularTrackTest {
 
   private final P1560MostVisitedSectorInACircularTrack p1560 =
       new P1560MostVisitedSectorInACircularTrack();

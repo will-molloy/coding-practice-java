@@ -21,7 +21,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P575DistributeCandies {
+final class P575DistributeCandies {
 
   public int distributeCandies(int[] candyType) {
     int numUnique = (int) Arrays.stream(candyType).distinct().count();

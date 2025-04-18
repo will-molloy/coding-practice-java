@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see P148SortLinkedList
  */
-class P147InsertionSortLinkedList {
+final class P147InsertionSortLinkedList {
 
   public ListNode insertionSortList(ListNode head) {
     // dummy head in case we need to insert at the start of the list

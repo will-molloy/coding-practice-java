@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P310MinimumHeightTreesTest {
+final class P310MinimumHeightTreesTest {
 
   private final P310MinimumHeightTrees p310 = new P310MinimumHeightTrees();
 

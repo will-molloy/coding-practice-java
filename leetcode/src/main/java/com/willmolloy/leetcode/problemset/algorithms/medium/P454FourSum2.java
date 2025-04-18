@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P454FourSum2 {
+final class P454FourSum2 {
 
   public int fourSumCount(int[] as, int[] bs, int[] cs, int[] ds) {
     Map<Integer, Integer> ab = new HashMap<>();

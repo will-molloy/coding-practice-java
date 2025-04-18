@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P383RansomNote {
+final class P383RansomNote {
 
   public boolean canConstruct(String ransomNote, String magazine) {
     int[] letters = new int[26];

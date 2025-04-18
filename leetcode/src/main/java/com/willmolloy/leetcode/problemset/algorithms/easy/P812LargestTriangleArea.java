@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P812LargestTriangleArea {
+final class P812LargestTriangleArea {
 
   public double largestTriangleArea(int[][] points) {
     double max = 0;

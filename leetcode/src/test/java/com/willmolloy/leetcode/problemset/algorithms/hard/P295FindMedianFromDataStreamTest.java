@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P295FindMedianFromDataStreamTest {
+final class P295FindMedianFromDataStreamTest {
 
   @Test
   void example() {

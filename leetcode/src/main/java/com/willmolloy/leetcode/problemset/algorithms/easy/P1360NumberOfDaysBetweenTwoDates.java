@@ -15,7 +15,7 @@ import java.time.temporal.ChronoUnit;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1360NumberOfDaysBetweenTwoDates {
+final class P1360NumberOfDaysBetweenTwoDates {
 
   public int daysBetweenDates(String date1, String date2) {
     // it converts to epoch and back so O(1)

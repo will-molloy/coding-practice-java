@@ -24,7 +24,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1657DetermineIfTwoStringsAreClose {
+final class P1657DetermineIfTwoStringsAreClose {
 
   public boolean closeStrings(String word1, String word2) {
     Map<Character, Integer> charFreqs1 = charFreqs(word1);

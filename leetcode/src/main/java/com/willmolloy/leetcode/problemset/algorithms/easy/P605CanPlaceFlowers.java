@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P605CanPlaceFlowers {
+final class P605CanPlaceFlowers {
 
   public boolean canPlaceFlowers(int[] flowerbed, int n) {
     int len = flowerbed.length;

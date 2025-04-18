@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P121BestTimeToBuyAndSellStock
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P714BestTimeToBuyAndSellStockWithTransactionFee {
+final class P714BestTimeToBuyAndSellStockWithTransactionFee {
 
   public int maxProfit(int[] prices, int fee) {
     // 2 states:

@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see P51NQueens
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P52NQueens2 {
+final class P52NQueens2 {
 
   private final P51NQueens delegate = new P51NQueens();
 

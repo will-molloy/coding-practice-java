@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1624LargestSubstringBetweenTwoEqualCharacters {
+final class P1624LargestSubstringBetweenTwoEqualCharacters {
 
   // TODO single pass solution
 

@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P110BalancedBinaryTree {
+final class P110BalancedBinaryTree {
 
   public boolean isBalanced(TreeNode root) {
     // encoding -1 height as unbalanced tree to propagate unbalanced result

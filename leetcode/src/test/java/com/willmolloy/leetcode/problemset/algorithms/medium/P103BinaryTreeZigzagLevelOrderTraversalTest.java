@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P103BinaryTreeZigzagLevelOrderTraversalTest {
+final class P103BinaryTreeZigzagLevelOrderTraversalTest {
 
   private final P103BinaryTreeZigzagLevelOrderTraversal fun =
       new P103BinaryTreeZigzagLevelOrderTraversal();

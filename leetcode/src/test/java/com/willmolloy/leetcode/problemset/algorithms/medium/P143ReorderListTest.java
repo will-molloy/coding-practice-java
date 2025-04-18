@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P143ReorderListTest {
+final class P143ReorderListTest {
 
   private final P143ReorderList p143 = new P143ReorderList();
 

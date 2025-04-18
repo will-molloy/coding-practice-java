@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P455AssignCookies {
+final class P455AssignCookies {
 
   public int findContentChildren(int[] kids, int[] cookies) {
     Arrays.sort(kids);

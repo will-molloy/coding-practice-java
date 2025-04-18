@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P948BagOfTokensTest {
+final class P948BagOfTokensTest {
 
   private final P948BagOfTokens p948 = new P948BagOfTokens();
 

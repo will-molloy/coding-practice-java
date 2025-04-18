@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P337HouseRobber3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P198HouseRobber {
+sealed interface P198HouseRobber {
 
   int rob(int[] nums);
 
@@ -26,7 +26,7 @@ interface P198HouseRobber {
    *
    * <p>Space: O(n)
    */
-  class TopDown implements P198HouseRobber {
+  final class TopDown implements P198HouseRobber {
 
     @Override
     public int rob(int[] nums) {
@@ -73,7 +73,7 @@ interface P198HouseRobber {
    *
    * <p>Space: O(n)
    */
-  class BottomUp implements P198HouseRobber {
+  final class BottomUp implements P198HouseRobber {
 
     @Override
     public int rob(int[] nums) {
@@ -102,7 +102,7 @@ interface P198HouseRobber {
    *
    * <p>Space: O(1)
    */
-  class BottomUpConstantSpace implements P198HouseRobber {
+  final class BottomUpConstantSpace implements P198HouseRobber {
 
     @Override
     public int rob(int[] nums) {

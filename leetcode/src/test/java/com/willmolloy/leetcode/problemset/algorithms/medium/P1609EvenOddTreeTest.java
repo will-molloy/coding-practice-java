@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1609EvenOddTreeTest {
+final class P1609EvenOddTreeTest {
 
   private final P1609EvenOddTree p1609 = new P1609EvenOddTree();
 

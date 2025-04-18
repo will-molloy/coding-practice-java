@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P676ImplementMagicDictionaryTest {
+final class P676ImplementMagicDictionaryTest {
 
   private final P676ImplementMagicDictionary p676 = new P676ImplementMagicDictionary();
 

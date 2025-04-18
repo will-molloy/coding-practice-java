@@ -17,7 +17,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1044LongestDuplicateSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P187RepeatedDnaSequences {
+final class P187RepeatedDnaSequences {
 
   // TODO rolling hash/rabin karp
 

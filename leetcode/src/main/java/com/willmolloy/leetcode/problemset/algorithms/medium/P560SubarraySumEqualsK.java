@@ -17,7 +17,7 @@ import java.util.Map;
  * @see P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P560SubarraySumEqualsK {
+final class P560SubarraySumEqualsK {
 
   public int subarraySum(int[] nums, int k) {
 

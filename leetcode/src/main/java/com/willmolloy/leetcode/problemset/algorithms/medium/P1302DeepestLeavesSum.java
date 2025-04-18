@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1302DeepestLeavesSum {
+final class P1302DeepestLeavesSum {
 
   public int deepestLeavesSum(TreeNode root) {
     // just find the deepest level with bfs

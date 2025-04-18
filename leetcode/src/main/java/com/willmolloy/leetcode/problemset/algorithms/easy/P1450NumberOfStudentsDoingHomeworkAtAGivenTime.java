@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1450NumberOfStudentsDoingHomeworkAtAGivenTime {
+final class P1450NumberOfStudentsDoingHomeworkAtAGivenTime {
 
   public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
     int n = startTime.length;

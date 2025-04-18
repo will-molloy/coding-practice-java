@@ -15,7 +15,7 @@ import java.util.ArrayDeque;
  * @see P394DecodeString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P227BasicCalculator2 {
+final class P227BasicCalculator2 {
 
   public int calculate(String s) {
     s = s.replaceAll("\\s", "");

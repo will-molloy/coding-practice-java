@@ -19,7 +19,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P257BinaryTreePaths {
+final class P257BinaryTreePaths {
 
   public List<String> binaryTreePaths(TreeNode root) {
     List<String> paths = new ArrayList<>();

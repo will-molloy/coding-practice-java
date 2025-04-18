@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P594LongestHarmoniousSubsequenceTest {
+final class P594LongestHarmoniousSubsequenceTest {
 
   private final P594LongestHarmoniousSubsequence p594LongestHarmoniousSubsequence =
       new P594LongestHarmoniousSubsequence();

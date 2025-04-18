@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P941ValidMountainArrayTest {
+final class P941ValidMountainArrayTest {
 
   private final P941ValidMountainArray p941 = new P941ValidMountainArray();
 

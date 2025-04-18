@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P438FindAllAnagramsInAStringTest {
+final class P438FindAllAnagramsInAStringTest {
 
   private final P438FindAllAnagramsInAString p438 = new P438FindAllAnagramsInAString();
 

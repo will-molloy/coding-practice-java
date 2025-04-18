@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P152MaximumProductSubarray {
+sealed interface P152MaximumProductSubarray {
 
   int maxProduct(int[] nums);
 
@@ -22,7 +22,7 @@ interface P152MaximumProductSubarray {
    *
    * <p>Space: O(1)
    */
-  class Quadratic implements P152MaximumProductSubarray {
+  final class Quadratic implements P152MaximumProductSubarray {
 
     @Override
     public int maxProduct(int[] nums) {
@@ -46,7 +46,7 @@ interface P152MaximumProductSubarray {
    *
    * <p>Space: O(1)
    */
-  class Linear implements P152MaximumProductSubarray {
+  final class Linear implements P152MaximumProductSubarray {
 
     // based on
     // https://leetcode.com/problems/maximum-product-subarray/discuss/48330/Simple-Java-code

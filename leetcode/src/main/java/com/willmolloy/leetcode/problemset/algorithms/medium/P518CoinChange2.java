@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *     href=https://en.wikipedia.org/wiki/Dynamic_programming>https://en.wikipedia.org/wiki/Dynamic_programming</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P518CoinChange2 {
+sealed interface P518CoinChange2 {
 
   int change(int n, int[] coins);
 
@@ -26,7 +26,7 @@ interface P518CoinChange2 {
    *
    * <p>Space: O(n * coins)
    */
-  class InitialDp implements P518CoinChange2 {
+  final class InitialDp implements P518CoinChange2 {
 
     @Override
     public int change(int n, int[] coins) {
@@ -63,7 +63,7 @@ interface P518CoinChange2 {
    *
    * <p>Space: O(n)
    */
-  class OptimisedDp implements P518CoinChange2 {
+  final class OptimisedDp implements P518CoinChange2 {
 
     @Override
     public int change(int n, int[] coins) {

@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1519NumberOfNodesInTheSubTreeWithTheSameLabelTest {
+final class P1519NumberOfNodesInTheSubTreeWithTheSameLabelTest {
 
   private final P1519NumberOfNodesInTheSubTreeWithTheSameLabel p1519 =
       new P1519NumberOfNodesInTheSubTreeWithTheSameLabel();

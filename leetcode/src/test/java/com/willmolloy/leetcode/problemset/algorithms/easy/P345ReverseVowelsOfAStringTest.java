@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P345ReverseVowelsOfAStringTest {
+final class P345ReverseVowelsOfAStringTest {
 
   private final P345ReverseVowelsOfAString p345 = new P345ReverseVowelsOfAString();
 

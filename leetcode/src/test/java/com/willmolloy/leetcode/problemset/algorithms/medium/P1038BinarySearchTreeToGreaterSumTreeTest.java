@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1038BinarySearchTreeToGreaterSumTreeTest {
+final class P1038BinarySearchTreeToGreaterSumTreeTest {
 
   private final P1038BinarySearchTreeToGreaterSumTree p1038BinarySearchTreeToGreaterSumTree =
       new P1038BinarySearchTreeToGreaterSumTree();

@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see <a href=https://en.wikipedia.org/wiki/Maximum_subarray_proble>Kadane's algorithm</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P53MaximumSubarray {
+final class P53MaximumSubarray {
 
   public int maxSubArray(int[] nums) {
     int max = Integer.MIN_VALUE;

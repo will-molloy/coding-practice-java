@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class BfsShortestReachInAGraphTest {
+final class BfsShortestReachInAGraphTest {
 
   @Test
   void list4Node2Edge() {

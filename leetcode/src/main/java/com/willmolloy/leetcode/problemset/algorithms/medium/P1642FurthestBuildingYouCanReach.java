@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1642FurthestBuildingYouCanReach {
+sealed interface P1642FurthestBuildingYouCanReach {
 
   int furthestBuilding(int[] heights, int bricks, int ladders);
 
@@ -21,7 +21,7 @@ interface P1642FurthestBuildingYouCanReach {
    *
    * <p>Choice of ladder or bricks creates a tree.
    */
-  class Dfs implements P1642FurthestBuildingYouCanReach {
+  final class Dfs implements P1642FurthestBuildingYouCanReach {
 
     private int max;
 
@@ -70,7 +70,7 @@ interface P1642FurthestBuildingYouCanReach {
    * <p>Key idea: Greedy. Prefer to use ladders, if forced to use bricks then use on smallest height
    * diff. Use priority queue to track height diffs.
    */
-  class Greedy implements P1642FurthestBuildingYouCanReach {
+  final class Greedy implements P1642FurthestBuildingYouCanReach {
 
     @Override
     public int furthestBuilding(int[] heights, int bricks, int ladders) {

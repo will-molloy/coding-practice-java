@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P215KthLargestElementInAnArrayTest {
+final class P215KthLargestElementInAnArrayTest {
 
   private final P215KthLargestElementInAnArray p215KthLargestElementInAnArray =
       new P215KthLargestElementInAnArray();

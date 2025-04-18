@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P910SmallestRange2Test {
+final class P910SmallestRange2Test {
 
   private final P910SmallestRange2 p910SmallestRange2 = new P910SmallestRange2();
 

@@ -11,7 +11,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P61RotateList {
+final class P61RotateList {
 
   public ListNode rotateRight(ListNode head, int k) {
     if (head == null) {

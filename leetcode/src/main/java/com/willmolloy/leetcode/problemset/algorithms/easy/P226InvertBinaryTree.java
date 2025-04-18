@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P226InvertBinaryTree {
+final class P226InvertBinaryTree {
 
   TreeNode invertTree(TreeNode root) {
     if (root != null) {

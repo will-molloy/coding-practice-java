@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P18and67MaximumPathSumTest {
+final class P18and67MaximumPathSumTest {
 
   private final P18and67MaximumPathSum maximumPathSum = new P18and67MaximumPathSum();
 

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P417PacificAtlanticWaterFlowTest {
+final class P417PacificAtlanticWaterFlowTest {
 
   private final P417PacificAtlanticWaterFlow p417PacificAtlanticWaterFlow =
       new P417PacificAtlanticWaterFlow();

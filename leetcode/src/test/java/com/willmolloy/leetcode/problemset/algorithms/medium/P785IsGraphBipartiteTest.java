@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P785IsGraphBipartiteTest {
+final class P785IsGraphBipartiteTest {
 
   private final P785IsGraphBipartite p785 = new P785IsGraphBipartite();
 

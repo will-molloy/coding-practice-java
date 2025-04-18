@@ -16,7 +16,7 @@ import java.util.Deque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1673FindTheMostCompetitiveSubsequence {
+final class P1673FindTheMostCompetitiveSubsequence {
 
   public int[] mostCompetitive(int[] nums, int k) {
     int n = nums.length;

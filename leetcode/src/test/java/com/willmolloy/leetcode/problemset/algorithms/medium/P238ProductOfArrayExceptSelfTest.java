@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P238ProductOfArrayExceptSelfTest {
+final class P238ProductOfArrayExceptSelfTest {
 
   private final P238ProductOfArrayExceptSelf fun = new P238ProductOfArrayExceptSelf();
 

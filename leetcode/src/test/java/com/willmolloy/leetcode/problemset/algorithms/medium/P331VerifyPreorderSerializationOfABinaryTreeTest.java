@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P331VerifyPreorderSerializationOfABinaryTreeTest {
+final class P331VerifyPreorderSerializationOfABinaryTreeTest {
 
   private final P331VerifyPreorderSerializationOfABinaryTree
       p331VerifyPreorderSerializationOfABinaryTree =

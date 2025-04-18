@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P463IslandPerimeterTest {
+final class P463IslandPerimeterTest {
 
   private final P463IslandPerimeter p463 = new P463IslandPerimeter();
 

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1394FindLuckyIntegerInAnArray {
+final class P1394FindLuckyIntegerInAnArray {
 
   public int findLucky(int[] arr) {
     // freq table

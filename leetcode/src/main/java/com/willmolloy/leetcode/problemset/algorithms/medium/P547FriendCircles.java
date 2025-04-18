@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P547FriendCircles {
+final class P547FriendCircles {
 
   private int[] parent;
 

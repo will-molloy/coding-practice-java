@@ -21,7 +21,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P676ImplementMagicDictionary {
+final class P676ImplementMagicDictionary {
 
   private Node root;
 
@@ -100,7 +100,7 @@ class P676ImplementMagicDictionary {
   }
 
   // trie node
-  private static class Node {
+  private static final class Node {
     private final Node[] children = new Node[26];
 
     private boolean isLeaf;

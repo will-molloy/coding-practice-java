@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P95UniqueBinarySearchTrees2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P96UniqueBinarySearchTrees {
+sealed interface P96UniqueBinarySearchTrees {
 
   int numTrees(int n);
 
@@ -20,7 +20,7 @@ interface P96UniqueBinarySearchTrees {
    *
    * <p>Space: O(n) (recursion depth)
    */
-  class TopDownRecursive implements P96UniqueBinarySearchTrees {
+  final class TopDownRecursive implements P96UniqueBinarySearchTrees {
 
     @Override
     public int numTrees(int n) {
@@ -54,7 +54,7 @@ interface P96UniqueBinarySearchTrees {
    *
    * <p>Space: O(n)
    */
-  class BottomUpIterative implements P96UniqueBinarySearchTrees {
+  final class BottomUpIterative implements P96UniqueBinarySearchTrees {
 
     // let g(n) = number of unique BST for a sequence of length n (NOTE not necessarily 1..n)
     // let f(i, n) = number of unique BST, where i is the root, and sequence range is [1, n]

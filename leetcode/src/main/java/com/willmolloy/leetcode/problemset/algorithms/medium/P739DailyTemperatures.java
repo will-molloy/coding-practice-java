@@ -14,7 +14,7 @@ import java.util.Deque;
  * @see P1019NextGreaterNodeInLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P739DailyTemperatures {
+sealed interface P739DailyTemperatures {
 
   int[] dailyTemperatures(int[] temps);
 
@@ -25,7 +25,7 @@ interface P739DailyTemperatures {
    *
    * <p>Extra space: O(1) (fixed sized array/map)
    */
-  class Map implements P739DailyTemperatures {
+  final class Map implements P739DailyTemperatures {
 
     @Override
     public int[] dailyTemperatures(int[] temps) {
@@ -65,7 +65,7 @@ interface P739DailyTemperatures {
    *
    * <p>Extra space: O(n)
    */
-  class Stack implements P739DailyTemperatures {
+  final class Stack implements P739DailyTemperatures {
 
     @Override
     public int[] dailyTemperatures(int[] temps) {

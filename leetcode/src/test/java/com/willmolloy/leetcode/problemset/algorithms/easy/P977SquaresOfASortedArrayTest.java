@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P977SquaresOfASortedArrayTest {
+final class P977SquaresOfASortedArrayTest {
 
   private final P977SquaresOfASortedArray p977 = new P977SquaresOfASortedArray();
 

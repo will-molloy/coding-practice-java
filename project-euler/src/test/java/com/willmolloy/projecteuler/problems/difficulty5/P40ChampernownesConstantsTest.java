@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P40ChampernownesConstantsTest {
+final class P40ChampernownesConstantsTest {
 
   @Test
   void test12thDecimalValue() {

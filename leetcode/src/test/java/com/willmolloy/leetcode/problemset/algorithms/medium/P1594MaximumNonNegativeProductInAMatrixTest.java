@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1594MaximumNonNegativeProductInAMatrixTest {
+final class P1594MaximumNonNegativeProductInAMatrixTest {
 
   private final P1594MaximumNonNegativeProductInAMatrix p1594 =
       new P1594MaximumNonNegativeProductInAMatrix();

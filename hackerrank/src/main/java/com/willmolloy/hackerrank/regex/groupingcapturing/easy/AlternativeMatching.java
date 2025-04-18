@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class AlternativeMatching implements Regex {
+final class AlternativeMatching implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^(M(r(|s)|s)|[DE]r)\\.[a-zA-Z]+$");
 

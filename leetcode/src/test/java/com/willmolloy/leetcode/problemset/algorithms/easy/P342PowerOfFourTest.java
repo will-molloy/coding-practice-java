@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P342PowerOfFourTest {
+final class P342PowerOfFourTest {
 
   private final P342PowerOfFour p342 = new P342PowerOfFour();
 

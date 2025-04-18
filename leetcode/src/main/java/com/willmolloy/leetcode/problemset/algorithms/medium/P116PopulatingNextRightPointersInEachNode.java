@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * @see P117PopulatingNextRightPointersInEachNode2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P116PopulatingNextRightPointersInEachNode {
+sealed interface P116PopulatingNextRightPointersInEachNode {
 
   Node connect(Node root);
 
@@ -26,7 +26,7 @@ interface P116PopulatingNextRightPointersInEachNode {
    *
    * <p>Key idea: BFS with queue.
    */
-  class ExtraSpace implements P116PopulatingNextRightPointersInEachNode {
+  final class ExtraSpace implements P116PopulatingNextRightPointersInEachNode {
 
     @Override
     public Node connect(Node root) {
@@ -59,7 +59,7 @@ interface P116PopulatingNextRightPointersInEachNode {
    *
    * <p>Key idea: BFS by following {@code next} pointer.
    */
-  class ConstantSpace implements P116PopulatingNextRightPointersInEachNode {
+  final class ConstantSpace implements P116PopulatingNextRightPointersInEachNode {
 
     public Node connect(Node root) {
       // bfs - iterate level by level
@@ -94,7 +94,7 @@ interface P116PopulatingNextRightPointersInEachNode {
 
   /** Node. */
   @SuppressFBWarnings("UWF_UNWRITTEN_FIELD")
-  class Node {
+  final class Node {
     int val;
     Node left;
     Node right;

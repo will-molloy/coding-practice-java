@@ -20,7 +20,7 @@ import java.util.Set;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P1625LexicographicallySmallestStringAfterApplyingOperations {
+final class P1625LexicographicallySmallestStringAfterApplyingOperations {
 
   private Set<String> seen;
   private String min;

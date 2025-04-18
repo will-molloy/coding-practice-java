@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P442FindAllDuplicatesInAnArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P645SetMismatch {
+sealed interface P645SetMismatch {
 
   int[] findErrorNums(int[] nums);
 
@@ -27,7 +27,7 @@ interface P645SetMismatch {
    *
    * <p>Key idea: Duplicate has frequency of 2. Missing is num in range [1, n] that is missing.
    */
-  class LinearSpace implements P645SetMismatch {
+  final class LinearSpace implements P645SetMismatch {
 
     @Override
     public int[] findErrorNums(int[] nums) {
@@ -65,7 +65,7 @@ interface P645SetMismatch {
    * num} is in [1, n], so each has a bucket. (Same idea as {@link
    * com.willmolloy.leetcode.problemset.algorithms.medium.P442FindAllDuplicatesInAnArray}.)
    */
-  class ConstantSpace implements P645SetMismatch {
+  final class ConstantSpace implements P645SetMismatch {
 
     @Override
     public int[] findErrorNums(int[] nums) {

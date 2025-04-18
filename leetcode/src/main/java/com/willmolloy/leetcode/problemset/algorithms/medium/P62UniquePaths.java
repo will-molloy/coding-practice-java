@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P62UniquePaths {
+sealed interface P62UniquePaths {
 
   int uniquePaths(int m, int n);
 
@@ -22,7 +22,7 @@ interface P62UniquePaths {
    *
    * <p>Runtime: O(2<sup>m + n</sup>), Space: O(m + n)
    */
-  class TopDownRecursive implements P62UniquePaths {
+  final class TopDownRecursive implements P62UniquePaths {
 
     // m = num cols, n = num rows (doesn't actually matter, as long as kept consistent)
     public int uniquePaths(int m, int n) {
@@ -48,7 +48,7 @@ interface P62UniquePaths {
    * <p>Runtime: O(m*n), Space: O(m*n) TODO think can be done with 1d array (O(m) space) since only
    * ever look one space down/right
    */
-  class BottomUpDp implements P62UniquePaths {
+  final class BottomUpDp implements P62UniquePaths {
 
     // m = num cols, n = num rows (doesn't actually matter, as long as kept consistent)
     public int uniquePaths(int m, int n) {

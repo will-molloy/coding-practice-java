@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1544MakeTheStringGreat {
+final class P1544MakeTheStringGreat {
 
   public String makeGood(String s) {
     List<String> pairs = new ArrayList<>();

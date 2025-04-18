@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P12HighlyDivisibleTriangleNumberTest {
+final class P12HighlyDivisibleTriangleNumberTest {
 
   private final P12HighlyDivisibleTriangleNumber highlyDivisibleTriangleNumber =
       new P12HighlyDivisibleTriangleNumber();

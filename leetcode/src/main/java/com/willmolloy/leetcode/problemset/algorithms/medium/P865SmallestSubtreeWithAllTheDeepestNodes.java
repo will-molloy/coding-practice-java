@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P865SmallestSubtreeWithAllTheDeepestNodes {
+final class P865SmallestSubtreeWithAllTheDeepestNodes {
 
   public TreeNode subtreeWithAllDeepest(TreeNode root) {
     return dfs(root).node;
@@ -39,7 +39,7 @@ class P865SmallestSubtreeWithAllTheDeepestNodes {
     }
   }
 
-  private static class TreeNodeLevel {
+  private static final class TreeNodeLevel {
     TreeNode node;
     int level;
 

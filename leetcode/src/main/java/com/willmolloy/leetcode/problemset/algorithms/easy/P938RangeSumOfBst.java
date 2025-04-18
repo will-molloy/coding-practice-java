@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P938RangeSumOfBst {
+final class P938RangeSumOfBst {
 
   public int rangeSumBst(TreeNode root, int l, int r) {
     // traverse the tree somehow, chose BFS here

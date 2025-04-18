@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P581ShortestUnsortedContinuousSubarray {
+final class P581ShortestUnsortedContinuousSubarray {
 
   public int findUnsortedSubarray(int[] nums) {
     final int n = nums.length;

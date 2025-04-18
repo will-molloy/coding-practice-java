@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1785MinimumElementsToAddToFormAGivenSum {
+final class P1785MinimumElementsToAddToFormAGivenSum {
 
   public int minElements(int[] nums, int limit, int goal) {
     long sum = Arrays.stream(nums).asLongStream().sum();

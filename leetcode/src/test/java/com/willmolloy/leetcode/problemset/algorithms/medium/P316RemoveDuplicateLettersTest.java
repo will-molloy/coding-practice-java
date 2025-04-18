@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P316RemoveDuplicateLettersTest {
+final class P316RemoveDuplicateLettersTest {
 
   private final P316RemoveDuplicateLetters p316 = new P316RemoveDuplicateLetters();
 

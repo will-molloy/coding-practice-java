@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P415AddStrings {
+final class P415AddStrings {
 
   public String addStrings(String num1, String num2) {
     StringBuilder ans = new StringBuilder();

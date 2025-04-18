@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("URF_UNREAD_FIELD")
-class P1530NumberOfGoodLeafNodesPairs {
+final class P1530NumberOfGoodLeafNodesPairs {
 
   // TODO better solution, don't need nested loop on leafs?
 

@@ -16,7 +16,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P126WordLadder2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P127WordLadder {
+final class P127WordLadder {
 
   // TODO bidirectional BFS: https://leetcode.com/problems/word-ladder/solution/
 

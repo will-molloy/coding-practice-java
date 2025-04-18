@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1295FindNumbersWithEvenNumberOfDigits {
+final class P1295FindNumbersWithEvenNumberOfDigits {
 
   public int findNumbers(int[] nums) {
     return (int) Arrays.stream(nums).filter(i -> evenNumberOfDigits(i)).count();

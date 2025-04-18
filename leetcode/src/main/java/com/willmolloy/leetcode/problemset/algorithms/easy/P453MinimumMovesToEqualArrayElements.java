@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P462MinimumMovesToEqualArrayElements2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P453MinimumMovesToEqualArrayElements {
+final class P453MinimumMovesToEqualArrayElements {
 
   public int minMoves(int[] nums) {
     // adding 1 to n - 1 elements is the same as subtracting 1 from 1 element

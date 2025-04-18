@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P540SingleElementInASortedArray {
+final class P540SingleElementInASortedArray {
 
   public int singleNonDuplicate(int[] nums) {
     int n = nums.length;

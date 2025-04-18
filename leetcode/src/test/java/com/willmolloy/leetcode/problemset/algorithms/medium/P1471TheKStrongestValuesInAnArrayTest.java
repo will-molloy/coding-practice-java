@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1471TheKStrongestValuesInAnArrayTest {
+final class P1471TheKStrongestValuesInAnArrayTest {
 
   private final P1471TheKStrongestValuesInAnArray p1471 = new P1471TheKStrongestValuesInAnArray();
 

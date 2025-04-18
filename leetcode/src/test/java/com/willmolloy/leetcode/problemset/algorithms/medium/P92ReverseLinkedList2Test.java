@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P92ReverseLinkedList2Test {
+final class P92ReverseLinkedList2Test {
 
   private final P92ReverseLinkedList2 func = new P92ReverseLinkedList2();
 

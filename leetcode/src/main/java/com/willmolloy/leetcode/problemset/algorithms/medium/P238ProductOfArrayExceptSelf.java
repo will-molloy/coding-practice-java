@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P238ProductOfArrayExceptSelf {
+final class P238ProductOfArrayExceptSelf {
 
   public int[] productExceptSelf(int[] nums) {
     // prefixProduct[i] = product(nums[0, i))

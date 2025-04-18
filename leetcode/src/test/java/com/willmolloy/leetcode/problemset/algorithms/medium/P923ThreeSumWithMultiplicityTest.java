@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P923ThreeSumWithMultiplicityTest {
+final class P923ThreeSumWithMultiplicityTest {
 
   private final P923ThreeSumWithMultiplicity p923ThreeSumWithMultiplicity =
       new P923ThreeSumWithMultiplicity();

@@ -24,7 +24,7 @@ import java.util.List;
  * @see P1329SortTheMatrixDiagonally
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1424DiagonalTraverse2 {
+final class P1424DiagonalTraverse2 {
 
   public int[] findDiagonalOrder(List<List<Integer>> nums) {
     int size = 0;

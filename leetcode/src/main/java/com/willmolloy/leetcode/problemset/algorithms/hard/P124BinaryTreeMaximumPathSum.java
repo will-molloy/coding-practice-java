@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P687LongestUnivaluePath
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P124BinaryTreeMaximumPathSum {
+final class P124BinaryTreeMaximumPathSum {
 
   public int maxPathSum(TreeNode root) {
     int[] ref = {Integer.MIN_VALUE};

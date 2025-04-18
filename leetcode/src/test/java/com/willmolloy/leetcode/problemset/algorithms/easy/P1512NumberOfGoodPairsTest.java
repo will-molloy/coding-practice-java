@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1512NumberOfGoodPairsTest {
+final class P1512NumberOfGoodPairsTest {
 
   private final P1512NumberOfGoodPairs p1512 = new P1512NumberOfGoodPairs();
 

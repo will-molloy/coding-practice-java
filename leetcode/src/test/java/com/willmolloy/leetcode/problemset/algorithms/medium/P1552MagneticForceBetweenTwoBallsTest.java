@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1552MagneticForceBetweenTwoBallsTest {
+final class P1552MagneticForceBetweenTwoBallsTest {
 
   private final P1552MagneticForceBetweenTwoBalls p1552 = new P1552MagneticForceBetweenTwoBalls();
 

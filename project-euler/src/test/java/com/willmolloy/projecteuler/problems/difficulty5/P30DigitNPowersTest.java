@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P30DigitNPowersTest {
+final class P30DigitNPowersTest {
 
   private final P30DigitNPowers digitNPowers = new P30DigitNPowers();
 

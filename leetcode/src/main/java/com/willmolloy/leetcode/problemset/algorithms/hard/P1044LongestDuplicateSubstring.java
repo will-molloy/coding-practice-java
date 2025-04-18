@@ -14,7 +14,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P275HIndex2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1044LongestDuplicateSubstring {
+sealed interface P1044LongestDuplicateSubstring {
 
   String longestDupSubstring(String s);
 
@@ -25,7 +25,7 @@ interface P1044LongestDuplicateSubstring {
    *
    * <p>Key idea: Generate all contiguous substrings.
    */
-  class BruteForce implements P1044LongestDuplicateSubstring {
+  final class BruteForce implements P1044LongestDuplicateSubstring {
 
     @Override
     public String longestDupSubstring(String s) {
@@ -58,7 +58,7 @@ interface P1044LongestDuplicateSubstring {
    * <p>Key idea: Binary search the substring length. Works because if there is a duplicate
    * substring for a given length, there must be one for all smaller lengths.
    */
-  class BinarySearch implements P1044LongestDuplicateSubstring {
+  final class BinarySearch implements P1044LongestDuplicateSubstring {
 
     @Override
     public String longestDupSubstring(String s) {
@@ -105,7 +105,7 @@ interface P1044LongestDuplicateSubstring {
    *
    * <p>Key idea: Rolling hash to efficiently find duplicate substring of given length.
    */
-  class BinarySearchWithRollingHash implements P1044LongestDuplicateSubstring {
+  final class BinarySearchWithRollingHash implements P1044LongestDuplicateSubstring {
 
     // credit:
     // https://leetcode.com/problems/longest-duplicate-substring/discuss/695149/Python-rolling-hash-%2B-binary-search

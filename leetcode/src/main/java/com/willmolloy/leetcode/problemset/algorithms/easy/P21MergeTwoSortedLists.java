@@ -11,7 +11,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P21MergeTwoSortedLists {
+sealed interface P21MergeTwoSortedLists {
 
   ListNode mergeTwoLists(ListNode l1, ListNode l2);
 
@@ -22,7 +22,7 @@ interface P21MergeTwoSortedLists {
    *
    * <p>Key idea: Choose smaller node.
    */
-  class Iterative implements P21MergeTwoSortedLists {
+  final class Iterative implements P21MergeTwoSortedLists {
 
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -62,7 +62,7 @@ interface P21MergeTwoSortedLists {
    *
    * <p>Key idea: Choose smaller node.
    */
-  class Recursive implements P21MergeTwoSortedLists {
+  final class Recursive implements P21MergeTwoSortedLists {
 
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

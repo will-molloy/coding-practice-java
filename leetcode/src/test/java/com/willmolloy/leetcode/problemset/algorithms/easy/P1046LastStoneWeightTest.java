@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1046LastStoneWeightTest {
+final class P1046LastStoneWeightTest {
 
   private final P1046LastStoneWeight fun = new P1046LastStoneWeight();
 

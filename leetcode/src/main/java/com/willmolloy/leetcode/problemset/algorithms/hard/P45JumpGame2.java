@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see P1345JumpGame4
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P45JumpGame2 {
+final class P45JumpGame2 {
 
   public int jump(int[] nums) {
     int n = nums.length;

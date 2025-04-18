@@ -20,7 +20,7 @@ import java.util.Set;
  *     com.willmolloy.leetcode.problemset.algorithms.hard.P1579RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1584MinCostToConnectAllPoints {
+final class P1584MinCostToConnectAllPoints {
 
   public int minCostConnectPoints(int[][] points) {
     int n = points.length;

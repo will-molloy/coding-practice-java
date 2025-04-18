@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P367ValidPerfectSquareTest {
+final class P367ValidPerfectSquareTest {
 
   private final P367ValidPerfectSquare p367 = new P367ValidPerfectSquare();
 

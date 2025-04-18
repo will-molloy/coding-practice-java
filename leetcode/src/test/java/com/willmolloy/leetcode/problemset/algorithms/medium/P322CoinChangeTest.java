@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P322CoinChangeTest {
+final class P322CoinChangeTest {
 
   private final P322CoinChange fun = new P322CoinChange();
 

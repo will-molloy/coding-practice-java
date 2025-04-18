@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P260SingleNumber3Test {
+final class P260SingleNumber3Test {
 
   private final P260SingleNumber3 p260 = new P260SingleNumber3();
 

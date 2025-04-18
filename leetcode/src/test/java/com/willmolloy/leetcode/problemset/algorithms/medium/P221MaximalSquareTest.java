@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P221MaximalSquareTest {
+final class P221MaximalSquareTest {
 
   private final P221MaximalSquare p221 = new P221MaximalSquare();
 

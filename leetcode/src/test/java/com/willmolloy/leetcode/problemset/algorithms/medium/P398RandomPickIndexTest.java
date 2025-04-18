@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P398RandomPickIndexTest {
+final class P398RandomPickIndexTest {
 
   private static final double TOLERANCE = 0.02;
 

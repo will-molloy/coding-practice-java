@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1561MaximumNumberOfCoinsYouCanGet {
+final class P1561MaximumNumberOfCoinsYouCanGet {
 
   public int maxCoins(int[] piles) {
     List<Integer> list =

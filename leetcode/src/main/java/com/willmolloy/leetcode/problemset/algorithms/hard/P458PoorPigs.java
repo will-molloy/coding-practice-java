@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P458PoorPigs {
+final class P458PoorPigs {
 
   // want to find the bucket which has poison (exactly one does)
   // after drinking, within 'minutesToDie' a pig is either alive or dead

@@ -21,7 +21,7 @@ import java.util.List;
  * @see P567PermutationInString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P438FindAllAnagramsInAString {
+final class P438FindAllAnagramsInAString {
 
   public List<Integer> findAnagrams(String s, String p) {
     if (p.length() > s.length()) {

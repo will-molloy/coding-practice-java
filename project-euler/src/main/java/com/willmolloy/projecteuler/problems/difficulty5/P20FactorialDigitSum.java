@@ -9,7 +9,7 @@ import com.willmolloy.projecteuler.common.Maths;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P20FactorialDigitSum {
+final class P20FactorialDigitSum {
 
   public int apply(int n) {
     return Maths.factorial(n).toString().chars().map(Character::getNumericValue).sum();

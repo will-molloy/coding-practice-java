@@ -14,7 +14,7 @@ import java.util.List;
  * @see P16ThreeSumClosest
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P15ThreeSum {
+final class P15ThreeSum {
 
   public List<List<Integer>> threeSum(final int[] nums) {
     if (nums.length < 3) {

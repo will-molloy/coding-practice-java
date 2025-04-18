@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchDigitsAndNonDigitCharacters implements Regex {
+final class MatchDigitsAndNonDigitCharacters implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("\\d\\d\\D\\d\\d\\D\\d\\d\\d\\d");
 

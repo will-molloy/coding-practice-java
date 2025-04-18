@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P191NumberOf1BitsTest {
+final class P191NumberOf1BitsTest {
 
   private final P191NumberOf1Bits p191 = new P191NumberOf1Bits();
 

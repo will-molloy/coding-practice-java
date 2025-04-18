@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1108DefangingAnIpAddress {
+final class P1108DefangingAnIpAddress {
 
   public String defangIPaddr(String address) {
     return address.replaceAll("[.]", "[.]");

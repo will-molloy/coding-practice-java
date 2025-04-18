@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1486XorOperationInAnArrayTest {
+final class P1486XorOperationInAnArrayTest {
 
   private final P1486XorOperationInAnArray p1486 = new P1486XorOperationInAnArray();
 

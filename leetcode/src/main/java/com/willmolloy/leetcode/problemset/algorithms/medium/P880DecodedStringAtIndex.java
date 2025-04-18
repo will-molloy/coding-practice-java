@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P880DecodedStringAtIndex {
+final class P880DecodedStringAtIndex {
 
   public String decodeAtIndex(String s, int k) {
     long size = 0;

@@ -13,7 +13,7 @@ import java.util.Map;
  * @see com.willmolloy.hackerrank.interviewpreparationkit.search.medium.HashTablesIceCreamParlor
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1TwoSum {
+final class P1TwoSum {
 
   private static final int[] EMPTY = new int[] {};
 

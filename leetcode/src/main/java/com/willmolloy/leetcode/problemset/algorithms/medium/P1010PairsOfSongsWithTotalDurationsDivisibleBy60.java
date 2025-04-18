@@ -16,7 +16,7 @@ import java.util.Map;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1010PairsOfSongsWithTotalDurationsDivisibleBy60 {
+final class P1010PairsOfSongsWithTotalDurationsDivisibleBy60 {
 
   public int numPairsDivisibleBy60(int[] time) {
     int count = 0;

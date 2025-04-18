@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1481LeastNumberOfUniqueIntegersAfterKRemovalsTest {
+final class P1481LeastNumberOfUniqueIntegersAfterKRemovalsTest {
 
   private final P1481LeastNumberOfUniqueIntegersAfterKRemovals p1481 =
       new P1481LeastNumberOfUniqueIntegersAfterKRemovals();

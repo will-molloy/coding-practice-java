@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P804UniqueMorseCodeWords {
+final class P804UniqueMorseCodeWords {
 
   public int uniqueMorseRepresentations(String[] words) {
     return (int) Arrays.stream(words).map(this::toMorse).distinct().count();

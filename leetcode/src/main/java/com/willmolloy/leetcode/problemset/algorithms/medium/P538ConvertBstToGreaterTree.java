@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P538ConvertBstToGreaterTree {
+final class P538ConvertBstToGreaterTree {
 
   private int sum;
 

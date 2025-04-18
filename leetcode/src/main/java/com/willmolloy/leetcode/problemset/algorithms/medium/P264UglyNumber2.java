@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P263UglyNumber
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P264UglyNumber2 {
+final class P264UglyNumber2 {
 
   public int nthUglyNumber(int n) {
     // testing isUgly is too slow, need to build up the numbers

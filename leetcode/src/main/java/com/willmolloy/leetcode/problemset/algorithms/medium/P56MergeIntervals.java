@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  * @see P1288RemoveCoveredIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P56MergeIntervals {
+sealed interface P56MergeIntervals {
 
   int[][] merge(int[][] intervals);
 
@@ -34,7 +34,7 @@ interface P56MergeIntervals {
    * <p>Key idea: breaking out to a separate method (getMergeIndex) to continue the merging logic
    * for an unknown amount of iterations.
    */
-  class MergeIntervalsInEncounterOrder implements P56MergeIntervals {
+  final class MergeIntervalsInEncounterOrder implements P56MergeIntervals {
 
     public int[][] merge(int[][] intervals) {
 
@@ -96,7 +96,7 @@ interface P56MergeIntervals {
    *
    * <p>Key idea: consider what happens if you sort first!
    */
-  class SortFirst implements P56MergeIntervals {
+  final class SortFirst implements P56MergeIntervals {
 
     public int[][] merge(int[][] intervals) {
       // sort intervals by their start value (O(n log n))

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchStartAndEnd implements Regex {
+final class MatchStartAndEnd implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d\\w{4}.$");
 

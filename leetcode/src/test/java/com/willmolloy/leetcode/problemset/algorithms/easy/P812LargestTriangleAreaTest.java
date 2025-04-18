@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P812LargestTriangleAreaTest {
+final class P812LargestTriangleAreaTest {
 
   private final P812LargestTriangleArea fun = new P812LargestTriangleArea();
 

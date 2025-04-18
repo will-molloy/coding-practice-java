@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P264UglyNumber2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P263UglyNumber {
+final class P263UglyNumber {
 
   public boolean isUgly(int num) {
     if (num == 0) {

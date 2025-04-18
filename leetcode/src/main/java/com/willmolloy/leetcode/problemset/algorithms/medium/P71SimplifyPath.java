@@ -16,7 +16,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P71SimplifyPath {
+final class P71SimplifyPath {
 
   public String simplifyPath(String path) {
     Deque<String> stack = new ArrayDeque<>();

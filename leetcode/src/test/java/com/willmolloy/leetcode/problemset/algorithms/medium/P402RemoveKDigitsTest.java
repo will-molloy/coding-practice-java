@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P402RemoveKDigitsTest {
+final class P402RemoveKDigitsTest {
 
   private final P402RemoveKDigits p402 = new P402RemoveKDigits();
 

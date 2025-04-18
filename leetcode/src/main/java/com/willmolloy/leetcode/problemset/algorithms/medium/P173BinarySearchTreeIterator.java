@@ -16,10 +16,10 @@ import java.util.Deque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P173BinarySearchTreeIterator {
+final class P173BinarySearchTreeIterator {
 
   /** BstIterator. */
-  static class BstIterator {
+  static final class BstIterator {
     private final Deque<TreeNode> stack = new ArrayDeque<>();
 
     BstIterator(TreeNode root) {

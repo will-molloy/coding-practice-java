@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P344ReverseStringTest {
+final class P344ReverseStringTest {
 
   private final P344ReverseString p344 = new P344ReverseString();
 

@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1115PrintFooBarAlternately {
+final class P1115PrintFooBarAlternately {
 
   // initially allow foo thread to run
   private final Semaphore foo = new Semaphore(1);

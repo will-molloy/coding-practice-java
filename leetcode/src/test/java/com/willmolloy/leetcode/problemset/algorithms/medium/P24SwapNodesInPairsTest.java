@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P24SwapNodesInPairsTest {
+final class P24SwapNodesInPairsTest {
 
   private final P24SwapNodesInPairs fun = new P24SwapNodesInPairs();
 

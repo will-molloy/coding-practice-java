@@ -17,7 +17,7 @@ import java.util.List;
  * @see P322CoinChange
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P279PerfectSquares {
+final class P279PerfectSquares {
 
   public int numSquares(int n) {
     // set of squares up to n

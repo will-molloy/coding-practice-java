@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P8LargestProductInASeries {
+final class P8LargestProductInASeries {
 
   private static final String STRING_1000_DIGITS =
       "73167176531330624919225119674426574742355349194934"

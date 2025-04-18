@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P50PowXn {
+sealed interface P50PowXn {
 
   double myPow(double x, int n);
 
@@ -18,7 +18,7 @@ interface P50PowXn {
    *
    * <p>Runtime: O(n)
    */
-  class LinearRecursive implements P50PowXn {
+  final class LinearRecursive implements P50PowXn {
 
     public double myPow(double x, int n) {
       // known cases
@@ -47,7 +47,7 @@ interface P50PowXn {
    *
    * <p>Runtime: O(lg(n))
    */
-  class Log2Recursive implements P50PowXn {
+  final class Log2Recursive implements P50PowXn {
 
     public double myPow(double x, int n) {
       // known cases

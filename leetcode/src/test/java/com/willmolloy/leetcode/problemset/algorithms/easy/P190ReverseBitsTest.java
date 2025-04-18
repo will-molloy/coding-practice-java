@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P190ReverseBitsTest {
+final class P190ReverseBitsTest {
 
   private final P190ReverseBits p190 = new P190ReverseBits();
 

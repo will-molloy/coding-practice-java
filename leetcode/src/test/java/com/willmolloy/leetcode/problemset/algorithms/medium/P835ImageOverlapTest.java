@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P835ImageOverlapTest {
+final class P835ImageOverlapTest {
 
   private final P835ImageOverlap p835 = new P835ImageOverlap();
 

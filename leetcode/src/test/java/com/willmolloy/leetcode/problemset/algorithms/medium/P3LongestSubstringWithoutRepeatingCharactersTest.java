@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P3LongestSubstringWithoutRepeatingCharactersTest {
+final class P3LongestSubstringWithoutRepeatingCharactersTest {
 
   private final P3LongestSubstringWithoutRepeatingCharacters function =
       new P3LongestSubstringWithoutRepeatingCharacters();

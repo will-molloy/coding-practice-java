@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts {
+final class P1465MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts {
 
   private static final int MOD = 1000000007;
 

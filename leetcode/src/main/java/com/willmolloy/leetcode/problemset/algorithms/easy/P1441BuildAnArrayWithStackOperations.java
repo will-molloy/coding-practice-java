@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1441BuildAnArrayWithStackOperations {
+final class P1441BuildAnArrayWithStackOperations {
 
   public List<String> buildArray(int[] target, int n) {
     List<String> result = new ArrayList<>();

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1304FindNUniqueIntegersSumUpToZeroTest {
+final class P1304FindNUniqueIntegersSumUpToZeroTest {
 
   private final P1304FindNUniqueIntegersSumUpToZero p1304 =
       new P1304FindNUniqueIntegersSumUpToZero();

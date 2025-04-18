@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P66PlusOne {
+final class P66PlusOne {
 
   public int[] plusOne(int[] digits) {
     int n = digits.length;

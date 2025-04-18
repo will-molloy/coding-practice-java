@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P67AddBinaryTest {
+final class P67AddBinaryTest {
 
   private final P67AddBinary func = new P67AddBinary();
 

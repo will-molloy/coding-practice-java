@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P525ContiguousArrayTest {
+final class P525ContiguousArrayTest {
 
   private final P525ContiguousArray fun = new P525ContiguousArray();
 

@@ -16,7 +16,7 @@ import java.util.Arrays;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P260SingleNumber3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P136SingleNumber {
+final class P136SingleNumber {
 
   public int singleNumber(int[] nums) {
     return Arrays.stream(nums).reduce(0, this::xor);

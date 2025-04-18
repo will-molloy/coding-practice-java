@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1793MaximumScoreOfAGoodSubarray {
+final class P1793MaximumScoreOfAGoodSubarray {
 
   // during contest did not have the first two conditions
   // (which move i when j is finished and vice versa)

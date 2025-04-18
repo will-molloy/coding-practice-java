@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1680ConcatenationOfConsecutiveBinaryNumbers {
+final class P1680ConcatenationOfConsecutiveBinaryNumbers {
 
   private static final int MOD = 1_000_000_007;
 

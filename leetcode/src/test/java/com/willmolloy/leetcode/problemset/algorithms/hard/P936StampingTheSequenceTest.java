@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P936StampingTheSequenceTest {
+final class P936StampingTheSequenceTest {
 
   private final P936StampingTheSequence p936StampingTheSequence = new P936StampingTheSequence();
 

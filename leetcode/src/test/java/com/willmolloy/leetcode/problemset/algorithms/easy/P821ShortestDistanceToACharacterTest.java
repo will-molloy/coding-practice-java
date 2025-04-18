@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P821ShortestDistanceToACharacterTest {
+final class P821ShortestDistanceToACharacterTest {
 
   private final P821ShortestDistanceToACharacter p821 = new P821ShortestDistanceToACharacter();
 

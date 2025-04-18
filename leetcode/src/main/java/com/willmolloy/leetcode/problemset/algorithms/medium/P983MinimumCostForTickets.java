@@ -20,7 +20,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P983MinimumCostForTickets {
+final class P983MinimumCostForTickets {
 
   public int mincostTickets(int[] days, int[] costs) {
     int n = days.length;

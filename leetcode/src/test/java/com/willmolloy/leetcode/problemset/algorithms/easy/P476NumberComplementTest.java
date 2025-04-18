@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P476NumberComplementTest {
+final class P476NumberComplementTest {
 
   private final P476NumberComplement p476 = new P476NumberComplement();
 

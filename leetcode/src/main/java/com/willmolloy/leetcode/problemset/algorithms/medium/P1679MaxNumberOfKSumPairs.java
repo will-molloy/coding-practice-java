@@ -16,7 +16,7 @@ import java.util.Map;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1TwoSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1679MaxNumberOfKSumPairs {
+final class P1679MaxNumberOfKSumPairs {
 
   public int maxOperations(int[] nums, int k) {
     Map<Integer, Integer> map = new HashMap<>();

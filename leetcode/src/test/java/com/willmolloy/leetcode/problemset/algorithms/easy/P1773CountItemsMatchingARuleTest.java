@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1773CountItemsMatchingARuleTest {
+final class P1773CountItemsMatchingARuleTest {
 
   private final P1773CountItemsMatchingARule p1773CountItemsMatchingARule =
       new P1773CountItemsMatchingARule();

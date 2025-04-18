@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P114FlattenBinaryTreeToLinkedListTest {
+final class P114FlattenBinaryTreeToLinkedListTest {
 
   private final P114FlattenBinaryTreeToLinkedList fun = new P114FlattenBinaryTreeToLinkedList();
 

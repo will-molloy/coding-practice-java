@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1625LexicographicallySmallestStringAfterApplyingOperationsTest {
+final class P1625LexicographicallySmallestStringAfterApplyingOperationsTest {
 
   private final P1625LexicographicallySmallestStringAfterApplyingOperations p1625 =
       new P1625LexicographicallySmallestStringAfterApplyingOperations();

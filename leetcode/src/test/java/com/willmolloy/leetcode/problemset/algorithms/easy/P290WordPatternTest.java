@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P290WordPatternTest {
+final class P290WordPatternTest {
 
   private final P290WordPattern p290 = new P290WordPattern();
 

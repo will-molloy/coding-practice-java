@@ -8,7 +8,7 @@ import java.util.TreeMap;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1696JumpGame6 {
+sealed interface P1696JumpGame6 {
 
   int maxResult(int[] nums, int k);
 
@@ -21,7 +21,7 @@ interface P1696JumpGame6 {
    *
    * <p>Key idea: Question pretty much gives the dp formula.
    */
-  class NaiveDp implements P1696JumpGame6 {
+  final class NaiveDp implements P1696JumpGame6 {
 
     @Override
     public int maxResult(int[] nums, int k) {
@@ -55,7 +55,7 @@ interface P1696JumpGame6 {
    *
    * <p>Key idea: Instead of looking for max each time, remember it with heap.
    */
-  class AcceptedDp implements P1696JumpGame6 {
+  final class AcceptedDp implements P1696JumpGame6 {
 
     @Override
     public int maxResult(int[] nums, int k) {

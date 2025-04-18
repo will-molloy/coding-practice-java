@@ -19,7 +19,7 @@ import java.util.List;
  * @see P94BinaryTreeInorderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1305AllElementsInTwoBinarySearchTrees {
+final class P1305AllElementsInTwoBinarySearchTrees {
 
   public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
     List<Integer> list1 = inorder(root1, new ArrayList<>());

@@ -17,7 +17,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P953VerifyingAnAlienDictionary {
+final class P953VerifyingAnAlienDictionary {
 
   public boolean isAlienSorted(String[] words, String order) {
     Map<Character, Integer> map = new HashMap<>();

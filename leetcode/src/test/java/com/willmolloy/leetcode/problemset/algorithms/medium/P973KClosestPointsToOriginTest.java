@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P973KClosestPointsToOriginTest {
+final class P973KClosestPointsToOriginTest {
 
   private final P973KClosestPointsToOrigin p973 = new P973KClosestPointsToOrigin();
 

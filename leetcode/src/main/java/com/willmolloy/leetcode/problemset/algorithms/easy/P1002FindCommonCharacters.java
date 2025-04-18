@@ -21,12 +21,12 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1002FindCommonCharacters {
+sealed interface P1002FindCommonCharacters {
 
   List<String> commonChars(String[] a);
 
   /** Solution which uses arrays to store character frequencies and loops to compute them. */
-  class ArraysAndLoops implements P1002FindCommonCharacters {
+  final class ArraysAndLoops implements P1002FindCommonCharacters {
 
     @Override
     public List<String> commonChars(String[] a) {
@@ -66,7 +66,7 @@ interface P1002FindCommonCharacters {
    * <p>Unfortunately there is no {@code CharStream} so have to use a loop to get the character
    * range [a, z].
    */
-  class MapsAndStreams implements P1002FindCommonCharacters {
+  final class MapsAndStreams implements P1002FindCommonCharacters {
 
     @Override
     public List<String> commonChars(String[] a) {

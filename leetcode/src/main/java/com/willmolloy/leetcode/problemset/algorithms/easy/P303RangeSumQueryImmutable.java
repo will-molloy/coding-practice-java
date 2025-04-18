@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P307RangeSumQueryMutable
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P303RangeSumQueryImmutable {
+final class P303RangeSumQueryImmutable {
 
   /**
    * Solution which uses prefix sums.
@@ -19,10 +19,10 @@ class P303RangeSumQueryImmutable {
    *
    * <p>Space: O(n)
    */
-  static class PrefixSum {
+  static final class PrefixSum {
 
     /** NumArray class. */
-    static class NumArray {
+    static final class NumArray {
       // O(n) space
       private final int[] prefixSum;
 
@@ -62,10 +62,10 @@ class P303RangeSumQueryImmutable {
    *
    * <p>Space: O(n)
    */
-  static class SegmentTree {
+  static final class SegmentTree {
 
     /** NumArray class. */
-    static class NumArray {
+    static final class NumArray {
 
       private final Node root;
 

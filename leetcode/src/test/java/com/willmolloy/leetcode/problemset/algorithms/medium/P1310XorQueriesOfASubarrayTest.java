@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1310XorQueriesOfASubarrayTest {
+final class P1310XorQueriesOfASubarrayTest {
 
   private final P1310XorQueriesOfASubarray p1310 = new P1310XorQueriesOfASubarray();
 

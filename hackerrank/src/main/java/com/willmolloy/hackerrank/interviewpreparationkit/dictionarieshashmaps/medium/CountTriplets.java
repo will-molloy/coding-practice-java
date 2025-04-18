@@ -18,12 +18,12 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface CountTriplets {
+sealed interface CountTriplets {
 
   long countTriplets(List<Long> arr, long ratio);
 
   /** O(n^3) solution, gets TLE. */
-  class NaiveSolution implements CountTriplets {
+  final class NaiveSolution implements CountTriplets {
 
     @Override
     public long countTriplets(List<Long> arr, long ratio) {
@@ -49,7 +49,7 @@ interface CountTriplets {
   }
 
   /** O(n) single pass solution using 2 maps to track potential pairs and potential triplets. */
-  class LinearSolution implements CountTriplets {
+  final class LinearSolution implements CountTriplets {
 
     @Override
     public long countTriplets(List<Long> arr, long ratio) {

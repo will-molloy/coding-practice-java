@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P821ShortestDistanceToACharacter {
+final class P821ShortestDistanceToACharacter {
 
   public int[] shortestToChar(String s, char c) {
     // 2 passes one forward one reverse

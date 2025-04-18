@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P74SearchA2dMatrixTest {
+final class P74SearchA2dMatrixTest {
 
   private final P74SearchA2dMatrix fun = new P74SearchA2dMatrix();
 

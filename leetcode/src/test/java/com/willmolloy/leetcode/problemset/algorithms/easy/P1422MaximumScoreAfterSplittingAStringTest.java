@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1422MaximumScoreAfterSplittingAStringTest {
+final class P1422MaximumScoreAfterSplittingAStringTest {
 
   private final P1422MaximumScoreAfterSplittingAString p1422 =
       new P1422MaximumScoreAfterSplittingAString();

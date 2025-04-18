@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1325DeleteLeavesWithAGivenValue {
+final class P1325DeleteLeavesWithAGivenValue {
 
   public TreeNode removeLeafNodes(TreeNode node, int target) {
     if (node == null) {

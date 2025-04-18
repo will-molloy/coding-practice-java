@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
  * @see P973KClosestPointsToOrigin
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P692TopKFrequentWords {
+final class P692TopKFrequentWords {
 
   public List<String> topKFrequent(String[] words, int k) {
     // count freqs

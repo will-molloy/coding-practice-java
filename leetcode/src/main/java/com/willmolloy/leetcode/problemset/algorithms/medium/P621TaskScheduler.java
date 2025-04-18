@@ -19,7 +19,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P621TaskScheduler {
+final class P621TaskScheduler {
 
   public int leastInterval(char[] tasks, int n) {
     int time = 0;

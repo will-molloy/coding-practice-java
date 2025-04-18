@@ -12,7 +12,7 @@ import java.util.ArrayDeque;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P239SlidingWindowMaximum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
+sealed interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 
   int longestSubarray(int[] nums, int limit);
 
@@ -23,7 +23,7 @@ interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
    *
    * <p>Extra space: O(1)
    */
-  class TimeLimitExceeded
+  final class TimeLimitExceeded
       implements P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 
     @Override
@@ -56,7 +56,8 @@ interface P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
    *
    * <p>Extra space: O(n)
    */
-  class Accepted implements P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
+  final class Accepted
+      implements P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 
     @Override
     public int longestSubarray(int[] nums, int limit) {

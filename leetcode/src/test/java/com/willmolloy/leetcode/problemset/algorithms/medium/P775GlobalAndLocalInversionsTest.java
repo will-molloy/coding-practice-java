@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P775GlobalAndLocalInversionsTest {
+final class P775GlobalAndLocalInversionsTest {
 
   private final P775GlobalAndLocalInversions p775GlobalAndLocalInversions =
       new P775GlobalAndLocalInversions();

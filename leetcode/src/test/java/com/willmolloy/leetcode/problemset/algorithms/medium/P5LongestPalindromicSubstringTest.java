@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P5LongestPalindromicSubstringTest {
+final class P5LongestPalindromicSubstringTest {
 
   private final P5LongestPalindromicSubstring function = new P5LongestPalindromicSubstring();
 

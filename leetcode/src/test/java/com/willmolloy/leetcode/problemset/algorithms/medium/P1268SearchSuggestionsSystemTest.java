@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1268SearchSuggestionsSystemTest {
+final class P1268SearchSuggestionsSystemTest {
 
   private final P1268SearchSuggestionsSystem p1268SearchSuggestionsSystem =
       new P1268SearchSuggestionsSystem();

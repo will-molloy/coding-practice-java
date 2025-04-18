@@ -17,7 +17,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P139WordBreak
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P140WordBreak2 {
+sealed interface P140WordBreak2 {
 
   List<String> wordBreak(String s, List<String> wordDict);
 
@@ -28,7 +28,7 @@ interface P140WordBreak2 {
    *
    * <p>Space: O(2<sup>n</sup>)
    */
-  class Dfs implements P140WordBreak2 {
+  final class Dfs implements P140WordBreak2 {
 
     @Override
     public List<String> wordBreak(String s, List<String> words) {
@@ -71,7 +71,7 @@ interface P140WordBreak2 {
    *
    * <p>Space: O(2<sup>n</sup>)
    */
-  class MemoizedDfs implements P140WordBreak2 {
+  final class MemoizedDfs implements P140WordBreak2 {
 
     @Override
     public List<String> wordBreak(String s, List<String> words) {

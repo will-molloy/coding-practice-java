@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1673FindTheMostCompetitiveSubsequenceTest {
+final class P1673FindTheMostCompetitiveSubsequenceTest {
 
   private final P1673FindTheMostCompetitiveSubsequence p1673 =
       new P1673FindTheMostCompetitiveSubsequence();

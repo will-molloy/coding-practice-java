@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P692TopKFrequentWordsTest {
+final class P692TopKFrequentWordsTest {
 
   private final P692TopKFrequentWords p692 = new P692TopKFrequentWords();
 

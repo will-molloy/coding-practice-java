@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P456132Pattern {
+final class P456132Pattern {
 
   public boolean find132pattern(int[] a) {
     int n = a.length;

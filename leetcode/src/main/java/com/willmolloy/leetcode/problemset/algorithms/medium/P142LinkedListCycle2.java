@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see P287FindTheDuplicateNumber
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P142LinkedListCycle2 {
+final class P142LinkedListCycle2 {
 
   public ListNode detectCycle(ListNode head) {
     ListNode slow = head;

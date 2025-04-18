@@ -19,7 +19,7 @@ import java.util.Queue;
  * @see P208ImplementTrie
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P820ShortEncodingOfWords {
+final class P820ShortEncodingOfWords {
 
   public int minimumLengthEncoding(String[] words) {
     TrieNode root = new TrieNode();

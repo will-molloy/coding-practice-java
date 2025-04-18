@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1419MinimumNumberOfFrogsCroaking {
+final class P1419MinimumNumberOfFrogsCroaking {
 
   public int minNumberOfFrogs(String croakOfFrogs) {
     // maintain count of active croaks

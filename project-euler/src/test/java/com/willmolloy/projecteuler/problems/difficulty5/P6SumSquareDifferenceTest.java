@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P6SumSquareDifferenceTest {
+final class P6SumSquareDifferenceTest {
 
   private final P6SumSquareDifference sumSquareDifference = new P6SumSquareDifference();
 

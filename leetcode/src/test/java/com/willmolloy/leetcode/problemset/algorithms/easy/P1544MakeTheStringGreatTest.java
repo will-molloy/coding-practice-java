@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1544MakeTheStringGreatTest {
+final class P1544MakeTheStringGreatTest {
 
   private final P1544MakeTheStringGreat p1544 = new P1544MakeTheStringGreat();
 

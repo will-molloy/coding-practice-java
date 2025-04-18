@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P7ReverseInteger {
+final class P7ReverseInteger {
 
   public int reverse(int x) {
     int out = 0;

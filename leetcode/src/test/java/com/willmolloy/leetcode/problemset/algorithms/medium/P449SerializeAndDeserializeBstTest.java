@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P449SerializeAndDeserializeBstTest {
+final class P449SerializeAndDeserializeBstTest {
 
   private final P449SerializeAndDeserializeBst fun = new P449SerializeAndDeserializeBst();
 

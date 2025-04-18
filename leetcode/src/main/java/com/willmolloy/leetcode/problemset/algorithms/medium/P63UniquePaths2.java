@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P980UniquePaths3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P63UniquePaths2 {
+final class P63UniquePaths2 {
 
   public int uniquePathsWithObstacles(int[][] obstacleGrid) {
     int numRows = obstacleGrid.length;

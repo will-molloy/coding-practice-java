@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1291SequentialDigitsTest {
+final class P1291SequentialDigitsTest {
 
   private final P1291SequentialDigits p1291 = new P1291SequentialDigits();
 

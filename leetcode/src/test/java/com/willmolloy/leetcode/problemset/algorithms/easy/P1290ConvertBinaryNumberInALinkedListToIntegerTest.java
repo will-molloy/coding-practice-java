@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1290ConvertBinaryNumberInALinkedListToIntegerTest {
+final class P1290ConvertBinaryNumberInALinkedListToIntegerTest {
 
   private final P1290ConvertBinaryNumberInALinkedListToInteger fun =
       new P1290ConvertBinaryNumberInALinkedListToInteger();

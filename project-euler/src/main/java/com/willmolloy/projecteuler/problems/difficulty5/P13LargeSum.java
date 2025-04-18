@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P13LargeSum {
+final class P13LargeSum {
 
   public String apply(List<BigInteger> numbers, int numDigits) {
     return numbers.stream()

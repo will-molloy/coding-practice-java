@@ -19,7 +19,7 @@ import java.util.Set;
  * @see P1530NumberOfGoodLeafNodesPairs
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P236LowestCommonAncestorOfABinaryTree {
+final class P236LowestCommonAncestorOfABinaryTree {
 
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     // store parent of every node in map so can traverse up tree

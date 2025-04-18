@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P733FloodFill {
+final class P733FloodFill {
 
   public int[][] floodFill(int[][] image, int startRow, int startCol, int newColor) {
     // dfs

@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P242ValidAnagram {
+final class P242ValidAnagram {
 
   public boolean isAnagram(String s, String t) {
     return f(s).equals(f(t));

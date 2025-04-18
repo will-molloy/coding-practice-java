@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P844BackspaceStringCompare {
+final class P844BackspaceStringCompare {
 
   public boolean backspaceCompare(String s, String t) {
     // compare in reverse so can skip 'backspaced' characters

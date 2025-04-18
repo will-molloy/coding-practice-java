@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P60PermutationSequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P31NextPermutation {
+final class P31NextPermutation {
 
   public void nextPermutation(int[] nums) {
     // Find increasing pair from the right: [a, b] (algorithm detail)

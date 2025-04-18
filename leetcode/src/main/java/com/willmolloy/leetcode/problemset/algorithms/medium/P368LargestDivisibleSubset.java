@@ -19,7 +19,7 @@ import java.util.List;
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P368LargestDivisibleSubset {
+final class P368LargestDivisibleSubset {
 
   public List<Integer> largestDivisibleSubset(int[] nums) {
     int n = nums.length;

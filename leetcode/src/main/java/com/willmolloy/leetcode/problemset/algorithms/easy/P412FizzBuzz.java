@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P412FizzBuzz {
+final class P412FizzBuzz {
 
   public List<String> fizzBuzz(int n) {
     return IntStream.rangeClosed(1, n)

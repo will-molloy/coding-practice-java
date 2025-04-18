@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1688CountOfMatchesInTournamentTest {
+final class P1688CountOfMatchesInTournamentTest {
 
   private final P1688CountOfMatchesInTournament p1688CountOfMatchesInTournament =
       new P1688CountOfMatchesInTournament();

@@ -19,7 +19,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P53MaximumSubarray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1695MaximumErasureValue {
+final class P1695MaximumErasureValue {
 
   public int maximumUniqueSubarray(int[] nums) {
     int n = nums.length;

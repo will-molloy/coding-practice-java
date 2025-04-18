@@ -24,7 +24,7 @@ import java.util.Deque;
  * @see P1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P239SlidingWindowMaximum {
+final class P239SlidingWindowMaximum {
 
   public int[] maxSlidingWindow(int[] nums, int k) {
     int n = nums.length;

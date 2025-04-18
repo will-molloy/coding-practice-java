@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P967NumbersWithSameConsecutiveDifferences {
+final class P967NumbersWithSameConsecutiveDifferences {
 
   public int[] numsSameConsecDiff(int n, int k) {
     if (n > 1) {

@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-abstract class P478GenerateRandomPointInACircle {
+abstract sealed class P478GenerateRandomPointInACircle {
 
   protected final ThreadLocalRandom rng = ThreadLocalRandom.current();
 
@@ -35,7 +35,7 @@ abstract class P478GenerateRandomPointInACircle {
    * <p>Key idea: Use Pythagorean theorem to determine if the point is in the circle (i.e. less than
    * or equal to hypotenuse, where hypotenuse is the circles radius).
    */
-  static class RejectionSamplingFromSquare extends P478GenerateRandomPointInACircle {
+  static final class RejectionSamplingFromSquare extends P478GenerateRandomPointInACircle {
 
     RejectionSamplingFromSquare(double radius, double xCentre, double yCentre) {
       super(radius, xCentre, yCentre);
@@ -68,7 +68,7 @@ abstract class P478GenerateRandomPointInACircle {
    * <p>Theta is picked uniformly from [0, 2 * PI). Radius is picked uniformly from circles area, so
    * need square root.
    */
-  static class PolarCoordinates extends P478GenerateRandomPointInACircle {
+  static final class PolarCoordinates extends P478GenerateRandomPointInACircle {
 
     PolarCoordinates(double radius, double xCentre, double yCentre) {
       super(radius, xCentre, yCentre);

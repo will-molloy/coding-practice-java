@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P73SetMatrixZeroes {
+final class P73SetMatrixZeroes {
 
   public void setZeroes(int[][] matrix) {
     int numRows = matrix.length;

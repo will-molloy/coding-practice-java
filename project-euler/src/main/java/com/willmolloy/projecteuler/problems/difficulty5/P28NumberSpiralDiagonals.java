@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  * @see P58SpiralPrimes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P28NumberSpiralDiagonals {
+final class P28NumberSpiralDiagonals {
   int sumDiagonals(int n) {
     Preconditions.checkArgument(n > 0 && n % 2 == 1, "Spiral can only hold odd width x height.");
     return sumDiagonals(n, 0);

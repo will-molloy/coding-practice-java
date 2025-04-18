@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P65ValidNumberTest {
+final class P65ValidNumberTest {
 
   private final P65ValidNumber p65ValidNumber = new P65ValidNumber();
 

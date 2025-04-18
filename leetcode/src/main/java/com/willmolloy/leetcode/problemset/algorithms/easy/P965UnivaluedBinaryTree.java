@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P965UnivaluedBinaryTree {
+final class P965UnivaluedBinaryTree {
 
   public boolean isUnivalTree(TreeNode root) {
     if (root == null) {

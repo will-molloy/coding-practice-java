@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P153FindMinimumInRotatedSortedArrayTest {
+final class P153FindMinimumInRotatedSortedArrayTest {
 
   private final P153FindMinimumInRotatedSortedArray fun = new P153FindMinimumInRotatedSortedArray();
 

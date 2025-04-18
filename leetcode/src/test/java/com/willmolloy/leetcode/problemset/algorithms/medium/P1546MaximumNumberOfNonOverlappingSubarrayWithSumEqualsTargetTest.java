@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTargetTest {
+final class P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTargetTest {
 
   private final P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget p1546 =
       new P1546MaximumNumberOfNonOverlappingSubarrayWithSumEqualsTarget();

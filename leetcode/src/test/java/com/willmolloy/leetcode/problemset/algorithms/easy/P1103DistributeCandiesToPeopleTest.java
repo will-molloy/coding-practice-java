@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1103DistributeCandiesToPeopleTest {
+final class P1103DistributeCandiesToPeopleTest {
 
   private final P1103DistributeCandiesToPeople p1103 = new P1103DistributeCandiesToPeople();
 

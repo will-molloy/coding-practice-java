@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P628MaximumProductOfThreeNumbers {
+final class P628MaximumProductOfThreeNumbers {
 
   public int maximumProduct(int[] nums) {
     // track 3 largest

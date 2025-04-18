@@ -21,7 +21,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see <a href=https://youtu.be/MiqoA-yF-0M>Back To Back SWE's video</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P72EditDistance {
+final class P72EditDistance {
 
   public int minDistance(String word1, String word2) {
     int w1 = word1.length();

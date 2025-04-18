@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P345ReverseVowelsOfAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P344ReverseString {
+final class P344ReverseString {
 
   public void reverseString(char[] s) {
     int l = 0;

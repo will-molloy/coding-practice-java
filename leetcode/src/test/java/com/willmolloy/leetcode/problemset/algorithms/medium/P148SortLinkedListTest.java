@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P148SortLinkedListTest {
+final class P148SortLinkedListTest {
 
   private final P148SortLinkedList p148 = new P148SortLinkedList();
 

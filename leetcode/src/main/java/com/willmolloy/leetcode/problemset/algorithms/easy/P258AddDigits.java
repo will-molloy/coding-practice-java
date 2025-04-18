@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P258AddDigits {
+final class P258AddDigits {
   // TODO followup asks for O(1) runtime - probably some math trick
 
   public int addDigits(int num) {

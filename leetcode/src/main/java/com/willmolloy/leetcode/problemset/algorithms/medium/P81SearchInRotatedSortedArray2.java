@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P154FindMinimumInRotatedSortedArray2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P81SearchInRotatedSortedArray2 {
+final class P81SearchInRotatedSortedArray2 {
 
   // NOTE that the 'getLeftRotation` method doesn't work here (now that there are dupes!)
 

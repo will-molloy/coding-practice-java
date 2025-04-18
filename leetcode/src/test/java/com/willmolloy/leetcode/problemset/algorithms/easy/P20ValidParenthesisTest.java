@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P20ValidParenthesisTest {
+final class P20ValidParenthesisTest {
 
   private final P20ValidParenthesis function = new P20ValidParenthesis();
 

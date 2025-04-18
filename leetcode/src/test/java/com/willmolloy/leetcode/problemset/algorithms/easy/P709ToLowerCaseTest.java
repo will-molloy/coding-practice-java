@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P709ToLowerCaseTest {
+final class P709ToLowerCaseTest {
 
   private final P709ToLowerCase p709 = new P709ToLowerCase();
 

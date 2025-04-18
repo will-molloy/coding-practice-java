@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P332ReconstructItineraryTest {
+final class P332ReconstructItineraryTest {
 
   private final P332ReconstructItinerary p332 = new P332ReconstructItinerary();
 

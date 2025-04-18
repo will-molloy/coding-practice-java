@@ -16,7 +16,7 @@ import java.util.StringJoiner;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P237DeleteNodeInALinkedList {
+final class P237DeleteNodeInALinkedList {
 
   public void deleteNode(ListNode node) {
     // have no access to prev node, so overwrite this node with next node
@@ -26,7 +26,7 @@ class P237DeleteNodeInALinkedList {
   }
 
   /** Linked list node. */
-  static class ListNode {
+  static final class ListNode {
     int val;
     ListNode next;
 

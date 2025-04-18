@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P1048LongestStringChain {
+final class P1048LongestStringChain {
 
   public int longestStrChain(String[] words) {
     dp = new HashMap<>();

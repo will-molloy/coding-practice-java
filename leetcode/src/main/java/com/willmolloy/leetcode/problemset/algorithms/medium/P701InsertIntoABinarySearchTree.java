@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.dsa.trees.TreeInsert
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P701InsertIntoABinarySearchTree {
+final class P701InsertIntoABinarySearchTree {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
   public TreeNode insertIntoBST(TreeNode root, int val) {

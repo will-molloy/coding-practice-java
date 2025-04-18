@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1091ShortestPathInBinaryMatrix {
+final class P1091ShortestPathInBinaryMatrix {
 
   public int shortestPathBinaryMatrix(int[][] grid) {
     if (grid[0][0] == 1) {

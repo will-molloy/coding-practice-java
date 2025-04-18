@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P41FirstMissingPositiveTest {
+final class P41FirstMissingPositiveTest {
 
   private final P41FirstMissingPositive fun = new P41FirstMissingPositive();
 

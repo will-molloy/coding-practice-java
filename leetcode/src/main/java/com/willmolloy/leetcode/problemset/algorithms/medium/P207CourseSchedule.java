@@ -27,7 +27,7 @@ import java.util.Set;
  * @see P886PossibleBipartition
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P207CourseSchedule {
+final class P207CourseSchedule {
 
   // TODO BFS can be used too
 

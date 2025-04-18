@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P720LongestWordInDictionaryTest {
+final class P720LongestWordInDictionaryTest {
 
   private final P720LongestWordInDictionary p720 = new P720LongestWordInDictionary();
 

@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P155MinStack {
+final class P155MinStack {
 
   // TODO probably way to do it with all operations O(1)
 

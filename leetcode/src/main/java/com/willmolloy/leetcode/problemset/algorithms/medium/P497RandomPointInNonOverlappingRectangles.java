@@ -21,10 +21,10 @@ import java.util.concurrent.ThreadLocalRandom;
  * @see P528RandomPickWithWeight
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P497RandomPointInNonOverlappingRectangles {
+final class P497RandomPointInNonOverlappingRectangles {
 
   /** Solution class. */
-  static class Solution {
+  static final class Solution {
 
     private final NavigableMap<Integer, int[]> map;
 

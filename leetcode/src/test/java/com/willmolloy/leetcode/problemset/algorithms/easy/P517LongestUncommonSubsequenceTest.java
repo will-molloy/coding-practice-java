@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P517LongestUncommonSubsequenceTest {
+final class P517LongestUncommonSubsequenceTest {
 
   private final P517LongestUncommonSubsequence p517 = new P517LongestUncommonSubsequence();
 

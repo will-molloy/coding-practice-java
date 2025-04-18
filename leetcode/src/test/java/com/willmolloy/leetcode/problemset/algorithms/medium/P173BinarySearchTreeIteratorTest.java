@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P173BinarySearchTreeIteratorTest {
+final class P173BinarySearchTreeIteratorTest {
 
   @Test
   void example() {

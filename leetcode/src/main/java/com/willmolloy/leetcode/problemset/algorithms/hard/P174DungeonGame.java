@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P120Triangle
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P174DungeonGame {
+final class P174DungeonGame {
 
   public int calculateMinimumHP(int[][] dungeon) {
     int numRows = dungeon.length;

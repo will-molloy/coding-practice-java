@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1513NumberOfSubstringsWithOnly1s {
+final class P1513NumberOfSubstringsWithOnly1s {
 
   private static final int MOD = (int) 1e9 + 7;
 

@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see P783MinimumDistanceBetweenBstNodes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P530MinimumAbsoluteDifferentInBst {
+final class P530MinimumAbsoluteDifferentInBst {
 
   public int getMinimumDifference(TreeNode root) {
     // all nodes contain non-negative values, so mark null node as -1

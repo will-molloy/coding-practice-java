@@ -16,7 +16,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1461CheckIfAStringContainsAllBinaryCodesOfSizeK {
+final class P1461CheckIfAStringContainsAllBinaryCodesOfSizeK {
 
   public boolean hasAllCodes(String s, int k) {
     int requiredSize = 1 << k;

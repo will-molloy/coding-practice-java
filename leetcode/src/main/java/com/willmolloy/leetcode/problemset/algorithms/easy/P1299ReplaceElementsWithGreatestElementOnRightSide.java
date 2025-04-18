@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1299ReplaceElementsWithGreatestElementOnRightSide {
+final class P1299ReplaceElementsWithGreatestElementOnRightSide {
 
   public int[] replaceElements(int[] arr) {
     int n = arr.length;

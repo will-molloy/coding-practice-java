@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P1594MaximumNonNegativeProductInAMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P64MinimumPathSum {
+sealed interface P64MinimumPathSum {
 
   int minPathSum(int[][] grid);
 
@@ -24,7 +24,7 @@ interface P64MinimumPathSum {
    *
    * <p>Space: O(n + m)
    */
-  class RecursiveTopDown implements P64MinimumPathSum {
+  final class RecursiveTopDown implements P64MinimumPathSum {
 
     public int minPathSum(int[][] grid) {
       // assumed at least 1x1 grid else IOOB
@@ -64,7 +64,7 @@ interface P64MinimumPathSum {
    * reduce to 1d array since only ever look one square down/right (i.e. overwrite rows/cols bottom
    * up)
    */
-  class DpBottomUp implements P64MinimumPathSum {
+  final class DpBottomUp implements P64MinimumPathSum {
 
     // e.g. grid:
     // [1,3,1]

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class CapturingAndNonCapturingGroups implements Regex {
+final class CapturingAndNonCapturingGroups implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("(ok){3,}");
 

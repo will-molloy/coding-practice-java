@@ -42,10 +42,10 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P720LongestWordInDictionary
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1032StreamOfCharacters {
+final class P1032StreamOfCharacters {
 
   /** {@code StreamChecker} class. */
-  static class StreamChecker {
+  static final class StreamChecker {
 
     private final Node root;
 
@@ -92,7 +92,7 @@ class P1032StreamOfCharacters {
     }
 
     /** Trie Node. */
-    static class Node {
+    static final class Node {
       Node[] child = new Node[26];
       boolean leaf;
     }

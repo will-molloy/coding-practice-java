@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1689PartitioningIntoMinimumNumberOfDeciBinaryNumbers {
+final class P1689PartitioningIntoMinimumNumberOfDeciBinaryNumbers {
 
   public int minPartitions(String n) {
     int maxDigit = 0;

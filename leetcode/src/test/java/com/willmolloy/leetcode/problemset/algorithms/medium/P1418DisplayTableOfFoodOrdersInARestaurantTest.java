@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1418DisplayTableOfFoodOrdersInARestaurantTest {
+final class P1418DisplayTableOfFoodOrdersInARestaurantTest {
 
   private final P1418DisplayTableOfFoodOrdersInARestaurant b =
       new P1418DisplayTableOfFoodOrdersInARestaurant();

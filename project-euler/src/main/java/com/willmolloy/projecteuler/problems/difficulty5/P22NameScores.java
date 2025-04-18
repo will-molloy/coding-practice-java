@@ -11,7 +11,7 @@ import java.util.Locale;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P22NameScores {
+final class P22NameScores {
 
   public int apply(List<String> names) {
     return Collections.zipWithIndex(names.stream().sorted())

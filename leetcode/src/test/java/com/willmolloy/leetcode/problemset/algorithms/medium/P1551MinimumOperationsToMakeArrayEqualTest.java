@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1551MinimumOperationsToMakeArrayEqualTest {
+final class P1551MinimumOperationsToMakeArrayEqualTest {
 
   private final P1551MinimumOperationsToMakeArrayEqual p1551 =
       new P1551MinimumOperationsToMakeArrayEqual();

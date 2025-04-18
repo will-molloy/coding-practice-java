@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1217MinimumCostToMoveChipsToTheSamePositionTest {
+final class P1217MinimumCostToMoveChipsToTheSamePositionTest {
 
   private final P1217MinimumCostToMoveChipsToTheSamePosition p1217 =
       new P1217MinimumCostToMoveChipsToTheSamePosition();

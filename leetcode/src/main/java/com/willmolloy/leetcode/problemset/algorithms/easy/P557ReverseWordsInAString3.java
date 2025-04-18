@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  * @see P345ReverseVowelsOfAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P557ReverseWordsInAString3 {
+final class P557ReverseWordsInAString3 {
 
   public String reverseWords(String s) {
     String[] words = s.split(" ");

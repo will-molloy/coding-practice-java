@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P824GoatLatin {
+final class P824GoatLatin {
 
   public String toGoatLatin(String s) {
     Pattern vowel = Pattern.compile("[aeiou].*", Pattern.CASE_INSENSITIVE);

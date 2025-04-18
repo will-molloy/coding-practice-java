@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P107BinaryTreeLevelOrderTraversal2Test {
+final class P107BinaryTreeLevelOrderTraversal2Test {
 
   private final P107BinaryTreeLevelOrderTraversal2 fun = new P107BinaryTreeLevelOrderTraversal2();
 

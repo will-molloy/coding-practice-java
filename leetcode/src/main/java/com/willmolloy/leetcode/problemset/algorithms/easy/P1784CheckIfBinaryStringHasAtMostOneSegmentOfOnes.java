@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1784CheckIfBinaryStringHasAtMostOneSegmentOfOnes {
+final class P1784CheckIfBinaryStringHasAtMostOneSegmentOfOnes {
 
   public boolean checkOnesSegment(String s) {
     char[] chars = s.toCharArray();

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1137NthTribonacciNumberTest {
+final class P1137NthTribonacciNumberTest {
 
   private final P1137NthTribonacciNumber fun = new P1137NthTribonacciNumber();
 

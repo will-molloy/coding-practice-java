@@ -17,7 +17,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P206ReverseLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P92ReverseLinkedList2 {
+final class P92ReverseLinkedList2 {
 
   // m and n are 1-indexed and represent a closed range [m, n]
 

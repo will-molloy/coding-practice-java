@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P567PermutationInStringTest {
+final class P567PermutationInStringTest {
 
   private final P567PermutationInString p567 = new P567PermutationInString();
 

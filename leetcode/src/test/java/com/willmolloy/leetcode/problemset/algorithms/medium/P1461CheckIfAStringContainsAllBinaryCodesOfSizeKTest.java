@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1461CheckIfAStringContainsAllBinaryCodesOfSizeKTest {
+final class P1461CheckIfAStringContainsAllBinaryCodesOfSizeKTest {
 
   private final P1461CheckIfAStringContainsAllBinaryCodesOfSizeK
       p1461CheckIfAStringContainsAllBinaryCodesOfSizeK =

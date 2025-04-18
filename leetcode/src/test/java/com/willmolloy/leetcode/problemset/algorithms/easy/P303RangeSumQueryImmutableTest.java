@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P303RangeSumQueryImmutableTest {
+final class P303RangeSumQueryImmutableTest {
 
   @Test
   void examplePrefixSum() {

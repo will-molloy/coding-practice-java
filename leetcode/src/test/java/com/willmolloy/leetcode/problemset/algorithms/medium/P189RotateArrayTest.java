@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P189RotateArrayTest {
+final class P189RotateArrayTest {
 
   @ParameterizedTest
   @MethodSource

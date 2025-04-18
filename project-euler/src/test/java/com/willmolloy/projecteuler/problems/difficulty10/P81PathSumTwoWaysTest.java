@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-public class P81PathSumTwoWaysTest {
+public final class P81PathSumTwoWaysTest {
 
   private static final int[][] MATRIX_5X5 = {
     {131, 673, 234, 103, 18},

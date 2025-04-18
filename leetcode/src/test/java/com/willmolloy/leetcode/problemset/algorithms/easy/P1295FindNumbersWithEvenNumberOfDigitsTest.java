@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1295FindNumbersWithEvenNumberOfDigitsTest {
+final class P1295FindNumbersWithEvenNumberOfDigitsTest {
 
   private final P1295FindNumbersWithEvenNumberOfDigits p1295 =
       new P1295FindNumbersWithEvenNumberOfDigits();

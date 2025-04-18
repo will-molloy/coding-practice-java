@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1629SlowestKeyTest {
+final class P1629SlowestKeyTest {
 
   private final P1629SlowestKey p1629 = new P1629SlowestKey();
 

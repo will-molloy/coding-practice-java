@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P88MergeSortedArrayTest {
+final class P88MergeSortedArrayTest {
 
   private final P88MergeSortedArray fun = new P88MergeSortedArray();
 

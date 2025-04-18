@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see P42TrappingRainWater
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P84LargestRectangleInHistogram {
+sealed interface P84LargestRectangleInHistogram {
 
   int largestRectangleArea(int[] heights);
 
@@ -20,7 +20,7 @@ interface P84LargestRectangleInHistogram {
    *
    * <p>Key idea: try every combination of left/right
    */
-  class BruteForce implements P84LargestRectangleInHistogram {
+  final class BruteForce implements P84LargestRectangleInHistogram {
 
     @Override
     public int largestRectangleArea(int[] heights) {
@@ -48,7 +48,7 @@ interface P84LargestRectangleInHistogram {
    *
    * <p>Key idea: computing indices of minimum left/right heights ahead of time
    */
-  class Linear implements P84LargestRectangleInHistogram {
+  final class Linear implements P84LargestRectangleInHistogram {
 
     @Override
     public int largestRectangleArea(int[] heights) {

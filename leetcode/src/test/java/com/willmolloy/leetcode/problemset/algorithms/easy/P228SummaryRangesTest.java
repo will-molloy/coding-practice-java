@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P228SummaryRangesTest {
+final class P228SummaryRangesTest {
 
   private final P228SummaryRanges p228 = new P228SummaryRanges();
 

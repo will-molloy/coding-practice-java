@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P24LexicographicPermutationsTest {
+final class P24LexicographicPermutationsTest {
 
   private final P24LexicographicPermutations lexicographicPermutations =
       new P24LexicographicPermutations();

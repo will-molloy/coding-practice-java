@@ -32,7 +32,7 @@ import java.util.PriorityQueue;
  * @see <a href=https://en.wikipedia.org/wiki/Eulerian_path>Wikipedia: Eulerian path</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P332ReconstructItinerary {
+final class P332ReconstructItinerary {
 
   public List<String> findItinerary(List<List<String>> tickets) {
     // create adj list, use sorted data structure so traverse in sorted (lexicographical) order

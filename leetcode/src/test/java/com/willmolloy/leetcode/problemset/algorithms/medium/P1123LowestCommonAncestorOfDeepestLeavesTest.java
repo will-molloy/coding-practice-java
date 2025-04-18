@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1123LowestCommonAncestorOfDeepestLeavesTest {
+final class P1123LowestCommonAncestorOfDeepestLeavesTest {
 
   private final P1123LowestCommonAncestorOfDeepestLeaves p1123 =
       new P1123LowestCommonAncestorOfDeepestLeaves();

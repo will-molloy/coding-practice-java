@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1514PathWithMaximumProbabilityTest {
+final class P1514PathWithMaximumProbabilityTest {
 
   private final P1514PathWithMaximumProbability p1514 = new P1514PathWithMaximumProbability();
 

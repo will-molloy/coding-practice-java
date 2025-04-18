@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P82PathSumThreeWaysTest {
+final class P82PathSumThreeWaysTest {
 
   @Test
   void test5x5Matrix() {

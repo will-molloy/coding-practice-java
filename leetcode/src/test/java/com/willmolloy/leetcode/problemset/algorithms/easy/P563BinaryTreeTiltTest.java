@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P563BinaryTreeTiltTest {
+final class P563BinaryTreeTiltTest {
 
   private final P563BinaryTreeTilt p563 = new P563BinaryTreeTilt();
 

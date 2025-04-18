@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P701InsertIntoABinarySearchTreeTest {
+final class P701InsertIntoABinarySearchTreeTest {
 
   private final P701InsertIntoABinarySearchTree p701 = new P701InsertIntoABinarySearchTree();
 

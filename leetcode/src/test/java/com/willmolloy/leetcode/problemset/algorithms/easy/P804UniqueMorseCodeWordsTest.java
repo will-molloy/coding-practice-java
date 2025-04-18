@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P804UniqueMorseCodeWordsTest {
+final class P804UniqueMorseCodeWordsTest {
 
   private final P804UniqueMorseCodeWords p804 = new P804UniqueMorseCodeWords();
 

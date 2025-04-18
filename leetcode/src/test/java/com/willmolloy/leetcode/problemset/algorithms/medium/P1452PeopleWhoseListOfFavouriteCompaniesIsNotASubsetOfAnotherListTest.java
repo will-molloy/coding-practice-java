@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTest {
+final class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTest {
 
   private final P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList p1452 =
       new P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherList();

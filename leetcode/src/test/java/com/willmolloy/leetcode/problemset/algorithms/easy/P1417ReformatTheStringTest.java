@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1417ReformatTheStringTest {
+final class P1417ReformatTheStringTest {
 
   private final P1417ReformatTheString a = new P1417ReformatTheString();
 

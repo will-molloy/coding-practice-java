@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P1457PseudoPalindromicPathsInABinaryTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P409LongestPalindrome {
+final class P409LongestPalindrome {
 
   public int longestPalindrome(String s) {
     // count letter freqs

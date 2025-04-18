@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P443StringCompressionTest {
+final class P443StringCompressionTest {
 
   private final P443StringCompression p443 = new P443StringCompression();
 

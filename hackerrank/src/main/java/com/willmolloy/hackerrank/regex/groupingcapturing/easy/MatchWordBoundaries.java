@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchWordBoundaries implements Regex {
+final class MatchWordBoundaries implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("\\b[aeiouAEIOU][a-zA-Z]*\\b");
 

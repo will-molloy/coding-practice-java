@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P120TriangleTest {
+final class P120TriangleTest {
 
   private final P120Triangle fun = new P120Triangle();
 

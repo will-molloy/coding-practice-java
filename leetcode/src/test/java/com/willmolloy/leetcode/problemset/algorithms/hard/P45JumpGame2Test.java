@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P45JumpGame2Test {
+final class P45JumpGame2Test {
 
   private final P45JumpGame2 p45 = new P45JumpGame2();
 

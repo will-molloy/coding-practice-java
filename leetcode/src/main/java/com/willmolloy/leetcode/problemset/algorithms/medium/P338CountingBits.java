@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P338CountingBits {
+final class P338CountingBits {
 
   public int[] countBits(int num) {
     int[] dp = new int[num + 1];

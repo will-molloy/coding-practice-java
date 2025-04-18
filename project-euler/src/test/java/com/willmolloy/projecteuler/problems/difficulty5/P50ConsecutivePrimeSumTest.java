@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P50ConsecutivePrimeSumTest {
+final class P50ConsecutivePrimeSumTest {
 
   @Test
   void primeBelow100() {

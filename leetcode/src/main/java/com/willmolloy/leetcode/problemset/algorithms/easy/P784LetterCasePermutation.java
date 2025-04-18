@@ -16,7 +16,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P494TargetSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P784LetterCasePermutation {
+final class P784LetterCasePermutation {
 
   public List<String> letterCasePermutation(String s) {
     List<String> result = new ArrayList<>();

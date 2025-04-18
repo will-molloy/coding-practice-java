@@ -21,7 +21,7 @@ import java.util.ArrayDeque;
  *     com.willmolloy.leetcode.problemset.algorithms.easy.P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P445AddTwoNumbers2 {
+final class P445AddTwoNumbers2 {
 
   // TODO any cheeky recursion approach like P1019NextGreaterNodeInLinkedList?
 

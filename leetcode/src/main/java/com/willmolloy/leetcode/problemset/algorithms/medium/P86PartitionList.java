@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P86PartitionList {
+final class P86PartitionList {
 
   public ListNode partition(final ListNode head, int x) {
     // partition into lessThan list and greaterThanEqual list

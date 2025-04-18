@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P500KeyboardRowTest {
+final class P500KeyboardRowTest {
 
   private final P500KeyboardRow p500 = new P500KeyboardRow();
 

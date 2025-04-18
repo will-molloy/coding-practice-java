@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1551MinimumOperationsToMakeArrayEqual {
+final class P1551MinimumOperationsToMakeArrayEqual {
 
   public int minOperations(int n) {
     // odd n, [1, 3, 5], median = 3, res = 2

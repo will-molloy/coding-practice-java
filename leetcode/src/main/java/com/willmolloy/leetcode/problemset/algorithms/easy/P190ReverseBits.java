@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P461HammingDistance
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P190ReverseBits {
+final class P190ReverseBits {
 
   // you need treat n as an unsigned value
   public int reverseBits(int n) {

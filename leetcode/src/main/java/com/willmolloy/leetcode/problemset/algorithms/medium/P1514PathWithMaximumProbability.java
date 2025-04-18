@@ -27,7 +27,7 @@ import java.util.StringJoiner;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1514PathWithMaximumProbability {
+final class P1514PathWithMaximumProbability {
 
   public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
     Map<Integer, Set<NodeAndCost>> adjList = buildGraph(edges, succProb);

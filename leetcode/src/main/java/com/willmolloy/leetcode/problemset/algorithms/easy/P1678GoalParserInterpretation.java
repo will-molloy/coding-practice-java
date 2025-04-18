@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1678GoalParserInterpretation {
+final class P1678GoalParserInterpretation {
 
   public String interpret(String command) {
     return command.replaceAll("[(][)]", "o").replaceAll("[(]al[])]", "al");

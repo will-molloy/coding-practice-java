@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1385FindTheDistanceValueBetweenTwoArrays {
+final class P1385FindTheDistanceValueBetweenTwoArrays {
 
   public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
     return (int)

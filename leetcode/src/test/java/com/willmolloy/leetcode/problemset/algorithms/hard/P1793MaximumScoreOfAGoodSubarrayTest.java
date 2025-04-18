@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1793MaximumScoreOfAGoodSubarrayTest {
+final class P1793MaximumScoreOfAGoodSubarrayTest {
 
   private final P1793MaximumScoreOfAGoodSubarray p1793MaximumScoreOfAGoodSubarray =
       new P1793MaximumScoreOfAGoodSubarray();

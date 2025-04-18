@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P4MedianOfTwoSortedArrays {
+final class P4MedianOfTwoSortedArrays {
 
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     // this solution is very similar to merge sort (the merge part...)

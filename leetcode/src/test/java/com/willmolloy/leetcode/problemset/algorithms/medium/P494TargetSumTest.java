@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P494TargetSumTest {
+final class P494TargetSumTest {
 
   private final P494TargetSum p494 = new P494TargetSum();
 

@@ -20,12 +20,12 @@ import java.util.List;
  * @see P114FlattenBinaryTreeToLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P430FlattenAMultilevelDoublyLinkedList {
+sealed interface P430FlattenAMultilevelDoublyLinkedList {
 
   Node flatten(Node head);
 
   /** Using a stack. */
-  class Stack implements P430FlattenAMultilevelDoublyLinkedList {
+  final class Stack implements P430FlattenAMultilevelDoublyLinkedList {
 
     @Override
     public Node flatten(Node head) {
@@ -63,7 +63,7 @@ interface P430FlattenAMultilevelDoublyLinkedList {
   }
 
   /** Using recursion. */
-  class Recursion implements P430FlattenAMultilevelDoublyLinkedList {
+  final class Recursion implements P430FlattenAMultilevelDoublyLinkedList {
 
     @Override
     public Node flatten(Node head) {
@@ -112,7 +112,7 @@ interface P430FlattenAMultilevelDoublyLinkedList {
   @SuppressFBWarnings(
       value = "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
       justification = "Required for leetcode submission")
-  class Node {
+  final class Node {
     public final int val;
     public Node prev;
     public Node next;

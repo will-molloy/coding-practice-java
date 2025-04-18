@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P129SumRootToLeafNumbers
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-public interface P126WordLadder2 {
+public sealed interface P126WordLadder2 {
 
   List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList);
 
@@ -30,7 +30,7 @@ public interface P126WordLadder2 {
    *
    * <p>Extra space: O(n) (worst case recursion depth)
    */
-  class Dfs implements P126WordLadder2 {
+  final class Dfs implements P126WordLadder2 {
 
     // TODO maybe if more efficient branching algorithm is used (O(m)), DFS can pass leetcode?
 
@@ -92,7 +92,7 @@ public interface P126WordLadder2 {
    *
    * <p>Extra space: O(n * n * m) (worst case queue size; could have n * (n * m sized) paths)
    */
-  class Bfs implements P126WordLadder2 {
+  final class Bfs implements P126WordLadder2 {
 
     @Override
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {

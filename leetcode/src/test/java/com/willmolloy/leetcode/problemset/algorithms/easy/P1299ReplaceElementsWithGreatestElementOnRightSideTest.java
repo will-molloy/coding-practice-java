@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1299ReplaceElementsWithGreatestElementOnRightSideTest {
+final class P1299ReplaceElementsWithGreatestElementOnRightSideTest {
 
   private final P1299ReplaceElementsWithGreatestElementOnRightSide p1299 =
       new P1299ReplaceElementsWithGreatestElementOnRightSide();

@@ -23,7 +23,7 @@ import java.util.stream.Stream;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P102BinaryTreeLevelOrderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P107BinaryTreeLevelOrderTraversal2 {
+final class P107BinaryTreeLevelOrderTraversal2 {
 
   public List<List<Integer>> levelOrderBottom(TreeNode root) {
     // LinkedList has more efficient head insertion than array based list

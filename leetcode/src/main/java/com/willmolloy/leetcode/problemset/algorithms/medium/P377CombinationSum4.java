@@ -21,12 +21,12 @@ import java.util.Arrays;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-interface P377CombinationSum4 {
+sealed interface P377CombinationSum4 {
 
   int combinationSum4(int[] nums, int target);
 
   /** Top down (recursive) solution with DP table. */
-  class TopDownRecursive implements P377CombinationSum4 {
+  final class TopDownRecursive implements P377CombinationSum4 {
 
     @Override
     public int combinationSum4(int[] nums, int target) {
@@ -59,7 +59,7 @@ interface P377CombinationSum4 {
   }
 
   /** Bottom up (iterative) solution with DP table. */
-  class BottomUpDp implements P377CombinationSum4 {
+  final class BottomUpDp implements P377CombinationSum4 {
 
     @Override
     public int combinationSum4(int[] nums, int target) {

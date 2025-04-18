@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P9PalindromeNumberTest {
+final class P9PalindromeNumberTest {
 
   private final P9PalindromeNumber function = new P9PalindromeNumber();
 

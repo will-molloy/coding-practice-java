@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1448CountGoodNodesInBinaryTree {
+final class P1448CountGoodNodesInBinaryTree {
 
   private int count;
 

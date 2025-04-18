@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1662CheckIfTwoStringArraysAreEquivalentTest {
+final class P1662CheckIfTwoStringArraysAreEquivalentTest {
 
   private final P1662CheckIfTwoStringArraysAreEquivalent p1662 =
       new P1662CheckIfTwoStringArraysAreEquivalent();

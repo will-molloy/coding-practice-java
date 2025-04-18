@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P526BeautifulArrangement {
+final class P526BeautifulArrangement {
 
   private int count;
 

@@ -18,7 +18,7 @@ import static java.lang.Math.min;
  * @see P221MaximalSquare
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1277CountSquareSubmatricesWithAllOnes {
+final class P1277CountSquareSubmatricesWithAllOnes {
 
   public int countSquares(int[][] matrix) {
     int n = matrix.length;

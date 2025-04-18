@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P24LexicographicPermutations {
+final class P24LexicographicPermutations {
 
   public String apply(String seq, int indexStartingFromOne) {
     List<Integer> digits =

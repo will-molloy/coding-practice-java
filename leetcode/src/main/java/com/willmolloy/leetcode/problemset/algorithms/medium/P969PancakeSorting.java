@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P969PancakeSorting {
+final class P969PancakeSorting {
 
   public List<Integer> pancakeSort(int[] a) {
     // result is 1-indexed

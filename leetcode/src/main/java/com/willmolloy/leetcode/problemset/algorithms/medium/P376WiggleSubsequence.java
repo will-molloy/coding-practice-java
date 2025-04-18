@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P376WiggleSubsequence {
+final class P376WiggleSubsequence {
 
   // don't need to track max peak or min valley because the prev element is updated implicitly
   // e.g. if continue going up (dir = UP and nums[i] > nums[i - 1]) then we compare with nums[i] as

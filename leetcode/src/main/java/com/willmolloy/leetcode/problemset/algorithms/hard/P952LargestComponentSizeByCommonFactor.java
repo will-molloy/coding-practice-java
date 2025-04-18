@@ -18,7 +18,7 @@ import java.util.Map;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P952LargestComponentSizeByCommonFactor {
+final class P952LargestComponentSizeByCommonFactor {
 
   private int[] parent;
 

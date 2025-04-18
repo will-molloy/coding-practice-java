@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P299BullsAndCows {
+final class P299BullsAndCows {
 
   public String getHint(String secret, String guess) {
     int[] secretFreqs = new int[10];

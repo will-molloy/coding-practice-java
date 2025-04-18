@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P138CopyListWithRandomPointerTest {
+final class P138CopyListWithRandomPointerTest {
 
   private final P138CopyListWithRandomPointer p138CopyListWithRandomPointer =
       new P138CopyListWithRandomPointer();

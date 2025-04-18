@@ -20,7 +20,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P816AmbiguousCoordinates {
+final class P816AmbiguousCoordinates {
 
   public List<String> ambiguousCoordinates(String s) {
     // s = (123)

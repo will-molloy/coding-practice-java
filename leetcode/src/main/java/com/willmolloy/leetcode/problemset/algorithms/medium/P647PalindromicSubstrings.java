@@ -6,7 +6,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P647PalindromicSubstrings {
+sealed interface P647PalindromicSubstrings {
 
   int countSubstrings(String s);
 
@@ -19,7 +19,7 @@ interface P647PalindromicSubstrings {
    *
    * <p>Key idea: Sliding window for all substring sizes [1, n].
    */
-  class TestAllSubstrings implements P647PalindromicSubstrings {
+  final class TestAllSubstrings implements P647PalindromicSubstrings {
 
     @Override
     public int countSubstrings(String s) {
@@ -61,7 +61,7 @@ interface P647PalindromicSubstrings {
    *
    * <p>Recursive case: {@code dp[l][r] = dp[l + 1][r - 1] AND s[l] == s[r]}.
    */
-  class Dp implements P647PalindromicSubstrings {
+  final class Dp implements P647PalindromicSubstrings {
 
     @Override
     public int countSubstrings(String s) {

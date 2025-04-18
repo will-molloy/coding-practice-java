@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1325DeleteLeavesWithAGivenValueTest {
+final class P1325DeleteLeavesWithAGivenValueTest {
 
   private final P1325DeleteLeavesWithAGivenValue fun = new P1325DeleteLeavesWithAGivenValue();
 

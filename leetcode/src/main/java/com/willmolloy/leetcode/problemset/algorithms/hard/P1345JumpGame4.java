@@ -28,7 +28,7 @@ import java.util.Set;
  * @see P1553MinimumNumberOfDaysToEatNOranges.Bfs
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1345JumpGame4 {
+final class P1345JumpGame4 {
 
   public int minJumps(int[] arr) {
     int n = arr.length;

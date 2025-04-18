@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1530NumberOfGoodLeafNodesPairsTest {
+final class P1530NumberOfGoodLeafNodesPairsTest {
 
   private final P1530NumberOfGoodLeafNodesPairs p1530 = new P1530NumberOfGoodLeafNodesPairs();
 

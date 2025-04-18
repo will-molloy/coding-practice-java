@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P345ReverseVowelsOfAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P541ReverseString2 {
+final class P541ReverseString2 {
 
   public String reverseStr(String s, int k) {
     int n = s.length();

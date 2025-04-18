@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P234PalindromeLinkedListTest {
+final class P234PalindromeLinkedListTest {
 
   private final P234PalindromeLinkedList p234PalindromeLinkedList = new P234PalindromeLinkedList();
 

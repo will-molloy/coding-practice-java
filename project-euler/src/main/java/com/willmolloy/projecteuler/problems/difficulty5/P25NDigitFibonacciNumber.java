@@ -11,7 +11,7 @@ import java.math.BigInteger;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P25NDigitFibonacciNumber {
+final class P25NDigitFibonacciNumber {
 
   public int fibIndex(final int digits) {
     Preconditions.checkArgument(digits > 0);

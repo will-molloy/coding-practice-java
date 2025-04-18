@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P717OneBitAndTwoBitCharactersTest {
+final class P717OneBitAndTwoBitCharactersTest {
 
   private final P717OneBitAndTwoBitCharacters fun = new P717OneBitAndTwoBitCharacters();
 

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P19CountingSundays {
+final class P19CountingSundays {
 
   public int onFirstOfMonth(LocalDateTime from, LocalDateTime to) {
     Preconditions.checkArgument(from.getDayOfMonth() == 1);

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P523ContinuousSubarraySumTest {
+final class P523ContinuousSubarraySumTest {
   private final P523ContinuousSubarraySum fun = new P523ContinuousSubarraySum();
 
   @Test

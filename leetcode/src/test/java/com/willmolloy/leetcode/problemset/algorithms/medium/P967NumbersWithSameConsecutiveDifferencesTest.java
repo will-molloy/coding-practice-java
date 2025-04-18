@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P967NumbersWithSameConsecutiveDifferencesTest {
+final class P967NumbersWithSameConsecutiveDifferencesTest {
 
   private final P967NumbersWithSameConsecutiveDifferences p967 =
       new P967NumbersWithSameConsecutiveDifferences();

@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * @see P1008ConstructBinarySearchTreeFromPreorderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
+final class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
   // can assume no duplicate keys in the tree
 

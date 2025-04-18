@@ -23,7 +23,7 @@ import java.util.Map;
  * @see P886PossibleBipartition
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P210CourseSchedule2 {
+final class P210CourseSchedule2 {
 
   // TODO BFS can be used too
 

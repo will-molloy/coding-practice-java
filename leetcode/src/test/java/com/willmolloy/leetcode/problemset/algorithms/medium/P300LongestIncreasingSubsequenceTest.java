@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P300LongestIncreasingSubsequenceTest {
+final class P300LongestIncreasingSubsequenceTest {
 
   private final P300LongestIncreasingSubsequence fun = new P300LongestIncreasingSubsequence();
 

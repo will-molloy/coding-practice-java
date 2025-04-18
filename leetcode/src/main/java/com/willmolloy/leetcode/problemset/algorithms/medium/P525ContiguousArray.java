@@ -19,7 +19,7 @@ import java.util.Map;
  * @see P523ContinuousSubarraySum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P525ContiguousArray {
+final class P525ContiguousArray {
 
   public int findMaxLength(int[] nums) {
     int max = 0;

@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1578MinimumDeletionCostToAvoidRepeatingLetters {
+final class P1578MinimumDeletionCostToAvoidRepeatingLetters {
 
   public int minCost(String s, int[] cost) {
     char[] chars = s.toCharArray();

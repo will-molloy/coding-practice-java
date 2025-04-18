@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1584MinCostToConnectAllPointsTest {
+final class P1584MinCostToConnectAllPointsTest {
 
   private final P1584MinCostToConnectAllPoints p1584 = new P1584MinCostToConnectAllPoints();
 

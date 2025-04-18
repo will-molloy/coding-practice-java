@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1051HeightChecker {
+final class P1051HeightChecker {
 
   public int heightChecker(int[] heights) {
     int n = heights.length;

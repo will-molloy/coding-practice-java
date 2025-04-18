@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P17EnglishNumberLetterCountsTest {
+final class P17EnglishNumberLetterCountsTest {
 
   @Test
   void englishNumberLetterCounts() {

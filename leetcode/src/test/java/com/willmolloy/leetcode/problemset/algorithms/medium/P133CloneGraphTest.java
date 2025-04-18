@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P133CloneGraphTest {
+final class P133CloneGraphTest {
 
   private final P133CloneGraph p133 = new P133CloneGraph();
 

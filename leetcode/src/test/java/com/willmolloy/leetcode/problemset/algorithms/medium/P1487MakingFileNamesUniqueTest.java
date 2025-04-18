@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1487MakingFileNamesUniqueTest {
+final class P1487MakingFileNamesUniqueTest {
 
   private final P1487MakingFileNamesUnique p1487 = new P1487MakingFileNamesUnique();
 

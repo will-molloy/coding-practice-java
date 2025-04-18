@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P26RemoveDuplicatesFromSortedArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P27RemoveElement {
+final class P27RemoveElement {
 
   public int removeElement(int[] nums, int val) {
     int length = 0;

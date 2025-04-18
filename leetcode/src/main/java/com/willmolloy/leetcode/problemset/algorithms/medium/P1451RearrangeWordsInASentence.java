@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("DM_CONVERT_CASE")
-class P1451RearrangeWordsInASentence {
+final class P1451RearrangeWordsInASentence {
 
   public String arrangeWords(String text) {
     String[] words = text.split(" ");

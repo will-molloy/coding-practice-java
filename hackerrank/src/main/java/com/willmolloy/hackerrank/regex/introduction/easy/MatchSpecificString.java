@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchSpecificString implements Regex {
+final class MatchSpecificString implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("hackerrank");
 

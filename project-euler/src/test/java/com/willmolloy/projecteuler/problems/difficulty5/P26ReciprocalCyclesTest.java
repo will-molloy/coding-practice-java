@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P26ReciprocalCyclesTest {
+final class P26ReciprocalCyclesTest {
 
   private final P26ReciprocalCycles reciprocalCycles = new P26ReciprocalCycles();
 

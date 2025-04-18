@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1103DistributeCandiesToPeople {
+final class P1103DistributeCandiesToPeople {
 
   public int[] distributeCandies(int candies, int n) {
     int[] arr = new int[n];

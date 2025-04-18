@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P796RotateStringTest {
+final class P796RotateStringTest {
 
   private final P796RotateString fun = new P796RotateString();
 

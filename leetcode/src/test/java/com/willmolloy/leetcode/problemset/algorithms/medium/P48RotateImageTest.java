@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P48RotateImageTest {
+final class P48RotateImageTest {
 
   private final P48RotateImage fun = new P48RotateImage();
 

@@ -18,7 +18,7 @@ import java.util.List;
  * @see P437PathSum3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P113PathSum2 {
+final class P113PathSum2 {
 
   public List<List<Integer>> pathSum(TreeNode root, int sum) {
     return pathSum(root, sum, 0, new ArrayList<>(), new ArrayList<>());

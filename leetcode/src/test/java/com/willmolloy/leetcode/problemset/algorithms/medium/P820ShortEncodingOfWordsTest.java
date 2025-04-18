@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P820ShortEncodingOfWordsTest {
+final class P820ShortEncodingOfWordsTest {
 
   private final P820ShortEncodingOfWords p820ShortEncodingOfWords = new P820ShortEncodingOfWords();
 

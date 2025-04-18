@@ -17,7 +17,7 @@ import java.util.Arrays;
  * @see P518CoinChange2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P322CoinChange {
+final class P322CoinChange {
 
   public int coinChange(int[] coins, int n) {
     // dp[i] = minimum coins required to create amount i

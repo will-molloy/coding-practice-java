@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P239SlidingWindowMaximumTest {
+final class P239SlidingWindowMaximumTest {
 
   private final P239SlidingWindowMaximum p239 = new P239SlidingWindowMaximum();
 

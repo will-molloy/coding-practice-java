@@ -20,7 +20,7 @@ import java.util.Arrays;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P354RussianDollEnvelopes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P300LongestIncreasingSubsequence {
+final class P300LongestIncreasingSubsequence {
 
   // TODO O(n log n) time solution
 

@@ -20,7 +20,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P17LetterCombinationsOfAPhoneNumber {
+final class P17LetterCombinationsOfAPhoneNumber {
 
   private static final Map<Character, List<String>> LETTERS;
 

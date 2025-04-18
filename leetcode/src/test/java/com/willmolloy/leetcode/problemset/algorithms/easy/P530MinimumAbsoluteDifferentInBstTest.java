@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P530MinimumAbsoluteDifferentInBstTest {
+final class P530MinimumAbsoluteDifferentInBstTest {
 
   private final P530MinimumAbsoluteDifferentInBst fun = new P530MinimumAbsoluteDifferentInBst();
 

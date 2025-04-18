@@ -21,7 +21,7 @@ import java.util.Arrays;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P1575CountAllPossibleRoutes {
+final class P1575CountAllPossibleRoutes {
 
   private static final int MOD = (int) 1e9 + 7;
 

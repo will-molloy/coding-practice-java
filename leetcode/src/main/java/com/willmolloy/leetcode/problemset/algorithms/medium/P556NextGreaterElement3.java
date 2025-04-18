@@ -16,7 +16,7 @@ import java.util.List;
  * @see P31NextPermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P556NextGreaterElement3 {
+final class P556NextGreaterElement3 {
 
   private final P31NextPermutation p31NextPermutation = new P31NextPermutation();
 

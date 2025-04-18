@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P746MinCostClimbingStairs {
+sealed interface P746MinCostClimbingStairs {
 
   int minCostClimbingStairs(int[] costs);
 
@@ -19,7 +19,7 @@ interface P746MinCostClimbingStairs {
    *
    * <p>Space: O(n)
    */
-  class Recursive implements P746MinCostClimbingStairs {
+  final class Recursive implements P746MinCostClimbingStairs {
 
     public int minCostClimbingStairs(int[] costs) {
       // start at -1: initially have to decide to start (and take some cost) at 0 or 1
@@ -46,7 +46,7 @@ interface P746MinCostClimbingStairs {
    *
    * <p>Space: O(n) TODO can be O(1) space see leetcode solution page
    */
-  class Dp implements P746MinCostClimbingStairs {
+  final class Dp implements P746MinCostClimbingStairs {
 
     public int minCostClimbingStairs(int[] costs) {
       int[] dp = new int[costs.length];

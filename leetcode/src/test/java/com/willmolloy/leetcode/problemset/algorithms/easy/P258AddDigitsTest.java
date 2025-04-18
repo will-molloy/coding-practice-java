@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P258AddDigitsTest {
+final class P258AddDigitsTest {
 
   private final P258AddDigits fun = new P258AddDigits();
 

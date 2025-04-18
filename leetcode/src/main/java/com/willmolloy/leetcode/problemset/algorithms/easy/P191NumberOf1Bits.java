@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P191NumberOf1Bits {
+final class P191NumberOf1Bits {
 
   // you need to treat n as an unsigned value
   public int hammingWeight(int n) {

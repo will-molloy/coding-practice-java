@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentence {
+final class P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentence {
 
   public int isPrefixOfWord(String sentence, String searchWord) {
 

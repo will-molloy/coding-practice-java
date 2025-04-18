@@ -17,7 +17,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1436DestinationCity {
+final class P1436DestinationCity {
 
   public String destCity(List<List<String>> paths) {
     Set<String> origins = new HashSet<>();

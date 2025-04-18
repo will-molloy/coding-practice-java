@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1466ReorderRoutesToMakeAllPathsLeadToTheCityZeroTest {
+final class P1466ReorderRoutesToMakeAllPathsLeadToTheCityZeroTest {
 
   private final P1466ReorderRoutesToMakeAllPathsLeadToTheCityZero p1466 =
       new P1466ReorderRoutesToMakeAllPathsLeadToTheCityZero();

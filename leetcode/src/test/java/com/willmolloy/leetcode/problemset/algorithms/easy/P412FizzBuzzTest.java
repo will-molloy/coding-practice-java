@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P412FizzBuzzTest {
+final class P412FizzBuzzTest {
 
   private final P412FizzBuzz p412 = new P412FizzBuzz();
 

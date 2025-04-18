@@ -11,7 +11,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P92ReverseLinkedList2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P206ReverseLinkedList {
+sealed interface P206ReverseLinkedList {
 
   ListNode reverseList(ListNode head);
 
@@ -22,7 +22,7 @@ interface P206ReverseLinkedList {
    *
    * <p>Space: O(1)
    */
-  class Iterative implements P206ReverseLinkedList {
+  final class Iterative implements P206ReverseLinkedList {
 
     @Override
     public ListNode reverseList(ListNode head) {
@@ -48,7 +48,7 @@ interface P206ReverseLinkedList {
    *
    * <p>Space: O(n)
    */
-  class Recursive implements P206ReverseLinkedList {
+  final class Recursive implements P206ReverseLinkedList {
 
     @Override
     public ListNode reverseList(ListNode head) {

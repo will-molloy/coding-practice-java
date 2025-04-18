@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1614MaximumNestingDepthOfTheParenthesis {
+final class P1614MaximumNestingDepthOfTheParenthesis {
 
   public int maxDepth(String s) {
     int depth = 0;

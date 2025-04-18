@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P129SumRootToLeafNumbers
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1022SumOfRootToLeafBinaryNumbers {
+final class P1022SumOfRootToLeafBinaryNumbers {
 
   private int totalSum;
 

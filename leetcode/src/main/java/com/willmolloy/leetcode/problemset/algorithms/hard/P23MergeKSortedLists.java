@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P23MergeKSortedLists {
+final class P23MergeKSortedLists {
 
   public ListNode mergeKLists(ListNode[] lists) {
     ListNode node = new ListNode(0);

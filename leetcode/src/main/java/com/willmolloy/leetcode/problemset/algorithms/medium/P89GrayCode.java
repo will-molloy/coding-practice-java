@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P89GrayCode {
+final class P89GrayCode {
 
   public List<Integer> grayCode(int n) {
     if (n == 0) {

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P34FindFirstAndLastPositionOfElementInSortedArray {
+final class P34FindFirstAndLastPositionOfElementInSortedArray {
 
   public int[] searchRange(int[] nums, int target) {
     int head = firstPosition(nums, target);

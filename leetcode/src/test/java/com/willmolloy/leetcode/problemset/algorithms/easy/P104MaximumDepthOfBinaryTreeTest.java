@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P104MaximumDepthOfBinaryTreeTest {
+final class P104MaximumDepthOfBinaryTreeTest {
 
   @ParameterizedTest
   @MethodSource("funs")

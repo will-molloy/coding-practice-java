@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P949LargestTimeForGivenDigits {
+final class P949LargestTimeForGivenDigits {
 
   public String largestTimeFromDigits(int[] a) {
     return dfs(a, new ArrayList<>(), new HashSet<>(), "").stream()

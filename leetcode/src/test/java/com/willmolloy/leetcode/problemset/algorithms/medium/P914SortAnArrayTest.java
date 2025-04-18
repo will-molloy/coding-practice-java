@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P914SortAnArrayTest {
+final class P914SortAnArrayTest {
 
   private final P914SortAnArray fun = new P914SortAnArray();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1441BuildAnArrayWithStackOperationsTest {
+final class P1441BuildAnArrayWithStackOperationsTest {
 
   private final P1441BuildAnArrayWithStackOperations p1441 =
       new P1441BuildAnArrayWithStackOperations();

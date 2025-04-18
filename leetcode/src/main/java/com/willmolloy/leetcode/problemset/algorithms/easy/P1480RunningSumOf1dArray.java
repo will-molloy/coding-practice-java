@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1480RunningSumOf1dArray {
+final class P1480RunningSumOf1dArray {
 
   public int[] runningSum(int[] nums) {
     int n = nums.length;

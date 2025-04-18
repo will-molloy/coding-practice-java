@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P309BestTimeToBuyAndSellStockWithCooldownTest {
+final class P309BestTimeToBuyAndSellStockWithCooldownTest {
 
   @ParameterizedTest
   @MethodSource("p309")

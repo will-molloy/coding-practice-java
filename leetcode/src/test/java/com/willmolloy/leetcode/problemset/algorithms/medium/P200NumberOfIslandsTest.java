@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P200NumberOfIslandsTest {
+final class P200NumberOfIslandsTest {
 
   private final P200NumberOfIslands fun = new P200NumberOfIslands();
 

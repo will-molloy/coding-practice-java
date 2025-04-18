@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P1009ComplementOfBase10Integer
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P476NumberComplement {
+final class P476NumberComplement {
 
   public int findComplement(int num) {
     int res = 0;

@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P19RemoveNthNodeFromEndOfList {
+final class P19RemoveNthNodeFromEndOfList {
 
   public ListNode removeNthFromEnd(ListNode head, int n) {
     if (head == null) {

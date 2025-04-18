@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P784LetterCasePermutationTest {
+final class P784LetterCasePermutationTest {
 
   private final P784LetterCasePermutation p784 = new P784LetterCasePermutation();
 

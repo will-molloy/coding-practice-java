@@ -11,7 +11,7 @@ import com.willmolloy.projecteuler.common.Maths;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P10SummationOfPrimes {
+final class P10SummationOfPrimes {
 
   public long apply(int below) {
     checkArgument(below > 2);

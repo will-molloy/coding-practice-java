@@ -25,7 +25,7 @@ import java.util.List;
  * @see P1032StreamOfCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P212WordSearch2 {
+final class P212WordSearch2 {
 
   public List<String> findWords(char[][] board, String[] words) {
     Node trieRoot = buildTrie(words);
@@ -94,7 +94,7 @@ class P212WordSearch2 {
   }
 
   /** Trie node. */
-  private static class Node {
+  private static final class Node {
     Node[] children = new Node[26];
     String word;
   }

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P482LicenseKeyFormattingTest {
+final class P482LicenseKeyFormattingTest {
 
   private final P482LicenseKeyFormatting p482 = new P482LicenseKeyFormatting();
 

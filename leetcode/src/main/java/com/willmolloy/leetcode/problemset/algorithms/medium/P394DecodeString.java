@@ -16,7 +16,7 @@ import java.util.ArrayDeque;
  * @see P227BasicCalculator2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P394DecodeString {
+final class P394DecodeString {
 
   public String decodeString(String s) {
     String res = "";

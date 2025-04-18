@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1007MinimumDominoRotationsForEqualRow {
+final class P1007MinimumDominoRotationsForEqualRow {
 
   public int minDominoRotations(int[] a, int[] b) {
     int n = a.length;

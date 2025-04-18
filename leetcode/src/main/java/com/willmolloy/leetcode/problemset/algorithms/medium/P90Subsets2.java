@@ -19,7 +19,7 @@ import java.util.Set;
  * @see P78Subsets
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P90Subsets2 {
+final class P90Subsets2 {
 
   public List<List<Integer>> subsetsWithDup(int[] nums) {
     // cheaper to sort input rather than every subset generated?

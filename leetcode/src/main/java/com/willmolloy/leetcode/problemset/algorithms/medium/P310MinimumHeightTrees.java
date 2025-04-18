@@ -21,7 +21,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P310MinimumHeightTrees {
+final class P310MinimumHeightTrees {
 
   public List<Integer> findMinHeightTrees(int n, int[][] edges) {
     if (n <= 2) {

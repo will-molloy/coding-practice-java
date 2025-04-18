@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P268MissingNumberTest {
+final class P268MissingNumberTest {
 
   private final P268MissingNumber p268 = new P268MissingNumber();
 

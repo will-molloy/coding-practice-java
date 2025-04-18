@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P215KthLargestElementInAnArray {
+final class P215KthLargestElementInAnArray {
 
   public int findKthLargest(int[] nums, int k) {
     PriorityQueue<Integer> minHeap = new PriorityQueue<>();

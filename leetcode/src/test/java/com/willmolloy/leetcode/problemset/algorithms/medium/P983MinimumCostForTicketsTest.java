@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P983MinimumCostForTicketsTest {
+final class P983MinimumCostForTicketsTest {
 
   private final P983MinimumCostForTickets p983 = new P983MinimumCostForTickets();
 

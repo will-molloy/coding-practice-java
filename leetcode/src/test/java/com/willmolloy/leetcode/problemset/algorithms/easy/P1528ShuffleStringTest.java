@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1528ShuffleStringTest {
+final class P1528ShuffleStringTest {
 
   private final P1528ShuffleString p1528 = new P1528ShuffleString();
 

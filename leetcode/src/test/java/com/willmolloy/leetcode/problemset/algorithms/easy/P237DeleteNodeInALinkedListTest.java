@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P237DeleteNodeInALinkedListTest {
+final class P237DeleteNodeInALinkedListTest {
 
   private final P237DeleteNodeInALinkedList p237 = new P237DeleteNodeInALinkedList();
 

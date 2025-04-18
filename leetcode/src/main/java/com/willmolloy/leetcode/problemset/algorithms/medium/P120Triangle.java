@@ -17,7 +17,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P174DungeonGame
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P120Triangle {
+final class P120Triangle {
 
   public int minimumTotal(List<List<Integer>> triangle) {
     // dp[row][col] represents min cost from (row, col) to bottom

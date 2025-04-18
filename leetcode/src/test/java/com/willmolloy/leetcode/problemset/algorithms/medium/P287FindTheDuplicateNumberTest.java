@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P287FindTheDuplicateNumberTest {
+final class P287FindTheDuplicateNumberTest {
 
   private final P287FindTheDuplicateNumber p287 = new P287FindTheDuplicateNumber();
 

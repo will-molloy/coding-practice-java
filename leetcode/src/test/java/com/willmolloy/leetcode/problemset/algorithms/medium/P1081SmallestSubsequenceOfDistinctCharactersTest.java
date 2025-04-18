@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1081SmallestSubsequenceOfDistinctCharactersTest {
+final class P1081SmallestSubsequenceOfDistinctCharactersTest {
 
   private final P1081SmallestSubsequenceOfDistinctCharacters p1081 =
       new P1081SmallestSubsequenceOfDistinctCharacters();

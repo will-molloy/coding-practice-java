@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharactersTest {
+final class P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharactersTest {
 
   private final P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharacters p1576 =
       new P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharacters();

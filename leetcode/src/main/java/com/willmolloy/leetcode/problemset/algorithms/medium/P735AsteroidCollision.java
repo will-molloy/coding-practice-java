@@ -15,7 +15,7 @@ import java.util.ArrayDeque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P735AsteroidCollision {
+final class P735AsteroidCollision {
 
   public int[] asteroidCollision(int[] a) {
     ArrayDeque<Integer> stack = new ArrayDeque<>();

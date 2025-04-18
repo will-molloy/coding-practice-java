@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P27RemoveElementTest {
+final class P27RemoveElementTest {
 
   private final P27RemoveElement fun = new P27RemoveElement();
 

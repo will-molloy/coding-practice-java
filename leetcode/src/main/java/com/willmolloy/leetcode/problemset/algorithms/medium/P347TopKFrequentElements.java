@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  * @see P973KClosestPointsToOrigin
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P347TopKFrequentElements {
+final class P347TopKFrequentElements {
 
   public int[] topKFrequent(int[] nums, int k) {
     Map<Integer, Long> freqs =

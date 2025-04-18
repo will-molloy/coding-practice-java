@@ -13,7 +13,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P82RemoveDuplicatesFromSortedList2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P83RemoveDuplicatesFromSortedList {
+final class P83RemoveDuplicatesFromSortedList {
 
   public ListNode deleteDuplicates(ListNode head) {
     // maintain head ptr

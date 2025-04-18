@@ -15,7 +15,7 @@ import java.util.Comparator;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1029TwoCityScheduling {
+final class P1029TwoCityScheduling {
 
   public int twoCitySchedCost(int[][] costs) {
     int n = costs.length / 2;

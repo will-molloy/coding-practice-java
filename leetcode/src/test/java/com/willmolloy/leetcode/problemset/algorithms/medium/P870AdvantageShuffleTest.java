@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P870AdvantageShuffleTest {
+final class P870AdvantageShuffleTest {
 
   private final P870AdvantageShuffle p870AdvantageShuffle = new P870AdvantageShuffle();
 

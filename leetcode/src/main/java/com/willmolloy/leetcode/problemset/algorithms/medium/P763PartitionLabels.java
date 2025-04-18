@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * @see P1288RemoveCoveredIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P763PartitionLabels {
+sealed interface P763PartitionLabels {
 
   List<Integer> partitionLabels(String s);
 
@@ -33,7 +33,7 @@ interface P763PartitionLabels {
    *
    * <p>Merge intervals: sort by start, then intervals which overlap will be contiguous.
    */
-  class MergeIntervals implements P763PartitionLabels {
+  final class MergeIntervals implements P763PartitionLabels {
 
     @Override
     public List<Integer> partitionLabels(String s) {
@@ -86,7 +86,7 @@ interface P763PartitionLabels {
    *
    * <p>Key idea: Pre compute last index of each character.
    */
-  class Greedy implements P763PartitionLabels {
+  final class Greedy implements P763PartitionLabels {
 
     // what makes this greedy?
     // 1. the fact we extend the range to the end of each character processed (greedily skip over in

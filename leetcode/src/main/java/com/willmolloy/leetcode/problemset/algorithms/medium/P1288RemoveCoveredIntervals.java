@@ -23,7 +23,7 @@ import java.util.Comparator;
  * @see P986IntervalListIntersections
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1288RemoveCoveredIntervals {
+final class P1288RemoveCoveredIntervals {
 
   public int removeCoveredIntervals(int[][] intervals) {
     Arrays.sort(

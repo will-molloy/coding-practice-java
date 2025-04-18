@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P22GenerateParenthesesTest {
+final class P22GenerateParenthesesTest {
 
   private final P22GenerateParentheses fun = new P22GenerateParentheses();
 

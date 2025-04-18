@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P316RemoveDuplicateLetters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1081SmallestSubsequenceOfDistinctCharacters {
+final class P1081SmallestSubsequenceOfDistinctCharacters {
 
   private final P316RemoveDuplicateLetters delegate = new P316RemoveDuplicateLetters();
 

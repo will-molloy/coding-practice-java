@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P384ShuffleAnArrayTest {
+final class P384ShuffleAnArrayTest {
 
   @Test
   void example() {

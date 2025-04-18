@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *     com.willmolloy.leetcode.problemset.algorithms.medium.P673NumberOfLongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P674LongestContinuousIncreasingSubsequence {
+final class P674LongestContinuousIncreasingSubsequence {
 
   public int findLengthOfLcis(int[] nums) {
     // as soon as seq is broken, restart it, cant take earlier elements anyway

@@ -28,7 +28,7 @@ import java.util.TreeSet;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1418DisplayTableOfFoodOrdersInARestaurant {
+final class P1418DisplayTableOfFoodOrdersInARestaurant {
 
   public List<List<String>> displayTable(List<List<String>> orders) {
     // process orders

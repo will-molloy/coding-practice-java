@@ -16,7 +16,7 @@ import java.util.Queue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1609EvenOddTree {
+final class P1609EvenOddTree {
 
   public boolean isEvenOddTree(TreeNode root) {
     Queue<TreeNode> queue = new ArrayDeque<>();

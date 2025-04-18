@@ -20,7 +20,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P637AverageOfLevelsInBinaryTree {
+final class P637AverageOfLevelsInBinaryTree {
 
   public List<Double> averageOfLevels(TreeNode root) {
     Queue<TreeNode> bfs = new ArrayDeque<>();

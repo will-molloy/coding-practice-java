@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P19CountingSundaysTest {
+final class P19CountingSundaysTest {
 
   @Test
   void firstOfMonthDuring21stCentury() {

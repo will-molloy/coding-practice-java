@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P212WordSearch2
  */
-class P79WordSearch {
+final class P79WordSearch {
 
   public boolean exist(char[][] board, String word) {
 

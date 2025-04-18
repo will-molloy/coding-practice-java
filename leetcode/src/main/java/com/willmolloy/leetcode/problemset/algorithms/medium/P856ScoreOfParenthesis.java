@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P856ScoreOfParenthesis {
+final class P856ScoreOfParenthesis {
 
   public int scoreOfParentheses(String s) {
     int result = 0;

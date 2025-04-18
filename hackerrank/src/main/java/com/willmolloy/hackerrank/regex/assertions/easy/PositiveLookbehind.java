@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class PositiveLookbehind implements Regex {
+final class PositiveLookbehind implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("(?<=[13579]\\d)");
 

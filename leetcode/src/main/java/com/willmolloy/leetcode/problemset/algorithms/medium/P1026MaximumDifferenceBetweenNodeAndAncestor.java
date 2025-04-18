@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1026MaximumDifferenceBetweenNodeAndAncestor {
+final class P1026MaximumDifferenceBetweenNodeAndAncestor {
 
   private int best;
 

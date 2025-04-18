@@ -11,7 +11,7 @@ import com.willmolloy.leetcode.problemset.algorithms.medium.P116PopulatingNextRi
  * @see P116PopulatingNextRightPointersInEachNode
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P117PopulatingNextRightPointersInEachNode2 {
+final class P117PopulatingNextRightPointersInEachNode2 {
 
   // TODO O(1) space solution
 

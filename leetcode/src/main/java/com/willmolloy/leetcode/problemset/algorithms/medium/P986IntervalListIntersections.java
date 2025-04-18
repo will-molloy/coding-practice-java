@@ -15,7 +15,7 @@ import java.util.List;
  * @see P1288RemoveCoveredIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P986IntervalListIntersections {
+sealed interface P986IntervalListIntersections {
 
   int[][] intervalIntersection(int[][] as, int[][] bs);
 
@@ -28,7 +28,7 @@ interface P986IntervalListIntersections {
    *
    * <p>Key idea: For each range, compare (intersect) with each range in the other list.
    */
-  class Quadratic implements P986IntervalListIntersections {
+  final class Quadratic implements P986IntervalListIntersections {
 
     @Override
     public int[][] intervalIntersection(int[][] as, int[][] bs) {
@@ -62,7 +62,7 @@ interface P986IntervalListIntersections {
    * list. Then can progress the pointer for the range with the smallest endpoint because it won't
    * be able to intersect anymore ranges.
    */
-  class Linear implements P986IntervalListIntersections {
+  final class Linear implements P986IntervalListIntersections {
 
     @Override
     public int[][] intervalIntersection(int[][] as, int[][] bs) {

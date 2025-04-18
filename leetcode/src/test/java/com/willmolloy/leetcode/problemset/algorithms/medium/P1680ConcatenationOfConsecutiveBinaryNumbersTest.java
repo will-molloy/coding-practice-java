@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1680ConcatenationOfConsecutiveBinaryNumbersTest {
+final class P1680ConcatenationOfConsecutiveBinaryNumbersTest {
 
   private final P1680ConcatenationOfConsecutiveBinaryNumbers
       p1680ConcatenationOfConsecutiveBinaryNumbers =

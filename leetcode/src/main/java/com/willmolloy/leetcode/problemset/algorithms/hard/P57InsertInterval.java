@@ -25,7 +25,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1288RemoveCoveredIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P57InsertInterval {
+final class P57InsertInterval {
 
   // TODO more concise code?
   //  Imo this is easier to understand and shows the cases/thought process well

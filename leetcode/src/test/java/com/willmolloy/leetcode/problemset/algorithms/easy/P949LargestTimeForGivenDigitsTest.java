@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P949LargestTimeForGivenDigitsTest {
+final class P949LargestTimeForGivenDigitsTest {
 
   private final P949LargestTimeForGivenDigits p949 = new P949LargestTimeForGivenDigits();
 

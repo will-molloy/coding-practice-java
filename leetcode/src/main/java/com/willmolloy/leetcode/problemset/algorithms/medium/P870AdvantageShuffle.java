@@ -23,7 +23,7 @@ import java.util.Queue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P870AdvantageShuffle {
+final class P870AdvantageShuffle {
 
   public int[] advantageCount(int[] a, int[] unsortedB) {
     int n = a.length;

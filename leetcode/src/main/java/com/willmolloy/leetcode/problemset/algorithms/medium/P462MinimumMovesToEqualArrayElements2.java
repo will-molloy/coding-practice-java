@@ -15,7 +15,7 @@ import java.util.Arrays;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P453MinimumMovesToEqualArrayElements
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P462MinimumMovesToEqualArrayElements2 {
+final class P462MinimumMovesToEqualArrayElements2 {
 
   public int minMoves2(int[] nums) {
     Arrays.sort(nums);

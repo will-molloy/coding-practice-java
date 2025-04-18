@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P72EditDistanceTest {
+final class P72EditDistanceTest {
 
   private final P72EditDistance p72 = new P72EditDistance();
 

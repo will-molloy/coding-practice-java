@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * @see P31NextPermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P60PermutationSequence {
+final class P60PermutationSequence {
 
   public String getPermutation(int n, int k) {
     // create the sequence as an int array for efficiency

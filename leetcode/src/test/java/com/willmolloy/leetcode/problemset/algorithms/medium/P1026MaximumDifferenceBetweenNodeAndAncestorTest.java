@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1026MaximumDifferenceBetweenNodeAndAncestorTest {
+final class P1026MaximumDifferenceBetweenNodeAndAncestorTest {
 
   private final P1026MaximumDifferenceBetweenNodeAndAncestor p1026 =
       new P1026MaximumDifferenceBetweenNodeAndAncestor();

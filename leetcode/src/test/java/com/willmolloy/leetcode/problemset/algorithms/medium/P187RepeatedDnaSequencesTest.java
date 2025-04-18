@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P187RepeatedDnaSequencesTest {
+final class P187RepeatedDnaSequencesTest {
 
   private final P187RepeatedDnaSequences p187 = new P187RepeatedDnaSequences();
 

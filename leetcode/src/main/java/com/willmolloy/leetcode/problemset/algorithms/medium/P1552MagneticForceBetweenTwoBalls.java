@@ -19,7 +19,7 @@ import java.util.Arrays;
  * @see P1482MinimumNumberOfDaysToMakeMBouquets
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1552MagneticForceBetweenTwoBalls {
+final class P1552MagneticForceBetweenTwoBalls {
 
   // will always be enough baskets, so worst case return 1
 

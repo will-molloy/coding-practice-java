@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1658MinimumOperationsToReduceXToZero {
+final class P1658MinimumOperationsToReduceXToZero {
 
   // example
   // x      = 10

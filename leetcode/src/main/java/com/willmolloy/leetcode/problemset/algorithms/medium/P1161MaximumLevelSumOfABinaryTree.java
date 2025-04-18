@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1161MaximumLevelSumOfABinaryTree {
+final class P1161MaximumLevelSumOfABinaryTree {
 
   public int maxLevelSum(TreeNode root) {
     if (root == null) {

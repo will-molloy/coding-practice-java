@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P133CloneGraph {
+final class P133CloneGraph {
 
   public Node cloneGraph(Node node) {
     if (node == null) {
@@ -38,7 +38,7 @@ class P133CloneGraph {
   }
 
   /** Node. */
-  static class Node {
+  static final class Node {
     private final int val;
     private final List<Node> neighbors;
 

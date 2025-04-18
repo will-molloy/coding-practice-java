@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1456MaximumNumberOfVowelsInASubstringOfGivenLength {
+final class P1456MaximumNumberOfVowelsInASubstringOfGivenLength {
 
   public int maxVowels(String s, int k) {
     int n = s.length();

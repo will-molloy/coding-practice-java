@@ -26,7 +26,7 @@ import java.util.ArrayDeque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P936StampingTheSequence {
+final class P936StampingTheSequence {
 
   public int[] movesToStamp(String stamp, String target) {
     ArrayDeque<Integer> result = new ArrayDeque<>();

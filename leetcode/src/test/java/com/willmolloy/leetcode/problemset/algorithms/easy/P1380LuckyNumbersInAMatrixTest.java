@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1380LuckyNumbersInAMatrixTest {
+final class P1380LuckyNumbersInAMatrixTest {
 
   private final P1380LuckyNumbersInAMatrix p1380LuckyNumbersInAMatrix =
       new P1380LuckyNumbersInAMatrix();

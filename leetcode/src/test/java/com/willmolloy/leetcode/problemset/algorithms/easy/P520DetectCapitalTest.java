@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P520DetectCapitalTest {
+final class P520DetectCapitalTest {
 
   private final P520DetectCapital p520 = new P520DetectCapital();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P76MinimumWindowSubstringTest {
+final class P76MinimumWindowSubstringTest {
 
   private final P76MinimumWindowSubstring func = new P76MinimumWindowSubstring();
 

@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
  *     href=https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes>https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P204CountPrimes {
+final class P204CountPrimes {
 
   public int countPrimes(int n) {
     // sieve[i] = FALSE means i is prime, initially mark all as prime

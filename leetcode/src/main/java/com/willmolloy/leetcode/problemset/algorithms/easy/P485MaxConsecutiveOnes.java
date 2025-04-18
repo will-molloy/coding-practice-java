@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P485MaxConsecutiveOnes {
+final class P485MaxConsecutiveOnes {
 
   public int findMaxConsecutiveOnes(int[] nums) {
     int max = 0;

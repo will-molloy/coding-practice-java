@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P279PerfectSquaresTest {
+final class P279PerfectSquaresTest {
 
   private final P279PerfectSquares p279 = new P279PerfectSquares();
 

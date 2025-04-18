@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P844BackspaceStringCompareTest {
+final class P844BackspaceStringCompareTest {
 
   private final P844BackspaceStringCompare fun = new P844BackspaceStringCompare();
 

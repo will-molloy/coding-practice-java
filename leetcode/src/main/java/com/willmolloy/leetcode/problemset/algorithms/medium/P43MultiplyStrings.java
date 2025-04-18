@@ -12,7 +12,7 @@ import java.math.BigInteger;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P43MultiplyStrings {
+final class P43MultiplyStrings {
 
   public String multiply(String num1, String num2) {
     return new BigInteger(num1).multiply(new BigInteger(num2)).toString();

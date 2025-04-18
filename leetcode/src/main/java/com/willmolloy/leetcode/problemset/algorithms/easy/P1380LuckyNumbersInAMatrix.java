@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1380LuckyNumbersInAMatrix {
+final class P1380LuckyNumbersInAMatrix {
 
   public List<Integer> luckyNumbers(int[][] matrix) {
     int rows = matrix.length;

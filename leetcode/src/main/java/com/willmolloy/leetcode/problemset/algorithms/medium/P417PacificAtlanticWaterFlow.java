@@ -20,7 +20,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P417PacificAtlanticWaterFlow {
+final class P417PacificAtlanticWaterFlow {
 
   public List<List<Integer>> pacificAtlantic(int[][] heights) {
     int rows = heights.length;

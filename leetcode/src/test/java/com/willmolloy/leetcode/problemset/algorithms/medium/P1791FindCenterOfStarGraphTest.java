@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1791FindCenterOfStarGraphTest {
+final class P1791FindCenterOfStarGraphTest {
 
   private final P1791FindCenterOfStarGraph p1791FindCenterOfStarGraph =
       new P1791FindCenterOfStarGraph();

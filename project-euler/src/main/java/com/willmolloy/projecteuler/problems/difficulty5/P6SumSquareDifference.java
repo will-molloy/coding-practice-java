@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P6SumSquareDifference {
+final class P6SumSquareDifference {
 
   public int apply(int n) {
     Preconditions.checkArgument(n > 1);

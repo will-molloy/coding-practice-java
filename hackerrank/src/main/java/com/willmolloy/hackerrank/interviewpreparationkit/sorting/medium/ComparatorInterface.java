@@ -33,7 +33,7 @@ public final class ComparatorInterface {
   /** Player. */
   // Comparable, Comparator, basically the same thing..
   // Comparator is a separate class (no clean private field access)
-  static class Player implements Comparable<Player> {
+  static final class Player implements Comparable<Player> {
     private final String name;
 
     private final int score;

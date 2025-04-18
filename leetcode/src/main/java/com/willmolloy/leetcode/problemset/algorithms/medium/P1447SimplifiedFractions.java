@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1447SimplifiedFractions {
+final class P1447SimplifiedFractions {
 
   public List<String> simplifiedFractions(int n) {
     List<String> result = new ArrayList<>();

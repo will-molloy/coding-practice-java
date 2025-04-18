@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P869ReorderedPowerOf2 {
+final class P869ReorderedPowerOf2 {
 
   public boolean reorderedPowerOf2(int n) {
     String s = String.valueOf(n);

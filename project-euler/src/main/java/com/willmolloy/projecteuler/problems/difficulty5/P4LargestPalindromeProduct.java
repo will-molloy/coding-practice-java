@@ -12,7 +12,7 @@ import java.util.stream.LongStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P4LargestPalindromeProduct {
+final class P4LargestPalindromeProduct {
 
   public long apply(int numDigits) {
     Preconditions.checkArgument(numDigits > 0);

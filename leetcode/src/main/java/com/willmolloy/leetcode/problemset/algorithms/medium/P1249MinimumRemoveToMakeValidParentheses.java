@@ -15,7 +15,7 @@ import java.util.ArrayDeque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1249MinimumRemoveToMakeValidParentheses {
+final class P1249MinimumRemoveToMakeValidParentheses {
 
   public String minRemoveToMakeValid(String s) {
     // to hold result (and mutate s efficiently)

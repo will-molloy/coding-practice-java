@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P867TransposeMatrix {
+final class P867TransposeMatrix {
 
   public int[][] transpose(int[][] a) {
     int n = a.length;

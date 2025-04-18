@@ -13,10 +13,10 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P303RangeSumQueryImmutable
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P304RangeSumQuery2dImmutable {
+final class P304RangeSumQuery2dImmutable {
 
   /** NumMatrix. */
-  static class NumMatrix {
+  static final class NumMatrix {
 
     // O(mn) space
     private final int[][] sums;

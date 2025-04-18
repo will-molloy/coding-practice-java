@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1108DefangingAnIpAddressTest {
+final class P1108DefangingAnIpAddressTest {
 
   private final P1108DefangingAnIpAddress fun = new P1108DefangingAnIpAddress();
 

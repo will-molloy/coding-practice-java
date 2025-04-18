@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P23MergeKSortedListsTest {
+final class P23MergeKSortedListsTest {
 
   private final P23MergeKSortedLists fun = new P23MergeKSortedLists();
 

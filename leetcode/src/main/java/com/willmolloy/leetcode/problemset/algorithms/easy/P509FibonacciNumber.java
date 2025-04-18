@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P1137NthTribonacciNumber
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P509FibonacciNumber {
+final class P509FibonacciNumber {
 
   public int fib(int n) {
     if (n == 0 || n == 1) {

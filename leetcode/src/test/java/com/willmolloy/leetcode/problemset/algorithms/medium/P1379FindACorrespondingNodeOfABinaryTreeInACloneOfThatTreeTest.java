@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTreeTest {
+final class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTreeTest {
 
   private final P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree
       p1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree =

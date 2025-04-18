@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1453MaximumNumberOfDartsInsidesACircularDartboardTest {
+final class P1453MaximumNumberOfDartsInsidesACircularDartboardTest {
 
   private final P1453MaximumNumberOfDartsInsidesACircularDartboard p1453 =
       new P1453MaximumNumberOfDartsInsidesACircularDartboard();

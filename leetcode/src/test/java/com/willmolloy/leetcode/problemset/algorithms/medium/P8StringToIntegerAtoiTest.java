@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P8StringToIntegerAtoiTest {
+final class P8StringToIntegerAtoiTest {
 
   private final P8StringToIntegerAtoi function = new P8StringToIntegerAtoi();
 

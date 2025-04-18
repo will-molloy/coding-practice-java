@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P5SmallestMultiple {
+final class P5SmallestMultiple {
 
   public OptionalInt apply(int from, int to) {
     Preconditions.checkArgument(to > from);

@@ -20,7 +20,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P669TrimABinarySearchTree {
+final class P669TrimABinarySearchTree {
 
   public TreeNode trimBst(TreeNode node, int l, int r) {
     if (node == null) {

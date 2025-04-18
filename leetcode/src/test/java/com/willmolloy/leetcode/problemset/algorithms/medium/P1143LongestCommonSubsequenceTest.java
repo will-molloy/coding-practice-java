@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1143LongestCommonSubsequenceTest {
+final class P1143LongestCommonSubsequenceTest {
   private final P1143LongestCommonSubsequence p1143 = new P1143LongestCommonSubsequence();
 
   @Test

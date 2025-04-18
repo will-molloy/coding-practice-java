@@ -11,7 +11,7 @@ import java.math.BigInteger;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P15LatticePaths {
+final class P15LatticePaths {
 
   // it's just binomial coefficient (i.e. permutations of binary number)
   // e.g. 0 = down, 1 = right

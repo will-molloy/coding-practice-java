@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P859BuddyStrings {
+final class P859BuddyStrings {
 
   public boolean buddyStrings(String a, String b) {
     if (a.length() != b.length()) {

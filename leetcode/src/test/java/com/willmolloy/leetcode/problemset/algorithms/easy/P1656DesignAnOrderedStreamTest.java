@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1656DesignAnOrderedStreamTest {
+final class P1656DesignAnOrderedStreamTest {
 
   @Test
   void example() {

@@ -19,10 +19,10 @@ import java.util.Objects;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P341FlattenNestedListIterator {
+final class P341FlattenNestedListIterator {
 
   /** NestedIterator implementation. */
-  static class NestedIterator implements Iterator<Integer> {
+  static final class NestedIterator implements Iterator<Integer> {
 
     private final Deque<NestedInteger> stack;
 
@@ -61,7 +61,7 @@ class P341FlattenNestedListIterator {
   }
 
   /** NestedInteger interface. */
-  interface NestedInteger {
+  sealed interface NestedInteger {
     boolean isInteger();
 
     Integer getInteger();

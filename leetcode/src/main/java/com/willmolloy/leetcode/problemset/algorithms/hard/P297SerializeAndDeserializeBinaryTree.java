@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P449SerializeAndDeserializeBst
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P297SerializeAndDeserializeBinaryTree {
+final class P297SerializeAndDeserializeBinaryTree {
 
   // Runtime: O(n)
   // Space: O(h)

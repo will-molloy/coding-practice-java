@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P594LongestHarmoniousSubsequence {
+final class P594LongestHarmoniousSubsequence {
 
   public int findLhs(int[] nums) {
     Map<Integer, Integer> map = new HashMap<>();

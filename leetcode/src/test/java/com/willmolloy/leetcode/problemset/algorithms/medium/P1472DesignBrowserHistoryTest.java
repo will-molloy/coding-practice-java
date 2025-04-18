@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1472DesignBrowserHistoryTest {
+final class P1472DesignBrowserHistoryTest {
 
   @Test
   void example() {

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P206ReverseLinkedListTest {
+final class P206ReverseLinkedListTest {
 
   @ParameterizedTest
   @MethodSource("p206")

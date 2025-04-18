@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P61RotateListTest {
+final class P61RotateListTest {
 
   private final P61RotateList fun = new P61RotateList();
 

@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1291SequentialDigits {
+final class P1291SequentialDigits {
 
   public List<Integer> sequentialDigits(int low, int high) {
     List<Integer> paths = new ArrayList<>();

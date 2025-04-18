@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P331VerifyPreorderSerializationOfABinaryTree {
+final class P331VerifyPreorderSerializationOfABinaryTree {
 
   public boolean isValidSerialization(String preorder) {
     String[] nodes = preorder.split(",");

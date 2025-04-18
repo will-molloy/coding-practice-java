@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P130SurroundedRegions {
+final class P130SurroundedRegions {
 
   // precondition:
   // board[i].length is the same for all i = [0..board.length)

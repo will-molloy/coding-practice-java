@@ -16,7 +16,7 @@ import java.util.List;
  * @see P118PascalTriangle
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P119PascalTriangle2 {
+final class P119PascalTriangle2 {
 
   public List<Integer> getRow(int k) {
     List<Integer> row = new ArrayList<>();

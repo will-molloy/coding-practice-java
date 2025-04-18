@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1161MaximumLevelSumOfABinaryTreeTest {
+final class P1161MaximumLevelSumOfABinaryTreeTest {
 
   private final P1161MaximumLevelSumOfABinaryTree fun = new P1161MaximumLevelSumOfABinaryTree();
 

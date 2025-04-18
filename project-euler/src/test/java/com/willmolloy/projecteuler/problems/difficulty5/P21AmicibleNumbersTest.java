@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P21AmicibleNumbersTest {
+final class P21AmicibleNumbersTest {
 
   private final P21AmicibleNumbers amicibleNumbers = new P21AmicibleNumbers();
 

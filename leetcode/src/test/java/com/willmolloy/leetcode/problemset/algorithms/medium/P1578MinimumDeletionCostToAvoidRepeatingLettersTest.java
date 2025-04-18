@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1578MinimumDeletionCostToAvoidRepeatingLettersTest {
+final class P1578MinimumDeletionCostToAvoidRepeatingLettersTest {
 
   private final P1578MinimumDeletionCostToAvoidRepeatingLetters p1578 =
       new P1578MinimumDeletionCostToAvoidRepeatingLetters();

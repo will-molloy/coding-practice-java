@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class RandomTrialsTest {
+final class RandomTrialsTest {
 
   private static final double TOLERANCE = 0.02;
 

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1396DesignUndergroundSystemTest {
+final class P1396DesignUndergroundSystemTest {
 
   private static final double TOLERANCE = 1e-5;
 

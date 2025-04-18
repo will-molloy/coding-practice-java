@@ -19,7 +19,7 @@ import java.util.Queue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P199BinaryTreeRightSideView {
+final class P199BinaryTreeRightSideView {
 
   public List<Integer> rightSideView(TreeNode root) {
     if (root == null) {

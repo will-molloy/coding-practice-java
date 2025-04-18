@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P557ReverseWordsInAString3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P345ReverseVowelsOfAString {
+final class P345ReverseVowelsOfAString {
 
   public String reverseVowels(String s) {
     char[] chars = s.toCharArray();

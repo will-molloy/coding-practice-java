@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P20FactorialDigitSumTest {
+final class P20FactorialDigitSumTest {
 
   private final P20FactorialDigitSum factorialDigitSum = new P20FactorialDigitSum();
 

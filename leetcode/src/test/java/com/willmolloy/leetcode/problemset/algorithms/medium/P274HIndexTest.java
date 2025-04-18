@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P274HIndexTest {
+final class P274HIndexTest {
 
   private final P274HIndex p274 = new P274HIndex();
 

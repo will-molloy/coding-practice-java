@@ -10,7 +10,7 @@ import java.util.Deque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P104MaximumDepthOfBinaryTree {
+sealed interface P104MaximumDepthOfBinaryTree {
 
   // Why is it called maxDepth? depth/height is the same thing?
 
@@ -25,7 +25,7 @@ interface P104MaximumDepthOfBinaryTree {
    *
    * <p>Key idea: recursion
    */
-  class Dfs implements P104MaximumDepthOfBinaryTree {
+  final class Dfs implements P104MaximumDepthOfBinaryTree {
 
     @Override
     public int maxDepth(TreeNode root) {
@@ -45,7 +45,7 @@ interface P104MaximumDepthOfBinaryTree {
    *
    * <p>Key idea: queue data structure; caching level size
    */
-  class Bfs implements P104MaximumDepthOfBinaryTree {
+  final class Bfs implements P104MaximumDepthOfBinaryTree {
 
     @Override
     public int maxDepth(TreeNode root) {

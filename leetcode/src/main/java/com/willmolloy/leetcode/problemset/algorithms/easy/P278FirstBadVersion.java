@@ -19,10 +19,10 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P1552MagneticForceBetweenTwoBalls
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P278FirstBadVersion {
+final class P278FirstBadVersion {
 
   /** VersionControl class. */
-  static class VersionControl {
+  private abstract static sealed class VersionControl {
     private final int firstBadVersion;
 
     VersionControl(int firstBadVersion) {
@@ -35,7 +35,7 @@ class P278FirstBadVersion {
   }
 
   /** Solution class. */
-  static class Solution extends VersionControl {
+  static final class Solution extends VersionControl {
 
     Solution(int firstBadVersion) {
       super(firstBadVersion);

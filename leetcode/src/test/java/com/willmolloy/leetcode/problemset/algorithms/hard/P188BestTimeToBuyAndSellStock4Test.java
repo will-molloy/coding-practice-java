@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P188BestTimeToBuyAndSellStock4Test {
+final class P188BestTimeToBuyAndSellStock4Test {
 
   private final P188BestTimeToBuyAndSellStock4 fun = new P188BestTimeToBuyAndSellStock4();
 

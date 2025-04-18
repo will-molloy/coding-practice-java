@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1385FindTheDistanceValueBetweenTwoArraysTest {
+final class P1385FindTheDistanceValueBetweenTwoArraysTest {
 
   private final P1385FindTheDistanceValueBetweenTwoArrays p1385 =
       new P1385FindTheDistanceValueBetweenTwoArrays();

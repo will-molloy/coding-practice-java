@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1663SmallestStringWithAGivenNumericValue {
+final class P1663SmallestStringWithAGivenNumericValue {
 
   public String getSmallestString(int n, int k) {
     // initially all 'a's (with value n)

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P119PascalTriangle2Test {
+final class P119PascalTriangle2Test {
 
   private final P119PascalTriangle2 fun = new P119PascalTriangle2();
 

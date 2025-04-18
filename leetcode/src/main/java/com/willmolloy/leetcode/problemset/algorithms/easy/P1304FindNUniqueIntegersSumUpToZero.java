@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1304FindNUniqueIntegersSumUpToZero {
+final class P1304FindNUniqueIntegersSumUpToZero {
 
   public int[] sumZero(int n) {
     int[] result = new int[n];

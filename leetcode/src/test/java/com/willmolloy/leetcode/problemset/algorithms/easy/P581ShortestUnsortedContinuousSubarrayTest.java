@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P581ShortestUnsortedContinuousSubarrayTest {
+final class P581ShortestUnsortedContinuousSubarrayTest {
 
   private final P581ShortestUnsortedContinuousSubarray p581 =
       new P581ShortestUnsortedContinuousSubarray();

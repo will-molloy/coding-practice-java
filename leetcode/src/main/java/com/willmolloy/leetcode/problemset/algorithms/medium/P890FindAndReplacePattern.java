@@ -17,7 +17,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P890FindAndReplacePattern {
+final class P890FindAndReplacePattern {
 
   public List<String> findAndReplacePattern(String[] words, String pattern) {
     String normalisedPattern = normalise(pattern);

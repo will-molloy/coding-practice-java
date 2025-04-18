@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see com.willmolloy.dsa.dp.Fibonacci
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P70ClimbingStairs {
+sealed interface P70ClimbingStairs {
 
   int climbStairs(int n);
 
@@ -20,7 +20,7 @@ interface P70ClimbingStairs {
    *
    * <p>Space: O(n)
    */
-  class RecursiveTopDown implements P70ClimbingStairs {
+  final class RecursiveTopDown implements P70ClimbingStairs {
 
     @Override
     public int climbStairs(int n) {
@@ -43,7 +43,7 @@ interface P70ClimbingStairs {
    *
    * <p>Space: O(n)
    */
-  class IterativeBottomUp implements P70ClimbingStairs {
+  final class IterativeBottomUp implements P70ClimbingStairs {
 
     @Override
     public int climbStairs(int n) {
@@ -69,7 +69,7 @@ interface P70ClimbingStairs {
    *
    * <p>Space: O(1)
    */
-  class IterativeBottomUpConstantSpace implements P70ClimbingStairs {
+  final class IterativeBottomUpConstantSpace implements P70ClimbingStairs {
 
     @Override
     public int climbStairs(int n) {

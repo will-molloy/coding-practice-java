@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P138CopyListWithRandomPointer {
+final class P138CopyListWithRandomPointer {
 
   public Node copyRandomList(Node head) {
     if (head == null) {
@@ -42,7 +42,7 @@ class P138CopyListWithRandomPointer {
   }
 
   /** Linked List Node with Random pointer. */
-  static class Node {
+  static final class Node {
     int val;
     Node next;
     Node random;

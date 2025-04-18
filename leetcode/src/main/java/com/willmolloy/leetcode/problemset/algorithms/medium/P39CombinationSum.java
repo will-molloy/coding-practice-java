@@ -14,14 +14,14 @@ import java.util.Set;
  * @see P216CombinationSum3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P39CombinationSum {
+final class P39CombinationSum {
 
   /**
    * Top down recursive (DFS) solution. Could add more pruning.
    *
    * <p>Runtime: O(2^n)
    */
-  static class TopDownRecursive {
+  static final class TopDownRecursive {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
       Set<List<Integer>> result = new HashSet<>();
@@ -59,7 +59,7 @@ class P39CombinationSum {
    * <p>Runtime: O(nt) (TODO some are saying its still O(2^n)... since you still have to generate
    * all solutions. Maybe DFS with pruning is preferred (for simplicity/memory cost).
    */
-  static class BottomUpIterative {
+  static final class BottomUpIterative {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
       // init results

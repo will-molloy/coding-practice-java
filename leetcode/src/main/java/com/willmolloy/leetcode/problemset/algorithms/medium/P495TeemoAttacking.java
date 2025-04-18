@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P56MergeIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P495TeemoAttacking {
+final class P495TeemoAttacking {
 
   public int findPoisonedDuration(int[] timeSeries, int duration) {
     int n = timeSeries.length;

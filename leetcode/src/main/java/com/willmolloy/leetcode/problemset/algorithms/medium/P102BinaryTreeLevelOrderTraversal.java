@@ -14,7 +14,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P107BinaryTreeLevelOrderTraversal2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P102BinaryTreeLevelOrderTraversal {
+sealed interface P102BinaryTreeLevelOrderTraversal {
 
   List<List<Integer>> levelOrder(TreeNode root);
 
@@ -27,7 +27,7 @@ interface P102BinaryTreeLevelOrderTraversal {
    *
    * <p>Key idea: recursion, knowledge of BT traversal
    */
-  class Dfs implements P102BinaryTreeLevelOrderTraversal {
+  final class Dfs implements P102BinaryTreeLevelOrderTraversal {
 
     @Override
     public List<List<Integer>> levelOrder(TreeNode root) {
@@ -64,7 +64,7 @@ interface P102BinaryTreeLevelOrderTraversal {
    *
    * <p>Key idea: caching the queue size before processing nodes in the queue
    */
-  class Bfs implements P102BinaryTreeLevelOrderTraversal {
+  final class Bfs implements P102BinaryTreeLevelOrderTraversal {
 
     @Override
     public List<List<Integer>> levelOrder(TreeNode root) {

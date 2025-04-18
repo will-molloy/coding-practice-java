@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1482MinimumNumberOfDaysToMakeMBouquetsTest {
+final class P1482MinimumNumberOfDaysToMakeMBouquetsTest {
 
   private final P1482MinimumNumberOfDaysToMakeMBouquets p1482 =
       new P1482MinimumNumberOfDaysToMakeMBouquets();

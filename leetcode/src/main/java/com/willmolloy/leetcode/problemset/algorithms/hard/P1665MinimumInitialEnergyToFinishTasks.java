@@ -15,7 +15,7 @@ import java.util.Comparator;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1665MinimumInitialEnergyToFinishTasks {
+final class P1665MinimumInitialEnergyToFinishTasks {
 
   // tasks = array of {actual, minimum} energy
   public int minimumEffort(int[][] tasks) {

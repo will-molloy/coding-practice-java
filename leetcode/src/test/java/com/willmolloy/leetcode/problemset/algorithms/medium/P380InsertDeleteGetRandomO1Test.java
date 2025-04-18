@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P380InsertDeleteGetRandomO1Test {
+final class P380InsertDeleteGetRandomO1Test {
 
   private static final double TOLERANCE = 0.02d;
 

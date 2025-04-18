@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P295FindMedianFromDataStream {
+final class P295FindMedianFromDataStream {
 
   // 2 heaps, keep sizes balanced (within 1 difference)
   // minHeap holds larger values

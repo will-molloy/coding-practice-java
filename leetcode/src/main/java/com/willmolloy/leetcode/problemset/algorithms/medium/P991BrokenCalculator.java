@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P991BrokenCalculator {
+final class P991BrokenCalculator {
 
   public int brokenCalc(int x, int y) {
     int count = 0;

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P952LargestComponentSizeByCommonFactorTest {
+final class P952LargestComponentSizeByCommonFactorTest {
 
   private final P952LargestComponentSizeByCommonFactor p952 =
       new P952LargestComponentSizeByCommonFactor();

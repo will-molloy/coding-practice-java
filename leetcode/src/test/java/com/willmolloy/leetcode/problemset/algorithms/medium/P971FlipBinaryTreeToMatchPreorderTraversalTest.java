@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P971FlipBinaryTreeToMatchPreorderTraversalTest {
+final class P971FlipBinaryTreeToMatchPreorderTraversalTest {
 
   private final P971FlipBinaryTreeToMatchPreorderTraversal
       p971FlipBinaryTreeToMatchPreorderTraversal = new P971FlipBinaryTreeToMatchPreorderTraversal();

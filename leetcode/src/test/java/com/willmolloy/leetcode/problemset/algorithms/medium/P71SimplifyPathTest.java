@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P71SimplifyPathTest {
+final class P71SimplifyPathTest {
 
   private final P71SimplifyPath p71SimplifyPath = new P71SimplifyPath();
 

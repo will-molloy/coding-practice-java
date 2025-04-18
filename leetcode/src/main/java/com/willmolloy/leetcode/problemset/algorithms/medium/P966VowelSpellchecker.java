@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P966VowelSpellchecker {
+final class P966VowelSpellchecker {
 
   public String[] spellchecker(String[] wordlist, String[] queries) {
     List<String> result = new ArrayList<>();

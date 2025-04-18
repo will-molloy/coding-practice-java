@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P22GenerateParentheses {
+final class P22GenerateParentheses {
 
   public List<String> generateParenthesis(int n) {
     return generateParenthesis(new ArrayList<>(), "", 0, 0, n);

@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1513NumberOfSubstringsWithOnly1sTest {
+final class P1513NumberOfSubstringsWithOnly1sTest {
 
   private final P1513NumberOfSubstringsWithOnly1s p1513 = new P1513NumberOfSubstringsWithOnly1s();
 

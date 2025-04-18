@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1550ThreeConsecutiveOddsTest {
+final class P1550ThreeConsecutiveOddsTest {
 
   private final P1550ThreeConsecutiveOdds p1550 = new P1550ThreeConsecutiveOdds();
 

@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P304RangeSumQuery2dImmutableTest {
+final class P304RangeSumQuery2dImmutableTest {
 
   @Test
   void example() {

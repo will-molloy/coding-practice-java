@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P5LongestPalindromicSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P516LongestPalindromicSubsequence {
+final class P516LongestPalindromicSubsequence {
 
   public int longestPalindromeSubseq(String s) {
     if (s.isEmpty()) {

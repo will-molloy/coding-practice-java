@@ -16,7 +16,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1647MinimumDeletionsToMakeCharacterFrequenciesUnique {
+final class P1647MinimumDeletionsToMakeCharacterFrequenciesUnique {
 
   public int minDeletions(String s) {
     // count freqs

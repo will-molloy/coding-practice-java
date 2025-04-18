@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1035UncrossedLinesTest {
+final class P1035UncrossedLinesTest {
 
   private final P1035UncrossedLines p1035 = new P1035UncrossedLines();
 

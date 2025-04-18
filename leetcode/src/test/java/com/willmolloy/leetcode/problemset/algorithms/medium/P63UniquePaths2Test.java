@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P63UniquePaths2Test {
+final class P63UniquePaths2Test {
 
   private final P63UniquePaths2 fun = new P63UniquePaths2();
 

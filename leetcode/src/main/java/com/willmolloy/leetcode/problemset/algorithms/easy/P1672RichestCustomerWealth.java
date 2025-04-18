@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1672RichestCustomerWealth {
+final class P1672RichestCustomerWealth {
 
   public int maximumWealth(int[][] accounts) {
     return Arrays.stream(accounts)

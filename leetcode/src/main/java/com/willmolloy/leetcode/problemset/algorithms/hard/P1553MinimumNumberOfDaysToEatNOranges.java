@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1553MinimumNumberOfDaysToEatNOranges {
+sealed interface P1553MinimumNumberOfDaysToEatNOranges {
 
   int minDays(int n);
 
@@ -28,7 +28,7 @@ interface P1553MinimumNumberOfDaysToEatNOranges {
    * <p>Key idea: {@code dp[n]} needs to store same value each time (what it means for dp to
    * work...). Forcing n/2 and n/3 (by adding n%2 and n%3) simplifies the cases.
    */
-  class Dp implements P1553MinimumNumberOfDaysToEatNOranges {
+  final class Dp implements P1553MinimumNumberOfDaysToEatNOranges {
 
     // use map rather than array since n can be big (2billion) and recursion is sparse
     private final Map<Integer, Integer> dp = new HashMap<>();
@@ -65,7 +65,7 @@ interface P1553MinimumNumberOfDaysToEatNOranges {
    *
    * @see P1345JumpGame4
    */
-  class Bfs implements P1553MinimumNumberOfDaysToEatNOranges {
+  final class Bfs implements P1553MinimumNumberOfDaysToEatNOranges {
 
     @Override
     public int minDays(int n) {

@@ -20,7 +20,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P713SubarrayProductLessThanK {
+final class P713SubarrayProductLessThanK {
 
   public int numSubarrayProductLessThanK(int[] nums, int k) {
     int n = nums.length;

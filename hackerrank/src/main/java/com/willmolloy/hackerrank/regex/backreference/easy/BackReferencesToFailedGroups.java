@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class BackReferencesToFailedGroups implements Regex {
+final class BackReferencesToFailedGroups implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d{2}(-?)(\\d{2}\\1){2}\\d{2}$");
 

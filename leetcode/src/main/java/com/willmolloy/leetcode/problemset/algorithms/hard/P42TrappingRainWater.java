@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P42TrappingRainWater {
+sealed interface P42TrappingRainWater {
 
   int trap(int[] heights);
 
@@ -19,7 +19,7 @@ interface P42TrappingRainWater {
    *
    * <p>Runtime: O(n * max(heights)), O(1) extra memory
    */
-  class MultiplePass implements P42TrappingRainWater {
+  final class MultiplePass implements P42TrappingRainWater {
 
     public int trap(int[] heights) {
       int maxHeight = max(heights);
@@ -58,7 +58,7 @@ interface P42TrappingRainWater {
    *
    * <p>Runtime: O(n), O(1) extra memory
    */
-  class SinglePass implements P42TrappingRainWater {
+  final class SinglePass implements P42TrappingRainWater {
 
     public int trap(int[] heights) {
       int amount = 0;

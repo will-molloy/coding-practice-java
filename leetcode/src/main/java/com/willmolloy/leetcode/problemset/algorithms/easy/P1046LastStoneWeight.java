@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1046LastStoneWeight {
+final class P1046LastStoneWeight {
 
   public int lastStoneWeight(int[] stones) {
     // dump into max heap

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P509FibonacciNumberTest {
+final class P509FibonacciNumberTest {
 
   private final P509FibonacciNumber fun = new P509FibonacciNumber();
 

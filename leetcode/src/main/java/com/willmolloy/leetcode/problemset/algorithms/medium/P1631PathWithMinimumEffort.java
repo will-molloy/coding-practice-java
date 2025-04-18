@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1631PathWithMinimumEffort {
+final class P1631PathWithMinimumEffort {
 
   public int minimumEffortPath(int[][] heights) {
     int left = 0;

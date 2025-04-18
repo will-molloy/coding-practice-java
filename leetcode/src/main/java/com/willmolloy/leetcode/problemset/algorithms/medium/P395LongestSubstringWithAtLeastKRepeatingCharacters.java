@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P395LongestSubstringWithAtLeastKRepeatingCharacters {
+final class P395LongestSubstringWithAtLeastKRepeatingCharacters {
 
   // TODO inefficient solution - still AC
 

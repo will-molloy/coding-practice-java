@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1566DetectPatternOfLengthMRepeatedKOrMoreTimes {
+final class P1566DetectPatternOfLengthMRepeatedKOrMoreTimes {
 
   // TODO O(n) time O(1) space is possible
 

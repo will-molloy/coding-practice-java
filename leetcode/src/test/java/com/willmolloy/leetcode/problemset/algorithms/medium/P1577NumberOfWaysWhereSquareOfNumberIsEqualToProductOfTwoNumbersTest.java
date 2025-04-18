@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbersTest {
+final class P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbersTest {
 
   private final P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers p1577 =
       new P1577NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers();

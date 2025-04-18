@@ -16,7 +16,7 @@ import java.util.List;
  * @see P47Permutations2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P46Permutations {
+final class P46Permutations {
 
   public List<List<Integer>> permute(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();

@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1721SwappingNodesInALinkedList {
+final class P1721SwappingNodesInALinkedList {
 
   public ListNode swapNodes(ListNode head, int k) {
     ArrayList<Integer> array = toArray(head);

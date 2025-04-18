@@ -19,7 +19,7 @@ import java.util.PriorityQueue;
  * @see P692TopKFrequentWords
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P973KClosestPointsToOrigin {
+final class P973KClosestPointsToOrigin {
 
   public int[][] kClosest(int[][] points, int k) {
     // heap will hold the k closest points

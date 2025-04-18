@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P941ValidMountainArray {
+final class P941ValidMountainArray {
 
   public boolean validMountainArray(int[] a) {
     int n = a.length;

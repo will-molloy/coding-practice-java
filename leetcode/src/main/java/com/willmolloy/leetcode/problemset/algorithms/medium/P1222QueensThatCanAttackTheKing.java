@@ -19,7 +19,7 @@ import java.util.List;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P51NQueens
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1222QueensThatCanAttackTheKing {
+final class P1222QueensThatCanAttackTheKing {
 
   public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
     // dump queens into array for O(1) lookup

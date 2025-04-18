@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P442FindAllDuplicatesInAnArrayTest {
+final class P442FindAllDuplicatesInAnArrayTest {
 
   private final P442FindAllDuplicatesInAnArray p442 = new P442FindAllDuplicatesInAnArray();
 

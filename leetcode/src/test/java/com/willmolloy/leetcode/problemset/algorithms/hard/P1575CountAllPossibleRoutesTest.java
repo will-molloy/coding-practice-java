@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1575CountAllPossibleRoutesTest {
+final class P1575CountAllPossibleRoutesTest {
 
   private final P1575CountAllPossibleRoutes p1575CountAllPossibleRoutes =
       new P1575CountAllPossibleRoutes();

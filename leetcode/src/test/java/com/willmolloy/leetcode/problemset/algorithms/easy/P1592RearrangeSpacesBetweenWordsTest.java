@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1592RearrangeSpacesBetweenWordsTest {
+final class P1592RearrangeSpacesBetweenWordsTest {
 
   private final P1592RearrangeSpacesBetweenWords p1592 = new P1592RearrangeSpacesBetweenWords();
 

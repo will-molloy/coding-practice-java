@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P389FindTheDifferenceTest {
+final class P389FindTheDifferenceTest {
 
   private final P389FindTheDifference p389 = new P389FindTheDifference();
 

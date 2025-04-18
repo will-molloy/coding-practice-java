@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P128LongestConsecutiveSequenceTest {
+final class P128LongestConsecutiveSequenceTest {
 
   private final P128LongestConsecutiveSequence fun = new P128LongestConsecutiveSequence();
 

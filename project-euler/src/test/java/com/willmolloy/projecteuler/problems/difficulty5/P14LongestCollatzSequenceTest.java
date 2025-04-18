@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P14LongestCollatzSequenceTest {
+final class P14LongestCollatzSequenceTest {
 
   private final P14LongestCollatzSequence longestCollatzSequence = new P14LongestCollatzSequence();
 

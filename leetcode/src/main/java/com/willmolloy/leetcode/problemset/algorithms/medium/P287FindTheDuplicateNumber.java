@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P142LinkedListCycle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P287FindTheDuplicateNumber {
+final class P287FindTheDuplicateNumber {
 
   // must not modify array or use extra memory
   // so not allowed to use sorting, hashing, changing nums to negative nums, etc.

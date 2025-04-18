@@ -16,7 +16,7 @@ import java.util.Comparator;
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1626BestTeamWithNoConflicts {
+final class P1626BestTeamWithNoConflicts {
 
   public int bestTeamScore(int[] scores, int[] ages) {
     int n = scores.length;

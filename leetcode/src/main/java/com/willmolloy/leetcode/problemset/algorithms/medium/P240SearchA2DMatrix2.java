@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  * @see P74SearchA2dMatrix
  */
-class P240SearchA2DMatrix2 {
+final class P240SearchA2DMatrix2 {
 
   public boolean searchMatrix(int[][] matrix, int target) {
     int rows = matrix.length;

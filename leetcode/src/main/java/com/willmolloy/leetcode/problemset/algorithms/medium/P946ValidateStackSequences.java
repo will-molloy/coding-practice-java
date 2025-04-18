@@ -14,7 +14,7 @@ import java.util.ArrayDeque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P946ValidateStackSequences {
+final class P946ValidateStackSequences {
 
   public boolean validateStackSequences(int[] pushed, int[] popped) {
     ArrayDeque<Integer> stack = new ArrayDeque<>();

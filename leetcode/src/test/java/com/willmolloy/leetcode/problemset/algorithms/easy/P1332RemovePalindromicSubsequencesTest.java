@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1332RemovePalindromicSubsequencesTest {
+final class P1332RemovePalindromicSubsequencesTest {
 
   private final P1332RemovePalindromicSubsequences p1332RemovePalindromicSubsequences =
       new P1332RemovePalindromicSubsequences();

@@ -11,7 +11,7 @@ import java.util.stream.LongStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P12HighlyDivisibleTriangleNumber {
+final class P12HighlyDivisibleTriangleNumber {
   public OptionalLong apply(long divisorsAbove) {
     return LongStream.iterate(1, i -> i + 1)
         .map(Maths::sumFirstNNaturalNumbers)

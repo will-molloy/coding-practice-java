@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P228SummaryRanges {
+final class P228SummaryRanges {
 
   public List<String> summaryRanges(int[] nums) {
     int n = nums.length;

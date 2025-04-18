@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P216CombinationSum3Test {
+final class P216CombinationSum3Test {
 
   private final P216CombinationSum3 p216 = new P216CombinationSum3();
 

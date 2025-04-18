@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P754ReachANumberTest {
+final class P754ReachANumberTest {
 
   private final P754ReachANumber p754ReachANumber = new P754ReachANumber();
 

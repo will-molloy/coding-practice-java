@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P67AddBinary {
+final class P67AddBinary {
 
   public String addBinary(String a, String b) {
     StringBuilder result = new StringBuilder();

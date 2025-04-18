@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchOneOrMoreRepetitions implements Regex {
+final class MatchOneOrMoreRepetitions implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d+[A-Z]+[a-z]+$");
 

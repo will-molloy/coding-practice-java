@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1568MinimumNumberOfDaysToDisconnectIslandTest {
+final class P1568MinimumNumberOfDaysToDisconnectIslandTest {
 
   private final P1568MinimumNumberOfDaysToDisconnectIsland p1568 =
       new P1568MinimumNumberOfDaysToDisconnectIsland();

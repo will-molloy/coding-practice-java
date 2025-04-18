@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1464MaximumProductOfTwoElementsInAnArray {
+final class P1464MaximumProductOfTwoElementsInAnArray {
 
   // brute force would also work as max n = 500
 

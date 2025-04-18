@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class PositiveLookbehindTest {
+final class PositiveLookbehindTest {
 
   @Test
   void testMatchCount() {

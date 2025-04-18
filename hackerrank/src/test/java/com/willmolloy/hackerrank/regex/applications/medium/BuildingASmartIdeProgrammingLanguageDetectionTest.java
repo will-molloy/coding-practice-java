@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class BuildingASmartIdeProgrammingLanguageDetectionTest {
+final class BuildingASmartIdeProgrammingLanguageDetectionTest {
 
   @Test
   void java() {

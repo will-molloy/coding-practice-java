@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P709ToLowerCase {
+final class P709ToLowerCase {
 
   public String toLowerCase(String str) {
     char[] chars = str.toCharArray();

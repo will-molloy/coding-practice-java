@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P497RandomPointInNonOverlappingRectanglesTest {
+final class P497RandomPointInNonOverlappingRectanglesTest {
 
   private static final double TOLERANCE = 0.02;
 

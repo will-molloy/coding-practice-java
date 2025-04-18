@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P212WordSearch2Test {
+final class P212WordSearch2Test {
 
   private final P212WordSearch2 p212 = new P212WordSearch2();
 

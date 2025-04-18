@@ -10,7 +10,7 @@ import com.google.common.math.LongMath;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P7NthPrime {
+final class P7NthPrime {
 
   public int apply(int n) {
     Preconditions.checkArgument(n > 0);

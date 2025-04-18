@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P791CustomSortString {
+final class P791CustomSortString {
 
   public String customSortString(String order, String str) {
     Map<Character, Integer> orderMap = new HashMap<>();

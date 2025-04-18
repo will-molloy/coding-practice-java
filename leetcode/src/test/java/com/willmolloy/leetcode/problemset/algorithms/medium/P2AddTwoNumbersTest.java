@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P2AddTwoNumbersTest {
+final class P2AddTwoNumbersTest {
 
   private final P2AddTwoNumbers function = new P2AddTwoNumbers();
 

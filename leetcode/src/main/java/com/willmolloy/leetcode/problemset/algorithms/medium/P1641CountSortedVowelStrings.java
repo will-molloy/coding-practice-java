@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1641CountSortedVowelStrings {
+final class P1641CountSortedVowelStrings {
 
   private final List<Character> list = List.of('a', 'e', 'i', 'o', 'u');
 

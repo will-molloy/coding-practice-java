@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P199BinaryTreeRightSideViewTest {
+final class P199BinaryTreeRightSideViewTest {
 
   private final P199BinaryTreeRightSideView p199 = new P199BinaryTreeRightSideView();
 

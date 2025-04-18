@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P16PowerDigitSumTest {
+final class P16PowerDigitSumTest {
 
   @Test
   void powerDigitSum() {

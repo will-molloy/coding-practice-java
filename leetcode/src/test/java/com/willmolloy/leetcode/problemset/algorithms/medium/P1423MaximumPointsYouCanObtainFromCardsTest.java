@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1423MaximumPointsYouCanObtainFromCardsTest {
+final class P1423MaximumPointsYouCanObtainFromCardsTest {
 
   private final P1423MaximumPointsYouCanObtainFromCards p1423 =
       new P1423MaximumPointsYouCanObtainFromCards();

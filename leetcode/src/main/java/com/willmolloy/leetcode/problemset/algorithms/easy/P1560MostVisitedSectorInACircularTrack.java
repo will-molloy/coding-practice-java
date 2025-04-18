@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1560MostVisitedSectorInACircularTrack {
+final class P1560MostVisitedSectorInACircularTrack {
 
   public List<Integer> mostVisited(int n, int[] rounds) {
     int start = rounds[0];

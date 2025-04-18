@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P111MinimumDepthOfBinaryTreeTest {
+final class P111MinimumDepthOfBinaryTreeTest {
 
   private final P111MinimumDepthOfBinaryTree fun = new P111MinimumDepthOfBinaryTree();
 

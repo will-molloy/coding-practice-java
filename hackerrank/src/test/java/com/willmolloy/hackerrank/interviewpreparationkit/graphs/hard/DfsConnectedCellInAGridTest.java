@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class DfsConnectedCellInAGridTest {
+final class DfsConnectedCellInAGridTest {
 
   @Test
   void sampleTest0TwoRegions() {

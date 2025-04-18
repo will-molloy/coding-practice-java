@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P554BrickWallTest {
+final class P554BrickWallTest {
 
   private final P554BrickWall fun = new P554BrickWall();
 

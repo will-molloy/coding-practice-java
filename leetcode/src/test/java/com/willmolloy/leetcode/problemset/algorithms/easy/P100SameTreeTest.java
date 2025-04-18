@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P100SameTreeTest {
+final class P100SameTreeTest {
 
   private final P100SameTree func = new P100SameTree();
 

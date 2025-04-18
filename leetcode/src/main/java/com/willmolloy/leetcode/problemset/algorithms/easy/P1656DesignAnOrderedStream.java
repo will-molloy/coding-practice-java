@@ -23,10 +23,10 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1656DesignAnOrderedStream {
+final class P1656DesignAnOrderedStream {
 
   /** OrderedStream. */
-  static class OrderedStream {
+  static final class OrderedStream {
 
     private int ptr;
     private final Map<Integer, String> map;

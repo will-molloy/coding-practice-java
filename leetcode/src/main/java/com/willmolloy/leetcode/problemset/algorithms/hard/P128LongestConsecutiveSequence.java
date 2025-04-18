@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P128LongestConsecutiveSequence {
+final class P128LongestConsecutiveSequence {
 
   // very easy to figure out this approach from the O(n^3) brute force approach
 

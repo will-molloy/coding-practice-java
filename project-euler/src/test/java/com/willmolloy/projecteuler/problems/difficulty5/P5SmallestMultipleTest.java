@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P5SmallestMultipleTest {
+final class P5SmallestMultipleTest {
 
   private final P5SmallestMultiple smallestMultiple = new P5SmallestMultiple();
 

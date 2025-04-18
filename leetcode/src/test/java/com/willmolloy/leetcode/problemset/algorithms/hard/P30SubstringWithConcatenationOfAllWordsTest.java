@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P30SubstringWithConcatenationOfAllWordsTest {
+final class P30SubstringWithConcatenationOfAllWordsTest {
 
   private final P30SubstringWithConcatenationOfAllWords fun =
       new P30SubstringWithConcatenationOfAllWords();

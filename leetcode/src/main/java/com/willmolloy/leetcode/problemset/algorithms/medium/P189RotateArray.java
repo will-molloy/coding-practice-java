@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P1625LexicographicallySmallestStringAfterApplyingOperations
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P189RotateArray {
+sealed interface P189RotateArray {
 
   void rotate(int[] nums, int k);
 
@@ -20,7 +20,7 @@ interface P189RotateArray {
    *
    * <p>Key idea: Modulo operator.
    */
-  class CopyArray implements P189RotateArray {
+  final class CopyArray implements P189RotateArray {
 
     @Override
     public void rotate(int[] nums, int k) {
@@ -45,7 +45,7 @@ interface P189RotateArray {
    * I.e. {@code <wrapped> + <not wrapped>}, where {@code <wrapped>} has size {@code k}. Reversing
    * creates such a partition, then just need to undo the reversal for each partition.
    */
-  class ReverseArray implements P189RotateArray {
+  final class ReverseArray implements P189RotateArray {
 
     @Override
     public void rotate(int[] nums, int k) {

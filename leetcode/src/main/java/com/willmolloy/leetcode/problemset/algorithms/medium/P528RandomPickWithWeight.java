@@ -16,10 +16,10 @@ import java.util.concurrent.ThreadLocalRandom;
  * @see P497RandomPointInNonOverlappingRectangles
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P528RandomPickWithWeight {
+final class P528RandomPickWithWeight {
 
   /** Solution class. */
-  interface Solution {
+  sealed interface Solution {
 
     int pickIndex();
   }
@@ -31,7 +31,7 @@ class P528RandomPickWithWeight {
    *
    * <p>Extra space: O(n)
    */
-  static class BinarySearch implements Solution {
+  static final class BinarySearch implements Solution {
 
     private final int[] prefixSum;
 
@@ -89,7 +89,7 @@ class P528RandomPickWithWeight {
    *
    * <p>Extra space: O(n)
    */
-  static class TreeMap implements Solution {
+  static final class TreeMap implements Solution {
 
     private final NavigableMap<Integer, Integer> map;
 

@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P220ContainsDuplicate3Test {
+final class P220ContainsDuplicate3Test {
 
   private final P220ContainsDuplicate3 p220 = new P220ContainsDuplicate3();
 

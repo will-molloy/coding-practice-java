@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P563BinaryTreeTilt {
+final class P563BinaryTreeTilt {
 
   public int findTilt(TreeNode root) {
     return dfs(root)[1];

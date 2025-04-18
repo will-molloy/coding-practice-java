@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1394FindLuckyIntegerInAnArrayTest {
+final class P1394FindLuckyIntegerInAnArrayTest {
   private final P1394FindLuckyIntegerInAnArray p1394 = new P1394FindLuckyIntegerInAnArray();
 
   @Test

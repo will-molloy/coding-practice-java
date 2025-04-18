@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P257BinaryTreePathsTest {
+final class P257BinaryTreePathsTest {
 
   private final P257BinaryTreePaths p257 = new P257BinaryTreePaths();
 

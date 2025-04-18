@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1451RearrangeWordsInASentenceTest {
+final class P1451RearrangeWordsInASentenceTest {
 
   private final P1451RearrangeWordsInASentence p1451 = new P1451RearrangeWordsInASentence();
 

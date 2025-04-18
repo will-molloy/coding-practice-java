@@ -21,7 +21,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P823BinaryTreesWithFactors {
+final class P823BinaryTreesWithFactors {
 
   private static final long MOD = (long) 1e9 + 7;
 

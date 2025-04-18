@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P106ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
+final class P106ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
 
   private final P106ConstructBinaryTreeFromInorderAndPostorderTraversal fun =
       new P106ConstructBinaryTreeFromInorderAndPostorderTraversal();

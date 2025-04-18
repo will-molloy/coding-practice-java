@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchSameTextAgainAndAgain implements Regex {
+final class MatchSameTextAgainAndAgain implements Regex {
 
   private static final Pattern PATTERN =
       Pattern.compile("^([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1$");

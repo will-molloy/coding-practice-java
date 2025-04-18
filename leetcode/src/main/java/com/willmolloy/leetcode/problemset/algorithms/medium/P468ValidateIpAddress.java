@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  * @see com.willmolloy.hackerrank.regex.applications.easy.IpAddressValidation
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P468ValidateIpAddress {
+final class P468ValidateIpAddress {
 
   private static final String BYTE_PATTERN = "(2(5[0-5]|[0-4][0-9])|1[0-9]{1,2}|[1-9]?[0-9])";
   private static final Pattern IPV4_PATTERN =

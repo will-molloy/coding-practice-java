@@ -17,7 +17,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P897IncreasingOrderSearchTree {
+final class P897IncreasingOrderSearchTree {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
   public TreeNode increasingBST(TreeNode root) {

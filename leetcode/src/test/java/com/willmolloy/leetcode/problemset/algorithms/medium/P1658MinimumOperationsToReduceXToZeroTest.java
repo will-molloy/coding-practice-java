@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1658MinimumOperationsToReduceXToZeroTest {
+final class P1658MinimumOperationsToReduceXToZeroTest {
 
   private final P1658MinimumOperationsToReduceXToZero p1658 =
       new P1658MinimumOperationsToReduceXToZero();

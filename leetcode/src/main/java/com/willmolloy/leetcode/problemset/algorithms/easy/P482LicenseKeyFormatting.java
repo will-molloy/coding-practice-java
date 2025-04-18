@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P482LicenseKeyFormatting {
+final class P482LicenseKeyFormatting {
 
   public String licenseKeyFormatting(String s, int k) {
     int n = s.length();

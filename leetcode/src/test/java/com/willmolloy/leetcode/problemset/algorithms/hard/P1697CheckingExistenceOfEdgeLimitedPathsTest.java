@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1697CheckingExistenceOfEdgeLimitedPathsTest {
+final class P1697CheckingExistenceOfEdgeLimitedPathsTest {
 
   private final P1697CheckingExistenceOfEdgeLimitedPaths p1697CheckingExistenceOfEdgeLimitedPaths =
       new P1697CheckingExistenceOfEdgeLimitedPaths();

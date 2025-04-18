@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1647MinimumDeletionsToMakeCharacterFrequenciesUniqueTest {
+final class P1647MinimumDeletionsToMakeCharacterFrequenciesUniqueTest {
 
   private final P1647MinimumDeletionsToMakeCharacterFrequenciesUnique p1647 =
       new P1647MinimumDeletionsToMakeCharacterFrequenciesUnique();

@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1431KidsWithTheGreatestNumberOfCandies {
+final class P1431KidsWithTheGreatestNumberOfCandies {
 
   public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
     // compute max so know what is the 'greatest' number of candies

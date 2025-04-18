@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P90Subsets2Test {
+final class P90Subsets2Test {
 
   private final P90Subsets2 func = new P90Subsets2();
 

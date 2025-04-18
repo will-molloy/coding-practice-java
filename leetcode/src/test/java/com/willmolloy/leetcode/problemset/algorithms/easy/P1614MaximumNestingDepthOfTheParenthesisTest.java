@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1614MaximumNestingDepthOfTheParenthesisTest {
+final class P1614MaximumNestingDepthOfTheParenthesisTest {
 
   private final P1614MaximumNestingDepthOfTheParenthesis p1614 =
       new P1614MaximumNestingDepthOfTheParenthesis();

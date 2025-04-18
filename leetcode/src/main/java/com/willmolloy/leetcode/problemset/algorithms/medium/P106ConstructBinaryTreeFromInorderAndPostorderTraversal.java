@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @see P1008ConstructBinarySearchTreeFromPreorderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P106ConstructBinaryTreeFromInorderAndPostorderTraversal {
+final class P106ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
   public TreeNode buildTree(int[] inorder, int[] postorder) {
     return buildTree(asList(inorder), asList(postorder));

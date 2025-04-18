@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P986IntervalListIntersectionsTest {
+final class P986IntervalListIntersectionsTest {
 
   @ParameterizedTest
   @MethodSource("p986")

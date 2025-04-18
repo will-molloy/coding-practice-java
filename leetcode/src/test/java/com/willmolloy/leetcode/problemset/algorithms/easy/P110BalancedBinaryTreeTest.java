@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P110BalancedBinaryTreeTest {
+final class P110BalancedBinaryTreeTest {
 
   private final P110BalancedBinaryTree fun = new P110BalancedBinaryTree();
 

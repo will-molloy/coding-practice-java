@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
  * @see P337HouseRobber3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P213HouseRobber2 {
+final class P213HouseRobber2 {
 
   public int rob(int[] nums) {
     if (nums.length <= 3) {

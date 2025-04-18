@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P25ReverseNodesInKGroupTest {
+final class P25ReverseNodesInKGroupTest {
 
   private final P25ReverseNodesInKGroup fun = new P25ReverseNodesInKGroup();
 

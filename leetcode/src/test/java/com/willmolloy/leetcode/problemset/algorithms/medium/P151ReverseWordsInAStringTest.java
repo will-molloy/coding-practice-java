@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P151ReverseWordsInAStringTest {
+final class P151ReverseWordsInAStringTest {
 
   private final P151ReverseWordsInAString p151 = new P151ReverseWordsInAString();
 

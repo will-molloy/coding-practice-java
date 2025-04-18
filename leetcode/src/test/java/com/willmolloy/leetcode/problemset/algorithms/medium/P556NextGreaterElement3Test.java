@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P556NextGreaterElement3Test {
+final class P556NextGreaterElement3Test {
 
   private final P556NextGreaterElement3 p556NextGreaterElement3 = new P556NextGreaterElement3();
 

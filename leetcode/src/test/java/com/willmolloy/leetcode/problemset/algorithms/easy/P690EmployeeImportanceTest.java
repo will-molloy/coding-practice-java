@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P690EmployeeImportanceTest {
+final class P690EmployeeImportanceTest {
 
   private final P690EmployeeImportance p690 = new P690EmployeeImportance();
 

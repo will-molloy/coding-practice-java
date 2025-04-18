@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P436FindRightIntervalTest {
+final class P436FindRightIntervalTest {
 
   @ParameterizedTest
   @MethodSource

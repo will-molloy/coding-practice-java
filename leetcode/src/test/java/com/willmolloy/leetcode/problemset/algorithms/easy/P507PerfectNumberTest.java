@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P507PerfectNumberTest {
+final class P507PerfectNumberTest {
 
   private final P507PerfectNumber p507 = new P507PerfectNumber();
 

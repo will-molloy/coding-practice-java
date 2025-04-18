@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P234PalindromeLinkedList {
+final class P234PalindromeLinkedList {
 
   public boolean isPalindrome(ListNode firstHalfNotReversed) {
     ListNode secondHalfReversed = reverse(middle(firstHalfNotReversed));

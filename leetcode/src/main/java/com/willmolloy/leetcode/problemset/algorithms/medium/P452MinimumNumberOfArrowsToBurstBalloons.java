@@ -23,7 +23,7 @@ import java.util.Comparator;
  *     (classic greedy algorithm problem)</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P452MinimumNumberOfArrowsToBurstBalloons {
+final class P452MinimumNumberOfArrowsToBurstBalloons {
 
   public int findMinArrowShots(int[][] points) {
     // number of overlapping intervals

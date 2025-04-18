@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P203RemoveLinkedListElements {
+final class P203RemoveLinkedListElements {
 
   public ListNode removeElements(ListNode node, int val) {
     ListNode dummy = new ListNode(-1);

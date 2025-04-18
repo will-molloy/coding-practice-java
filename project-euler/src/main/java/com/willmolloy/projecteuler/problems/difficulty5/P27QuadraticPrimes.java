@@ -14,7 +14,7 @@ import org.apache.commons.lang3.tuple.Pair;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P27QuadraticPrimes {
+final class P27QuadraticPrimes {
 
   // consecutive primes, i.e. x = 0 until n, where f(n) is not prime.
   public int apply(int aLimit, int bLimit) {

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P328OddEvenLinkedListTest {
+final class P328OddEvenLinkedListTest {
 
   private final P328OddEvenLinkedList p328 = new P328OddEvenLinkedList();
 

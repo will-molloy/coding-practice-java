@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P38CountAndSay {
+final class P38CountAndSay {
 
   public String countAndSay(int n) {
     if (n == 1) {

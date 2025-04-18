@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1005MaximizeSumOfArrayAfterKNegations {
+sealed interface P1005MaximizeSumOfArrayAfterKNegations {
 
   int largestSumAfterKNegations(int[] a, int k);
 
@@ -22,7 +22,7 @@ interface P1005MaximizeSumOfArrayAfterKNegations {
    *
    * <p>Space: O(1)
    */
-  class Sort implements P1005MaximizeSumOfArrayAfterKNegations {
+  final class Sort implements P1005MaximizeSumOfArrayAfterKNegations {
 
     @Override
     public int largestSumAfterKNegations(int[] a, int k) {
@@ -71,7 +71,7 @@ interface P1005MaximizeSumOfArrayAfterKNegations {
    *
    * <p>Space: O(n)
    */
-  class MinHeap implements P1005MaximizeSumOfArrayAfterKNegations {
+  final class MinHeap implements P1005MaximizeSumOfArrayAfterKNegations {
 
     @Override
     public int largestSumAfterKNegations(int[] a, int k) {

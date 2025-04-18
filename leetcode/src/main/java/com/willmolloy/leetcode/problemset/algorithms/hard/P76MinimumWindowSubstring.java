@@ -19,7 +19,7 @@ import java.util.Map;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P567PermutationInString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P76MinimumWindowSubstring {
+final class P76MinimumWindowSubstring {
 
   public String minWindow(String s, String t) {
 

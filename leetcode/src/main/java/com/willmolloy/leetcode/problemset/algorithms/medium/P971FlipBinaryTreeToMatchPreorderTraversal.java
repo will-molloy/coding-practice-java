@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P971FlipBinaryTreeToMatchPreorderTraversal {
+final class P971FlipBinaryTreeToMatchPreorderTraversal {
 
   private List<Integer> flipped;
   private int i;

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P423ReconstructOriginalDigitsFromEnglishTest {
+final class P423ReconstructOriginalDigitsFromEnglishTest {
 
   private final P423ReconstructOriginalDigitsFromEnglish p423ReconstructOriginalDigitsFromEnglish =
       new P423ReconstructOriginalDigitsFromEnglish();

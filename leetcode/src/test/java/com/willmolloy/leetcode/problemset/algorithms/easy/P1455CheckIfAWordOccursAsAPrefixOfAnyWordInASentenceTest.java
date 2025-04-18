@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTest {
+final class P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTest {
 
   private final P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentence p1455 =
       new P1455CheckIfAWordOccursAsAPrefixOfAnyWordInASentence();

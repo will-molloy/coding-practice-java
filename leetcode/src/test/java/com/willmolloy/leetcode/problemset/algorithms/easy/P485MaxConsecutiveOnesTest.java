@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P485MaxConsecutiveOnesTest {
+final class P485MaxConsecutiveOnesTest {
 
   private final P485MaxConsecutiveOnes p485 = new P485MaxConsecutiveOnes();
 

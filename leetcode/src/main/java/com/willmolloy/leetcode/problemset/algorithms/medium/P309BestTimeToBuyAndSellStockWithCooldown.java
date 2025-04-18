@@ -12,7 +12,7 @@ import java.util.OptionalInt;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P188BestTimeToBuyAndSellStock4
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P309BestTimeToBuyAndSellStockWithCooldown {
+sealed interface P309BestTimeToBuyAndSellStockWithCooldown {
 
   int maxProfit(int[] prices);
 
@@ -25,7 +25,7 @@ interface P309BestTimeToBuyAndSellStockWithCooldown {
    *
    * <p>Key idea: Figure out what choices are available.
    */
-  class TopDown implements P309BestTimeToBuyAndSellStockWithCooldown {
+  final class TopDown implements P309BestTimeToBuyAndSellStockWithCooldown {
 
     @Override
     public int maxProfit(int[] prices) {
@@ -93,7 +93,7 @@ interface P309BestTimeToBuyAndSellStockWithCooldown {
    * <p>sell = {@code dp[i - 1][1] + prices[i]}, i.e. sell for {@code prices[i]}, adding to current
    * profit which must be {@code dp[i - 1][1]} (yesterday, in the scenario we hold the stock).
    */
-  class BottomUp implements P309BestTimeToBuyAndSellStockWithCooldown {
+  final class BottomUp implements P309BestTimeToBuyAndSellStockWithCooldown {
 
     @Override
     public int maxProfit(int[] prices) {

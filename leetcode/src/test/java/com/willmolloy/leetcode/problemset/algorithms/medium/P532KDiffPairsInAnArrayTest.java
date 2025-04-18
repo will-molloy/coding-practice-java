@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P532KDiffPairsInAnArrayTest {
+final class P532KDiffPairsInAnArrayTest {
 
   private final P532KDiffPairsInAnArray p532 = new P532KDiffPairsInAnArray();
 

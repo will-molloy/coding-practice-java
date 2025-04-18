@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1790CheckIfOneStringSwapCanMakeStringsEqualTest {
+final class P1790CheckIfOneStringSwapCanMakeStringsEqualTest {
 
   private final P1790CheckIfOneStringSwapCanMakeStringsEqual
       p1790CheckIfOneStringSwapCanMakeStringsEqual =

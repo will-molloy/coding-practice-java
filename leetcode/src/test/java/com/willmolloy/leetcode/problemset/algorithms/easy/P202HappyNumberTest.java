@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P202HappyNumberTest {
+final class P202HappyNumberTest {
 
   private final P202HappyNumber fun = new P202HappyNumber();
 

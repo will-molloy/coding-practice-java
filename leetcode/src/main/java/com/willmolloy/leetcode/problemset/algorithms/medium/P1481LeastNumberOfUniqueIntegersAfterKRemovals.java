@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1481LeastNumberOfUniqueIntegersAfterKRemovals {
+final class P1481LeastNumberOfUniqueIntegersAfterKRemovals {
 
   public int findLeastNumOfUniqueInts(int[] arr, int k) {
     // remove those with least freq first, so save as much k as possible to remove more numbers

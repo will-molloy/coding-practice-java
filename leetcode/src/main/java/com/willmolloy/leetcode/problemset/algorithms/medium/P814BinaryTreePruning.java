@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P814BinaryTreePruning {
+final class P814BinaryTreePruning {
 
   public TreeNode pruneTree(TreeNode root) {
     if (dfs(root)) {

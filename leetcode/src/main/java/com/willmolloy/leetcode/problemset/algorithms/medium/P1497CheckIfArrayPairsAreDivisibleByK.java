@@ -30,7 +30,7 @@ import java.util.Map;
  * @see P532KDiffPairsInAnArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1497CheckIfArrayPairsAreDivisibleByK {
+final class P1497CheckIfArrayPairsAreDivisibleByK {
 
   public boolean canArrange(int[] arr, int k) {
     Map<Integer, Integer> map = new HashMap<>();

@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P775GlobalAndLocalInversions {
+final class P775GlobalAndLocalInversions {
 
   public boolean isIdealPermutation(int[] a) {
     // original array is [0, n)

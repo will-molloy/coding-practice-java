@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P977SquaresOfASortedArray {
+final class P977SquaresOfASortedArray {
 
   public int[] sortedSquares(int[] a) {
     int n = a.length;

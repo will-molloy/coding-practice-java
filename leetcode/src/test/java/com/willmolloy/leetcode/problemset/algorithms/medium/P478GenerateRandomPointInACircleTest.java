@@ -16,7 +16,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P478GenerateRandomPointInACircleTest {
+final class P478GenerateRandomPointInACircleTest {
 
   private static final double TOLERANCE = 0.02;
 

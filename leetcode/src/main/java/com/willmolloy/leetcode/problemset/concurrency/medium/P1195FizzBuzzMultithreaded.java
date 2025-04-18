@@ -12,7 +12,7 @@ import java.util.function.IntConsumer;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1195FizzBuzzMultithreaded {
+sealed interface P1195FizzBuzzMultithreaded {
 
   void fizz(Runnable printFizz) throws InterruptedException;
 
@@ -27,7 +27,7 @@ interface P1195FizzBuzzMultithreaded {
    *
    * <p>Key idea: outer loop to ensure thread keeps running and the exit condition.
    */
-  class WaitNotifySolution implements P1195FizzBuzzMultithreaded {
+  final class WaitNotifySolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 
@@ -99,7 +99,7 @@ interface P1195FizzBuzzMultithreaded {
    *
    * <p>Key idea: obtain the lock before checking the condition.
    */
-  class ReentrantLockSolution implements P1195FizzBuzzMultithreaded {
+  final class ReentrantLockSolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 
@@ -183,7 +183,7 @@ interface P1195FizzBuzzMultithreaded {
    * <p>Key idea: check for overlapping case (fizzbuzz) ahead of time. Also conditional logic
    * controlled by one semaphore (number) (and always release to that one).
    */
-  class SemaphoreSolution implements P1195FizzBuzzMultithreaded {
+  final class SemaphoreSolution implements P1195FizzBuzzMultithreaded {
 
     private final int n;
 

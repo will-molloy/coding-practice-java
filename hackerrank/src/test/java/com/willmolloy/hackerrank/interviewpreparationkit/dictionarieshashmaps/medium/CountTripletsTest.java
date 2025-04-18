@@ -16,7 +16,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @Timeout(value = 1)
-class CountTripletsTest {
+final class CountTripletsTest {
 
   @ParameterizedTest
   @MethodSource("functions")

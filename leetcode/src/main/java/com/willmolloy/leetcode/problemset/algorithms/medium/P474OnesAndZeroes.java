@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P474OnesAndZeroes {
+final class P474OnesAndZeroes {
 
   public int findMaxForm(String[] strs, int maxZeroes, int maxOnes) {
     int n = strs.length;

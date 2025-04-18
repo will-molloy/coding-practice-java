@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P961NRepeatedElementInSize2nArrayTest {
+final class P961NRepeatedElementInSize2nArrayTest {
 
   private final P961NRepeatedElementInSize2nArray fun = new P961NRepeatedElementInSize2nArray();
 

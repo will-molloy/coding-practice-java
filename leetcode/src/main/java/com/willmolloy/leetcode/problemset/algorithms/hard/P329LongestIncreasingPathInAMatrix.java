@@ -16,7 +16,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P329LongestIncreasingPathInAMatrix {
+final class P329LongestIncreasingPathInAMatrix {
 
   private static final int[][] DIRECTIONS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 

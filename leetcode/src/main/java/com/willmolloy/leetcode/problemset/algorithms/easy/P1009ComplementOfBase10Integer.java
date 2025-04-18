@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P476NumberComplement
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1009ComplementOfBase10Integer {
+final class P1009ComplementOfBase10Integer {
 
   public int bitwiseComplement(int num) {
     if (num == 0) {

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1512NumberOfGoodPairs {
+final class P1512NumberOfGoodPairs {
 
   public int numIdenticalPairs(int[] nums) {
     int n = nums.length;

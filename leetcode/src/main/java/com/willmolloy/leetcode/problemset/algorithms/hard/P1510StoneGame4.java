@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P877StoneGame
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1510StoneGame4 {
+final class P1510StoneGame4 {
 
   public boolean winnerSquareGame(int n) {
     // what does it mean to play optimally???

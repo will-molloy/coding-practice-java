@@ -24,7 +24,7 @@ import java.util.Comparator;
  * @see P1288RemoveCoveredIntervals
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P435NonOverlappingIntervals {
+final class P435NonOverlappingIntervals {
 
   public int eraseOverlapIntervals(int[][] intervals) {
     Arrays.sort(intervals, Comparator.comparingInt(a -> a[1]));

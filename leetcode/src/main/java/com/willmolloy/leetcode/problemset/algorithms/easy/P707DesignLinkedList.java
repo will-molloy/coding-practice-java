@@ -12,7 +12,7 @@ import java.util.List;
  * @see P705DesignHashSet
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P707DesignLinkedList {
+final class P707DesignLinkedList {
 
   // for testing
   List<Integer> asArrayList() {
@@ -25,7 +25,7 @@ class P707DesignLinkedList {
     return values;
   }
 
-  private static class ListNode {
+  private static final class ListNode {
     final int val;
     ListNode next;
 

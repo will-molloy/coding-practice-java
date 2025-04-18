@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P124BinaryTreeMaximumPathSumTest {
+final class P124BinaryTreeMaximumPathSumTest {
 
   private final P124BinaryTreeMaximumPathSum fun = new P124BinaryTreeMaximumPathSum();
 

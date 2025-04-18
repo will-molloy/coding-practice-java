@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P437PathSum3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P112PathSum {
+final class P112PathSum {
 
   public boolean hasPathSum(TreeNode root, int sum) {
     return hasPathSum(root, sum, 0);

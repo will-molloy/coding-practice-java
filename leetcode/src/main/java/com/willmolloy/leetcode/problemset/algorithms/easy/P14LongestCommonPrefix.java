@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P14LongestCommonPrefix {
+final class P14LongestCommonPrefix {
 
   String longestCommonPrefix(String[] strs) {
     if (strs == null || strs.length == 0) {

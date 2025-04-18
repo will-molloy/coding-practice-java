@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P83RemoveDuplicatesFromSortedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P82RemoveDuplicatesFromSortedList2 {
+final class P82RemoveDuplicatesFromSortedList2 {
 
   public ListNode deleteDuplicates(ListNode head) {
     // Skip any starting dupes

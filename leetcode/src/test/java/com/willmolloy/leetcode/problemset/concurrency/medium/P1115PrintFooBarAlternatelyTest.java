@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Timeout;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @Timeout(value = 10)
-class P1115PrintFooBarAlternatelyTest {
+final class P1115PrintFooBarAlternatelyTest {
 
   private P1115PrintFooBarAlternately object; // lock on object so tests can run in parallel
 

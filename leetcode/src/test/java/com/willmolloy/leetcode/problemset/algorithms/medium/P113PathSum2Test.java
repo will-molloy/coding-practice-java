@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P113PathSum2Test {
+final class P113PathSum2Test {
 
   private final P113PathSum2 fun = new P113PathSum2();
 

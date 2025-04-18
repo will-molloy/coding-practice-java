@@ -15,7 +15,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P153FindMinimumInRotatedSortedArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P154FindMinimumInRotatedSortedArray2 {
+final class P154FindMinimumInRotatedSortedArray2 {
 
   public int findMin(int[] nums) {
     int n = nums.length;

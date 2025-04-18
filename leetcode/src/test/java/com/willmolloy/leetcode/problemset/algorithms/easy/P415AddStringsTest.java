@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P415AddStringsTest {
+final class P415AddStringsTest {
 
   private final P415AddStrings p415 = new P415AddStrings();
 

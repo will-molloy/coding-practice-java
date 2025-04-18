@@ -20,7 +20,7 @@ import java.util.Set;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1345JumpGame4
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1306JumpGame3 {
+final class P1306JumpGame3 {
 
   public boolean canReach(int[] arr, int start) {
     return canReach(arr, start, new HashSet<>());

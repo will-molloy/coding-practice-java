@@ -17,7 +17,7 @@ import java.util.Deque;
  * @see P430FlattenAMultilevelDoublyLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P114FlattenBinaryTreeToLinkedList {
+final class P114FlattenBinaryTreeToLinkedList {
 
   // TODO some smarter answers on leetcode.com ("reversed pre-order traversal")
 

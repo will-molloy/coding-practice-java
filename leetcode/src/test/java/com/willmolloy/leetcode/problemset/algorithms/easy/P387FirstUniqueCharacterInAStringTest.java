@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P387FirstUniqueCharacterInAStringTest {
+final class P387FirstUniqueCharacterInAStringTest {
 
   private final P387FirstUniqueCharacterInAString p387 = new P387FirstUniqueCharacterInAString();
 

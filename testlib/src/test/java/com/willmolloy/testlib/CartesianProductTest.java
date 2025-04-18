@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.Arguments;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class CartesianProductTest {
+final class CartesianProductTest {
 
   @Test
   void testCartesianProduct() {

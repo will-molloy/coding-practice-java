@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class CandiesTest {
+final class CandiesTest {
 
   @Test
   void sampleTest0SameScoreButDifferentCandies() {

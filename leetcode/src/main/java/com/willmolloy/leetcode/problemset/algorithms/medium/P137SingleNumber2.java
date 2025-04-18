@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @see P260SingleNumber3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P137SingleNumber2 {
+final class P137SingleNumber2 {
 
   public int singleNumber(int[] nums) {
     Map<Integer, Long> map =

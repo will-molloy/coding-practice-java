@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P34FindFirstAndLastPositionOfElementInSortedArrayTest {
+final class P34FindFirstAndLastPositionOfElementInSortedArrayTest {
 
   private final P34FindFirstAndLastPositionOfElementInSortedArray fun =
       new P34FindFirstAndLastPositionOfElementInSortedArray();

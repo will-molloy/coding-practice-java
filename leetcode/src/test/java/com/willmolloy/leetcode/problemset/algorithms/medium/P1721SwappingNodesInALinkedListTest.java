@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1721SwappingNodesInALinkedListTest {
+final class P1721SwappingNodesInALinkedListTest {
 
   private final P1721SwappingNodesInALinkedList p1721SwappingNodesInALinkedList =
       new P1721SwappingNodesInALinkedList();

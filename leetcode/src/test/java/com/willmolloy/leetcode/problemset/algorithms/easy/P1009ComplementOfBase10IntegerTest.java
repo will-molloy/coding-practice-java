@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1009ComplementOfBase10IntegerTest {
+final class P1009ComplementOfBase10IntegerTest {
 
   private final P1009ComplementOfBase10Integer p1009 = new P1009ComplementOfBase10Integer();
 

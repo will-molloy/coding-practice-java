@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P402RemoveKDigits {
+final class P402RemoveKDigits {
 
   public String removeKdigits(String num, int k) {
     Deque<Character> stack = new ArrayDeque<>();

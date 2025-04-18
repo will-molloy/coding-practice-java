@@ -18,7 +18,7 @@ import java.util.Map;
  * @see P1497CheckIfArrayPairsAreDivisibleByK
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P532KDiffPairsInAnArray {
+final class P532KDiffPairsInAnArray {
 
   public int findPairs(int[] nums, int k) {
     // compute frequencies

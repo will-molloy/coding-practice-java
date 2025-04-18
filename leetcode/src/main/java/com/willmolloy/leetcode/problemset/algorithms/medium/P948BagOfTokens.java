@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P948BagOfTokens {
+final class P948BagOfTokens {
 
   public int bagOfTokensScore(int[] tokens, int p) {
     int n = tokens.length;

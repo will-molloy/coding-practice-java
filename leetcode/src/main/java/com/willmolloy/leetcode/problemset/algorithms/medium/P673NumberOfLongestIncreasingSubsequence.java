@@ -7,7 +7,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P673NumberOfLongestIncreasingSubsequence {
+sealed interface P673NumberOfLongestIncreasingSubsequence {
 
   int findNumberOfLis(int[] nums);
 
@@ -22,7 +22,7 @@ interface P673NumberOfLongestIncreasingSubsequence {
    *
    * @see <a href=https://www.youtube.com/watch?v=fV-TF4OvZpk>Back To Back SWE's video</a>
    */
-  class Dp implements P673NumberOfLongestIncreasingSubsequence {
+  final class Dp implements P673NumberOfLongestIncreasingSubsequence {
 
     @Override
     public int findNumberOfLis(int[] nums) {
@@ -94,7 +94,7 @@ interface P673NumberOfLongestIncreasingSubsequence {
    * @see <a href=https://leetcode.com/articles/number-of-longest-increasing-subsequence>Leetcode
    *     article</a>
    */
-  class SegmentTree implements P673NumberOfLongestIncreasingSubsequence {
+  final class SegmentTree implements P673NumberOfLongestIncreasingSubsequence {
 
     @Override
     public int findNumberOfLis(int[] nums) {

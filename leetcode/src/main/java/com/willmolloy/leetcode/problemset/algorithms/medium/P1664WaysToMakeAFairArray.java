@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1664WaysToMakeAFairArray {
+final class P1664WaysToMakeAFairArray {
 
   // example:
 

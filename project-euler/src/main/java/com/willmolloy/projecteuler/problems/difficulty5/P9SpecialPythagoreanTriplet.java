@@ -10,7 +10,7 @@ import org.apache.commons.lang3.tuple.Triple;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P9SpecialPythagoreanTriplet {
+final class P9SpecialPythagoreanTriplet {
 
   public Optional<Triple<Integer, Integer, Integer>> apply(int perimeter) {
     for (int a = 1; a <= perimeter - 2; a++) {

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1679MaxNumberOfKSumPairsTest {
+final class P1679MaxNumberOfKSumPairsTest {
 
   private final P1679MaxNumberOfKSumPairs p1679 = new P1679MaxNumberOfKSumPairs();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P451SortCharactersByFrequencyTest {
+final class P451SortCharactersByFrequencyTest {
 
   private final P451SortCharactersByFrequency p451 = new P451SortCharactersByFrequency();
 

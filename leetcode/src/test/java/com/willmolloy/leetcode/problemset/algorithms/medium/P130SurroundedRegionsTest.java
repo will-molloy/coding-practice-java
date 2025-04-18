@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P130SurroundedRegionsTest {
+final class P130SurroundedRegionsTest {
 
   private final P130SurroundedRegions fun = new P130SurroundedRegions();
 

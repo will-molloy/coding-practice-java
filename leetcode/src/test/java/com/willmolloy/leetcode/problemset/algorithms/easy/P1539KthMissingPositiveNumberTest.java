@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1539KthMissingPositiveNumberTest {
+final class P1539KthMissingPositiveNumberTest {
 
   private final P1539KthMissingPositiveNumber p1539KthMissingPositiveNumber =
       new P1539KthMissingPositiveNumber();

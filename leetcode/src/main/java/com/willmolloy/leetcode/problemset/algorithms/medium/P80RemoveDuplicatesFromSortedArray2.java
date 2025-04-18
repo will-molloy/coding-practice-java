@@ -9,7 +9,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P26RemoveDuplicatesFromSortedArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P80RemoveDuplicatesFromSortedArray2 {
+final class P80RemoveDuplicatesFromSortedArray2 {
 
   public int removeDuplicates(int[] nums) {
     if (nums.length <= 2) {

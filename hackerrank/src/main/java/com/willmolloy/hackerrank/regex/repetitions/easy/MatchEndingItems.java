@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchEndingItems implements Regex {
+final class MatchEndingItems implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z]*s$");
 

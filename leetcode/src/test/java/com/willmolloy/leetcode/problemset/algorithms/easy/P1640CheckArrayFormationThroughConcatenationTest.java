@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1640CheckArrayFormationThroughConcatenationTest {
+final class P1640CheckArrayFormationThroughConcatenationTest {
 
   private final P1640CheckArrayFormationThroughConcatenation p1640 =
       new P1640CheckArrayFormationThroughConcatenation();

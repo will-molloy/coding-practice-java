@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @see P15ThreeSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P16ThreeSumClosest {
+final class P16ThreeSumClosest {
 
   public int threeSumClosest(final int[] nums, final int target) {
     if (nums.length < 3) {

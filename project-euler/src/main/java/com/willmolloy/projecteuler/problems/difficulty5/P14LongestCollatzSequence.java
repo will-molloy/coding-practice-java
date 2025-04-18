@@ -12,7 +12,7 @@ import java.util.stream.LongStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P14LongestCollatzSequence {
+final class P14LongestCollatzSequence {
 
   private final Map<Long, Integer> cache = new HashMap<>();
 

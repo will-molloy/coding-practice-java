@@ -13,7 +13,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P100SameTree {
+final class P100SameTree {
 
   public boolean isSameTree(TreeNode p, TreeNode q) {
     // it's like overriding Objects#equals

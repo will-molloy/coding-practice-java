@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
  * @see P980UniquePaths3
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P37SudokuSolver {
+final class P37SudokuSolver {
 
   // given Sudoku puzzle will have a single unique solution.
 

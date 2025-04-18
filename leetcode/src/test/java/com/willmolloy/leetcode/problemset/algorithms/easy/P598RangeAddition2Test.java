@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P598RangeAddition2Test {
+final class P598RangeAddition2Test {
 
   private final P598RangeAddition2 p598RangeAddition2 = new P598RangeAddition2();
 

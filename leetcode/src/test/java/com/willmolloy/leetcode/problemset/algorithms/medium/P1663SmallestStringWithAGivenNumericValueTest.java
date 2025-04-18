@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1663SmallestStringWithAGivenNumericValueTest {
+final class P1663SmallestStringWithAGivenNumericValueTest {
 
   private final P1663SmallestStringWithAGivenNumericValue p1663 =
       new P1663SmallestStringWithAGivenNumericValue();

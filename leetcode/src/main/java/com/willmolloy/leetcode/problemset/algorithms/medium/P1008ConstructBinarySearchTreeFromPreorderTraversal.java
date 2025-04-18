@@ -12,7 +12,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see P106ConstructBinaryTreeFromInorderAndPostorderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
+sealed interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
   TreeNode bstFromPreorder(int[] preorder);
 
@@ -27,7 +27,7 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
    * <p>Key idea: In BST all nodes in left subtree are smaller so can find where right subtree
    * begins by finding first larger node.
    */
-  class SplitLeftAndRight implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
+  final class SplitLeftAndRight implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
     @Override
     public TreeNode bstFromPreorder(int[] preorder) {
@@ -75,7 +75,7 @@ interface P1008ConstructBinarySearchTreeFromPreorderTraversal {
    * <p>Key idea: In BST all nodes in left subtree are smaller, so the upper bound is the current
    * node.
    */
-  class ProvideUpperBound implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
+  final class ProvideUpperBound implements P1008ConstructBinarySearchTreeFromPreorderTraversal {
 
     @Override
     public TreeNode bstFromPreorder(int[] preorder) {

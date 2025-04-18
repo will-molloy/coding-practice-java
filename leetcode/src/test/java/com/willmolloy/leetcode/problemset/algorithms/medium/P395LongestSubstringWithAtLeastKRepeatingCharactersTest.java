@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P395LongestSubstringWithAtLeastKRepeatingCharactersTest {
+final class P395LongestSubstringWithAtLeastKRepeatingCharactersTest {
 
   private final P395LongestSubstringWithAtLeastKRepeatingCharacters p395 =
       new P395LongestSubstringWithAtLeastKRepeatingCharacters();

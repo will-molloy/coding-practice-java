@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P284PeekingIteratorTest {
+final class P284PeekingIteratorTest {
 
   @Test
   void example() {

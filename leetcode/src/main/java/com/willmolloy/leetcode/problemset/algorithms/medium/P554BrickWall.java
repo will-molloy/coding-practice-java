@@ -21,7 +21,7 @@ import java.util.Map;
  *     href=https://en.wikipedia.org/wiki/Prefix_sum>https://en.wikipedia.org/wiki/Prefix_sum</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P554BrickWall {
+final class P554BrickWall {
 
   public int leastBricks(List<List<Integer>> wall) {
     // map(i) = number of gaps at column i

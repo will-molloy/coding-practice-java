@@ -21,10 +21,10 @@ import java.util.Optional;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P208ImplementTrie {
+final class P208ImplementTrie {
 
   /** Trie node. */
-  private static class Node {
+  private static final class Node {
     // can use Node[26] array too
     private final Map<Character, Node> children = new HashMap<>();
 
@@ -34,7 +34,7 @@ class P208ImplementTrie {
   }
 
   /** Trie (prefix tree) data structure. */
-  static class Trie {
+  static final class Trie {
     private final Node root = new Node();
 
     /**

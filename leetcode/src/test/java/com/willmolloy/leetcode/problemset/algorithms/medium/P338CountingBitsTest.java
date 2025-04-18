@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P338CountingBitsTest {
+final class P338CountingBitsTest {
 
   private final P338CountingBits p338 = new P338CountingBits();
 

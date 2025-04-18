@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P124BinaryTreeMaximumPathSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P687LongestUnivaluePath {
+final class P687LongestUnivaluePath {
 
   // global answer
   private int ans;

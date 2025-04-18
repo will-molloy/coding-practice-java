@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1694ReformatPhoneNumberTest {
+final class P1694ReformatPhoneNumberTest {
 
   private final P1694ReformatPhoneNumber p1694ReformatPhoneNumber = new P1694ReformatPhoneNumber();
 

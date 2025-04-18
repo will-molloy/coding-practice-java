@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1550ThreeConsecutiveOdds {
+final class P1550ThreeConsecutiveOdds {
 
   // O(n)
   public boolean threeConsecutiveOdds(int[] arr) {

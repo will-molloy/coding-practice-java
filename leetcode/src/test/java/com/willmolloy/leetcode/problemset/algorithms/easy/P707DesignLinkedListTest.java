@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P707DesignLinkedListTest {
+final class P707DesignLinkedListTest {
 
   private P707DesignLinkedList linkedList;
 

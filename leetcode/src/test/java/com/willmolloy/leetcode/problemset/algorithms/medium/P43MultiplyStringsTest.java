@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P43MultiplyStringsTest {
+final class P43MultiplyStringsTest {
 
   private final P43MultiplyStrings fun = new P43MultiplyStrings();
 

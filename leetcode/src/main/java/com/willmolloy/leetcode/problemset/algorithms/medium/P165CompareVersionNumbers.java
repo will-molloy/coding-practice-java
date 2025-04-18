@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P165CompareVersionNumbers {
+final class P165CompareVersionNumbers {
 
   public int compareVersion(String version1, String version2) {
     List<String> v1 = Arrays.asList(version1.split("[.]"));

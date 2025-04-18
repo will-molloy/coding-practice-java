@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P468ValidateIpAddressTest {
+final class P468ValidateIpAddressTest {
 
   private final P468ValidateIpAddress p468 = new P468ValidateIpAddress();
 

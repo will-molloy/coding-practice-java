@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1217MinimumCostToMoveChipsToTheSamePosition {
+final class P1217MinimumCostToMoveChipsToTheSamePosition {
 
   public int minCostToMoveChips(int[] position) {
     int even = 0;

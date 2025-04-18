@@ -17,7 +17,7 @@ import java.util.Map;
  * @see P525ContiguousArray
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P523ContinuousSubarraySum {
+final class P523ContinuousSubarraySum {
 
   public boolean checkSubarraySum(int[] nums, int k) {
     // map stores: sum % k -> first index where sum % k occurred

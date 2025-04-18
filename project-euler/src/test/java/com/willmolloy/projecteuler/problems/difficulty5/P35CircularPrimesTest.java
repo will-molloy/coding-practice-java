@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P35CircularPrimesTest {
+final class P35CircularPrimesTest {
 
   @Test
   void countBelow100() {

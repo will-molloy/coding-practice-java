@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
  * @see P34DigitFactorials
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P30DigitNPowers {
+final class P30DigitNPowers {
 
   private static final List<String> DIGITS_SEQUENCE =
       IntStream.rangeClosed(0, 9)

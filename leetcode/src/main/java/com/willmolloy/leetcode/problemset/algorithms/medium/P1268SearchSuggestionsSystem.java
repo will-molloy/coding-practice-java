@@ -20,7 +20,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1268SearchSuggestionsSystem {
+final class P1268SearchSuggestionsSystem {
 
   @SuppressFBWarnings("SBSC_USE_STRINGBUFFER_CONCATENATION")
   List<List<String>> suggestedProducts(String[] products, String searchWord) {

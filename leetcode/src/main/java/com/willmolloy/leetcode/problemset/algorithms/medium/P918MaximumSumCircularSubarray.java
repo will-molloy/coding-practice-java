@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P918MaximumSumCircularSubarray {
+final class P918MaximumSumCircularSubarray {
 
   // TODO simpler approach where you subtract the min subarray sum from the total
 

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P797AllPathsFromSourceToTargetTest {
+final class P797AllPathsFromSourceToTargetTest {
 
   private final P797AllPathsFromSourceToTarget p797 = new P797AllPathsFromSourceToTarget();
 

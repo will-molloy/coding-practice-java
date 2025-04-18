@@ -21,7 +21,7 @@ import java.util.Map;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P337HouseRobber3 {
+final class P337HouseRobber3 {
 
   // dp is valid because solution to subtree is optimal and merging them is optimal (+ overlapping)
 

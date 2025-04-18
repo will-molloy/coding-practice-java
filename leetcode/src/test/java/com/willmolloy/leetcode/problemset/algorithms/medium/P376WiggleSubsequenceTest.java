@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P376WiggleSubsequenceTest {
+final class P376WiggleSubsequenceTest {
 
   private final P376WiggleSubsequence p376WiggleSubsequence = new P376WiggleSubsequence();
 

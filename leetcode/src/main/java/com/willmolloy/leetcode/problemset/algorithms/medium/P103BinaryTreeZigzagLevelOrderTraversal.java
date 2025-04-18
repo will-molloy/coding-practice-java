@@ -23,7 +23,7 @@ import java.util.List;
  * @see P102BinaryTreeLevelOrderTraversal
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P103BinaryTreeZigzagLevelOrderTraversal {
+final class P103BinaryTreeZigzagLevelOrderTraversal {
 
   // alternatively use standard level order and insert into back/front of 'level' list depending on
   // forward/reverse

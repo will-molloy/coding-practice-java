@@ -6,7 +6,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P905SortArrayByParity {
+sealed interface P905SortArrayByParity {
 
   int[] sortArrayByParity(int[] a);
 
@@ -19,7 +19,7 @@ interface P905SortArrayByParity {
    *
    * <p>Key idea: Filter for evens then odds, more efficient than sorting.
    */
-  class Linear implements P905SortArrayByParity {
+  final class Linear implements P905SortArrayByParity {
 
     @Override
     public int[] sortArrayByParity(int[] a) {
@@ -49,7 +49,7 @@ interface P905SortArrayByParity {
    *
    * <p>Key idea: Swap even values to the front.
    */
-  class LinearInPlace implements P905SortArrayByParity {
+  final class LinearInPlace implements P905SortArrayByParity {
 
     @Override
     public int[] sortArrayByParity(int[] a) {

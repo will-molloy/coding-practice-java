@@ -18,10 +18,10 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P382LinkedListRandomNode {
+final class P382LinkedListRandomNode {
 
   /** Solution class. */
-  static class Solution {
+  static final class Solution {
 
     private final Map<Integer, ListNode> map;
 

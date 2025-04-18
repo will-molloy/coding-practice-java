@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharacters {
+final class P1576ReplaceAllQuestionMarksToAvoidConsecutiveRepeatingCharacters {
 
   public String modifyString(String s) {
     char[] chars = s.toCharArray();

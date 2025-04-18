@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1470ShuffleTheArray {
+final class P1470ShuffleTheArray {
 
   public int[] shuffle(int[] nums, int n) {
     int xi = 0;

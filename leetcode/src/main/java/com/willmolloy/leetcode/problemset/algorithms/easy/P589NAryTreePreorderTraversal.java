@@ -20,7 +20,7 @@ import java.util.ListIterator;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P589NAryTreePreorderTraversal {
+final class P589NAryTreePreorderTraversal {
 
   public List<Integer> preorder(Node root) {
     Deque<Node> stack = new ArrayDeque<>();

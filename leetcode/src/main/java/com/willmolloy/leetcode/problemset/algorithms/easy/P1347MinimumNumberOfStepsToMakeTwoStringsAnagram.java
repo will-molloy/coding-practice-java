@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1347MinimumNumberOfStepsToMakeTwoStringsAnagram {
+final class P1347MinimumNumberOfStepsToMakeTwoStringsAnagram {
 
   // preconditions:
   // s.length = t.length

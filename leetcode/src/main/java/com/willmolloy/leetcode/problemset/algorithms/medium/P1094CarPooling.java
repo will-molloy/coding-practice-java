@@ -16,7 +16,7 @@ import java.util.TreeMap;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1094CarPooling {
+final class P1094CarPooling {
 
   public boolean carPooling(int[][] trips, int capacity) {
     // position -> load

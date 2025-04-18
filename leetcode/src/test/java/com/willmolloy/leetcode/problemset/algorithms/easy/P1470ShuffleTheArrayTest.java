@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1470ShuffleTheArrayTest {
+final class P1470ShuffleTheArrayTest {
 
   private final P1470ShuffleTheArray p1470 = new P1470ShuffleTheArray();
 

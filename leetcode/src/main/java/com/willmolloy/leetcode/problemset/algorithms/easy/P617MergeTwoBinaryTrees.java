@@ -17,7 +17,7 @@ import java.util.StringJoiner;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P617MergeTwoBinaryTrees {
+final class P617MergeTwoBinaryTrees {
 
   public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
     if (t1 == null) {
@@ -35,7 +35,7 @@ class P617MergeTwoBinaryTrees {
   }
 
   /** TreeNode. */
-  static class TreeNode {
+  static final class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;

@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P997FindTheTownJudge {
+final class P997FindTheTownJudge {
 
   public int findJudge(int n, int[][] trusts) {
     // problem can be modelled by a directed graph

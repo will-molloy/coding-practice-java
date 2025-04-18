@@ -18,7 +18,7 @@ import java.util.Map;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P416PartitionEqualSubsetSum {
+final class P416PartitionEqualSubsetSum {
 
   private Map<Integer, Map<Integer, Boolean>> dp;
 

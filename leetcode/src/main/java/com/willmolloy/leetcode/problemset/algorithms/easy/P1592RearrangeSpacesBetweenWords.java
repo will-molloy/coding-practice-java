@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1592RearrangeSpacesBetweenWords {
+final class P1592RearrangeSpacesBetweenWords {
 
   public String reorderSpaces(String text) {
     String[] words = text.trim().split(" +");

@@ -10,7 +10,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P58LengthOfLastWord {
+final class P58LengthOfLastWord {
 
   public int lengthOfLastWord(String s) {
     String[] split = s.split(" ");

@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P406QueueReconstructionByHeight {
+final class P406QueueReconstructionByHeight {
 
   public int[][] reconstructQueue(int[][] people) {
     // sort by h (largest first) and k (smallest first)

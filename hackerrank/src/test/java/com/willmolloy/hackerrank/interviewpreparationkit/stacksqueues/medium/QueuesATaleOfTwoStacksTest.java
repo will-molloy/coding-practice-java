@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class QueuesATaleOfTwoStacksTest {
+final class QueuesATaleOfTwoStacksTest {
 
   // TODO more than 1 test
 

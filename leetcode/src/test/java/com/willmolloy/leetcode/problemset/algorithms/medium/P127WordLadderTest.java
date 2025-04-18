@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P127WordLadderTest {
+final class P127WordLadderTest {
 
   private final P127WordLadder fn = new P127WordLadder();
 

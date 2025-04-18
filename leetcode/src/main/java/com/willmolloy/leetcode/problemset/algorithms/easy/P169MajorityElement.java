@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P169MajorityElement {
+final class P169MajorityElement {
 
   public int majorityElement(int[] nums) {
     Map<Integer, Integer> map = new HashMap<>();

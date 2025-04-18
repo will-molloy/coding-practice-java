@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P832FlippingAnImage {
+final class P832FlippingAnImage {
 
   public int[][] flipAndInvertImage(int[][] a) {
     for (int[] b : a) {

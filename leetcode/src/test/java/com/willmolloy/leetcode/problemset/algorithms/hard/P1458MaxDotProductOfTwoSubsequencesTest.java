@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1458MaxDotProductOfTwoSubsequencesTest {
+final class P1458MaxDotProductOfTwoSubsequencesTest {
 
   private final P1458MaxDotProductOfTwoSubsequences p1458 =
       new P1458MaxDotProductOfTwoSubsequences();

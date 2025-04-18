@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P11LargestProductInAGrid {
+final class P11LargestProductInAGrid {
 
   public long apply(List<List<Long>> grid, int numAdjacent) {
     Preconditions.checkNotNull(grid);

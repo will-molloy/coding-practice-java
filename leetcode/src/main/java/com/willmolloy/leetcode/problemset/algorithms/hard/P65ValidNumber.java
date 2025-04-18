@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P65ValidNumber {
+final class P65ValidNumber {
 
   public boolean isNumber(String s) {
     String decimal = "[+-]?(\\d+[.]|\\d+[.]\\d+|[.]\\d+)";

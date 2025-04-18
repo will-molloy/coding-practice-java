@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1561MaximumNumberOfCoinsYouCanGetTest {
+final class P1561MaximumNumberOfCoinsYouCanGetTest {
 
   private final P1561MaximumNumberOfCoinsYouCanGet p1561 = new P1561MaximumNumberOfCoinsYouCanGet();
 

@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1648SellDiminishingValuedColouredBallsTest {
+final class P1648SellDiminishingValuedColouredBallsTest {
 
   private final P1648SellDiminishingValuedColouredBalls p1648 =
       new P1648SellDiminishingValuedColouredBalls();

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P997FindTheTownJudgeTest {
+final class P997FindTheTownJudgeTest {
 
   private final P997FindTheTownJudge p997 = new P997FindTheTownJudge();
 

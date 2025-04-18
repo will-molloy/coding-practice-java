@@ -11,10 +11,10 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1472DesignBrowserHistory {
+final class P1472DesignBrowserHistory {
 
   /** BrowserHistory. */
-  static class BrowserHistory {
+  static final class BrowserHistory {
 
     private final List<String> list = new ArrayList<>();
 

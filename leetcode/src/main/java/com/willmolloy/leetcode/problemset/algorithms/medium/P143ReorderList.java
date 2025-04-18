@@ -22,7 +22,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P876MiddleOfTheLinkedList
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P143ReorderList {
+final class P143ReorderList {
 
   public void reorderList(ListNode head) {
     if (head == null) {

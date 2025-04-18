@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchZeroOrMoreRepetitions implements Regex {
+final class MatchZeroOrMoreRepetitions implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d{2,}[a-z]*[A-Z]*$");
 

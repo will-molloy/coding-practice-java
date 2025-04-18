@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P987VerticalOrderTraversalOfABinaryTree {
+final class P987VerticalOrderTraversalOfABinaryTree {
 
   public List<List<Integer>> verticalTraversal(TreeNode root) {
     Map<Integer, Integer> x = new HashMap<>();

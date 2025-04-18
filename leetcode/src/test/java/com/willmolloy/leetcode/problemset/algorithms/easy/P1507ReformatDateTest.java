@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1507ReformatDateTest {
+final class P1507ReformatDateTest {
 
   private final P1507ReformatDate p1507 = new P1507ReformatDate();
 

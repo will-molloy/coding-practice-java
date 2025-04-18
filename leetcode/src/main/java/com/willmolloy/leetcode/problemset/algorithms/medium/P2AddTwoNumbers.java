@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *     com.willmolloy.leetcode.problemset.algorithms.easy.P1290ConvertBinaryNumberInALinkedListToInteger
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P2AddTwoNumbers {
+final class P2AddTwoNumbers {
 
   ListNode addTwoNumbers(ListNode list1, ListNode list2) {
     ListNode node = new ListNode(-1);

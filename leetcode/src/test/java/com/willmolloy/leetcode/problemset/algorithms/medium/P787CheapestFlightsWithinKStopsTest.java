@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P787CheapestFlightsWithinKStopsTest {
+final class P787CheapestFlightsWithinKStopsTest {
 
   @ParameterizedTest
   @MethodSource("p787")

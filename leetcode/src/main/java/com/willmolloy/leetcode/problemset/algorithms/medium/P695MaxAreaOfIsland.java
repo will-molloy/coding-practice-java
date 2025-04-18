@@ -18,7 +18,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P1568MinimumNumberOfDaysToDisconnectIsland
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P695MaxAreaOfIsland {
+final class P695MaxAreaOfIsland {
 
   // if the input is immutable, can use boolean[][] seen array
 

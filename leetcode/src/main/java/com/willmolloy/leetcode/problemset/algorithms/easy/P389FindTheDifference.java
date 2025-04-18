@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P389FindTheDifference {
+final class P389FindTheDifference {
 
   public char findTheDifference(String s, String t) {
     int[] freq = new int[26];

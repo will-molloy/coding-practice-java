@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P99RecoverBinarySearchTreeTest {
+final class P99RecoverBinarySearchTreeTest {
 
   private final P99RecoverBinarySearchTree p99 = new P99RecoverBinarySearchTree();
 

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P799ChampagneTowerTest {
+final class P799ChampagneTowerTest {
 
   private final P799ChampagneTower p799 = new P799ChampagneTower();
 

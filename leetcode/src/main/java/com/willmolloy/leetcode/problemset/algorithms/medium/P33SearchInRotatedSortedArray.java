@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see <a href=https://youtu.be/84a8fQp5hJA>Errichto's video</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P33SearchInRotatedSortedArray {
+final class P33SearchInRotatedSortedArray {
 
   public int search(int[] nums, int target) {
     int n = nums.length;

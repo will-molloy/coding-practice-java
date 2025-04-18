@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P101SymmetricTree {
+final class P101SymmetricTree {
 
   public boolean isSymmetric(TreeNode root) {
     if (root == null) {

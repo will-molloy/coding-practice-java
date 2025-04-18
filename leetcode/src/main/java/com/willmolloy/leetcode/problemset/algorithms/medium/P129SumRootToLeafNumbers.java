@@ -15,7 +15,7 @@ import java.util.Queue;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1022SumOfRootToLeafBinaryNumbers
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P129SumRootToLeafNumbers {
+sealed interface P129SumRootToLeafNumbers {
 
   int sumNumbers(TreeNode root);
 
@@ -30,7 +30,7 @@ interface P129SumRootToLeafNumbers {
    *
    * <p>Key idea: track queue of 'paths' rather than 'nodes'
    */
-  class Bfs implements P129SumRootToLeafNumbers {
+  final class Bfs implements P129SumRootToLeafNumbers {
 
     @Override
     public int sumNumbers(TreeNode root) {
@@ -96,7 +96,7 @@ interface P129SumRootToLeafNumbers {
    * passed by value don't have to worry about creating new path on branching, as it does it
    * implicitly.
    */
-  class Dfs implements P129SumRootToLeafNumbers {
+  final class Dfs implements P129SumRootToLeafNumbers {
 
     private int total;
 

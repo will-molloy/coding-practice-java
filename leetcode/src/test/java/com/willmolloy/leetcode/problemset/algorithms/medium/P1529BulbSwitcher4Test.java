@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1529BulbSwitcher4Test {
+final class P1529BulbSwitcher4Test {
 
   private final P1529BulbSwitcher4 p1529 = new P1529BulbSwitcher4();
 

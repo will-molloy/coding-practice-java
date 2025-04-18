@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1399CountLargestGroupTest {
+final class P1399CountLargestGroupTest {
 
   private final P1399CountLargestGroup p1399 = new P1399CountLargestGroup();
 

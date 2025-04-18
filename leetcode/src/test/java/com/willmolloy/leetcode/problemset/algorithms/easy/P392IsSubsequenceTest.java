@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P392IsSubsequenceTest {
+final class P392IsSubsequenceTest {
 
   private final P392IsSubsequence p392 = new P392IsSubsequence();
 

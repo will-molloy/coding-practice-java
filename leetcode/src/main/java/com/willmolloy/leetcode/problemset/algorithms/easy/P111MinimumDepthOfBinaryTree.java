@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P111MinimumDepthOfBinaryTree {
+final class P111MinimumDepthOfBinaryTree {
 
   public int minDepth(TreeNode root) {
     if (root == null) {

@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P823BinaryTreesWithFactorsTest {
+final class P823BinaryTreesWithFactorsTest {
 
   private final P823BinaryTreesWithFactors p823BinaryTreesWithFactors =
       new P823BinaryTreesWithFactors();

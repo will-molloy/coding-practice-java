@@ -11,7 +11,7 @@ import java.util.stream.LongStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P3LargestPrimeFactor {
+final class P3LargestPrimeFactor {
 
   public long apply(long n) {
     Preconditions.checkArgument(n > 0);

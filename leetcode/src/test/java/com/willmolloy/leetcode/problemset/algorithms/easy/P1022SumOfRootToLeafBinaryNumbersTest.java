@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1022SumOfRootToLeafBinaryNumbersTest {
+final class P1022SumOfRootToLeafBinaryNumbersTest {
 
   private final P1022SumOfRootToLeafBinaryNumbers p1022 = new P1022SumOfRootToLeafBinaryNumbers();
 

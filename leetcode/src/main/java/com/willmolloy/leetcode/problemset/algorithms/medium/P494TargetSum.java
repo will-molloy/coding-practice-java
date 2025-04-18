@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P784LetterCasePermutation
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P494TargetSum {
+final class P494TargetSum {
 
   // TODO O(n) solution is possible! Thought that n <= 20 would be fine for exponential solution.
 

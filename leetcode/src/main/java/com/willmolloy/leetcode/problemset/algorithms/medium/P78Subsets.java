@@ -17,7 +17,7 @@ import java.util.List;
  * @see P90Subsets2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P78Subsets {
+final class P78Subsets {
 
   // nums is distinct, basically Set<Integer>
   public List<List<Integer>> subsets(int[] nums) {

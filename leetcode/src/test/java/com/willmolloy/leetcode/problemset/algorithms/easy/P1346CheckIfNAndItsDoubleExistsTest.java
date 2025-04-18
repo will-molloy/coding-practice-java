@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1346CheckIfNAndItsDoubleExistsTest {
+final class P1346CheckIfNAndItsDoubleExistsTest {
 
   private final P1346CheckIfNAndItsDoubleExists p1346 = new P1346CheckIfNAndItsDoubleExists();
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P461HammingDistanceTest {
+final class P461HammingDistanceTest {
 
   private final P461HammingDistance p461 = new P461HammingDistance();
 

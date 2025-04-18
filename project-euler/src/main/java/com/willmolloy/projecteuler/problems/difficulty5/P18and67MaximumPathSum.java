@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P18and67MaximumPathSum {
+final class P18and67MaximumPathSum {
 
   public int apply(List<List<Integer>> triangle) {
     Preconditions.checkArgument(

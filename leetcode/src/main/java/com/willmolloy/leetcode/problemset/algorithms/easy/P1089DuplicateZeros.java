@@ -8,7 +8,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1089DuplicateZeros {
+sealed interface P1089DuplicateZeros {
 
   void duplicateZeros(int[] arr);
 
@@ -19,7 +19,7 @@ interface P1089DuplicateZeros {
    *
    * <p>Extra space: O(1)
    */
-  class Quadratic implements P1089DuplicateZeros {
+  final class Quadratic implements P1089DuplicateZeros {
 
     @Override
     public void duplicateZeros(int[] arr) {
@@ -44,7 +44,7 @@ interface P1089DuplicateZeros {
    *
    * <p>Extra space: O(1)
    */
-  class Linear implements P1089DuplicateZeros {
+  final class Linear implements P1089DuplicateZeros {
 
     @Override
     public void duplicateZeros(int[] arr) {

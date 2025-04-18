@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P387FirstUniqueCharacterInAString {
+final class P387FirstUniqueCharacterInAString {
 
   public int firstUniqChar(String s) {
     int[] counts = new int[26];

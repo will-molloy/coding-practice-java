@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P916WordSubsets {
+final class P916WordSubsets {
 
   public List<String> wordSubsets(String[] as, String[] bs) {
     List<String> result = new ArrayList<>();

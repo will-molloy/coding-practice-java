@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P441ArrangingCoins {
+final class P441ArrangingCoins {
 
   public int arrangeCoins(int n) {
     int count = 0;

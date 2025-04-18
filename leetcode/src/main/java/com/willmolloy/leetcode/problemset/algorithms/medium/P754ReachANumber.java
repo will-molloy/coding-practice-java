@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P754ReachANumber {
+final class P754ReachANumber {
 
   public int reachNumber(int target) {
     target = Math.abs(target);

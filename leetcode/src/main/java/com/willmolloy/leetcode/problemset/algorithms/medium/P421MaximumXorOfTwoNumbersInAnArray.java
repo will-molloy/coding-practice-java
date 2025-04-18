@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P421MaximumXorOfTwoNumbersInAnArray {
+final class P421MaximumXorOfTwoNumbersInAnArray {
 
   public int findMaximumXor(int[] nums) {
     int max = 0;

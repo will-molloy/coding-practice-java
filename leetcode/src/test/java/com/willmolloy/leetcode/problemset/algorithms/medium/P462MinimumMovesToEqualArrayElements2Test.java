@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P462MinimumMovesToEqualArrayElements2Test {
+final class P462MinimumMovesToEqualArrayElements2Test {
 
   private final P462MinimumMovesToEqualArrayElements2 p462MinimumMovesToEqualArrayElements2 =
       new P462MinimumMovesToEqualArrayElements2();

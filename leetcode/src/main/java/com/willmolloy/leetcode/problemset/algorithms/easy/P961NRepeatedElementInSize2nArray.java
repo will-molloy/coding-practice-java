@@ -14,7 +14,7 @@ import java.util.HashSet;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P961NRepeatedElementInSize2nArray {
+final class P961NRepeatedElementInSize2nArray {
 
   public int repeatedNTimes(int[] a) {
     HashSet<Integer> set = new HashSet<>();

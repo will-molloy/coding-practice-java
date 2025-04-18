@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P637AverageOfLevelsInBinaryTreeTest {
+final class P637AverageOfLevelsInBinaryTreeTest {
 
   private final P637AverageOfLevelsInBinaryTree p637 = new P637AverageOfLevelsInBinaryTree();
 

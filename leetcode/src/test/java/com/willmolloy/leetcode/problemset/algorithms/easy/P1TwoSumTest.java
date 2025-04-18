@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1TwoSumTest {
+final class P1TwoSumTest {
 
   private static final int[] EMPTY = {};
 

@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1310XorQueriesOfASubarray {
+final class P1310XorQueriesOfASubarray {
 
   public int[] xorQueries(int[] arr, int[][] queries) {
     int[] xorPrefixSum = new int[arr.length];

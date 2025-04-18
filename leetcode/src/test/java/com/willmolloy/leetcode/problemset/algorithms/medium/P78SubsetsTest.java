@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P78SubsetsTest {
+final class P78SubsetsTest {
 
   private final P78Subsets fun = new P78Subsets();
 

@@ -22,7 +22,7 @@ import java.util.stream.IntStream;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @SuppressFBWarnings("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR")
-class P1697CheckingExistenceOfEdgeLimitedPaths {
+final class P1697CheckingExistenceOfEdgeLimitedPaths {
 
   public boolean[] distanceLimitedPathsExist(int n, int[][] edges, int[][] queries) {
     Map<int[], Integer> original = new IdentityHashMap<>();

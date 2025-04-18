@@ -11,7 +11,7 @@ import java.util.concurrent.Semaphore;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1117BuildingH2O {
+final class P1117BuildingH2O {
 
   // print [HHO -> HHO] etc. to keep it simple, although not a requirement
 

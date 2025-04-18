@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1309DecryptStringFromAlphabetToIntegerMapping {
+final class P1309DecryptStringFromAlphabetToIntegerMapping {
 
   public String freqAlphabets(String s) {
     int n = s.length();

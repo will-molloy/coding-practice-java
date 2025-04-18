@@ -17,7 +17,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1616SplitTwoStringsToMakePalindrome {
+final class P1616SplitTwoStringsToMakePalindrome {
 
   public boolean checkPalindromeFormation(String a, String b) {
     return check(a, b) || check(b, a);

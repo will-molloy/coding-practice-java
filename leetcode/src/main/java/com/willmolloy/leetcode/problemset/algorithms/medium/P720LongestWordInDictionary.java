@@ -21,7 +21,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1032StreamOfCharacters
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P720LongestWordInDictionary {
+final class P720LongestWordInDictionary {
 
   /** Trie root node. */
   private final Node root = new Node();
@@ -68,7 +68,7 @@ class P720LongestWordInDictionary {
   }
 
   /** Trie node. */
-  private static class Node {
+  private static final class Node {
 
     /** Pointers to next characters ([a, z]). */
     private final Node[] children = new Node[26];

@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P524LongestWordInDictionaryThroughDeleting {
+final class P524LongestWordInDictionaryThroughDeleting {
 
   public String findLongestWord(String b, List<String> d) {
     String max = "";

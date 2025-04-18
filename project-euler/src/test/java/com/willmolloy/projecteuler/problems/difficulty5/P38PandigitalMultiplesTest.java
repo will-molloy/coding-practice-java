@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P38PandigitalMultiplesTest {
+final class P38PandigitalMultiplesTest {
 
   @Test
   void maxPandigital1To9() {

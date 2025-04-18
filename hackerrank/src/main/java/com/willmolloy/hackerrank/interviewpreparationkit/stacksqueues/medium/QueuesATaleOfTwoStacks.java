@@ -19,7 +19,7 @@ final class QueuesATaleOfTwoStacks {
    *
    * @param <E> element type
    */
-  static class MyQueue<E> {
+  static final class MyQueue<E> {
     // stack1, will hold incoming elements
     private final ArrayDeque<E> stack1 = new ArrayDeque<>();
     // stack2, will hold outgoing elements (i.e. in reversed order)

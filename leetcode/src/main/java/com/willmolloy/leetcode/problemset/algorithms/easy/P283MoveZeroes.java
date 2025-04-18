@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see <a href=https://www.youtube.com/watch?v=E7xxGi84Tso>Errichto's video</a>
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P283MoveZeroes {
+final class P283MoveZeroes {
 
   // TODO more optimal solution (fewer operations but still O(n)) exists where you swap elements
 

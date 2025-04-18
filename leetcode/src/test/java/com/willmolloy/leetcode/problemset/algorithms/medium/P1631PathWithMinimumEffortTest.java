@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1631PathWithMinimumEffortTest {
+final class P1631PathWithMinimumEffortTest {
 
   private final P1631PathWithMinimumEffort p1631PathWithMinimumEffort =
       new P1631PathWithMinimumEffort();

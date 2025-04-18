@@ -11,7 +11,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P160IntersectionOfTwoLinkedLists {
+sealed interface P160IntersectionOfTwoLinkedLists {
 
   ListNode getIntersectionNode(ListNode headA, ListNode headB);
 
@@ -24,7 +24,7 @@ interface P160IntersectionOfTwoLinkedLists {
    *
    * <p>Key idea: {@code HashSet} for O(1) contains call.
    */
-  class HashSet implements P160IntersectionOfTwoLinkedLists {
+  final class HashSet implements P160IntersectionOfTwoLinkedLists {
 
     @Override
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -64,7 +64,7 @@ interface P160IntersectionOfTwoLinkedLists {
    *
    * <p>Key idea: Concatenate the lists.
    */
-  class ConcatenateLists implements P160IntersectionOfTwoLinkedLists {
+  final class ConcatenateLists implements P160IntersectionOfTwoLinkedLists {
 
     @Override
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P16ThreeSumClosestTest {
+final class P16ThreeSumClosestTest {
 
   private final P16ThreeSumClosest function = new P16ThreeSumClosest();
 

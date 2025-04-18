@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P23NonAbundantSumsTest {
+final class P23NonAbundantSumsTest {
 
   private final P23NonAbundantSums nonAbundantSums = new P23NonAbundantSums();
 

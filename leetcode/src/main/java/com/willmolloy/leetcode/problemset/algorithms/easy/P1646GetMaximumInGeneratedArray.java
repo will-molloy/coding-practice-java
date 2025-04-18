@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1646GetMaximumInGeneratedArray {
+final class P1646GetMaximumInGeneratedArray {
 
   public int getMaximumGenerated(int n) {
     if (n == 0) {

@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see P54SpiralMatrix
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P48RotateImage {
+final class P48RotateImage {
 
   public void rotate(int[][] matrix) {
     if (matrix.length == 0) {

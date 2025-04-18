@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P15ThreeSumTest {
+final class P15ThreeSumTest {
 
   private final P15ThreeSum function = new P15ThreeSum();
 

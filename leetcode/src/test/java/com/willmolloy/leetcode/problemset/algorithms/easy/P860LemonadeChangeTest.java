@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P860LemonadeChangeTest {
+final class P860LemonadeChangeTest {
 
   private final P860LemonadeChange fun = new P860LemonadeChange();
 

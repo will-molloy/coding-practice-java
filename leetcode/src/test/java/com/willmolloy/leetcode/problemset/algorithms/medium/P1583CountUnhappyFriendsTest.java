@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1583CountUnhappyFriendsTest {
+final class P1583CountUnhappyFriendsTest {
 
   private final P1583CountUnhappyFriends p1583 = new P1583CountUnhappyFriends();
 

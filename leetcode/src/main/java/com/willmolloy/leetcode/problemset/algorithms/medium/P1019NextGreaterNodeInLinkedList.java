@@ -22,7 +22,7 @@ import java.util.List;
  * @see P901OnlineStockSpan
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1019NextGreaterNodeInLinkedList {
+final class P1019NextGreaterNodeInLinkedList {
 
   public int[] nextLargerNodes(ListNode head) {
     // get things running

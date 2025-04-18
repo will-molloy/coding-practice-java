@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P54SpiralMatrixTest {
+final class P54SpiralMatrixTest {
 
   private final P54SpiralMatrix fun = new P54SpiralMatrix();
 

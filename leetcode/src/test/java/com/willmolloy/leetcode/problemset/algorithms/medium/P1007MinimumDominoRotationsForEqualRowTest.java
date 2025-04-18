@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1007MinimumDominoRotationsForEqualRowTest {
+final class P1007MinimumDominoRotationsForEqualRowTest {
 
   private final P1007MinimumDominoRotationsForEqualRow p1007 =
       new P1007MinimumDominoRotationsForEqualRow();

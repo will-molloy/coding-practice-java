@@ -14,7 +14,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P99RecoverBinarySearchTree {
+final class P99RecoverBinarySearchTree {
 
   public void recoverTree(TreeNode root) {
     inorder(root);

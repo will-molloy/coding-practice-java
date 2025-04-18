@@ -17,7 +17,7 @@ import java.util.function.ToIntFunction;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1471TheKStrongestValuesInAnArray {
+final class P1471TheKStrongestValuesInAnArray {
 
   public int[] getStrongest(int[] arr, int k) {
     int n = arr.length;

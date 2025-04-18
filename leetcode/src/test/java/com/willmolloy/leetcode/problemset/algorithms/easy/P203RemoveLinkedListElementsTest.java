@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P203RemoveLinkedListElementsTest {
+final class P203RemoveLinkedListElementsTest {
 
   private final P203RemoveLinkedListElements p203 = new P203RemoveLinkedListElements();
 

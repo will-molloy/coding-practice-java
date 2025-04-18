@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1608SpecialArrayWithXElementsGreaterThanOrEqualX {
+final class P1608SpecialArrayWithXElementsGreaterThanOrEqualX {
 
   public int specialArray(int[] nums) {
     for (int x = 0; x <= nums.length; x++) {

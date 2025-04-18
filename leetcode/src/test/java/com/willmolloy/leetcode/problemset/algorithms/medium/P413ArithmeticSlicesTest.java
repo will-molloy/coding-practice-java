@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P413ArithmeticSlicesTest {
+final class P413ArithmeticSlicesTest {
 
   private final P413ArithmeticSlices p413ArithmeticSlices = new P413ArithmeticSlices();
 

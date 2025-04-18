@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P713SubarrayProductLessThanKTest {
+final class P713SubarrayProductLessThanKTest {
 
   private final P713SubarrayProductLessThanK p713 = new P713SubarrayProductLessThanK();
 

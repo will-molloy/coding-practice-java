@@ -7,7 +7,7 @@ package com.willmolloy.projecteuler.problems.difficulty5;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P2EvenFibonacciNumbers {
+final class P2EvenFibonacciNumbers {
 
   public int apply(int below) {
     int evenFibSum = 0;

@@ -12,10 +12,10 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P307RangeSumQueryMutable {
+final class P307RangeSumQueryMutable {
 
   /** NumArray. */
-  static class NumArray {
+  static final class NumArray {
 
     private final Node root;
 

@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P987VerticalOrderTraversalOfABinaryTreeTest {
+final class P987VerticalOrderTraversalOfABinaryTreeTest {
 
   private final P987VerticalOrderTraversalOfABinaryTree p987 =
       new P987VerticalOrderTraversalOfABinaryTree();

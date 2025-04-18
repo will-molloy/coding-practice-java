@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.ListNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P142LinkedListCycle2
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P141LinkedListCycle {
+final class P141LinkedListCycle {
 
   public boolean hasCycle(ListNode head) {
     ListNode slow = head;

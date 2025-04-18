@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchAnythingButNewLine implements Regex {
+final class MatchAnythingButNewLine implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("...\\....\\....\\....");
 

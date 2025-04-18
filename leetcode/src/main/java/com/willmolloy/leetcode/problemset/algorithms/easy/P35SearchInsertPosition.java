@@ -19,7 +19,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see java.util.Arrays#binarySearch
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P35SearchInsertPosition {
+final class P35SearchInsertPosition {
 
   public int searchInsert(int[] nums, int target) {
     int n = nums.length;

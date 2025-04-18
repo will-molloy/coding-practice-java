@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class JumpingOnTheCloudsTest {
+final class JumpingOnTheCloudsTest {
 
   @Test
   void twoBadClouds() {

@@ -15,10 +15,10 @@ import java.util.Deque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P622DesignCircularQueue {
+final class P622DesignCircularQueue {
 
   /** MyCircularQueue. */
-  static class MyCircularQueue {
+  static final class MyCircularQueue {
 
     private final Deque<Integer> q = new ArrayDeque<>();
     private final int k;

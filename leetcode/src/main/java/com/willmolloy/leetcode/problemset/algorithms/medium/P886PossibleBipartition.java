@@ -23,7 +23,7 @@ import java.util.Set;
  * @see P785IsGraphBipartite
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P886PossibleBipartition {
+final class P886PossibleBipartition {
 
   private enum Colour {
     BLACK,

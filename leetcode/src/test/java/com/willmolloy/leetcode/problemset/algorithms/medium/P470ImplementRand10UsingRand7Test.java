@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P470ImplementRand10UsingRand7Test {
+final class P470ImplementRand10UsingRand7Test {
 
   private static final double TOLERANCE = 0.02;
 

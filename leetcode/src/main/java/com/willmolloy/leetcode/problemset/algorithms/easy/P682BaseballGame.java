@@ -15,7 +15,7 @@ import java.util.Deque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P682BaseballGame {
+final class P682BaseballGame {
 
   public int calPoints(String[] ops) {
     // use stack so have access to most recent rounds first

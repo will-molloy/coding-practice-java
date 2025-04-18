@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P62UniquePathsTest {
+final class P62UniquePathsTest {
 
   private final P62UniquePaths recursive = new P62UniquePaths.TopDownRecursive();
 

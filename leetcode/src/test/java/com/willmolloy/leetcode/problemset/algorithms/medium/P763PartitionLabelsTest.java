@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P763PartitionLabelsTest {
+final class P763PartitionLabelsTest {
 
   @ParameterizedTest
   @MethodSource("p763")

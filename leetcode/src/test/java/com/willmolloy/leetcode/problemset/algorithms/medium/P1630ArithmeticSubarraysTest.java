@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1630ArithmeticSubarraysTest {
+final class P1630ArithmeticSubarraysTest {
 
   private final P1630ArithmeticSubarrays p1630 = new P1630ArithmeticSubarrays();
 

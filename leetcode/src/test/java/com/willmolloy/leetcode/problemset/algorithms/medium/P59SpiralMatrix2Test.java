@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P59SpiralMatrix2Test {
+final class P59SpiralMatrix2Test {
 
   private final P59SpiralMatrix2 fun = new P59SpiralMatrix2();
 

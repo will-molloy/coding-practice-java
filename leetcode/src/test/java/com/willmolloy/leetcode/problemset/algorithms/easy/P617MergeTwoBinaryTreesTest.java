@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P617MergeTwoBinaryTreesTest {
+final class P617MergeTwoBinaryTreesTest {
 
   private final P617MergeTwoBinaryTrees p617 = new P617MergeTwoBinaryTrees();
 

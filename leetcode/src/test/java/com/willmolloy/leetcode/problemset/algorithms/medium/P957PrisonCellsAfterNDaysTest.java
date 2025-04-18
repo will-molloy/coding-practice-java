@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P957PrisonCellsAfterNDaysTest {
+final class P957PrisonCellsAfterNDaysTest {
 
   private final P957PrisonCellsAfterNDays p957 = new P957PrisonCellsAfterNDays();
 

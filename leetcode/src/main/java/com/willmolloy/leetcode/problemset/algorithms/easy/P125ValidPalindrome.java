@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P125ValidPalindrome {
+final class P125ValidPalindrome {
 
   private static final Pattern NON_ALPHANUMERIC = Pattern.compile("[^a-zA-Z\\d]");
 

@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P735AsteroidCollisionTest {
+final class P735AsteroidCollisionTest {
 
   private final P735AsteroidCollision p735 = new P735AsteroidCollision();
 

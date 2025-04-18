@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P980UniquePaths3Test {
+final class P980UniquePaths3Test {
 
   @Test
   void example1() {

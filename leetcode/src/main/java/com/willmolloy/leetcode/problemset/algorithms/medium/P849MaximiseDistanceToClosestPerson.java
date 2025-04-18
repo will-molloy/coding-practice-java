@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P849MaximiseDistanceToClosestPerson {
+final class P849MaximiseDistanceToClosestPerson {
 
   public int maxDistToClosest(int[] seats) {
     int n = seats.length;

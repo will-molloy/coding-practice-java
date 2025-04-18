@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1015SmallestIntegerDivisibleByK {
+final class P1015SmallestIntegerDivisibleByK {
 
   public int smallestRepunitDivByK(int k) {
     int r = 0;

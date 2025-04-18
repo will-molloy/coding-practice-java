@@ -16,7 +16,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1791FindCenterOfStarGraph {
+final class P1791FindCenterOfStarGraph {
 
   public int findCenter(int[][] edges) {
     Set<Integer> set = new HashSet<>();

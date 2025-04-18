@@ -18,7 +18,7 @@ import java.util.stream.IntStream;
  * @see P204CountPrimes
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1175PrimeArrangements {
+final class P1175PrimeArrangements {
 
   private static final int MOD = (int) (1e9 + 7);
 

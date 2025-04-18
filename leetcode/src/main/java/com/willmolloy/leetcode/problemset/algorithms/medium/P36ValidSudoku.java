@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P36ValidSudoku {
+final class P36ValidSudoku {
 
   public boolean isValidSudoku(char[][] board) {
     SudokuBoard sudokuBoard = new SudokuBoard(board);

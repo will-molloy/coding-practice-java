@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P717OneBitAndTwoBitCharacters {
+final class P717OneBitAndTwoBitCharacters {
 
   public boolean isOneBitCharacter(int[] bits) {
     int i = 0;

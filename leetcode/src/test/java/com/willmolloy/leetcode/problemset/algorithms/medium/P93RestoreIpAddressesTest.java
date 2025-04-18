@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P93RestoreIpAddressesTest {
+final class P93RestoreIpAddressesTest {
 
   private final P93RestoreIpAddresses func = new P93RestoreIpAddresses();
 

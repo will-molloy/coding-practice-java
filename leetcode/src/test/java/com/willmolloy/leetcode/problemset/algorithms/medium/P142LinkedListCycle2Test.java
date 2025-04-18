@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P142LinkedListCycle2Test {
+final class P142LinkedListCycle2Test {
 
   private final P142LinkedListCycle2 p142 = new P142LinkedListCycle2();
 

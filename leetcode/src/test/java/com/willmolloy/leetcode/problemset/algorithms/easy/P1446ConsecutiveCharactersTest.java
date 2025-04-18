@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1446ConsecutiveCharactersTest {
+final class P1446ConsecutiveCharactersTest {
 
   private final P1446ConsecutiveCharacters p1446 = new P1446ConsecutiveCharacters();
 

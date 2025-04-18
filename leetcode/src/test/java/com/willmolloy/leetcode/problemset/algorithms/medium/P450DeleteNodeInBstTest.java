@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P450DeleteNodeInBstTest {
+final class P450DeleteNodeInBstTest {
 
   private final P450DeleteNodeInBst p450 = new P450DeleteNodeInBst();
 

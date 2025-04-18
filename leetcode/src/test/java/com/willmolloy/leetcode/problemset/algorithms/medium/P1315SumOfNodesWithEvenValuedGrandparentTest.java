@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1315SumOfNodesWithEvenValuedGrandparentTest {
+final class P1315SumOfNodesWithEvenValuedGrandparentTest {
 
   private final P1315SumOfNodesWithEvenValuedGrandparent fun =
       new P1315SumOfNodesWithEvenValuedGrandparent();

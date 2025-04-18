@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P938RangeSumOfBstTest {
+final class P938RangeSumOfBstTest {
 
   private final P938RangeSumOfBst fun = new P938RangeSumOfBst();
 

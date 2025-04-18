@@ -15,7 +15,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1773CountItemsMatchingARule {
+final class P1773CountItemsMatchingARule {
 
   private static final Map<String, Integer> MAP = Map.of("type", 0, "color", 1, "name", 2);
 

@@ -16,7 +16,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1615MaximalNetworkRank {
+final class P1615MaximalNetworkRank {
 
   public int maximalNetworkRank(int n, int[][] roads) {
     int[] degree = new int[n];

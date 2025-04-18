@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P8StringToIntegerAtoi {
+final class P8StringToIntegerAtoi {
 
   private static final Pattern VALID_START = Pattern.compile("^ *[\\-+]?\\d+.*");
 

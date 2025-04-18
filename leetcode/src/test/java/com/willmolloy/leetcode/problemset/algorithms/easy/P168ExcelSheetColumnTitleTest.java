@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P168ExcelSheetColumnTitleTest {
+final class P168ExcelSheetColumnTitleTest {
 
   private final P168ExcelSheetColumnTitle p168 = new P168ExcelSheetColumnTitle();
 

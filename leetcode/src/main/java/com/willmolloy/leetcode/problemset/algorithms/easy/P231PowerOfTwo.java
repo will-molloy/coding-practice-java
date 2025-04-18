@@ -11,7 +11,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  * @see P342PowerOfFour
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P231PowerOfTwo {
+sealed interface P231PowerOfTwo {
 
   boolean isPowerOfTwo(int n);
 
@@ -22,7 +22,7 @@ interface P231PowerOfTwo {
    *
    * <p>Space: O(1)
    */
-  class LibraryMethod implements P231PowerOfTwo {
+  final class LibraryMethod implements P231PowerOfTwo {
 
     @Override
     public boolean isPowerOfTwo(int n) {
@@ -38,7 +38,7 @@ interface P231PowerOfTwo {
    *
    * <p>Space: O(1)
    */
-  class BitManipulation implements P231PowerOfTwo {
+  final class BitManipulation implements P231PowerOfTwo {
 
     @Override
     public boolean isPowerOfTwo(int n) {
@@ -58,7 +58,7 @@ interface P231PowerOfTwo {
    *
    * <p>Space: O(log(n))
    */
-  class Recursive implements P231PowerOfTwo {
+  final class Recursive implements P231PowerOfTwo {
 
     @Override
     public boolean isPowerOfTwo(int n) {
@@ -74,7 +74,7 @@ interface P231PowerOfTwo {
    *
    * <p>Space: O(1)
    */
-  class Iterative implements P231PowerOfTwo {
+  final class Iterative implements P231PowerOfTwo {
 
     @Override
     public boolean isPowerOfTwo(int n) {

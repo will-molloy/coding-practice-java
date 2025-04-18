@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P609FindDuplicateFileInSystemTest {
+final class P609FindDuplicateFileInSystemTest {
 
   private final P609FindDuplicateFileInSystem p609FindDuplicateFileInSystem =
       new P609FindDuplicateFileInSystem();

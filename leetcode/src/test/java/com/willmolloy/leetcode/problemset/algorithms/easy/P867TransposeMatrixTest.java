@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P867TransposeMatrixTest {
+final class P867TransposeMatrixTest {
 
   private final P867TransposeMatrix p867 = new P867TransposeMatrix();
 

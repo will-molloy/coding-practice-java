@@ -22,7 +22,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1487MakingFileNamesUnique {
+final class P1487MakingFileNamesUnique {
 
   public String[] getFolderNames(String[] names) {
     Map<String, Integer> nameCounts = new HashMap<>();

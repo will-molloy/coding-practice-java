@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P108ConvertSortedArrayToBinarySearchTreeTest {
+final class P108ConvertSortedArrayToBinarySearchTreeTest {
 
   private final P108ConvertSortedArrayToBinarySearchTree fun =
       new P108ConvertSortedArrayToBinarySearchTree();

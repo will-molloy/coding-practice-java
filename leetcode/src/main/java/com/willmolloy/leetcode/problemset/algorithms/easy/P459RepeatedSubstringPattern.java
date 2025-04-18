@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P459RepeatedSubstringPattern {
+final class P459RepeatedSubstringPattern {
 
   public boolean repeatedSubstringPattern(String s) {
     // try

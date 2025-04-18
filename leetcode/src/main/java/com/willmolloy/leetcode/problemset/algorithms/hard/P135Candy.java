@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @see com.willmolloy.hackerrank.interviewpreparationkit.dynamicprogramming.medium.Candies
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P135Candy {
+final class P135Candy {
 
   int candy(int[] scores) {
     if (scores.length <= 1) {

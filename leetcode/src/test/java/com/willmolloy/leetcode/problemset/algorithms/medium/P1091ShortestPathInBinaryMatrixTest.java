@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1091ShortestPathInBinaryMatrixTest {
+final class P1091ShortestPathInBinaryMatrixTest {
 
   private final P1091ShortestPathInBinaryMatrix p1091ShortestPathInBinaryMatrix =
       new P1091ShortestPathInBinaryMatrix();

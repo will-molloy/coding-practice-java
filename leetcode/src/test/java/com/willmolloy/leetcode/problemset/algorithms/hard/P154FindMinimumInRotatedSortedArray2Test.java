@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P154FindMinimumInRotatedSortedArray2Test {
+final class P154FindMinimumInRotatedSortedArray2Test {
 
   private final P154FindMinimumInRotatedSortedArray2 p154 =
       new P154FindMinimumInRotatedSortedArray2();

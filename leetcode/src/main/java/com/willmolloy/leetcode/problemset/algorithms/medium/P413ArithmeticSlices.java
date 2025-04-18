@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P413ArithmeticSlices {
+final class P413ArithmeticSlices {
 
   public int numberOfArithmeticSlices(int[] a) {
     int n = a.length;

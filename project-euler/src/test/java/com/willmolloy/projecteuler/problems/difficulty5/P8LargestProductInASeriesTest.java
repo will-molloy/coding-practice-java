@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P8LargestProductInASeriesTest {
+final class P8LargestProductInASeriesTest {
 
   private final P8LargestProductInASeries largestProductInASeries = new P8LargestProductInASeries();
 

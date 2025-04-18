@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1539KthMissingPositiveNumber {
+final class P1539KthMissingPositiveNumber {
 
   public int findKthPositive(int[] arr, int k) {
     int next = 1;

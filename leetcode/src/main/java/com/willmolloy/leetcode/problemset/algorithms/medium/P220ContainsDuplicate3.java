@@ -16,7 +16,7 @@ import java.util.TreeSet;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P220ContainsDuplicate3 {
+final class P220ContainsDuplicate3 {
 
   // need Long cause overflow garbage
 

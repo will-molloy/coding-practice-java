@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1114PrintInOrder {
+final class P1114PrintInOrder {
 
   private final CountDownLatch first = new CountDownLatch(1);
   private final CountDownLatch second = new CountDownLatch(1);

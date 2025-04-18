@@ -17,7 +17,7 @@ import java.util.Map;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1583CountUnhappyFriends {
+final class P1583CountUnhappyFriends {
 
   public int unhappyFriends(int n, int[][] preferences, int[][] pairs) {
     Map<Integer, Integer> pair = new HashMap<>();

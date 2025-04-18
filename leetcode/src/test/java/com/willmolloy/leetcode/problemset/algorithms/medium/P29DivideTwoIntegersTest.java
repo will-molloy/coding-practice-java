@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P29DivideTwoIntegersTest {
+final class P29DivideTwoIntegersTest {
 
   private final P29DivideTwoIntegers fun = new P29DivideTwoIntegers();
 

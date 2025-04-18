@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P17LetterCombinationsOfAPhoneNumberTest {
+final class P17LetterCombinationsOfAPhoneNumberTest {
 
   private final P17LetterCombinationsOfAPhoneNumber function =
       new P17LetterCombinationsOfAPhoneNumber();

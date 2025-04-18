@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.hard.P1044LongestDuplicateSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P275HIndex2 {
+final class P275HIndex2 {
 
   // explained more in P274HIndex
 

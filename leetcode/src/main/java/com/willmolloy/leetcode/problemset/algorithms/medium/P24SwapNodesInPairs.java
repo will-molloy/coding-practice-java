@@ -10,7 +10,7 @@ import com.willmolloy.leetcode.common.ListNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P24SwapNodesInPairs {
+final class P24SwapNodesInPairs {
 
   public ListNode swapPairs(ListNode head) {
     if (head == null) {

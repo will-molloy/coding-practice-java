@@ -18,7 +18,7 @@ import java.util.Map;
  * @see P300LongestIncreasingSubsequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P873LengthOfLongestFibonacciSequence {
+final class P873LengthOfLongestFibonacciSequence {
 
   public int lenLongestFibSubseq(int[] a) {
     // seq is strictly increasing, so elements are unique, so can inverse to get their index safely

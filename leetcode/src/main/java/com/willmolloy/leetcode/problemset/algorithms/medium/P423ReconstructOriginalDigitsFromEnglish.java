@@ -26,7 +26,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P423ReconstructOriginalDigitsFromEnglish {
+final class P423ReconstructOriginalDigitsFromEnglish {
 
   public String originalDigits(String s) {
     // count the relevant characters (those in the graph)

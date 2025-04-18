@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1518WaterBottles {
+final class P1518WaterBottles {
 
   public int numWaterBottles(int numBottles, int numExchange) {
     int numFull = numBottles;

@@ -12,7 +12,7 @@ import java.util.TreeMap;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
+sealed interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
 
   // many ways to solve it
   // 1. compare each number with every other number - O(n^2)
@@ -28,7 +28,7 @@ interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
    *
    * <p>Space: O(n)
    */
-  class SortedMap implements P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
+  final class SortedMap implements P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
 
     @Override
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -71,7 +71,7 @@ interface P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
    *
    * <p>Space: O(n)
    */
-  class Array implements P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
+  final class Array implements P1365HowManyNumbersAreSmallerThanTheCurrentNumber {
 
     @Override
     public int[] smallerNumbersThanCurrent(int[] nums) {

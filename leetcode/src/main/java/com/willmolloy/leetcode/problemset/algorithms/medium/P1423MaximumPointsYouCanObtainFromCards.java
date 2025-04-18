@@ -16,7 +16,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P1422MaximumScoreAfterSplittingAString
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1423MaximumPointsYouCanObtainFromCards {
+final class P1423MaximumPointsYouCanObtainFromCards {
 
   public int maxScore(int[] cardPoints, int k) {
     int n = cardPoints.length;

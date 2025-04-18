@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Timeout;
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 @Timeout(value = 10)
-class P1114PrintInOrderTest {
+final class P1114PrintInOrderTest {
 
   private P1114PrintInOrder object; // lock on object so tests can run in parallel
 

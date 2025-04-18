@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1582SpecialPositionsInABinaryMatrixTest {
+final class P1582SpecialPositionsInABinaryMatrixTest {
 
   private final P1582SpecialPositionsInABinaryMatrix p1582 =
       new P1582SpecialPositionsInABinaryMatrix();

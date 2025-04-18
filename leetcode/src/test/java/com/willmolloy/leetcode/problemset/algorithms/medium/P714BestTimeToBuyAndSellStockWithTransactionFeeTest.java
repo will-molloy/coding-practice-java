@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P714BestTimeToBuyAndSellStockWithTransactionFeeTest {
+final class P714BestTimeToBuyAndSellStockWithTransactionFeeTest {
 
   private final P714BestTimeToBuyAndSellStockWithTransactionFee
       p714BestTimeToBuyAndSellStockWithTransactionFee =

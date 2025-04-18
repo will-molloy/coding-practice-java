@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
  * @see P76MinimumWindowSubstring
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P30SubstringWithConcatenationOfAllWords {
+final class P30SubstringWithConcatenationOfAllWords {
 
   // based off:
   // https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/13658/Easy-Two-Map-Solution-(C%2B%2BJava)

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchWhiteSpaceAndNonWhiteSpaceCharacter implements Regex {
+final class MatchWhiteSpaceAndNonWhiteSpaceCharacter implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("(\\S{2}\\s){2}\\S{2}");
 

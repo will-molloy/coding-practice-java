@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class TheBritishAndAmericanStyleOfSpellingTest {
+final class TheBritishAndAmericanStyleOfSpellingTest {
 
   @Test
   void testCase0() {

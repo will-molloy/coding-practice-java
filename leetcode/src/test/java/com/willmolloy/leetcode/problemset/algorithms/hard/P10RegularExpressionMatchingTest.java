@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P10RegularExpressionMatchingTest {
+final class P10RegularExpressionMatchingTest {
 
   private final P10RegularExpressionMatching function = new P10RegularExpressionMatching();
 

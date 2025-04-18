@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P448FindAllNumbersDisappearedInAnArrayTest {
+final class P448FindAllNumbersDisappearedInAnArrayTest {
 
   private final P448FindAllNumbersDisappearedInAnArray p448 =
       new P448FindAllNumbersDisappearedInAnArray();

@@ -13,7 +13,7 @@ import java.util.List;
  * @see P15ThreeSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P18FourSum {
+final class P18FourSum {
 
   public List<List<Integer>> fourSum(int[] nums, int target) {
     if (nums.length < 4) {

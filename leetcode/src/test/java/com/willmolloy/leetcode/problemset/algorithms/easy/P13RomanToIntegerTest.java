@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P13RomanToIntegerTest {
+final class P13RomanToIntegerTest {
 
   private final P13RomanToInteger function = new P13RomanToInteger();
 

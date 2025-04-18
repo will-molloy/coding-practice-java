@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1486XorOperationInAnArray {
+final class P1486XorOperationInAnArray {
 
   public int xorOperation(int n, int start) {
     int xor = start;

@@ -15,12 +15,12 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see com.willmolloy.leetcode.problemset.algorithms.easy.P409LongestPalindrome
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-interface P1457PseudoPalindromicPathsInABinaryTree {
+sealed interface P1457PseudoPalindromicPathsInABinaryTree {
 
   int pseudoPalindromicPaths(TreeNode root);
 
   /** Solution which uses an array to track the path. */
-  class Array implements P1457PseudoPalindromicPathsInABinaryTree {
+  final class Array implements P1457PseudoPalindromicPathsInABinaryTree {
 
     private int ans;
 
@@ -70,7 +70,7 @@ interface P1457PseudoPalindromicPathsInABinaryTree {
   }
 
   /** Solution which uses a bitmask to track the path. */
-  class BitMask implements P1457PseudoPalindromicPathsInABinaryTree {
+  final class BitMask implements P1457PseudoPalindromicPathsInABinaryTree {
 
     private int ans;
 

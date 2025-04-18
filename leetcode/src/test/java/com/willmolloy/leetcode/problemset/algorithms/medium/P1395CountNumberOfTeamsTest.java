@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1395CountNumberOfTeamsTest {
+final class P1395CountNumberOfTeamsTest {
 
   @ParameterizedTest
   @MethodSource("funs")

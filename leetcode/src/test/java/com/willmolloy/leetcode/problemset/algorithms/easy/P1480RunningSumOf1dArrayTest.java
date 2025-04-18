@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1480RunningSumOf1dArrayTest {
+final class P1480RunningSumOf1dArrayTest {
 
   private final P1480RunningSumOf1dArray p1480 = new P1480RunningSumOf1dArray();
 

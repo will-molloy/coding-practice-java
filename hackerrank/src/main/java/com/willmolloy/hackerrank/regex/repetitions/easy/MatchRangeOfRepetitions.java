@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchRangeOfRepetitions implements Regex {
+final class MatchRangeOfRepetitions implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("^\\d{1,2}[a-zA-Z]{3,}\\.{0,3}$");
 

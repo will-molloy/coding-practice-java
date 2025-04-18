@@ -17,7 +17,7 @@ import java.util.Set;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P593ValidSquare {
+final class P593ValidSquare {
 
   public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
     List<int[]> list = List.of(p1, p2, p3, p4);

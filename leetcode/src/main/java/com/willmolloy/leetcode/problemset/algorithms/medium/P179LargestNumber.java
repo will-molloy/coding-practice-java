@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P179LargestNumber {
+final class P179LargestNumber {
 
   public String largestNumber(int[] nums) {
     String result =

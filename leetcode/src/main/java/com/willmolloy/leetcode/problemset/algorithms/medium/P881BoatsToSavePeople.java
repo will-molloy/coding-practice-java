@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P881BoatsToSavePeople {
+final class P881BoatsToSavePeople {
 
   public int numRescueBoats(int[] people, int limit) {
     Arrays.sort(people);

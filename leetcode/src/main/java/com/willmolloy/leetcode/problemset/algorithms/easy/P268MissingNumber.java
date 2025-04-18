@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P268MissingNumber {
+final class P268MissingNumber {
 
   public int missingNumber(int[] nums) {
     int sum = Arrays.stream(nums).sum();

@@ -14,7 +14,7 @@ import java.util.ArrayDeque;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P150EvaluateReversePolishNotation {
+final class P150EvaluateReversePolishNotation {
 
   // CHECKSTYLE IGNORE AbbreviationAsWordInName FOR NEXT 1 LINES
   public int evalRPN(String[] tokens) {

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P873LengthOfLongestFibonacciSequenceTest {
+final class P873LengthOfLongestFibonacciSequenceTest {
 
   private final P873LengthOfLongestFibonacciSequence fun =
       new P873LengthOfLongestFibonacciSequence();

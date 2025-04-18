@@ -17,7 +17,7 @@ import java.util.List;
  * @see P1305AllElementsInTwoBinarySearchTrees
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P94BinaryTreeInorderTraversal {
+final class P94BinaryTreeInorderTraversal {
 
   // iterative solutions (stack and more space efficient 'morris' traversal):
   // https://leetcode.com/problems/binary-tree-inorder-traversal/solution/

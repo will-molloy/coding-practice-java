@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class NegativeLookbehind implements Regex {
+final class NegativeLookbehind implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("(?<![aeiouAEIOU]).");
 

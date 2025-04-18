@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class MatchWordAndNonWordCharacter implements Regex {
+final class MatchWordAndNonWordCharacter implements Regex {
 
   private static final Pattern PATTERN = Pattern.compile("\\w{3}\\W\\w{10}\\W\\w{3}");
 

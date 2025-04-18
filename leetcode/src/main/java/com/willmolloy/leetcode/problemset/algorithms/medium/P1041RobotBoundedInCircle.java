@@ -13,7 +13,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1041RobotBoundedInCircle {
+final class P1041RobotBoundedInCircle {
 
   public boolean isRobotBounded(String instructions) {
     Move move = Move.NORTH;

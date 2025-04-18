@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1567MaximumLengthOfSubarrayWithPositiveProductTest {
+final class P1567MaximumLengthOfSubarrayWithPositiveProductTest {
 
   private final P1567MaximumLengthOfSubarrayWithPositiveProduct p1567 =
       new P1567MaximumLengthOfSubarrayWithPositiveProduct();

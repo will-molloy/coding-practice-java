@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P453MinimumMovesToEqualArrayElementsTest {
+final class P453MinimumMovesToEqualArrayElementsTest {
 
   private final P453MinimumMovesToEqualArrayElements p453 =
       new P453MinimumMovesToEqualArrayElements();

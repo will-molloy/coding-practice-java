@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1456MaximumNumberOfVowelsInASubstringOfGivenLengthTest {
+final class P1456MaximumNumberOfVowelsInASubstringOfGivenLengthTest {
 
   private final P1456MaximumNumberOfVowelsInASubstringOfGivenLength p1456 =
       new P1456MaximumNumberOfVowelsInASubstringOfGivenLength();

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P80RemoveDuplicatesFromSortedArray2Test {
+final class P80RemoveDuplicatesFromSortedArray2Test {
 
   private final P80RemoveDuplicatesFromSortedArray2 fun = new P80RemoveDuplicatesFromSortedArray2();
 

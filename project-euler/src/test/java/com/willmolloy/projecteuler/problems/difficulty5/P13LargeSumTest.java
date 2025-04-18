@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P13LargeSumTest {
+final class P13LargeSumTest {
 
   private static final String DIGIT_NUMBERS_100X50 =
       ""

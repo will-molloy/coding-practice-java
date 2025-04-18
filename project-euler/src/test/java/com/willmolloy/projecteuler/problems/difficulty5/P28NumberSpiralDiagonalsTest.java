@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P28NumberSpiralDiagonalsTest {
+final class P28NumberSpiralDiagonalsTest {
 
   private final P28NumberSpiralDiagonals numberSpiralDiagonals = new P28NumberSpiralDiagonals();
 

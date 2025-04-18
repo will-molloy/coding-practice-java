@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P49GroupAnagramsTest {
+final class P49GroupAnagramsTest {
 
   private final P49GroupAnagrams fun = new P49GroupAnagrams();
 

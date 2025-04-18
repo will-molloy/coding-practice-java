@@ -16,7 +16,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  * @see P701InsertIntoABinarySearchTree
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P98ValidateBinarySearchTree {
+final class P98ValidateBinarySearchTree {
 
   public boolean isValidBst(TreeNode root) {
     return isValid(root, Long.MAX_VALUE, Long.MIN_VALUE);

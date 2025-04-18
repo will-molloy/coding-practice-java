@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P832FlippingAnImageTest {
+final class P832FlippingAnImageTest {
 
   private final P832FlippingAnImage p832 = new P832FlippingAnImage();
 

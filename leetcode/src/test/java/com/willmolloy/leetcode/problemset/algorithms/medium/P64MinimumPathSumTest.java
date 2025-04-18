@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P64MinimumPathSumTest {
+final class P64MinimumPathSumTest {
 
   static Stream<Arguments> funs() {
     return Stream.of(

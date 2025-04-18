@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1828QueriesOnNumberOfPointsInsideCircleTest {
+final class P1828QueriesOnNumberOfPointsInsideCircleTest {
 
   private final P1828QueriesOnNumberOfPointsInsideCircle p1828QueriesOnNumberOfPointsInsideCircle =
       new P1828QueriesOnNumberOfPointsInsideCircle();

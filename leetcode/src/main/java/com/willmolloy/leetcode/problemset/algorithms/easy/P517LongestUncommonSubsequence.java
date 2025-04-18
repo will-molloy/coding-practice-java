@@ -14,7 +14,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P517LongestUncommonSubsequence {
+final class P517LongestUncommonSubsequence {
 
   public int findLusLength(String a, String b) {
     if (a.equals(b)) {

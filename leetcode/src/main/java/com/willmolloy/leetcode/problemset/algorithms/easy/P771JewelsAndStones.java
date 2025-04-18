@@ -12,7 +12,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P771JewelsAndStones {
+final class P771JewelsAndStones {
 
   public int numJewelsInStones(String j, String s) {
     // dump into array for O(1) contains

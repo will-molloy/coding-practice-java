@@ -15,7 +15,7 @@ import com.willmolloy.leetcode.common.TreeNode;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree {
+final class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree {
 
   private TreeNode ans;
 

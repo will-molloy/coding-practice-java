@@ -19,7 +19,7 @@ import java.util.List;
  *     com.willmolloy.leetcode.problemset.algorithms.easy.P1502CanMakeArithmeticProgressionFromSequence
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1630ArithmeticSubarrays {
+final class P1630ArithmeticSubarrays {
 
   public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
     int m = l.length;

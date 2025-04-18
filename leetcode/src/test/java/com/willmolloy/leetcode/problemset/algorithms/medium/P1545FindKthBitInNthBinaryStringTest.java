@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P1545FindKthBitInNthBinaryStringTest {
+final class P1545FindKthBitInNthBinaryStringTest {
 
   private final P1545FindKthBitInNthBinaryString p1545 = new P1545FindKthBitInNthBinaryString();
 

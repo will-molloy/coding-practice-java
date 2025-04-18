@@ -16,7 +16,7 @@ import java.util.Map;
  * @see P15ThreeSum
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P923ThreeSumWithMultiplicity {
+final class P923ThreeSumWithMultiplicity {
 
   private static final int MOD = (int) 1e9 + 7;
 

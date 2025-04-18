@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class P109ConvertSortedListToBinarySearchTreeTest {
+final class P109ConvertSortedListToBinarySearchTreeTest {
 
   private final P109ConvertSortedListToBinarySearchTree fun =
       new P109ConvertSortedListToBinarySearchTree();
