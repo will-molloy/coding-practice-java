@@ -29,6 +29,7 @@ final class P460LfuCache {
   private final int capacity;
   private final Map<Integer, Integer> keyToValue;
   private final Map<Integer, Integer> keyToFreq;
+  // tail maintained as LRU
   private final Map<Integer, LinkedHashSet<Integer>> freqToKeysLruOrder;
   private int minFreq;
 
