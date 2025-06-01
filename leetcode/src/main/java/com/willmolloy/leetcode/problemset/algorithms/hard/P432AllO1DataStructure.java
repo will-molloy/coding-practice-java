@@ -11,7 +11,7 @@ import java.util.StringJoiner;
  *
  * <p>Complexity: O(1) time, O(n) space.
  *
- * @see com.willmolloy.leetcode.problemset.algorithms.medium.FP146LruCache
+ * @see com.willmolloy.leetcode.problemset.algorithms.medium.P146LruCache.CustomLinkedList
  * @see P460LfuCache
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
@@ -48,10 +48,10 @@ final class P432AllO1DataStructure {
     @Override
     public String toString() {
       return new StringJoiner(", ", Node.class.getSimpleName() + "[", "]")
-        .add("freq=" + freq)
-        .add("keys=" + keys)
-        .add("next=" + next)
-        .toString();
+          .add("freq=" + freq)
+          .add("keys=" + keys)
+          .add("next=" + next)
+          .toString();
     }
   }
 
@@ -67,7 +67,9 @@ final class P432AllO1DataStructure {
     tail.prev = head;
   }
 
-  private void remove(Node node) {
+  private void removeNode(Node node) {
+    freqToNodes.remove(node.freq);
+
     // have: prev - node - next
     // want: prev - next
     Node next = node.next;
@@ -78,14 +80,16 @@ final class P432AllO1DataStructure {
     node.prev = null;
   }
 
-  private void addFirst(Node node) {
-    // have: head - next
-    // want: head - node - next
-    Node next = head.next;
-    head.next = node;
+  private void insertNodeAfter(Node node, Node prev) {
+    freqToNodes.put(node.freq, node);
+
+    // have: prev - next
+    // want: prev - node - next
+    Node next = prev.next;
+    prev.next = node;
     next.prev = node;
     node.next = next;
-    node.prev = head;
+    node.prev = prev;
   }
 
   public void inc(String key) {
@@ -97,20 +101,18 @@ final class P432AllO1DataStructure {
       Node node = freqToNodes.get(1);
       if (node == null) {
         node = new Node(1);
-        freqToNodes.put(1, node);
-        addFirst(node);
+        insertNodeAfter(node, head);
       }
       node.keys.add(key);
     } else {
-      // inc
+      // inc freq
       Node node = freqToNodes.get(freq);
       Node next = node.next;
 
       // remove from current bucket, and remove bucket if empty
       node.keys.remove(key);
       if (node.keys.isEmpty()) {
-        freqToNodes.remove(freq);
-        remove(node);
+        removeNode(node);
       }
 
       // add to next bucket
@@ -119,16 +121,9 @@ final class P432AllO1DataStructure {
       } else {
         Node newNode = new Node(freq + 1);
         newNode.keys.add(key);
-        freqToNodes.put(freq + 1, newNode);
         // insert before the next node
         // (it'll never be in a bucket after that, as only inc by 1)
-        // have: prev -> next
-        // want: prev -> newNode -> next
-        Node prev = next.prev;
-        prev.next = newNode;
-        next.prev = newNode;
-        newNode.next = next;
-        newNode.prev = prev;
+        insertNodeAfter(newNode, next.prev);
       }
     }
   }
@@ -146,11 +141,10 @@ final class P432AllO1DataStructure {
       Node node = freqToNodes.get(freq);
       node.keys.remove(key);
       if (node.keys.isEmpty()) {
-        freqToNodes.remove(freq);
-        remove(node);
+        removeNode(node);
       }
     } else {
-      // dec
+      // dec freq
       keyToFreq.put(key, freq - 1);
 
       Node node = freqToNodes.get(freq);
@@ -159,8 +153,7 @@ final class P432AllO1DataStructure {
       // remove from current bucket, and remove bucket if empty
       node.keys.remove(key);
       if (node.keys.isEmpty()) {
-        freqToNodes.remove(freq);
-        remove(node);
+        removeNode(node);
       }
 
       // add to prev bucket
@@ -169,16 +162,9 @@ final class P432AllO1DataStructure {
       } else {
         Node newNode = new Node(freq - 1);
         newNode.keys.add(key);
-        freqToNodes.put(freq - 1, newNode);
         // insert after the prev node
-        // (it'll never be before that, as only dec by 1)
-        // have: prev -> next
-        // want: prev -> newNode -> next;
-        Node next = prev.next;
-        prev.next = newNode;
-        next.prev = newNode;
-        newNode.next = next;
-        newNode.prev = prev;
+        // (it'll never be in a bucket before that, as only dec by 1)
+        insertNodeAfter(newNode, prev);
       }
     }
   }
@@ -186,16 +172,14 @@ final class P432AllO1DataStructure {
   public String getMaxKey() {
     if (tail.prev == head) {
       return "";
-    } else {
-      return tail.prev.keys.getFirst();
     }
+    return tail.prev.keys.getFirst();
   }
 
   public String getMinKey() {
     if (head.next == tail) {
       return "";
-    } else {
-      return head.next.keys.getFirst();
     }
+    return head.next.keys.getFirst();
   }
 }
