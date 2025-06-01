@@ -2,6 +2,8 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
+import java.util.SequencedMap;
+import java.util.SequencedSet;
 import java.util.StringJoiner;
 
 /**
@@ -23,21 +25,26 @@ final class P432AllO1DataStructure {
   // could maintain these as sorted structures... i.e. with max freq at front
   // then don't need to track min/max freq separately
   // would need to get freq bucket and swap on inc/dec
+
   // how to do that when LinkedHashMap only has putFirst/Last? - need List
-  // but List needs to maintain empty buckets (O(1) lookup), scanning to next non-empty is NOT O(1)!
+  // but List needs to maintain empty buckets (for O(1) lookup), scanning to next non-empty is NOT
+  // O(1)!
+
   // solution must track min/max freq separately then
-  // unless we make our own linked-list structure with swap
+  // unless we make our own linked-list structure
 
   // yeah need to maintain sorted structure
-  // the problem is the decrease op - when it hits 0 (remove), unknown what the next minFreq is
+  // the problem is the decrease op when buckets get removed:
+  // don't have next largest for maxFreq, or next smallest for minFreq if entry completely removed
 
-  // getting the next maxFreq is fine however - on remove, -1, or set to 0 if overall empty
-  // ^so if problem doesn't care about getMin then you can use LinkedHashMap...
+  // increase op is fine however:
+  // minFreq + 1 if bucket removed, maxFreq = max(maxFreq, freq + 1)...
+  // ^that's why it works for LFU cache, where freq is only increased
 
   /** Doubly linked-list node. */
   private static final class Node {
     private final int freq;
-    private final LinkedHashSet<String> keys = new LinkedHashSet<>();
+    private final SequencedSet<String> keys = new LinkedHashSet<>();
     private Node next;
     private Node prev;
 
@@ -55,8 +62,8 @@ final class P432AllO1DataStructure {
     }
   }
 
-  private final LinkedHashMap<String, Integer> keyToFreq = new LinkedHashMap<>();
-  private final LinkedHashMap<Integer, Node> freqToNodes = new LinkedHashMap<>();
+  private final SequencedMap<String, Integer> keyToFreq = new LinkedHashMap<>();
+  private final SequencedMap<Integer, Node> freqToNodes = new LinkedHashMap<>();
 
   // sorted doubly-linked-list, minFreq -> maxFreq
   private final Node head = new Node(Integer.MIN_VALUE);
