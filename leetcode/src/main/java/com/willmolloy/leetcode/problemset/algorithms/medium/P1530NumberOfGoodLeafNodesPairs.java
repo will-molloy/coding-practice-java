@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * <a
@@ -34,8 +33,7 @@ final class P1530NumberOfGoodLeafNodesPairs {
     Map<Integer, MyBinaryTreeNode> nodes = new HashMap<>();
     dfsCopy(root, nodes, null, new int[] {0}, 0);
 
-    List<MyBinaryTreeNode> leafs =
-        nodes.values().stream().filter(node -> node.isLeaf).collect(Collectors.toList());
+    List<MyBinaryTreeNode> leafs = nodes.values().stream().filter(node -> node.isLeaf).toList();
     int count = 0;
     for (int i = 0; i < leafs.size(); i++) {
       for (int j = i + 1; j < leafs.size(); j++) {

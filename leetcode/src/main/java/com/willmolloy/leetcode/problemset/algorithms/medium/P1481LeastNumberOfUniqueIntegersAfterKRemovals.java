@@ -28,7 +28,7 @@ final class P1481LeastNumberOfUniqueIntegersAfterKRemovals {
             .boxed()
             .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     List<Map.Entry<Integer, Long>> sortedFreqs =
-        freqs.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toList());
+        freqs.entrySet().stream().sorted(Map.Entry.comparingByValue()).toList();
 
     int count = 0;
     for (Map.Entry<Integer, Long> e : sortedFreqs) {

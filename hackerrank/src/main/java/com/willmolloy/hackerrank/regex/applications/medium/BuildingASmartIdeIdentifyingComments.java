@@ -45,9 +45,7 @@ final class BuildingASmartIdeIdentifyingComments {
       String comment = commentMatcher.group(1);
       // remove leading whitespace from each line
       List<String> trimmedComment =
-          Arrays.stream(comment.split("\n"))
-              .map(s -> s.replaceAll("^\\s+", ""))
-              .collect(Collectors.toList());
+          Arrays.stream(comment.split("\n")).map(s -> s.replaceAll("^\\s+", "")).toList();
       comments.addAll(trimmedComment);
     }
     return comments;

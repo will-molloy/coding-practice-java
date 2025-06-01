@@ -3,7 +3,6 @@ package com.willmolloy.hackerrank.interviewpreparationkit.greedyalgorithms.mediu
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * <a
@@ -24,10 +23,7 @@ final class GreedyFlorist {
     int totalCost = 0;
     int multiplier = 1;
     List<Integer> flowersSortedByPriceDesc =
-        Arrays.stream(flowerPrices)
-            .boxed()
-            .sorted(Comparator.reverseOrder())
-            .collect(Collectors.toList());
+        Arrays.stream(flowerPrices).boxed().sorted(Comparator.reverseOrder()).toList();
     for (int i = 0; i < flowersSortedByPriceDesc.size(); i += k) {
       int setMultiplier = multiplier;
       int setCost =

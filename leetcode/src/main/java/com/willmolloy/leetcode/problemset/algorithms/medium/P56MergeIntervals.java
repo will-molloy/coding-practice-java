@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * <a
@@ -102,9 +101,7 @@ sealed interface P56MergeIntervals {
       // sort intervals by their start value (O(n log n))
       // then each set of intervals that can be merged will be in a contiguous 'run' in the list
       List<int[]> sortedIntervals =
-          Arrays.stream(intervals)
-              .sorted(Comparator.comparingInt(arr -> arr[0]))
-              .collect(Collectors.toList());
+          Arrays.stream(intervals).sorted(Comparator.comparingInt(arr -> arr[0])).toList();
 
       // add each interval in sorted encounter order (O(n))
       List<int[]> result = new ArrayList<>();

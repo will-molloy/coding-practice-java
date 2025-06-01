@@ -7,7 +7,6 @@ import static java.util.stream.Collectors.groupingBy;
 
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * <a
@@ -49,9 +48,7 @@ final class SherlockValidString {
     // 2: Smaller freq is ONE and occurred ONCE (remove the smaller freq)
     // e.g. aa bb c -> remove the c
     List<Map.Entry<Long, Long>> list =
-        charCountCounts.entrySet().stream()
-            .sorted(comparingLong(Map.Entry::getKey))
-            .collect(Collectors.toList());
+        charCountCounts.entrySet().stream().sorted(comparingLong(Map.Entry::getKey)).toList();
     long smallerCount = list.get(0).getKey();
     long smallerCountCount = list.get(0).getValue();
     long largerCount = list.get(1).getKey();

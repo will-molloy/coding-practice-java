@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.NavigableMap;
 import java.util.Optional;
 import java.util.TreeMap;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -39,7 +38,7 @@ sealed interface P436FindRightInterval {
               .mapToObj(i -> new ArrayIndex(intervals[i], i))
               // sort by start point so we can binary search on start points
               .sorted(Comparator.comparingInt(arrayIndex -> arrayIndex.array[0]))
-              .collect(Collectors.toList());
+              .toList();
 
       for (int i = 0; i < list.size(); i++) {
         int end = list.get(i).array[1];

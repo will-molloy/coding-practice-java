@@ -3,7 +3,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * <a
@@ -20,8 +19,7 @@ import java.util.stream.Collectors;
 final class P1561MaximumNumberOfCoinsYouCanGet {
 
   public int maxCoins(int[] piles) {
-    List<Integer> list =
-        Arrays.stream(piles).boxed().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+    List<Integer> list = Arrays.stream(piles).boxed().sorted(Comparator.reverseOrder()).toList();
 
     // 9,8,7,6,5,1,2,3,4
     // 9 8 7 6 5 4 3 2 1

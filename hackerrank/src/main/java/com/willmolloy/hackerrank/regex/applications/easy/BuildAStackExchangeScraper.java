@@ -51,9 +51,7 @@ final class BuildAStackExchangeScraper {
 
   private static String digestQuestion(String s) {
     List<Matcher> matchers =
-        Stream.of(QUESTION_ID, QUESTION_TITLE, QUESTION_TIME)
-            .map(p -> p.matcher(s))
-            .collect(Collectors.toList());
+        Stream.of(QUESTION_ID, QUESTION_TITLE, QUESTION_TIME).map(p -> p.matcher(s)).toList();
     if (matchers.stream().allMatch(Matcher::find)) {
       // group 0 = entire match, group 1 = what's in capturing group
       return matchers.stream().map(matcher -> matcher.group(1)).collect(Collectors.joining(";"));
