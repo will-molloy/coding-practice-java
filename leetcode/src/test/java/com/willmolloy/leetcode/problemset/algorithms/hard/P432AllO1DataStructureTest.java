@@ -2,7 +2,9 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 /**
  * Unit tests for {@link P432AllO1DataStructure}.
@@ -11,9 +13,15 @@ import org.junit.jupiter.api.Test;
  */
 final class P432AllO1DataStructureTest {
 
-  @Test
-  void example1() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  static Stream<P432AllO1DataStructure> solutions() {
+    return Stream.of(
+        new P432AllO1DataStructure.CustomLinkedList(),
+        new P432AllO1DataStructure.BuiltInSortedMap());
+  }
+
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void example1(P432AllO1DataStructure allOne) {
     allOne.inc("hello");
     allOne.inc("hello");
     assertThat(allOne.getMaxKey()).isEqualTo("hello");
@@ -23,33 +31,33 @@ final class P432AllO1DataStructureTest {
     assertThat(allOne.getMinKey()).isEqualTo("leet");
   }
 
-  @Test
-  void testEmpty() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void testEmpty(P432AllO1DataStructure allOne) {
     assertThat(allOne.getMaxKey()).isEmpty();
     assertThat(allOne.getMinKey()).isEmpty();
   }
 
-  @Test
-  void testDecreaseNoEntryStaysEmpty() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void testDecreaseNoEntryStaysEmpty(P432AllO1DataStructure allOne) {
     allOne.dec("hello");
     assertThat(allOne.getMaxKey()).isEmpty();
     assertThat(allOne.getMinKey()).isEmpty();
   }
 
-  @Test
-  void testDecreaseRemovesEntry() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void testDecreaseRemovesEntry(P432AllO1DataStructure allOne) {
     allOne.inc("hello");
     assertThat(allOne.getMaxKey()).isEqualTo("hello");
     allOne.dec("hello");
     assertThat(allOne.getMaxKey()).isEmpty();
   }
 
-  @Test
-  void testNewMax() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void testNewMax(P432AllO1DataStructure allOne) {
     allOne.inc("hello");
     assertThat(allOne.getMaxKey()).isEqualTo("hello");
     allOne.inc("leet");
@@ -58,9 +66,9 @@ final class P432AllO1DataStructureTest {
     assertThat(allOne.getMinKey()).isEqualTo("hello");
   }
 
-  @Test
-  void testNewMin() {
-    P432AllO1DataStructure allOne = new P432AllO1DataStructure();
+  @ParameterizedTest
+  @MethodSource("solutions")
+  void testNewMin(P432AllO1DataStructure allOne) {
     allOne.inc("hello");
     allOne.inc("hello");
     allOne.inc("hello");
