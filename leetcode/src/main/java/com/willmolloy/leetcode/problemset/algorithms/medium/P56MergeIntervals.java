@@ -113,8 +113,7 @@ sealed interface P56MergeIntervals {
         } else {
           // otherwise there is overlap
           // merge into most recently added interval
-          result.getLast()[1] =
-              Math.max(result.getLast()[1], interval[1]);
+          result.getLast()[1] = Math.max(result.getLast()[1], interval[1]);
         }
       }
       return result.toArray(new int[][] {});
