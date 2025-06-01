@@ -12,6 +12,7 @@ import java.util.Map;
  * <p>Complexity: O(1) time, O(n) space.
  *
  * @see com.willmolloy.leetcode.problemset.algorithms.medium.P146LruCache
+ * @see P432AllO1DataStructure
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 final class P460LfuCache {

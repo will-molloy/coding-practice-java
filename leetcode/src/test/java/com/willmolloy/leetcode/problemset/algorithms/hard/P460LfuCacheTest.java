@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for {@link P460LfuCache}.
  *
- * @author Will
+ * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 final class P460LfuCacheTest {
 
