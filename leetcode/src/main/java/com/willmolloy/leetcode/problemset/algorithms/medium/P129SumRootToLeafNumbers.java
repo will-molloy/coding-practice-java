@@ -46,7 +46,7 @@ sealed interface P129SumRootToLeafNumbers {
 
       while (!queue.isEmpty()) {
         List<TreeNode> path = queue.remove();
-        TreeNode last = path.get(path.size() - 1);
+        TreeNode last = path.getLast();
         if (last.left == null && last.right == null) {
           // No more branching, create the number
           int number = createNumber(path);

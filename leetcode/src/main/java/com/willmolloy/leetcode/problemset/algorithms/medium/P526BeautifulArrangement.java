@@ -45,7 +45,7 @@ final class P526BeautifulArrangement {
 
       list.add(i);
       dfs(list, n);
-      list.remove(list.size() - 1);
+      list.removeLast();
     }
   }
 }

@@ -23,7 +23,7 @@ final class P1436DestinationCity {
     Set<String> origins = new HashSet<>();
     for (List<String> path : paths) {
       // path is size 2: [origin, destination]
-      origins.add(path.get(0));
+      origins.add(path.getFirst());
     }
 
     // only destination = all cities - origin cities (which may be origins and destinations)

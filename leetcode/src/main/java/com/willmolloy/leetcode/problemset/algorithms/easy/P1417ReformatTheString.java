@@ -44,7 +44,7 @@ final class P1417ReformatTheString {
         result.append(letters.get(i));
         result.append(numbers.get(i));
       }
-      result.append(letters.get(letters.size() - 1));
+      result.append(letters.getLast());
     } else if (numbers.size() - letters.size() == 1) {
       // extra num
       // e.g. 1a2
@@ -52,7 +52,7 @@ final class P1417ReformatTheString {
         result.append(numbers.get(i));
         result.append(letters.get(i));
       }
-      result.append(numbers.get(numbers.size() - 1));
+      result.append(numbers.getLast());
     } else if (numbers.size() == letters.size()) {
       // same
       for (int i = 0; i < letters.size(); i++) {

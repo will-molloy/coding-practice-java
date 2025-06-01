@@ -22,15 +22,15 @@ final class P18and67MaximumPathSum {
 
   public int apply(List<List<Integer>> triangle) {
     Preconditions.checkArgument(
-        triangle.size() > 0 && triangle.get(0).size() > 0,
+        triangle.size() > 0 && triangle.getFirst().size() > 0,
         "Triangle must have at least one element.");
 
     if (triangle.size() == 1) {
-      return triangle.get(0).get(0);
+      return triangle.getFirst().getFirst();
     } else {
       List<Integer> secondLast = triangle.get(triangle.size() - 2);
       List<Integer> reducedLast =
-          Collections.sliding(triangle.get(triangle.size() - 1), 2).stream()
+          Collections.sliding(triangle.getLast(), 2).stream()
               .map(l -> l.stream().max(Comparator.naturalOrder()).orElse(0))
               .collect(ImmutableList.toImmutableList());
 

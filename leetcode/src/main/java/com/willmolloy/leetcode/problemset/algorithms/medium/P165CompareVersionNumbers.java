@@ -36,7 +36,7 @@ final class P165CompareVersionNumbers {
   }
 
   private int parseHead(List<String> v) {
-    return v.isEmpty() ? 0 : Integer.parseInt(v.get(0));
+    return v.isEmpty() ? 0 : Integer.parseInt(v.getFirst());
   }
 
   private List<String> tail(List<String> v) {

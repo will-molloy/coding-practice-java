@@ -34,7 +34,7 @@ final class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
       return null;
     }
     // root of tree is head of preorder seq
-    TreeNode root = new TreeNode(preorder.get(0));
+    TreeNode root = new TreeNode(preorder.getFirst());
     if (preorder.size() == 1) {
       return root;
     }
@@ -42,7 +42,7 @@ final class P105ConstructBinaryTreeFromPreorderAndInorderTraversal {
     int i;
     for (i = 0; i < inorder.size(); i++) {
       // only works because no duplicates exist
-      if (Objects.equals(preorder.get(0), inorder.get(i))) {
+      if (Objects.equals(preorder.getFirst(), inorder.get(i))) {
         break;
       }
     }

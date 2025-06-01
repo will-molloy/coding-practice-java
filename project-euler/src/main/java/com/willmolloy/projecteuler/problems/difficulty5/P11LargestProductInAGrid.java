@@ -21,7 +21,7 @@ final class P11LargestProductInAGrid {
         numAdjacent >= 0
             && numAdjacent <= grid.size()
             && (grid.isEmpty()
-                || grid.stream().allMatch(list -> grid.get(0).size() == list.size())));
+                || grid.stream().allMatch(list -> grid.getFirst().size() == list.size())));
 
     return allDirections(grid, numAdjacent);
   }

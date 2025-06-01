@@ -39,7 +39,7 @@ sealed interface P198HouseRobber {
         return 0;
       }
       if (nums.size() == 1) {
-        return nums.get(0);
+        return nums.getFirst();
       }
       if (nums.size() == 2) {
         return Math.max(nums.get(0), nums.get(1));

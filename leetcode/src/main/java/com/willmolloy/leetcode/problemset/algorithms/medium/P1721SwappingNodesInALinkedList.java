@@ -35,7 +35,7 @@ final class P1721SwappingNodesInALinkedList {
   }
 
   private ListNode toLinkedList(List<Integer> list) {
-    ListNode head = new ListNode(list.get(0));
+    ListNode head = new ListNode(list.getFirst());
     ListNode node = head;
     for (int i = 1; i < list.size(); i++) {
       node.next = new ListNode(list.get(i));

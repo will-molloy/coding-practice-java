@@ -36,11 +36,11 @@ final class P1567MaximumLengthOfSubarrayWithPositiveProduct {
 
       // before zeros
       // [0, firstZero)
-      len = Math.max(len, maxLen(nums, 0, zeros.get(0) - 1));
+      len = Math.max(len, maxLen(nums, 0, zeros.getFirst() - 1));
 
       // after zeros
       // (lastZero, n)
-      len = Math.max(len, maxLen(nums, zeros.get(zeros.size() - 1) + 1, nums.length - 1));
+      len = Math.max(len, maxLen(nums, zeros.getLast() + 1, nums.length - 1));
 
       // between zeros
       for (int i = 0; i < zeros.size() - 1; i++) {

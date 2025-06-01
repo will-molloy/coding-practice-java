@@ -24,7 +24,7 @@ final class P1337TheKWeakestRowsInAMatrix {
     // sort by soldier count and then index
     Comparator<List<Integer>> comparator =
         Comparator.comparing((List<Integer> l) -> l.get(1))
-            .thenComparing((List<Integer> l) -> l.get(0));
+            .thenComparing((List<Integer> l) -> l.getFirst());
     // reversed so strongest are on top and therefore removed first
     PriorityQueue<List<Integer>> priorityQueue = new PriorityQueue<>(comparator.reversed());
 
@@ -46,7 +46,7 @@ final class P1337TheKWeakestRowsInAMatrix {
 
     int[] ans = new int[k];
     for (int i = k - 1; i >= 0; i--) {
-      ans[i] = priorityQueue.remove().get(0);
+      ans[i] = priorityQueue.remove().getFirst();
     }
     return ans;
   }

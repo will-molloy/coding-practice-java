@@ -54,7 +54,7 @@ sealed interface P763PartitionLabels {
       // merge intervals
       // sort by start
       List<List<Integer>> sortedRanges = new ArrayList<>(ranges.values());
-      sortedRanges.sort(Comparator.comparing(l -> l.get(0)));
+      sortedRanges.sort(Comparator.comparing(l -> l.getFirst()));
 
       List<List<Integer>> result = new ArrayList<>();
 
@@ -63,7 +63,7 @@ sealed interface P763PartitionLabels {
           // init
           result.add(range);
         } else {
-          List<Integer> prevRange = result.get(result.size() - 1);
+          List<Integer> prevRange = result.getLast();
           if (prevRange.get(1) < range.get(0)) {
             // doesn't overlap
             result.add(range);
@@ -74,7 +74,7 @@ sealed interface P763PartitionLabels {
         }
       }
       return result.stream()
-          .map(list -> list.get(1) - list.get(0) + 1)
+          .map(list -> list.get(1) - list.getFirst() + 1)
           .collect(Collectors.toList());
     }
   }

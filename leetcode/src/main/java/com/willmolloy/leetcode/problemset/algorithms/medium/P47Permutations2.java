@@ -49,7 +49,7 @@ final class P47Permutations2 {
       permuteUnique(result, temp, nums, used);
       // remove last added (backtrack)
       used[i] = false;
-      temp.remove(temp.size() - 1);
+      temp.removeLast();
     }
   }
 }

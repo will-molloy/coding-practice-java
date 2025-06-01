@@ -106,15 +106,15 @@ sealed interface P56MergeIntervals {
       // add each interval in sorted encounter order (O(n))
       List<int[]> result = new ArrayList<>();
       for (int[] interval : sortedIntervals) {
-        if (result.isEmpty() || result.get(result.size() - 1)[1] < interval[0]) {
+        if (result.isEmpty() || result.getLast()[1] < interval[0]) {
           // interval does not overlap with most recently added interval
           // so add as new (possibly merged on later) interval
           result.add(interval);
         } else {
           // otherwise there is overlap
           // merge into most recently added interval
-          result.get(result.size() - 1)[1] =
-              Math.max(result.get(result.size() - 1)[1], interval[1]);
+          result.getLast()[1] =
+              Math.max(result.getLast()[1], interval[1]);
         }
       }
       return result.toArray(new int[][] {});

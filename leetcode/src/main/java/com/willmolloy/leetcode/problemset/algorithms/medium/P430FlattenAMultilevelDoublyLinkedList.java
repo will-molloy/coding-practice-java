@@ -124,7 +124,7 @@ sealed interface P430FlattenAMultilevelDoublyLinkedList {
 
     // see serialiseMultilevel()
     static Node multiLevel(List<List<Integer>> lists) {
-      Node topLevel = singleLevel(lists.get(0));
+      Node topLevel = singleLevel(lists.getFirst());
       Node node = topLevel;
       for (int i = 1; i < lists.size(); i++) {
         // find first non-null to insert child level
@@ -143,7 +143,7 @@ sealed interface P430FlattenAMultilevelDoublyLinkedList {
 
     // assumes list contains no nulls
     static Node singleLevel(List<Integer> list) {
-      Node head = new Node(list.get(0));
+      Node head = new Node(list.getFirst());
       Node node = head;
       for (int i = 1; i < list.size(); i++) {
         node.next = new Node(list.get(i));

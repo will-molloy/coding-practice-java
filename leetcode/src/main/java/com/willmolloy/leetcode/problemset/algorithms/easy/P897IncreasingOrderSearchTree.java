@@ -30,7 +30,7 @@ final class P897IncreasingOrderSearchTree {
         list.get(i).right = list.get(i + 1);
       }
     }
-    return list.get(0);
+    return list.getFirst();
   }
 
   private void inorder(TreeNode node, List<TreeNode> list) {

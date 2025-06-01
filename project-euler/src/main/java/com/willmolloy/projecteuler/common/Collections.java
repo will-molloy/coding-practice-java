@@ -47,12 +47,12 @@ public final class Collections {
   public static <T> List<List<T>> transpose(List<? extends List<? extends T>> matrix) {
     checkNotNull(matrix);
     checkArgument(
-        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.get(0).size()));
+        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.getFirst().size()));
 
     ImmutableList.Builder<List<T>> matrixBuilder = ImmutableList.builder();
     for (int i = 0; i < matrix.size(); i++) {
       ImmutableList.Builder<T> rowBuilder = ImmutableList.builder();
-      for (int j = 0; j < matrix.get(0).size(); j++) {
+      for (int j = 0; j < matrix.getFirst().size(); j++) {
         rowBuilder.add(matrix.get(j).get(i));
       }
       matrixBuilder.add(rowBuilder.build());
@@ -64,7 +64,7 @@ public final class Collections {
   public static <T> List<List<T>> diagonalForwardSlopes(List<List<T>> matrix) {
     checkNotNull(matrix);
     checkArgument(
-        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.get(0).size()));
+        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.getFirst().size()));
 
     Stream<Pair<Integer, Integer>> startingFromFirstColumn =
         range(0, matrix.size()).mapToObj(i -> Pair.of(i, 0));
@@ -90,7 +90,7 @@ public final class Collections {
   public static <T> List<List<T>> diagonalBackwardSlopes(List<List<T>> matrix) {
     checkNotNull(matrix);
     checkArgument(
-        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.get(0).size()));
+        matrix.isEmpty() || matrix.stream().allMatch(row -> row.size() == matrix.getFirst().size()));
 
     Stream<Pair<Integer, Integer>> startingFromFirstColumn =
         range(0, matrix.size())

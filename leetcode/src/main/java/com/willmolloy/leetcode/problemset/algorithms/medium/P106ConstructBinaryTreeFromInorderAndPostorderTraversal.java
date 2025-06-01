@@ -29,7 +29,7 @@ final class P106ConstructBinaryTreeFromInorderAndPostorderTraversal {
     if (postorder.isEmpty()) {
       return null;
     }
-    TreeNode root = new TreeNode(postorder.get(postorder.size() - 1));
+    TreeNode root = new TreeNode(postorder.getLast());
     if (postorder.size() == 1) {
       return root;
     }

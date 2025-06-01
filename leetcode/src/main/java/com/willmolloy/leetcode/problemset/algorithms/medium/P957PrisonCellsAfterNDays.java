@@ -28,7 +28,7 @@ final class P957PrisonCellsAfterNDays {
       // edge case, can't compare with day 0 as that may not repeat (since cell 0 and cell 7 will
       // never be occupied again)
       // therefore only start the cycle check after day 1
-      if (!states.isEmpty() && Arrays.equals(states.get(0), next)) {
+      if (!states.isEmpty() && Arrays.equals(states.getFirst(), next)) {
         // repeats every 'states.size()' days, so dayN = N % states.size()
         // (subtract 1 cause day 0 is excluded)
         return states.get((n - 1) % states.size());

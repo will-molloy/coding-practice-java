@@ -47,7 +47,7 @@ final class P40CombinationSum2 {
       seen[i] = true;
       solve(result, temp, candidates, seen, target - candidates[i]);
       // remove last
-      temp.remove(temp.size() - 1);
+      temp.removeLast();
       seen[i] = false;
     }
     return result;

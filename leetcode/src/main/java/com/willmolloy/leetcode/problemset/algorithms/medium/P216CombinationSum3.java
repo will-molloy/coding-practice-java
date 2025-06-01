@@ -34,7 +34,7 @@ final class P216CombinationSum3 {
       for (int i = last + 1; i <= 9; i++) {
         path.add(i);
         dfs(result, path, sum + i, k, n, i);
-        path.remove(path.size() - 1);
+        path.removeLast();
       }
     }
     return result;

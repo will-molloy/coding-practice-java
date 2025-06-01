@@ -47,7 +47,7 @@ final class P46Permutations {
       // dfs
       permute(result, temp, nums);
       // remove most recently added (backtrack)
-      temp.remove(temp.size() - 1);
+      temp.removeLast();
     }
   }
 }

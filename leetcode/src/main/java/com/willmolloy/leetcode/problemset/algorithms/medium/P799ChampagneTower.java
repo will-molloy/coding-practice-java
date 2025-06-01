@@ -26,7 +26,7 @@ final class P799ChampagneTower {
       lists.add(new ArrayList<>(Collections.nCopies(row + 1, 0d)));
     }
 
-    lists.get(0).set(0, (double) poured);
+    lists.getFirst().set(0, (double) poured);
 
     // loop until queryRow since we set amount in next row
     for (int row = 0; row < queryRow; row++) {

@@ -33,7 +33,7 @@ final class P971FlipBinaryTreeToMatchPreorderTraversal {
 
     dfs(root, voyage);
 
-    if (!flipped.isEmpty() && flipped.get(0).equals(-1)) {
+    if (!flipped.isEmpty() && flipped.getFirst().equals(-1)) {
       // if any node set 'flipped' to [-1] then we must return [-1] overall
       return List.of(-1);
     }

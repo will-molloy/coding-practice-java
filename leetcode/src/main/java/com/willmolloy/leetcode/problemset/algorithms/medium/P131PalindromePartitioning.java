@@ -38,7 +38,7 @@ final class P131PalindromePartitioning {
         // recursively solve on rest of string
         partition(s, r + 1, temp, results);
         // back track
-        temp.remove(temp.size() - 1);
+        temp.removeLast();
       }
     }
     return results;

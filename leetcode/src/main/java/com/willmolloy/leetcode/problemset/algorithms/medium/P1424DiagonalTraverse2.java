@@ -44,7 +44,7 @@ final class P1424DiagonalTraverse2 {
         // we are iterating rows in ascending order
         // therefore see end of diagonal first
         // therefore need to reverse the diagonal, doing this implicitly by adding to front of list
-        diagonals.get(diagonalIndex).add(0, nums.get(row).get(col));
+        diagonals.get(diagonalIndex).addFirst(nums.get(row).get(col));
         size++;
       }
     }

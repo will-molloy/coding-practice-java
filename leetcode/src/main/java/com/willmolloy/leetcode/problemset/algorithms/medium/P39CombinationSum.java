@@ -47,7 +47,7 @@ final class P39CombinationSum {
         temp.add(candidate);
         solve(result, temp, candidates, target - candidate);
         // remove last
-        temp.remove(temp.size() - 1);
+        temp.removeLast();
       }
       return result;
     }
@@ -68,7 +68,7 @@ final class P39CombinationSum {
         results.add(new ArrayList<>());
       }
       // base case, summation of empty set is 0, so result(0) = [[]]
-      results.get(0).add(new ArrayList<>());
+      results.getFirst().add(new ArrayList<>());
 
       // Standard DP:
       // outer loop: over the set of numbers

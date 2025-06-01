@@ -40,7 +40,7 @@ final class P46GoldbachsOtherConjecture {
         .peek(
             primesIndex -> {
               if (primesIndex == PRIMES_CACHE.size()) {
-                int lastPrime = PRIMES_CACHE.get(PRIMES_CACHE.size() - 1);
+                int lastPrime = PRIMES_CACHE.getLast();
                 PRIMES_CACHE.add(nextPrime(lastPrime));
               }
             })

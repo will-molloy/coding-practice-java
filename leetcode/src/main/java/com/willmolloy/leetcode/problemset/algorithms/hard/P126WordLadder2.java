@@ -131,7 +131,7 @@ public sealed interface P126WordLadder2 {
         // branch current path
         // NOTE must do this O(26 * m) (i.e. O(m)) algorithm to find neighbours, else get TLE on lc
         // algorithm: one by one, change each character to 'a' through 'z' and check words set
-        String last = path.get(path.size() - 1);
+        String last = path.getLast();
         for (int i = 0; i < last.length(); i++) {
           char[] temp = last.toCharArray();
           for (char c = 'a'; c <= 'z'; c++) {

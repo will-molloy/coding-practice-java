@@ -88,7 +88,7 @@ final class P133CloneGraphTest {
 
     // When
     Node oneCopy = p133.cloneGraph(one);
-    Node twoCopy = oneCopy.neighbors().get(0);
+    Node twoCopy = oneCopy.neighbors().getFirst();
 
     // Then
     assertThat(oneCopy).isNotSameInstanceAs(one);

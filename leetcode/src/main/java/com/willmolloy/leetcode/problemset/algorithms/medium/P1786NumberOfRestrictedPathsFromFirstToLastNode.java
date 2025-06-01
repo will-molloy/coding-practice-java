@@ -80,7 +80,7 @@ final class P1786NumberOfRestrictedPathsFromFirstToLastNode {
 
     long count = 0;
     for (List<Integer> adj : adjList.get(node)) {
-      int adjNode = adj.get(0);
+      int adjNode = adj.getFirst();
       // test distanceToLastNode(zi) > distanceToLastNode(zi+1) (requirement to continue the path)
       if (distanceToLastNode[node] > distanceToLastNode[adjNode]) {
         count += dfs(adjNode, n, adjList, distanceToLastNode, dp);
