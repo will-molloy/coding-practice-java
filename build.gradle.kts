@@ -121,6 +121,8 @@ allprojects {
     testImplementation(rootProject.libs.guava.testlib)
     testImplementation(project(":testlib"))
 
+    testRuntimeOnly(group = "org.junit.platform", name = "junit-platform-launcher")
+
     configurations.all {
       exclude(group = "org.assertj")
       resolutionStrategy {
