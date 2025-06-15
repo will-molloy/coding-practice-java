@@ -2,10 +2,7 @@ package com.willmolloy.leetcode.common;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.IdentityHashMap;
 import java.util.List;
-import java.util.Set;
 import javax.annotation.Nullable;
 
 /**
@@ -27,7 +24,7 @@ public final class ListNode {
     return head;
   }
 
-  public final int val;
+  public int val;
 
   @SuppressFBWarnings("PA_PUBLIC_PRIMITIVE_ATTRIBUTE")
   @Nullable
@@ -42,31 +39,42 @@ public final class ListNode {
     if (this == o) {
       return true;
     }
-    if (o == null || getClass() != o.getClass()) {
+    if (!(o instanceof ListNode listNode)) {
       return false;
     }
-    ListNode listNode = (ListNode) o;
-    return toString().equals(listNode.toString());
+    return serialise().equals(listNode.serialise());
   }
 
   @Override
   public int hashCode() {
-    return toString().hashCode();
+    return serialise().hashCode();
   }
 
   @Override
   public String toString() {
+    return getClass().getSimpleName() + serialise();
+  }
+
+  private String serialise() {
     List<Integer> values = new ArrayList<>();
-    Set<ListNode> seen = Collections.newSetFromMap(new IdentityHashMap<>());
-    ListNode node = this;
-    while (node != null) {
-      if (seen.contains(node)) {
-        return getClass().getSimpleName() + values + " (cycling)";
+    ListNode slow = this;
+    ListNode fast = this;
+
+    while (slow != null) {
+      values.add(slow.val);
+      slow = slow.next;
+
+      if (fast != null && fast.next != null) {
+        fast = fast.next.next;
+      } else {
+        // reached end of list, cycle is impossible
+        fast = null;
       }
-      seen.add(node);
-      values.add(node.val);
-      node = node.next;
+
+      if (fast != null && slow == fast) {
+        return values + " (cycling)";
+      }
     }
-    return getClass().getSimpleName() + values;
+    return values.toString();
   }
 }
