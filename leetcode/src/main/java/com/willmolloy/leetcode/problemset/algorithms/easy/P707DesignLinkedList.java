@@ -1,5 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
+import com.willmolloy.leetcode.common.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,15 +24,6 @@ final class P707DesignLinkedList {
       node = node.next;
     }
     return values;
-  }
-
-  private static final class ListNode {
-    final int val;
-    ListNode next;
-
-    ListNode(int val) {
-      this.val = val;
-    }
   }
 
   private ListNode head;

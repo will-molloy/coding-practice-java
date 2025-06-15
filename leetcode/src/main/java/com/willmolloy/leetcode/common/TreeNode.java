@@ -22,6 +22,8 @@ public final class TreeNode {
    *
    * <p>{@code null} indicates a missing node.
    */
+  // TODO rewrite such that null "children" for null nodes don't have to be specified
+  //  i.e. should be able to copy-paste from leetcode examples without adding these nulls
   public static TreeNode fromLevelOrder(Integer... values) {
     TreeNode root = new TreeNode(values[0]);
     root.left = buildLevelOrder(1, values);
@@ -66,11 +68,10 @@ public final class TreeNode {
     if (this == o) {
       return true;
     }
-    if (o == null || getClass() != o.getClass()) {
+    if (!(o instanceof TreeNode treeNode)) {
       return false;
     }
-    TreeNode that = (TreeNode) o;
-    return serialise().equals(that.serialise());
+    return serialise().equals(treeNode.serialise());
   }
 
   @Override
@@ -106,7 +107,7 @@ public final class TreeNode {
           queue.addLast(node.right);
         } else {
           list.add(null);
-          // insert nulls so we get the nulls 'children' too
+          // insert nulls so we get the nulls "children" too
           queue.addLast(null);
           queue.addLast(null);
         }

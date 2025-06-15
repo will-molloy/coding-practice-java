@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.willmolloy.leetcode.problemset.algorithms.easy.P237DeleteNodeInALinkedList.ListNode;
+import com.willmolloy.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,15 +16,15 @@ final class P237DeleteNodeInALinkedListTest {
 
   @Test
   void example1() {
-    ListNode head = new ListNode(4, new ListNode(5, new ListNode(1, new ListNode(9, null))));
+    ListNode head = ListNode.of(4, 5, 1, 9);
     p237.deleteNode(head.next);
-    assertThat(head).isEqualTo(new ListNode(4, new ListNode(1, new ListNode(9, null))));
+    assertThat(head).isEqualTo(ListNode.of(4, 1, 9));
   }
 
   @Test
   void example2() {
-    ListNode head = new ListNode(4, new ListNode(5, new ListNode(1, new ListNode(9, null))));
+    ListNode head = ListNode.of(4, 5, 1, 9);
     p237.deleteNode(head.next.next);
-    assertThat(head).isEqualTo(new ListNode(4, new ListNode(5, new ListNode(9, null))));
+    assertThat(head).isEqualTo(ListNode.of(4, 5, 9));
   }
 }

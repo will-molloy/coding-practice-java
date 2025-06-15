@@ -1,7 +1,6 @@
 package com.willmolloy.leetcode.problemset.algorithms.easy;
 
-import java.util.Objects;
-import java.util.StringJoiner;
+import com.willmolloy.leetcode.common.ListNode;
 
 /**
  * <a
@@ -23,41 +22,5 @@ final class P237DeleteNodeInALinkedList {
     node.val = node.next.val;
     // delete next node
     node.next = node.next.next;
-  }
-
-  /** Linked list node. */
-  static final class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x, ListNode next) {
-      val = x;
-      this.next = next;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-      if (this == o) {
-        return true;
-      }
-      if (o == null || getClass() != o.getClass()) {
-        return false;
-      }
-      ListNode listNode = (ListNode) o;
-      return val == listNode.val && Objects.equals(next, listNode.next);
-    }
-
-    @Override
-    public int hashCode() {
-      return Objects.hash(val, next);
-    }
-
-    @Override
-    public String toString() {
-      return new StringJoiner(", ", ListNode.class.getSimpleName() + "[", "]")
-          .add("val=" + val)
-          .add("next=" + next)
-          .toString();
-    }
   }
 }
