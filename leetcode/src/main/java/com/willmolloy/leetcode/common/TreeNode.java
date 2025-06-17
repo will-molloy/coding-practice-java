@@ -1,12 +1,13 @@
 package com.willmolloy.leetcode.common;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Queue;
 import javax.annotation.Nullable;
 
 /**
@@ -20,11 +21,51 @@ public final class TreeNode {
   /**
    * Constructs a new binary tree containing the given values, in level order.
    *
+   * <p>{@code null} indicates a missing <i>subtree</i>.
+   */
+  public static TreeNode fromLevelOrder2(Integer... values) {
+    if (values == null || values.length == 0 || values[0] == null) {
+      return null;
+    }
+
+    TreeNode root = new TreeNode(values[0]);
+
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    queue.add(root);
+
+    int i = 1;
+    while (!queue.isEmpty() && i < values.length) {
+      TreeNode node = queue.remove();
+
+      if (values[i] != null) {
+        node.left = new TreeNode(values[i]);
+        queue.add(node.left);
+      }
+      i++;
+
+      if (i < values.length && values[i] != null) {
+        node.right = new TreeNode(values[i]);
+        queue.add(node.right);
+      }
+      i++;
+    }
+
+    if (i < values.length) {
+      throw new IllegalArgumentException("Expected all nodes to be reachable.");
+    }
+    return root;
+  }
+
+  /**
+   * Constructs a new binary tree containing the given values, in level order.
+   *
    * <p>{@code null} indicates a missing node.
    */
-  // TODO rewrite such that null "children" for null nodes don't have to be specified
-  //  i.e. should be able to copy-paste from leetcode examples without adding these nulls
   public static TreeNode fromLevelOrder(Integer... values) {
+    if (values == null || values.length == 0 || values[0] == null) {
+      return null;
+    }
+
     TreeNode root = new TreeNode(values[0]);
     root.left = buildLevelOrder(1, values);
     root.right = buildLevelOrder(2, values);
@@ -87,37 +128,28 @@ public final class TreeNode {
   // serialises by level order
   // won't halt if cycles exist (unlikely given this class represents a tree!)
   private List<Integer> serialise() {
-    List<Integer> list = new ArrayList<>();
-    // LinkedList permits null
-    Deque<TreeNode> queue = new LinkedList<>();
-    queue.addFirst(this);
+    List<Integer> result = new ArrayList<>();
 
-    boolean emptyLevel = false;
-    int levelSize = 0;
-    // BFS until empty level
-    while (!emptyLevel) {
-      emptyLevel = true;
-      levelSize = queue.size();
-      for (int i = 0; i < levelSize; i++) {
-        TreeNode node = queue.removeFirst();
-        if (node != null) {
-          emptyLevel = false;
-          list.add(node.val);
-          queue.addLast(node.left);
-          queue.addLast(node.right);
-        } else {
-          list.add(null);
-          // insert nulls so we get the nulls "children" too
-          queue.addLast(null);
-          queue.addLast(null);
-        }
+    // LinkedList permits null
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(this);
+
+    while (!queue.isEmpty()) {
+      TreeNode node = queue.remove();
+      if (node != null) {
+        result.add(node.val);
+        queue.add(node.left);
+        queue.add(node.right);
+      } else {
+        result.add(null);
       }
     }
-    // leave out trailing nulls
-    int last = list.size() - levelSize;
-    while (list.get(last) == null) {
+
+    // remove trailing nulls
+    int last = result.size() - 1;
+    while (last >= 0 && result.get(last) == null) {
       last--;
     }
-    return list.subList(0, last + 1);
+    return result.subList(0, last + 1);
   }
 }

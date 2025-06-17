@@ -27,14 +27,10 @@ final class TreeNodeTest {
     return Stream.of(
         Arguments.of(singleNode(), "TreeNode[1]"),
         Arguments.of(fullTree(), "TreeNode[1, 2, 3, 4, 5, 6, 7]"),
-        Arguments.of(
-            sparseTree(),
-            "TreeNode[1, 2, 3, 4, null, null, 5, null, 6, null, null, null, null, 7]"),
+        Arguments.of(sparseTree(), "TreeNode[1, 2, 3, 4, null, null, 5, null, 6, 7]"),
         Arguments.of(singleNodeFactory(), "TreeNode[1]"),
         Arguments.of(fullTreeFactory(), "TreeNode[1, 2, 3, 4, 5, 6, 7]"),
-        Arguments.of(
-            sparseTreeFactory(),
-            "TreeNode[1, 2, 3, 4, null, null, 5, null, 6, null, null, null, null, 7]"));
+        Arguments.of(sparseTreeFactory(), "TreeNode[1, 2, 3, 4, null, null, 5, null, 6, 7]"));
   }
 
   @Test
@@ -50,9 +46,8 @@ final class TreeNodeTest {
   void testStaticFactoryThrowsIaeIfUnreachableNodes() {
     IllegalArgumentException thrown =
         assertThrows(
-            // 4 has no parent
-            IllegalArgumentException.class, () -> TreeNode.fromLevelOrder(1, null, 3, 4));
-    assertThat(thrown).hasMessageThat().isEqualTo("Expected all nodes to be reachable");
+            IllegalArgumentException.class, () -> TreeNode.fromLevelOrder2(1, null, null, 2));
+    assertThat(thrown).hasMessageThat().isEqualTo("Expected all nodes to be reachable.");
   }
 
   private static TreeNode singleNode() {
@@ -60,7 +55,7 @@ final class TreeNodeTest {
   }
 
   private static TreeNode singleNodeFactory() {
-    return TreeNode.fromLevelOrder(1);
+    return TreeNode.fromLevelOrder2(1);
   }
 
   private static TreeNode fullTree() {
@@ -75,7 +70,7 @@ final class TreeNodeTest {
   }
 
   private static TreeNode fullTreeFactory() {
-    return TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
+    return TreeNode.fromLevelOrder2(1, 2, 3, 4, 5, 6, 7);
   }
 
   private static TreeNode sparseTree() {
@@ -90,6 +85,6 @@ final class TreeNodeTest {
   }
 
   private static TreeNode sparseTreeFactory() {
-    return TreeNode.fromLevelOrder(1, 2, 3, 4, null, null, 5, null, 6, null, null, null, null, 7);
+    return TreeNode.fromLevelOrder2(1, 2, 3, 4, null, null, 5, null, 6, 7);
   }
 }
