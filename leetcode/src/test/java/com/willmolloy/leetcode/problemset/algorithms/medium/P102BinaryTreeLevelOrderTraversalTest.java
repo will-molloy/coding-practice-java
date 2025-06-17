@@ -16,6 +16,12 @@ import org.junit.jupiter.params.provider.MethodSource;
  */
 final class P102BinaryTreeLevelOrderTraversalTest {
 
+  static Stream<Arguments> funs() {
+    return Stream.of(
+        Arguments.of(new P102BinaryTreeLevelOrderTraversal.Dfs()),
+        Arguments.of(new P102BinaryTreeLevelOrderTraversal.Bfs()));
+  }
+
   @ParameterizedTest
   @MethodSource("funs")
   void example(P102BinaryTreeLevelOrderTraversal fun) {
@@ -34,16 +40,10 @@ final class P102BinaryTreeLevelOrderTraversalTest {
   @ParameterizedTest
   @MethodSource("funs")
   void singleNodePerLeve(P102BinaryTreeLevelOrderTraversal fun) {
-    TreeNode root = TreeNode.fromLevelOrder(1, 2, null, 3, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(1, 2, null, 3, null, 4);
     assertThat(fun.levelOrder(root))
         .containsExactly(
             ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(3), ImmutableList.of(4))
         .inOrder();
-  }
-
-  static Stream<Arguments> funs() {
-    return Stream.of(
-        Arguments.of(new P102BinaryTreeLevelOrderTraversal.Dfs()),
-        Arguments.of(new P102BinaryTreeLevelOrderTraversal.Bfs()));
   }
 }

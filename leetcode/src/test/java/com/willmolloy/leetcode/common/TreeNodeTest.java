@@ -46,7 +46,7 @@ final class TreeNodeTest {
   void testStaticFactoryThrowsIaeIfUnreachableNodes() {
     IllegalArgumentException thrown =
         assertThrows(
-            IllegalArgumentException.class, () -> TreeNode.fromLevelOrder2(1, null, null, 2));
+            IllegalArgumentException.class, () -> TreeNode.fromLevelOrder(1, null, null, 2));
     assertThat(thrown).hasMessageThat().isEqualTo("Expected all nodes to be reachable.");
   }
 
@@ -55,7 +55,7 @@ final class TreeNodeTest {
   }
 
   private static TreeNode singleNodeFactory() {
-    return TreeNode.fromLevelOrder2(1);
+    return TreeNode.fromLevelOrder(1);
   }
 
   private static TreeNode fullTree() {
@@ -70,7 +70,7 @@ final class TreeNodeTest {
   }
 
   private static TreeNode fullTreeFactory() {
-    return TreeNode.fromLevelOrder2(1, 2, 3, 4, 5, 6, 7);
+    return TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
   }
 
   private static TreeNode sparseTree() {
@@ -85,6 +85,6 @@ final class TreeNodeTest {
   }
 
   private static TreeNode sparseTreeFactory() {
-    return TreeNode.fromLevelOrder2(1, 2, 3, 4, null, null, 5, null, 6, 7);
+    return TreeNode.fromLevelOrder(1, 2, 3, 4, null, null, 5, null, 6, 7);
   }
 }

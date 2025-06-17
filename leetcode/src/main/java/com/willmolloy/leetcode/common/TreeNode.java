@@ -3,10 +3,8 @@ package com.willmolloy.leetcode.common;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Queue;
 import javax.annotation.Nullable;
 
@@ -22,12 +20,10 @@ public final class TreeNode {
    * Constructs a new binary tree containing the given values, in level order.
    *
    * <p>{@code null} indicates a missing <i>subtree</i>.
+   *
+   * @apiNote this enables copy+paste from leetcode.
    */
-  public static TreeNode fromLevelOrder2(Integer... values) {
-    if (values == null || values.length == 0 || values[0] == null) {
-      return null;
-    }
-
+  public static TreeNode fromLevelOrder(Integer... values) {
     TreeNode root = new TreeNode(values[0]);
 
     Queue<TreeNode> queue = new ArrayDeque<>();
@@ -52,40 +48,6 @@ public final class TreeNode {
 
     if (i < values.length) {
       throw new IllegalArgumentException("Expected all nodes to be reachable.");
-    }
-    return root;
-  }
-
-  /**
-   * Constructs a new binary tree containing the given values, in level order.
-   *
-   * <p>{@code null} indicates a missing node.
-   */
-  public static TreeNode fromLevelOrder(Integer... values) {
-    if (values == null || values.length == 0 || values[0] == null) {
-      return null;
-    }
-
-    TreeNode root = new TreeNode(values[0]);
-    root.left = buildLevelOrder(1, values);
-    root.right = buildLevelOrder(2, values);
-
-    List<Integer> serialisedValues = root.serialise().stream().filter(Objects::nonNull).toList();
-    List<Integer> inputValues = Arrays.stream(values).filter(Objects::nonNull).toList();
-    if (!serialisedValues.equals(inputValues)) {
-      // serialise method will skip unreachable node values (... since they're unreachable)
-      // so if doesn't equal input value list, throw iae
-      throw new IllegalArgumentException("Expected all nodes to be reachable");
-    }
-    return root;
-  }
-
-  private static TreeNode buildLevelOrder(int i, Integer... remainingValues) {
-    TreeNode root = null;
-    if (i < remainingValues.length && remainingValues[i] != null) {
-      root = new TreeNode(remainingValues[i]);
-      root.left = buildLevelOrder(2 * i + 1, remainingValues);
-      root.right = buildLevelOrder(2 * i + 2, remainingValues);
     }
     return root;
   }

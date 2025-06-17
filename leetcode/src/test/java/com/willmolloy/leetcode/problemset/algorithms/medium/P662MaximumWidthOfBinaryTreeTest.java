@@ -33,8 +33,7 @@ final class P662MaximumWidthOfBinaryTreeTest {
   void example4() {
     assertThat(
             fun.widthOfBinaryTree(
-                TreeNode.fromLevelOrder(
-                    1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7)))
+                TreeNode.fromLevelOrder(1, 3, 2, 5, null, null, 9, 6, null, null, 7)))
         .isEqualTo(8);
   }
 

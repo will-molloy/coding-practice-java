@@ -15,28 +15,30 @@ final class P112PathSumTest {
   private final P112PathSum fun = new P112PathSum();
 
   @Test
-  void example() {
+  void example1() {
     assertThat(
             fun.hasPathSum(
-                TreeNode.fromLevelOrder(
-                    5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1),
-                22))
+                TreeNode.fromLevelOrder(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1), 22))
         .isTrue();
   }
 
   @Test
-  void exampleBut2IsntALeaf() {
+  void example1But2IsntALeaf() {
     assertThat(
             fun.hasPathSum(
                 TreeNode.fromLevelOrder(
-                    5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1, null, null,
-                    null, 3),
+                    5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1, null, null, null, 3),
                 22))
         .isFalse();
   }
 
   @Test
-  void emptyTreeZeroSum() {
+  void example2() {
+    assertThat(fun.hasPathSum(TreeNode.fromLevelOrder(1, 2, 3), 5)).isFalse();
+  }
+
+  @Test
+  void example3() {
     assertThat(fun.hasPathSum(null, 0)).isFalse();
   }
 

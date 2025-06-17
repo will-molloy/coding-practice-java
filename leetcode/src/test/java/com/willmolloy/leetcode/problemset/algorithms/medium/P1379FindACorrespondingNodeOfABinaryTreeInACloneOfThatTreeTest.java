@@ -45,11 +45,9 @@ final class P1379FindACorrespondingNodeOfABinaryTreeInACloneOfThatTreeTest {
   @Test
   void example3() {
     TreeNode original =
-        TreeNode.fromLevelOrder(
-            8, null, 6, null, null, null, 5, null, null, null, null, null, null, null, 4);
+        TreeNode.fromLevelOrder(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1);
     TreeNode cloned =
-        TreeNode.fromLevelOrder(
-            8, null, 6, null, null, null, 5, null, null, null, null, null, null, null, 4);
+        TreeNode.fromLevelOrder(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1);
     TreeNode target = original.right.right.right;
     TreeNode expected = cloned.right.right.right;
 

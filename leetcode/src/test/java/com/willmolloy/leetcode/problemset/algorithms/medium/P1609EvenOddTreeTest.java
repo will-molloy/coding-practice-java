@@ -18,8 +18,7 @@ final class P1609EvenOddTreeTest {
   void example1() {
     assertThat(
             p1609.isEvenOddTree(
-                TreeNode.fromLevelOrder(
-                    1, 10, 4, 3, null, 7, 9, 12, 8, null, null, 6, null, null, 2)))
+                TreeNode.fromLevelOrder(1, 10, 4, 3, null, 7, 9, 12, 8, 6, null, null, 2)))
         .isTrue();
   }
 

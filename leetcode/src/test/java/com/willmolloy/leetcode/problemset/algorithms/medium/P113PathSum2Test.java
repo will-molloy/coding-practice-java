@@ -17,7 +17,7 @@ final class P113PathSum2Test {
 
   @Test
   void example() {
-    TreeNode root = TreeNode.fromLevelOrder2(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1);
+    TreeNode root = TreeNode.fromLevelOrder(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1);
     assertThat(fun.pathSum(root, 22)).containsExactly(List.of(5, 4, 11, 2), List.of(5, 8, 4, 5));
   }
 }

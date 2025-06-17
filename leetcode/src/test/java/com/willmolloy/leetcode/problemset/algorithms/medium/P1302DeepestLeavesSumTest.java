@@ -15,12 +15,19 @@ final class P1302DeepestLeavesSumTest {
   private final P1302DeepestLeavesSum fun = new P1302DeepestLeavesSum();
 
   @Test
-  void example() {
+  void example1() {
     assertThat(
             fun.deepestLeavesSum(
-                TreeNode.fromLevelOrder(
-                    1, 2, 3, 4, 5, null, 6, 7, null, null, null, null, null, null, 8)))
+                TreeNode.fromLevelOrder(1, 2, 3, 4, 5, null, 6, 7, null, null, null, null, 8)))
         .isEqualTo(15);
+  }
+
+  @Test
+  void example2() {
+    assertThat(
+            fun.deepestLeavesSum(
+                TreeNode.fromLevelOrder(6, 7, 8, 2, 7, 1, 3, 9, null, 1, 4, null, null, null, 5)))
+        .isEqualTo(19);
   }
 
   @Test

@@ -26,11 +26,11 @@ final class P814BinaryTreePruningTest {
   static Stream<Arguments> examples() {
     return Stream.of(
         Arguments.of(
-            TreeNode.fromLevelOrder(1, null, 0, null, null, 0, 1),
-            TreeNode.fromLevelOrder(1, null, 0, null, null, null, 1)),
+            TreeNode.fromLevelOrder(1, null, 0, 0, 1),
+            TreeNode.fromLevelOrder(1, null, 0, null, 1)),
         Arguments.of(
             TreeNode.fromLevelOrder(1, 0, 1, 0, 0, 0, 1),
-            TreeNode.fromLevelOrder(1, null, 1, null, null, null, 1)),
+            TreeNode.fromLevelOrder(1, null, 1, null, 1)),
         Arguments.of(
             TreeNode.fromLevelOrder(1, 1, 0, 1, 1, 0, 1, 0),
             TreeNode.fromLevelOrder(1, 1, 0, 1, 1, null, 1)));

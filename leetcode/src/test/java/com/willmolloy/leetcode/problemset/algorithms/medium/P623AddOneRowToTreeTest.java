@@ -18,15 +18,14 @@ final class P623AddOneRowToTreeTest {
   void example1() {
     TreeNode root = TreeNode.fromLevelOrder(4, 2, 6, 3, 1, 5);
     assertThat(p623AddOneRowToTree.addOneRow(root, 1, 2))
-        .isEqualTo(
-            TreeNode.fromLevelOrder(4, 1, 1, 2, null, null, 6, 3, 1, null, null, null, null, 5));
+        .isEqualTo(TreeNode.fromLevelOrder(4, 1, 1, 2, null, null, 6, 3, 1, 5));
   }
 
   @Test
   void example2() {
     TreeNode root = TreeNode.fromLevelOrder(4, 2, null, 3, 1);
     assertThat(p623AddOneRowToTree.addOneRow(root, 1, 3))
-        .isEqualTo(TreeNode.fromLevelOrder(4, 2, null, 1, 1, null, null, 3, null, null, 1));
+        .isEqualTo(TreeNode.fromLevelOrder(4, 2, null, 1, 1, 3, null, null, 1));
   }
 
   @Test

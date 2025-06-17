@@ -15,8 +15,13 @@ final class P530MinimumAbsoluteDifferentInBstTest {
   private final P530MinimumAbsoluteDifferentInBst fun = new P530MinimumAbsoluteDifferentInBst();
 
   @Test
-  void example() {
-    assertThat(fun.getMinimumDifference(TreeNode.fromLevelOrder(1, null, 3, null, null, 2)))
+  void example1() {
+    assertThat(fun.getMinimumDifference(TreeNode.fromLevelOrder(4, 2, 6, 1, 3))).isEqualTo(1);
+  }
+
+  @Test
+  void example2() {
+    assertThat(fun.getMinimumDifference(TreeNode.fromLevelOrder(1, 0, 48, null, null, 12, 49)))
         .isEqualTo(1);
   }
 }

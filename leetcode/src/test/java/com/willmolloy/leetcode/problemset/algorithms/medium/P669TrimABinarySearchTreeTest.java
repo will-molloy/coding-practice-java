@@ -28,7 +28,7 @@ final class P669TrimABinarySearchTreeTest {
     return Stream.of(
         Arguments.of(TreeNode.fromLevelOrder(1, 0, 2), 1, 2, TreeNode.fromLevelOrder(1, null, 2)),
         Arguments.of(
-            TreeNode.fromLevelOrder(3, 0, 4, null, 2, null, null, null, null, 1),
+            TreeNode.fromLevelOrder(3, 0, 4, null, 2, null, null, 1),
             1,
             3,
             TreeNode.fromLevelOrder(3, 2, null, 1)),

@@ -26,11 +26,7 @@ final class P1026MaximumDifferenceBetweenNodeAndAncestorTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(
-            TreeNode.fromLevelOrder(8, 3, 10, 1, 6, null, 14, null, null, 4, 7, null, null, 13), 7),
-        Arguments.of(
-            TreeNode.fromLevelOrder(
-                1, null, 2, null, null, null, 0, null, null, null, null, null, null, 3),
-            3));
+        Arguments.of(TreeNode.fromLevelOrder(8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13), 7),
+        Arguments.of(TreeNode.fromLevelOrder(1, null, 2, null, 0, 3), 3));
   }
 }

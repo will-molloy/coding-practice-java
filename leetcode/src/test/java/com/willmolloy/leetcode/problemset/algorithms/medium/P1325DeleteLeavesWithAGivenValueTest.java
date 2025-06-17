@@ -17,7 +17,7 @@ final class P1325DeleteLeavesWithAGivenValueTest {
   @Test
   void example1() {
     assertThat(fun.removeLeafNodes(TreeNode.fromLevelOrder(1, 2, 3, 2, null, 2, 4), 2))
-        .isEqualTo(TreeNode.fromLevelOrder(1, null, 3, null, null, null, 4));
+        .isEqualTo(TreeNode.fromLevelOrder(1, null, 3, null, 4));
   }
 
   @Test
@@ -28,7 +28,7 @@ final class P1325DeleteLeavesWithAGivenValueTest {
 
   @Test
   void example3() {
-    assertThat(fun.removeLeafNodes(TreeNode.fromLevelOrder(1, 2, null, 2, null, null, null, 2), 2))
+    assertThat(fun.removeLeafNodes(TreeNode.fromLevelOrder(1, 2, null, 2, null, 2), 2))
         .isEqualTo(TreeNode.fromLevelOrder(1));
   }
 

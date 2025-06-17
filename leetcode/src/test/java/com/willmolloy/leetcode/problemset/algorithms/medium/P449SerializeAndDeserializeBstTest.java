@@ -56,7 +56,7 @@ final class P449SerializeAndDeserializeBstTest {
 
   @Test
   void leftLinkedList() {
-    TreeNode root = TreeNode.fromLevelOrder(4, 3, null, 2, null, null, null, 1);
+    TreeNode root = TreeNode.fromLevelOrder(4, 3, null, 2, null, 1);
     String data = "4(3(2(1)))";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
@@ -64,9 +64,7 @@ final class P449SerializeAndDeserializeBstTest {
 
   @Test
   void rightLinkedList() {
-    TreeNode root =
-        TreeNode.fromLevelOrder(
-            1, null, 2, null, null, null, 3, null, null, null, null, null, null, null, 4);
+    TreeNode root = TreeNode.fromLevelOrder(1, null, 2, null, 3, null, 4);
     String data = "1()(2()(3()(4)))";
     assertThat(fun.serialize(root)).isEqualTo(data);
     assertThat(fun.deserialize(data)).isEqualTo(root);
