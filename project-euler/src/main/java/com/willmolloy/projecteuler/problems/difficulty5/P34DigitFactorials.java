@@ -1,6 +1,5 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.math.LongMath;
 import com.willmolloy.projecteuler.common.Maths;
 import com.willmolloy.projecteuler.common.Strings;
@@ -75,12 +74,7 @@ final class P34DigitFactorials {
    * @see P30DigitNPowers for similar idea of generating 'infinite' nested loops via. recursion
    */
   static long testDigitFactorialPermutationsUpToLimitAndSum() {
-    return digitFactorials(
-        2,
-        0,
-        IntStream.rangeClosed(0, 9)
-            .mapToObj(String::valueOf)
-            .collect(ImmutableList.toImmutableList()));
+    return digitFactorials(2, 0, IntStream.rangeClosed(0, 9).mapToObj(String::valueOf).toList());
   }
 
   private static long digitFactorials(int numDigits, long sum, List<String> digitsSequence) {
@@ -103,7 +97,7 @@ final class P34DigitFactorials {
                 a ->
                     IntStream.rangeClosed(Character.getNumericValue(a.charAt(a.length() - 1)), 9)
                         .mapToObj(b -> a + b))
-            .collect(ImmutableList.toImmutableList());
+            .toList();
 
     long validIntsSummed =
         nextIntSequence.parallelStream()
@@ -119,8 +113,7 @@ final class P34DigitFactorials {
   }
 
   private static Optional<String> sumOfDigitFactorialsThatMatchAPermutation(String n) {
-    List<Integer> digits =
-        n.chars().mapToObj(Character::getNumericValue).collect(ImmutableList.toImmutableList());
+    List<Integer> digits = n.chars().mapToObj(Character::getNumericValue).toList();
     long sum = 0L;
     long limit = Long.parseLong(n);
     for (int i : digits) {

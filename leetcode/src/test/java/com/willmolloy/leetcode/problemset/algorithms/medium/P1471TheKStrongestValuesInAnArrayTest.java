@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -26,10 +25,10 @@ final class P1471TheKStrongestValuesInAnArrayTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(new int[] {1, 2, 3, 4, 5}, 2, ImmutableList.of(5, 1)),
-        Arguments.of(new int[] {1, 1, 3, 5, 5}, 2, ImmutableList.of(5, 5)),
-        Arguments.of(new int[] {6, 7, 11, 7, 6, 8}, 5, ImmutableList.of(11, 8, 6, 6, 7)),
-        Arguments.of(new int[] {6, -3, 7, 2, 11}, 3, ImmutableList.of(-3, 11, 2)),
-        Arguments.of(new int[] {-7, 22, 17, 3}, 2, ImmutableList.of(22, 17)));
+        Arguments.of(new int[] {1, 2, 3, 4, 5}, 2, List.of(5, 1)),
+        Arguments.of(new int[] {1, 1, 3, 5, 5}, 2, List.of(5, 5)),
+        Arguments.of(new int[] {6, 7, 11, 7, 6, 8}, 5, List.of(11, 8, 6, 6, 7)),
+        Arguments.of(new int[] {6, -3, 7, 2, 11}, 3, List.of(-3, 11, 2)),
+        Arguments.of(new int[] {-7, 22, 17, 3}, 2, List.of(22, 17)));
   }
 }

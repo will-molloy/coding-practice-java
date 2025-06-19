@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,11 +18,11 @@ final class P118PascalTriangleTest {
   void example() {
     assertThat(fun.generate(5))
         .containsExactly(
-            ImmutableList.of(1),
-            ImmutableList.of(1, 1),
-            ImmutableList.of(1, 2, 1),
-            ImmutableList.of(1, 3, 3, 1),
-            ImmutableList.of(1, 4, 6, 4, 1))
+            List.of(1),
+            List.of(1, 1),
+            List.of(1, 2, 1),
+            List.of(1, 3, 3, 1),
+            List.of(1, 4, 6, 4, 1))
         .inOrder();
   }
 

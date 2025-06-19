@@ -2,8 +2,8 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.leetcode.common.TreeNode;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -20,8 +20,7 @@ final class P987VerticalOrderTraversalOfABinaryTreeTest {
   void example1() {
     TreeNode root = TreeNode.fromLevelOrder(3, 9, 20, null, null, 15, 7);
     assertThat(p987.verticalTraversal(root))
-        .containsExactly(
-            ImmutableList.of(9), ImmutableList.of(3, 15), ImmutableList.of(20), ImmutableList.of(7))
+        .containsExactly(List.of(9), List.of(3, 15), List.of(20), List.of(7))
         .inOrder();
   }
 
@@ -29,12 +28,7 @@ final class P987VerticalOrderTraversalOfABinaryTreeTest {
   void example2() {
     TreeNode root = TreeNode.fromLevelOrder(1, 2, 3, 4, 5, 6, 7);
     assertThat(p987.verticalTraversal(root))
-        .containsExactly(
-            ImmutableList.of(4),
-            ImmutableList.of(2),
-            ImmutableList.of(1, 5, 6),
-            ImmutableList.of(3),
-            ImmutableList.of(7))
+        .containsExactly(List.of(4), List.of(2), List.of(1, 5, 6), List.of(3), List.of(7))
         .inOrder();
   }
 }

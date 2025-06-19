@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -23,7 +23,7 @@ final class P210CourseSchedule2Test {
   void example2() {
     assertThat(p210.findOrder(4, new int[][] {{1, 0}, {2, 0}, {3, 1}, {3, 2}}))
         .asList()
-        .isAnyOf(ImmutableList.of(0, 1, 2, 3), ImmutableList.of(0, 2, 1, 3));
+        .isAnyOf(List.of(0, 1, 2, 3), List.of(0, 2, 1, 3));
   }
 
   @Test

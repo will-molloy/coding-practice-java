@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
@@ -35,23 +34,20 @@ final class P1519NumberOfNodesInTheSubTreeWithTheSameLabelTest {
             7,
             new int[][] {{0, 1}, {0, 2}, {1, 4}, {1, 5}, {2, 3}, {2, 6}},
             "abaedcd",
-            ImmutableList.of(2, 1, 1, 1, 1, 1, 1)),
-        Arguments.of(4, new int[][] {{0, 1}, {1, 2}, {0, 3}}, "bbbb", ImmutableList.of(4, 2, 1, 1)),
+            List.of(2, 1, 1, 1, 1, 1, 1)),
+        Arguments.of(4, new int[][] {{0, 1}, {1, 2}, {0, 3}}, "bbbb", List.of(4, 2, 1, 1)),
         Arguments.of(
-            5,
-            new int[][] {{0, 1}, {0, 2}, {1, 3}, {0, 4}},
-            "aabab",
-            ImmutableList.of(3, 2, 1, 1, 1)),
+            5, new int[][] {{0, 1}, {0, 2}, {1, 3}, {0, 4}}, "aabab", List.of(3, 2, 1, 1, 1)),
         Arguments.of(
             6,
             new int[][] {{0, 1}, {0, 2}, {1, 3}, {3, 4}, {4, 5}},
             "cbabaa",
-            ImmutableList.of(1, 2, 1, 1, 2, 1)),
+            List.of(1, 2, 1, 1, 2, 1)),
         Arguments.of(
             7,
             new int[][] {{0, 1}, {1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}},
             "aaabaaa",
-            ImmutableList.of(6, 5, 4, 1, 3, 2, 1)));
+            List.of(6, 5, 4, 1, 3, 2, 1)));
   }
 
   @Test

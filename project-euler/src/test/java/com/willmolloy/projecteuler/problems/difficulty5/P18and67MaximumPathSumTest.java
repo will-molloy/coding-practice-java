@@ -2,7 +2,6 @@ package com.willmolloy.projecteuler.problems.difficulty5;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,22 +23,14 @@ final class P18and67MaximumPathSumTest {
   void smallTriangle() {
     assertThat(
             maximumPathSum.apply(
-                ImmutableList.of(
-                    ImmutableList.of(3),
-                    ImmutableList.of(7, 4),
-                    ImmutableList.of(2, 4, 6),
-                    ImmutableList.of(8, 5, 9, 3))))
+                List.of(List.of(3), List.of(7, 4), List.of(2, 4, 6), List.of(8, 5, 9, 3))))
         .isEqualTo(23);
   }
 
   private List<List<Integer>> parseTriangle(String triangle) {
     return Arrays.stream(triangle.split("\n"))
-        .map(
-            s ->
-                Arrays.stream(s.split(" "))
-                    .map(Integer::valueOf)
-                    .collect(ImmutableList.toImmutableList()))
-        .collect(ImmutableList.toImmutableList());
+        .map(s -> Arrays.stream(s.split(" ")).map(Integer::valueOf).toList())
+        .toList();
   }
 
   @Test

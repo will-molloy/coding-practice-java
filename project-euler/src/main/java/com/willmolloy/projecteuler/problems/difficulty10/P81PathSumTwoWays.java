@@ -5,7 +5,6 @@ import static java.lang.Math.min;
 import static java.util.Arrays.stream;
 import static java.util.Comparator.comparingInt;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.graph.ImmutableValueGraph;
 import com.google.common.graph.MutableValueGraph;
 import com.google.common.graph.ValueGraph;
@@ -64,8 +63,7 @@ public final class P81PathSumTwoWays {
     Stream<Integer> flatMatrix = stream(matrix).flatMap(row -> stream(row).boxed());
 
     // label the nodes 1..size with their cost (i.e. pairs of [cost, index])
-    List<Pair<Integer, Integer>> nodesWithCosts =
-        zipWithIndex(flatMatrix).collect(ImmutableList.toImmutableList());
+    List<Pair<Integer, Integer>> nodesWithCosts = zipWithIndex(flatMatrix).toList();
 
     // build the weighted directed graph
     MutableValueGraph<Integer, Integer> graph =

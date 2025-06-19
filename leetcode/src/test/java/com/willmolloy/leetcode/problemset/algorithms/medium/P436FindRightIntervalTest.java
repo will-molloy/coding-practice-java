@@ -3,7 +3,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 import static com.willmolloy.testlib.CartesianProduct.cartesianProduct;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -38,8 +37,8 @@ final class P436FindRightIntervalTest {
 
   private static Stream<Arguments> examplesArguments() {
     return Stream.of(
-        Arguments.of(new int[][] {{1, 2}}, ImmutableList.of(-1)),
-        Arguments.of(new int[][] {{3, 4}, {2, 3}, {1, 2}}, ImmutableList.of(-1, 0, 1)),
-        Arguments.of(new int[][] {{1, 4}, {2, 3}, {3, 4}}, ImmutableList.of(-1, 2, -1)));
+        Arguments.of(new int[][] {{1, 2}}, List.of(-1)),
+        Arguments.of(new int[][] {{3, 4}, {2, 3}, {1, 2}}, List.of(-1, 0, 1)),
+        Arguments.of(new int[][] {{1, 4}, {2, 3}, {3, 4}}, List.of(-1, 2, -1)));
   }
 }

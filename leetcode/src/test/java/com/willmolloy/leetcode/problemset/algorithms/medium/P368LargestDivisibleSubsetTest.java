@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -17,7 +17,7 @@ final class P368LargestDivisibleSubsetTest {
   @Test
   void example1() {
     assertThat(p368.largestDivisibleSubset(new int[] {1, 2, 3}))
-        .isAnyOf(ImmutableList.of(1, 2), ImmutableList.of(1, 3));
+        .isAnyOf(List.of(1, 2), List.of(1, 3));
   }
 
   @Test

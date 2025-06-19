@@ -2,7 +2,6 @@ package com.willmolloy.projecteuler.problems.difficulty5;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
@@ -123,9 +122,7 @@ final class P13LargeSumTest {
   @Test
   void first10DigitsOf100x50DigitSum() {
     List<BigInteger> numbers =
-        Arrays.stream(DIGIT_NUMBERS_100X50.split("\n"))
-            .map(BigInteger::new)
-            .collect(ImmutableList.toImmutableList());
+        Arrays.stream(DIGIT_NUMBERS_100X50.split("\n")).map(BigInteger::new).toList();
 
     assertThat(largeSum.apply(numbers, 10)).isEqualTo("5537376230");
   }

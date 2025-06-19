@@ -1,6 +1,5 @@
 package com.willmolloy.projecteuler.common;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -27,12 +26,11 @@ public final class Strings {
 
   /** Compute all permutations of a string (O(n!)). */
   public static List<String> permutations(String string) {
-    List<Character> chars =
-        string.chars().mapToObj(c -> (char) c).collect(ImmutableList.toImmutableList());
+    List<Character> chars = string.chars().mapToObj(c -> (char) c).toList();
 
     return Collections.permutations(chars)
         .map(list -> list.stream().map(String::valueOf).collect(Collectors.joining()))
-        .collect(ImmutableList.toImmutableList());
+        .toList();
   }
 
   /** Return true if the given string is a palindrome. */

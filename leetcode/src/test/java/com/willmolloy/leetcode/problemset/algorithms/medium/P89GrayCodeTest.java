@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -26,8 +26,7 @@ final class P89GrayCodeTest {
 
   @Test
   void n2() {
-    assertThat(func.grayCode(2))
-        .isAnyOf(ImmutableList.of(0, 2, 3, 1), ImmutableList.of(0, 1, 3, 2));
+    assertThat(func.grayCode(2)).isAnyOf(List.of(0, 2, 3, 1), List.of(0, 1, 3, 2));
   }
 
   @Test

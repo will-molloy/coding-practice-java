@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,32 +16,31 @@ final class P78SubsetsTest {
 
   @Test
   void emptySet() {
-    assertThat(fun.subsets(new int[] {})).containsExactly(ImmutableList.of());
+    assertThat(fun.subsets(new int[] {})).containsExactly(List.of());
   }
 
   @Test
   void nums1() {
-    assertThat(fun.subsets(new int[] {1})).containsExactly(ImmutableList.of(), ImmutableList.of(1));
+    assertThat(fun.subsets(new int[] {1})).containsExactly(List.of(), List.of(1));
   }
 
   @Test
   void nums12() {
     assertThat(fun.subsets(new int[] {1, 2}))
-        .containsExactly(
-            ImmutableList.of(), ImmutableList.of(1), ImmutableList.of(2), ImmutableList.of(1, 2));
+        .containsExactly(List.of(), List.of(1), List.of(2), List.of(1, 2));
   }
 
   @Test
   void nums123() {
     assertThat(fun.subsets(new int[] {1, 2, 3}))
         .containsExactly(
-            ImmutableList.of(),
-            ImmutableList.of(1),
-            ImmutableList.of(2),
-            ImmutableList.of(3),
-            ImmutableList.of(1, 2),
-            ImmutableList.of(1, 3),
-            ImmutableList.of(2, 3),
-            ImmutableList.of(1, 2, 3));
+            List.of(),
+            List.of(1),
+            List.of(2),
+            List.of(3),
+            List.of(1, 2),
+            List.of(1, 3),
+            List.of(2, 3),
+            List.of(1, 2, 3));
   }
 }

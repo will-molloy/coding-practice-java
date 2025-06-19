@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -26,8 +25,8 @@ final class P1480RunningSumOf1dArrayTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(new int[] {1, 2, 3, 4}, ImmutableList.of(1, 3, 6, 10)),
-        Arguments.of(new int[] {1, 1, 1, 1, 1}, ImmutableList.of(1, 2, 3, 4, 5)),
-        Arguments.of(new int[] {3, 1, 2, 10, 1}, ImmutableList.of(3, 4, 6, 16, 17)));
+        Arguments.of(new int[] {1, 2, 3, 4}, List.of(1, 3, 6, 10)),
+        Arguments.of(new int[] {1, 1, 1, 1, 1}, List.of(1, 2, 3, 4, 5)),
+        Arguments.of(new int[] {3, 1, 2, 10, 1}, List.of(3, 4, 6, 16, 17)));
   }
 }

@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -17,7 +17,7 @@ final class P140WordBreak2Test {
   @ParameterizedTest
   @MethodSource("funs")
   void example1(P140WordBreak2 fun) {
-    assertThat(fun.wordBreak("catsanddog", ImmutableList.of("cat", "cats", "and", "sand", "dog")))
+    assertThat(fun.wordBreak("catsanddog", List.of("cat", "cats", "and", "sand", "dog")))
         .containsExactly("cats and dog", "cat sand dog");
   }
 
@@ -26,22 +26,20 @@ final class P140WordBreak2Test {
   void example2(P140WordBreak2 fun) {
     assertThat(
             fun.wordBreak(
-                "pineapplepenapple",
-                ImmutableList.of("apple", "pen", "applepen", "pine", "pineapple")))
+                "pineapplepenapple", List.of("apple", "pen", "applepen", "pine", "pineapple")))
         .containsExactly("pine apple pen apple", "pineapple pen apple", "pine applepen apple");
   }
 
   @ParameterizedTest
   @MethodSource("funs")
   void example3(P140WordBreak2 fun) {
-    assertThat(fun.wordBreak("catsandog", ImmutableList.of("cats", "dog", "sand", "and", "cat")))
-        .isEmpty();
+    assertThat(fun.wordBreak("catsandog", List.of("cats", "dog", "sand", "and", "cat"))).isEmpty();
   }
 
   @ParameterizedTest
   @MethodSource("funs")
   void emptyString(P140WordBreak2 fun) {
-    assertThat(fun.wordBreak("", ImmutableList.of("a", "b", "c"))).isEmpty();
+    assertThat(fun.wordBreak("", List.of("a", "b", "c"))).isEmpty();
   }
 
   static Stream<P140WordBreak2> funs() {

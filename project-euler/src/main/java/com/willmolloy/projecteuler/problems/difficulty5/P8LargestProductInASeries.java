@@ -1,7 +1,6 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.common.Collections;
 import com.willmolloy.projecteuler.common.Maths;
 import java.util.List;
@@ -38,11 +37,7 @@ final class P8LargestProductInASeries {
           + "71636269561882670428252483600823257530420752963450";
 
   private static final List<Long> SEQUENCE_1000_DIGITS =
-      STRING_1000_DIGITS
-          .chars()
-          .mapToLong(Character::getNumericValue)
-          .boxed()
-          .collect(ImmutableList.toImmutableList());
+      STRING_1000_DIGITS.chars().mapToLong(Character::getNumericValue).boxed().toList();
 
   public long apply(int adjDigits) {
     Preconditions.checkArgument(adjDigits < SEQUENCE_1000_DIGITS.size());

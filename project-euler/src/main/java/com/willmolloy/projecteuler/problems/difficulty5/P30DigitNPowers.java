@@ -1,7 +1,6 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.common.Maths;
 import com.willmolloy.projecteuler.common.Strings;
 import java.util.List;
@@ -19,9 +18,7 @@ import java.util.stream.IntStream;
 final class P30DigitNPowers {
 
   private static final List<String> DIGITS_SEQUENCE =
-      IntStream.rangeClosed(0, 9)
-          .mapToObj(String::valueOf)
-          .collect(ImmutableList.toImmutableList());
+      IntStream.rangeClosed(0, 9).mapToObj(String::valueOf).toList();
 
   long apply(final int exp) {
     Preconditions.checkArgument(exp <= 9 && exp >= 0);
@@ -48,7 +45,7 @@ final class P30DigitNPowers {
                 a ->
                     IntStream.rangeClosed(Character.getNumericValue(a.charAt(a.length() - 1)), 9)
                         .mapToObj(n -> a + n))
-            .collect(ImmutableList.toImmutableList());
+            .toList();
 
     long validSumsSum =
         nextSequence.stream()
@@ -68,8 +65,7 @@ final class P30DigitNPowers {
     s = Strings.reverse(s);
     long limit = Long.parseLong(s);
 
-    List<Integer> digits =
-        s.chars().mapToObj(Character::getNumericValue).collect(ImmutableList.toImmutableList());
+    List<Integer> digits = s.chars().mapToObj(Character::getNumericValue).toList();
 
     long digitPowerSum = 0;
     for (Integer digit : digits) {

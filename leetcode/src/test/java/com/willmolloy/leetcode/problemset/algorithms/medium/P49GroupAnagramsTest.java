@@ -3,7 +3,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import static com.google.common.truth.Truth.assertThat;
 import static java.util.stream.Collectors.toList;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
@@ -24,9 +23,6 @@ final class P49GroupAnagramsTest {
     List<List<String>> sorted =
         lists.stream().map(list -> list.stream().sorted().collect(toList())).collect(toList());
     assertThat(sorted)
-        .containsExactly(
-            ImmutableList.of("ate", "eat", "tea"),
-            ImmutableList.of("nat", "tan"),
-            ImmutableList.of("bat"));
+        .containsExactly(List.of("ate", "eat", "tea"), List.of("nat", "tan"), List.of("bat"));
   }
 }

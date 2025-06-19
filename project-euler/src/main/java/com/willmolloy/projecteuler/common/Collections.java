@@ -4,7 +4,6 @@ import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static java.util.stream.IntStream.range;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Streams;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -40,25 +39,23 @@ public final class Collections {
 
     return IntStream.rangeClosed(0, seq.size() - size)
         .mapToObj(i -> seq.subList(i, i + size))
-        .collect(ImmutableList.toImmutableList());
+        .toList();
   }
 
   /** Creates the transpose of the given matrix. */
-  public static <T> List<List<T>> transpose(List<? extends List<? extends T>> matrix) {
+  public static <T> List<List<T>> transpose(List<List<T>> matrix) {
     checkNotNull(matrix);
     checkArgument(
         matrix.isEmpty()
             || matrix.stream().allMatch(row -> row.size() == matrix.getFirst().size()));
 
-    ImmutableList.Builder<List<T>> matrixBuilder = ImmutableList.builder();
-    for (int i = 0; i < matrix.size(); i++) {
-      ImmutableList.Builder<T> rowBuilder = ImmutableList.builder();
-      for (int j = 0; j < matrix.getFirst().size(); j++) {
-        rowBuilder.add(matrix.get(j).get(i));
-      }
-      matrixBuilder.add(rowBuilder.build());
-    }
-    return matrixBuilder.build();
+    return IntStream.range(0, matrix.size())
+        .mapToObj(
+            i ->
+                IntStream.range(0, matrix.getFirst().size())
+                    .mapToObj(j -> matrix.get(j).get(i))
+                    .toList())
+        .toList();
   }
 
   /** Returns the diagonal forward slopes (sloping up) of the given matrix. */
@@ -84,8 +81,8 @@ public final class Collections {
                 (i, j) ->
                     range(0, matrix.size() - Math.max(matrix.size() - 1 - i, j))
                         .mapToObj(k -> matrix.get(i - k).get(j + k))
-                        .collect(ImmutableList.toImmutableList())))
-        .collect(ImmutableList.toImmutableList());
+                        .toList()))
+        .toList();
   }
 
   /** Returns the diagonal backward slopes (sloping down) of the given matrix. */
@@ -113,8 +110,8 @@ public final class Collections {
                 (i, j) ->
                     range(0, matrix.size() - Math.max(i, j))
                         .mapToObj(k -> matrix.get(i + k).get(j + k))
-                        .collect(ImmutableList.toImmutableList())))
-        .collect(ImmutableList.toImmutableList());
+                        .toList()))
+        .toList();
   }
 
   /**

@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -17,7 +17,6 @@ final class P47Permutations2Test {
   @Test
   void example() {
     assertThat(fun.permuteUnique(new int[] {1, 1, 2}))
-        .containsExactly(
-            ImmutableList.of(1, 1, 2), ImmutableList.of(1, 2, 1), ImmutableList.of(2, 1, 1));
+        .containsExactly(List.of(1, 1, 2), List.of(1, 2, 1), List.of(2, 1, 1));
   }
 }

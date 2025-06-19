@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -26,7 +25,7 @@ final class P1291SequentialDigitsTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(100, 300, ImmutableList.of(123, 234)),
-        Arguments.of(1000, 13000, ImmutableList.of(1234, 2345, 3456, 4567, 5678, 6789, 12345)));
+        Arguments.of(100, 300, List.of(123, 234)),
+        Arguments.of(1000, 13000, List.of(1234, 2345, 3456, 4567, 5678, 6789, 12345)));
   }
 }

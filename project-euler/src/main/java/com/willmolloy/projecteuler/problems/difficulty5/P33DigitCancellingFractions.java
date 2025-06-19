@@ -1,6 +1,5 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Range;
 import java.math.BigInteger;
 import java.util.List;
@@ -42,13 +41,11 @@ final class P33DigitCancellingFractions {
                         // ensure < 1
                         .filter(denominator -> numerator < denominator)
                         .mapToObj(denominator -> Pair.of(numerator, denominator)))
-            .collect(ImmutableList.toImmutableList());
+            .toList();
 
     // find the 4 digit cancelling fractions
     List<Pair<Integer, Integer>> digitCancellingFractions =
-        fractions.stream()
-            .filter(P33DigitCancellingFractions::isDigitCancelling)
-            .collect(ImmutableList.toImmutableList());
+        fractions.stream().filter(P33DigitCancellingFractions::isDigitCancelling).toList();
     assert digitCancellingFractions.size() == 4;
 
     // find denominator of the reduced product

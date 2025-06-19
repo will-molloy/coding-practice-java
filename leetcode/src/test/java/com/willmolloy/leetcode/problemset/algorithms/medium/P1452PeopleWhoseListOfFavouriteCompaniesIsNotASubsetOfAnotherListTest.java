@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -19,12 +19,12 @@ final class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTes
   void example1() {
     assertThat(
             p1452.peopleIndexes(
-                ImmutableList.of(
-                    ImmutableList.of("leetcode", "google", "facebook"),
-                    ImmutableList.of("google", "microsoft"),
-                    ImmutableList.of("google", "facebook"),
-                    ImmutableList.of("google"),
-                    ImmutableList.of("amazon"))))
+                List.of(
+                    List.of("leetcode", "google", "facebook"),
+                    List.of("google", "microsoft"),
+                    List.of("google", "facebook"),
+                    List.of("google"),
+                    List.of("amazon"))))
         .containsExactly(0, 1, 4)
         .inOrder();
   }
@@ -33,10 +33,10 @@ final class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTes
   void example2() {
     assertThat(
             p1452.peopleIndexes(
-                ImmutableList.of(
-                    ImmutableList.of("leetcode", "google", "facebook"),
-                    ImmutableList.of("leetcode", "amazon"),
-                    ImmutableList.of("facebook", "google"))))
+                List.of(
+                    List.of("leetcode", "google", "facebook"),
+                    List.of("leetcode", "amazon"),
+                    List.of("facebook", "google"))))
         .containsExactly(0, 1)
         .inOrder();
   }
@@ -45,11 +45,11 @@ final class P1452PeopleWhoseListOfFavouriteCompaniesIsNotASubsetOfAnotherListTes
   void example3() {
     assertThat(
             p1452.peopleIndexes(
-                ImmutableList.of(
-                    ImmutableList.of("leetcode"),
-                    ImmutableList.of("google"),
-                    ImmutableList.of("facebook"),
-                    ImmutableList.of("amazon"))))
+                List.of(
+                    List.of("leetcode"),
+                    List.of("google"),
+                    List.of("facebook"),
+                    List.of("amazon"))))
         .containsExactly(0, 1, 2, 3)
         .inOrder();
   }

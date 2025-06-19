@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,25 +18,18 @@ final class P120TriangleTest {
   void example() {
     assertThat(
             fun.minimumTotal(
-                ImmutableList.of(
-                    ImmutableList.of(2),
-                    ImmutableList.of(3, 4),
-                    ImmutableList.of(6, 5, 7),
-                    ImmutableList.of(4, 1, 8, 3))))
+                List.of(List.of(2), List.of(3, 4), List.of(6, 5, 7), List.of(4, 1, 8, 3))))
         .isEqualTo(11);
   }
 
   @Test
   void singleRow() {
-    assertThat(fun.minimumTotal(ImmutableList.of(ImmutableList.of(-10)))).isEqualTo(-10);
+    assertThat(fun.minimumTotal(List.of(List.of(-10)))).isEqualTo(-10);
   }
 
   @Test
   void negativeCosts() {
-    assertThat(
-            fun.minimumTotal(
-                ImmutableList.of(
-                    ImmutableList.of(-1), ImmutableList.of(2, 3), ImmutableList.of(1, -1, -3))))
+    assertThat(fun.minimumTotal(List.of(List.of(-1), List.of(2, 3), List.of(1, -1, -3))))
         .isEqualTo(-1);
   }
 }

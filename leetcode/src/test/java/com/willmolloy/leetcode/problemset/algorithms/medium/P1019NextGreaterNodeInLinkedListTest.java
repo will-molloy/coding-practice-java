@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.leetcode.common.ListNode;
 import java.util.List;
 import java.util.stream.Stream;
@@ -27,9 +26,8 @@ final class P1019NextGreaterNodeInLinkedListTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(ListNode.of(2, 1, 5), ImmutableList.of(5, 5, 0)),
-        Arguments.of(ListNode.of(2, 7, 4, 3, 5), ImmutableList.of(7, 0, 5, 5, 0)),
-        Arguments.of(
-            ListNode.of(1, 7, 5, 1, 9, 2, 5, 1), ImmutableList.of(7, 9, 9, 9, 0, 5, 0, 0)));
+        Arguments.of(ListNode.of(2, 1, 5), List.of(5, 5, 0)),
+        Arguments.of(ListNode.of(2, 7, 4, 3, 5), List.of(7, 0, 5, 5, 0)),
+        Arguments.of(ListNode.of(1, 7, 5, 1, 9, 2, 5, 1), List.of(7, 9, 9, 9, 0, 5, 0, 0)));
   }
 }

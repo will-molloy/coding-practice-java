@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ final class P90Subsets2Test {
 
   @Test
   void emptySet() {
-    assertThat(func.subsetsWithDup(new int[0])).containsExactly(ImmutableList.of());
+    assertThat(func.subsetsWithDup(new int[0])).containsExactly(List.of());
   }
 
   @Test
@@ -24,14 +24,14 @@ final class P90Subsets2Test {
     // technically other answers are valid (subsets with different order) but didn't bother
     assertThat(func.subsetsWithDup(new int[] {1, 2, 3}))
         .containsExactly(
-            ImmutableList.of(),
-            ImmutableList.of(1),
-            ImmutableList.of(2),
-            ImmutableList.of(3),
-            ImmutableList.of(1, 2),
-            ImmutableList.of(1, 3),
-            ImmutableList.of(2, 3),
-            ImmutableList.of(1, 2, 3));
+            List.of(),
+            List.of(1),
+            List.of(2),
+            List.of(3),
+            List.of(1, 2),
+            List.of(1, 3),
+            List.of(2, 3),
+            List.of(1, 2, 3));
   }
 
   @Test
@@ -39,12 +39,7 @@ final class P90Subsets2Test {
     // technically other answers are valid (subsets with different order) but didn't bother
     assertThat(func.subsetsWithDup(new int[] {1, 2, 2}))
         .containsExactly(
-            ImmutableList.of(),
-            ImmutableList.of(1),
-            ImmutableList.of(2),
-            ImmutableList.of(1, 2),
-            ImmutableList.of(2, 2),
-            ImmutableList.of(1, 2, 2));
+            List.of(), List.of(1), List.of(2), List.of(1, 2), List.of(2, 2), List.of(1, 2, 2));
   }
 
   @Test
@@ -52,14 +47,14 @@ final class P90Subsets2Test {
     // technically other answers are valid (subsets with different order) but didn't bother
     assertThat(func.subsetsWithDup(new int[] {4, 1, 4, 4}))
         .containsExactly(
-            ImmutableList.of(),
-            ImmutableList.of(1),
-            ImmutableList.of(4),
-            ImmutableList.of(1, 4),
-            ImmutableList.of(4, 4),
-            ImmutableList.of(1, 4, 4),
-            ImmutableList.of(4, 4, 4),
-            ImmutableList.of(1, 4, 4, 4));
+            List.of(),
+            List.of(1),
+            List.of(4),
+            List.of(1, 4),
+            List.of(4, 4),
+            List.of(1, 4, 4),
+            List.of(4, 4, 4),
+            List.of(1, 4, 4, 4));
   }
 
   @Test
@@ -67,13 +62,13 @@ final class P90Subsets2Test {
     // technically other answers are valid (subsets with different order) but didn't bother
     assertThat(func.subsetsWithDup(new int[] {4, 2, 7}))
         .containsExactly(
-            ImmutableList.of(),
-            ImmutableList.of(2),
-            ImmutableList.of(4),
-            ImmutableList.of(7),
-            ImmutableList.of(2, 4),
-            ImmutableList.of(2, 7),
-            ImmutableList.of(4, 7),
-            ImmutableList.of(2, 4, 7));
+            List.of(),
+            List.of(2),
+            List.of(4),
+            List.of(7),
+            List.of(2, 4),
+            List.of(2, 7),
+            List.of(4, 7),
+            List.of(2, 4, 7));
   }
 }

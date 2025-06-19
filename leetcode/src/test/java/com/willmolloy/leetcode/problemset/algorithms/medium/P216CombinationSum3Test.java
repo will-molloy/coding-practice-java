@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,13 +16,12 @@ final class P216CombinationSum3Test {
 
   @Test
   void example1() {
-    assertThat(p216.combinationSum3(3, 7)).containsExactly(ImmutableList.of(1, 2, 4));
+    assertThat(p216.combinationSum3(3, 7)).containsExactly(List.of(1, 2, 4));
   }
 
   @Test
   void example2() {
     assertThat(p216.combinationSum3(3, 9))
-        .containsExactly(
-            ImmutableList.of(1, 2, 6), ImmutableList.of(1, 3, 5), ImmutableList.of(2, 3, 4));
+        .containsExactly(List.of(1, 2, 6), List.of(1, 3, 5), List.of(2, 3, 4));
   }
 }

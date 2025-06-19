@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
@@ -27,8 +26,8 @@ final class P977SquaresOfASortedArrayTest {
 
   static Stream<Arguments> examples() {
     return Stream.of(
-        Arguments.of(new int[] {-4, -1, 0, 3, 10}, ImmutableList.of(0, 1, 9, 16, 100)),
-        Arguments.of(new int[] {-7, -3, 2, 3, 11}, ImmutableList.of(4, 9, 9, 49, 121)));
+        Arguments.of(new int[] {-4, -1, 0, 3, 10}, List.of(0, 1, 9, 16, 100)),
+        Arguments.of(new int[] {-7, -3, 2, 3, 11}, List.of(4, 9, 9, 49, 121)));
   }
 
   @Test

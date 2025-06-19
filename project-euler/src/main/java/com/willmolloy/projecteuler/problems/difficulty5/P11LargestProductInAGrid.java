@@ -1,7 +1,6 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.common.Collections;
 import com.willmolloy.projecteuler.common.Maths;
 import java.util.List;
@@ -56,7 +55,7 @@ final class P11LargestProductInAGrid {
     List<List<Long>> upSlopes =
         Collections.diagonalForwardSlopes(grid).stream()
             .filter(list -> list.size() >= numAdjacent)
-            .collect(ImmutableList.toImmutableList());
+            .toList();
 
     return leftOrRight(upSlopes, numAdjacent);
   }
@@ -65,7 +64,7 @@ final class P11LargestProductInAGrid {
     List<List<Long>> downSlopes =
         Collections.diagonalBackwardSlopes(grid).stream()
             .filter(list -> list.size() >= numAdjacent)
-            .collect(ImmutableList.toImmutableList());
+            .toList();
 
     return leftOrRight(downSlopes, numAdjacent);
   }

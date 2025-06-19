@@ -2,7 +2,7 @@ package com.willmolloy.hackerrank.regex.applications.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ final class BuildingASmartIdeIdentifyingCommentsTest {
   void singleLineComments() {
     assertThat(
             BuildingASmartIdeIdentifyingComments.extractComments(
-                ImmutableList.of(
+                List.of(
                     "// this is a single line comment",
                     "x = 1 // a single line comment after code")))
         .containsExactly("// this is a single line comment", "// a single line comment after code")
@@ -27,7 +27,7 @@ final class BuildingASmartIdeIdentifyingCommentsTest {
   void multiLineCommentsMustRemoveLeadingWhiteSpaceAndNotCollapseIntoOneLine() {
     assertThat(
             BuildingASmartIdeIdentifyingComments.extractComments(
-                ImmutableList.of(
+                List.of(
                     "/* This is one way of writing comments */ ",
                     "/* This is a multiline ",
                     "   comment. These can often",
@@ -44,7 +44,7 @@ final class BuildingASmartIdeIdentifyingCommentsTest {
   void sampleInput00() {
     assertThat(
             BuildingASmartIdeIdentifyingComments.extractComments(
-                ImmutableList.of(
+                List.of(
                     " // my  program in C++",
                     "",
                     "#include <iostream>",

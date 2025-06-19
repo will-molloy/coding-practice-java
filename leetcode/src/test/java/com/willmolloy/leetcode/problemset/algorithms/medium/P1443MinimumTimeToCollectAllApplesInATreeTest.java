@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -21,7 +21,7 @@ final class P1443MinimumTimeToCollectAllApplesInATreeTest {
             p1443.minTime(
                 7,
                 new int[][] {{0, 1}, {0, 2}, {1, 4}, {1, 5}, {2, 3}, {2, 6}},
-                ImmutableList.of(false, false, true, false, true, true, false)))
+                List.of(false, false, true, false, true, true, false)))
         .isEqualTo(8);
   }
 
@@ -31,7 +31,7 @@ final class P1443MinimumTimeToCollectAllApplesInATreeTest {
             p1443.minTime(
                 7,
                 new int[][] {{0, 1}, {0, 2}, {1, 4}, {1, 5}, {2, 3}, {2, 6}},
-                ImmutableList.of(false, false, true, false, false, true, false)))
+                List.of(false, false, true, false, false, true, false)))
         .isEqualTo(6);
   }
 
@@ -41,7 +41,7 @@ final class P1443MinimumTimeToCollectAllApplesInATreeTest {
             p1443.minTime(
                 7,
                 new int[][] {{0, 1}, {0, 2}, {1, 4}, {1, 5}, {2, 3}, {2, 6}},
-                ImmutableList.of(false, false, false, false, false, false, false)))
+                List.of(false, false, false, false, false, false, false)))
         .isEqualTo(0);
   }
 
@@ -51,7 +51,7 @@ final class P1443MinimumTimeToCollectAllApplesInATreeTest {
             p1443.minTime(
                 5,
                 new int[][] {{0, 1}, {0, 2}, {0, 3}, {1, 4}},
-                ImmutableList.of(false, false, false, false, true)))
+                List.of(false, false, false, false, true)))
         .isEqualTo(4);
   }
 
@@ -61,7 +61,7 @@ final class P1443MinimumTimeToCollectAllApplesInATreeTest {
             p1443.minTime(
                 7,
                 new int[][] {{0, 1}, {0, 2}, {1, 4}, {1, 5}, {2, 3}, {2, 6}},
-                ImmutableList.of(true, true, true, true, true, true, true)))
+                List.of(true, true, true, true, true, true, true)))
         .isEqualTo(12);
   }
 }

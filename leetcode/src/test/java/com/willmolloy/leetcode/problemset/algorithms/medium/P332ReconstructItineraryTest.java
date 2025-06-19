@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,11 +18,11 @@ final class P332ReconstructItineraryTest {
   void example1OnePath() {
     assertThat(
             p332.findItinerary(
-                ImmutableList.of(
-                    ImmutableList.of("MUC", "LHR"),
-                    ImmutableList.of("JFK", "MUC"),
-                    ImmutableList.of("SFO", "SJC"),
-                    ImmutableList.of("LHR", "SFO"))))
+                List.of(
+                    List.of("MUC", "LHR"),
+                    List.of("JFK", "MUC"),
+                    List.of("SFO", "SJC"),
+                    List.of("LHR", "SFO"))))
         .containsExactly("JFK", "MUC", "LHR", "SFO", "SJC")
         .inOrder();
   }
@@ -31,12 +31,12 @@ final class P332ReconstructItineraryTest {
   void example2ReconstructLexicographicallySmallest() {
     assertThat(
             p332.findItinerary(
-                ImmutableList.of(
-                    ImmutableList.of("JFK", "SFO"),
-                    ImmutableList.of("JFK", "ATL"),
-                    ImmutableList.of("SFO", "ATL"),
-                    ImmutableList.of("ATL", "JFK"),
-                    ImmutableList.of("ATL", "SFO"))))
+                List.of(
+                    List.of("JFK", "SFO"),
+                    List.of("JFK", "ATL"),
+                    List.of("SFO", "ATL"),
+                    List.of("ATL", "JFK"),
+                    List.of("ATL", "SFO"))))
         .containsExactly("JFK", "ATL", "JFK", "SFO", "ATL", "SFO")
         .inOrder();
   }
@@ -45,12 +45,12 @@ final class P332ReconstructItineraryTest {
   void traverseLargerNodeFirstOtherwiseWontUseAllEdges() {
     assertThat(
             p332.findItinerary(
-                ImmutableList.of(
-                    ImmutableList.of("JFK", "AAA"),
-                    ImmutableList.of("JFK", "ZZZ"),
-                    ImmutableList.of("AAA", "ZZZ"),
-                    ImmutableList.of("ZZZ", "AAA"),
-                    ImmutableList.of("ZZZ", "JFK"))))
+                List.of(
+                    List.of("JFK", "AAA"),
+                    List.of("JFK", "ZZZ"),
+                    List.of("AAA", "ZZZ"),
+                    List.of("ZZZ", "AAA"),
+                    List.of("ZZZ", "JFK"))))
         .containsExactly("JFK", "AAA", "ZZZ", "JFK", "ZZZ", "AAA")
         .inOrder();
   }
@@ -59,17 +59,17 @@ final class P332ReconstructItineraryTest {
   void duplicateTicket() {
     assertThat(
             p332.findItinerary(
-                ImmutableList.of(
-                    ImmutableList.of("EZE", "AXA"),
-                    ImmutableList.of("TIA", "ANU"),
-                    ImmutableList.of("ANU", "JFK"),
-                    ImmutableList.of("JFK", "ANU"),
-                    ImmutableList.of("ANU", "EZE"),
-                    ImmutableList.of("TIA", "ANU"),
-                    ImmutableList.of("AXA", "TIA"),
-                    ImmutableList.of("TIA", "JFK"),
-                    ImmutableList.of("ANU", "TIA"),
-                    ImmutableList.of("JFK", "TIA"))))
+                List.of(
+                    List.of("EZE", "AXA"),
+                    List.of("TIA", "ANU"),
+                    List.of("ANU", "JFK"),
+                    List.of("JFK", "ANU"),
+                    List.of("ANU", "EZE"),
+                    List.of("TIA", "ANU"),
+                    List.of("AXA", "TIA"),
+                    List.of("TIA", "JFK"),
+                    List.of("ANU", "TIA"),
+                    List.of("JFK", "TIA"))))
         .containsExactly(
             "JFK", "ANU", "EZE", "AXA", "TIA", "ANU", "JFK", "TIA", "ANU", "TIA", "JFK")
         .inOrder();

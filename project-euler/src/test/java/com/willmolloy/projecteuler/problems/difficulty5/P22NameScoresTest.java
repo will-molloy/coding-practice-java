@@ -2,7 +2,6 @@ package com.willmolloy.projecteuler.problems.difficulty5;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,7 +21,7 @@ final class P22NameScoresTest {
 
   @Test
   void singleName() {
-    assertThat(nameScores.apply(ImmutableList.of("COLIN"))).isEqualTo(53);
+    assertThat(nameScores.apply(List.of("COLIN"))).isEqualTo(53);
   }
 
   @Test
@@ -36,7 +35,7 @@ final class P22NameScoresTest {
                     // remove carriage returns
                     .replace("\r", "")
                     .split(","))
-            .collect(ImmutableList.toImmutableList());
+            .toList();
     assertThat(nameScores.apply(names)).isEqualTo(871_198_282);
   }
 }

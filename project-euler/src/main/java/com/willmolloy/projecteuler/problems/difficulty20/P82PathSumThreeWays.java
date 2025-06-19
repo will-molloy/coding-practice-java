@@ -5,7 +5,6 @@ import static com.willmolloy.projecteuler.problems.difficulty10.P81PathSumTwoWay
 import static com.willmolloy.projecteuler.problems.difficulty10.P81PathSumTwoWays.shortestPathsDijkstra;
 import static java.util.Arrays.stream;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.graph.ValueGraph;
 import com.willmolloy.projecteuler.common.Tuples;
 import com.willmolloy.projecteuler.problems.difficulty10.P81PathSumTwoWays;
@@ -58,8 +57,7 @@ public final class P82PathSumThreeWays {
                 });
 
     // flatten the matrix so each node can be labelled [0..size)
-    List<Integer> flatMatrix =
-        stream(matrix).flatMap(row -> stream(row).boxed()).collect(ImmutableList.toImmutableList());
+    List<Integer> flatMatrix = stream(matrix).flatMap(row -> stream(row).boxed()).toList();
 
     // bit different, source can be any node in the left and sink is any node in the right
     // so do dijkstra from all nodes on the left side (TODO maybe a better way??)

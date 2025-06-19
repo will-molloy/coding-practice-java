@@ -1,7 +1,6 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.google.common.math.IntMath;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -22,10 +21,7 @@ final class P50ConsecutivePrimeSum {
 
     // compute primes ahead of time (need them cached AND need to know how many there are)
     List<Integer> primes =
-        IntStream.rangeClosed(2, limit)
-            .filter(IntMath::isPrime)
-            .boxed()
-            .collect(ImmutableList.toImmutableList());
+        IntStream.rangeClosed(2, limit).filter(IntMath::isPrime).boxed().toList();
 
     int bestPrime = 2;
     int bestLength = 1;

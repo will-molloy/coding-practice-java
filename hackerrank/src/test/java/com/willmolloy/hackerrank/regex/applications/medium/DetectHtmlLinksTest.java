@@ -3,7 +3,7 @@ package com.willmolloy.hackerrank.regex.applications.medium;
 import static com.google.common.truth.Truth.assertThat;
 import static com.willmolloy.hackerrank.regex.applications.medium.DetectHtmlLinks.detectLinks;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -15,9 +15,7 @@ final class DetectHtmlLinksTest {
 
   @Test
   void simpleLink() {
-    assertThat(
-            detectLinks(
-                ImmutableList.of("<a href=\"http://www.hackerrank.com\">HackerRank</a>", "")))
+    assertThat(detectLinks(List.of("<a href=\"http://www.hackerrank.com\">HackerRank</a>", "")))
         .containsExactly("http://www.hackerrank.com,HackerRank");
   }
 
@@ -25,7 +23,7 @@ final class DetectHtmlLinksTest {
   void titleHiddenWithinMultipleTags() {
     assertThat(
             detectLinks(
-                ImmutableList.of(
+                List.of(
                     "<a href=\"http://www.hackerrank.com\"><h1><b>HackerRank</b></h1></a>", "")))
         .containsExactly("http://www.hackerrank.com,HackerRank");
   }
@@ -34,7 +32,7 @@ final class DetectHtmlLinksTest {
   void sampleInput1() {
     assertThat(
             detectLinks(
-                ImmutableList.of(
+                List.of(
                     "2",
                     "<p><a href=\"http://www.quackit.com/html/tutorial/html_links.cfm\">Example Link</a></p>",
                     "<div class=\"more-info\"><a href=\"http://www.quackit.com/html/examples/html_links_examples.cfm\">More Link Examples...</a></div>")))
@@ -49,7 +47,7 @@ final class DetectHtmlLinksTest {
     // <a> tag can have more than href
     assertThat(
             detectLinks(
-                ImmutableList.of(
+                List.of(
                     "13",
                     "<div class=\"portal\" role=\"navigation\" id='p-navigation'>",
                     "<h3>Navigation</h3>",
@@ -79,7 +77,7 @@ final class DetectHtmlLinksTest {
     // title can be empty
     assertThat(
             detectLinks(
-                ImmutableList.of(
+                List.of(
                     "7",
                     "<center>",
                     "<div class=\"noresize\" style=\"height: 242px; width: 600px; \"><map name=\"ImageMap_1_971996215\" id=\"ImageMap_1_971996215\">",
@@ -98,7 +96,7 @@ final class DetectHtmlLinksTest {
     // it was capturing all <a> tags into a single group (e.g. <a></a><a></a>)
     assertThat(
             detectLinks(
-                ImmutableList.of(
+                List.of(
                     "49",
                     "<div class=\"portal\" role=\"navigation\" id='p-lang'>",
                     "<h3>Languages</h3>",

@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -19,7 +19,7 @@ final class P1222QueensThatCanAttackTheKingTest {
     assertThat(
             p1222.queensAttacktheKing(
                 new int[][] {{0, 1}, {1, 0}, {4, 0}, {0, 4}, {3, 3}, {2, 4}}, new int[] {0, 0}))
-        .containsExactly(ImmutableList.of(0, 1), ImmutableList.of(1, 0), ImmutableList.of(3, 3));
+        .containsExactly(List.of(0, 1), List.of(1, 0), List.of(3, 3));
   }
 
   @Test
@@ -34,12 +34,12 @@ final class P1222QueensThatCanAttackTheKingTest {
                 },
                 new int[] {3, 4}))
         .containsExactly(
-            ImmutableList.of(2, 3),
-            ImmutableList.of(1, 4),
-            ImmutableList.of(1, 6),
-            ImmutableList.of(3, 7),
-            ImmutableList.of(4, 3),
-            ImmutableList.of(5, 4),
-            ImmutableList.of(4, 5));
+            List.of(2, 3),
+            List.of(1, 4),
+            List.of(1, 6),
+            List.of(3, 7),
+            List.of(4, 3),
+            List.of(5, 4),
+            List.of(4, 5));
   }
 }

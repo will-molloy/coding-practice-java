@@ -3,7 +3,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 import static com.google.common.collect.ImmutableSet.toImmutableSet;
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.primitives.Ints;
 import com.willmolloy.testlib.RandomTrials;
@@ -63,7 +62,7 @@ final class P497RandomPointInNonOverlappingRectanglesTest {
     ImmutableMap<List<Integer>, Double> actualProbabilities =
         RandomTrials.getActualProbabilities(() -> Ints.asList(p497.pick()));
 
-    assertThat(actualProbabilities).containsExactly(ImmutableList.of(0, 0), 1d);
+    assertThat(actualProbabilities).containsExactly(List.of(0, 0), 1d);
   }
 
   private Set<List<Integer>> rectPoints(int[][] rects) {
@@ -73,9 +72,7 @@ final class P497RandomPointInNonOverlappingRectanglesTest {
                 IntStream.rangeClosed(rect[0], rect[2])
                     .boxed()
                     .flatMap(
-                        x ->
-                            IntStream.rangeClosed(rect[1], rect[3])
-                                .mapToObj(y -> ImmutableList.of(x, y))))
+                        x -> IntStream.rangeClosed(rect[1], rect[3]).mapToObj(y -> List.of(x, y))))
         .collect(toImmutableSet());
   }
 }

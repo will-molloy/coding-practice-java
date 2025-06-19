@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.hard;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,7 +18,6 @@ final class P51NQueensTest {
   void example() {
     assertThat(fun.solveNQueens(4))
         .containsExactly(
-            ImmutableList.of(".Q..", "...Q", "Q...", "..Q."),
-            ImmutableList.of("..Q.", "Q...", "...Q", ".Q.."));
+            List.of(".Q..", "...Q", "Q...", "..Q."), List.of("..Q.", "Q...", "...Q", ".Q.."));
   }
 }

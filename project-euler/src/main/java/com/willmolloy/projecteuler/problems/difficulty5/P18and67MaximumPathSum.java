@@ -3,7 +3,6 @@ package com.willmolloy.projecteuler.problems.difficulty5;
 import static com.willmolloy.projecteuler.common.Tuples.function;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.common.Collections;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -32,12 +31,10 @@ final class P18and67MaximumPathSum {
       List<Integer> reducedLast =
           Collections.sliding(triangle.getLast(), 2).stream()
               .map(l -> l.stream().max(Comparator.naturalOrder()).orElse(0))
-              .collect(ImmutableList.toImmutableList());
+              .toList();
 
       List<Integer> newLast =
-          Collections.zip(secondLast, reducedLast)
-              .map(function(Integer::sum))
-              .collect(ImmutableList.toImmutableList());
+          Collections.zip(secondLast, reducedLast).map(function(Integer::sum)).toList();
 
       List<List<Integer>> newTriangle = new ArrayList<>(triangle.subList(0, triangle.size() - 2));
       newTriangle.add(newLast);

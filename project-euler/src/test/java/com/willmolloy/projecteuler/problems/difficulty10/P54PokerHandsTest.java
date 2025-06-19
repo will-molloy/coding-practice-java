@@ -2,7 +2,6 @@ package com.willmolloy.projecteuler.problems.difficulty10;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.problems.difficulty10.P54PokerHands.Card;
 import com.willmolloy.projecteuler.problems.difficulty10.P54PokerHands.Hand;
 import com.willmolloy.projecteuler.problems.difficulty10.P54PokerHands.Rank;
@@ -26,7 +25,7 @@ final class P54PokerHandsTest {
     List<Card> cards =
         Arrays.stream(line.split(" "))
             .map(s -> Card.of(s.substring(0, 1), s.substring(1, 2)))
-            .collect(ImmutableList.toImmutableList());
+            .toList();
     Set<Card> p1Cards = Set.copyOf(cards.subList(0, 5));
     Set<Card> p2Cards = Set.copyOf(cards.subList(5, 10));
     return Pair.of(Hand.of(p1Cards), Hand.of(p2Cards));
@@ -37,7 +36,7 @@ final class P54PokerHandsTest {
     List<Pair<Hand, Hand>> hands =
         Files.lines(Path.of("src/test/resources/problem_054/p054_poker.txt"))
             .map(this::lineToHand)
-            .collect(ImmutableList.toImmutableList());
+            .toList();
     assertThat(hands.size()).isEqualTo(1000);
     assertThat(P54PokerHands.countOfHowManyHandsPlayerOneWins(hands)).isEqualTo(376);
   }

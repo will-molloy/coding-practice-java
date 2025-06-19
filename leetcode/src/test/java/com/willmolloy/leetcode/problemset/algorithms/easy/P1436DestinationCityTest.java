@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,26 +18,21 @@ final class P1436DestinationCityTest {
   void example1() {
     assertThat(
             p1436.destCity(
-                ImmutableList.of(
-                    ImmutableList.of("London", "New York"),
-                    ImmutableList.of("New York", "Lima"),
-                    ImmutableList.of("Lima", "Sao Paulo"))))
+                List.of(
+                    List.of("London", "New York"),
+                    List.of("New York", "Lima"),
+                    List.of("Lima", "Sao Paulo"))))
         .isEqualTo("Sao Paulo");
   }
 
   @Test
   void example2() {
-    assertThat(
-            p1436.destCity(
-                ImmutableList.of(
-                    ImmutableList.of("B", "C"),
-                    ImmutableList.of("D", "B"),
-                    ImmutableList.of("C", "A"))))
+    assertThat(p1436.destCity(List.of(List.of("B", "C"), List.of("D", "B"), List.of("C", "A"))))
         .isEqualTo("A");
   }
 
   @Test
   void example3() {
-    assertThat(p1436.destCity(ImmutableList.of(ImmutableList.of("A", "Z")))).isEqualTo("Z");
+    assertThat(p1436.destCity(List.of(List.of("A", "Z")))).isEqualTo("Z");
   }
 }

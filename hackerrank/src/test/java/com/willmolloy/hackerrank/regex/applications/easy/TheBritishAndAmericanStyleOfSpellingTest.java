@@ -2,7 +2,7 @@ package com.willmolloy.hackerrank.regex.applications.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,7 +16,7 @@ final class TheBritishAndAmericanStyleOfSpellingTest {
   void testCase0() {
     assertThat(
             TheBritishAndAmericanStyleOfSpelling.process(
-                ImmutableList.of(
+                List.of(
                     "2",
                     "hackerrank ui is easy to familiarise with",
                     "to familiarize oneself with ui of hackerrank is easy",
@@ -29,7 +29,7 @@ final class TheBritishAndAmericanStyleOfSpellingTest {
   void testCase1() {
     assertThat(
             TheBritishAndAmericanStyleOfSpelling.process(
-                ImmutableList.of(
+                List.of(
                     "7",
                     "unfair arrival faint region pride realise paralyse length officially disturbing",
                     "call fashionable room take claim capable biscuit cough qualified realze",

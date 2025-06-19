@@ -2,7 +2,6 @@ package com.willmolloy.projecteuler.problems.difficulty5;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -39,20 +38,15 @@ final class P11LargestProductInAGridTest {
 
   private static final List<List<Long>> ARRAY_20X20 =
       Arrays.stream(GRID_20X20.split("\n"))
-          .map(
-              s ->
-                  Arrays.stream(s.split(" "))
-                      .mapToLong(Long::valueOf)
-                      .boxed()
-                      .collect(ImmutableList.toImmutableList()))
-          .collect(ImmutableList.toImmutableList());
+          .map(s -> Arrays.stream(s.split(" ")).mapToLong(Long::valueOf).boxed().toList())
+          .toList();
 
   private static final List<List<Long>> ARRAY_4X4 =
-      ImmutableList.of(
-          ImmutableList.of(1L, 2L, 3L, 4L),
-          ImmutableList.of(5L, 6L, 7L, 8L),
-          ImmutableList.of(9L, 10L, 11L, 12L),
-          ImmutableList.of(3L, 14L, 15L, 16L));
+      List.of(
+          List.of(1L, 2L, 3L, 4L),
+          List.of(5L, 6L, 7L, 8L),
+          List.of(9L, 10L, 11L, 12L),
+          List.of(3L, 14L, 15L, 16L));
 
   private final P11LargestProductInAGrid largestProductInAGrid = new P11LargestProductInAGrid();
 

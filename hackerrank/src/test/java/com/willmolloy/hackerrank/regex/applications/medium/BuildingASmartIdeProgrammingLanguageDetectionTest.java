@@ -3,8 +3,8 @@ package com.willmolloy.hackerrank.regex.applications.medium;
 import static com.google.common.truth.Truth.assertThat;
 import static com.willmolloy.hackerrank.regex.applications.medium.BuildingASmartIdeProgrammingLanguageDetection.detectLanguage;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.hackerrank.regex.applications.medium.BuildingASmartIdeProgrammingLanguageDetection.Language;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,20 +16,19 @@ final class BuildingASmartIdeProgrammingLanguageDetectionTest {
 
   @Test
   void java() {
-    assertThat(detectLanguage(ImmutableList.of("import java.io.BufferedReader;")))
-        .isEqualTo(Language.JAVA);
+    assertThat(detectLanguage(List.of("import java.io.BufferedReader;"))).isEqualTo(Language.JAVA);
   }
 
   @Test
   void c() {
-    assertThat(detectLanguage(ImmutableList.of("#include<stdio.h>"))).isEqualTo(Language.C);
+    assertThat(detectLanguage(List.of("#include<stdio.h>"))).isEqualTo(Language.C);
   }
 
   @Test
   void python() {
     assertThat(
             detectLanguage(
-                ImmutableList.of(
+                List.of(
                     "# You can use Lists as Stacks in Python",
                     "stack = [10,9,8,7,6,5]",
                     "# Original contents of the stack",

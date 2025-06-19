@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.leetcode.common.TreeNode;
 import java.util.List;
 import java.util.stream.Stream;
@@ -31,16 +30,16 @@ final class P1305AllElementsInTwoBinarySearchTreesTest {
         Arguments.of(
             TreeNode.fromLevelOrder(2, 1, 4),
             TreeNode.fromLevelOrder(1, 0, 3),
-            ImmutableList.of(0, 1, 1, 2, 3, 4)),
+            List.of(0, 1, 1, 2, 3, 4)),
         Arguments.of(
             TreeNode.fromLevelOrder(0, -10, 10),
             TreeNode.fromLevelOrder(5, 1, 7, 0, 2),
-            ImmutableList.of(-10, 0, 0, 1, 2, 5, 7, 10)),
-        Arguments.of(null, TreeNode.fromLevelOrder(5, 1, 7, 0, 2), ImmutableList.of(0, 1, 2, 5, 7)),
-        Arguments.of(TreeNode.fromLevelOrder(0, -10, 10), null, ImmutableList.of(-10, 0, 10)),
+            List.of(-10, 0, 0, 1, 2, 5, 7, 10)),
+        Arguments.of(null, TreeNode.fromLevelOrder(5, 1, 7, 0, 2), List.of(0, 1, 2, 5, 7)),
+        Arguments.of(TreeNode.fromLevelOrder(0, -10, 10), null, List.of(-10, 0, 10)),
         Arguments.of(
             TreeNode.fromLevelOrder(1, null, 8),
             TreeNode.fromLevelOrder(8, 1),
-            ImmutableList.of(1, 1, 8, 8)));
+            List.of(1, 1, 8, 8)));
   }
 }

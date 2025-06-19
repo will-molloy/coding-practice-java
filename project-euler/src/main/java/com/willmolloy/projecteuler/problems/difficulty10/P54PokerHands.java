@@ -4,7 +4,6 @@ import static java.lang.String.format;
 import static java.util.function.Predicate.not;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.willmolloy.projecteuler.common.Tuples;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
@@ -438,9 +437,7 @@ final class P54PokerHands {
     }
 
     static List<Card> sortByValue(Set<Card> cards) {
-      return cards.stream()
-          .sorted(Comparator.comparing(a -> a.value))
-          .collect(ImmutableList.toImmutableList());
+      return cards.stream().sorted(Comparator.comparing(a -> a.value)).toList();
     }
 
     private static Set<Card> cardsWithoutValue(Set<Card> cards, Value filterValue) {

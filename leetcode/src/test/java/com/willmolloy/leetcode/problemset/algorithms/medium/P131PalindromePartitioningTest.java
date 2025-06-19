@@ -2,7 +2,7 @@ package com.willmolloy.leetcode.problemset.algorithms.medium;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -16,27 +16,26 @@ final class P131PalindromePartitioningTest {
 
   @Test
   void example() {
-    assertThat(fun.partition("aab"))
-        .containsExactly(ImmutableList.of("aa", "b"), ImmutableList.of("a", "a", "b"));
+    assertThat(fun.partition("aab")).containsExactly(List.of("aa", "b"), List.of("a", "a", "b"));
   }
 
   @Test
   void singleCharacter() {
-    assertThat(fun.partition("a")).containsExactly(ImmutableList.of("a"));
+    assertThat(fun.partition("a")).containsExactly(List.of("a"));
   }
 
   @Test
   void emptyString() {
-    assertThat(fun.partition("")).containsExactly(ImmutableList.of());
+    assertThat(fun.partition("")).containsExactly(List.of());
   }
 
   @Test
   void inputStringIsPalindrome() {
     assertThat(fun.partition("racecar"))
         .containsExactly(
-            ImmutableList.of("racecar"),
-            ImmutableList.of("r", "aceca", "r"),
-            ImmutableList.of("r", "a", "cec", "a", "r"),
-            ImmutableList.of("r", "a", "c", "e", "c", "a", "r"));
+            List.of("racecar"),
+            List.of("r", "aceca", "r"),
+            List.of("r", "a", "cec", "a", "r"),
+            List.of("r", "a", "c", "e", "c", "a", "r"));
   }
 }

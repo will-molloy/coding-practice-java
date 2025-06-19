@@ -2,7 +2,6 @@ package com.willmolloy.leetcode.problemset.algorithms.easy;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.leetcode.problemset.algorithms.easy.P690EmployeeImportance.Employee;
 import java.util.List;
 import java.util.stream.Stream;
@@ -28,16 +27,12 @@ final class P690EmployeeImportanceTest {
   static Stream<Arguments> examples() {
     return Stream.of(
         Arguments.of(
-            ImmutableList.of(
-                new Employee(1, 5, ImmutableList.of(2, 3)),
-                new Employee(2, 3, ImmutableList.of()),
-                new Employee(3, 3, ImmutableList.of())),
+            List.of(
+                new Employee(1, 5, List.of(2, 3)),
+                new Employee(2, 3, List.of()),
+                new Employee(3, 3, List.of())),
             1,
             11),
-        Arguments.of(
-            ImmutableList.of(
-                new Employee(1, 2, ImmutableList.of(2)), new Employee(2, 3, ImmutableList.of())),
-            2,
-            3));
+        Arguments.of(List.of(new Employee(1, 2, List.of(2)), new Employee(2, 3, List.of())), 2, 3));
   }
 }

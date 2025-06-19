@@ -1,6 +1,5 @@
 package com.willmolloy.projecteuler.problems.difficulty5;
 
-import com.google.common.collect.ImmutableList;
 import com.willmolloy.projecteuler.common.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,11 +14,7 @@ import java.util.stream.Collectors;
 final class P24LexicographicPermutations {
 
   public String apply(String seq, int indexStartingFromOne) {
-    List<Integer> digits =
-        seq.chars()
-            .map(Character::getNumericValue)
-            .boxed()
-            .collect(ImmutableList.toImmutableList());
+    List<Integer> digits = seq.chars().map(Character::getNumericValue).boxed().toList();
 
     return Collections.permutations(digits)
         .skip(indexStartingFromOne - 1)
