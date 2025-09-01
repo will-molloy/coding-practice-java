@@ -6,7 +6,6 @@ import static java.util.function.Predicate.not;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableSet;
 import com.willmolloy.projecteuler.common.Tuples;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -29,7 +28,6 @@ import org.apache.logging.log4j.Logger;
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-@SuppressFBWarnings("UPM_UNCALLED_PRIVATE_METHOD") // TODO remove later, bug with java 11
 final class P54PokerHands {
 
   private P54PokerHands() {}

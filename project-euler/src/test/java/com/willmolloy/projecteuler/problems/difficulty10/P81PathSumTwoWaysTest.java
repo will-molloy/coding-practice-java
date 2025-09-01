@@ -3,6 +3,7 @@ package com.willmolloy.projecteuler.problems.difficulty10;
 import static com.google.common.truth.Truth.assertThat;
 
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -33,7 +34,7 @@ public final class P81PathSumTwoWaysTest {
               .map(line -> Arrays.stream(line.split(",")).mapToInt(Integer::valueOf).toArray())
               .toArray(int[][]::new);
     } catch (IOException e) {
-      throw new RuntimeException(e);
+      throw new UncheckedIOException(e);
     } finally {
       MATRIX_80X80 = temp;
     }
