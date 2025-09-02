@@ -87,7 +87,7 @@ allprojects {
   }
 
   tasks.withType<Test> {
-    maxParallelForks = Runtime.getRuntime().availableProcessors()
+    maxParallelForks = (Runtime.getRuntime().availableProcessors() / 2).coerceAtLeast(1)
     useJUnitPlatform()
     testLogging {
       events = setOf(TestLogEvent.FAILED, TestLogEvent.SKIPPED)
@@ -109,6 +109,8 @@ allprojects {
         }),
       )
     }
+    reports.html.required = false
+    reports.junitXml.required = false
     finalizedBy(tasks.withType<JacocoReport>())
   }
 
