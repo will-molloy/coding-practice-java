@@ -3,6 +3,7 @@ package com.willmolloy.adventofcode.common;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+import java.util.Optional;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -12,35 +13,35 @@ import org.junit.jupiter.api.Test;
  */
 public abstract class DayTest {
   private final Day day;
+  private final FileInput exampleInput;
+  private final Optional<FileInput> realInput;
 
   protected DayTest(Day day) {
     this.day = day;
+    this.exampleInput = FileInput.example(day);
+    this.realInput = FileInput.real(day);
   }
 
   @Test
   void part1_exampleInput() {
-    var input = FileInput.example(day);
-    assertThat(day.part1(input)).isEqualTo(part1().example());
+    assertThat(day.part1(exampleInput)).isEqualTo(part1().example());
   }
 
   @Test
   void part1_realInput() {
-    var input = FileInput.real(day);
-    assumeTrue(input.isPresent());
-    assertThat(day.part1(input.get())).isEqualTo(part1().real());
+    assumeTrue(realInput.isPresent());
+    assertThat(day.part1(realInput.get())).isEqualTo(part1().real());
   }
 
   @Test
   void part2_exampleInput() {
-    var input = FileInput.example(day);
-    assertThat(day.part2(input)).isEqualTo(part2().example());
+    assertThat(day.part2(exampleInput)).isEqualTo(part2().example());
   }
 
   @Test
   void part2_realInput() {
-    var input = FileInput.real(day);
-    assumeTrue(input.isPresent());
-    assertThat(day.part2(input.get())).isEqualTo(part2().real());
+    assumeTrue(realInput.isPresent());
+    assertThat(day.part2(realInput.get())).isEqualTo(part2().real());
   }
 
   protected abstract Answer part1();
