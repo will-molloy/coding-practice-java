@@ -16,7 +16,7 @@ object Day14 : Day(2024, 14) {
         // TODO lib for parsing into data class
         val (x, y, dx, dy) =
           Regex("p=(\\d+),(\\d+) v=(-?\\d+),(-?\\d+)").matchEntire(line)!!.destructured
-        Robot(BoundedPoint.unknownBound(x.toLong(), y.toLong()), dx.toLong(), dy.toLong())
+        Robot(BoundedPoint(x.toLong(), y.toLong()), dx.toLong(), dy.toLong())
       }
     val maxX = robots.maxOf { it.p.x } + 1
     val maxY = robots.maxOf { it.p.y } + 1
