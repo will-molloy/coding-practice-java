@@ -7,45 +7,30 @@ import com.willmolloy.adventofcode.common.Input
 object Day2 : Day(2025, 2) {
 
   override fun part1(input: Input): Any {
-    val split = input.string().split(",")
-
-    var res  = 0L
-
-    for (s in split) {
-      val r1 = s.split("-")[0].toLong()
-      val r2 = s.split("-")[1].toLong()
-
-      for (i in r1..r2) {
-        val iString = i.toString()
-        val first = i.toString().substring(0, iString.length / 2)
-        val second = i.toString().substring(iString.length / 2)
-        if (first == second){
-          res += i
-        }
-      }
-    }
-
-    return res
+    return solve(input) { it.take(it.length / 2) == it.drop(it.length / 2) }
   }
 
   override fun part2(input: Input): Any {
-    val split = input.string().split(",")
+    return solve(input) {
+      ((1..it.length / 2).any { chunkSize ->
+        val chunked = it.chunked(chunkSize)
+        chunked.all { s -> s == chunked.first() }
+      })
+    }
+  }
 
-    var res  = 0L
+  private fun solve(input: Input, test: (String) -> Boolean): Long {
+    val ranges = input.string().split(",")
 
-    for (s in split) {
-      val r1 = s.split("-")[0].toLong()
-      val r2 = s.split("-")[1].toLong()
+    var res = 0L
 
-      for (i in r1..r2) {
-        val iString = i.toString()
+    for (range in ranges) {
+      val start = range.split("-")[0].toLong()
+      val end = range.split("-")[1].toLong()
 
-        for (j in 1 until iString.length) {
-          val chunked = iString.chunked(j)
-          if (chunked.all { s -> s == chunked[0] }){
-            res += i
-            break;
-          }
+      for (id in start..end) {
+        if (test(id.toString())) {
+          res += id
         }
       }
     }
