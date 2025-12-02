@@ -6,10 +6,17 @@ import com.willmolloy.adventofcode.common.Input
 /** https://adventofcode.com/2025/day/1 */
 object Day1 : Day(2025, 1) {
 
-  override fun part1(input: Input): Any {
+  override fun part1(input: Input) = solve(input).first
+
+  override fun part2(input: Input) = solve(input).second
+
+  private fun solve(input: Input): Pair<Int, Int> {
     val lines = input.lines()
 
-    var res = 0
+    var part1Res = 0
+    // just move the res count into the inner loops...
+    var part2Res = 0
+
     var dial = 50
 
     for (line in lines) {
@@ -24,6 +31,10 @@ object Day1 : Day(2025, 1) {
             if (dial == -1) {
               dial = 99
             }
+
+            if (dial == 0) {
+              part2Res++
+            }
           }
         }
         'R' -> {
@@ -32,57 +43,20 @@ object Day1 : Day(2025, 1) {
             dial++
             if (dial == 100) {
               dial = 0
+            }
+
+            if (dial == 0) {
+              part2Res++
             }
           }
         }
       }
 
       if (dial == 0) {
-        res++
+        part1Res++
       }
     }
 
-    return res
-  }
-
-  // just move the res count into the inner loops...
-  override fun part2(input: Input): Any {
-    val lines = input.lines()
-
-    var res = 0
-    var dial = 50
-
-    for (line in lines) {
-      var nums = line.substring(1).toInt()
-
-      when (line[0]) {
-        'L' -> {
-          // dec
-          while (nums-- > 0) {
-            dial--
-            if (dial == -1) {
-              dial = 99
-            }
-            if (dial == 0) {
-              res++
-            }
-          }
-        }
-        'R' -> {
-          // inc
-          while (nums-- > 0) {
-            dial++
-            if (dial == 100) {
-              dial = 0
-            }
-            if (dial == 0) {
-              res++
-            }
-          }
-        }
-      }
-    }
-
-    return res
+    return Pair(part1Res, part2Res)
   }
 }

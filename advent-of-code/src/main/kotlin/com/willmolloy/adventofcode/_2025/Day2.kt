@@ -6,18 +6,16 @@ import com.willmolloy.adventofcode.common.Input
 /** https://adventofcode.com/2025/day/2 */
 object Day2 : Day(2025, 2) {
 
-  override fun part1(input: Input): Any {
-    return solve(input) { it.take(it.length / 2) == it.drop(it.length / 2) }
-  }
+  override fun part1(input: Input) =
+    solve(input) { id -> id.take(id.length / 2) == id.drop(id.length / 2) }
 
-  override fun part2(input: Input): Any {
-    return solve(input) {
-      ((1..it.length / 2).any { chunkSize ->
-        val chunked = it.chunked(chunkSize)
+  override fun part2(input: Input) =
+    solve(input) { id ->
+      ((1..id.length / 2).any { chunkSize ->
+        val chunked = id.chunked(chunkSize)
         chunked.all { s -> s == chunked.first() }
       })
     }
-  }
 
   private fun solve(input: Input, test: (String) -> Boolean): Long {
     val ranges = input.string().split(",")
