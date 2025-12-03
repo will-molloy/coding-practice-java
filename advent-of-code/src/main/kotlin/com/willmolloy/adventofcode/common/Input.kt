@@ -15,6 +15,8 @@ interface Input {
   /** Read input num lines. */
   fun numLines(): List<LongArray>
 
+  fun lineDigits(): List<IntArray>
+
   /** Read input string. */
   fun string(): String
 

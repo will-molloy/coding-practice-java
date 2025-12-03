@@ -42,6 +42,8 @@ internal class FileInput private constructor(private val path: Path) : Input {
 
   override fun numLines(): List<LongArray> = lines().map { parseNums(it).toLongArray() }
 
+  override fun lineDigits(): List<IntArray> = lines().map { parseDigits(it).toIntArray() }
+
   // join string WITHOUT newlines...!
   override fun string(): String = lines().joinToString("")
 
@@ -53,4 +55,6 @@ internal class FileInput private constructor(private val path: Path) : Input {
   }
 
   private fun parseNums(line: String): List<Long> = line.split("\\s+".toRegex()).map { it.toLong() }
+
+  private fun parseDigits(line: String): List<Int> = line.toCharArray().map { it.digitToInt() }
 }

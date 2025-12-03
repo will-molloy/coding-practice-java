@@ -10,12 +10,13 @@ object Day3 : Day(2025, 3) {
   override fun part1(input: Input): Any {
     var res = 0
 
-    for (line in input.lines()) {
+    for (line in input.lineDigits()) {
+
       // try all the combos...
       var lineMax = 0
-      for (i in 0 until line.length) {
-        for (j in i + 1 until line.length) {
-          val num = line[i].digitToInt() * 10 + line[j].digitToInt()
+      for (i in 0 until line.size) {
+        for (j in i + 1 until line.size) {
+          val num = line[i] * 10 + line[j]
           lineMax = max(lineMax, num)
         }
       }
@@ -64,16 +65,16 @@ object Day3 : Day(2025, 3) {
 
     var res = 0L
 
-    for (line in input.lines()) {
+    for (line in input.lineDigits()) {
       var sum = 0L
 
       var remain = 12
       var l = 0
 
       while (remain-- > 0) {
-        val r = line.length - remain - 1
+        val r = line.size - remain - 1
 
-        val maxDigit = (l..r).map { IndexedValue(it, line[it].digitToInt()) }.maxBy { it.value }
+        val maxDigit = (l..r).map { IndexedValue(it, line[it]) }.maxBy { it.value }
         sum = sum * 10 + maxDigit.value
         l = maxDigit.index + 1
       }
