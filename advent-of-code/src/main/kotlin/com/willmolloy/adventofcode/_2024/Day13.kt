@@ -11,7 +11,7 @@ object Day13 : Day(2024, 13) {
   private data class Game(val a: Point, val b: Point, val p: Point)
 
   private fun parseInput(input: Input): List<Game> {
-    val lines = input.lines()
+    val lines = input.readLines()
     return lines.indices.step(4).map { i ->
       // TODO lib for parsing into data class
       val (ax, ay) = Regex("Button A: X[+](\\d+), Y[+](\\d+)").matchEntire(lines[i])!!.destructured

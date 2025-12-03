@@ -15,7 +15,7 @@ import scala.collection.mutable
 object Day6 extends Day(2024, 6) {
 
   override def part1(input: Input): Int = {
-    val grid = input.charGrid().toMutable
+    val grid = input.readCharGrid().toMutable
     val visited = mutable.Set[Point]()
 
     @tailrec
@@ -51,7 +51,7 @@ object Day6 extends Day(2024, 6) {
   }
 
   override def part2(input: Input): Int = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
 
     // find start
     val start = grid

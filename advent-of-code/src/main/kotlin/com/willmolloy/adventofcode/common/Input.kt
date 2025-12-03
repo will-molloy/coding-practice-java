@@ -3,26 +3,27 @@ package com.willmolloy.adventofcode.common
 import com.willmolloy.adventofcode.common.grid.CharGrid
 
 /**
- * Helper for reading the various inputs.
+ * Helps read the various advent-of-code inputs.
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
 interface Input {
 
-  /** Read input lines. */
-  fun lines(): List<String>
+  /** Reads the input as a single string. */
+  fun readString(): String
 
-  /** Read input num lines. */
-  fun numLines(): List<LongArray>
+  /** Reads the input as a list of lines. */
+  fun readLines(): List<String>
 
-  fun lineDigits(): List<IntArray>
+  /** Reads the input as space-separated numbers. */
+  fun readNums(): LongArray
 
-  /** Read input string. */
-  fun string(): String
+  /** Reads the input as lines of space-separated numbers. */
+  fun readLinesOfNums(): List<LongArray>
 
-  /** Read input nums. */
-  fun nums(): LongArray
+  /** Reads the input as lines of digits. */
+  fun readLinesOfDigits(): List<IntArray>
 
-  /** Read input [CharGrid]. */
-  fun charGrid(): CharGrid
+  /** Reads the input as a 2D character grid. */
+  fun readCharGrid(): CharGrid
 }

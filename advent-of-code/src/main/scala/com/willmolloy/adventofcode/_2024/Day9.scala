@@ -10,7 +10,7 @@ import scala.collection.mutable
 object Day9 extends Day(2024, 9) {
 
   override def part1(input: Input): Long = {
-    val diskMap = input.string().split("").map(_.toInt)
+    val diskMap = input.readString().split("").map(_.toInt)
     checkSum(compact(expand(diskMap)))
   }
 
@@ -54,7 +54,7 @@ object Day9 extends Day(2024, 9) {
   }
 
   override def part2(input: Input): Long = {
-    val diskMap = input.string().split("").map(_.toInt)
+    val diskMap = input.readString().split("").map(_.toInt)
     checkSum2(compact2(expand2(diskMap)))
   }
 

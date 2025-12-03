@@ -9,11 +9,11 @@ import com.willmolloy.adventofcode.scala.Adapters.ListAdapter
 object Day7 extends Day(2024, 7) {
 
   override def part1(input: Input): Long = {
-    input.lines().map(result(_, Seq('+', '*'))).sum
+    input.readLines().map(result(_, Seq('+', '*'))).sum
   }
 
   override def part2(input: Input): Long = {
-    input.lines().map(result(_, Seq('+', '*', '|'))).sum
+    input.readLines().map(result(_, Seq('+', '*', '|'))).sum
   }
 
   private def result(line: String, ops: Seq[Char]): Long = {

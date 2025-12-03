@@ -14,16 +14,9 @@ internal class FileInput private constructor(private val path: Path) : Input {
 
   companion object {
     @JvmStatic
-    fun example(day: Day): FileInput {
-      val fileName = fileName(day, "example_input")
-      return requireNotNull(getInput(fileName)) { "File not found: $fileName" }
-    }
+    fun example(day: Day): FileInput = requireNotNull(getInput(fileName(day, "example_input")))
 
-    @JvmStatic
-    fun real(day: Day): FileInput? {
-      val fileName = fileName(day, "real_input")
-      return getInput(fileName)
-    }
+    @JvmStatic fun real(day: Day): FileInput? = getInput(fileName(day, "real_input"))
 
     private fun fileName(day: Day, inputDir: String) =
       "input/${day.year}/$inputDir/day${day.day}.txt"
@@ -38,23 +31,22 @@ internal class FileInput private constructor(private val path: Path) : Input {
     }
   }
 
-  override fun lines(): List<String> = path.readLines()
-
-  override fun numLines(): List<LongArray> = lines().map { parseNums(it).toLongArray() }
-
-  override fun lineDigits(): List<IntArray> = lines().map { parseDigits(it).toIntArray() }
-
   // join string WITHOUT newlines...!
-  override fun string(): String = lines().joinToString("")
+  override fun readString(): String = readLines().joinToString("")
 
-  override fun nums(): LongArray = lines().flatMap(::parseNums).toLongArray()
+  override fun readLines(): List<String> = path.readLines()
 
-  override fun charGrid(): CharGrid {
-    val array = lines().map { it.toCharArray() }.toTypedArray()
-    return CharGrid(array)
-  }
+  override fun readNums(): LongArray = readLines().flatMap(::parseNums).toLongArray()
 
-  private fun parseNums(line: String): List<Long> = line.split("\\s+".toRegex()).map { it.toLong() }
+  override fun readLinesOfNums(): List<LongArray> = readLines().map { parseNums(it).toLongArray() }
+
+  override fun readLinesOfDigits(): List<IntArray> =
+    readLines().map { parseDigits(it).toIntArray() }
+
+  override fun readCharGrid(): CharGrid =
+    CharGrid(readLines().map { it.toCharArray() }.toTypedArray())
+
+  private fun parseNums(line: String): List<Long> = line.split(Regex("\\s+")).map { it.toLong() }
 
   private fun parseDigits(line: String): List<Int> = line.toCharArray().map { it.digitToInt() }
 }

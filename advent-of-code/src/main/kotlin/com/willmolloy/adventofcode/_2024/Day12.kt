@@ -10,7 +10,7 @@ import com.willmolloy.adventofcode.common.grid.Point
 object Day12 : Day(2024, 12) {
 
   override fun part1(input: Input): Any {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     return regions(grid).sumOf { region ->
       val a = region.size
       val p = perimeter(region)
@@ -19,7 +19,7 @@ object Day12 : Day(2024, 12) {
   }
 
   override fun part2(input: Input): Any {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     return regions(grid).sumOf { region ->
       val a = region.size
       val s = sides(region)

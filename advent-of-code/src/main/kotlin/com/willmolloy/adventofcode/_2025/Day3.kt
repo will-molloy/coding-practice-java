@@ -10,7 +10,7 @@ object Day3 : Day(2025, 3) {
   override fun part1(input: Input): Any {
     var res = 0
 
-    for (line in input.lineDigits()) {
+    for (line in input.readLinesOfDigits()) {
 
       // try all the combos...
       var lineMax = 0
@@ -65,7 +65,7 @@ object Day3 : Day(2025, 3) {
 
     var res = 0L
 
-    for (line in input.lineDigits()) {
+    for (line in input.readLinesOfDigits()) {
       var sum = 0L
 
       var remain = 12

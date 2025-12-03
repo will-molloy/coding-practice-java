@@ -13,7 +13,7 @@ import scala.collection.mutable
 object Day10 extends Day(2024, 10) {
 
   override def part1(input: Input): Long = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     grid.filter(grid(_) == '0').map(score(grid, _)).sum
   }
 
@@ -39,7 +39,7 @@ object Day10 extends Day(2024, 10) {
   }
 
   override def part2(input: Input): Long = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     grid.filter(grid(_) == '0').map(rating(grid, _)).sum
   }
 

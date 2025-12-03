@@ -11,7 +11,7 @@ import scala.annotation.tailrec
 object Day5 extends Day(2024, 5) {
 
   override def part1(input: Input): Int = {
-    val lines = input.lines()
+    val lines = input.readLines()
     val rules = lines
       .takeWhile(s => s.contains('|'))
       .map(_.split('|').map(_.toInt))
@@ -37,7 +37,7 @@ object Day5 extends Day(2024, 5) {
   }
 
   override def part2(input: Input): Int = {
-    val lines = input.lines()
+    val lines = input.readLines()
     val rules = lines
       .takeWhile(s => s.contains('|'))
       .map(_.split('|').map(_.toInt))

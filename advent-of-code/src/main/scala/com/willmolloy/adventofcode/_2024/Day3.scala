@@ -9,7 +9,7 @@ object Day3 extends Day(2024, 3) {
 
   override def part1(input: Input): Int = {
     val p = """mul\((\d+),(\d+)\)""".r
-    val matches = p.findAllMatchIn(input.string())
+    val matches = p.findAllMatchIn(input.readString())
 
     matches
       .map(m => {
@@ -31,7 +31,7 @@ object Day3 extends Day(2024, 3) {
 
   override def part2(input: Input): Int = {
     val p = """(?:do\(\)|^)(.*?)(?:don't\(\)|$)""".r
-    val matches = p.findAllMatchIn(input.string())
+    val matches = p.findAllMatchIn(input.readString())
 
     matches
       .map(m => {

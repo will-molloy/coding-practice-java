@@ -13,7 +13,7 @@ import scala.annotation.tailrec
 object Day4 extends Day(2024, 4) {
 
   override def part1(input: Input): Int = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     var count = 0
 
     @tailrec
@@ -43,7 +43,7 @@ object Day4 extends Day(2024, 4) {
   }
 
   override def part2(input: Input): Int = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     grid
       // X-MAS must be centered on 'A'
       .filter(p => p.y >= 1 && p.x >= 1 && p.y < grid.height - 1 && p.x < grid.width - 1)

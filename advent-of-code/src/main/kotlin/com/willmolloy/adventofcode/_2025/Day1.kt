@@ -11,7 +11,7 @@ object Day1 : Day(2025, 1) {
   override fun part2(input: Input) = solve(input).second
 
   private fun solve(input: Input): Pair<Int, Int> {
-    val lines = input.lines()
+    val lines = input.readLines()
 
     var part1Res = 0
     // just move the res count into the inner loops...

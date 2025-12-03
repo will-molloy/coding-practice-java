@@ -9,7 +9,7 @@ import com.willmolloy.adventofcode.common.grid.Direction
 object Day15 : Day(2024, 15) {
 
   override fun part1(input: Input): Any {
-    val lines = input.lines()
+    val lines = input.readLines()
     val grid =
       CharGrid(lines.takeWhile { it.contains('#') }.map { it.toCharArray() }.toTypedArray())
         .toMutable()

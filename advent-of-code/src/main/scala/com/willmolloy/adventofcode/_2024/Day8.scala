@@ -15,7 +15,7 @@ import scala.util.boundary.break
 object Day8 extends Day(2024, 8) {
 
   override def part1(input: Input): Long = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     val nodes = mutable.Set[Point]()
 
     for (p1 <- grid) {
@@ -39,7 +39,7 @@ object Day8 extends Day(2024, 8) {
   }
 
   override def part2(input: Input): Long = {
-    val grid = input.charGrid()
+    val grid = input.readCharGrid()
     val nodes = mutable.Set[Point]()
 
     for (p1 <- grid) {

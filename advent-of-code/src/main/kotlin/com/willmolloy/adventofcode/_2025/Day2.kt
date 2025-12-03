@@ -18,7 +18,7 @@ object Day2 : Day(2025, 2) {
     }
 
   private fun solve(input: Input, test: (String) -> Boolean): Long {
-    val ranges = input.string().split(",")
+    val ranges = input.readString().split(",")
 
     var res = 0L
 

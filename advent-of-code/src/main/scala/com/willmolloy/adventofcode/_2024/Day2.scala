@@ -12,13 +12,13 @@ import scala.annotation.tailrec
 object Day2 extends Day(2024, 2) {
 
   override def part1(input: Input): Int = {
-    input.numLines().count(isSafe)
+    input.readLinesOfNums().count(isSafe)
   }
 
   override def part2(input: Input): Int = {
     // try all combinations
     input
-      .numLines()
+      .readLinesOfNums()
       .count(report =>
         report.indices.exists(i => {
           val newReport = report.take(i) ++ report.drop(i + 1)

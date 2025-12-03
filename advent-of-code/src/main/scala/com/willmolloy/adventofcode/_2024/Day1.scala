@@ -9,7 +9,7 @@ import com.willmolloy.adventofcode.scala.Adapters.ListAdapter
 object Day1 extends Day(2024, 1) {
 
   override def part1(input: Input): Long = {
-    val lines = input.numLines()
+    val lines = input.readLinesOfNums()
     val list1 = lines.map(_.head)
     val list2 = lines.map(_.last)
 
@@ -20,7 +20,7 @@ object Day1 extends Day(2024, 1) {
   }
 
   override def part2(input: Input): Long = {
-    val lines = input.numLines()
+    val lines = input.readLinesOfNums()
     val list1 = lines.map(_.head)
     val list2 = lines.map(_.last)
 

@@ -12,7 +12,7 @@ object Day14 : Day(2024, 14) {
 
   private fun parseInput(input: Input): List<Robot> {
     val robots =
-      input.lines().map { line ->
+      input.readLines().map { line ->
         // TODO lib for parsing into data class
         val (x, y, dx, dy) =
           Regex("p=(\\d+),(\\d+) v=(-?\\d+),(-?\\d+)").matchEntire(line)!!.destructured
