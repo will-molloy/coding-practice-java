@@ -25,7 +25,7 @@ interface Grid<T, GridT : Grid<T, GridT, MutableGridT>, MutableGridT : GridT> : 
   /**
    * Convert to mutable grid.
    *
-   * `this` grid must remain immutable.
+   * `this` grid will remain immutable.
    */
   fun toMutable(): MutableGridT
 

@@ -13,7 +13,7 @@ object Day2 : Day(2025, 2) {
     solve(input) { id ->
       ((1..id.length / 2).any { chunkSize ->
         val chunked = id.chunked(chunkSize)
-        chunked.all { s -> s == chunked.first() }
+        chunked.all { it == chunked.first() }
       })
     }
 
