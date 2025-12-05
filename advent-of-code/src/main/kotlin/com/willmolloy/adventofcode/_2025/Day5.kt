@@ -37,13 +37,15 @@ object Day5 : Day(2025, 5) {
     val merged = mutableListOf<LongRange>()
 
     for (range in sorted) {
-      if (merged.isEmpty() || range.start > merged.last().endInclusive) {
+      if (merged.isNotEmpty() && range.start <= merged.last().endInclusive + 1) {
+        // overlapping case
+        // the +1 means adjacent ranges will be merged too, e.g. [3,5] and [6,10] -> [3,10]
+        val last = merged.removeLast()
+        val nextLast = last.start..max(last.endInclusive, range.endInclusive)
+        merged.add(nextLast)
+      } else {
         // non-overlapping case
         merged.add(range)
-      } else {
-        // overlapping case
-        merged[merged.size - 1] =
-          merged.last().start..max(merged.last().endInclusive, range.endInclusive)
       }
     }
 
