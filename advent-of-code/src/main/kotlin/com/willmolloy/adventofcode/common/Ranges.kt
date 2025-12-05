@@ -9,9 +9,7 @@ val IntRange.size: Int
 val LongRange.size: Long
   get() = endInclusive - start + 1
 
-/** Assumes overlapping. */
-fun IntRange.merge(other: IntRange) = min(start, other.start)..max(endInclusive, other.endInclusive)
+fun IntRange.span(other: IntRange) = min(start, other.start)..max(endInclusive, other.endInclusive)
 
-/** Assumes overlapping. */
-fun LongRange.merge(other: LongRange) =
+fun LongRange.span(other: LongRange) =
   min(start, other.start)..max(endInclusive, other.endInclusive)

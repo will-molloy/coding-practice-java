@@ -2,8 +2,8 @@ package com.willmolloy.adventofcode._2025
 
 import com.willmolloy.adventofcode.common.Day
 import com.willmolloy.adventofcode.common.Input
-import com.willmolloy.adventofcode.common.merge
 import com.willmolloy.adventofcode.common.size
+import com.willmolloy.adventofcode.common.span
 
 /** https://adventofcode.com/2025/day/5 */
 object Day5 : Day(2025, 5) {
@@ -41,7 +41,7 @@ object Day5 : Day(2025, 5) {
       if (merged.isNotEmpty() && range.start <= merged.last().endInclusive + 1) {
         // overlapping case
         // the +1 means adjacent ranges will be merged too, e.g. [3,5] and [6,10] -> [3,10]
-        merged[merged.lastIndex] = merged.last().merge(range)
+        merged[merged.lastIndex] = merged.last().span(range)
       } else {
         // non-overlapping case
         merged.add(range)
