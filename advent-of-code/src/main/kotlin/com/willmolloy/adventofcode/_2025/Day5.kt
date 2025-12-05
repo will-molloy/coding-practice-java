@@ -2,7 +2,8 @@ package com.willmolloy.adventofcode._2025
 
 import com.willmolloy.adventofcode.common.Day
 import com.willmolloy.adventofcode.common.Input
-import kotlin.math.max
+import com.willmolloy.adventofcode.common.merge
+import com.willmolloy.adventofcode.common.size
 
 /** https://adventofcode.com/2025/day/5 */
 object Day5 : Day(2025, 5) {
@@ -40,9 +41,7 @@ object Day5 : Day(2025, 5) {
       if (merged.isNotEmpty() && range.start <= merged.last().endInclusive + 1) {
         // overlapping case
         // the +1 means adjacent ranges will be merged too, e.g. [3,5] and [6,10] -> [3,10]
-        val last = merged.removeLast()
-        val nextLast = last.start..max(last.endInclusive, range.endInclusive)
-        merged.add(nextLast)
+        merged[merged.lastIndex] = merged.last().merge(range)
       } else {
         // non-overlapping case
         merged.add(range)
@@ -51,7 +50,4 @@ object Day5 : Day(2025, 5) {
 
     return merged
   }
-
-  private val LongRange.size: Long
-    get() = endInclusive - start + 1
 }
