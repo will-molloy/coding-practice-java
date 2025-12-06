@@ -1,0 +1,107 @@
+package com.willmolloy.adventofcode._2025
+
+import com.willmolloy.adventofcode.common.Day
+import com.willmolloy.adventofcode.common.Input
+
+/** https://adventofcode.com/2025/day/6 */
+object Day6 : Day(2025, 6) {
+
+  fun <T> T.debug(): T {
+    println(this)
+    println()
+    return this
+  }
+
+  override fun part1(input: Input): Any {
+    val nums =
+      input
+        .readLines()
+        .dropLast(1)
+        .debug()
+        .map { it.trim().split(Regex("\\s+")).map { it.toLong() } }
+        .debug()
+
+    val ops = input.readLines().last().trim().split(Regex("\\s+")).debug()
+
+    var total = 0L
+    for (col in 0 until nums.first().size) {
+      val add = ops[col] == "+"
+
+      var res = if (add) 0L else 1L
+
+      for (row in 0 until nums.size) {
+        if (add) {
+          res += nums[row][col]
+        } else {
+          res *= nums[row][col]
+        }
+      }
+
+      res.debug()
+
+      total += res
+    }
+
+    return total
+  }
+
+  override fun part2(input: Input): Any {
+    val ops = input.readLines().last().trim().split(Regex("\\s+")).debug()
+
+    /**
+     * 123 328  51 64
+     *  45 64  387 23
+     *   6 98  215 314
+     * *   +   *   +
+     */
+    // read as grid and transpose?
+    /**
+     * 356
+     * 24
+     * 1
+     */
+    // yeah it works...
+
+    val grid = input.readLines().dropLast(1).map { it.split("") }.debug()
+
+    val transpose = mutableListOf<MutableList<String>>()
+    for (col in 0 until grid.first().size) {
+      val list = mutableListOf<String>()
+      transpose.add(list)
+      for (row in 0 until grid.size) {
+        list.add(grid[row][col])
+      }
+    }
+    transpose.debug()
+
+    val nums =
+      transpose.map { list -> list.filter { it.isNotBlank() }.joinToString(separator = "") }.debug()
+    // the numbers are now grouped, with empty string separating them in the list
+
+    var total = 0L
+    var numsI = 1
+    for (op in ops) {
+      val add = op == "+"
+
+      var res = if (add) 0L else 1L
+
+      while (numsI < nums.size) {
+        val num = nums[numsI++]
+        if (num.isEmpty()) {
+          break
+        }
+
+        if (add) {
+          res += num.toLong()
+        } else {
+          res *= num.toLong()
+        }
+      }
+
+      res.debug()
+
+      total += res
+    }
+    return total
+  }
+}
