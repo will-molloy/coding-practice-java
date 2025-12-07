@@ -10,6 +10,8 @@ package com.willmolloy.adventofcode.common.grid
 @JvmRecord
 data class Point(val x: Long, val y: Long) {
 
+  constructor(x: Int, y: Int) : this(x.toLong(), y.toLong())
+
   /**
    * Move the point.
    *

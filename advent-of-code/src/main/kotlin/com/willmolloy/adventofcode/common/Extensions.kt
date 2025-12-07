@@ -9,6 +9,16 @@ fun <T> T.debug(): T {
   return this
 }
 
+fun LongArray.debug(): LongArray {
+  joinToString("").debug()
+  return this
+}
+
+fun Array<LongArray>.debug(): Array<LongArray> {
+  joinToString("\n") { it.joinToString("") }.debug()
+  return this
+}
+
 fun <T> List<List<T>>.transpose(): List<List<T>> {
   val rows = size
   val cols = if (isEmpty()) 0 else first().size
@@ -21,7 +31,10 @@ fun <T> List<List<T>>.transpose(): List<List<T>> {
     }
   }
 
-  return transpose.map { it.requireNoNulls() }
+  return transpose.map {
+    @Suppress("UNCHECKED_CAST")
+    it as List<T>
+  }
 }
 
 val IntRange.size: Int

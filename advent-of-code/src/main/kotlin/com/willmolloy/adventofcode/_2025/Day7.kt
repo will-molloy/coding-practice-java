@@ -5,20 +5,16 @@ import com.willmolloy.adventofcode.common.Input
 import com.willmolloy.adventofcode.common.debug
 import com.willmolloy.adventofcode.common.grid.CharGrid
 import com.willmolloy.adventofcode.common.grid.Direction
-import com.willmolloy.adventofcode.common.grid.Grid
 import com.willmolloy.adventofcode.common.grid.Point
 
 /** https://adventofcode.com/2025/day/7 */
 object Day7 : Day(2025, 7) {
 
   override fun part1(input: Input): Any {
-    val grid = getFinalGrid(input)
+    val grid = getFinalGrid(input).debug()
 
     // number of spits
-    return grid.filter { grid[it] == '^' }.count {
-      val up = it.move(Direction.UP)
-      grid.inbounds(up) && grid[up] == '|'
-    }
+    return grid.count { grid[it] == '^' && grid[it.move(Direction.UP)] == '|' }
   }
 
   override fun part2(input: Input): Any {
@@ -47,38 +43,41 @@ object Day7 : Day(2025, 7) {
 
     val dp = Array(grid.height()) { LongArray(grid.width()) { 0L } }
 
-    for (col in 0 until grid.width()) {
-      val row = grid.height() - 1
-      val p = Point(col.toLong(), row.toLong())
-      if (grid[p] == '|') {
-        dp[row][col] = 1
-      }
-    }
-    dp.joinToString("\n") { it.joinToString("") }.debug()
-
-    for (row in grid.height() - 2 downTo 0) {
+    for (row in grid.height() - 1 downTo 0) {
       for (col in 0 until grid.width()) {
-        val p = Point(col.toLong(), row.toLong())
-        val down = p.move(Direction.DOWN)
+        val point = Point(col, row)
+
+        if (row == grid.height() - 1) {
+          // initial value
+          if (grid[point] == '|') {
+            dp[row][col] = 1
+          }
+          continue
+        }
+
+        // look down
+        val down = point.move(Direction.DOWN)
 
         if (grid[down] == '|') {
+          // simply forward the single path
           dp[row][col] = dp[row + 1][col]
         } else if (grid[down] == '^') {
-          // sum
+          // sum the splitting paths
           dp[row][col] = dp[row + 1][col - 1] + dp[row + 1][col + 1]
         }
       }
 
-      dp.joinToString("\n") { it.joinToString("") }.debug()
+      dp.debug()
     }
 
-    val start = grid.find { grid[it] == 'S' }!!
+    val start = grid.find { grid[it] == 'S' } ?: error("Start not found")
     return dp[start.y.toInt()][start.x.toInt()]
   }
 
   private fun getFinalGrid(input: Input): CharGrid {
     var grid = input.readCharGrid()
 
+    // can probably optimise this...
     while (true) {
       var changed = false
 
@@ -88,27 +87,27 @@ object Day7 : Day(2025, 7) {
         if (grid[point] == 'S' || grid[point] == '|') {
           // go down
           val down = point.move(Direction.DOWN)
+
           if (grid.inbounds(down)) {
+
             if (grid[down] == '^') {
               // split
-
               val left = down.move(Direction.LEFT)
               if (grid.inbounds(left) && grid[left] == '.') {
                 nextGrid[left] = '|'
                 changed = true
               }
-
               val right = down.move(Direction.RIGHT)
-              if (grid.inbounds(right) && grid[left] == '.') {
+              if (grid.inbounds(right) && grid[right] == '.') {
                 nextGrid[right] = '|'
                 changed = true
               }
-            } else {
-              if (grid[down] == '.') {
-                // simply go down
-                nextGrid[down] = '|'
-                changed = true
-              }
+            }
+
+            if (grid[down] == '.') {
+              // simply go down
+              nextGrid[down] = '|'
+              changed = true
             }
           }
         }
