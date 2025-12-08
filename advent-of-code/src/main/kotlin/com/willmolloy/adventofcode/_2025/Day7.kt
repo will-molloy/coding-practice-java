@@ -2,7 +2,7 @@ package com.willmolloy.adventofcode._2025
 
 import com.willmolloy.adventofcode.common.Day
 import com.willmolloy.adventofcode.common.Input
-import com.willmolloy.adventofcode.common.debug
+import com.willmolloy.adventofcode.common.extensions.debug
 import com.willmolloy.adventofcode.common.grid.CharGrid
 import com.willmolloy.adventofcode.common.grid.Direction
 import com.willmolloy.adventofcode.common.grid.Point
@@ -41,6 +41,7 @@ object Day7 : Day(2025, 7) {
 
     val grid = getFinalGrid(input).debug()
 
+    // TODO 1D DP
     val dp = Array(grid.height()) { LongArray(grid.width()) { 0L } }
 
     for (row in grid.height() - 1 downTo 0) {
@@ -77,7 +78,7 @@ object Day7 : Day(2025, 7) {
   private fun getFinalGrid(input: Input): CharGrid {
     var grid = input.readCharGrid()
 
-    // can probably optimise this...
+    // can probably optimise this... TODO BFS/DFS from start
     while (true) {
       var changed = false
 
@@ -102,9 +103,7 @@ object Day7 : Day(2025, 7) {
                 nextGrid[right] = '|'
                 changed = true
               }
-            }
-
-            if (grid[down] == '.') {
+            } else if (grid[down] == '.') {
               // simply go down
               nextGrid[down] = '|'
               changed = true

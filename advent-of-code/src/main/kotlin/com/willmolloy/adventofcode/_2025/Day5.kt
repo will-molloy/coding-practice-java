@@ -2,8 +2,8 @@ package com.willmolloy.adventofcode._2025
 
 import com.willmolloy.adventofcode.common.Day
 import com.willmolloy.adventofcode.common.Input
-import com.willmolloy.adventofcode.common.size
-import com.willmolloy.adventofcode.common.span
+import com.willmolloy.adventofcode.common.extensions.size
+import com.willmolloy.adventofcode.common.extensions.span
 
 /** https://adventofcode.com/2025/day/5 */
 object Day5 : Day(2025, 5) {
