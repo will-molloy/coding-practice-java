@@ -15,3 +15,7 @@ fun <T> List<List<T>>.transpose(): List<List<T>> {
   @Suppress("UNCHECKED_CAST")
   return transpose as List<List<T>>
 }
+
+fun Iterable<Int>.product() = reduce { a, b -> a * b }
+
+fun Iterable<Long>.product() = reduce { a, b -> a * b }

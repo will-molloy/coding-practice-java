@@ -9,6 +9,7 @@ package com.willmolloy.adventofcode.common.grid
  * @param yBound y bound
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
+@JvmRecord
 data class BoundedPoint(val x: Long, val y: Long, val xBound: Long, val yBound: Long) {
 
   constructor(x: Long, y: Long) : this(x, y, Long.MAX_VALUE, Long.MAX_VALUE)

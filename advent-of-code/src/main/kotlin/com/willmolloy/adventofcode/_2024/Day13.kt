@@ -15,12 +15,12 @@ object Day13 : Day(2024, 13) {
     return lines.indices.step(4).map { i ->
       // TODO lib for parsing into data class
       val (ax, ay) = Regex("Button A: X[+](\\d+), Y[+](\\d+)").matchEntire(lines[i])!!.destructured
-      val a = Point(ax.toLong(), ay.toLong())
+      val a = Point(ax, ay)
       val (bx, by) =
         Regex("Button B: X[+](\\d+), Y[+](\\d+)").matchEntire(lines[i + 1])!!.destructured
-      val b = Point(bx.toLong(), by.toLong())
+      val b = Point(bx, by)
       val (px, py) = Regex("Prize: X=(\\d+), Y=(\\d+)").matchEntire(lines[i + 2])!!.destructured
-      val p = Point(px.toLong(), py.toLong())
+      val p = Point(px, py)
       Game(a, b, p)
     }
   }

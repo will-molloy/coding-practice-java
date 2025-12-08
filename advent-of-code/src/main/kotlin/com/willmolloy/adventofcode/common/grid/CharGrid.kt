@@ -16,7 +16,7 @@ open class CharGrid(private val array: Array<CharArray>) : Grid<Char, CharGrid, 
   override fun points(): Sequence<Point> = sequence {
     for (y in 0 until height()) {
       for (x in 0 until width()) {
-        yield(Point(x.toLong(), y.toLong()))
+        yield(Point(x, y))
       }
     }
   }

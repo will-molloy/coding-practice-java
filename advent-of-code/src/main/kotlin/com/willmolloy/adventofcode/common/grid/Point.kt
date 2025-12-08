@@ -12,6 +12,16 @@ data class Point(val x: Long, val y: Long) {
 
   constructor(x: Int, y: Int) : this(x.toLong(), y.toLong())
 
+  constructor(x: String, y: String) : this(x.toLong(), y.toLong())
+
+  /** Compute the [distance](https://en.wikipedia.org/wiki/Euclidean_distance) to another point. */
+  fun dist(q: Point): Long {
+    val dx = (x - q.x)
+    val dy = (y - q.y)
+    // Excluding sqrt to avoid double conversion
+    return dx * dx + dy * dy
+  }
+
   /**
    * Move the point.
    *
