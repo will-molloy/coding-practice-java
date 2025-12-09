@@ -5,7 +5,7 @@ package com.willmolloy.adventofcode.common.datastructures
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-class DisjointSet(private val parent: IntArray, private val size: IntArray) {
+class DisjointSet private constructor(private val parent: IntArray, private val size: IntArray) {
 
   constructor(numNodes: Int) : this(IntArray(numNodes) { it }, IntArray(numNodes) { 1 })
 
