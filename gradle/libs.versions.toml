@@ -34,3 +34,5 @@ guava-testlib = { module = "com.google.guava:guava-testlib", version.ref = "guav
 # scala
 scala-library = { module = "org.scala-lang:scala3-library_3", version.ref = "scala" }
 scala-parallel-collections = { module = "org.scala-lang.modules:scala-parallel-collections_3", version = "1.2.0" }
+# kotlin
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version = "1.10.1" }

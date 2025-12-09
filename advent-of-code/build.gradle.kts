@@ -13,6 +13,7 @@ tasks.withType<ScalaCompile> {
 dependencies {
   implementation(libs.scala.library)
   implementation(libs.scala.parallel.collections)
+  implementation(libs.kotlin.coroutines)
 }
 
 // TODO disabling on Kotlin/Scala atm... too many false positives
