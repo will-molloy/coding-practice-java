@@ -3,7 +3,6 @@ package com.willmolloy.adventofcode.common
 import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Assumptions.abort
 import org.junit.jupiter.api.MethodOrderer
-import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestMethodOrder
 
@@ -12,33 +11,37 @@ import org.junit.jupiter.api.TestMethodOrder
  *
  * @author <a href=https://willmolloy.com>Will Molloy</a>
  */
-@TestMethodOrder(MethodOrderer.OrderAnnotation::class)
+@TestMethodOrder(MethodOrderer.MethodName::class)
 abstract class DayTest(private val day: Day) {
   private val exampleInput: FileInput = FileInput.example(day)
   private val realInput: FileInput? = FileInput.real(day)
 
-  @Order(1)
   @Test
   fun part1_exampleInput() {
-    assertThat(day.part1(exampleInput)).isEqualTo(part1().example)
+    val expected = part1().example.invoke()
+    val actual = day.part1(exampleInput)
+    assertThat(actual).isEqualTo(expected)
   }
 
-  @Order(3)
   @Test
   fun part1_realInput() {
-    assertThat(day.part1(realInput ?: abort())).isEqualTo(part1().real)
+    val expected = part1().real.invoke()
+    val actual = day.part1(realInput ?: abort())
+    assertThat(actual).isEqualTo(expected)
   }
 
-  @Order(2)
   @Test
   fun part2_exampleInput() {
-    assertThat(day.part2(exampleInput)).isEqualTo(part2().example)
+    val expected = part2().example.invoke()
+    val actual = day.part2(exampleInput)
+    assertThat(actual).isEqualTo(expected)
   }
 
-  @Order(4)
   @Test
   fun part2_realInput() {
-    assertThat(day.part2(realInput ?: abort())).isEqualTo(part2().real)
+    val expected = part2().real.invoke()
+    val actual = day.part2(realInput ?: abort())
+    assertThat(actual).isEqualTo(expected)
   }
 
   protected abstract fun part1(): Answer
@@ -51,5 +54,7 @@ abstract class DayTest(private val day: Day) {
    * @param example expected example answer
    * @param real expected real answer
    */
-  data class Answer(val example: Any, val real: Any)
+  data class Answer(val example: () -> Any, val real: () -> Any) {
+    constructor(example: Any, real: Any) : this({ example }, { real })
+  }
 }
