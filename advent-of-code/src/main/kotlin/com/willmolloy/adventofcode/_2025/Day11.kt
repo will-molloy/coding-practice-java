@@ -2,11 +2,12 @@ package com.willmolloy.adventofcode._2025
 
 import com.willmolloy.adventofcode.common.Day
 import com.willmolloy.adventofcode.common.Input
+import com.willmolloy.adventofcode.common.extensions.debug
 
 /** https://adventofcode.com/2025/day/11 */
 object Day11 : Day(2025, 11) {
 
-  private fun parse(input: Input) = buildMap {
+  private fun parse(input: Input): Map<String, List<String>> = buildMap {
     input.readLines().forEach { line ->
       val split = line.split(": ")
       val source = split[0]
@@ -16,65 +17,62 @@ object Day11 : Day(2025, 11) {
   }
 
   override fun part1(input: Input): Any {
-    // DFS count the paths...
+    // DFS -> count all paths
     val adjList = parse(input)
     var count = 0
 
-    fun dfs(node: String, path: MutableSet<String>) {
+    // no need for 'visited' check (cycle detection) as the graph is a DAG:
+    // https://i.redd.it/vhr676hdbm6g1.png
+
+    fun dfs(node: String) {
       if (node == "out") {
         count++
         return
       }
 
       for (adjNode in adjList.getOrDefault(node, emptyList())) {
-        if (path.add(adjNode)) {
-          dfs(adjNode, path)
-          path.remove(adjNode) // backtrack
-        }
+        dfs(adjNode)
       }
     }
 
-    dfs("you", mutableSetOf())
-
+    dfs("you")
     return count
   }
 
   override fun part2(input: Input): Any {
-    // DFS count the paths...
+    // DFS -> count all paths
     val adjList = parse(input)
 
-    val dp = mutableMapOf<String, Long>()
+    // the graph in part 1 ("you" to "out") is a lot smaller compared to now ("svr" to "out"):
+    // https://i.redd.it/vhr676hdbm6g1.png
+    // by using DP we can essentially create "checkpoints" whenever we see "fft" / "dac" and cache
+    // the number of paths beyond them
 
-    fun dfs(node: String, path: String): Long {
-      val key = path + node
+    val dp = mutableMapOf<Triple<String, Boolean, Boolean>, Long>()
 
+    fun dfs(node: String, seenDac: Boolean, seenFft: Boolean): Long {
+      val key = Triple(node, seenDac, seenFft)
       val cached = dp[key]
       if (cached != null) {
         return cached
       }
 
       if (node == "out") {
-        if (path.contains("dac") && path.contains("fft")) {
-          return 1
-        }
-        return 0
+        return if (seenDac && seenFft) 1 else 0
       }
 
       var count = 0L
 
       for (adjNode in adjList.getOrDefault(node, emptyList())) {
-        var newPath = path
-        // only add the nodes we're interested in... otherwise the lookup times it out
-        if (adjNode == "dac" || adjNode == "fft") {
-          newPath += adjNode
-        }
-        count += dfs(adjNode, newPath)
+        val seenDac = seenDac || adjNode == "dac"
+        val seenFft = seenFft || adjNode == "fft"
+        count += dfs(adjNode, seenDac, seenFft)
       }
 
       dp[key] = count
       return count
     }
 
-    return dfs("svr", "")
+    return dfs("svr", seenDac = false, seenFft = false).also { dp.debug() }
   }
 }
