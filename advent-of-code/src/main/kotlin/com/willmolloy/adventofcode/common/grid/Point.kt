@@ -22,6 +22,10 @@ data class Point(val x: Long, val y: Long) {
     return dx * dx + dy * dy
   }
 
+  fun move(p: Point): Point = Point(x + p.x, y + p.y)
+
+  fun move(dx: Int, dy: Int): Point = Point(x + dx, y + dy)
+
   /**
    * Move the point.
    *

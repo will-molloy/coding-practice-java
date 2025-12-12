@@ -34,5 +34,21 @@ open class CharGrid(private val array: Array<CharArray>) : Grid<Char, CharGrid, 
   @Throws(ArrayIndexOutOfBoundsException::class)
   operator fun get(point: Point): Char = array[point.y.toInt()][point.x.toInt()]
 
+  @Throws(ArrayIndexOutOfBoundsException::class)
+  operator fun get(row: Int, col: Int): Char = array[row][col]
+
   override fun toString(): String = array.joinToString("\n") { String(it) }
+
+  override fun equals(other: Any?): Boolean {
+    if (this === other) return true
+    if (javaClass != other?.javaClass) return false
+
+    other as CharGrid
+
+    return array.contentDeepEquals(other.array)
+  }
+
+  override fun hashCode(): Int {
+    return array.contentDeepHashCode()
+  }
 }
