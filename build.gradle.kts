@@ -27,13 +27,13 @@ allprojects {
 
   apply(plugin = "java")
   configure<JavaPluginExtension> {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
   }
 
   apply(plugin = "kotlin")
   configure<KotlinJvmProjectExtension> {
-    jvmToolchain(21)
+    jvmToolchain(25)
   }
 
   apply(plugin = "com.diffplug.spotless")
