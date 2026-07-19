@@ -62,11 +62,11 @@ object Day14 : Day(2024, 14) {
 
     val tree =
       """
-            ^
-           ^^^
-          ^^^^^
-         ^^^^^^^
-            ^
+         ^
+        ^^^
+       ^^^^^
+      ^^^^^^^
+         ^
       """
         .trimIndent()
     val treePoints =

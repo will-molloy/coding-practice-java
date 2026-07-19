@@ -53,11 +53,10 @@ object Day12 : Day(2025, 12) {
 
       // first ensure the grid has enough spaces
       val treeSpaces = tree.length * tree.width
-      val totalPresentSpaces =
-        presents.sumOf { present ->
-          val presentSpaces = present.grid.count { present.grid[it] == '#' }
-          presentSpaces * tree.presentCounts[present.index]
-        }
+      val totalPresentSpaces = presents.sumOf { present ->
+        val presentSpaces = present.grid.count { present.grid[it] == '#' }
+        presentSpaces * tree.presentCounts[present.index]
+      }
       if (totalPresentSpaces > treeSpaces) {
         return false
       }
